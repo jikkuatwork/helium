@@ -6,8 +6,8 @@
 
 ## Problem
 
-Cattery has one TTS model and one STT model. Exposing model selection,
-registry details, and `cattery list` in the default UX adds complexity that
+Helium has one TTS model and one STT model. Exposing model selection,
+registry details, and `helium list` in the default UX adds complexity that
 >90% of users don't need. The experience should feel like "one tool, one
 model" by default.
 
@@ -15,8 +15,8 @@ model" by default.
 
 ### CLI
 
-- `cattery list` hidden from default help; shown with `--advanced` or `cattery help --advanced`
-- Default `cattery tts "Hello"` — no model flag needed (already the case)
+- `helium list` hidden from default help; shown with `--advanced` or `helium help --advanced`
+- Default `helium tts "Hello"` — no model flag needed (already the case)
 - `--model` flag still works but not shown in default help
 - `--advanced` reveals: model selection, `list` subcommand, registry details
 
@@ -28,7 +28,7 @@ model" by default.
 
 ### Principle
 
-Default user sees: `cattery tts "text"`, `cattery stt audio.wav`, `cattery serve`.
+Default user sees: `helium tts "text"`, `helium stt audio.wav`, `helium serve`.
 Advanced user adds `--advanced` to see everything else.
 Single model per modality is the mental model. Multi-model plumbing stays
 internal for when a second model ships.

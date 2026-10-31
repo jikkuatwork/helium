@@ -3,26 +3,26 @@
 Audit date: 2026-03-21
 
 This file records the current licensing position of the code, runtime downloads,
-and model assets used by `cattery`. It is an engineering audit, not legal advice.
+and model assets used by `helium`. It is an engineering audit, not legal advice.
 
 ## Current status
 
 - This repository now ships a top-level `LICENSE` and `NOTICE`; the
-  `cattery` code is licensed under Apache-2.0.
-- `cattery` shells out to a system-installed `espeak-ng` binary from
+  `helium` code is licensed under Apache-2.0.
+- `helium` shells out to a system-installed `espeak-ng` binary from
   `phonemize/espeak.go`; it does not vendor or bundle `espeak-ng`.
-- `cattery` downloads ONNX Runtime from Microsoft's official releases and
+- `helium` downloads ONNX Runtime from Microsoft's official releases and
   downloads model and voice assets from `jikkuatwork/cattery-artefacts`.
 
 ## Audited components
 
-| Component | Version / source | License | How `cattery` uses it | Distribution notes |
+| Component | Version / source | License | How `helium` uses it | Distribution notes |
 | --- | --- | --- | --- | --- |
 | `github.com/yalue/onnxruntime_go` | `v1.27.0` | MIT | Go wrapper linked into the binary | Keep MIT notice with source or binary distributions. |
 | `golang.org/x/sys` | `v0.42.0` | BSD-3-Clause | Low-level OS helpers linked into the binary | Keep BSD notice/disclaimer with source or binary distributions. |
 | ONNX Runtime | `1.24.1` from `microsoft/onnxruntime` releases | MIT | Native shared library downloaded on first run | Current design avoids mirroring it. If you ever bundle or mirror it, include the MIT license and upstream third-party notices from the release archive. |
 | Kokoro model and voice files | `hexgrad/Kokoro-82M` and `onnx-community/Kokoro-82M-v1.0-ONNX` | Apache-2.0 | Quantized ONNX model and voice bins fetched from `cattery-artefacts` | Apache-2.0 allows redistribution, but the mirror should ship a copy of the license and preserve upstream attribution/notices. Attribute both the original model and the ONNX conversion source. |
-| `espeak-ng` | System package | GPL-3.0-or-later | Invoked as an external executable over `os/exec` | Keep it external. Re-review licensing before bundling or redistributing `espeak-ng` with `cattery`. |
+| `espeak-ng` | System package | GPL-3.0-or-later | Invoked as an external executable over `os/exec` | Keep it external. Re-review licensing before bundling or redistributing `espeak-ng` with `helium`. |
 
 ## Findings
 
@@ -37,7 +37,7 @@ and model assets used by `cattery`. It is an engineering audit, not legal advice
    attribution, not just a README that names the source.
 
 3. ONNX Runtime is low risk in the current architecture.
-   `cattery` points users at Microsoft's official release artifacts instead of
+   `helium` points users at Microsoft's official release artifacts instead of
    mirroring the runtime. That keeps the redistribution burden lower, but if
    future packaging starts bundling the runtime then the MIT notice and the
    release's `ThirdPartyNotices.txt` should travel with it.
@@ -53,7 +53,7 @@ and model assets used by `cattery`. It is an engineering audit, not legal advice
   `cattery-artefacts` repository.
 - Ship `LICENSE`, `NOTICE`, and this notice file with any future packaged
   binary releases.
-- Re-run the audit if `cattery` ever bundles ONNX Runtime, vendors model files
+- Re-run the audit if `helium` ever bundles ONNX Runtime, vendors model files
   directly in this repo, or redistributes `espeak-ng`.
 
 ## Files reviewed

@@ -24,7 +24,7 @@ This is entirely Kokoro/TTS-specific. STT models have different metadata (encode
 
 ## Goal
 
-Redesign registry to handle multiple artefact types while keeping the download system auth-free and simple. Every artefact cattery needs — TTS models, STT models, voices, tokenizers, ORT runtime — should be discoverable and downloadable through one registry.
+Redesign registry to handle multiple artefact types while keeping the download system auth-free and simple. Every artefact helium needs — TTS models, STT models, voices, tokenizers, ORT runtime — should be discoverable and downloadable through one registry.
 
 ## Design
 
@@ -201,7 +201,7 @@ The initial registry should contain:
 
 - **Edit**: `registry/registry.go` — new types, restructured data
 - **Edit**: `download/download.go` — generalized Ensure + Result
-- **Edit**: `cmd/cattery/main.go` — adapt to new registry/download API
+- **Edit**: `cmd/helium/main.go` — adapt to new registry/download API
 - **Edit**: `server/server.go` — adapt to new registry/download API
 - **Edit**: `paths/paths.go` — may need new path helpers for STT model dir
 
@@ -212,9 +212,9 @@ The initial registry should contain:
 - [ ] `registry.GetByKind("tts")` and `registry.GetByKind("stt")` work
 - [ ] `download.Ensure()` works for both TTS and STT models
 - [ ] All artefact URLs are auth-free
-- [ ] `cattery download` fetches everything (or by kind)
-- [ ] `cattery list` shows TTS and STT models
-- [ ] `cattery status` shows all model types
+- [ ] `helium download` fetches everything (or by kind)
+- [ ] `helium list` shows TTS and STT models
+- [ ] `helium status` shows all model types
 - [ ] `go build ./...` and `go vet ./...` pass
 - [ ] Existing TTS functionality unbroken
 

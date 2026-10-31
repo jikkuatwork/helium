@@ -20,9 +20,9 @@ Run a local LLM via ONNX Runtime, same stack as TTS/STT. No external APIs needed
 Same philosophy as TTS/STT — zero config by default:
 
 ```
-cattery llm "What is the capital of France?"    # just works
-cattery llm --stdin < prompt.txt                # pipe input
-cattery llm --system "You are helpful" "Hi"     # system prompt
+helium llm "What is the capital of France?"    # just works
+helium llm --stdin < prompt.txt                # pipe input
+helium llm --system "You are helpful" "Hi"     # system prompt
 ```
 
 Model name, quantization, parameter count — none of this surfaces in simple mode.
@@ -53,7 +53,7 @@ llm/
 ```
 
 - Shares ORT instance with TTS/STT (separate session)
-- Auto-downloads int4 ONNX model to ~/.cattery/ (same as other artefacts)
+- Auto-downloads int4 ONNX model to ~/.helium/ (same as other artefacts)
 - Registered in model registry as `qwen3.5-4b`
 - Server exposes `/v1/chat/completions` (OpenAI-compatible)
 

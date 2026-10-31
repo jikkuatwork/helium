@@ -9,7 +9,7 @@ Land issues `#30` and `#31` together as one cohesive refactor:
 - rename user-facing verbs from `speak` / `listen` to `tts` / `stt`
 - rename Go packages `speak` / `listen` to `tts` / `stt`
 - keep old CLI subcommands, HTTP routes, and serve flags as hidden compatibility aliases
-- reduce the default help surface to the core commands and move advanced knobs behind `cattery help --advanced`
+- reduce the default help surface to the core commands and move advanced knobs behind `helium help --advanced`
 - simplify TTS/STT stderr summaries so model names disappear from the happy path
 
 This should ship as one pass, not as a staggered migration, because package
@@ -30,17 +30,17 @@ paths, command names, tests, and server JSON all need to stay consistent.
 | `listen/moonshine/moonshine.go` | `stt/moonshine/moonshine.go` | Rename Moonshine engine package imports and interfaces |
 | `listen/moonshine/stream_test.go` | `stt/moonshine/stream_test.go` | Keep stream tests colocated after the move |
 | `listen/moonshine/tokenizer.go` | `stt/moonshine/tokenizer.go` | Keep tokenizer logic under the renamed STT package tree |
-| `cmd/cattery/listen.go` | `cmd/cattery/stt.go` | Match the primary CLI command name |
+| `cmd/helium/listen.go` | `cmd/helium/stt.go` | Match the primary CLI command name |
 | `server/listen.go` | `server/stt.go` | Match the primary server handler / file responsibility |
 
 ## Files To Edit
 
 | File | Planned change |
 |---|---|
-| `cmd/cattery/main.go` | Rename command dispatch to `tts` / `stt`; keep `speak` / `listen` as hidden aliases; add `help --advanced`; split default vs advanced help text; rename serve config fields and flags to `tts` / `stt`; keep old serve flags as hidden aliases; update `parseKindAlias`, `commandNames`, typo detection, examples, usage strings, and help prose |
-| `cmd/cattery/io.go` | Rename TTS helper names if needed for clarity and update hard-coded usage text from `cattery speak` to `cattery tts` |
-| `cmd/cattery/main_test.go` | Update tests for alias parsing, command detection, and default-primary command names; add coverage that old verbs still parse but new verbs are the names exposed by help/errors |
-| `cmd/cattery/stt.go` | Rename package imports from `listen` to `stt`; update usage strings, model lookup hints, and stderr summary format; keep behavior identical apart from naming/output changes |
+| `cmd/helium/main.go` | Rename command dispatch to `tts` / `stt`; keep `speak` / `listen` as hidden aliases; add `help --advanced`; split default vs advanced help text; rename serve config fields and flags to `tts` / `stt`; keep old serve flags as hidden aliases; update `parseKindAlias`, `commandNames`, typo detection, examples, usage strings, and help prose |
+| `cmd/helium/io.go` | Rename TTS helper names if needed for clarity and update hard-coded usage text from `helium speak` to `helium tts` |
+| `cmd/helium/main_test.go` | Update tests for alias parsing, command detection, and default-primary command names; add coverage that old verbs still parse but new verbs are the names exposed by help/errors |
+| `cmd/helium/stt.go` | Rename package imports from `listen` to `stt`; update usage strings, model lookup hints, and stderr summary format; keep behavior identical apart from naming/output changes |
 | `cmd/stt-spike/main.go` | Update imports from `speak` to `tts` so the spike still builds after the package move |
 | `memtest/rss_test.go` | Update imports and type references from `speak` / `listen` to `tts` / `stt` |
 | `tts/tts.go` | Change package name to `tts`; keep `Engine`, `Options`, and `Voice` type names stable under the new package |
@@ -61,22 +61,22 @@ paths, command names, tests, and server JSON all need to stay consistent.
 ## Execution Order
 
 1. `git mv` the package trees and modality-specific entrypoint files first:
-   `speak/` -> `tts/`, `listen/` -> `stt/`, `cmd/cattery/listen.go` -> `cmd/cattery/stt.go`, `server/listen.go` -> `server/stt.go`.
+   `speak/` -> `tts/`, `listen/` -> `stt/`, `cmd/helium/listen.go` -> `cmd/helium/stt.go`, `server/listen.go` -> `server/stt.go`.
 2. Update package declarations inside moved files:
    `package speak` -> `package tts`, `package listen` -> `package stt`.
 3. Rewrite all import paths and type references repo-wide:
-   `github.com/jikkuatwork/cattery/speak` -> `.../tts`,
-   `github.com/jikkuatwork/cattery/listen` -> `.../stt`,
+   `github.com/jikkuatwork/helium/speak` -> `.../tts`,
+   `github.com/jikkuatwork/helium/listen` -> `.../stt`,
    plus `speak.Engine` / `listen.Engine` -> `tts.Engine` / `stt.Engine`.
 4. Rename internal server identifiers next so compilation errors collapse quickly:
    pool names, config fields, request/status structs, helper names, and log messages in `server/server.go` and `server/stt.go`.
-5. Update CLI dispatch and command parsing in `cmd/cattery/main.go`:
+5. Update CLI dispatch and command parsing in `cmd/helium/main.go`:
    primary verbs `tts` / `stt`, hidden aliases `speak` / `listen`, and renamed serve flags with compatibility aliases.
-6. Update CLI usage strings and happy-path stderr formatting in `cmd/cattery/main.go`, `cmd/cattery/stt.go`, and `cmd/cattery/io.go`.
+6. Update CLI usage strings and happy-path stderr formatting in `cmd/helium/main.go`, `cmd/helium/stt.go`, and `cmd/helium/io.go`.
 7. Implement the default/advanced help split:
-   `printUsage()` becomes default help, add advanced help output, and wire `cattery help --advanced`.
+   `printUsage()` becomes default help, add advanced help output, and wire `helium help --advanced`.
 8. Update tests after the rename is compiling:
-   `cmd/cattery/main_test.go`, `server/auth_test.go`, moved package tests, and `memtest/rss_test.go`.
+   `cmd/helium/main_test.go`, `server/auth_test.go`, moved package tests, and `memtest/rss_test.go`.
 9. Run `gofmt -w` on all moved/edited Go files.
 10. Run verification:
    `go test ./...`, targeted CLI/server smoke checks, then optional memtest/manual HTTP compatibility checks.
@@ -85,10 +85,10 @@ paths, command names, tests, and server JSON all need to stay consistent.
 
 ### Command behavior
 
-- Primary user-facing commands become `cattery tts ...` and `cattery stt ...`.
-- `cattery speak ...` and `cattery listen ...` remain functional, but are omitted from default and advanced command summaries except in an explicit compatibility-alias note.
+- Primary user-facing commands become `helium tts ...` and `helium stt ...`.
+- `helium speak ...` and `helium listen ...` remain functional, but are omitted from default and advanced command summaries except in an explicit compatibility-alias note.
 - Bare text still routes to TTS:
-  `cattery "Hello"` == `cattery tts "Hello"`.
+  `helium "Hello"` == `helium tts "Hello"`.
 - Serve flags rename to:
   - `--tts-workers`
   - `--stt-workers`
@@ -103,16 +103,16 @@ paths, command names, tests, and server JSON all need to stay consistent.
 ### Default help text
 
 ```text
-cattery - local speech tools
+helium - local speech tools
 
 Usage:
-  cattery "Hello, world."          Shortcut for cattery tts
-  cattery tts "Hello, world."      Text to speech
-  cattery stt audio.wav            Speech to text
-  cattery serve                    Start REST API server
-  cattery status                   Show model/runtime status
-  cattery download                 Pre-download local assets
-  cattery help --advanced          Show advanced commands and flags
+  helium "Hello, world."          Shortcut for helium tts
+  helium tts "Hello, world."      Text to speech
+  helium stt audio.wav            Speech to text
+  helium serve                    Start REST API server
+  helium status                   Show model/runtime status
+  helium download                 Pre-download local assets
+  helium help --advanced          Show advanced commands and flags
 
 Commands:
   tts         Text to speech
@@ -133,24 +133,24 @@ STT:
   --output, -o     Output text file (default: stdout)
 
 Server:
-  cattery serve --port 8080
-  cattery serve --auth
+  helium serve --port 8080
+  helium serve --auth
 
-Run 'cattery help --advanced' for list, keys, model selection, language hints,
+Run 'helium help --advanced' for list, keys, model selection, language hints,
 chunk-size controls, and server tuning flags.
 ```
 
 ### Advanced help text
 
 ```text
-cattery - local speech tools
+helium - local speech tools
 
 Usage:
-  cattery "Hello, world."          Shortcut for cattery tts
-  cattery tts --voice 4 "Hi there"
-  cattery tts --model 1 "Hi there"
-  cattery stt call.wav
-  cattery stt -
+  helium "Hello, world."          Shortcut for helium tts
+  helium tts --voice 4 "Hi there"
+  helium tts --model 1 "Hi there"
+  helium stt call.wav
+  helium stt -
 
 Commands:
   tts         Text to speech
@@ -179,48 +179,48 @@ STT flags:
   --model REF      STT model index or ID (default: 1)
 
 Manage:
-  cattery list
-  cattery list tts
-  cattery download stt
-  cattery status tts --model 1
+  helium list
+  helium list tts
+  helium download stt
+  helium status tts --model 1
 
 Pipes:
-  cattery stt call.wav | cattery tts
-  echo "Hello" | cattery tts | cattery stt
+  helium stt call.wav | helium tts
+  echo "Hello" | helium tts | helium stt
 
 Server:
-  cattery serve --port 8080
-  cattery serve --tts-workers 2
-  cattery serve --stt-workers 2
-  cattery serve --chunk-size 20s
-  cattery serve --tts-model 1
-  cattery serve --stt-model 1
-  cattery serve --max-chars 300
-  cattery serve --queue-max 10
-  cattery serve --idle-timeout 600
-  cattery serve --keep-alive
-  cattery serve --auth
+  helium serve --port 8080
+  helium serve --tts-workers 2
+  helium serve --stt-workers 2
+  helium serve --chunk-size 20s
+  helium serve --tts-model 1
+  helium serve --stt-model 1
+  helium serve --max-chars 300
+  helium serve --queue-max 10
+  helium serve --idle-timeout 600
+  helium serve --keep-alive
+  helium serve --auth
 
 Keys:
-  cattery keys create --name my-app
-  cattery keys list
-  cattery keys revoke cat_a1b2c3d4
-  cattery keys delete cat_a1b2c3d4
+  helium keys create --name my-app
+  helium keys list
+  helium keys revoke cat_a1b2c3d4
+  helium keys delete cat_a1b2c3d4
 
 Compatibility aliases:
-  cattery speak ...               Alias for cattery tts
-  cattery listen ...              Alias for cattery stt
+  helium speak ...               Alias for helium tts
+  helium listen ...              Alias for helium stt
   --speak-workers, -w, --workers  Alias for --tts-workers
   --listen-workers                Alias for --stt-workers
   --speak-model                   Alias for --tts-model
   --listen-model                  Alias for --stt-model
 
 Chunk size:
-  CATTERY_CHUNK_SIZE   Shared override for tts, stt, and serve
+  HELIUM_CHUNK_SIZE   Shared override for tts, stt, and serve
   Auto default         10s <=512MB, 15s <=1GB, 20s <=2GB, 30s <=4GB,
                        45s <=8GB, 60s >8GB, 30s if RAM is unknown
 
-On first run, cattery downloads the model (~92MB) and runtime (~18MB).
+On first run, helium downloads the model (~92MB) and runtime (~18MB).
 No accounts or API keys required.
 ```
 
@@ -267,7 +267,7 @@ Implementation note:
 
 - destination remains first (`stdout` or output filename)
 - audio duration and elapsed time both use one decimal place
-- model names remain visible in `cattery status`, not in per-run stderr
+- model names remain visible in `helium status`, not in per-run stderr
 
 ## Server API / Status
 
@@ -352,29 +352,29 @@ so the server stops carrying `speak*` / `listen*` identifiers internally.
 - Keep CLI aliases `speak` and `listen` working for one release cycle.
 - Keep HTTP aliases `/v1/speak` and `/v1/listen` working for one release cycle.
 - Keep old serve flags accepted but omitted from help.
-- Keep `parseKindAlias()` accepting both old and new verbs so `cattery list speak`
-  and `cattery list tts` both work during the transition.
+- Keep `parseKindAlias()` accepting both old and new verbs so `helium list speak`
+  and `helium list tts` both work during the transition.
 - All help text, error messages, examples, and logs should prefer `tts` / `stt`
   unless they are explicitly documenting a compatibility alias.
 
 ## Verification Steps
 
 1. Formatting and compile safety:
-   - `gofmt -w ./cmd/cattery ./server ./tts ./stt ./memtest ./cmd/stt-spike`
+   - `gofmt -w ./cmd/helium ./server ./tts ./stt ./memtest ./cmd/stt-spike`
    - `go test ./...`
 2. CLI rename / alias behavior:
-   - `go test ./cmd/cattery`
-   - `go run ./cmd/cattery help`
-   - `go run ./cmd/cattery help --advanced`
+   - `go test ./cmd/helium`
+   - `go run ./cmd/helium help`
+   - `go run ./cmd/helium help --advanced`
    - verify default help does not list `list`, `keys`, `--model`, `--chunk-size`, `--lang`, `--tts-workers`, `--stt-workers`
    - verify advanced help does list them
-   - `go run ./cmd/cattery tts "hello"`
-   - `go run ./cmd/cattery speak "hello"` still works
-   - `go run ./cmd/cattery stt sample.wav`
-   - `go run ./cmd/cattery listen sample.wav` still works
+   - `go run ./cmd/helium tts "hello"`
+   - `go run ./cmd/helium speak "hello"` still works
+   - `go run ./cmd/helium stt sample.wav`
+   - `go run ./cmd/helium listen sample.wav` still works
 3. Serve flags and HTTP compatibility:
-   - `go run ./cmd/cattery serve --tts-workers 2 --stt-workers 2`
-   - `go run ./cmd/cattery serve --speak-workers 2 --listen-workers 2`
+   - `go run ./cmd/helium serve --tts-workers 2 --stt-workers 2`
+   - `go run ./cmd/helium serve --speak-workers 2 --listen-workers 2`
    - POST to `/v1/tts` and `/v1/speak`, confirm both synthesize
    - POST to `/v1/stt` and `/v1/listen`, confirm both transcribe
    - GET `/v1/status`, confirm top-level keys are `tts` and `stt`
@@ -389,7 +389,7 @@ so the server stops carrying `speak*` / `listen*` identifiers internally.
 
 - The package-path move is repo-wide and will break imports everywhere until
   all references are updated in the same pass.
-- `cmd/cattery/main.go` currently owns both CLI dispatch and all help text, so
+- `cmd/helium/main.go` currently owns both CLI dispatch and all help text, so
   the UX simplification and rename work are tightly coupled there.
 - Hidden alias support can easily leak into default help if `commandNames()` and
   help rendering are not separated into “accepts” vs “advertises”.

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jikkuatwork/cattery/tts"
+	"github.com/jikkuatwork/helium/tts"
 )
 
 func TestAudioSpeech(t *testing.T) {

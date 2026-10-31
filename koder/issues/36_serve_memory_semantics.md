@@ -5,7 +5,7 @@
 
 ## Context
 
-The `--memory` flag was added to `cattery serve` to control cross-pool engine
+The `--memory` flag was added to `helium serve` to control cross-pool engine
 eviction. Currently it acts as a co-residency hint: if the sum of loaded
 engines fits within the budget, skip eviction when switching modalities.
 

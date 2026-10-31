@@ -25,7 +25,7 @@
   field.
 - `cmdSpeak()`, `cmdListen()`, and `cmdServe()` do not accept `--chunk-size`.
 - `printUsage()` does not mention any chunk-size flag or
-  `CATTERY_CHUNK_SIZE`.
+  `HELIUM_CHUNK_SIZE`.
 - `server.synthesize()` and `server.handleListen()` construct `speak.Options`
   and `listen.Options` without any chunk-size value.
 - `main()` already prints returned CLI errors as one line, but there is no
@@ -47,7 +47,7 @@
   - unknown RAM => `30s`
 - Clamp auto-selected values to `10s..60s`. Explicit overrides outside that
   range fail fast instead of silently clamping.
-- Parse `--chunk-size` and `CATTERY_CHUNK_SIZE` with one helper. Accept Go
+- Parse `--chunk-size` and `HELIUM_CHUNK_SIZE` with one helper. Accept Go
   durations like `15s` / `1m`, and bare integers as seconds.
 - Precedence is always: CLI flag, then env var, then auto.
 - Add `ChunkSize time.Duration` to `speak.Options`, `listen.Options`, and
@@ -92,7 +92,7 @@
 3. Extend `speak.Options`, `listen.Options`, and `server.Config` with
    `ChunkSize time.Duration`.
 4. Update `cmdSpeak()`, `cmdListen()`, and `cmdServe()` to accept
-   `--chunk-size`, honor `CATTERY_CHUNK_SIZE`, emit the low-memory warning
+   `--chunk-size`, honor `HELIUM_CHUNK_SIZE`, emit the low-memory warning
    once, and pass the resolved duration downstream.
 5. Update `printUsage()` so speak, listen, and serve document the new flag,
    the env var, and the auto default behavior.
@@ -116,9 +116,9 @@
 - new `preflight/memory_test.go`
 - `speak/speak.go`
 - `listen/listen.go`
-- `cmd/cattery/main.go`
-- `cmd/cattery/listen.go`
-- `cmd/cattery/main_test.go`
+- `cmd/helium/main.go`
+- `cmd/helium/listen.go`
+- `cmd/helium/main_test.go`
 - `server/server.go`
 - `server/listen.go`
 - `listen/moonshine/moonshine.go`
@@ -128,7 +128,7 @@
 
 ## Acceptance Criteria
 
-- `--chunk-size` and `CATTERY_CHUNK_SIZE` resolve through one shared helper
+- `--chunk-size` and `HELIUM_CHUNK_SIZE` resolve through one shared helper
   with precedence `flag > env > auto`.
 - Explicit overrides accept Go durations and bare seconds, and reject values
   outside `10s..60s`.

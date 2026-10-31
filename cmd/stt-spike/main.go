@@ -1,7 +1,7 @@
 // Spike: prove ONNX Runtime can load and run Moonshine-tiny STT from Go.
 //
 // Downloads encoder + decoder ONNX files from HuggingFace on first run.
-// Generates a test WAV via cattery TTS, then transcribes it back.
+// Generates a test WAV via helium TTS, then transcribes it back.
 //
 // Run: go run ./cmd/stt-spike
 package main
@@ -17,12 +17,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jikkuatwork/cattery/download"
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/tts"
-	"github.com/jikkuatwork/cattery/tts/kokoro"
+	"github.com/jikkuatwork/helium/download"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/tts"
+	"github.com/jikkuatwork/helium/tts/kokoro"
 	ortgo "github.com/yalue/onnxruntime_go"
 )
 

@@ -73,7 +73,7 @@ audio → detect length → if > threshold: chunk audio → for each chunk: tran
 
 ## Acceptance criteria
 
-- [ ] `cattery listen long_audio.wav` works for 60s+ audio without hallucination
+- [ ] `helium listen long_audio.wav` works for 60s+ audio without hallucination
 - [x] Short audio (< 30s) is unchanged — no regression
 - [x] Chunk boundaries don't split words
 - [x] `go build ./...` and `go vet ./...` pass

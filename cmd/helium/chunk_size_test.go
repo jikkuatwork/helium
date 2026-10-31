@@ -37,7 +37,7 @@ func TestResolveCommandChunkSizeWithEnvRejectsInvalidEnv(t *testing.T) {
 	if err == nil {
 		t.Fatal("resolveCommandChunkSizeWithEnv() error = nil")
 	}
-	if !strings.Contains(err.Error(), "CATTERY_CHUNK_SIZE") {
-		t.Fatalf("error = %q, want CATTERY_CHUNK_SIZE", err)
+	if !strings.Contains(err.Error(), "HELIUM_CHUNK_SIZE") {
+		t.Fatalf("error = %q, want HELIUM_CHUNK_SIZE", err)
 	}
 }

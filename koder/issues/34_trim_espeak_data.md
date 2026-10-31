@@ -5,7 +5,7 @@
 
 ## Problem
 
-The bundled `data.tar.gz` is 9.2MB (20MB uncompressed) because it includes dictionaries for all 117 languages. Cattery currently only uses `en-us` for Kokoro phonemization.
+The bundled `data.tar.gz` is 9.2MB (20MB uncompressed) because it includes dictionaries for all 117 languages. Helium currently only uses `en-us` for Kokoro phonemization.
 
 ## Opportunity
 

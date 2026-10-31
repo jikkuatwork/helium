@@ -8,13 +8,13 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/server"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/server"
 )
 
 func cmdKeys(args []string) error {
 	if len(args) == 0 {
-		return fmt.Errorf("usage: cattery keys <create|list|revoke|delete>")
+		return fmt.Errorf("usage: helium keys <create|list|revoke|delete>")
 	}
 
 	switch args[0] {
@@ -130,7 +130,7 @@ func cmdKeysList(args []string) error {
 
 func cmdKeysRevoke(args []string) error {
 	if len(args) != 1 {
-		return fmt.Errorf("usage: cattery keys revoke <id>")
+		return fmt.Errorf("usage: helium keys revoke <id>")
 	}
 
 	store := newCLIKeyStore()
@@ -162,7 +162,7 @@ func cmdKeysRevoke(args []string) error {
 
 func cmdKeysDelete(args []string) error {
 	if len(args) != 1 {
-		return fmt.Errorf("usage: cattery keys delete <id>")
+		return fmt.Errorf("usage: helium keys delete <id>")
 	}
 
 	store := newCLIKeyStore()
@@ -204,7 +204,7 @@ func loadCLIKeys(store *server.KeyStore, allowMissing bool) ([]server.KeyEntry, 
 			return nil, nil
 		}
 		if errors.Is(err, os.ErrNotExist) {
-			return nil, fmt.Errorf("no API keys found; run 'cattery keys create' first")
+			return nil, fmt.Errorf("no API keys found; run 'helium keys create' first")
 		}
 		return nil, err
 	}

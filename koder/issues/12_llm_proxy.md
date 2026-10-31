@@ -3,11 +3,11 @@
 ## Status: open
 ## Priority: P2
 
-Add an optional LLM proxy so cattery becomes a unified AI backend:
+Add an optional LLM proxy so helium becomes a unified AI backend:
 - Connect to Ollama (local) or OpenRouter (cloud) for text generation
 - Expose as `/v1/chat/completions` (OpenAI-compatible)
 - Config: `--ollama http://localhost:11434` or `--openrouter KEY`
-- Passthrough with minimal overhead — cattery is the gateway, not the brain
+- Passthrough with minimal overhead — helium is the gateway, not the brain
 
 Combined with TTS (#06) and STT (#08), this gives:
 

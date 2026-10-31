@@ -67,7 +67,7 @@ func IsInitialized() bool            // move from engine.IsInitialized
 
 | File | Current | After |
 |---|---|---|
-| `cmd/cattery/main.go` | `engine.Init(...)` / `engine.Shutdown()` | `ort.Init(...)` / `ort.Shutdown()` |
+| `cmd/helium/main.go` | `engine.Init(...)` / `engine.Shutdown()` | `ort.Init(...)` / `ort.Shutdown()` |
 | `cmd/stt-spike/main.go` | `engine.Init(...)` / `engine.Shutdown()` | `ort.Init(...)` / `ort.Shutdown()` |
 | `cmd/spike/main.go` | `engine.Init(...)` / `engine.Shutdown()` | `ort.Init(...)` / `ort.Shutdown()` |
 | `server/server.go` | `engine.Init(...)` / `engine.Shutdown()` | `ort.Init(...)` / `ort.Shutdown()` |
@@ -76,7 +76,7 @@ func IsInitialized() bool            // move from engine.IsInitialized
 
 - **Create**: `ort/ort.go`
 - **Edit**: `engine/engine.go` — remove lifecycle functions + cgo imports
-- **Edit**: `cmd/cattery/main.go` — import `ort/` instead of `engine` for Init/Shutdown
+- **Edit**: `cmd/helium/main.go` — import `ort/` instead of `engine` for Init/Shutdown
 - **Edit**: `cmd/stt-spike/main.go` — same
 - **Edit**: `cmd/spike/main.go` — same
 - **Edit**: `server/server.go` — same
@@ -88,11 +88,11 @@ func IsInitialized() bool            // move from engine.IsInitialized
 - [ ] `go build ./...` passes
 - [ ] `go vet ./...` passes
 - [ ] STT spike still works: `go run ./cmd/stt-spike`
-- [ ] TTS CLI still works: `cattery "Hello world"`
-- [ ] Server still works: `cattery serve` then `curl -X POST ...`
+- [ ] TTS CLI still works: `helium "Hello world"`
+- [ ] Server still works: `helium serve` then `curl -X POST ...`
 
 ## Notes
 
 - This is a pure refactor — zero behavior change, zero new features
-- The `ort/` package name is intentional: it's cattery's ORT abstraction, not a re-export of `yalue/onnxruntime_go`
+- The `ort/` package name is intentional: it's helium's ORT abstraction, not a re-export of `yalue/onnxruntime_go`
 - If the `ort` name causes import alias friction, `ortrt` is the fallback — but try `ort` first

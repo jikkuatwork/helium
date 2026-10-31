@@ -8,11 +8,11 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/preflight"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/stt"
-	"github.com/jikkuatwork/cattery/stt/moonshine"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/preflight"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/stt"
+	"github.com/jikkuatwork/helium/stt/moonshine"
 )
 
 type audioTranscriptionForm struct {

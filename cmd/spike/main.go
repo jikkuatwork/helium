@@ -18,9 +18,9 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/jikkuatwork/cattery/audio"
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/phonemize"
+	"github.com/jikkuatwork/helium/audio"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/phonemize"
 	ortgo "github.com/yalue/onnxruntime_go"
 )
 
@@ -73,7 +73,7 @@ func main() {
 	fmt.Printf("[TIMING] ORT init:          %v\n", time.Since(t0))
 
 	// --- Phonemization ---
-	text := "Hello, world. This is a test of the Cattery text to speech system."
+	text := "Hello, world. This is a test of the Helium text to speech system."
 	if len(os.Args) > 1 {
 		text = os.Args[1]
 	}

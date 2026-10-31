@@ -36,7 +36,7 @@ type Artefact struct {
 	URL       string
 }
 
-// Model describes a model or runtime entry available to cattery.
+// Model describes a model or runtime entry available to helium.
 type Model struct {
 	Index       int
 	ID          string

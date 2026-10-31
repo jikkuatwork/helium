@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/registry"
 )
 
 func TestParseSelectionArgs(t *testing.T) {
@@ -65,7 +65,7 @@ func TestWantsAdvancedHelpSupportsShortFlag(t *testing.T) {
 
 func TestDefaultUsageMentionsLLMWithoutAdvancedFlags(t *testing.T) {
 	output := captureStderr(t, printDefaultUsage)
-	if !strings.Contains(output, "cattery llm \"What is the capital of France?\"") {
+	if !strings.Contains(output, "helium llm \"What is the capital of France?\"") {
 		t.Fatalf("default help missing llm usage: %q", output)
 	}
 	if !strings.Contains(output, "llm         Local text generation") {

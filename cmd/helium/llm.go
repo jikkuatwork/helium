@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jikkuatwork/cattery/download"
-	"github.com/jikkuatwork/cattery/llm"
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/preflight"
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/download"
+	"github.com/jikkuatwork/helium/llm"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/preflight"
+	"github.com/jikkuatwork/helium/registry"
 )
 
 func cmdLLM(args []string) error {
@@ -61,7 +61,7 @@ func cmdLLM(args []string) error {
 			modelRef = args[i]
 		default:
 			if strings.HasPrefix(args[i], "--") {
-				return fmt.Errorf("unknown flag: %s\nRun 'cattery help' for usage", args[i])
+				return fmt.Errorf("unknown flag: %s\nRun 'helium help' for usage", args[i])
 			}
 			promptParts = append(promptParts, args[i])
 		}
@@ -74,7 +74,7 @@ func cmdLLM(args []string) error {
 
 	model := registry.Resolve(registry.KindLLM, modelRef)
 	if model == nil {
-		return fmt.Errorf("unknown LLM model %q\nRun 'cattery list llm' to see available models", modelRef)
+		return fmt.Errorf("unknown LLM model %q\nRun 'helium list llm' to see available models", modelRef)
 	}
 	if model.Location != registry.Local {
 		return fmt.Errorf("remote LLM model %q is not supported yet", model.ID)
@@ -133,14 +133,14 @@ func cmdLLM(args []string) error {
 func resolveLLMPrompt(parts []string, readFromStdin bool) (string, error) {
 	if readFromStdin {
 		if len(parts) > 0 {
-			return "", fmt.Errorf("prompt provided twice\nUsage: cattery llm [--system TEXT] [--stdin] [--output PATH] [--model REF] [--max-tokens N] \"prompt\"")
+			return "", fmt.Errorf("prompt provided twice\nUsage: helium llm [--system TEXT] [--stdin] [--output PATH] [--model REF] [--max-tokens N] \"prompt\"")
 		}
 		return readStdinText()
 	}
 
 	prompt := strings.TrimSpace(strings.Join(parts, " "))
 	if prompt == "" {
-		return "", fmt.Errorf("no prompt provided\nUsage: cattery llm [--system TEXT] [--stdin] [--output PATH] [--model REF] [--max-tokens N] \"prompt\"")
+		return "", fmt.Errorf("no prompt provided\nUsage: helium llm [--system TEXT] [--stdin] [--output PATH] [--model REF] [--max-tokens N] \"prompt\"")
 	}
 	return prompt, nil
 }

@@ -49,7 +49,7 @@ synthesis should use the same memory as a 10-second one.
 - 2026-03-22: plan 28 landed. TTS now streams chunk audio through
   `audio.WAVWriter`; seekable outputs patch the WAV header in place, while
   stdout, pipes, and `bytes.Buffer` use a temp-file fallback.
-- 2026-03-22: `cmd/cattery`'s `countingWriter` now forwards `Seek(...)` when
+- 2026-03-22: `cmd/helium`'s `countingWriter` now forwards `Seek(...)` when
   possible and tracks logical output size correctly, so CLI duration / RTF
   reporting stays accurate on the seekable path.
 - 2026-03-22: plan 29 landed. Moonshine now streams PCM decode and linear
@@ -58,7 +58,7 @@ synthesis should use the same memory as a 10-second one.
   only overlap + unread tail while tracking duration from decoded source
   samples.
 - 2026-03-22: plan 30 landed. `preflight` now resolves chunk size from
-  `--chunk-size`, `CATTERY_CHUNK_SIZE`, or RAM-based auto mode; Moonshine
+  `--chunk-size`, `HELIUM_CHUNK_SIZE`, or RAM-based auto mode; Moonshine
   consumes the resolved duration; Kokoro accepts it as a no-op for interface
   symmetry; low-memory speak no longer hard-rejects; and TTS/STT entrypoints
   normalize OOM-style failures into clean single-line errors.
@@ -116,7 +116,7 @@ Rather than a single hardcoded chunk size, select based on available memory:
 - **Default (auto)**: detect available RAM at startup. Pick the largest chunk
   size that keeps peak RSS under 50% of available memory. Floor at 10s
   (model minimum), ceiling at 60s (quality ceiling for Moonshine).
-- **Explicit override**: `--chunk-size 30s` or `CATTERY_CHUNK_SIZE=30` for
+- **Explicit override**: `--chunk-size 30s` or `HELIUM_CHUNK_SIZE=30` for
   users who know their constraints.
 - **Pi4 profile**: if auto-detect sees ≤2GB available, default to 15-20s
   chunks. This keeps TTS peak under ~350MB and STT under ~200MB, leaving
@@ -130,7 +130,7 @@ for OS page cache, espeak-ng subprocess, and the WAV buffer.
 ### Configurable via
 
 - CLI flag: `--chunk-size DURATION` (applies to both speak and listen)
-- Env var: `CATTERY_CHUNK_SIZE`
+- Env var: `HELIUM_CHUNK_SIZE`
 - Server config: chunk size in server.Config
 - Default: auto-detect
 
@@ -181,7 +181,7 @@ The Pi4 constraint (4GB, 4-core A72) sets the floor, not the ceiling:
 - **Edit**: `listen/moonshine/moonshine.go` — windowed PCM reading
 - **Edit**: `listen/moonshine/chunk.go` — sliding-window chunk planner
 - **Create**: `membudget/` or `preflight/memory.go` — RAM detection + chunk size selection
-- **Edit**: `cmd/cattery/main.go` — `--chunk-size` flag
+- **Edit**: `cmd/helium/main.go` — `--chunk-size` flag
 - **Edit**: `server/server.go` — chunk size in config
 
 ## Notes

@@ -7,7 +7,7 @@
 
 ## Problem
 
-Kokoro-82M has a hard 510-token positional encoding limit. ~200-300 characters of English text fills this window. Longer text silently fails or produces garbage. Users expect `cattery speak` to handle arbitrary-length input.
+Kokoro-82M has a hard 510-token positional encoding limit. ~200-300 characters of English text fills this window. Longer text silently fails or produces garbage. Users expect `helium speak` to handle arbitrary-length input.
 
 Every production TTS system (OpenAI, ElevenLabs, Google) chunks internally — the model limit is an implementation detail, not a user-facing constraint.
 
@@ -58,7 +58,7 @@ Each chunk gets its own style vector lookup based on its token count. This is co
 
 ## Acceptance criteria
 
-- [ ] `cattery speak "very long paragraph..."` works for 1000+ character input
+- [ ] `helium speak "very long paragraph..."` works for 1000+ character input
 - [ ] Sentence boundaries produce natural pauses
 - [ ] Short text (under 510 tokens) is unchanged — no regression
 - [ ] Chunk boundaries don't cut words mid-phoneme

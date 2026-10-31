@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jikkuatwork/cattery/stt"
+	"github.com/jikkuatwork/helium/stt"
 )
 
 func TestAudioTranscriptionsJSON(t *testing.T) {

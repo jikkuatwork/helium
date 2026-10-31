@@ -5,7 +5,7 @@
 
 ## Goal
 
-Verify cattery builds and runs on linux/mac/win x amd64/arm64. Audit final binary + model size against 50MB target.
+Verify helium builds and runs on linux/mac/win x amd64/arm64. Audit final binary + model size against 50MB target.
 
 ## Acceptance criteria
 

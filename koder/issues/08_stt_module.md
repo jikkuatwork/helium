@@ -3,7 +3,7 @@
 ## Status: open (spike proven)
 ## Priority: P2
 
-Explore adding a small STT module to cattery, same philosophy: pure Go, ONNX Runtime, no cgo beyond ORT dlopen.
+Explore adding a small STT module to helium, same philosophy: pure Go, ONNX Runtime, no cgo beyond ORT dlopen.
 
 ## Spike Results (2026-03-22)
 

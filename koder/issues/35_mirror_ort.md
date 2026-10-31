@@ -7,7 +7,7 @@
 ORT runtime was the last artefact fetched from an external source (Microsoft
 GitHub Releases). Mirror the platform `.tgz` files into `cattery-artefacts`,
 register them in `mirror.json`, and update `downloadORT()` to use mirrors with
-Microsoft as fallback. This gives cattery 100% artefact independence.
+Microsoft as fallback. This gives helium 100% artefact independence.
 
 ## What Was Done
 
@@ -17,7 +17,7 @@ Microsoft as fallback. This gives cattery 100% artefact independence.
 - Stored under `ort/v1.24.4/` (Git LFS)
 - Added entries to `mirror.json` with size, SHA256, and GitHub raw URL
 
-### cattery repo
+### helium repo
 
 - Rewrote `downloadORT()` in `download/download.go` to use `LookupRaw()` +
   `downloadWithBar()` — same pattern as espeak
@@ -29,7 +29,7 @@ Microsoft as fallback. This gives cattery 100% artefact independence.
 
 ## Acceptance — all met
 
-- `cattery download` fetches ORT from cattery-artefacts mirror first
+- `helium download` fetches ORT from cattery-artefacts mirror first
 - If mirror is down, falls back to Microsoft
-- `cattery status` shows ORT as present after download
+- `helium status` shows ORT as present after download
 - No change to binary size or CLI interface

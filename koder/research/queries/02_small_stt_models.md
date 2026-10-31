@@ -2,7 +2,7 @@
 
 ## Context
 
-Cattery is a Go TTS library that packages Kokoro-82M (92MB ONNX model) for
+Helium is a Go TTS library that packages Kokoro-82M (92MB ONNX model) for
 local text-to-speech. It uses ONNX Runtime via dlopen, downloads model files on
 first run, and targets a single-binary experience with ~8MB binary + ~120MB
 downloaded artefacts. The only system dependency is espeak-ng.

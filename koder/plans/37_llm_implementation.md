@@ -5,7 +5,7 @@
 ## Goal
 
 Turn the completed LLM spikes into a production `llm/` modality that matches
-the existing cattery shape:
+the existing helium shape:
 
 - local-only, zero-config-by-default UX
 - registry + downloader managed artefacts
@@ -42,23 +42,23 @@ llm/
 
 ## Current anchors
 
-- [`registry/registry.go`](/home/glasscube/Projects/cattery/registry/registry.go)
+- [`registry/registry.go`](/home/glasscube/Projects/helium/registry/registry.go)
   already contains a `KindLLM` registry entry for `qwen3.5-4b-v1.0` with the
   text-only q4 artefacts and metadata discovered in plan 36.
-- [`tts/kokoro/kokoro.go`](/home/glasscube/Projects/cattery/tts/kokoro/kokoro.go)
+- [`tts/kokoro/kokoro.go`](/home/glasscube/Projects/helium/tts/kokoro/kokoro.go)
   shows the preferred constructor shape: resolve model files, ensure ORT is
   initialized, create sessions, expose a narrow engine interface, and keep
   `Close()` explicit.
-- [`stt/moonshine/moonshine.go`](/home/glasscube/Projects/cattery/stt/moonshine/moonshine.go)
-  and [`stt/moonshine/decoder.go`](/home/glasscube/Projects/cattery/stt/moonshine/decoder.go)
+- [`stt/moonshine/moonshine.go`](/home/glasscube/Projects/helium/stt/moonshine/moonshine.go)
+  and [`stt/moonshine/decoder.go`](/home/glasscube/Projects/helium/stt/moonshine/decoder.go)
   show the current pattern for model metadata parsing, dynamic sessions, cache
   tensors, and strict `Destroy()` discipline.
-- [`server/pool.go`](/home/glasscube/Projects/cattery/server/pool.go) already
+- [`server/pool.go`](/home/glasscube/Projects/helium/server/pool.go) already
   provides the lazy-creation / idle-eviction pool needed for LLM lifecycle.
-- [`server/server.go`](/home/glasscube/Projects/cattery/server/server.go)
+- [`server/server.go`](/home/glasscube/Projects/helium/server/server.go)
   already contains the integration seam for a third modality plus the shared
   ORT lifetime boundary.
-- [`cmd/cattery/main.go`](/home/glasscube/Projects/cattery/cmd/cattery/main.go)
+- [`cmd/helium/main.go`](/home/glasscube/Projects/helium/cmd/helium/main.go)
   already has the command dispatch and `--advanced` help split that issue `#13`
   should follow.
 
@@ -158,17 +158,17 @@ issue `#31`.
 
 ### Scope
 
-- Add `cattery llm "prompt"` as a new top-level command.
+- Add `helium llm "prompt"` as a new top-level command.
 - Support:
   - `--system`
   - `--stdin`
   - `--max-tokens`
   - `--temperature`
 - Keep simple mode narrow:
-  - `cattery llm "What is the capital of France?"`
-  - `cattery llm --stdin < prompt.txt`
-  - `cattery llm --system "You are helpful" "Hi"`
-- Put advanced knobs behind `cattery help --advanced`, matching the existing
+  - `helium llm "What is the capital of France?"`
+  - `helium llm --stdin < prompt.txt`
+  - `helium llm --system "You are helpful" "Hi"`
+- Put advanced knobs behind `helium help --advanced`, matching the existing
   help split:
   - `--model`
   - `--max-tokens`
@@ -184,19 +184,19 @@ issue `#31`.
 
 ### Files to change
 
-- **Edit**: `cmd/cattery/main.go` — register `llm`, parse flags, update help
-- **Create**: `cmd/cattery/llm.go` — command implementation
-- **Edit**: `cmd/cattery/main_test.go` — command/help coverage
+- **Edit**: `cmd/helium/main.go` — register `llm`, parse flags, update help
+- **Create**: `cmd/helium/llm.go` — command implementation
+- **Edit**: `cmd/helium/main_test.go` — command/help coverage
 - **Create or edit**: focused CLI tests for prompt resolution and flag parsing
 
 ### Acceptance criteria
 
-- `cattery llm "hello"` downloads the default local LLM model if needed and
+- `helium llm "hello"` downloads the default local LLM model if needed and
   prints generated text to stdout.
-- `cattery llm --stdin` reads from stdin without forcing an extra positional
+- `helium llm --stdin` reads from stdin without forcing an extra positional
   argument.
-- `cattery help` mentions `llm` in the default command list.
-- `cattery help --advanced` shows `--model`, `--temperature`, and
+- `helium help` mentions `llm` in the default command list.
+- `helium help --advanced` shows `--model`, `--temperature`, and
   `--max-tokens` for the LLM command without cluttering default help.
 - Invalid prompts, unknown model refs, and OOM-like failures return one-line
   CLI errors consistent with current command behavior.
@@ -248,7 +248,7 @@ architecture and exposes an OpenAI-compatible chat completions endpoint.
 - **Create**: `server/llm.go` — request/response types and handlers
 - **Edit**: `server/pool.go` — only if a small helper is needed for explicit
   pre-borrow eviction without abusing `Shutdown()`
-- **Edit**: `cmd/cattery/main.go` — serve help text if new LLM server flags are
+- **Edit**: `cmd/helium/main.go` — serve help text if new LLM server flags are
   surfaced
 - **Create or edit**: `server/*_test.go` — route, auth, and JSON behavior tests
 
@@ -349,7 +349,7 @@ both the 0.8B and 4B models require it.
 ## Definition of done for issue #13
 
 - A production `llm/` package exists under `llm/qwen`.
-- `cattery llm` works end to end with the default local Qwen model.
+- `helium llm` works end to end with the default local Qwen model.
 - The server exposes `POST /v1/chat/completions` with optional SSE streaming.
 - Engine swapping is explicit enough that Pi4 4GB remains a credible target
   floor for sequential STT -> LLM -> TTS use.

@@ -205,7 +205,7 @@ Pool sizing — TTS and STT have different footprints:
 - STT: ~20MB, fast inference → default 1 worker
 
 ```
-cattery serve --speak-workers 2 --listen-workers 1
+helium serve --speak-workers 2 --listen-workers 1
 ```
 
 ### Shared ORT lifecycle
@@ -237,7 +237,7 @@ type Config struct {
 - **Edit**: `server/server.go` — restructure for multi-modality, index-based request handling
 - **Create**: `server/pool.go` — generic or per-type engine pool
 - **Create**: `server/listen.go` — `/v1/listen` handler
-- **Edit**: `cmd/cattery/main.go` — update serve flags
+- **Edit**: `cmd/helium/main.go` — update serve flags
 
 ## Acceptance criteria
 

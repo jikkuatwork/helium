@@ -1,4 +1,4 @@
-# Cattery — Profiling & Platform Details
+# Helium — Profiling & Platform Details
 
 Benchmarked 2026-03-22 on a 6-core ARM64 VM (16GB RAM), post-#27 bounded-memory
 streaming. All numbers are from cold-start runs (no engine pre-warming).
@@ -82,7 +82,7 @@ other platforms. The auto-selected chunk size is:
  | > 8 GB        | 60s        | Fewer boundary artifacts           |
  | Unknown       | 30s        | macOS, Windows/WSL fallback        |
 
-Override with `--chunk-size 15s` or `CATTERY_CHUNK_SIZE=15`.
+Override with `--chunk-size 15s` or `HELIUM_CHUNK_SIZE=15`.
 
 ## Device Estimates
 
@@ -122,7 +122,7 @@ of more boundary artifacts.
 Both models load (~180-190 MB base) but inference headroom is very tight.
 
 - **STT with `--chunk-size 10s`**: should complete short clips. Long clips
-  may OOM — cattery will print a clean error, not a stack trace.
+  may OOM — helium will print a clean error, not a stack trace.
 - **TTS**: unlikely to complete multi-chunk synthesis. Single-chunk (< 15s
   text) may work.
 - This tier exists for "delightful to see it work" — not production use.
@@ -165,21 +165,21 @@ and `malloc_trim` call. The download infrastructure already recognizes
  | Dependency   | Required       | Bundled                                               |
  | ---          | ---            | ---                                                   |
  | espeak-ng    | Yes (TTS only) | No — `apt install espeak-ng` or `brew install espeak` |
- | ONNX Runtime | Yes            | Auto-downloaded to ~/.cattery/                        |
- | Model files  | Yes            | Auto-downloaded to ~/.cattery/                        |
+ | ONNX Runtime | Yes            | Auto-downloaded to ~/.helium/                        |
+ | Model files  | Yes            | Auto-downloaded to ~/.helium/                        |
 
 Issue #22 tracks bundling espeak-ng to achieve zero system dependencies.
 
 ## Performance Tuning Tips
 
-**Reduce memory**: `--chunk-size 10s` or `CATTERY_CHUNK_SIZE=10`. Smaller
+**Reduce memory**: `--chunk-size 10s` or `HELIUM_CHUNK_SIZE=10`. Smaller
 chunks = more boundary artifacts but lower peak RSS. Mainly affects STT.
 
-**Reduce latency**: `cattery serve --keep-alive` pre-warms engines and skips
+**Reduce latency**: `helium serve --keep-alive` pre-warms engines and skips
 cold start on first request. `--idle-timeout 300` keeps engines loaded between
 requests.
 
-**Multiple workers**: `cattery serve -w 2 --listen-workers 2` runs two TTS and
+**Multiple workers**: `helium serve -w 2 --listen-workers 2` runs two TTS and
 two STT engines in parallel. Each TTS engine adds ~300 MB peak; each STT
 engine adds ~200 MB peak.
 

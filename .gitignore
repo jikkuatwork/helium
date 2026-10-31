@@ -3,7 +3,7 @@ models-data/
 /spike
 /spike-llm
 /stt-spike
-/cattery
+/helium
 tmp/
 .codex/settings.local.json
 .env

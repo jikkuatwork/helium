@@ -1,12 +1,12 @@
-# Cattery — Go TTS Library
+# Helium — Go TTS Library
 
 ## Overview
 
 Text-to-speech in Go. No Python. Tiny binary (~8MB). ONNX Runtime, model, and voice files auto-download on first run; `espeak-ng` remains a system dependency.
 
 ```
-go install github.com/jikkuatwork/cattery/cmd/cattery@latest
-cattery "Hello, world."
+go install github.com/jikkuatwork/helium/cmd/helium@latest
+helium "Hello, world."
 ```
 
 ## Stack
@@ -20,9 +20,9 @@ cattery "Hello, world."
 ## Architecture
 
 ```
-cattery/
+helium/
 ├── cmd/
-│   ├── cattery/       # CLI
+│   ├── helium/       # CLI
 │   └── spike/         # Original spike (reference, has timing)
 ├── tts/               # TTS engine interface + Kokoro implementation
 ├── stt/               # STT engine interface + Moonshine implementation
@@ -33,7 +33,7 @@ cattery/
 ├── server/            # REST API server with lazy engine pool
 ├── preflight/         # System readiness checks (RAM, deps)
 ├── registry/          # Model/voice metadata registry
-├── paths/             # Data directory resolution (~/.cattery/)
+├── paths/             # Data directory resolution (~/.helium/)
 ├── scripts/           # Helper scripts, benchmarks
 └── koder/             # Project tracking
 ```
@@ -41,20 +41,20 @@ cattery/
 ## CLI Commands
 
 ```
-cattery "Hello, world."          # TTS with random voice
-cattery tts --voice bella "Hi"   # pick voice by name
-cattery tts --female "Hello"     # random female voice
-cattery tts --speed 1.5 -o out.wav
-cattery stt recording.wav        # transcribe audio
-cattery llm "What is the capital of France?"  # local LLM
-cattery llm --system "You are helpful" "Hi"
-cattery status                   # platform, models, disk usage
-cattery download                 # pre-fetch model + all voices
-cattery serve                    # REST API on :7100
-cattery serve --port 8080 -w 2   # custom TTS workers
-cattery serve --stt-workers 2    # custom STT workers
-cattery serve --auth             # require API keys
-cattery help --advanced          # full flag/command reference
+helium "Hello, world."          # TTS with random voice
+helium tts --voice bella "Hi"   # pick voice by name
+helium tts --female "Hello"     # random female voice
+helium tts --speed 1.5 -o out.wav
+helium stt recording.wav        # transcribe audio
+helium llm "What is the capital of France?"  # local LLM
+helium llm --system "You are helpful" "Hi"
+helium status                   # platform, models, disk usage
+helium download                 # pre-fetch model + all voices
+helium serve                    # REST API on :7100
+helium serve --port 8080 -w 2   # custom TTS workers
+helium serve --stt-workers 2    # custom STT workers
+helium serve --auth             # require API keys
+helium help --advanced          # full flag/command reference
 ```
 
 ## Downloads (no auth, stable URLs)
@@ -66,7 +66,7 @@ cattery help --advanced          # full flag/command reference
 | LLM model (Qwen3.5-4B q4) | `jikkuatwork/cattery-artefacts` (Git LFS) | ~2.91 GiB |
 | ORT runtime | Microsoft GitHub Releases | 18MB |
 
-Registry currently includes 27 voices. Downloaded artefacts are cached in `~/.cattery/`; `espeak-ng` is not bundled.
+Registry currently includes 27 voices. Downloaded artefacts are cached in `~/.helium/`; `espeak-ng` is not bundled.
 
 ## Performance (aarch64 VM, 6-core)
 
@@ -128,7 +128,7 @@ All artefacts (ORT, models, voices, espeak) now self-hosted in `cattery-artefact
 
 ### Open
 
-- **#12 LLM proxy** — unified AI backend (`cattery think`); may merge with #13's server endpoint
+- **#12 LLM proxy** — unified AI backend (`helium think`); may merge with #13's server endpoint
 - **#07** License compliance follow-through (now includes Qwen3.5 Apache-2.0)
 - **#33** Enable GH Actions PR permission (one-time repo setting, P3)
 - **#36** Serve `--memory` semantics — decide if co-residency hint is the right abstraction (P3)
@@ -139,18 +139,19 @@ All artefacts (ORT, models, voices, espeak) now self-hosted in `cattery-artefact
 
 ## Key Decisions Made
 
-- **Zero external dependencies (non-negotiable)**: The entire system — code, models, voices, runtime, phonemizer — lives exclusively in `cattery` and `cattery-artefacts`. No download, fetch, or network call may target any host outside these two repos. Future CDN mirrors are fine *only* if they serve copies of assets already in `cattery-artefacts`; the GitHub raw URL for `cattery-artefacts` must always remain a working fallback. Any change that introduces a third-party download dependency violates this constraint and must not be merged.
+- **Renamed cattery → helium (2026-10-31)**: module `github.com/jikkuatwork/helium`, binary `helium` (`cmd/helium`), data dir `~/.helium`, env var `HELIUM_CHUNK_SIZE`. The artefacts repo was deliberately **not** renamed — `cattery-artefacts` URLs (code + its `mirror.json`) stay as-is so existing binaries and mirrors keep working. Older koder docs were rewritten to the new name; git history before this date has the old one.
+- **Zero external dependencies (non-negotiable)**: The entire system — code, models, voices, runtime, phonemizer — lives exclusively in `helium` and `cattery-artefacts`. No download, fetch, or network call may target any host outside these two repos. Future CDN mirrors are fine *only* if they serve copies of assets already in `cattery-artefacts`; the GitHub raw URL for `cattery-artefacts` must always remain a working fallback. Any change that introduces a third-party download dependency violates this constraint and must not be merged.
 - **No pure Go ONNX**: GoMLX/gonnx lack FFT/ISTFT ops. ORT via dlopen is the only path.
 - **Download on first run**: binary stays ~8MB, while ORT/model/voice artefacts are fetched as needed. `espeak-ng` stays external.
 - **Separate artefacts repo**: `cattery-artefacts` holds binaries via Git LFS. No auth. All models (TTS + STT) self-hosted — no HuggingFace dependency.
-- **Artefacts path = repo layout**: model cache lives at `~/.cattery/artefacts/models/`, matching the `cattery-artefacts` repo tree. `git clone cattery-artefacts ~/.cattery/artefacts` gives instant offline — no downloads needed.
+- **Artefacts path = repo layout**: model cache lives at `~/.helium/artefacts/models/`, matching the `cattery-artefacts` repo tree. `git clone cattery-artefacts ~/.helium/artefacts` gives instant offline — no downloads needed.
 - **mirror.json**: `cattery-artefacts/mirror.json` lists every artefact with size, SHA256, and ordered mirror URLs. Downloaded once per process; graceful fallback if unavailable. Mirrors support a `"default": true` flag to prefer S3/R2 over GitHub without changing array order. Adding a mirror is a one-line JSON edit, no code release.
 - **ORT mirrored in cattery-artefacts**: ORT v1.24.4 `.tgz` files for linux-x64, linux-aarch64, macOS-arm64 live in `ort/v1.24.4/` (Git LFS). `downloadORT()` uses `LookupRaw` + `downloadWithBar` — same pattern as espeak. No Microsoft fallback — mirror.json is the sole source. A CDN default mirror will be added later; GitHub becomes the fallback at that point. Linux amd64 asset uses `x64` (not `x86_64`) in filename; macOS ships arm64-only since ORT 1.20+; arch mapping is per-OS in `download/download.go`.
-- **`scripts/install.sh`**: builds `./cmd/cattery` and drops it into `$HOME/.local/bin` (overrideable via `INSTALL_DIR`). Run after every local build.
+- **`scripts/install.sh`**: builds `./cmd/helium` and drops it into `$HOME/.local/bin` (overrideable via `INSTALL_DIR`). Run after every local build.
 - **espeak-ng via os/exec**: simplest phonemizer. WASM embed deferred.
 - **Random voice by default**: no voice flag = random pick; `--male`/`--female` to filter.
 - **Full voice set by default**: voice files are small (~510KB each), so the UX is optimized around fetching the whole set rather than micromanaging individual voices.
-- **~/.cattery/ for data**: simple default for current platforms.
+- **~/.helium/ for data**: simple default for current platforms.
 - **ORT stderr suppressed**: redirect fd during init to hide C-level warnings.
 - **WAV bytes, not base64**: REST API returns raw WAV with Content-Type: audio/wav. 33% smaller than base64.
 - **Streaming WAV output**: TTS now writes PCM16 chunk-by-chunk. Seekable
@@ -161,11 +162,11 @@ All artefacts (ORT, models, voices, espeak) now self-hosted in `cattery-artefact
 - **Preflight package**: checks RAM, espeak-ng, model files, and ORT
   presence; chunk-size resolution and low-memory warnings now live there too.
 - **Shared chunk-size policy**: `preflight` now owns RAM probing plus
-  `CATTERY_CHUNK_SIZE` / `--chunk-size` resolution with precedence
+  `HELIUM_CHUNK_SIZE` / `--chunk-size` resolution with precedence
   `explicit > env > auto`, a conservative `10s..60s` RAM lookup table, and a
   once-per-process low-memory warning at `<= 512 MB`.
-- **Module path**: `github.com/jikkuatwork/cattery` — matches repo URL for `go get`.
-- **Project license**: `cattery` code is Apache-2.0; packaged releases should
+- **Module path**: `github.com/jikkuatwork/helium` — matches repo URL for `go get`.
+- **Project license**: `helium` code is Apache-2.0; packaged releases should
   carry `LICENSE`, `NOTICE`, and `THIRD_PARTY_NOTICES.md`.
 - **License audit documented**: current third-party licensing and distribution obligations are recorded in `THIRD_PARTY_NOTICES.md`.
 - **STT model: Moonshine-tiny**: 27MB quantized ONNX, raw 16kHz PCM input (no mel spectrograms), 28x real-time on CPU, shares ORT instance with TTS. Community ONNX export from onnx-community/moonshine-tiny-ONNX. Weight license unclear — needs clarification before distribution.
@@ -185,12 +186,12 @@ All artefacts (ORT, models, voices, espeak) now self-hosted in `cattery-artefact
   still chunks by token budget in this pass.
 - **Multi-modal package naming**: packages = modality abbreviations = API paths. `tts/` (text-to-speech), `stt/` (speech-to-text), future `llm/` (language model). Each has an `Engine` interface + per-model subdirectories (e.g. `tts/kokoro/`, `stt/moonshine/`). Default CLI/help shows one model per modality; `--advanced` reveals multi-model plumbing.
 - **Pi4 viability confirmed**: TTS+STT hot = ~250MB RAM, 2-4s round-trip for voice message bot. Comfortable on Pi4 4GB.
-- **espeak-ng via download-on-first-run**: pre-built static espeak-ng binaries + data live in `cattery-artefacts/espeak-ng-v1.51/` (Git LFS), registered in `mirror.json`. Downloaded on first use like ORT and models, extracted to `~/.cattery/espeak-ng/`. Original `go:embed` approach dropped — espeak is a runtime dependency like all other artefacts, not worth +11MB binary bloat. GH Actions workflow `build-espeak.yml` (manual trigger) builds binaries on native runners. Legal basis: mere aggregation (GPL-3.0 data extracted to disk, consumed via `os/exec`). Pure Go phonemizer alternatives (goruut) rejected — Kokoro's IPA vocab is trained on espeak-ng output, mismatch risk too high.
-- **Remote models are just models**: no `--remote` flag. OpenAI engines are registered models (`openai-tts-1`, `openai-whisper-1`) selected via `--model`. Remote models only appear in `cattery list` when `OPENAI_API_KEY` is set. Default is always local — no accidental API spend. `OPENAI_BASE_URL` supports OpenRouter, Ollama, Azure. No SDK — pure `net/http`.
+- **espeak-ng via download-on-first-run**: pre-built static espeak-ng binaries + data live in `cattery-artefacts/espeak-ng-v1.51/` (Git LFS), registered in `mirror.json`. Downloaded on first use like ORT and models, extracted to `~/.helium/espeak-ng/`. Original `go:embed` approach dropped — espeak is a runtime dependency like all other artefacts, not worth +11MB binary bloat. GH Actions workflow `build-espeak.yml` (manual trigger) builds binaries on native runners. Legal basis: mere aggregation (GPL-3.0 data extracted to disk, consumed via `os/exec`). Pure Go phonemizer alternatives (goruut) rejected — Kokoro's IPA vocab is trained on espeak-ng output, mismatch risk too high.
+- **Remote models are just models**: no `--remote` flag. OpenAI engines are registered models (`openai-tts-1`, `openai-whisper-1`) selected via `--model`. Remote models only appear in `helium list` when `OPENAI_API_KEY` is set. Default is always local — no accidental API spend. `OPENAI_BASE_URL` supports OpenRouter, Ollama, Azure. No SDK — pure `net/http`.
 - **Dual-mode operation**: local models (Pi4, offline, free) OR remote APIs (zero download, higher quality, paid). Same CLI, same server, same `speak.Engine`/`listen.Engine` interface.
 - **Numeric indices everywhere**: models and voices addressed by stable per-kind numeric index in CLI (`--voice 4 --model 1`). Slugs exist but are never required input. API responses always include both index and slug. Indices are 1-based, stable, never reassigned.
-- **Server auth is opt-in**: `--auth` flag enables Bearer token auth with `~/.cattery/keys.json`. Off by default — zero overhead. Keys are `cat_`-prefixed, SHA-256 hashed at rest, managed via `cattery keys create/list/revoke/delete`. Per-key rate limiting (fixed-window, in-memory). `/v1/status` always public. Hot-reloads keys on file change.
-- **Pure local focus (2026-03)**: remote engine support (#23) deferred. Cattery stays local-only for now. Auth, rate limiting, and API design assume local inference.
+- **Server auth is opt-in**: `--auth` flag enables Bearer token auth with `~/.helium/keys.json`. Off by default — zero overhead. Keys are `cat_`-prefixed, SHA-256 hashed at rest, managed via `helium keys create/list/revoke/delete`. Per-key rate limiting (fixed-window, in-memory). `/v1/status` always public. Hot-reloads keys on file change.
+- **Pure local focus (2026-03)**: remote engine support (#23) deferred. Helium stays local-only for now. Auth, rate limiting, and API design assume local inference.
 - **LLM model: Qwen3.5-4B int4**: selected March 2026 after evaluating Qwen3.5 (0.8B/2B/4B), Qwen3, Phi-4-mini, Llama 3.2, Gemma 3. Dense architecture, Apache 2.0, ~2.5-3GB RAM. ONNX export exists at `onnx-community/Qwen3.5-4B-ONNX` (~2.91 GiB text-only q4). Uses ONNX Runtime (not llama.cpp) to avoid second inference engine.
 - **LLM engine swapping**: Pi4 4GB target. Only one heavy engine loaded at a time — pool eviction + malloc_trim between STT → LLM → TTS phases. ~1.4s swap cost per transition. Estimated round-trip ~8-12s on Pi4. `--memory SIZE` flag on serve allows co-residency when budget permits; semantics are still open (#36).
 - **CLI uniformity (2026-03)**: All three modality verbs (`tts`, `stt`, `llm`) share consistent flag patterns: `--model`, `--output -o`, `--chunk-size` (where applicable), proper `missing value for --flag` errors, and a stderr summary line (`target | model, metric, elapsed`). Serve no longer accepts model flags — it always uses registry defaults; requests specify model via the API body.

@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jikkuatwork/cattery/llm"
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/llm"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/registry"
 	ortgo "github.com/yalue/onnxruntime_go"
 )
 

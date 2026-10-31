@@ -2,7 +2,7 @@
 
 // Package memtest contains RSS-based memory regression tests for issue #27.
 //
-// These tests require downloaded model files (~/.cattery/) and are excluded
+// These tests require downloaded model files (~/.helium/) and are excluded
 // from normal `go test ./...` runs. To execute:
 //
 //	go test -tags memtest ./memtest/ -v
@@ -36,13 +36,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/stt"
-	"github.com/jikkuatwork/cattery/stt/moonshine"
-	"github.com/jikkuatwork/cattery/tts"
-	"github.com/jikkuatwork/cattery/tts/kokoro"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/stt"
+	"github.com/jikkuatwork/helium/stt/moonshine"
+	"github.com/jikkuatwork/helium/tts"
+	"github.com/jikkuatwork/helium/tts/kokoro"
 )
 
 const (
@@ -88,7 +88,7 @@ const longText = "The history of computing spans several centuries of ingenuity 
 func TestMain(m *testing.M) {
 	ortLib := findORTLib()
 	if ortLib == "" {
-		fmt.Fprintln(os.Stderr, "memtest: ORT library not found in ~/.cattery/ort — run 'cattery download' first; skipping all tests")
+		fmt.Fprintln(os.Stderr, "memtest: ORT library not found in ~/.helium/ort — run 'helium download' first; skipping all tests")
 		os.Exit(0)
 	}
 	if err := ort.Init(ortLib); err != nil {
@@ -173,7 +173,7 @@ func runTTS(t *testing.T, text string) int64 {
 	}
 	modelPath := paths.ModelFile(dataDir, model.ID, modelFile.Filename)
 	if _, err := os.Stat(modelPath); err != nil {
-		t.Skipf("TTS model not found at %s — run 'cattery download'", modelPath)
+		t.Skipf("TTS model not found at %s — run 'helium download'", modelPath)
 	}
 
 	eng, err := kokoro.New(modelPath, dataDir)
@@ -214,7 +214,7 @@ func runSTT(t *testing.T, durationSec int) int64 {
 	dataDir := paths.DataDir()
 	modelDir := paths.ModelDir(dataDir, model.ID)
 	if _, err := os.Stat(modelDir); err != nil {
-		t.Skipf("STT model not found at %s — run 'cattery download'", modelDir)
+		t.Skipf("STT model not found at %s — run 'helium download'", modelDir)
 	}
 
 	eng, err := moonshine.New(modelDir, model.Meta)
@@ -258,7 +258,7 @@ func firstAvailableVoice(t *testing.T, voices []tts.Voice, dataDir, modelID stri
 			return v.ID
 		}
 	}
-	t.Skip("no voice files found in ~/.cattery — run 'cattery download'")
+	t.Skip("no voice files found in ~/.helium — run 'helium download'")
 	return ""
 }
 
@@ -357,7 +357,7 @@ func syntheticWAV(durationSec, sampleRate int) io.Reader {
 	return pr
 }
 
-// findORTLib returns the path to the ORT shared library in ~/.cattery/ort/,
+// findORTLib returns the path to the ORT shared library in ~/.helium/ort/,
 // or empty string if not found.
 func findORTLib() string {
 	dir := paths.ORTLib(paths.DataDir())

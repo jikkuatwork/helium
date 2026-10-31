@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jikkuatwork/cattery/ort"
+	"github.com/jikkuatwork/helium/ort"
 	ortgo "github.com/yalue/onnxruntime_go"
 )
 
@@ -35,7 +35,7 @@ func main() {
 		fatalf("ensure files: %v", err)
 	}
 
-	ortLib := filepath.Join(os.Getenv("HOME"), ".cattery", "ort", "libonnxruntime.so.1.24.4")
+	ortLib := filepath.Join(os.Getenv("HOME"), ".helium", "ort", "libonnxruntime.so.1.24.4")
 	if _, err := os.Stat(ortLib); err != nil {
 		fatalf("missing ORT shared library at %s: %v", ortLib, err)
 	}

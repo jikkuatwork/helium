@@ -7,24 +7,24 @@
 
 ## Problem
 
-The current CLI is TTS-only. Bare `cattery "text"` synthesizes speech. Subcommands are management-only (`serve`, `list`, `status`, `download`). With STT arriving, the CLI needs a coherent verb structure that scales to more modalities without becoming inconsistent.
+The current CLI is TTS-only. Bare `helium "text"` synthesizes speech. Subcommands are management-only (`serve`, `list`, `status`, `download`). With STT arriving, the CLI needs a coherent verb structure that scales to more modalities without becoming inconsistent.
 
 ## Goal
 
-Design a CLI where each modality is a verb: `cattery speak`, `cattery listen`. Management commands stay top-level. Bare `cattery "text"` remains a shortcut for `cattery speak "text"` (backwards compat, PoLS). All models and voices are addressed by numeric index — fast to type, no slugs to memorize.
+Design a CLI where each modality is a verb: `helium speak`, `helium listen`. Management commands stay top-level. Bare `helium "text"` remains a shortcut for `helium speak "text"` (backwards compat, PoLS). All models and voices are addressed by numeric index — fast to type, no slugs to memorize.
 
 ## Core design principle: numeric indices everywhere
 
 Models and voices are identified by **stable numeric index** in the CLI. Slugs exist but are internal — they appear in JSON API responses and registry data, never as required CLI input.
 
 ```
-cattery speak --model 1 --voice 4 "Hello"
-cattery listen --model 1 audio.wav
+helium speak --model 1 --voice 4 "Hello"
+helium listen --model 1 audio.wav
 ```
 
 Not:
 ```
-cattery speak --model kokoro-82m-v1.0 --voice af_bella "Hello"  # too long
+helium speak --model kokoro-82m-v1.0 --voice af_bella "Hello"  # too long
 ```
 
 Indices are assigned per-kind: TTS models are numbered 1, 2, 3...; STT models separately 1, 2, 3...; voices within a model are numbered 1, 2, 3...
@@ -36,31 +36,31 @@ Indices are assigned per-kind: TTS models are numbered 1, 2, 3...; STT models se
 ### Command structure
 
 ```
-cattery speak "Hello world"              # TTS: text → audio (model 1, random voice)
-cattery speak --voice 4 "Hello"          # pick voice by number
-cattery speak --model 2 "Hello"          # pick model by number
-cattery speak --female --speed 1.2 "Hi"  # gender filter + speed
+helium speak "Hello world"              # TTS: text → audio (model 1, random voice)
+helium speak --voice 4 "Hello"          # pick voice by number
+helium speak --model 2 "Hello"          # pick model by number
+helium speak --female --speed 1.2 "Hi"  # gender filter + speed
 
-cattery listen audio.wav                 # STT: audio → text (model 1)
-cattery listen --model 2 audio.wav       # explicit model
-cattery listen -                         # stdin (pipe audio in)
+helium listen audio.wav                 # STT: audio → text (model 1)
+helium listen --model 2 audio.wav       # explicit model
+helium listen -                         # stdin (pipe audio in)
 
-cattery serve                            # REST API (all modalities)
-cattery list                             # list all models + voices
-cattery list speak                       # TTS only
-cattery list listen                      # STT only
-cattery status                           # system status
-cattery download                         # download all artefacts
-cattery download speak                   # TTS only
-cattery download listen                  # STT only
+helium serve                            # REST API (all modalities)
+helium list                             # list all models + voices
+helium list speak                       # TTS only
+helium list listen                      # STT only
+helium status                           # system status
+helium download                         # download all artefacts
+helium download speak                   # TTS only
+helium download listen                  # STT only
 
-cattery "Hello world"                    # shortcut → cattery speak "Hello world"
+helium "Hello world"                    # shortcut → helium speak "Hello world"
 ```
 
-### `cattery list` — the index reference
+### `helium list` — the index reference
 
 ```
-$ cattery list
+$ helium list
 
 TTS
   01  Kokoro 82M           88.0 MB  local   ✓
@@ -106,46 +106,46 @@ Name/slug lookup is a fallback, not the primary interface. Indices are the fast 
 
 ### PoLS principles
 
-1. **Bare text = speak.** `cattery "Hello"` still works.
+1. **Bare text = speak.** `helium "Hello"` still works.
 2. **Verbs match modality.** `speak`, `listen`, future `think`, `see`.
 3. **Flags are local to verbs.** `--voice` only for `speak`. `--model` for any verb.
 4. **Numbers are fast.** `--voice 4` beats `--voice af_bella` every time.
 5. **Management commands are top-level nouns.** `serve`, `list`, `status`, `download`.
 6. **No ambiguity.** Known verb/command or text to speak.
 
-### `cattery listen` specifics
+### `helium listen` specifics
 
 ```
-cattery listen recording.wav              # transcribe file → stdout
-cattery listen recording.opus             # auto-detect format
-cattery listen -                          # stdin
-cattery listen --lang en                  # language hint
-cattery listen --model 2 audio.wav        # explicit model (e.g., remote Whisper)
-cattery listen -o transcript.txt          # output to file
+helium listen recording.wav              # transcribe file → stdout
+helium listen recording.opus             # auto-detect format
+helium listen -                          # stdin
+helium listen --lang en                  # language hint
+helium listen --model 2 audio.wav        # explicit model (e.g., remote Whisper)
+helium listen -o transcript.txt          # output to file
 ```
 
 Pipeable:
 ```bash
-cattery listen call.wav | cattery speak              # round-trip
-echo "Hello" | cattery speak | cattery listen         # TTS → STT
+helium listen call.wav | helium speak              # round-trip
+echo "Hello" | helium speak | helium listen         # TTS → STT
 ```
 
-### `cattery download` redesign
+### `helium download` redesign
 
 ```
-cattery download                # everything
-cattery download speak          # TTS artefacts
-cattery download listen         # STT artefacts
-cattery download --model 2      # specific model by index
+helium download                # everything
+helium download speak          # TTS artefacts
+helium download listen         # STT artefacts
+helium download --model 2      # specific model by index
 ```
 
-### `cattery status`
+### `helium status`
 
 ```
-cattery status
+helium status
 
   Platform:      linux/arm64
-  Data dir:      ~/.cattery
+  Data dir:      ~/.helium
 
   espeak-ng:     ✓ bundled
   ONNX Runtime:  ✓ 1.24.1
@@ -178,29 +178,29 @@ default:
 
 ### File changes
 
-- **Edit**: `cmd/cattery/main.go` — add `speak`/`listen` verbs, update dispatch, help
-- **Add**: `cmd/cattery/listen.go` — `cmdListen()` (or inline)
-- **Edit**: `cmd/cattery/main.go` — update `cmdList()`, `cmdDownload()`, `cmdStatus()` for indices + multi-modality
+- **Edit**: `cmd/helium/main.go` — add `speak`/`listen` verbs, update dispatch, help
+- **Add**: `cmd/helium/listen.go` — `cmdListen()` (or inline)
+- **Edit**: `cmd/helium/main.go` — update `cmdList()`, `cmdDownload()`, `cmdStatus()` for indices + multi-modality
 - **Edit**: `registry/registry.go` — stable index assignment, index lookup helpers
 
 ## Acceptance criteria
 
-- [ ] `cattery speak --voice 4 "Hello"` works (numeric voice)
-- [ ] `cattery speak --model 2 "Hello"` works (numeric model)
-- [ ] `cattery speak --voice bella "Hello"` works (name fallback)
-- [ ] `cattery speak "Hello"` works (defaults: model 1, random voice)
-- [ ] `cattery "Hello"` works (bare text shortcut)
-- [ ] `cattery listen audio.wav` transcribes to stdout
-- [ ] `cattery listen -` reads from stdin
-- [ ] `cattery list` shows indexed models + voices, local/remote markers
-- [ ] `cattery list speak` / `cattery list listen` filters by kind
+- [ ] `helium speak --voice 4 "Hello"` works (numeric voice)
+- [ ] `helium speak --model 2 "Hello"` works (numeric model)
+- [ ] `helium speak --voice bella "Hello"` works (name fallback)
+- [ ] `helium speak "Hello"` works (defaults: model 1, random voice)
+- [ ] `helium "Hello"` works (bare text shortcut)
+- [ ] `helium listen audio.wav` transcribes to stdout
+- [ ] `helium listen -` reads from stdin
+- [ ] `helium list` shows indexed models + voices, local/remote markers
+- [ ] `helium list speak` / `helium list listen` filters by kind
 - [ ] Remote models hidden when no `OPENAI_API_KEY`
-- [ ] `cattery download` fetches all artefacts
-- [ ] `cattery download --model 2` fetches specific model
-- [ ] `cattery status` shows indexed model status
+- [ ] `helium download` fetches all artefacts
+- [ ] `helium download --model 2` fetches specific model
+- [ ] `helium status` shows indexed model status
 - [ ] Help text shows numeric index usage
 - [ ] `looksLikeCommand()` updated for `speak`, `listen`
-- [ ] Pipeable: `cattery listen x.wav | cattery speak` works
+- [ ] Pipeable: `helium listen x.wav | helium speak` works
 
 ## Notes
 

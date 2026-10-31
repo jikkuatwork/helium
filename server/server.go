@@ -1,4 +1,4 @@
-// Package server provides a multi-modal REST API for cattery.
+// Package server provides a multi-modal REST API for helium.
 //
 // Endpoints:
 //
@@ -25,15 +25,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/jikkuatwork/cattery/download"
-	"github.com/jikkuatwork/cattery/llm"
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/preflight"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/stt"
-	"github.com/jikkuatwork/cattery/tts"
-	"github.com/jikkuatwork/cattery/tts/kokoro"
+	"github.com/jikkuatwork/helium/download"
+	"github.com/jikkuatwork/helium/llm"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/preflight"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/stt"
+	"github.com/jikkuatwork/helium/tts"
+	"github.com/jikkuatwork/helium/tts/kokoro"
 )
 
 var ortDrain = ort.Drain
@@ -52,7 +52,7 @@ type Config struct {
 	ChunkSize    time.Duration
 }
 
-// Server is the cattery HTTP server.
+// Server is the helium HTTP server.
 type Server struct {
 	cfg       Config
 	mux       *http.ServeMux
@@ -247,12 +247,12 @@ func New(cfg Config) (*Server, error) {
 		authStore = DefaultKeyStore()
 		if err := authStore.Load(); err != nil {
 			if errors.Is(err, os.ErrNotExist) {
-				return nil, fmt.Errorf("no API keys found; run 'cattery keys create' first")
+				return nil, fmt.Errorf("no API keys found; run 'helium keys create' first")
 			}
 			return nil, fmt.Errorf("load API keys: %w", err)
 		}
 		if len(authStore.Entries()) == 0 {
-			return nil, fmt.Errorf("no API keys found; run 'cattery keys create' first")
+			return nil, fmt.Errorf("no API keys found; run 'helium keys create' first")
 		}
 	}
 
@@ -401,7 +401,7 @@ func (s *Server) ListenAndServe() error {
 		mode = "keep-alive"
 	}
 	log.Printf(
-		"cattery server listening on %s (tts %d, stt %d, max chars %d, queue %d, %s)",
+		"helium server listening on %s (tts %d, stt %d, max chars %d, queue %d, %s)",
 		addr,
 		s.cfg.TTSWorkers,
 		s.cfg.STTWorkers,
@@ -530,7 +530,7 @@ func (s *Server) handleModels(w http.ResponseWriter, r *http.Request) {
 			ID:      model.ID,
 			Object:  "model",
 			Created: 0,
-			OwnedBy: "cattery",
+			OwnedBy: "helium",
 		})
 	}
 

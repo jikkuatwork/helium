@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/registry"
 )
 
 const (
-	ChunkSizeEnvVar     = "CATTERY_CHUNK_SIZE"
+	ChunkSizeEnvVar     = "HELIUM_CHUNK_SIZE"
 	MinChunkSize        = 10 * time.Second
 	DefaultChunkSize    = 30 * time.Second
 	MaxChunkSize        = 60 * time.Second

@@ -1,4 +1,4 @@
-# Cattery — Project Instructions
+# Helium — Project Instructions
 
 ## Project Tracking
 
@@ -11,7 +11,7 @@ Always read `koder/STATE.md` at session start.
 
 ## Non-Negotiable: Zero External Dependencies
 
-The entire system lives in two repos: `cattery` and `cattery-artefacts`. No download, fetch, or network call may target any host outside these two repos. CDN mirrors are allowed only if they serve copies of assets already in `cattery-artefacts`, and the GitHub raw URL must always remain a working fallback. Never introduce a third-party download dependency.
+The entire system lives in two repos: `helium` and `cattery-artefacts`. No download, fetch, or network call may target any host outside these two repos. CDN mirrors are allowed only if they serve copies of assets already in `cattery-artefacts`, and the GitHub raw URL must always remain a working fallback. Never introduce a third-party download dependency.
 
 ## Multi-Agent Dispatch (Harnex)
 

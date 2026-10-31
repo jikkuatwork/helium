@@ -52,7 +52,7 @@ Replace `io.Discard` with a seekable sink. Options:
   inference* (not at WAV close), this is fine: WAV chunks flush immediately
   in the seekable path.
 - `os.CreateTemp` + `os.Remove` — real file, seekable, OS handles buffering.
-  Closest to production behavior (`cattery -o out.wav`).
+  Closest to production behavior (`helium -o out.wav`).
 
 Recommended: use a temp file. It matches the real CLI path and keeps the
 test's RSS measurement focused on inference, not Go heap from a

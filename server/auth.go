@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jikkuatwork/cattery/paths"
+	"github.com/jikkuatwork/helium/paths"
 )
 
 const (
@@ -62,7 +62,7 @@ func NewKeyStore(path string) *KeyStore {
 	}
 }
 
-// DefaultKeyStore returns the default keystore in ~/.cattery/keys.json.
+// DefaultKeyStore returns the default keystore in ~/.helium/keys.json.
 func DefaultKeyStore() *KeyStore {
 	return NewKeyStore(filepath.Join(paths.DataDir(), keysFilename))
 }

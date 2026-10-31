@@ -77,7 +77,7 @@
    fallback. Keep `WriteWAV(...)` as the convenience wrapper.
 2. Add `audio/wav_test.go` coverage for seekable header patching,
    non-seekable temp fallback, and `WriteWAV(...)` wrapper parity.
-3. Update `cmd/cattery/io.go` so `countingWriter` forwards `Seek(...)` when
+3. Update `cmd/helium/io.go` so `countingWriter` forwards `Seek(...)` when
    possible, and add a focused unit test for that behavior.
 4. Refactor `speak/kokoro/kokoro.go` so `Speak()` streams chunk audio directly
    into the WAV sink instead of building one combined sample slice.
@@ -88,8 +88,8 @@
 
 - `audio/wav.go`
 - new `audio/wav_test.go`
-- `cmd/cattery/io.go`
-- new `cmd/cattery/io_test.go`
+- `cmd/helium/io.go`
+- new `cmd/helium/io_test.go`
 - `speak/kokoro/kokoro.go`
 - `koder/issues/27_bounded_memory_streaming.md`
 - `koder/STATE.md`

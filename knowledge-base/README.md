@@ -1,12 +1,12 @@
-# Cattery
+# Helium
 
 Text-to-speech and speech-to-text in Go. Single binary, no Python, no Docker.
 Models and runtime auto-download on first run. Only system dependency is
 `espeak-ng`.
 
 ```
-go install github.com/jikkuatwork/cattery/cmd/cattery@latest
-cattery "Hello, world."
+go install github.com/jikkuatwork/helium/cmd/helium@latest
+helium "Hello, world."
 ```
 
 ## What It Does
@@ -21,41 +21,41 @@ cattery "Hello, world."
 ```bash
 # Install (requires Go 1.25+ and espeak-ng)
 sudo apt install espeak-ng   # or: brew install espeak
-go install github.com/jikkuatwork/cattery/cmd/cattery@latest
+go install github.com/jikkuatwork/helium/cmd/helium@latest
 
 # Speak
-cattery "Hello, world."                      # random voice
-cattery --voice bella "Hello"                # named voice
-cattery --female --speed 1.2 -o out.wav "Hi" # female, faster, to file
+helium "Hello, world."                      # random voice
+helium --voice bella "Hello"                # named voice
+helium --female --speed 1.2 -o out.wav "Hi" # female, faster, to file
 
 # Listen
-cattery listen recording.wav                 # transcribe audio
+helium listen recording.wav                 # transcribe audio
 
 # Serve
-cattery serve --port 7100                    # REST API
-cattery serve --keep-alive -w 2              # 2 TTS workers, pre-warmed
+helium serve --port 7100                    # REST API
+helium serve --keep-alive -w 2              # 2 TTS workers, pre-warmed
 ```
 
 ## CLI
 
 ```
-cattery "text"                    speak with random voice
-cattery --voice 3 "text"         voice by number
-cattery --voice bella "text"     voice by name
-cattery --female "text"          random female voice
-cattery --male "text"            random male voice
-cattery --speed 1.5 -o out.wav   speed + output file
-cattery --chunk-size 15s "text"  smaller memory footprint
-cattery listen file.wav          transcribe audio
-cattery listen --chunk-size 15s  transcribe with less memory
-cattery list                     models + voices (numbered)
-cattery status                   platform, deps, disk usage
-cattery download                 pre-fetch model + all voices
-cattery serve                    REST API on :7100
-cattery serve --port 8080 -w 2   custom port, 2 TTS workers
-cattery serve --listen-workers 2 custom STT workers
-cattery serve --keep-alive       pre-warm engines, never evict
-cattery serve --idle-timeout 60  evict engines after 60s idle
+helium "text"                    speak with random voice
+helium --voice 3 "text"         voice by number
+helium --voice bella "text"     voice by name
+helium --female "text"          random female voice
+helium --male "text"            random male voice
+helium --speed 1.5 -o out.wav   speed + output file
+helium --chunk-size 15s "text"  smaller memory footprint
+helium listen file.wav          transcribe audio
+helium listen --chunk-size 15s  transcribe with less memory
+helium list                     models + voices (numbered)
+helium status                   platform, deps, disk usage
+helium download                 pre-fetch model + all voices
+helium serve                    REST API on :7100
+helium serve --port 8080 -w 2   custom port, 2 TTS workers
+helium serve --listen-workers 2 custom STT workers
+helium serve --keep-alive       pre-warm engines, never evict
+helium serve --idle-timeout 60  evict engines after 60s idle
 ```
 
 ## Performance
@@ -77,7 +77,7 @@ RTF = wall-clock / audio duration. Below 1.0 = faster than real-time.
 
 ## Memory Tuning
 
-Cattery auto-detects available RAM and picks a chunk size:
+Helium auto-detects available RAM and picks a chunk size:
 
 | Available RAM | Chunk size | Target device |
 |---|---|---|
@@ -86,7 +86,7 @@ Cattery auto-detects available RAM and picks a chunk size:
 | <= 4 GB | 30s | Pi4 |
 | > 8 GB | 60s | Desktop/server |
 
-Override: `--chunk-size 15s` or `CATTERY_CHUNK_SIZE=15`
+Override: `--chunk-size 15s` or `HELIUM_CHUNK_SIZE=15`
 
 ## Platform Support
 
@@ -101,8 +101,8 @@ Override: `--chunk-size 15s` or `CATTERY_CHUNK_SIZE=15`
 ## Architecture
 
 ```
-cattery/
-  cmd/cattery/       CLI
+helium/
+  cmd/helium/       CLI
   speak/kokoro/      TTS engine (Kokoro-82M int8, ONNX)
   listen/moonshine/  STT engine (Moonshine-tiny, ONNX)
   audio/             Streaming WAV writer, PCM decoder, resampler
@@ -112,7 +112,7 @@ cattery/
   download/          Auto-download with progress + checksums
   preflight/         RAM detection, system checks
   registry/          Model/voice metadata
-  paths/             ~/.cattery/ data directory
+  paths/             ~/.helium/ data directory
   knowledge-base/    Profiling, platform docs
 ```
 
@@ -139,7 +139,7 @@ the full clip.
 | Voice files (27) | Auto-downloaded | Automatic |
 | espeak-ng | No | `apt install espeak-ng` / `brew install espeak` |
 
-Everything except espeak-ng downloads automatically to `~/.cattery/` on first
+Everything except espeak-ng downloads automatically to `~/.helium/` on first
 run. Total: ~150 MB.
 
 ## License

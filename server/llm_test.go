@@ -10,10 +10,10 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/jikkuatwork/cattery/llm"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/stt"
-	"github.com/jikkuatwork/cattery/tts"
+	"github.com/jikkuatwork/helium/llm"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/stt"
+	"github.com/jikkuatwork/helium/tts"
 )
 
 type fakeLLMEngine struct {

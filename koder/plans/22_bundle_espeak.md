@@ -9,7 +9,7 @@ network dependency for `espeak-ng`. The Go binary should contain:
 
 - one platform-specific `espeak-ng` executable, selected at build time
 - one shared `espeak-ng-data` archive
-- extraction logic that materializes both into `~/.cattery/espeak-ng/`
+- extraction logic that materializes both into `~/.helium/espeak-ng/`
 - runtime status/preflight output that reports the bundled install instead of a
   PATH dependency
 
@@ -28,17 +28,17 @@ This plan covers:
 6. `THIRD_PARTY_NOTICES.md` updates for redistribution
 7. a maintainer build script for regenerating the bundled archives
 
-It also includes the necessary user-facing follow-through in `cmd/cattery` and
+It also includes the necessary user-facing follow-through in `cmd/helium` and
 `server/`, because those paths currently still fail fast on `phonemize.Available()`
-and `cattery status` currently reports `espeak-ng` as “installed / not found”.
+and `helium status` currently reports `espeak-ng` as “installed / not found”.
 
 ## Current State
 
 - `phonemize/espeak.go` shells out to `"espeak-ng"` on `PATH`.
 - `phonemize.Available()` is just `exec.LookPath("espeak-ng")`.
 - `preflight/check.go` marks missing PATH `espeak-ng` as a readiness error.
-- `cmd/cattery/main.go` rejects TTS if `espeak-ng` is not installed and reports
-  it that way in `cattery status`.
+- `cmd/helium/main.go` rejects TTS if `espeak-ng` is not installed and reports
+  it that way in `helium status`.
 - `server/server.go` refuses to start without PATH `espeak-ng`.
 - `THIRD_PARTY_NOTICES.md` explicitly says `espeak-ng` is not bundled.
 
@@ -57,11 +57,11 @@ This keeps the legal and engineering story aligned with the issue:
 
 - the Go source tree does not contain unpacked GPL/LGPL content
 - the runtime still uses `os/exec`, not linking/cgo
-- extraction is a one-time deployment step into `~/.cattery/espeak-ng/`
+- extraction is a one-time deployment step into `~/.helium/espeak-ng/`
 
 ### 2. Use a bundle marker, not the app version, for cache invalidation
 
-The issue sketch mentions a `.version` file tied to the cattery version. That is
+The issue sketch mentions a `.version` file tied to the helium version. That is
 too coarse: the app version can change without changing `espeak-ng`, and a
 bundle could change between dev builds without a release tag bump.
 
@@ -93,7 +93,7 @@ be resolved?”. That avoids duplicate logic across CLI, server, and preflight.
 
 Do not fall back to system `espeak-ng` when bundled extraction fails or when a
 host binary exists on `PATH`. The bundled binary should be the single runtime
-path used by `cattery`, otherwise IPA output varies by host package version and
+path used by `helium`, otherwise IPA output varies by host package version and
 the issue goal is only partially solved.
 
 ## Target Layout
@@ -118,7 +118,7 @@ phonemize/
 Suggested extracted layout:
 
 ```text
-~/.cattery/espeak-ng/
+~/.helium/espeak-ng/
 ├── bin/
 │   └── espeak-ng
 ├── data/
@@ -141,7 +141,7 @@ On macOS, the extracted binary can still be named `espeak-ng` without suffixes.
 | `phonemize/espeak.go` | Replace PATH lookup with bundled runtime resolution; inject `ESPEAK_DATA_PATH`; keep `Phonemize()` logic intact |
 | `phonemize/espeak_test.go` | Replace PATH-dependent skips with bundle-resolution tests; add extraction/cache coverage where practical |
 | `preflight/check.go` | Remove PATH `espeak-ng` check; optionally verify bundled runtime can resolve if preflight should remain strict |
-| `cmd/cattery/main.go` | Remove install hint; update `status` output to bundled runtime/version wording |
+| `cmd/helium/main.go` | Remove install hint; update `status` output to bundled runtime/version wording |
 | `server/server.go` | Remove PATH guard; fail only if bundled runtime cannot be prepared |
 | `THIRD_PARTY_NOTICES.md` | Replace “external only” language with bundling-specific attribution and source pointer |
 | `.github/workflows/build-espeak.yml` | Manual-trigger workflow to build espeak-ng on native runners and PR the archives |
@@ -260,7 +260,7 @@ Add a single resolver in `phonemize/extract.go`, for example:
 
 Responsibilities:
 
-- compute `~/.cattery/espeak-ng/` from `paths.DataDir()`
+- compute `~/.helium/espeak-ng/` from `paths.DataDir()`
 - check the marker file before doing any work
 - extract both archives if the marker is missing or stale
 - ensure the binary is executable
@@ -269,11 +269,11 @@ Responsibilities:
 Extraction algorithm:
 
 1. Build destination paths:
-   - root: `~/.cattery/espeak-ng`
-   - staging: `~/.cattery/espeak-ng.tmp-<pid>-<rand>`
+   - root: `~/.helium/espeak-ng`
+   - staging: `~/.helium/espeak-ng.tmp-<pid>-<rand>`
 2. If `.bundle-version` exists and exactly matches the compiled marker, trust
    the cache and return immediately.
-3. Create the staging dir under `~/.cattery/`.
+3. Create the staging dir under `~/.helium/`.
 4. Untar the executable archive into staging.
 5. Untar the data archive into staging.
 6. Validate the extracted layout:
@@ -346,12 +346,12 @@ call. A pragmatic split is:
 Whichever variant is chosen, user-visible error text must stop instructing users
 to install `espeak-ng` with a system package manager.
 
-### 6. `cmd/cattery` and server follow-through
+### 6. `cmd/helium` and server follow-through
 
-The issue acceptance criteria mention `cattery status` showing the bundled
+The issue acceptance criteria mention `helium status` showing the bundled
 version. That requires these updates:
 
-- `cmd/cattery/main.go`
+- `cmd/helium/main.go`
   - remove the early PATH error in the TTS command
   - change `status` output from `installed/not found` to bundled status, for example:
     - `espeak-ng:     ✓ bundled 1.51`
@@ -373,7 +373,7 @@ notices covering both pieces:
   - upstream project name
   - pinned version or release tag
   - LGPL-2.1-or-later attribution
-  - statement that `cattery` redistributes the unmodified executable
+  - statement that `helium` redistributes the unmodified executable
   - source pointer to the upstream repository/release tag
 - `espeak-ng-data`
   - GPL-3.0-or-later attribution
@@ -405,7 +405,7 @@ Non-goals:
 
 - does not run on push, PR, or schedule — manual trigger only
 - does not run from `go generate` or `go build`
-- does not download anything at cattery runtime
+- does not download anything at helium runtime
 
 ## Execution Order
 
@@ -416,7 +416,7 @@ Non-goals:
    `ESPEAK_DATA_PATH`.
 5. Update tests in `phonemize/espeak_test.go` around bundle resolution and cache behavior.
 6. Remove PATH-specific `espeak-ng` gating from `preflight/check.go`.
-7. Update CLI TTS flow and `cattery status` output in `cmd/cattery/main.go`.
+7. Update CLI TTS flow and `helium status` output in `cmd/helium/main.go`.
 8. Update `server/server.go` startup checks to use the bundled runtime model.
 9. Rewrite `THIRD_PARTY_NOTICES.md` to match redistribution reality.
 10. Add `.github/workflows/build-espeak.yml` with the pinned upstream version.
@@ -431,9 +431,9 @@ Automated:
 
 Manual smoke checks per supported host:
 
-- remove `~/.cattery/espeak-ng/`
-- confirm `cattery status` reports bundled `espeak-ng`
-- run `cattery "Hello"` with no system `espeak-ng` installed
+- remove `~/.helium/espeak-ng/`
+- confirm `helium status` reports bundled `espeak-ng`
+- run `helium "Hello"` with no system `espeak-ng` installed
 - verify first run extracts `bin/espeak-ng` and `data/`
 - verify second run reuses the cache
 - corrupt `.bundle-version` and confirm re-extraction
@@ -466,4 +466,4 @@ Manual packaging checks:
 | `preflight/` changes | remove PATH dependency; optionally replace with bundle sanity check |
 | Third-party notices | rewrite `THIRD_PARTY_NOTICES.md` for LGPL/GPL redistribution |
 | Build script | `scripts/build-espeak.sh` |
-| `cattery status` shows bundled version | `cmd/cattery/main.go` status output update |
+| `helium status` shows bundled version | `cmd/helium/main.go` status output update |

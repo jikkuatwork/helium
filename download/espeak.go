@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/jikkuatwork/cattery/paths"
+	"github.com/jikkuatwork/helium/paths"
 )
 
 const espeakVersion = "1.51"
@@ -55,13 +55,13 @@ func EnsureEspeak(dataDir string) error {
 
 	style := &barStyle{labelWidth: maxLen([]string{"espeak-ng", "espeak-data"})}
 
-	binTar, err := reserveTempPath("cattery-espeak-bin-*.tar.gz")
+	binTar, err := reserveTempPath("helium-espeak-bin-*.tar.gz")
 	if err != nil {
 		return err
 	}
 	defer os.Remove(binTar)
 
-	dataTar, err := reserveTempPath("cattery-espeak-data-*.tar.gz")
+	dataTar, err := reserveTempPath("helium-espeak-data-*.tar.gz")
 	if err != nil {
 		return err
 	}

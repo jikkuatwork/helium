@@ -4,7 +4,7 @@
 
 ## Goal
 
-HTTP server for hosting cattery TTS as a service.
+HTTP server for hosting helium TTS as a service.
 
 ## Design
 
@@ -18,10 +18,10 @@ Returns 503 + Retry-After when full.
 ## CLI
 
 ```
-cattery serve [--port 7100] [--workers 2] [--model ID]
+helium serve [--port 7100] [--workers 2] [--model ID]
 ```
 
 ## Files
 
 - `server/server.go` — full server package
-- `cmd/cattery/main.go` — `serve` subcommand
+- `cmd/helium/main.go` — `serve` subcommand

@@ -3,7 +3,7 @@
 ## Status: open (idea)
 ## Priority: P3
 
-Zero-build, zero-dependency web UI served by cattery itself:
+Zero-build, zero-dependency web UI served by helium itself:
 - Single HTML file embedded via `embed.FS`
 - Vanilla JS, no framework, no build step
 - Clean, minimal design
@@ -16,11 +16,11 @@ Features:
 - If LLM proxy exists (#12): chat interface
 - If STT exists (#08): microphone input → transcribe → respond → play
 
-Served at `GET /` when running `cattery serve`.
+Served at `GET /` when running `helium serve`.
 
 ## Why
 
-- `cattery serve` and open browser — that's it
+- `helium serve` and open browser — that's it
 - No npm, no node, no webpack
 - Works on any device with a browser
-- Demo-friendly: show someone what cattery does in 5 seconds
+- Demo-friendly: show someone what helium does in 5 seconds

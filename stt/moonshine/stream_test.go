@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jikkuatwork/cattery/audio"
+	"github.com/jikkuatwork/helium/audio"
 )
 
 func TestTranscribeStreamShortAudioResamplesAndTracksDuration(t *testing.T) {

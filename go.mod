@@ -1,4 +1,4 @@
-module github.com/jikkuatwork/cattery
+module github.com/jikkuatwork/helium
 
 go 1.25.1
 

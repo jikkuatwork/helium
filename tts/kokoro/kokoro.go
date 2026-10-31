@@ -10,13 +10,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jikkuatwork/cattery/audio"
-	"github.com/jikkuatwork/cattery/download"
-	"github.com/jikkuatwork/cattery/normalize"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/phonemize"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/tts"
+	"github.com/jikkuatwork/helium/audio"
+	"github.com/jikkuatwork/helium/download"
+	"github.com/jikkuatwork/helium/normalize"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/phonemize"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/tts"
 	ort "github.com/yalue/onnxruntime_go"
 )
 

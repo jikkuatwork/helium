@@ -13,7 +13,7 @@ The Ruby spike (`tmp/normalize.rb`) proved the concept — acronyms, numbers, an
 
 ## Goal
 
-A `normalize/` package that converts written English text into speakable form. Runs before phonemization in the `Speak()` pipeline. Zero external dependencies — ships in the cattery binary.
+A `normalize/` package that converts written English text into speakable form. Runs before phonemization in the `Speak()` pipeline. Zero external dependencies — ships in the helium binary.
 
 ## Design
 

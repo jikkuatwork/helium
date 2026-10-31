@@ -72,7 +72,7 @@
 ## Files Likely Touched
 
 - `server/server.go`
-- `cmd/cattery/main.go`
+- `cmd/helium/main.go`
 - new `server/*_test.go`
 - `koder/issues/10_server_api_audit.md`
 - `koder/STATE.md`

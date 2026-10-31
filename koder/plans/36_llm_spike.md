@@ -6,16 +6,16 @@
 
 De-risk a local `llm/` modality that reuses the existing ONNX Runtime stack,
 registry, downloader, and lazy pool infrastructure already used by
-[`tts/tts.go`](/home/glasscube/Projects/cattery/tts/tts.go) and
-[`stt/stt.go`](/home/glasscube/Projects/cattery/stt/stt.go).
+[`tts/tts.go`](/home/glasscube/Projects/helium/tts/tts.go) and
+[`stt/stt.go`](/home/glasscube/Projects/helium/stt/stt.go).
 
 The target is a text-first Qwen3.5 local engine that can fit the current
 project shape:
 
 - `llm/engine.go` should mirror the existing modality interfaces
-- model files should register through [`registry/registry.go`](/home/glasscube/Projects/cattery/registry/registry.go)
-- downloads should flow through [`download/download.go`](/home/glasscube/Projects/cattery/download/download.go)
-- server-side lifecycle should reuse [`server/pool.go`](/home/glasscube/Projects/cattery/server/pool.go) and the existing modality swap pattern in [`server/server.go`](/home/glasscube/Projects/cattery/server/server.go)
+- model files should register through [`registry/registry.go`](/home/glasscube/Projects/helium/registry/registry.go)
+- downloads should flow through [`download/download.go`](/home/glasscube/Projects/helium/download/download.go)
+- server-side lifecycle should reuse [`server/pool.go`](/home/glasscube/Projects/helium/server/pool.go) and the existing modality swap pattern in [`server/server.go`](/home/glasscube/Projects/helium/server/server.go)
 
 This plan is intentionally a spike plan, not an implementation plan. The work
 should stop after we have hard evidence that the model artefacts, tokenizer,
@@ -23,10 +23,10 @@ and autoregressive decode loop are viable on the current stack.
 
 ## Current Repo Anchors
 
-- [`stt/moonshine/decoder.go`](/home/glasscube/Projects/cattery/stt/moonshine/decoder.go) already proves `onnxruntime_go` can run a decoder loop with dynamic sessions, zero-length cache tensors, and per-step KV-cache updates.
-- [`stt/moonshine/moonshine.go`](/home/glasscube/Projects/cattery/stt/moonshine/moonshine.go) shows the current pattern for loading multiple ONNX files plus a tokenizer from registry metadata.
-- [`tts/kokoro/kokoro.go`](/home/glasscube/Projects/cattery/tts/kokoro/kokoro.go) shows the expected engine constructor and download/bootstrap flow for a local modality.
-- [`server/server.go`](/home/glasscube/Projects/cattery/server/server.go) already has independent TTS/STT pools and a shared ORT lifetime boundary; issue `#13` will need the same pattern for LLM plus an explicit pre-borrow eviction path.
+- [`stt/moonshine/decoder.go`](/home/glasscube/Projects/helium/stt/moonshine/decoder.go) already proves `onnxruntime_go` can run a decoder loop with dynamic sessions, zero-length cache tensors, and per-step KV-cache updates.
+- [`stt/moonshine/moonshine.go`](/home/glasscube/Projects/helium/stt/moonshine/moonshine.go) shows the current pattern for loading multiple ONNX files plus a tokenizer from registry metadata.
+- [`tts/kokoro/kokoro.go`](/home/glasscube/Projects/helium/tts/kokoro/kokoro.go) shows the expected engine constructor and download/bootstrap flow for a local modality.
+- [`server/server.go`](/home/glasscube/Projects/helium/server/server.go) already has independent TTS/STT pools and a shared ORT lifetime boundary; issue `#13` will need the same pattern for LLM plus an explicit pre-borrow eviction path.
 
 ## Upstream Facts To Treat As Inputs
 
@@ -81,7 +81,7 @@ Complete on March 28, 2026.
 
 ### Goal
 
-Prove that Qwen3.5-4B can be treated as a normal cattery local artefact:
+Prove that Qwen3.5-4B can be treated as a normal helium local artefact:
 downloadable, registrable, mirrorable, and loadable with the same metadata
 pattern already used for Kokoro and Moonshine.
 
@@ -97,13 +97,13 @@ pattern already used for Kokoro and Moonshine.
    merged decoder can accept `input_ids` directly for text-only generation.
    This matters for registry size, download time, and engine complexity.
 4. Prototype a temporary registry entry in the same shape as
-   [`registry/registry.go`](/home/glasscube/Projects/cattery/registry/registry.go):
+   [`registry/registry.go`](/home/glasscube/Projects/helium/registry/registry.go):
    one `KindLLM` model with explicit file list and metadata keys for
    `decoder_file`, `decoder_data_files`, `embed_file`, `tokenizer_file`,
    `context_window`, `hidden_size`, `num_layers`, `num_heads`,
    `num_kv_heads`, and `eos_token`.
 5. Verify downloader behavior against split `.onnx_data` files in
-   [`download/download.go`](/home/glasscube/Projects/cattery/download/download.go),
+   [`download/download.go`](/home/glasscube/Projects/helium/download/download.go),
    including progress bars, SHA handling, and disk-space checks.
 6. Decide hosting strategy:
    direct Hugging Face URLs first, or mirror the exact text-only bundle into
@@ -121,7 +121,7 @@ pattern already used for Kokoro and Moonshine.
    Optimum ONNX export ->
    ORT preprocessing ->
    ONNX Runtime quantization to q4/int4-compatible weights ->
-   repack into the cattery registry file layout.
+   repack into the helium registry file layout.
 
 ### Success criteria
 
@@ -151,7 +151,7 @@ pattern already used for Kokoro and Moonshine.
   - `tokenizer_config.json` — `9,162`
   - `chat_template.jinja` — `7,756`
   - Total — `3,128,365,749` bytes (`~2.91 GiB`)
-- Downloader check: [`download/download.go`](/home/glasscube/Projects/cattery/download/download.go)
+- Downloader check: [`download/download.go`](/home/glasscube/Projects/helium/download/download.go)
   already downloads each `registry.Artefact` filename independently, so split
   `.onnx_data` shards work without downloader changes as long as every shard is
   listed as its own file in the registry.
@@ -257,7 +257,7 @@ acceptable correctness and negligible latency, without adding Python or CGo.
 
 ### Findings
 
-- Added spike binary: [`cmd/spike-tokenizer/main.go`](/home/glasscube/Projects/cattery/cmd/spike-tokenizer/main.go).
+- Added spike binary: [`cmd/spike-tokenizer/main.go`](/home/glasscube/Projects/helium/cmd/spike-tokenizer/main.go).
   It downloads `tokenizer.json` and `tokenizer_config.json` from
   `onnx-community/Qwen3.5-4B-ONNX`, loads the tokenizer, renders a hard-coded
   ChatML prompt, and prints prompt -> token IDs -> decoded text -> round-trip.
@@ -322,7 +322,7 @@ per-token stepping.
 ### Concrete steps
 
 1. Start from the working cache pattern in
-   [`stt/moonshine/decoder.go`](/home/glasscube/Projects/cattery/stt/moonshine/decoder.go),
+   [`stt/moonshine/decoder.go`](/home/glasscube/Projects/helium/stt/moonshine/decoder.go),
    not from a blank implementation.
    Reuse the same ideas:
    dynamic advanced session,
@@ -353,7 +353,7 @@ per-token stepping.
    - direct `input_ids` into merged decoder
    - external `embed_tokens_q4` session feeding decoder inputs if required
 6. Verify memory behavior with the existing pool model in
-   [`server/pool.go`](/home/glasscube/Projects/cattery/server/pool.go):
+   [`server/pool.go`](/home/glasscube/Projects/helium/server/pool.go):
    ensure an LLM borrow can coexist with current lazy creation semantics, then
    specify the extra explicit-eviction hook needed before LLM work begins.
 7. Draft the first-pass `llm.Engine` and server integration seam:
@@ -396,9 +396,9 @@ per-token stepping.
 
 ### Findings
 
-- Added spike binary: [`cmd/spike-llm/main.go`](/home/glasscube/Projects/cattery/cmd/spike-llm/main.go).
+- Added spike binary: [`cmd/spike-llm/main.go`](/home/glasscube/Projects/helium/cmd/spike-llm/main.go).
   It downloads the text-only `Qwen3.5-0.8B-ONNX` q4 artefacts into
-  `models-data/qwen3.5-0.8b/`, initializes ORT from `~/.cattery/ort/`,
+  `models-data/qwen3.5-0.8b/`, initializes ORT from `~/.helium/ort/`,
   prints the exact embed/decoder graph signatures, tokenizes a ChatML prompt,
   runs `embed_tokens_q4.onnx`, then performs greedy autoregressive decode with
   per-step cache replacement until EOS or `max_tokens`.

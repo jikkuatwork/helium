@@ -12,7 +12,7 @@ the round-trip and score results.
 ## How it works
 
 1. `cases.txt` defines test cases: input text + expected spoken form
-2. `run.sh` loops through cases, runs `cattery speak` → `cattery listen`
+2. `run.sh` loops through cases, runs `helium speak` → `helium listen`
 3. Each case produces: raw STT output, similarity score (word overlap %)
 4. Results are appended to `results/` with timestamps
 5. Run multiple times to check consistency

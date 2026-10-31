@@ -13,22 +13,22 @@ All 11 work-plan steps are addressed:
 1. **RAM probe moved to `preflight/memory.go`** — `AvailableMemoryMB()` exported, `linuxAvailableMemoryMB` and `parseLinuxMemAvailableMB` live in the new file. `check.go` calls `AvailableMemoryMB()` instead of its own copy.
 2. **Parsing helpers** — `ParseChunkSizeOverride` and `ResolveChunkSize` share validation and precedence logic across CLI, env, and server.
 3. **Options extended** — `speak.Options.ChunkSize`, `listen.Options.ChunkSize`, and `server.Config.ChunkSize` all carry `time.Duration`.
-4. **CLI updated** — `cmdSpeak`, `cmdListen`, and `cmdServe` all accept `--chunk-size`, honor `CATTERY_CHUNK_SIZE`, and emit the low-memory warning via `resolveCommandChunkSize`.
+4. **CLI updated** — `cmdSpeak`, `cmdListen`, and `cmdServe` all accept `--chunk-size`, honor `HELIUM_CHUNK_SIZE`, and emit the low-memory warning via `resolveCommandChunkSize`.
 5. **Help text updated** — `printUsage()` documents the flag for speak, listen, and serve; documents the env var; documents the auto lookup table.
 6. **Server plumbing** — `server.New` resolves chunk size via `resolveServerChunkSizeFromEnv`. `synthesize()` passes `s.cfg.ChunkSize` into `speak.Options`. `handleListen()` passes `s.cfg.ChunkSize` into `listen.Options`.
 7. **Hard rejection removed** — `handleSpeak()` no longer calls `preflight.CheckAvailableMemory(0)`. The old gate is replaced by the warning + minimum chunk-size policy.
 8. **Moonshine wired** — `Transcribe` passes `opts.ChunkSize` to `transcribeStreamWithChunkSize`. Kokoro has a comment documenting the field is reserved for interface symmetry.
-9. **Focused tests** — `preflight/memory_test.go` (auto table, parsing, precedence, warning-once, guard), `cmd/cattery/chunk_size_test.go` (CLI resolver), `server/chunk_size_test.go` (server resolver), `listen/moonshine/stream_test.go` (chunk-size target test).
+9. **Focused tests** — `preflight/memory_test.go` (auto table, parsing, precedence, warning-once, guard), `cmd/helium/chunk_size_test.go` (CLI resolver), `server/chunk_size_test.go` (server resolver), `listen/moonshine/stream_test.go` (chunk-size target test).
 10. **Memory error normalization** — `GuardMemoryError` wraps both `cmdSpeak`, `cmdListen`, `server.synthesize`, and `server.handleListen`. `IsMemoryError` is used in HTTP handlers for 503 + Retry-After responses.
 11. **Build verification** — `go test ./...` passes (all green, cached).
 
-**Files touched vs. plan**: 19 files changed. The plan listed 13. Extras are `cmd/cattery/chunk_size.go`, `cmd/cattery/chunk_size_test.go`, `server/chunk_size.go`, `server/chunk_size_test.go`, `listen/moonshine/stream_test.go`, and `listen/moonshine/chunk.go`. All are reasonable factoring choices. No files listed in the plan were missed.
+**Files touched vs. plan**: 19 files changed. The plan listed 13. Extras are `cmd/helium/chunk_size.go`, `cmd/helium/chunk_size_test.go`, `server/chunk_size.go`, `server/chunk_size_test.go`, `listen/moonshine/stream_test.go`, and `listen/moonshine/chunk.go`. All are reasonable factoring choices. No files listed in the plan were missed.
 
 ---
 
 ## Acceptance Criteria
 
-- [x] **`--chunk-size` and `CATTERY_CHUNK_SIZE` resolve through one shared helper with precedence `flag > env > auto`.**
+- [x] **`--chunk-size` and `HELIUM_CHUNK_SIZE` resolve through one shared helper with precedence `flag > env > auto`.**
   Evidence: `preflight.ResolveChunkSize` is the single resolver. `resolveCommandChunkSize` (CLI) and `resolveServerChunkSize` (server) both delegate to it. `TestResolveChunkSizePrecedence` confirms flag beats env.
 
 - [x] **Explicit overrides accept Go durations and bare seconds, and reject values outside `10s..60s`.**
@@ -53,7 +53,7 @@ All 11 work-plan steps are addressed:
   Evidence: `GuardMemoryError` catches both returned errors and panics with known OOM signatures, normalizing to `"out of memory during <action>"`. Unknown panics are re-panicked. `TestGuardMemoryErrorNormalizesKnownFailures` and `TestGuardMemoryErrorRepanicsUnknownPanics` confirm both paths.
 
 - [x] **Help text documents the flag, env var, and auto behavior.**
-  Evidence: `printUsage()` includes `--chunk-size DUR` under Speak flags, Listen flags, and Server section. Includes `CATTERY_CHUNK_SIZE` section with full auto table.
+  Evidence: `printUsage()` includes `--chunk-size DUR` under Speak flags, Listen flags, and Server section. Includes `HELIUM_CHUNK_SIZE` section with full auto table.
 
 - [x] **`go test ./...`, `go build ./...`, and `go vet ./...` pass.**
   Evidence: `go test ./...` all green.
@@ -72,7 +72,7 @@ No concerns. No user input reaches shell commands, SQL, or file paths constructe
 
 `preflight/memory_test.go:102` directly reassigns `lowMemoryWarningOnce = sync.Once{}`. This works but is fragile — any concurrent test or future use of `sync.Once` in the package could interfere. Consider accepting the `sync.Once` as a parameter or providing a `resetForTesting` helper gated by a test build tag.
 
-### P3 — Duplicate `wavDurationFromSize` in `cmd/cattery/main.go` and `server/server.go`
+### P3 — Duplicate `wavDurationFromSize` in `cmd/helium/main.go` and `server/server.go`
 
 Both files define identical `wavDurationFromSize` functions (main.go:1017 and server.go:748). This is pre-existing duplication not introduced by plan 30, but it's now more visible. Not blocking.
 

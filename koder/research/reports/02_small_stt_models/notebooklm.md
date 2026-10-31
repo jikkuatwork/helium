@@ -115,7 +115,7 @@ starts with 3 learned convolution layers that process raw audio directly.
 
 - **Audio I/O:** `go-audio/audio` + `go-audio/wav` for WAV reading
 - **Resampling:** `zaf/go-resample` or manual sinc interpolation
-- **ORT inference:** `yalue/onnxruntime_go` (already used in cattery for Kokoro)
+- **ORT inference:** `yalue/onnxruntime_go` (already used in helium for Kokoro)
 - **No FFT/mel library needed** -- this is Moonshine's killer feature for Go
 
 ### Inference flow:
@@ -145,7 +145,7 @@ Moonshine uses a SentencePiece tokenizer. Options:
 
 ## Key Findings Summary
 
-1. **Moonshine Tiny is the clear winner** for cattery's use case: 27MB
+1. **Moonshine Tiny is the clear winner** for helium's use case: 27MB
    quantized ONNX, better WER than Whisper tiny, MIT license, native ONNX,
    streaming, and -- critically -- no mel spectrogram preprocessing needed.
 
@@ -159,12 +159,12 @@ Moonshine uses a SentencePiece tokenizer. Options:
 
 4. **The main integration risk** is managing two ONNX sessions
    (encoder+decoder) and implementing the autoregressive decode loop in Go.
-   This is the same pattern cattery already uses for Kokoro TTS, so the
+   This is the same pattern helium already uses for Kokoro TTS, so the
    architecture is proven.
 
 5. **sherpa-onnx is worth monitoring** as an alternative runtime. It has Go
    bindings and supports many models including Moonshine, but adds a CGo
-   dependency that conflicts with cattery's dlopen approach.
+   dependency that conflicts with helium's dlopen approach.
 
 ## Sources
 

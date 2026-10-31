@@ -21,11 +21,11 @@
   `dataSize` before writing the RIFF header, then writes samples one by one
   (`audio/wav.go:10-75`). There is no streaming writer or header patch path.
 - CLI speak wraps the destination in `countingWriter` before calling
-  `eng.Speak(...)` (`cmd/cattery/main.go:257-283`, `cmd/cattery/io.go:23-31`).
+  `eng.Speak(...)` (`cmd/helium/main.go:257-283`, `cmd/helium/io.go:23-31`).
   That wrapper only exposes `Write`, so it currently hides `io.Seeker` from
   lower layers even when the real destination is an `*os.File`.
 - CLI speak writes to `stdout` when piped or when `-o -` is used, and to an
-  `*os.File` otherwise (`cmd/cattery/io.go:74-86`). Any WAV streaming design
+  `*os.File` otherwise (`cmd/helium/io.go:74-86`). Any WAV streaming design
   must therefore handle both seekable files and non-seekable stdout/pipes.
 - Server speak buffers the full WAV in `bytes.Buffer` inside `s.synthesize()`
   before writing the HTTP response (`server/server.go:426-459`,
@@ -51,8 +51,8 @@
   `listen.Options` have no such field (`speak/speak.go:17-23`,
   `listen/listen.go:17-20`); CLI parsing in `cmdSpeak`, `cmdListen`, and
   `cmdServe` does not accept `--chunk-size`
-  (`cmd/cattery/main.go:82-149`, `cmd/cattery/main.go:162-283`,
-  `cmd/cattery/listen.go:17-110`); no env lookup exists; and `server.Config`
+  (`cmd/helium/main.go:82-149`, `cmd/helium/main.go:162-283`,
+  `cmd/helium/listen.go:17-110`); no env lookup exists; and `server.Config`
   has no chunk-size field (`server/server.go:40-51`).
 
 ## Decisions
@@ -132,11 +132,11 @@
   one-line warning to stderr at startup: `"warning: low memory (<N>MB) —
   using minimum chunk size, expect slower synthesis"`. Then proceed normally
   with `10s` chunks. If OOM happens, the OS kills the process — that is
-  acceptable on extreme hardware. Cattery should never panic, print a stack
+  acceptable on extreme hardware. Helium should never panic, print a stack
   trace, or exit with a cryptic error on memory pressure; any ORT or
   allocation failure must be caught and surfaced as a clean, single-line
   error message (e.g. `"error: out of memory during TTS inference"`).
-- Parse `--chunk-size` and `CATTERY_CHUNK_SIZE` with one helper. Accept Go
+- Parse `--chunk-size` and `HELIUM_CHUNK_SIZE` with one helper. Accept Go
   durations like `15s` / `1m`, and also bare integers as seconds to match the
   issue examples. Validation should fail fast outside `10s..60s`. Precedence:
   CLI flag, then env var, then auto.
@@ -161,7 +161,7 @@
 - Chunk planner changes needed to work on bounded windows while preserving the
   current silence-search / overlap / dedup behavior from `#26`.
 - Shared RAM probe + auto chunk-size resolution in `preflight`.
-- `--chunk-size` / `CATTERY_CHUNK_SIZE` parsing, validation, and plumbing
+- `--chunk-size` / `HELIUM_CHUNK_SIZE` parsing, validation, and plumbing
   through CLI, server config, and engine options.
 - Unit coverage for the new WAV writer paths, chunk-size resolver, and
   Moonshine window planner / reader behavior.
@@ -193,7 +193,7 @@ both land):
 1. Add a streaming WAV writer to `audio/wav.go` with `WriteSamples(...)` /
    `Close()` semantics, a seekable header-patch path, and a temp-file fallback
    for non-seekable writers. Keep `WriteWAV(...)` as a wrapper.
-2. Update the CLI output wrapper in `cmd/cattery/io.go` so byte counting no
+2. Update the CLI output wrapper in `cmd/helium/io.go` so byte counting no
    longer hides `io.Seeker` from the WAV layer.
 3. Refactor `speak/kokoro/kokoro.go` so `Speak()` writes chunks directly to the
    streaming WAV sink instead of building one `combined []float32`. Remove or
@@ -213,7 +213,7 @@ both land):
    memory helper and add auto chunk-size resolution plus override parsing.
 9. Add `ChunkSize time.Duration` plumbing to `listen.Options`, `speak.Options`,
    `server.Config`, CLI `speak` / `listen` / `serve` parsing, and
-   `CATTERY_CHUNK_SIZE` lookup. Make Moonshine consume it; document Kokoro's
+   `HELIUM_CHUNK_SIZE` lookup. Make Moonshine consume it; document Kokoro's
    no-op behavior in this pass.
 10. Add tests for seekable WAV patching, non-seekable temp fallback,
     counting-writer seek forwarding, chunk-size parsing / auto selection,
@@ -234,9 +234,9 @@ both land):
 - Edit: `preflight/check.go`
 - Edit: `speak/speak.go`
 - Edit: `listen/listen.go`
-- Edit: `cmd/cattery/main.go`
-- Edit: `cmd/cattery/listen.go`
-- Edit: `cmd/cattery/io.go`
+- Edit: `cmd/helium/main.go`
+- Edit: `cmd/helium/listen.go`
+- Edit: `cmd/helium/io.go`
 - Edit: `server/server.go`
 - Edit: `server/listen.go`
 - Edit: `koder/issues/27_bounded_memory_streaming.md`
@@ -258,7 +258,7 @@ both land):
   synthesis; peak RSS is bounded by one Kokoro chunk plus small write buffers.
 - A 3-minute TTS synthesis to a file peaks at `<= 350 MB RSS` on the current
   benchmark VM, down from the issue's `880 MB`.
-- `cattery speak` still works to `stdout` / pipes; the non-seekable path uses
+- `helium speak` still works to `stdout` / pipes; the non-seekable path uses
   temp-disk fallback instead of in-memory accumulation.
 - Moonshine no longer calls `io.ReadAll`, whole-clip `audio.ReadPCM(...)`, or
   whole-clip `audio.Resample(...)` on the main transcription path.
@@ -267,7 +267,7 @@ both land):
 - Pi4 4 GB: both TTS and STT complete a 3-minute clip without OOM or swap.
 - 1 GB VPS: STT completes a 3-minute clip; TTS completes at least a 1-minute
   file-output clip.
-- `--chunk-size 15s` and `CATTERY_CHUNK_SIZE=15` are accepted, validated, and
+- `--chunk-size 15s` and `HELIUM_CHUNK_SIZE=15` are accepted, validated, and
   reduce Moonshine peak RSS further.
 - Auto mode picks `10s`, `15s`, `20s`, `30s`, `45s`, and `60s` on
   representative `512 MB`, `1 GB`, `2 GB`, `4 GB`, `8 GB`, and `16 GB+`

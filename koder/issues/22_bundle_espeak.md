@@ -7,36 +7,36 @@
 
 ## Problem
 
-espeak-ng is the only system dependency. Users must `apt install espeak-ng` before cattery works. This breaks the "single command install" promise:
+espeak-ng is the only system dependency. Users must `apt install espeak-ng` before helium works. This breaks the "single command install" promise:
 
 ```
-go install github.com/jikkuatwork/cattery/cmd/cattery@latest
-cattery "Hello"  # fails: espeak-ng not found
+go install github.com/jikkuatwork/helium/cmd/helium@latest
+helium "Hello"  # fails: espeak-ng not found
 ```
 
 On Pi4 / embedded / air-gapped systems, requiring apt access adds friction, may need sudo, and breaks offline operation.
 
 ## Goal
 
-Eliminate the espeak-ng system dependency. After `go install`, `cattery` auto-downloads espeak-ng on first run (same as ORT and models) — no `apt install` required.
+Eliminate the espeak-ng system dependency. After `go install`, `helium` auto-downloads espeak-ng on first run (same as ORT and models) — no `apt install` required.
 
 ## Decision: download-on-first-run (revised 2026-03-30)
 
 Original plan was `go:embed`. Revised because:
-- cattery already requires first-run downloads (ORT, models, voices) — espeak is no different
+- helium already requires first-run downloads (ORT, models, voices) — espeak is no different
 - +11MB binary bloat for a purity that doesn't exist (network is already required)
 - 11MB of tarballs checked into git history is unnecessary repo bloat
 - `cattery-artefacts` is the canonical home for all runtime dependencies
 
-Artefacts now live at `cattery-artefacts/espeak-ng-v1.51/` (Git LFS), registered in `mirror.json`. `phonemize/bundle/` purged from cattery git history.
+Artefacts now live at `cattery-artefacts/espeak-ng-v1.51/` (Git LFS), registered in `mirror.json`. `phonemize/bundle/` purged from helium git history.
 
 ### Previous rationale (archived)
 
 - GitHub LFS has bandwidth quotas — can get throttled
 - Repos get renamed, deleted, or transferred
 - CDN/mirror URLs change over time
-- Any breakage = cattery stops working on fresh installs
-- Air-gapped setups break if `~/.cattery/` is wiped (new SD card, new user)
+- Any breakage = helium stops working on fresh installs
+- Air-gapped setups break if `~/.helium/` is wiped (new SD card, new user)
 
 ### Why `go:embed`?
 
@@ -54,8 +54,8 @@ Artefacts now live at `cattery-artefacts/espeak-ng-v1.51/` (Git LFS), registered
 
 To keep the aggregation argument airtight:
 - espeak-ng binary + data live in a compressed archive blob, not as loose Go source
-- Extracted to `~/.cattery/espeak-ng/`, executed via `os/exec` (separate process)
-- cattery code never imports or links espeak-ng C code
+- Extracted to `~/.helium/espeak-ng/`, executed via `os/exec` (separate process)
+- helium code never imports or links espeak-ng C code
 - `THIRD_PARTY_NOTICES.md` includes full LGPL/GPL attribution + source pointer to espeak-ng repo
 
 ## Design
@@ -103,17 +103,17 @@ var espeakDataArchive []byte
 
 ### Runtime extraction
 
-On first use, extract to `~/.cattery/espeak-ng/`:
+On first use, extract to `~/.helium/espeak-ng/`:
 
 ```
-~/.cattery/espeak-ng/
+~/.helium/espeak-ng/
 ├── bin/
 │   └── espeak-ng           # platform-specific binary (chmod +x)
 └── data/
     └── ...                 # espeak-ng-data (phoneme rules, languages)
 ```
 
-Extraction is cached — skip if `~/.cattery/espeak-ng/bin/espeak-ng` already exists and matches expected version. A version marker file (`~/.cattery/espeak-ng/.version`) tracks which cattery version extracted the files, so upgrades can re-extract if the bundled espeak-ng changes.
+Extraction is cached — skip if `~/.helium/espeak-ng/bin/espeak-ng` already exists and matches expected version. A version marker file (`~/.helium/espeak-ng/.version`) tracks which helium version extracted the files, so upgrades can re-extract if the bundled espeak-ng changes.
 
 ### Changes to `phonemize/`
 
@@ -172,12 +172,12 @@ This runs **once** when updating the bundled espeak-ng version, not on every bui
 
 ## Acceptance criteria
 
-- [ ] `go install ... && cattery "Hello"` works without `apt install` on all 4 platforms
+- [ ] `go install ... && helium "Hello"` works without `apt install` on all 4 platforms
 - [ ] No network required — works on air-gapped systems from first run
-- [ ] espeak-ng binary + data extracted to `~/.cattery/espeak-ng/` on first use, cached thereafter
-- [ ] Version marker enables clean re-extraction on cattery upgrades
+- [ ] espeak-ng binary + data extracted to `~/.helium/espeak-ng/` on first use, cached thereafter
+- [ ] Version marker enables clean re-extraction on helium upgrades
 - [ ] `ESPEAK_DATA_PATH` correctly set for bundled binary
-- [ ] `cattery status` shows bundled espeak-ng version
+- [ ] `helium status` shows bundled espeak-ng version
 - [ ] `THIRD_PARTY_NOTICES.md` updated with LGPL-2.1+/GPL-3.0 attribution and source pointer
 - [ ] `scripts/build-espeak.sh` reproducibly builds static binaries for 4 platforms
 - [ ] Binary size increase is under 4MB
@@ -187,4 +187,4 @@ This runs **once** when updating the bundled espeak-ng version, not on every bui
 - espeak-ng-data is ~2MB uncompressed, compresses well. Binary is ~300KB per platform.
 - Total embedded payload: ~3MB compressed across all platforms (only the matching platform's binary is included per build via build tags; data is shared).
 - The `go:embed` approach means `go install` from source includes espeak-ng — no separate download step, no artefacts repo dependency for this component.
-- Future: if espeak-ng is ever replaced (e.g., WASM+wazero for cleaner embedding), the extraction cache in `~/.cattery/espeak-ng/` can be cleaned up by the new version.
+- Future: if espeak-ng is ever replaced (e.g., WASM+wazero for cleaner embedding), the extraction cache in `~/.helium/espeak-ng/` can be cleaned up by the new version.

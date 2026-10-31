@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jikkuatwork/cattery/llm"
-	"github.com/jikkuatwork/cattery/llm/qwen"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/preflight"
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/llm"
+	"github.com/jikkuatwork/helium/llm/qwen"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/preflight"
+	"github.com/jikkuatwork/helium/registry"
 )
 
 type ChatCompletionRequest struct {

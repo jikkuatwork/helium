@@ -21,8 +21,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/registry"
 )
 
 const (
@@ -450,7 +450,7 @@ func downloadORT(ortDir, version string, style *barStyle) (string, error) {
 		return "", fmt.Errorf("ORT %s not found in mirror index (key %s)", version, mirrorKey)
 	}
 
-	tmpPath, err := reserveTempPath("cattery-ort-*.tgz")
+	tmpPath, err := reserveTempPath("helium-ort-*.tgz")
 	if err != nil {
 		return "", err
 	}

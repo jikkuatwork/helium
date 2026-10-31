@@ -7,11 +7,11 @@
 
 ## Problem
 
-Cattery currently only works with local ONNX models. Users who:
+Helium currently only works with local ONNX models. Users who:
 - Don't want to download 150MB of artefacts
 - Want higher quality than Kokoro/Moonshine
 - Are on resource-constrained machines
-- Want to use LLM capabilities (future `cattery think`)
+- Want to use LLM capabilities (future `helium think`)
 
 ...have no option. Meanwhile, OpenAI's API provides TTS, STT, and LLM behind a single API key.
 
@@ -19,7 +19,7 @@ Cattery currently only works with local ONNX models. Users who:
 
 OpenAI models are just models in the registry. `--model openai-tts-1` works the
 same as `--model kokoro-82m-v1.0`. No `--remote` flag. No special treatment in the
-CLI. The only difference: remote models appear in `cattery list` only when
+CLI. The only difference: remote models appear in `helium list` only when
 `OPENAI_API_KEY` is set.
 
 ## Design
@@ -33,21 +33,21 @@ local (need downloads) and which are remote (need API key).
 ```bash
 export OPENAI_API_KEY=sk-...
 
-cattery speak --model openai-tts-1 "Hello"       # remote TTS
-cattery speak --model kokoro-82m-v1.0 "Hello"     # local TTS (default)
-cattery listen --model openai-whisper-1 audio.wav  # remote STT
-cattery listen --model moonshine-tiny "Hello"      # local STT (default)
+helium speak --model openai-tts-1 "Hello"       # remote TTS
+helium speak --model kokoro-82m-v1.0 "Hello"     # local TTS (default)
+helium listen --model openai-whisper-1 audio.wav  # remote STT
+helium listen --model moonshine-tiny "Hello"      # local STT (default)
 ```
 
 Default model is always local. User must explicitly choose a remote model.
 This prevents accidental API spend.
 
-### `cattery list` — local vs remote
+### `helium list` — local vs remote
 
 Remote models only appear when `OPENAI_API_KEY` is set:
 
 ```
-$ cattery list
+$ helium list
 
 TTS Models
   ✓ Kokoro 82M              88.0 MB   local
@@ -62,7 +62,7 @@ STT Models
 Without the key:
 
 ```
-$ cattery list
+$ helium list
 
 TTS Models
   ✓ Kokoro 82M              88.0 MB   local
@@ -193,7 +193,7 @@ Use `net/http` + `encoding/json` + `mime/multipart` for API calls. No SDK.
 The server resolves models the same way as CLI:
 
 ```
-cattery serve --speak-model openai-tts-1 --listen-model moonshine-tiny
+helium serve --speak-model openai-tts-1 --listen-model moonshine-tiny
 ```
 
 Or defaults to local for everything.
@@ -203,15 +203,15 @@ Or defaults to local for everything.
 - **Create**: `speak/openai/openai.go` — OpenAI TTS engine
 - **Create**: `listen/openai/openai.go` — OpenAI Whisper engine
 - **Edit**: `registry/registry.go` — add Location field, remote model entries, API key gating on list
-- **Edit**: `cmd/cattery/main.go` — engine resolution from model ID
+- **Edit**: `cmd/helium/main.go` — engine resolution from model ID
 - **Edit**: `server/server.go` — support remote engines in pool config
 
 ## Acceptance criteria
 
-- [ ] `cattery speak --model openai-tts-1 "Hello"` produces audio (with API key set)
-- [ ] `cattery listen --model openai-whisper-1 audio.wav` produces text
-- [ ] `cattery list` shows remote models only when `OPENAI_API_KEY` is set
-- [ ] `cattery list` hides remote models when no key
+- [ ] `helium speak --model openai-tts-1 "Hello"` produces audio (with API key set)
+- [ ] `helium listen --model openai-whisper-1 audio.wav` produces text
+- [ ] `helium list` shows remote models only when `OPENAI_API_KEY` is set
+- [ ] `helium list` hides remote models when no key
 - [ ] `--model openai-tts-1` without API key → clear error message
 - [ ] `OPENAI_BASE_URL` overrides the API endpoint
 - [ ] Works with OpenRouter, Ollama (OpenAI-compatible providers)

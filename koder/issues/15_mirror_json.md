@@ -61,6 +61,6 @@ Key points:
 ## Future
 
 - Add alternative mirrors (R2, B2, self-hosted) by appending to the `mirrors`
-  arrays — no cattery code change required.
+  arrays — no helium code change required.
 - Could version-gate artefacts (e.g. model v2) by adding new keys; old keys
   stay for backward compat.

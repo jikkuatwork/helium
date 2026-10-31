@@ -4,7 +4,7 @@
 
 ## Goal
 
-Replace cattery's remaining custom server endpoints with OpenAI-compatible
+Replace helium's remaining custom server endpoints with OpenAI-compatible
 HTTP shapes so the official OpenAI SDKs can use the local server directly:
 
 - keep `POST /v1/chat/completions` as-is
@@ -18,19 +18,19 @@ download behavior, auth, `/v1/status`, and CLI commands stay intact.
 
 ## Current anchors
 
-- [`server/server.go`](/home/glasscube/Projects/cattery/server/server.go)
+- [`server/server.go`](/home/glasscube/Projects/helium/server/server.go)
   currently registers `POST /v1/tts`, `POST /v1/stt`, `GET /v1/models`, and
   `GET /v1/voices`, and it holds the current `ttsRequest`, `modelResponse`,
   and `voiceResponse` API structs.
-- [`server/stt.go`](/home/glasscube/Projects/cattery/server/stt.go)
+- [`server/stt.go`](/home/glasscube/Projects/helium/server/stt.go)
   currently accepts raw request bodies plus `Content-Type` validation and
   returns the custom `sttResponse`.
-- [`server/llm.go`](/home/glasscube/Projects/cattery/server/llm.go)
+- [`server/llm.go`](/home/glasscube/Projects/helium/server/llm.go)
   already matches the intended OpenAI-compatible server style and should not
   be behaviorally changed.
-- [`server/auth_test.go`](/home/glasscube/Projects/cattery/server/auth_test.go)
+- [`server/auth_test.go`](/home/glasscube/Projects/helium/server/auth_test.go)
   references protected paths and will need route updates.
-- [`server/llm_test.go`](/home/glasscube/Projects/cattery/server/llm_test.go)
+- [`server/llm_test.go`](/home/glasscube/Projects/helium/server/llm_test.go)
   already validates the retained chat completions endpoint and should remain
   green after the route cleanup.
 
@@ -118,7 +118,7 @@ Response shape:
       "id": "kokoro-82m-v1.0",
       "object": "model",
       "created": 0,
-      "owned_by": "cattery"
+      "owned_by": "helium"
     }
   ]
 }
@@ -131,7 +131,7 @@ Rules:
 - `object` is always `"model"`
 - `created` can be a fixed placeholder `0` for now unless registry metadata is
   later extended
-- `owned_by` should be a stable string such as `"cattery"`
+- `owned_by` should be a stable string such as `"helium"`
 - drop custom fields: `index`, `kind`, `name`, `location`, `downloaded`,
   `size_bytes`, `voices`
 

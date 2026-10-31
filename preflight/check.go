@@ -1,4 +1,4 @@
-// Package preflight provides a system readiness check for cattery TTS.
+// Package preflight provides a system readiness check for helium TTS.
 //
 // Call Check before attempting synthesis to get a clean error instead of
 // destabilizing the host under low-resource conditions.
@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/phonemize"
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/phonemize"
+	"github.com/jikkuatwork/helium/registry"
 )
 
 // Status describes why the system cannot run TTS.
@@ -24,7 +24,7 @@ func (s *Status) Error() string {
 	if s.OK {
 		return ""
 	}
-	return "cattery: not ready: " + strings.Join(s.Errors, "; ")
+	return "helium: not ready: " + strings.Join(s.Errors, "; ")
 }
 
 func (s *Status) addError(msg string) {
@@ -96,7 +96,7 @@ func CheckAvailableMemory(minMemMB int) error {
 	}
 	availMB := AvailableMemoryMB()
 	if availMB >= 0 && availMB < minMemMB {
-		return fmt.Errorf("cattery: insufficient memory: %d MB available, need %d MB", availMB, minMemMB)
+		return fmt.Errorf("helium: insufficient memory: %d MB available, need %d MB", availMB, minMemMB)
 	}
 	return nil
 }

@@ -7,9 +7,9 @@ Add opt-in authentication for the REST server.
 
 ## Implemented
 
-- `--auth` flag on `cattery serve` — progressive enhancement, off by default
-- API keys stored as SHA-256 hashes in `~/.cattery/keys.json`
-- `cattery keys create/list/revoke/delete` CLI for key management
+- `--auth` flag on `helium serve` — progressive enhancement, off by default
+- API keys stored as SHA-256 hashes in `~/.helium/keys.json`
+- `helium keys create/list/revoke/delete` CLI for key management
 - `Authorization: Bearer cat_...` header on protected endpoints
 - `/v1/status` stays public; all other routes + pprof gated when auth enabled
 - Per-key fixed-window rate limiting (default 60 req/min, configurable)

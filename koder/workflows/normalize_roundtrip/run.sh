@@ -69,10 +69,10 @@ similarity() {
     echo $(( matches * 100 / ${#exp_words[@]} ))
 }
 
-# Build cattery once
-echo "Building cattery..."
-(cd "$REPO_ROOT" && go build -o "$TMP_DIR/cattery" ./cmd/cattery)
-CATTERY="$TMP_DIR/cattery"
+# Build helium once
+echo "Building helium..."
+(cd "$REPO_ROOT" && go build -o "$TMP_DIR/helium" ./cmd/helium)
+HELIUM="$TMP_DIR/helium"
 
 echo "Normalize round-trip test"
 echo "Runs: $NUM_RUNS"
@@ -99,10 +99,10 @@ for run in $(seq 1 "$NUM_RUNS"); do
             wav_file="$TMP_DIR/test_${total_cases}.wav"
 
             # TTS → WAV
-            $CATTERY speak -o "$wav_file" "$input" 2>/dev/null || true
+            $HELIUM speak -o "$wav_file" "$input" 2>/dev/null || true
 
             # WAV → STT
-            got=$($CATTERY listen "$wav_file" 2>/dev/null || echo "[STT FAILED]")
+            got=$($HELIUM listen "$wav_file" 2>/dev/null || echo "[STT FAILED]")
             got=$(echo "$got" | tr -d '\n' | sed 's/^ *//;s/ *$//')
 
             # Score: how much of the expected output did STT recover?

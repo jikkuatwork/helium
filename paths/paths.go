@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 )
 
-// DataDir returns the data directory for cattery (~/.cattery).
+// DataDir returns the data directory for helium (~/.helium).
 func DataDir() string {
 	if home, err := os.UserHomeDir(); err == nil {
-		return filepath.Join(home, ".cattery")
+		return filepath.Join(home, ".helium")
 	}
-	return ".cattery"
+	return ".helium"
 }
 
 // ModelDir returns the path for a model's files within the data directory.

@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jikkuatwork/cattery/registry"
+	"github.com/jikkuatwork/helium/registry"
 )
 
 func TestParseLinuxMemAvailableMB(t *testing.T) {

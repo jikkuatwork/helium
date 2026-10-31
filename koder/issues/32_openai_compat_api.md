@@ -4,15 +4,15 @@
 
 ## Goal
 
-Replace cattery's custom server endpoints with OpenAI-compatible ones so the
-OpenAI Python/Node SDK works as a drop-in client. Cattery becomes a local
+Replace helium's custom server endpoints with OpenAI-compatible ones so the
+OpenAI Python/Node SDK works as a drop-in client. Helium becomes a local
 OpenAI — same API, no cloud, runs on Pi4.
 
 ## Motivation
 
 - "Works with any OpenAI SDK" is instantly understood by developers
 - One API surface instead of two (custom + compat) halves testing/docs burden
-- Every existing SDK in every language works day one — no cattery SDK needed
+- Every existing SDK in every language works day one — no helium SDK needed
 - Adding new models becomes trivial — the contract is already defined
 
 ## Changes
@@ -50,9 +50,9 @@ OpenAI — same API, no cloud, runs on Pi4.
 - X-Model / X-Voice / X-Audio-Duration response headers (not in OpenAI spec)
 
 ### Keep unchanged
-- CLI commands (`cattery tts`, `cattery stt`, `cattery llm`) — ad-hoc/script use
+- CLI commands (`helium tts`, `helium stt`, `helium llm`) — ad-hoc/script use
 - Pool system, engine swapping, auth middleware — internal plumbing untouched
-- `/v1/status` — cattery-specific health endpoint (no OpenAI equivalent)
+- `/v1/status` — helium-specific health endpoint (no OpenAI equivalent)
 - `/debug/pprof/*` — dev tooling
 
 ## Key files
@@ -61,7 +61,7 @@ OpenAI — same API, no cloud, runs on Pi4.
 - `server/stt.go` — STT handler (multipart rewrite)
 - `server/llm_test.go` — tests (verify still pass)
 - `server/auth_test.go` — tests referencing endpoints
-- `cmd/cattery/main.go` — CLI (unchanged)
+- `cmd/helium/main.go` — CLI (unchanged)
 
 ## Verification
 1. `go build ./...` passes

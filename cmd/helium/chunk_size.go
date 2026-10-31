@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/jikkuatwork/cattery/preflight"
+	"github.com/jikkuatwork/helium/preflight"
 )
 
 func resolveCommandChunkSize(flagValue string, stderr io.Writer) (time.Duration, error) {

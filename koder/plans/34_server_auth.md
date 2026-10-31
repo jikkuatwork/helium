@@ -4,9 +4,9 @@
 
 ## Goal
 
-Add opt-in API key authentication to `cattery serve`. Auth is a progressive
+Add opt-in API key authentication to `helium serve`. Auth is a progressive
 enhancement: off by default, enabled only with `--auth`. Keys live in
-`~/.cattery/keys.json` and are managed via `cattery keys` CLI.
+`~/.helium/keys.json` and are managed via `helium keys` CLI.
 
 ## Design
 
@@ -16,7 +16,7 @@ enhancement: off by default, enabled only with `--auth`. Keys live in
 - Generated via `crypto/rand`
 - Only the SHA-256 hash is stored; full key shown once at creation
 
-### Storage: `~/.cattery/keys.json`
+### Storage: `~/.helium/keys.json`
 
 ```json
 [
@@ -37,22 +37,22 @@ enhancement: off by default, enabled only with `--auth`. Keys live in
 - `rate_limit` = requests per minute (default 60, 0 = unlimited)
 - `disabled` = soft-delete for revocation
 
-### CLI: `cattery keys`
+### CLI: `helium keys`
 
 ```
-cattery keys create --name "my-app"           # prints full key once
-cattery keys create --name "bot" --rate 120   # custom rate limit
-cattery keys list                              # table: id, name, created, rate, disabled
-cattery keys revoke <id>                       # sets disabled: true
-cattery keys delete <id>                       # removes from file
+helium keys create --name "my-app"           # prints full key once
+helium keys create --name "bot" --rate 120   # custom rate limit
+helium keys list                              # table: id, name, created, rate, disabled
+helium keys revoke <id>                       # sets disabled: true
+helium keys delete <id>                       # removes from file
 ```
 
 ### Server: `--auth` flag
 
-- `cattery serve --auth` → loads keys.json, enforces auth
+- `helium serve --auth` → loads keys.json, enforces auth
 - No `--auth` → fully open (current behavior, zero overhead)
 - `--auth` with no keys file or empty keys → refuse to start:
-  `"no API keys found; run 'cattery keys create' first"`
+  `"no API keys found; run 'helium keys create' first"`
 
 ### Middleware behavior
 
@@ -95,31 +95,31 @@ cattery keys delete <id>                       # removes from file
 |------|---------|
 | `server/auth.go` | Key store, auth middleware, rate limiter |
 | `server/auth_test.go` | Unit tests for middleware, rate limiting, key loading |
-| `cmd/cattery/keys.go` | `cattery keys` subcommand |
+| `cmd/helium/keys.go` | `helium keys` subcommand |
 
 ## Files to modify
 
 | File | Change |
 |------|--------|
 | `server/server.go` | Add `Auth bool` to Config; wrap protected handlers with auth middleware; add `authStore` field to Server |
-| `cmd/cattery/main.go` | Add `keys` subcommand dispatch; add `--auth` to `cmdServe`; add `keys` to help text and `commandNames()` |
+| `cmd/helium/main.go` | Add `keys` subcommand dispatch; add `--auth` to `cmdServe`; add `keys` to help text and `commandNames()` |
 
 ## Implementation order
 
 1. `server/auth.go` — KeyStore (load/save/lookup), AuthMiddleware, RateLimiter
 2. `server/auth_test.go` — test key validation, rate limiting, hot reload, disabled keys
 3. Wire into `server/server.go` — Config.Auth, middleware wrapping
-4. `cmd/cattery/keys.go` — create/list/revoke/delete
-5. Wire `keys` into `cmd/cattery/main.go`
+4. `cmd/helium/keys.go` — create/list/revoke/delete
+5. Wire `keys` into `cmd/helium/main.go`
 6. Update help text
-7. Test end-to-end: `cattery keys create`, `cattery serve --auth`, curl with/without key
+7. Test end-to-end: `helium keys create`, `helium serve --auth`, curl with/without key
 
 ## Edge cases
 
 - keys.json doesn't exist when `--auth` is set → error at startup
 - keys.json is empty array when `--auth` is set → error at startup
 - keys.json has only disabled keys → server starts (valid file, just no active keys)
-- Concurrent key file writes (two `cattery keys create` at once) → flock or atomic write
+- Concurrent key file writes (two `helium keys create` at once) → flock or atomic write
 - Key ID collision (first 12 chars match) → regenerate (vanishingly unlikely)
 
 ## What's out of scope

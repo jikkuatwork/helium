@@ -6,13 +6,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jikkuatwork/cattery/download"
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/preflight"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/stt"
-	"github.com/jikkuatwork/cattery/stt/moonshine"
+	"github.com/jikkuatwork/helium/download"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/preflight"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/stt"
+	"github.com/jikkuatwork/helium/stt/moonshine"
 )
 
 func cmdSTT(args []string) error {
@@ -52,10 +52,10 @@ func cmdSTT(args []string) error {
 			chunkSizeFlag = args[i]
 		default:
 			if strings.HasPrefix(args[i], "--") {
-				return fmt.Errorf("unknown flag: %s\nRun 'cattery help' for usage", args[i])
+				return fmt.Errorf("unknown flag: %s\nRun 'helium help' for usage", args[i])
 			}
 			if inputPath != "" {
-				return fmt.Errorf("unexpected argument %q\nUsage: cattery stt <audio.wav>", args[i])
+				return fmt.Errorf("unexpected argument %q\nUsage: helium stt <audio.wav>", args[i])
 			}
 			inputPath = args[i]
 		}
@@ -63,7 +63,7 @@ func cmdSTT(args []string) error {
 
 	model := registry.Resolve(registry.KindSTT, modelRef)
 	if model == nil {
-		return fmt.Errorf("unknown STT model %q\nRun 'cattery list stt' to see available models", modelRef)
+		return fmt.Errorf("unknown STT model %q\nRun 'helium list stt' to see available models", modelRef)
 	}
 	if model.Location != registry.Local {
 		return fmt.Errorf("remote STT model %q is not supported yet", model.ID)
@@ -74,7 +74,7 @@ func cmdSTT(args []string) error {
 		return err
 	}
 
-	input, _, err := openAudioInput(inputPath, "cattery stt <audio.wav>")
+	input, _, err := openAudioInput(inputPath, "helium stt <audio.wav>")
 	if err != nil {
 		return err
 	}

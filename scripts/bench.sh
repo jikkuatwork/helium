@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# bench.sh — profile cattery server at different worker counts.
+# bench.sh — profile helium server at different worker counts.
 # Captures RSS, heap, latency, and throughput.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
 PORT=7199
-BINARY=./cattery
+BINARY=./helium
 
-echo "Building cattery..."
-go build -o "$BINARY" ./cmd/cattery
+echo "Building helium..."
+go build -o "$BINARY" ./cmd/helium
 
 for WORKERS in 1 2 3; do
     echo ""

@@ -41,7 +41,7 @@
 ## Work Plan
 
 1. Extend `server.Config` with `AuthToken`.
-2. Add `--auth-token SECRET` to `cattery serve`.
+2. Add `--auth-token SECRET` to `helium serve`.
 3. Wrap handlers with auth middleware.
 4. Parse `Authorization` strictly.
 5. Return `401` with `WWW-Authenticate: Bearer`.
@@ -57,7 +57,7 @@
 ## Files Likely Touched
 
 - `server/server.go`
-- `cmd/cattery/main.go`
+- `cmd/helium/main.go`
 - new `server/*_test.go`
 - `koder/issues/11_server_auth.md`
 - `koder/STATE.md`
@@ -70,7 +70,7 @@
 
 ## Done When
 
-- `cattery serve --auth-token SECRET` works.
+- `helium serve --auth-token SECRET` works.
 - Protected routes reject missing or wrong bearer tokens.
 - Auth-off mode behaves exactly like today.
 - Tests cover the route matrix.

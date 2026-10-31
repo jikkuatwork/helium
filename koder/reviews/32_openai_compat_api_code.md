@@ -18,7 +18,7 @@ No regressions to pool, auth, or engine behavior.
 |------|--------|-------|
 | `POST /v1/audio/speech` shape | OK | `input`, `voice`, `model`, `speed`, `response_format` — matches OpenAI |
 | `POST /v1/audio/transcriptions` multipart | OK | `file` (required), `model`, `language`, `response_format` via `r.FormFile` |
-| `GET /v1/models` envelope | OK | `{"object":"list","data":[{"id":...,"object":"model","created":0,"owned_by":"cattery"}]}` |
+| `GET /v1/models` envelope | OK | `{"object":"list","data":[{"id":...,"object":"model","created":0,"owned_by":"helium"}]}` |
 | Old routes removed | OK | `/v1/tts`, `/v1/stt`, `/v1/voices` all return 404, confirmed by tests |
 | Nested OpenAI error format | OK | `{"error":{"message":...,"type":"invalid_request_error","code":null}}` on all new handlers |
 | Custom headers dropped | OK | No `X-Model`, `X-Voice`, `X-Audio-Duration`, `X-Processing-Time`, `X-RTF`, `Content-Disposition` |

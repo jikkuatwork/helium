@@ -1,13 +1,13 @@
-// cattery - speech tools from the command line.
+// helium - speech tools from the command line.
 //
 // Usage:
 //
-//	cattery "Hello, world."
-//	cattery tts --voice 4 "Hello!"
-//	cattery stt audio.wav
-//	cattery llm "What is the capital of France?"
-//	cattery status
-//	cattery download
+//	helium "Hello, world."
+//	helium tts --voice 4 "Hello!"
+//	helium stt audio.wav
+//	helium llm "What is the capital of France?"
+//	helium status
+//	helium download
 package main
 
 import (
@@ -19,16 +19,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jikkuatwork/cattery/download"
-	"github.com/jikkuatwork/cattery/llm/qwen"
-	"github.com/jikkuatwork/cattery/ort"
-	"github.com/jikkuatwork/cattery/paths"
-	"github.com/jikkuatwork/cattery/phonemize"
-	"github.com/jikkuatwork/cattery/preflight"
-	"github.com/jikkuatwork/cattery/registry"
-	"github.com/jikkuatwork/cattery/server"
-	"github.com/jikkuatwork/cattery/tts"
-	"github.com/jikkuatwork/cattery/tts/kokoro"
+	"github.com/jikkuatwork/helium/download"
+	"github.com/jikkuatwork/helium/llm/qwen"
+	"github.com/jikkuatwork/helium/ort"
+	"github.com/jikkuatwork/helium/paths"
+	"github.com/jikkuatwork/helium/phonemize"
+	"github.com/jikkuatwork/helium/preflight"
+	"github.com/jikkuatwork/helium/registry"
+	"github.com/jikkuatwork/helium/server"
+	"github.com/jikkuatwork/helium/tts"
+	"github.com/jikkuatwork/helium/tts/kokoro"
 )
 
 func main() {
@@ -72,7 +72,7 @@ func run() error {
 		printDefaultUsage()
 		return nil
 	case "version", "--version":
-		fmt.Println("cattery 0.9.0")
+		fmt.Println("helium 0.9.0")
 		return nil
 	}
 
@@ -161,7 +161,7 @@ func cmdServe(args []string) error {
 			chunkSizeFlag = args[i]
 		default:
 			return fmt.Errorf(
-				"unknown flag %q for serve\nRun 'cattery help --advanced' for all serve flags",
+				"unknown flag %q for serve\nRun 'helium help --advanced' for all serve flags",
 				args[i],
 			)
 		}
@@ -243,7 +243,7 @@ func cmdTTS(args []string) error {
 			chunkSizeFlag = args[i]
 		default:
 			if strings.HasPrefix(args[i], "--") {
-				return fmt.Errorf("unknown flag: %s\nRun 'cattery help' for usage", args[i])
+				return fmt.Errorf("unknown flag: %s\nRun 'helium help' for usage", args[i])
 			}
 			textParts = append(textParts, args[i])
 		}
@@ -256,7 +256,7 @@ func cmdTTS(args []string) error {
 
 	model := resolveTTSModel(modelRef)
 	if model == nil {
-		return fmt.Errorf("unknown TTS model %q\nRun 'cattery list tts' to see available models", modelRef)
+		return fmt.Errorf("unknown TTS model %q\nRun 'helium list tts' to see available models", modelRef)
 	}
 	if model.Location != registry.Local {
 		return fmt.Errorf("remote TTS model %q is not supported yet", model.ID)
@@ -265,7 +265,7 @@ func cmdTTS(args []string) error {
 	voiceInfo, err := kokoro.ResolveVoice(model, voiceFlag, genderFilter)
 	if err != nil {
 		if voiceFlag != "" {
-			return fmt.Errorf("%w\nRun 'cattery list tts' to see available voices", err)
+			return fmt.Errorf("%w\nRun 'helium list tts' to see available voices", err)
 		}
 		return err
 	}
@@ -436,7 +436,7 @@ func cmdStatus(args []string) error {
 		return err
 	}
 
-	fmt.Println("cattery status")
+	fmt.Println("helium status")
 	fmt.Println()
 
 	fmt.Printf("  Platform:      %s/%s\n", goruntime.GOOS, goruntime.GOARCH)
@@ -546,17 +546,17 @@ func cmdDownload(args []string) error {
 // --- help ---
 
 func printDefaultUsage() {
-	fmt.Fprintf(os.Stderr, `cattery - speech tools from the command line
+	fmt.Fprintf(os.Stderr, `helium - speech tools from the command line
 
 Usage:
-  cattery "Hello, world."          Shortcut for cattery tts
-  cattery tts "Hello, world."      Text to speech
-  cattery stt audio.wav            Speech to text
-  cattery llm "Hello"              Local text generation
-  cattery serve                    Start REST API server
-  cattery status                   Show model/runtime status
-  cattery download                 Pre-download local assets
-  cattery help --advanced          Show advanced commands and flags
+  helium "Hello, world."          Shortcut for helium tts
+  helium tts "Hello, world."      Text to speech
+  helium stt audio.wav            Speech to text
+  helium llm "Hello"              Local text generation
+  helium serve                    Start REST API server
+  helium status                   Show model/runtime status
+  helium download                 Pre-download local assets
+  helium help --advanced          Show advanced commands and flags
 
 Commands:
   tts         Text to speech
@@ -578,33 +578,33 @@ STT:
   --output, -o     Output text file (default: stdout)
 
 LLM:
-  cattery llm "What is the capital of France?"
-  cattery llm --system "You are helpful" "Hi"
-  cattery llm --stdin < prompt.txt
+  helium llm "What is the capital of France?"
+  helium llm --system "You are helpful" "Hi"
+  helium llm --stdin < prompt.txt
   --output, -o     Output text file (default: stdout)
 
 Server:
-  cattery serve --port 8080
-  cattery serve --auth
+  helium serve --port 8080
+  helium serve --auth
 
-On first run, cattery downloads the model (~92MB) and runtime (~18MB).
+On first run, helium downloads the model (~92MB) and runtime (~18MB).
 No accounts or API keys required.
 
-Run 'cattery help --advanced' for more.
+Run 'helium help --advanced' for more.
 `)
 }
 
 func printAdvancedUsage() {
-	fmt.Fprintf(os.Stderr, `cattery - speech tools from the command line
+	fmt.Fprintf(os.Stderr, `helium - speech tools from the command line
 
 Usage:
-  cattery "Hello, world."          Shortcut for cattery tts
-  cattery tts --voice 4 "Hi there"
-  cattery tts --model 1 "Hi there"
-  cattery stt call.wav
-  cattery llm "What is the capital of France?"
-  cattery llm --stdin < prompt.txt
-  cattery stt -
+  helium "Hello, world."          Shortcut for helium tts
+  helium tts --voice 4 "Hi there"
+  helium tts --model 1 "Hi there"
+  helium stt call.wav
+  helium llm "What is the capital of France?"
+  helium llm --stdin < prompt.txt
+  helium stt -
 
 Commands:
   tts         Text to speech
@@ -641,42 +641,42 @@ LLM flags:
   --max-tokens N   Maximum output tokens
 
 Manage:
-  cattery list
-  cattery list tts
-  cattery list llm
-  cattery download stt
-  cattery download llm
-  cattery status tts --model 1
+  helium list
+  helium list tts
+  helium list llm
+  helium download stt
+  helium download llm
+  helium status tts --model 1
 
 Pipes:
-  cattery stt call.wav | cattery tts
-  echo "Hello" | cattery tts | cattery stt
+  helium stt call.wav | helium tts
+  echo "Hello" | helium tts | helium stt
 
 Server:
-  cattery serve --port 8080
-  cattery serve --tts-workers 2
-  cattery serve --stt-workers 2
-  cattery serve --chunk-size 20s
-  cattery serve --memory 8G
-  cattery serve --max-chars 300
-  cattery serve --queue-max 10
-  cattery serve --idle-timeout 600
-  cattery serve --keep-alive
-  cattery serve --auth
+  helium serve --port 8080
+  helium serve --tts-workers 2
+  helium serve --stt-workers 2
+  helium serve --chunk-size 20s
+  helium serve --memory 8G
+  helium serve --max-chars 300
+  helium serve --queue-max 10
+  helium serve --idle-timeout 600
+  helium serve --keep-alive
+  helium serve --auth
   --memory SIZE    Memory budget for engine co-residency (e.g. 8G)
 
 Keys:
-  cattery keys create --name my-app
-  cattery keys list
-  cattery keys revoke cat_a1b2c3d4
-  cattery keys delete cat_a1b2c3d4
+  helium keys create --name my-app
+  helium keys list
+  helium keys revoke cat_a1b2c3d4
+  helium keys delete cat_a1b2c3d4
 
 Chunk size:
-  CATTERY_CHUNK_SIZE   Shared override for tts, stt, and serve
+  HELIUM_CHUNK_SIZE   Shared override for tts, stt, and serve
   Auto default         10s <=512MB, 15s <=1GB, 20s <=2GB, 30s <=4GB,
                        45s <=8GB, 60s >8GB, 30s if RAM is unknown
 
-On first run, cattery downloads the model (~92MB) and runtime (~18MB).
+On first run, helium downloads the model (~92MB) and runtime (~18MB).
 No accounts or API keys required.
 `)
 }
@@ -778,7 +778,7 @@ func parseSelectionArgs(args []string) (registry.Kind, string, error) {
 			modelRef = args[i]
 		default:
 			if strings.HasPrefix(args[i], "--") {
-				return "", "", fmt.Errorf("unknown flag: %s\nRun 'cattery help' for usage", args[i])
+				return "", "", fmt.Errorf("unknown flag: %s\nRun 'helium help' for usage", args[i])
 			}
 			if parsed, ok := parseKindAlias(args[i]); ok {
 				if kind != "" && kind != parsed {

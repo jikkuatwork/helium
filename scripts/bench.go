@@ -1,4 +1,4 @@
-// bench.go — parallel load test for cattery server.
+// bench.go — parallel load test for helium server.
 //
 // Usage: go run scripts/bench.go [-n 10] [-workers 1] [-port 7100]
 //

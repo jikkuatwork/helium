@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jikkuatwork/cattery/audio"
-	"github.com/jikkuatwork/cattery/stt"
+	"github.com/jikkuatwork/helium/audio"
+	"github.com/jikkuatwork/helium/stt"
 	ortgo "github.com/yalue/onnxruntime_go"
 )
 

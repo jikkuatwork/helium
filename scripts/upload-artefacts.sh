@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Upload cattery model/voice/ORT artefacts to jikkuatwork/cattery-artefacts
+# Upload helium model/voice/ORT artefacts to jikkuatwork/cattery-artefacts
 #
 # Prerequisites:
 #   - gh auth login
@@ -39,17 +39,17 @@ done
 
 # Generate checksums
 echo "=== SHA256 checksums ==="
-sha256sum "${ASSETS[@]}" | tee /tmp/cattery-sha256sums.txt
-ASSETS+=("/tmp/cattery-sha256sums.txt")
+sha256sum "${ASSETS[@]}" | tee /tmp/helium-sha256sums.txt
+ASSETS+=("/tmp/helium-sha256sums.txt")
 
 # Create release and upload
 echo ""
 echo "=== Creating release $TAG ==="
 gh release create "$TAG" \
   --repo "$REPO" \
-  --title "Cattery Artefacts $TAG" \
+  --title "Helium Artefacts $TAG" \
   --notes "$(cat <<'EOF'
-Model and voice files for [cattery](https://github.com/jikkuatwork/cattery).
+Model and voice files for [helium](https://github.com/jikkuatwork/helium).
 
 ## Contents
 - `model_quantized.onnx` — Kokoro-82M int8 quantized ONNX model (92MB)

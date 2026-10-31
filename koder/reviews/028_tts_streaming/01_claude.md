@@ -16,10 +16,10 @@ All five work-plan items are implemented:
    on close). `WriteWAV` preserved as thin wrapper.
 2. **WAV writer tests** (`audio/wav_test.go`) — seekable header patching,
    non-seekable temp fallback, `WriteWAV` parity with streaming writer.
-3. **`countingWriter` seek forwarding** (`cmd/cattery/io.go`) — `Seek` method
+3. **`countingWriter` seek forwarding** (`cmd/helium/io.go`) — `Seek` method
    added, delegates to inner writer when it implements `io.Seeker`. Logical
    offset tracked so `count` stays correct after seek-back-and-rewrite.
-4. **`countingWriter` tests** (`cmd/cattery/io_test.go`) — seek forwarding,
+4. **`countingWriter` tests** (`cmd/helium/io_test.go`) — seek forwarding,
    logical size tracking after overwrite and extend, non-seekable error path.
 5. **Kokoro flush-per-chunk** (`speak/kokoro/kokoro.go`) — `synthesizeChunks`
    removed; `Speak` now opens a `WAVWriter`, writes each chunk immediately,
@@ -101,7 +101,7 @@ even if WriteSamples returns an error") would prevent misuse.
 
 **P3-1: `seekBuffer` duplicated across test files**
 
-`audio/wav_test.go` has `seekBuffer` and `cmd/cattery/io_test.go` has
+`audio/wav_test.go` has `seekBuffer` and `cmd/helium/io_test.go` has
 `seekRecorder` — both are in-memory write-seekers with nearly identical logic.
 Not blocking, but a shared `internal/testutil` helper would reduce duplication
 if more packages need one.

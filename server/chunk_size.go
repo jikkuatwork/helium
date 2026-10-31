@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jikkuatwork/cattery/preflight"
+	"github.com/jikkuatwork/helium/preflight"
 )
 
 func resolveServerChunkSize(

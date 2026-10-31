@@ -95,7 +95,7 @@ accidentally keep the query-param path alongside the form field.
 
 ### 6. OpenAI error response format
 
-The plan keeps cattery's flat error shape `{"error": "string"}`. The OpenAI
+The plan keeps helium's flat error shape `{"error": "string"}`. The OpenAI
 API returns a nested object:
 
 ```json
@@ -128,7 +128,7 @@ The current handler (`server/server.go:459`) rejects unknown JSON fields.
 The OpenAI SDK for TTS sends only `model`, `input`, `voice`, `speed`,
 `response_format` — which matches `audioSpeechRequest` — so this should be
 fine today. But if OpenAI adds new fields to their SDK in the future,
-cattery would reject them. Note this as a known forward-compat risk, or
+helium would reject them. Note this as a known forward-compat risk, or
 consider dropping the strict check.
 
 ---

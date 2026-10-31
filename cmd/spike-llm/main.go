@@ -13,7 +13,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/dlclark/regexp2"
-	"github.com/jikkuatwork/cattery/ort"
+	"github.com/jikkuatwork/helium/ort"
 	ortgo "github.com/yalue/onnxruntime_go"
 	"golang.org/x/text/unicode/norm"
 )
@@ -165,7 +165,7 @@ func main() {
 		fatalf("load tokenizer: %v", err)
 	}
 
-	ortLib := filepath.Join(os.Getenv("HOME"), ".cattery", "ort", "libonnxruntime.so.1.24.4")
+	ortLib := filepath.Join(os.Getenv("HOME"), ".helium", "ort", "libonnxruntime.so.1.24.4")
 	if _, err := os.Stat(ortLib); err != nil {
 		fatalf("missing ORT shared library at %s: %v", ortLib, err)
 	}

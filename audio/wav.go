@@ -58,7 +58,7 @@ func NewWAVWriter(w io.Writer, sampleRate int) (*WAVWriter, error) {
 		return ww, nil
 	}
 
-	tmp, err := os.CreateTemp("", "cattery-wav-*")
+	tmp, err := os.CreateTemp("", "helium-wav-*")
 	if err != nil {
 		return nil, err
 	}

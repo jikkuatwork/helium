@@ -94,7 +94,7 @@ Delete it. All references update to `speak/kokoro`. The `engine` package was alw
 
 | File | Current | After |
 |---|---|---|
-| `cmd/cattery/main.go` | Manual pipeline: engine.Init, engine.New, phonemize, Tokenize, LoadVoice, Synthesize | `kokoro.New(...)` then `eng.Speak(w, text, opts)` |
+| `cmd/helium/main.go` | Manual pipeline: engine.Init, engine.New, phonemize, Tokenize, LoadVoice, Synthesize | `kokoro.New(...)` then `eng.Speak(w, text, opts)` |
 | `server/server.go` | Same manual pipeline + engine pool | Engine pool of `speak.Engine` + `eng.Speak(w, text, opts)` |
 
 ### File changes
@@ -102,7 +102,7 @@ Delete it. All references update to `speak/kokoro`. The `engine` package was alw
 - **Create**: `speak/speak.go` — interface + types
 - **Create**: `speak/kokoro/kokoro.go` — Kokoro implementation (from `engine/engine.go`)
 - **Delete**: `engine/engine.go`
-- **Edit**: `cmd/cattery/main.go` — use `speak/kokoro` + `speak.Options`
+- **Edit**: `cmd/helium/main.go` — use `speak/kokoro` + `speak.Options`
 - **Edit**: `server/server.go` — pool `speak.Engine` instead of `*engine.Engine`
 - **Edit**: `registry/registry.go` — may simplify Voice type (download metadata only)
 
@@ -111,9 +111,9 @@ Delete it. All references update to `speak/kokoro`. The `engine` package was alw
 - [ ] `speak.Engine` interface exists with `Speak()`, `Voices()`, `Close()`
 - [ ] `speak/kokoro` implements `speak.Engine`
 - [ ] `engine/` package is deleted
-- [ ] `cattery "Hello world"` works via new code path
-- [ ] `cattery serve` + POST /v1/tts works via new code path
-- [ ] `cattery list` shows voices from engine, not just registry
+- [ ] `helium "Hello world"` works via new code path
+- [ ] `helium serve` + POST /v1/tts works via new code path
+- [ ] `helium list` shows voices from engine, not just registry
 - [ ] `go build ./...` and `go vet ./...` pass
 - [ ] No behavior change from user perspective
 

@@ -72,7 +72,7 @@ func resolveTTSText(parts []string) (string, error) {
 	if stdinHasData() {
 		return readStdinText()
 	}
-	return "", fmt.Errorf("no text provided\nUsage: cattery tts \"Hello, world.\"")
+	return "", fmt.Errorf("no text provided\nUsage: helium tts \"Hello, world.\"")
 }
 
 func readStdinText() (string, error) {
