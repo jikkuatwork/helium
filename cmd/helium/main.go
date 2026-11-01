@@ -72,7 +72,7 @@ func run() error {
 		printDefaultUsage()
 		return nil
 	case "version", "--version":
-		fmt.Println("helium 0.9.0")
+		fmt.Println("helium 0.9.1")
 		return nil
 	}
 
