@@ -1,0 +1,18 @@
+{
+  "qwen": {
+    "original_file": "decoder_model_merged_q4.onnx",
+    "derived_file": "decoder_model_merged_q4_acc4.onnx",
+    "changed_nodes": 249,
+    "original_sha256": "731f0569c84ea71a756abfe090f3b472050ecda7ad35a78fb553dc530a60315b",
+    "derived_sha256": "c7e5b1ca6535f729c1583d8f84b3d0a6ba58ef817cf85cb4e7eb786e83c8ef2f",
+    "change": "MatMulNBits accuracy_level=4 only; no weight or IO changes"
+  },
+  "lfm25": {
+    "original_file": "model_q4.onnx",
+    "derived_file": "model_q4_acc4.onnx",
+    "changed_nodes": 93,
+    "original_sha256": "c760a2d8be1d19c71c470ef294c1220ef85b5b3a0e31f12a363655ea7fab1d58",
+    "derived_sha256": "9c834a9c4a41f737d05455d41e2931421fbcf7836fa28f196672e502bb1ed013",
+    "change": "MatMulNBits accuracy_level=4 only; no weight or IO changes"
+  }
+}

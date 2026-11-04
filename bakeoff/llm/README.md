@@ -21,7 +21,11 @@ bash bakeoff/llm/run_all.sh
   solely required embedding/token inputs, positions and logits control. Uses
   published local chat templates, no `trust_remote_code` execution.
 - `evaluate.py`: one warm-up and five trials, 100 / 1000 exact input tokens,
-  32 post-TTFT decode steps. Intra-op threads 1/4/8, inter-op 1, sequential,
+  32 post-TTFT decode steps. Both lengths at 4/8 threads for every candidate;
+  supplemental 1-thread Qwen defaults to 100 tokens only for the wall-time
+  budget (other 1-thread candidates include both lengths). To add its slow
+  long-prefill sweep separately, pass `--threads 1 --prompt-lengths 1000`
+  with a new `--out` path. Intra-op threads 1/4/8, inter-op 1, sequential,
   CPU EP, full ORT optimization, worker spinning disabled equally for all.
   Timing begins before state allocation and required Qwen embedding, ends after
   argmax/cache replacement; excludes tokenization and detokenization. Decode

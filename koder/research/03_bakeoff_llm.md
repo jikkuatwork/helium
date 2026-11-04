@@ -24,7 +24,10 @@ ORT **1.24.4**, pinned with dependencies in `bakeoff/llm/requirements.txt`.
 Python runner will use identical greedy decode/cache handling, except Qwen's
 required separate embedding graph versus LFM's direct token input. Model loading
 and tokenization excluded from warmed TTFT; peak process RSS includes them.
-Warm-up once, at least five measured runs per speed configuration, medians.
+Warm-up once per speed prompt/configuration, at least five measured runs,
+medians. Both 100/1000-token lengths at 4 and 8 threads; supplemental Qwen
+1-thread sweep is 100 tokens only because its long prefill exceeds the
+remaining wall-time budget. Other candidates include both lengths at 1 thread.
 
 The N1 has ARM dot-product instructions; Pi 4 Cortex-A72 does not. **These are
 not Pi 4 latency measurements.** Q4 is not uniform: LFM3's official `q4` retains
@@ -189,8 +192,12 @@ Requested native-export results remain unchanged. A supplemental four-thread
 control sets only Qwen/LFM2.5 `MatMulNBits.accuracy_level=4` in derived graphs
 outside the repo; weights and I/O are untouched. This is **not** a silently
 optimized baseline and may change numerical outputs; do not infer quality
-parity without separately evaluating those derived graphs. Control medians
-pending. On a Pi 4 without the required kernels, ORT falls back to fp32; the
+parity without separately evaluating those derived graphs. Control medians so far: LFM2.5 decode improves from **6.95 to 28.82 tok/s**
+at 100-token context, and from 6.78 to 25.75 at 1000. Prefill improves only
+from 56.03/56.58 to 69.29/68.33 tok/s. Qwen control still running. LFM2.5
+therefore becomes faster than LFM3 for decode under matched requested compute
+policy. This reverses the naive native-export size/speed interpretation.
+On a Pi 4 without the required kernels, ORT falls back to fp32; the
 relative Altra speed ranking need not carry over unchanged.
 
 Source read: https://github.com/microsoft/onnxruntime/blob/v1.24.4/onnxruntime/contrib_ops/cpu/quantization/matmul_nbits.cc

@@ -21,8 +21,8 @@ def emit(path, obj):
     print(obj.get('id', obj.get('kind')), obj.get('pass', ''), obj.get('generated_tokens', ''), flush=True)
 
 
-def speed(r, path, repeats, tokens, extra_logits=True):
-    for n in [100, 1000]:
+def speed(r, path, repeats, tokens, extra_logits=True, prompt_lengths=(100, 1000)):
+    for n in prompt_lengths:
         # Same text repeated, independently tokenized then exactly truncated to length.
         ids = r.encode(r.render([{'role': 'user', 'content': 'This is a short document about weather, travel, shopping, and personal reminders. ' * 300}]))[:n]
         assert len(ids) == n
@@ -37,7 +37,7 @@ def speed(r, path, repeats, tokens, extra_logits=True):
         summary.update(kind='median', id=f'median{n}', prompt_tokens=n, repeats=repeats, decode_steps=tokens-1)
         emit(path, summary)
     # Isolate export's last-token-logits advantage; native Qwen always computes full logits.
-    if r.model != 'qwen' and extra_logits:
+    if r.model != 'qwen' and extra_logits and 1000 in prompt_lengths:
         ids = r.encode('This is a short document about weather and reminders. ' * 300)[:1000]
         r.generate(ids, max_tokens=2, force_length=True, full_logits=True)
         rows = []
@@ -116,11 +116,15 @@ def main():
     p.add_argument('--threads', type=int, default=4)
     p.add_argument('--repeats', type=int, default=5)
     p.add_argument('--tokens', type=int, default=33, help='one prefill token + 32 timed decode tokens')
+    p.add_argument('--prompt-lengths', help='comma-separated exact prefill lengths; Qwen 1t defaults to 100 for budget, others 100,1000')
     p.add_argument('--spot', action='store_true')
     p.add_argument('--shard', default='0/1', help='quality-only request shard INDEX/COUNT')
     p.add_argument('--accuracy4', action='store_true', help='experimental graph-only matched compute control, not native export')
     p.add_argument('--out', type=Path, required=True)
     a = p.parse_args()
+    lengths = tuple(map(int, (a.prompt_lengths or ('100' if a.model == 'qwen' and a.threads == 1 else '100,1000')).split(',')))
+    if not lengths or any(n not in [100, 1000] for n in lengths):
+        raise ValueError('Prompt lengths must be 100 and/or 1000')
     shard = tuple(map(int, a.shard.split('/')))
     if len(shard) != 2 or not (0 <= shard[0] < shard[1]):
         raise ValueError('Invalid shard')
@@ -131,11 +135,11 @@ def main():
     a.out.parent.mkdir(parents=True, exist_ok=True)
     r = Runner(a.model, a.threads, accuracy4=a.accuracy4)
     emit(a.out, {'kind': 'environment', 'ort': ort.__version__, 'python': platform.python_version(), 'model': a.model + ('-acc4' if a.accuracy4 else ''), 'threads': a.threads,
-                 'accuracy4_control': a.accuracy4, 'quality_shard': shard,
+                 'accuracy4_control': a.accuracy4, 'quality_shard': shard, 'speed_prompt_lengths': lengths,
                  'affinity': sorted(os.sched_getaffinity(0)), 'load_s': r.load_s,
                  'harness_sha256': {name: hashlib.sha256((Path(__file__).parent / name).read_bytes()).hexdigest() for name in ['runner.py', 'suites.py', 'evaluate.py']},
                  'timestamp': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())})
-    if a.mode == 'speed': speed(r, a.out, a.repeats, a.tokens, extra_logits=a.threads == 4)
+    if a.mode == 'speed': speed(r, a.out, a.repeats, a.tokens, extra_logits=a.threads == 4, prompt_lengths=lengths)
     else: quality(r, a.out, a.spot, shard)
 
 
