@@ -159,8 +159,9 @@ Remote worker VM ([plans/38_remote_worker_vm.md](plans/38_remote_worker_vm.md)) 
 toolchain at parity (pi 1.4.0, harnex 0.30.1, go 1.25.1), helium `main` pushed. Tooling:
 `scripts/hvm` + `scripts/hvm-host-init.sh`. Push and fetch-as-worktree verified; Pi lanes not yet
 run (no key). Next, in order:
-1. **Foundry key** — `/mcp` → *claude.ai foundry* → sign in (it showed "Needs authentication").
-   Then, on the owner's go: `console_me`, then `keys_create` label `hvm-helium — remote worker VM
+1. **Foundry key** — owner says the Foundry MCP will be connected next session (it showed
+   "Needs authentication" on 2026-11-04; if it still does: `/mcp` → *claude.ai foundry* → sign in).
+   Load the `foundry-operator` skill; then, on the owner's go: `console_me`, then `keys_create` label `hvm-helium — remote worker VM
    (helium plan 38)`, $100 (`100000000` µUSD), `allowed_models: []`, idempotency key
    `hvm-helium-key-2026-11-04`. Token goes to the owner once; owner runs `scripts/hvm key helium`
    in a separate terminal. Budget: $100 balance, top-ups ≤ $100/day, each on owner's go.
