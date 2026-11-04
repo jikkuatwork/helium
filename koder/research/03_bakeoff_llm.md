@@ -12,8 +12,14 @@ Status: **running**. Evaluation only; no integration changes.
 ## Method and environment
 
 2026-11-04, Ubuntu 24.04 aarch64, Python 3.12.3, Ampere Altra / ARM
-Neoverse-N1, 32 vCPUs, 128 GB RAM. All inference pinned to `taskset -c 16-23`;
+Neoverse-N1, 32 vCPUs, 128 GB RAM. All inference pinned within cores **16–23**;
+exclusive speed processes use `taskset -c 16-23`.
 ORT CPU EP, sequential execution, intra-op 1 / 4 / 8, inter-op 1.
+Qwen correctness-only requests are sharded into two four-thread processes,
+`taskset -c 16-19` and `20-23`, to fit the wall-time budget. Their request
+latencies/combined RSS are **not** speed/Pi measurements; both processes
+finish before the next exclusive speed run. Quality uses greedy decode,
+fixed fixtures and independent empty contexts, so no shared request state.
 ORT **1.24.4**, pinned with dependencies in `bakeoff/llm/requirements.txt`.
 Python runner will use identical greedy decode/cache handling, except Qwen's
 required separate embedding graph versus LFM's direct token input. Model loading

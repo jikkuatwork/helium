@@ -45,7 +45,8 @@ def main():
                 assert r['pass'] == (r['first_pass'] and r['second_pass'])
         for r in ins:
             assert validate_instruction(r['text'], r['case']['rules']) == r['checks']
-        q = {'tool_total': len(tools), 'tool_pass': sum(r['pass'] for r in tools),
+        q = {'quality_timings_comparable': env.get('quality_timings_comparable', True),
+             'tool_total': len(tools), 'tool_pass': sum(r['pass'] for r in tools),
              'tool_categories': {}, 'instruction_total': len(ins), 'instruction_pass': sum(r['pass'] for r in ins),
              'constraint_pass': sum(sum(r['checks'].values()) for r in ins), 'constraint_total': sum(len(r['checks']) for r in ins),
              'instruction_failures': [{'id': r['id'], 'prompt': r['case']['prompt'], 'text': final_text(r['text']), 'checks': r['checks']} for r in ins if not r['pass']],
@@ -76,7 +77,7 @@ def main():
             q['enabled_truncations'] = sum(r['finish'] == 'length' for r in enabled)
             if pairs:
                 q['mean_extra_tokens'] = statistics.mean(on['generated_tokens'] - off['generated_tokens'] for on, off in pairs)
-                q['mean_extra_seconds'] = statistics.mean(on['total_s'] - off['total_s'] for on, off in pairs)
+                q['mean_extra_seconds'] = statistics.mean(on['total_s'] - off['total_s'] for on, off in pairs) if q['quality_timings_comparable'] else None
             q['paired_off_leaks'] = sum(emitted_reasoning(r['text']) for r in disabled)
         out['quality'][name] = q
     a.out.parent.mkdir(parents=True, exist_ok=True)

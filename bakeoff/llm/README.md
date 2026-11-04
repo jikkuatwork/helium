@@ -37,10 +37,18 @@ bash bakeoff/llm/run_all.sh
   Word counts use Unicode word regex with internal apostrophes/hyphens;
   one-sentence check counts terminal punctuation boundaries. Fixed translation
   whitelist checks language. Output limits: 192 off / 512 on; report censoring.
-- `run_all.sh`: serialized core-pinned inference; resumes completed jobs,
+- `run_all.sh`: serialized exclusive speed runs; resumes completed jobs,
   refuses to overwrite incomplete evidence. Four-thread quality is prioritized
-  for the main candidates before supplemental thread sweeps. Every process is
-  wrapped by `/usr/bin/time -v`. No real tools/messages/reminders are executed.
+  for the main candidates before supplemental thread sweeps. Qwen correctness
+  only uses `run_quality_parallel.sh`: two request shards, four threads each,
+  disjoint cores 16–19 / 20–23. These request latencies and combined memory
+  are **not** speed/Pi results. Both finish before exclusive speed resumes.
+  Every inference process is wrapped by `/usr/bin/time -v`. No real tools,
+  messages or reminders are executed.
+- `prepare_accuracy4.py`, `run_controls.sh`: experimental four-thread
+  matched-compute controls for Qwen/LFM2.5, changing only the graph attribute
+  `MatMulNBits.accuracy_level=4`, never original graphs or weights. Not native
+  results and not evidence of quality parity.
 - `summarize.py`: reads raw JSONL, independently checks scores, emits a small
   committed summary (raw generated outputs remain outside the repo).
 - `graphs.json`: complete graph I/O + recursive operator inventory.

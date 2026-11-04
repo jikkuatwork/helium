@@ -23,7 +23,11 @@ run quality lfm25 4 --spot
 for model in lfm3 qwen; do
   if [[ "$model" == qwen ]]; then bash bakeoff/llm/run_controls.sh; fi
   run speed "$model" 4
-  run quality "$model" 4
+  if [[ "$model" == qwen ]]; then
+    bash bakeoff/llm/run_quality_parallel.sh qwen
+  else
+    run quality "$model" 4
+  fi
   run speed "$model" 8
   run speed "$model" 1
 done

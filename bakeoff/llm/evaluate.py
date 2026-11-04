@@ -49,11 +49,13 @@ def speed(r, path, repeats, tokens, extra_logits=True):
         emit(path, {'kind': 'full_logits_median', 'id': 'full_logits_median1000', 'ttft_s': statistics.median(x['ttft_s'] for x in rows), 'prefill_tps': statistics.median(x['prefill_tps'] for x in rows)})
 
 
-def quality(r, path, spot=False):
+def quality(r, path, spot=False, shard=(0, 1)):
+    def selected(cases):
+        return [c for i, c in enumerate(cases) if i % shard[1] == shard[0]]
     r.chat([{'role': 'user', 'content': 'Say hello.'}], max_tokens=8)
     parse = parse_pythonic_calls if r.model == 'lfm25' else parse_calls
     tool_specs = [t['function'] for t in TOOLS] if r.model == 'lfm25' else TOOLS
-    for case in (tool_cases() if not spot else tool_cases()[::4]):
+    for case in selected(tool_cases() if not spot else tool_cases()[::4]):
         messages = [{'role': 'system', 'content': TOOL_SYSTEM}, {'role': 'user', 'content': case['prompt']}]
         result = r.chat(messages, tools=tool_specs, max_tokens=192)
         parsed = parse(final_text(result['text']))
@@ -78,18 +80,18 @@ def quality(r, path, spot=False):
         else:
             result['pass'] = first_ok
         emit(path, result)
-    for case in (instruction_cases() if not spot else instruction_cases()[::3]):
+    for case in selected(instruction_cases() if not spot else instruction_cases()[::3]):
         result = r.chat([{'role': 'user', 'content': case['prompt']}], max_tokens=192)
         checks = validate_instruction(result['text'], case['rules'])
         result.update(kind='instruction', id=case['id'], case=case, checks=checks, **{'pass': all(checks.values())}, reasoning_leak=emitted_reasoning(result['text']))
         emit(path, result)
-    for i, prompt in enumerate(VOICE if not spot else VOICE[:5]):
+    for i, prompt in selected(list(enumerate(VOICE if not spot else VOICE[:5]))):
         result = r.chat([{'role': 'system', 'content': VOICE_SYSTEM}, {'role': 'user', 'content': prompt}], max_tokens=192)
         result.update(kind='voice', id=f'voice{i}', prompt=prompt, reasoning_leak=emitted_reasoning(result['text']))
         emit(path, result)
     if spot:
         return
-    for i, prompt in enumerate(THINK):
+    for i, prompt in selected(list(enumerate(THINK))):
         messages = [{'role': 'system', 'content': VOICE_SYSTEM}, {'role': 'user', 'content': prompt}]
         for enabled in [False, True]:
             result = r.chat(messages, thinking=enabled, max_tokens=512 if enabled else 192)
@@ -114,20 +116,26 @@ def main():
     p.add_argument('--repeats', type=int, default=5)
     p.add_argument('--tokens', type=int, default=33, help='one prefill token + 32 timed decode tokens')
     p.add_argument('--spot', action='store_true')
+    p.add_argument('--shard', default='0/1', help='quality-only request shard INDEX/COUNT')
     p.add_argument('--accuracy4', action='store_true', help='experimental graph-only matched compute control, not native export')
     p.add_argument('--out', type=Path, required=True)
     a = p.parse_args()
+    shard = tuple(map(int, a.shard.split('/')))
+    if len(shard) != 2 or not (0 <= shard[0] < shard[1]):
+        raise ValueError('Invalid shard')
+    if a.mode == 'speed' and shard != (0, 1):
+        raise ValueError('Speed must never be sharded/concurrent')
     if a.out.exists():
         raise RuntimeError('Refusing to overwrite existing results: ' + str(a.out))
     a.out.parent.mkdir(parents=True, exist_ok=True)
     r = Runner(a.model, a.threads, accuracy4=a.accuracy4)
     emit(a.out, {'kind': 'environment', 'ort': ort.__version__, 'python': platform.python_version(), 'model': a.model + ('-acc4' if a.accuracy4 else ''), 'threads': a.threads,
-                 'accuracy4_control': a.accuracy4,
+                 'accuracy4_control': a.accuracy4, 'quality_shard': shard,
                  'affinity': sorted(os.sched_getaffinity(0)), 'load_s': r.load_s,
                  'harness_sha256': {name: hashlib.sha256((Path(__file__).parent / name).read_bytes()).hexdigest() for name in ['runner.py', 'suites.py', 'evaluate.py']},
                  'timestamp': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())})
     if a.mode == 'speed': speed(r, a.out, a.repeats, a.tokens, extra_logits=a.threads == 4)
-    else: quality(r, a.out, a.spot)
+    else: quality(r, a.out, a.spot, shard)
 
 
 if __name__ == '__main__':
