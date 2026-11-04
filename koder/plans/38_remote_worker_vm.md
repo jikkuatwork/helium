@@ -1,6 +1,6 @@
 # Plan 38 — Remote Worker VMs (on-demand cloud lanes)
 
-Status: Phase 1 — host built and verified (push, fetch); Pi lanes pending the Foundry key; VM deallocated (2026-11-04) · First consumer: helium · The
+Status: Phase 1 — first real run 2026-11-05: key issued, three plan-39 lanes running on the VM · First consumer: helium · The
 process evolves here (owner, 2026-11-04: "we will learn here by evolving the
 process here"); once it is good, it moves into the **koder-pattern** skill.
 Phase 1 tooling: `scripts/hvm` + `scripts/hvm-host-init.sh` (this repo).
@@ -176,7 +176,7 @@ harnex work in helium still goes straight onto main.)
 **Phase 1 — scripts + manual flow (helium bake-off as the proving run)**
 - [ ] `vm up` aborts on a failed sponsored guard; creates only tagged RG resources.
 - [ ] `vm up` + `vm init` → host ready (pi, harnex, go versions = local) in < 15 min.
-- [ ] A Pi lane runs on the VM with the capped key; `lanes --json` readable over ssh.
+- [x] A Pi lane runs on the VM with the capped key; `lanes --json` readable over ssh. (2026-11-05)
 - [ ] `vm fetch` materializes the lane branch as a local worktree; tests pass locally.
 - [ ] `vm destroy` leaves no RG and the key revoked; `vm stop` deallocates.
 - [ ] Friction log kept below → feeds harnex #97 and koder-pattern.
@@ -196,6 +196,22 @@ harnex work in helium still goes straight onto main.)
   `hvm fetch` → local `.harnex/worktrees/smoke`; cleaned without landing.
 - 2026-11-04 · Foundry MCP not connected in the orchestrating session; key
   creation needs the owner (console) or an MCP connect + explicit go.
+- 2026-11-05 · Foundry MCP connected; `keys_create` from Claude worked on the
+  owner's go (key `4rn4pmnn53rx`, $100). The token passed through the
+  orchestrator once (piped to `hvm key` over stdin); rotate if that bothers.
+- 2026-11-05 · smoke `harnex ask` on the VM answered in 5 s (gpt-6.1-sol):
+  key, pi-config and tmux-over-ssh all work for a single lane.
+- 2026-11-05 · **harnex 0.30.1 bug for remote hosts:** `run.rb` picks
+  `tmux new-window` only when `$TMUX` is set, else `new-session -s harnex`.
+  Over non-interactive ssh `$TMUX` is unset, so the second lane fails with
+  `duplicate session: harnex`. Workaround in `hvm run/delegate`: export
+  `TMUX` from `tmux display -p -t =harnex` before calling harnex. Filed as
+  harnex #98 (prerequisite for #97): reuse `=harnex` via `has-session`, not `$TMUX`.
+- 2026-11-05 · `harnex delegate` warned "1 uncommitted change" because the
+  copied brief under `.harnex/briefs/` is untracked on the host; `hvm push`
+  now adds `.harnex/` to the host repo's `info/exclude`.
+- 2026-11-05 · `hvm start` returns before ssh is reachable (~5 s later);
+  callers must poll. Fine for now.
 
 **Phase 2 — harnex remote lanes** (harnex #97, with #95 caps) — see that issue.
 

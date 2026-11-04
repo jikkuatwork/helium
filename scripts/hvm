@@ -113,6 +113,11 @@ remove_ssh_block() {
 
 hssh() { local n="$1"; shift; ssh "$(alias_of "$n")" "$@"; }
 
+# harnex 0.30.1 picks tmux new-window vs new-session by $TMUX alone. Over
+# non-interactive ssh $TMUX is unset, so every lane after the first dies with
+# "duplicate session: harnex". Point TMUX at the host's live session first.
+REMOTE_TMUX_ENV='if [ -z "${TMUX:-}" ] && tmux has-session -t =harnex 2>/dev/null; then TMUX="$(tmux display -p -t =harnex "#{socket_path},#{pid},#{session_id}" | tr -d "$")"; export TMUX; fi;'
+
 egress_ip() {
   local ip; ip="$(curl -fsS --max-time 10 https://api.ipify.org || true)"
   [[ "$ip" =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]] || die "could not determine this machine's public IP"
@@ -263,7 +268,8 @@ cmd_push() {
   branch="$(git -C "$root" symbolic-ref --short HEAD)"; remote="$(alias_of "$name")"
   hssh "$name" "set -e; mkdir -p ~/work/$repo; cd ~/work/$repo
     [ -d .git ] || git init -q -b $branch
-    git config receive.denyCurrentBranch updateInstead"
+    git config receive.denyCurrentBranch updateInstead
+    grep -qxF .harnex/ .git/info/exclude 2>/dev/null || echo .harnex/ >> .git/info/exclude"
   git -C "$root" remote get-url "$remote" >/dev/null 2>&1 \
     || git -C "$root" remote add "$remote" "$remote:work/$repo"
   say "pushing $repo:$branch → $remote:~/work/$repo"
@@ -279,7 +285,7 @@ cmd_run() {
   local name="${1:-}"; [ -n "$name" ] || usage 2; shift
   load_host "$name"
   local repo; repo="$(basename "$(repo_root .)")"
-  hssh "$name" "cd ~/work/$repo && $(printf '%q ' "$@")"
+  hssh "$name" "$REMOTE_TMUX_ENV cd ~/work/$repo && $(printf '%q ' "$@")"
 }
 
 cmd_delegate() {
@@ -290,7 +296,7 @@ cmd_delegate() {
   local repo; repo="$(basename "$(repo_root .)")"
   hssh "$name" "mkdir -p ~/work/$repo/.harnex/briefs"
   scp -q "$brief" "$(alias_of "$name"):work/$repo/.harnex/briefs/$lane.md"
-  hssh "$name" "cd ~/work/$repo && harnex delegate --no-wait --worktree $(printf %q "$lane") \
+  hssh "$name" "$REMOTE_TMUX_ENV cd ~/work/$repo && harnex delegate --no-wait --worktree $(printf %q "$lane") \
     --file .harnex/briefs/$lane.md $(printf '%q ' "$@")"
 }
 
