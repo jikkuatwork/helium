@@ -13,6 +13,7 @@ go build -o /tmp/tts-preprocess ./bakeoff/tts/preprocess
 # Downloads helium's ORT 1.24.4, Kokoro weights, Bella, and espeak-ng.
 taskset -c 0-7 /tmp/helium tts --voice bella -o /tmp/setup.wav 'Hello world.'
 ~/models/tts/venv/bin/python bakeoff/tts/download.py
+~/models/tts/venv/bin/python bakeoff/tts/corpus.py
 # Optional source inspection used in report (no code from this checkout executes).
 git clone https://github.com/gradium-ai/xn-ptts ~/models/tts/xn-ptts
 git -C ~/models/tts/xn-ptts checkout ee395caac058950cbcabfa3785c63630942f31ed

@@ -12,7 +12,9 @@ SAMPLES = Path.home()/'bakeoff-samples/tts'
 
 
 def main():
-    rows = json.loads((ROOT/'corpus.json').read_text())
+    SAMPLES.mkdir(parents=True,exist_ok=True)
+    (ROOT/'results').mkdir(parents=True,exist_ok=True)
+    rows = json.loads((DATA/'corpus.json').read_text())
     meta = []
     # No concurrent model sessions during synthesis or timing.
     for model in ['kokoro','phonon-int8','phonon-fp32']:

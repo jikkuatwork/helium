@@ -52,7 +52,7 @@ def main():
              'ort':ort.__version__,'affinity':sorted(os.sched_getaffinity(0)),
              'go':subprocess.check_output(['go','version'],text=True).strip(),
              'lscpu':subprocess.check_output(['lscpu'],text=True),
-             'corpus_sha256':sha(ROOT/'corpus.json'),'speed_texts_sha256':sha(ROOT/'speed_texts.json')}}
+             'corpus_sha256':sha(Path.home()/'datasets/tts/corpus.json'),'speed_texts_sha256':sha(Path.home()/'datasets/tts/speed_texts.json')}}
     (ROOT/'results/artifacts.json').write_text(json.dumps(out,indent=2)+'\n')
 
 if __name__=='__main__':main()

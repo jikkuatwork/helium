@@ -19,7 +19,7 @@ class RunnerTests(unittest.TestCase):
 
     def test_all_text_preserved(self):
         tokenizer=Tokenizer.from_file(str(PHONON/'tokenizer.json'))
-        root=Path(__file__).parent
+        root=Path.home()/'datasets/tts'
         texts=list(json.loads((root/'speed_texts.json').read_text()).values())
         texts += [r['spoken'] for r in json.loads((root/'corpus.json').read_text())]
         for text in texts:

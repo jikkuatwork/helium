@@ -22,7 +22,7 @@ def distance(a,b):
 
 
 def main():
-    corpus=json.loads((ROOT/'corpus.json').read_text())
+    corpus=json.loads((Path.home()/'datasets/tts/corpus.json').read_text())
     texts=[corpus[i]['spoken'] for i in [0,10,20,30,40]]
     results=[]
     fp=Phonon('fp32',threads=4)

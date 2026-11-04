@@ -17,7 +17,7 @@ def main():
     p.add_argument('--shape', choices=['short','paragraph','long'], required=True)
     p.add_argument('--output', type=Path, required=True)
     a = p.parse_args()
-    text = json.loads((Path(__file__).parent/'speed_texts.json').read_text())[a.shape]
+    text = json.loads((Path.home()/'datasets/tts/speed_texts.json').read_text())[a.shape]
     start = time.perf_counter()
     if a.model == 'kokoro': e = Kokoro(threads=a.threads)
     else: e = Phonon(precision='fp32' if a.model == 'phonon-fp32' else 'int8', threads=a.threads,

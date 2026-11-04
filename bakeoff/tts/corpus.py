@@ -95,6 +95,7 @@ def corpus():
     return rows
 
 if __name__ == '__main__':
-    root = Path(__file__).parent
+    root = Path.home()/'datasets/tts'
+    root.mkdir(parents=True,exist_ok=True)
     (root/'corpus.json').write_text(json.dumps(corpus(), indent=2, ensure_ascii=False)+'\n')
     (root/'speed_texts.json').write_text(json.dumps({'short': SHORT, 'paragraph': PARAGRAPH, 'long': LONG},indent=2)+'\n')

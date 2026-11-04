@@ -40,7 +40,7 @@ def counts(reference,hypothesis):
 
 
 def main():
-    corpus={x['id']:x for x in json.loads((ROOT/'corpus.json').read_text())}
+    corpus={x['id']:x for x in json.loads((Path.home()/'datasets/tts/corpus.json').read_text())}
     synth=json.loads((ROOT/'results/synthesis.json').read_text())
     recognizer=WhisperModel(str(Path.home()/'models/tts/whisper-small.en'),device='cpu',compute_type='int8',cpu_threads=4,num_workers=1)
     outputs=[]

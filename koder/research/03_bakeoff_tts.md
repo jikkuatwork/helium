@@ -56,6 +56,20 @@ paragraph / long, respectively.
 | 275 words, 4 threads | 11.143 | 0.434 | 665.7 |
 | 10 words, 1 thread | 3.584 | 0.826 | 323.7 |
 | 76 words, 1 thread | 3.545 | 1.120 | 592.8 |
+| 275 words, 1 thread | 3.759 | 1.281 | 665.7 |
+
+| Phonon fp32 input | RT× ↑ | TTFA s ↓ | Peak MiB ↓ |
+|---|---:|---:|---:|
+| 10 words, 4 threads | 7.734 | 0.383 | 417.2 |
+| 76 words, 4 threads | 8.008 | 0.508 | 685.4 |
+| 275 words, 4 threads | 8.116 | 0.597 | 750.7 |
+| 10 words, 1 thread | 2.307 | 1.283 | 417.8 |
+| 76 words, 1 thread | 2.405 | 1.670 | 685.7 |
+| 275 words, 1 thread | 2.438 | 1.993 | 751.1 |
+
+All 18 speed/RSS cells are complete; every process exited zero. The
+inference-free preprocessing/scoring regression tests pass. Quality
+synthesis and transcription are now running.
 
 Phonon uses more RSS on the short input, less on the default-chunked long
 inputs. Its faster delivery also produces shorter audio (2.96 / 25.12 /
@@ -64,7 +78,7 @@ Neither speed input hit Phonon's generation cap.
 
 The paragraph packs into 377 + 127 phoneme tokens, matching helium's
 480-token chunk policy; memory is dominated by inference, not weights.
-Full matrix and quality measurements are running serially.
+Full speed matrix is complete; quality measurements are running serially.
 
 ## Next measurements
 
