@@ -1,258 +1,79 @@
-# Helium — Go Runtime for Tiny Models
+---
+updated_at: "04 Nov 2026 | 11:04 PM IST"
+---
 
-## Overview
+# Helium — State
 
-Local TTS, STT and LLM in Go. No Python. Tiny binary (~8MB). ONNX Runtime, models, voices and espeak-ng auto-download from `cattery-artefacts` on first run (espeak falls back to a system `espeak-ng` on PATH).
+Go runtime for tiny local models: TTS (Kokoro-82M), STT (Moonshine-tiny) and LLM
+(Qwen3.5-4B) over ONNX Runtime, as a CLI, a REST server and a Go module. v0.9.1.
 
-```
-go install github.com/jikkuatwork/helium/cmd/helium@latest
-helium "Hello, world."
-```
+Reference files, read when the task needs them:
+- [PROJECT.md](PROJECT.md): overview, stack, architecture, CLI, downloads, performance
+- [DECISIONS.md](DECISIONS.md): key decisions; **zero external dependencies** is non-negotiable
+- [ROADMAP.md](ROADMAP.md): vision, model survey picks, architecture gaps, open decisions
+- [issues/README.md](issues/README.md): every issue with its status
 
-## Stack
+## Past
 
-- **Language**: Go (small cgo shim for `malloc_trim` during ORT teardown)
-- **Inference**: ONNX Runtime 1.24.1+ via `yalue/onnxruntime_go` v1.27.0 (dlopen)
-- **Model**: Kokoro-82M int8 quantized (92MB ONNX)
-- **Phonemization**: espeak-ng via `os/exec` (downloaded binary; system fallback)
-- **Audio**: WAV (pure Go streaming writer)
+- 2026-03: TTS, STT, LLM, REST server with auth, OpenAI-compatible API, streaming
+  and bounded memory, artefacts (models, ORT, espeak-ng) self-hosted in `cattery-artefacts`.
+- 2026-10-31: renamed cattery → helium; v0.9.1 is the first release as helium.
+- 2026-11-04: owner's vision recorded (one binary + one model file per model,
+  CPU-first, optional GPU, importable); model survey and license policy done.
+- 2026-11-04: remote worker VM built ([plans/38](plans/38_remote_worker_vm.md),
+  `scripts/hvm`); bake-off planned ([plans/39](plans/39_model_bakeoff/README.md)).
+- 2026-11-04 (this close): hand-off tooling only, no product code.
+  - Removed the old `.codex/skills/{open,close}`.
+  - Claude now uses machine-wide `open`/`close` routers from pi-config; in a repo
+    without its own copy they run the koder-pattern templates.
+  - Added `koder-pattern drift`/`upgrade` in pi-config `79656e9`.
+  - Split this file into the reference files above.
 
-## Architecture
+## Present
 
-```
-helium/
-├── cmd/
-│   ├── helium/       # CLI
-│   └── spike/         # Original spike (reference, has timing)
-├── tts/               # TTS engine interface + Kokoro implementation
-├── stt/               # STT engine interface + Moonshine implementation
-├── llm/               # LLM engine interface + Qwen implementation
-├── phonemize/         # espeak-ng IPA phonemizer
-├── audio/             # Pure Go WAV writer
-├── download/          # Auto-download with progress bars and checksum verification
-├── server/            # REST API server with lazy engine pool
-├── preflight/         # System readiness checks (RAM, deps)
-├── registry/          # Model/voice metadata registry
-├── paths/             # Data directory resolution (~/.helium/)
-├── scripts/           # Helper scripts, benchmarks
-└── koder/             # Project tracking
-```
+- `main` was 3 commits ahead of `origin/main` before this close (not pushed).
+- VM `hvm-helium` (D32ps_v5, 32 ARM vCPU, 128 GB, westus2; eastus2 blocks ARM)
+  is **deallocated**; toolchain at parity (pi 1.4.0, harnex 0.30.1, go 1.25.1).
+  Tooling: `scripts/hvm` + `scripts/hvm-host-init.sh`. Push and
+  fetch-as-worktree verified; no Pi lane run yet (no key).
+- No repo-local `open`/`close` and no `koder/AGENTS.md`: Claude's routers follow
+  the templates; Pi has no hand-off skills here. `koder-pattern init` would add
+  copies plus `CHANGELOG.md` (owner's call).
+- LLM output shows Qwen3.5 `<think>…</think>` tags raw (CLI and API).
 
-## CLI Commands
-
-```
-helium "Hello, world."          # TTS with random voice
-helium tts --voice bella "Hi"   # pick voice by name
-helium tts --female "Hello"     # random female voice
-helium tts --speed 1.5 -o out.wav
-helium stt recording.wav        # transcribe audio
-helium llm "What is the capital of France?"  # local LLM
-helium llm --system "You are helpful" "Hi"
-helium status                   # platform, models, disk usage
-helium download                 # pre-fetch model + all voices
-helium serve                    # REST API on :7100
-helium serve --port 8080 -w 2   # custom TTS workers
-helium serve --stt-workers 2    # custom STT workers
-helium serve --auth             # require API keys
-helium help --advanced          # full flag/command reference
-```
-
-## Downloads (no auth, stable URLs)
-
-| Asset | Source | Size |
+| # | Open issue | Pri |
 |---|---|---|
-| TTS model + voices | `jikkuatwork/cattery-artefacts` (Git LFS) | 88MB + 13MB |
-| STT model | `jikkuatwork/cattery-artefacts` (Git LFS) | 28MB |
-| LLM model (Qwen3.5-4B q4) | `jikkuatwork/cattery-artefacts` (Git LFS) | ~2.91 GiB |
-| ORT runtime | `cattery-artefacts` (mirror of MS release) | 18MB |
+| [05](issues/05_cross_platform_build.md) | Cross-platform build (Linux-only today) | P2 |
+| [07](issues/07_license_audit.md) | License audit follow-through | P1 |
+| [12](issues/12_llm_proxy.md) | LLM proxy (propose drop) | P2 |
+| [14](issues/14_web_ui.md) | Embedded web UI | P3 |
+| [23](issues/23_openai_remote_engines.md) | OpenAI remote engines (deferred; propose drop) | P2 |
+| [33](issues/33_gh_actions_pr_permission.md) | GH Actions PR permission | P3 |
+| [36](issues/36_serve_memory_semantics.md) | Serve `--memory` semantics | P3 |
 
-Registry currently includes 27 voices. Downloaded artefacts (incl. espeak-ng) are cached in `~/.helium/`; nothing is embedded in the binary yet.
+## Future
 
-## Performance (aarch64 VM, 6-core)
-
-| Metric | Value |
-|---|---|
-| RTF | 0.70x (faster than real-time) |
-| Idle RSS (lazy) | 8 MB (no engine loaded) |
-| Idle RSS (post-evict) | ~50 MB (after malloc_trim) |
-| Peak RSS (short text) | ~180 MB |
-| Peak RSS (long text) | ~360 MB |
-| Cold start | ~1.4s (ORT reload + model) |
-| Binary | 8.3MB |
-| First-run download | ~120MB total |
-
-## Issues
-
-| # | Title | Status | Pri |
-|---|---|---|---|
-| [01](issues/01_onnx_inference_spike.md) | ONNX inference spike | **done** | P0 |
-| [02](issues/02_phonemizer_strategy.md) | Phonemizer strategy | **done** (espeak os/exec) | P0 |
-| [03](issues/03_wav_writer.md) | WAV writer | **done** | P1 |
-| [04](issues/04_cli.md) | CLI + model download | **done** | P1 |
-| [05](issues/05_cross_platform_build.md) | Cross-platform build | open | P2 |
-| [06](issues/06_rest_server.md) | REST API server | **done** | P1 |
-| [07](issues/07_license_audit.md) | License audit (model hosting, deps) | open (audit + repo license done) | P1 |
-| [08](issues/08_stt_module.md) | Speech-to-text module | **done** (superseded by #16-#21) | P1 |
-| [09](issues/09_pretty_help.md) | Pretty CLI help | **done** (subsumed by #19) | P3 |
-| [10](issues/10_server_api_audit.md) | Server API audit for apps | **done** (subsumed by #21) | P2 |
-| [11](issues/11_server_auth.md) | Optional server auth | **done** (plan 34) | P2 |
-| [12](issues/12_llm_proxy.md) | LLM proxy (Ollama/OpenRouter) | open | P2 |
-| [13](issues/13_local_4b_model.md) | Local LLM via ONNX | **done** (plan 36 spikes + plan 37 implementation) | P1 |
-| [14](issues/14_web_ui.md) | Embedded web UI | open | P3 |
-| [15](issues/15_mirror_json.md) | Artefact mirror registry (mirror.json) | **done** | P2 |
-| [16](issues/16_extract_ort_runtime.md) | Extract shared ORT runtime from engine/ | **done** | P0 |
-| [17](issues/17_tts_engine_interface.md) | TTS engine interface + package restructure | **done** | P0 |
-| [18](issues/18_registry_redesign.md) | Registry redesign for multi-modal artefacts | **done** | P1 |
-| [19](issues/19_cli_redesign.md) | CLI redesign: subcommand-per-modality | **done** | P1 |
-| [20](issues/20_stt_package.md) | STT package: Moonshine-tiny | **done** | P1 |
-| [21](issues/21_server_api_redesign.md) | Server API redesign for multi-modality | **done** | P2 |
-| [22](issues/22_bundle_espeak.md) | Bundle espeak-ng (zero system deps) | **done** | P1 |
-| [23](issues/23_openai_remote_engines.md) | OpenAI-compatible remote engines | open | P2 |
-| [24](issues/24_tts_sentence_chunking.md) | Transparent sentence chunking for long text TTS | **done** | P1 |
-| [25](issues/25_text_normalizer.md) | Pure Go text normalizer for TTS preprocessing | **done** | P1 |
-| [26](issues/26_stt_audio_chunking.md) | STT audio chunking to prevent hallucination | **done** | P1 |
-| [27](issues/27_bounded_memory_streaming.md) | Bounded-memory streaming for TTS/STT | **done** (native memtest validated; 4 GB / 1 GB cgroup run requires manual host) | P1 |
-| [28](issues/28_rss_validation.md) | RSS validation: TTS accumulation + STT baseline overage | **done** | P1 |
-| [29](issues/29_fix_memtest.md) | Fix memtest suite: test artifacts causing false failures and OOM risk | **done** | P1 |
-| [30](issues/30_rename_verbs.md) | Rename speak/listen → tts/stt | **done** (plan 35) | P2 |
-| [31](issues/31_simplified_ux.md) | Simplified default UX with --advanced escape hatch | **done** (plan 35) | P2 |
-| [32](issues/32_openai_compat_api.md) | OpenAI-compatible server API | **done** (plan 32) | P1 |
-| [33](issues/33_gh_actions_pr_permission.md) | Enable GH Actions PR creation permission | open | P3 |
-| [34](issues/34_trim_espeak_data.md) | Trim espeak-ng-data to English-only | **dropped** | P3 |
-| [35](issues/35_mirror_ort.md) | Mirror ORT into cattery-artefacts | **done** | P1 |
-| [36](issues/36_serve_memory_semantics.md) | Serve --memory semantics | open | P3 |
-
-## What's Next
-
-### Vision (owner, 2026-11-04)
-
-Standalone Go runtime for tiny models — TTS, STT, LLM, VLM and other useful
-types. Goals:
-- **Exactly one binary + one model file** per model (today: binary + ORT .so +
-  many model/voice/tokenizer files + espeak-ng binary/data).
-- CPU-first on any machine; use a GPU when present (ORT execution providers).
-- Importable Go module for larger projects (first consumer: Go assistant bot).
-
-### Session 2026-11-04 outcome (planning only, no code changes)
-
-- **Model survey done** → [research/02_model_survey.md](research/02_model_survey.md).
-  Candidate picks (unverified on our hardware):
-  - TTS: **Phonon 31m-en** (Apache, no phonemizer → drops espeak-ng); Pocket TTS 7m/18m low-end
-  - STT: **Parakeet TDT-CTC 110M** (CC-BY, ~40% fewer errors than Moonshine-tiny); Parakeet 0.6B large tier
-  - LLM: **Qwen3.5-4B vs LFM3-1.7B** (contest); **LFM2.5-1.2B** for Pi-class
-  - VLM: Qwen3.5 vision encoder vs LFM3-VL-2B; LFM2.5-VL-450M Pi-class
-  - New: Silero VAD v6.2, Granite-97M / EmbeddingGemma 2 embeddings, GTCRN denoise, PP-OCRv6
-- **License policy decided** (see Key Decisions): revenue caps like LFM's $10M are OK.
-- **Architecture gaps identified** (not yet filed as issues):
-  1. Single-file model bundle (manifest + aligned blobs, mmap) — needed by nearly every pick (multi-graph). Spike: >2GB external weights from inside one file (onnxruntime_go lacks the in-memory external-initializer API; fallback = extract to cache).
-  2. ORT embedded in release binaries (`go:embed` per platform, extract by hash, dlopen); slim build for `go install`/library.
-  3. espeak-ng removal — likely solved by switching to Phonon (else espeak→WASM via wazero inside the bundle).
-  4. Library API: no `ort` lifecycle for importers; inconsistent constructors (`kokoro.New(path, dataDir)`, `moonshine.New(dir, meta)`, `qwen.New(dir, *registry.Model)`); no `context.Context` on TTS/STT; no LLM token streaming/chat/image input; spike cmds + plumbing pkgs not `internal/`.
-  5. Linux-only build: `ort/ort.go` uses glibc `malloc_trim` + `x/sys/unix` with no build tags (absorbs #05).
-  6. GPU: all 5 session-creation sites pass nil options; onnxruntime_go v1.27 already wraps CUDA/CoreML/DirectML/OpenVINO. Add one session choke point first.
-- **Shared Go building blocks** that unlock most picks: SentencePiece tokenizer, log-mel/STFT, generic `past_*`→`present_*` stateful decode loop.
-
-### Start next session here (2026-11-04 close)
-
-Remote worker VM ([plans/38_remote_worker_vm.md](plans/38_remote_worker_vm.md)) is built and
-**deallocated**: `hvm-helium`, D32ps_v5 (32 ARM vCPU, 128 GB), westus2 (eastus2 blocks ARM),
-toolchain at parity (pi 1.4.0, harnex 0.30.1, go 1.25.1), helium `main` pushed. Tooling:
-`scripts/hvm` + `scripts/hvm-host-init.sh`. Push and fetch-as-worktree verified; Pi lanes not yet
-run (no key). Next, in order:
-1. **Foundry key** — owner says the Foundry MCP will be connected next session (it showed
-   "Needs authentication" on 2026-11-04; if it still does: `/mcp` → *claude.ai foundry* → sign in).
-   Load the `foundry-operator` skill; then, on the owner's go: `console_me`, then `keys_create` label `hvm-helium — remote worker VM
-   (helium plan 38)`, $100 (`100000000` µUSD), `allowed_models: []`, idempotency key
-   `hvm-helium-key-2026-11-04`. Token goes to the owner once; owner runs `scripts/hvm key helium`
-   in a separate terminal. Budget: $100 balance, top-ups ≤ $100/day, each on owner's go.
+Start here, in order:
+1. **Foundry key.** The Foundry MCP was not connected in the 2026-11-04 sessions;
+   if it still shows "Needs authentication": `/mcp` → *claude.ai foundry* → sign in.
+   Load `foundry-operator`; on the owner's go: `console_me`, then `keys_create`
+   label `hvm-helium — remote worker VM (helium plan 38)`, $100 (`100000000`
+   µUSD), `allowed_models: []`, idempotency key `hvm-helium-key-2026-11-04`.
+   The token goes to the owner once; the owner runs `scripts/hvm key helium` in a
+   separate terminal. Budget: $100 balance, top-ups ≤ $100/day, each on the
+   owner's go.
 2. `scripts/hvm start helium` → `scripts/hvm push helium` → smoke Pi turn on the VM.
-3. Dispatch the bake-off ([plans/39_model_bakeoff/](plans/39_model_bakeoff/README.md)): lanes
-   `tts`, `stt`, `llm` in parallel; check in every 30–60 min; fetch → review → land.
-4. Log friction in plan 38 → later fold the process into koder-pattern; harnex Issue 97
-   (remote host lanes) after Phase 1.
+3. Bake-off ([plans/39](plans/39_model_bakeoff/README.md)): lanes `tts`, `stt`,
+   `llm` in parallel; check in every 30–60 min; fetch → review → land.
+4. Log friction in plan 38; later fold the process into koder-pattern; harnex
+   Issue 97 (remote host lanes) after Phase 1.
 5. `scripts/hvm stop helium` whenever no lane is running.
 
-### Open decisions
+Then, per [ROADMAP.md](ROADMAP.md): bundle format → ORT embed → library API →
+new model types → GPU (sequencing still open with the owner).
 
-- How to proceed: owner wants to rethink sequencing. Proposed: bake-off on this VM (Phonon vs Kokoro, Parakeet 110M vs Moonshine-tiny, Qwen3.5-4B vs LFM3-1.7B) → bundle format → ORT embed → library API → new model types → GPU.
-- English-only TTS default OK? (multilingual = Pocket TTS 100M, desktop-only)
-- Low-end reference: Pi 4 for TTS/STT/VAD; Pi 5 for LLM (A72 lacks dotprod → slow q4 prefill)?
-- Bundle container: custom aligned format (GGUF-like) vs store-only zip.
-- Fate of #12 (LLM proxy) and #23 (remote engines) — off-mission for a standalone runtime; propose drop.
-
-### Open
-
-- **#12 LLM proxy** — unified AI backend (`helium think`); may merge with #13's server endpoint
-- **#07** License compliance follow-through (now includes Qwen3.5 Apache-2.0)
-- **#33** Enable GH Actions PR permission (one-time repo setting, P3)
-- **#36** Serve `--memory` semantics — decide if co-residency hint is the right abstraction (P3)
-- **LLM `<think>` tag stripping** — Qwen3.5 emits `<think>…</think>` reasoning tokens; currently shown raw in CLI and API output
-- ~~**#34** Trim espeak-ng-data to English-only~~ — dropped; keeping all 117 languages
-- ~~**#23 OpenAI remote engines**~~ — deferred (pure local focus)
-- **Tracker drift**: 15 issue files still say `Status: open` though done here (01–04, 08–10, 16–20, 24, 25); `download/download.go:5` comment still says ORT comes from Microsoft; Key Decisions "Remote models are just models" / "Dual-mode operation" describe deferred #23
-
-## Key Decisions Made
-
-- **Renamed cattery → helium (2026-10-31)**: module `github.com/jikkuatwork/helium`, binary `helium` (`cmd/helium`), data dir `~/.helium`, env var `HELIUM_CHUNK_SIZE`. The artefacts repo was deliberately **not** renamed — `cattery-artefacts` URLs (code + its `mirror.json`) stay as-is so existing binaries and mirrors keep working. Older koder docs were rewritten to the new name; git history before this date has the old one.
-- **Zero external dependencies (non-negotiable)**: The entire system — code, models, voices, runtime, phonemizer — lives exclusively in `helium` and `cattery-artefacts`. No download, fetch, or network call may target any host outside these two repos. Future CDN mirrors are fine *only* if they serve copies of assets already in `cattery-artefacts`; the GitHub raw URL for `cattery-artefacts` must always remain a working fallback. Any change that introduces a third-party download dependency violates this constraint and must not be merged.
-- **Model license policy (2026-11-04)**: weights we host must be redistributable. Apache-2.0 / MIT / BSD / CC-BY-4.0 are fine. Revenue-cap licenses (e.g. LFM Open License 1.0, free below $10M annual revenue) are acceptable when they carry no other use restrictions — "99% of users will be able to use it freely". Still out: non-commercial (NC), OpenRAIL/AUP-style use restrictions, competing-use bans, gated-with-terms, AGPL. Any capped or attribution license must be surfaced to importers (model license metadata, `THIRD_PARTY_NOTICES.md`). Survey: [research/02_model_survey.md](research/02_model_survey.md).
-- **No pure Go ONNX**: GoMLX/gonnx lack FFT/ISTFT ops. ORT via dlopen is the only path.
-- **Download on first run**: binary stays ~8MB, while ORT/model/voice/espeak-ng artefacts are fetched as needed.
-- **Separate artefacts repo**: `cattery-artefacts` holds binaries via Git LFS. No auth. All models (TTS + STT) self-hosted — no HuggingFace dependency.
-- **Artefacts path = repo layout**: model cache lives at `~/.helium/artefacts/models/`, matching the `cattery-artefacts` repo tree. `git clone cattery-artefacts ~/.helium/artefacts` gives instant offline — no downloads needed.
-- **mirror.json**: `cattery-artefacts/mirror.json` lists every artefact with size, SHA256, and ordered mirror URLs. Downloaded once per process; graceful fallback if unavailable. Mirrors support a `"default": true` flag to prefer S3/R2 over GitHub without changing array order. Adding a mirror is a one-line JSON edit, no code release.
-- **ORT mirrored in cattery-artefacts**: ORT v1.24.4 `.tgz` files for linux-x64, linux-aarch64, macOS-arm64 live in `ort/v1.24.4/` (Git LFS). `downloadORT()` uses `LookupRaw` + `downloadWithBar` — same pattern as espeak. No Microsoft fallback — mirror.json is the sole source. A CDN default mirror will be added later; GitHub becomes the fallback at that point. Linux amd64 asset uses `x64` (not `x86_64`) in filename; macOS ships arm64-only since ORT 1.20+; arch mapping is per-OS in `download/download.go`.
-- **`scripts/install.sh`**: builds `./cmd/helium` and drops it into `$HOME/.local/bin` (overrideable via `INSTALL_DIR`). Run after every local build.
-- **espeak-ng via os/exec**: simplest phonemizer. WASM embed deferred.
-- **Random voice by default**: no voice flag = random pick; `--male`/`--female` to filter.
-- **Full voice set by default**: voice files are small (~510KB each), so the UX is optimized around fetching the whole set rather than micromanaging individual voices.
-- **~/.helium/ for data**: simple default for current platforms.
-- **ORT stderr suppressed**: redirect fd during init to hide C-level warnings.
-- **WAV bytes, not base64**: REST API returns raw WAV with Content-Type: audio/wav. 33% smaller than base64.
-- **Streaming WAV output**: TTS now writes PCM16 chunk-by-chunk. Seekable
-  outputs patch the header on close; non-seekable outputs spool PCM to temp
-  storage, then write the final WAV in one pass.
-- **Lazy engine pool**: engines created on first request, evicted after idle timeout. Full ORT dlclose + malloc_trim reclaims C heap.
-- **Shared char budget**: total characters across all queued requests bounded (default 500). Caps peak RSS regardless of request distribution.
-- **Preflight package**: checks RAM, espeak-ng, model files, and ORT
-  presence; chunk-size resolution and low-memory warnings now live there too.
-- **Shared chunk-size policy**: `preflight` now owns RAM probing plus
-  `HELIUM_CHUNK_SIZE` / `--chunk-size` resolution with precedence
-  `explicit > env > auto`, a conservative `10s..60s` RAM lookup table, and a
-  once-per-process low-memory warning at `<= 512 MB`.
-- **Module path**: `github.com/jikkuatwork/helium` — matches repo URL for `go get`.
-- **Project license**: `helium` code is Apache-2.0; packaged releases should
-  carry `LICENSE`, `NOTICE`, and `THIRD_PARTY_NOTICES.md`.
-- **License audit documented**: current third-party licensing and distribution obligations are recorded in `THIRD_PARTY_NOTICES.md`.
-- **STT model: Moonshine-tiny**: 27MB quantized ONNX, raw 16kHz PCM input (no mel spectrograms), 28x real-time on CPU, shares ORT instance with TTS. Community ONNX export from onnx-community/moonshine-tiny-ONNX. Weight license unclear — needs clarification before distribution.
-- **STT chunking lives in Moonshine**: `moonshine.Engine.Transcribe()` now
-  chunks resampled PCM at ~30s, prefers nearby silence in a `27s..33s` search
-  window, overlaps by 0.5s, skips pure silence, and dedups boundary words at
-  stitch time. No API change for callers.
-- **Streaming STT input**: Moonshine no longer reads or resamples full clips
-  up front. `audio.PCMStreamReader` incrementally decodes WAV PCM16, WAV
-  float32, or raw float32 input; `audio.StreamResampler` keeps 16 kHz output
-  continuous across block boundaries; and the Moonshine loop retains only the
-  overlap + unread tail between chunk inferences while duration is tracked
-  from decoded source samples.
-- **Chunk size is now runtime-configurable**: `cmdSpeak`, `cmdListen`,
-  `cmdServe`, and `server.New` all resolve chunk size the same way; Moonshine
-  consumes it for streaming STT windows, while Kokoro accepts the field but
-  still chunks by token budget in this pass.
-- **Multi-modal package naming**: packages = modality abbreviations = API paths. `tts/` (text-to-speech), `stt/` (speech-to-text), future `llm/` (language model). Each has an `Engine` interface + per-model subdirectories (e.g. `tts/kokoro/`, `stt/moonshine/`). Default CLI/help shows one model per modality; `--advanced` reveals multi-model plumbing.
-- **Pi4 viability confirmed**: TTS+STT hot = ~250MB RAM, 2-4s round-trip for voice message bot. Comfortable on Pi4 4GB.
-- **espeak-ng via download-on-first-run**: pre-built static espeak-ng binaries + data live in `cattery-artefacts/espeak-ng-v1.51/` (Git LFS), registered in `mirror.json`. Downloaded on first use like ORT and models, extracted to `~/.helium/espeak-ng/`. Original `go:embed` approach dropped — espeak is a runtime dependency like all other artefacts, not worth +11MB binary bloat. GH Actions workflow `build-espeak.yml` (manual trigger) builds binaries on native runners. Legal basis: mere aggregation (GPL-3.0 data extracted to disk, consumed via `os/exec`). Pure Go phonemizer alternatives (goruut) rejected — Kokoro's IPA vocab is trained on espeak-ng output, mismatch risk too high.
-- **Remote models are just models**: no `--remote` flag. OpenAI engines are registered models (`openai-tts-1`, `openai-whisper-1`) selected via `--model`. Remote models only appear in `helium list` when `OPENAI_API_KEY` is set. Default is always local — no accidental API spend. `OPENAI_BASE_URL` supports OpenRouter, Ollama, Azure. No SDK — pure `net/http`.
-- **Dual-mode operation**: local models (Pi4, offline, free) OR remote APIs (zero download, higher quality, paid). Same CLI, same server, same `speak.Engine`/`listen.Engine` interface.
-- **Numeric indices everywhere**: models and voices addressed by stable per-kind numeric index in CLI (`--voice 4 --model 1`). Slugs exist but are never required input. API responses always include both index and slug. Indices are 1-based, stable, never reassigned.
-- **Server auth is opt-in**: `--auth` flag enables Bearer token auth with `~/.helium/keys.json`. Off by default — zero overhead. Keys are `cat_`-prefixed, SHA-256 hashed at rest, managed via `helium keys create/list/revoke/delete`. Per-key rate limiting (fixed-window, in-memory). `/v1/status` always public. Hot-reloads keys on file change.
-- **Pure local focus (2026-03)**: remote engine support (#23) deferred. Helium stays local-only for now. Auth, rate limiting, and API design assume local inference.
-- **LLM model: Qwen3.5-4B int4**: selected March 2026 after evaluating Qwen3.5 (0.8B/2B/4B), Qwen3, Phi-4-mini, Llama 3.2, Gemma 3. Dense architecture, Apache 2.0, ~2.5-3GB RAM. ONNX export exists at `onnx-community/Qwen3.5-4B-ONNX` (~2.91 GiB text-only q4). Uses ONNX Runtime (not llama.cpp) to avoid second inference engine.
-- **LLM engine swapping**: Pi4 4GB target. Only one heavy engine loaded at a time — pool eviction + malloc_trim between STT → LLM → TTS phases. ~1.4s swap cost per transition. Estimated round-trip ~8-12s on Pi4. `--memory SIZE` flag on serve allows co-residency when budget permits; semantics are still open (#36).
-- **CLI uniformity (2026-03)**: All three modality verbs (`tts`, `stt`, `llm`) share consistent flag patterns: `--model`, `--output -o`, `--chunk-size` (where applicable), proper `missing value for --flag` errors, and a stderr summary line (`target | model, metric, elapsed`). Serve no longer accepts model flags — it always uses registry defaults; requests specify model via the API body.
-- **Repo-local Codex workflow**: `.codex/skills/open` and `.codex/skills/close` are tracked in-repo, not globally. `open` should read `koder/STATE.md` first after restarts; `close` should sync `koder/STATE.md`, validate changed local skills, and commit a coherent session when explicitly invoked.
-
-## Research
-
-- [01_initial.md](research/01_initial.md) — KittenTTS benchmarks, size analysis, library survey, phonemizer options
-- [02_model_survey.md](research/02_model_survey.md) — 2026-11 survey of tiny TTS/STT/VAD/LLM/VLM/embedding/utility models vs the one-binary-one-file vision; picks, licenses, disqualifications
+Housekeeping when convenient:
+- Tracker drift: 15 issue files say `Status: open` though done (see issues/README.md);
+  `download/download.go:5` still says ORT comes from Microsoft; DECISIONS
+  "Remote models are just models" / "Dual-mode operation" describe deferred #23.
+- Optionally `koder-pattern init` for portable `open`/`close` copies.

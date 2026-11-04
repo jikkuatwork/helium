@@ -2,7 +2,9 @@
 
 ## Project Tracking
 
-- `koder/STATE.md` — source of truth for status, stack, open issues
+- `koder/STATE.md` — source of truth for status, open issues and next steps (<100 lines)
+- `koder/PROJECT.md`, `koder/DECISIONS.md`, `koder/ROADMAP.md` — stack, decisions, direction
+- `koder/issues/README.md` — index of every issue
 - `koder/issues/NN_slug.md` — individual issue specs
 - `koder/plans/` — technical plans
 - `koder/reviews/` — turn-based review conversations
