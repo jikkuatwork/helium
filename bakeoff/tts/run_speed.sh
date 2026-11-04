@@ -16,3 +16,4 @@ for model in kokoro phonon-int8 phonon-fp32; do
   done
  done
 done
+printf '%s\n' "$(date -u +%FT%TZ) speed matrix complete" > "$HOME/datasets/tts/speed.done"

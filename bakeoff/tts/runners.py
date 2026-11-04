@@ -45,7 +45,21 @@ def split_text(text, tokenizer, limit=50):
             result.extend(split(part, level + 1))
         return result
     # Sentence isolation is deliberate: matches runtime reset at sentence boundaries.
-    return [p for s in re.split(r'(?<=[.!?])\s+', text) for p in split(s) if p]
+    chunks = []
+    for sentence in re.split(r'(?<=[.!?])\s+', text):
+        current = ''
+        for piece in split(sentence):
+            joined = (current + ' ' + piece).strip()
+            # Budget includes the final period that speak() may append.
+            candidate = joined if not joined[-1:].isalnum() else joined + '.'
+            if current and len(tokenizer.encode(candidate, add_special_tokens=False).ids) > limit:
+                chunks.append(current)
+                current = piece
+            else:
+                current = joined
+        if current:
+            chunks.append(current)
+    return chunks
 
 
 class Phonon:
