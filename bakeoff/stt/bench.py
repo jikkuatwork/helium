@@ -102,7 +102,8 @@ class Large:
         options.inter_op_num_threads = 1
         options.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
         self.model = onnx_asr.load_model('nemo-conformer-tdt', path=str(MODELS / 'parakeet600'),
-            quantization='int8', sess_options=options, providers=['CPUExecutionProvider'])
+            quantization='int8', sess_options=options, providers=['CPUExecutionProvider'],
+            preprocessor_config={'use_numpy_preprocessors': False, 'use_conv_preprocessors': False})
 
     def __call__(self, x):
         return self.model.recognize(x, sample_rate=16000)
@@ -223,11 +224,20 @@ def fixed_chunks(model, x, seconds):
 
 
 def timing(args):
-    x = read_audio(args.audio)
+    if args.batch:
+        manifest = json.loads((DATA / 'manifest.json').read_text())
+        rows = [r for split in ['test-clean', 'test-other']
+                for r in [r for r in manifest if r['split'] == split][:args.batch]]
+        inputs = [read_audio(r['path']) for r in rows]
+    else:
+        inputs = [read_audio(args.audio)]
+    duration = sum(len(x)/16000 for x in inputs)
     start = time.perf_counter()
     model = get_model(args.model, args.threads)
     load = time.perf_counter()-start
-    call = lambda: fixed_chunks(model, x, args.chunk) if args.chunk else model(x)
+    def call():
+        return '\n'.join(fixed_chunks(model, x, args.chunk) if args.chunk else model(x)
+                         for x in inputs)
     print('loaded', args.model, load, flush=True)
     start = time.perf_counter()
     hyp = call()
@@ -239,9 +249,10 @@ def timing(args):
         runs.append(time.perf_counter()-start)
         print('run', i+1, runs[-1], flush=True)
     result = {'model': args.model, 'threads': args.threads, 'audio': args.audio,
-              'duration': len(x)/16000, 'chunk_seconds': args.chunk, 'load_seconds': load,
+              'duration': duration, 'audio_files': len(inputs), 'batch_per_split': args.batch,
+              'chunk_seconds': args.chunk, 'load_seconds': load,
               'runs_seconds': runs, 'median_seconds': statistics.median(runs),
-              'median_rtf': statistics.median(runs)/(len(x)/16000),
+              'median_rtf': statistics.median(runs)/duration,
               'peak_rss_kib': resource.getrusage(resource.RUSAGE_SELF).ru_maxrss, 'hypothesis': hyp,
               'ort_version': ort.__version__, 'affinity': sorted(os.sched_getaffinity(0))}
     if args.reference:
@@ -261,6 +272,7 @@ if __name__ == '__main__':
     parser.add_argument('--limit', type=int)
     parser.add_argument('--snr', type=float)
     parser.add_argument('--audio')
+    parser.add_argument('--batch', type=int, default=0, help='timing: this many clips per split')
     parser.add_argument('--chunk', type=float, default=0)
     parser.add_argument('--runs', type=int, default=5)
     parser.add_argument('--reference', action='store_true')

@@ -19,6 +19,13 @@ for threads in 4 1; do
  run "parakeet-long5-${threads}" timing --model parakeet --threads "$threads" --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --reference --output "$OUT/parakeet-long5-${threads}.json"
  run "moonshine-long5fixed-${threads}" timing --model moonshine --threads "$threads" --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --chunk 30 --reference --output "$OUT/moonshine-long5fixed-${threads}.json"
 done
-run parakeet-long12-4 timing --model parakeet --audio "$HOME/bakeoff-samples/stt/long-12min.wav" --reference --output "$OUT/parakeet-long12-4.json"
+# The upstream graph has a traced [1,9999,512] position table. Keep failures
+# as evidence and continue with bounded chunks rather than stopping the lane.
+if ! run parakeet-long12-4 timing --model parakeet --audio "$HOME/bakeoff-samples/stt/long-12min.wav" --reference --output "$OUT/parakeet-long12-4.json"; then
+ echo '12-minute single pass failed; see results/parakeet-long12-4.log'
+fi
+if ! run parakeet-long20-4 timing --model parakeet --audio "$HOME/bakeoff-samples/stt/long-20min.wav" --reference --output "$OUT/parakeet-long20-4.json"; then
+ echo '20-minute single pass failed; see results/parakeet-long20-4.log'
+fi
 run moonshine-long12fixed-4 timing --model moonshine --audio "$HOME/bakeoff-samples/stt/long-12min.wav" --chunk 30 --reference --output "$OUT/moonshine-long12fixed-4.json"
 run parakeet-long12chunk-4 timing --model parakeet --audio "$HOME/bakeoff-samples/stt/long-12min.wav" --chunk 30 --reference --output "$OUT/parakeet-long12chunk-4.json"

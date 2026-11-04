@@ -21,3 +21,8 @@ for threads in 4 1; do
  run "large-short-${threads}" timing --model large --threads "$threads" --audio "$HOME/bakeoff-samples/stt/parity.wav" --output "$OUT/large-short-${threads}.json"
 done
 run large-long5chunk-4 timing --model large --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --chunk 30 --reference --output "$OUT/large-long5chunk-4.json"
+for model in moonshine parakeet large; do
+ for threads in 4 1; do
+  run "$model-batch-${threads}" timing --model "$model" --threads "$threads" --batch 30 --output "$OUT/$model-batch-${threads}.json"
+ done
+done
