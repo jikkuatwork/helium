@@ -152,7 +152,26 @@ types. Goals:
   6. GPU: all 5 session-creation sites pass nil options; onnxruntime_go v1.27 already wraps CUDA/CoreML/DirectML/OpenVINO. Add one session choke point first.
 - **Shared Go building blocks** that unlock most picks: SentencePiece tokenizer, log-mel/STFT, generic `past_*`→`present_*` stateful decode loop.
 
-### Open decisions (start next session here)
+### Start next session here (2026-11-04 close)
+
+Remote worker VM ([plans/38_remote_worker_vm.md](plans/38_remote_worker_vm.md)) is built and
+**deallocated**: `hvm-helium`, D32ps_v5 (32 ARM vCPU, 128 GB), westus2 (eastus2 blocks ARM),
+toolchain at parity (pi 1.4.0, harnex 0.30.1, go 1.25.1), helium `main` pushed. Tooling:
+`scripts/hvm` + `scripts/hvm-host-init.sh`. Push and fetch-as-worktree verified; Pi lanes not yet
+run (no key). Next, in order:
+1. **Foundry key** — `/mcp` → *claude.ai foundry* → sign in (it showed "Needs authentication").
+   Then, on the owner's go: `console_me`, then `keys_create` label `hvm-helium — remote worker VM
+   (helium plan 38)`, $100 (`100000000` µUSD), `allowed_models: []`, idempotency key
+   `hvm-helium-key-2026-11-04`. Token goes to the owner once; owner runs `scripts/hvm key helium`
+   in a separate terminal. Budget: $100 balance, top-ups ≤ $100/day, each on owner's go.
+2. `scripts/hvm start helium` → `scripts/hvm push helium` → smoke Pi turn on the VM.
+3. Dispatch the bake-off ([plans/39_model_bakeoff/](plans/39_model_bakeoff/README.md)): lanes
+   `tts`, `stt`, `llm` in parallel; check in every 30–60 min; fetch → review → land.
+4. Log friction in plan 38 → later fold the process into koder-pattern; harnex Issue 97
+   (remote host lanes) after Phase 1.
+5. `scripts/hvm stop helium` whenever no lane is running.
+
+### Open decisions
 
 - How to proceed: owner wants to rethink sequencing. Proposed: bake-off on this VM (Phonon vs Kokoro, Parakeet 110M vs Moonshine-tiny, Qwen3.5-4B vs LFM3-1.7B) → bundle format → ORT embed → library API → new model types → GPU.
 - English-only TTS default OK? (multilingual = Pocket TTS 100M, desktop-only)
