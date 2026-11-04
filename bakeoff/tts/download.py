@@ -34,6 +34,9 @@ def main():
     if manifest.exists():
         from huggingface_hub import snapshot_download
         data=json.loads(manifest.read_text())
+        api_url=f"https://huggingface.co/api/models/Systran/faster-whisper-small.en/revision/{data['whisper_revision']}"
+        api_path=Path.home()/'models/tts/whisper-api.json'
+        urllib.request.urlretrieve(api_url,api_path)
         snapshot_download('Systran/faster-whisper-small.en',revision=data['whisper_revision'],
                           local_dir=str(Path.home()/'models/tts/whisper-small.en'),
                           allow_patterns=['model.bin','config.json','tokenizer.json','vocabulary.txt'])

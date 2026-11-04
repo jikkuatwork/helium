@@ -3,7 +3,8 @@
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 PY="$HOME/models/tts/venv/bin/python"
-export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false PYTHONDONTWRITEBYTECODE=1
+rm -f "$HOME/datasets/tts/speed.done"
 mkdir -p bakeoff/tts/results
 for model in kokoro phonon-int8 phonon-fp32; do
  for threads in 4 1; do
