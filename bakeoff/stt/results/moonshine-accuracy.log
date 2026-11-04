@@ -1,0 +1,52 @@
+[0;93m2026-11-04 18:07:07.539439158 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+25 moonshine {'utterances': 25, 'reference_words': 542, 'wer': 0.07933579335793357, 'substitutions': 32, 'insertions': 7, 'deletions': 4, 'audio_seconds': 189.815, 'inference_seconds': 7.031784462000132, 'rtf': 0.037045462487159245, 'peak_rss_kib': 285668}
+50 moonshine {'utterances': 50, 'reference_words': 1266, 'wer': 0.05608214849921011, 'substitutions': 53, 'insertions': 13, 'deletions': 5, 'audio_seconds': 447.3049375, 'inference_seconds': 16.431551865000074, 'rtf': 0.036734564024346536, 'peak_rss_kib': 324068}
+75 moonshine {'utterances': 75, 'reference_words': 1694, 'wer': 0.05548996458087367, 'substitutions': 70, 'insertions': 16, 'deletions': 8, 'audio_seconds': 597.6349375, 'inference_seconds': 22.065523142000302, 'rtf': 0.03692140763105956, 'peak_rss_kib': 324068}
+100 moonshine {'utterances': 100, 'reference_words': 2200, 'wer': 0.05181818181818182, 'substitutions': 85, 'insertions': 19, 'deletions': 10, 'audio_seconds': 796.1499375, 'inference_seconds': 29.179193880000867, 'rtf': 0.036650375143690656, 'peak_rss_kib': 372452}
+125 moonshine {'utterances': 125, 'reference_words': 2671, 'wer': 0.04941969299887682, 'substitutions': 100, 'insertions': 20, 'deletions': 12, 'audio_seconds': 971.1199375, 'inference_seconds': 35.37081789200124, 'rtf': 0.03642270797473071, 'peak_rss_kib': 372452}
+150 moonshine {'utterances': 150, 'reference_words': 3225, 'wer': 0.04837209302325581, 'substitutions': 117, 'insertions': 23, 'deletions': 16, 'audio_seconds': 1186.1049375, 'inference_seconds': 42.895843242001206, 'rtf': 0.03616530197776131, 'peak_rss_kib': 373476}
+175 moonshine {'utterances': 175, 'reference_words': 3705, 'wer': 0.04669365721997301, 'substitutions': 130, 'insertions': 25, 'deletions': 18, 'audio_seconds': 1373.0049375, 'inference_seconds': 49.58809599400081, 'rtf': 0.03611647317473744, 'peak_rss_kib': 373476}
+200 moonshine {'utterances': 200, 'reference_words': 4103, 'wer': 0.04752620034121375, 'substitutions': 149, 'insertions': 26, 'deletions': 20, 'audio_seconds': 1518.5299375, 'inference_seconds': 54.89302951900106, 'rtf': 0.03614879638749372, 'peak_rss_kib': 375780}
+225 moonshine {'utterances': 225, 'reference_words': 4647, 'wer': 0.04734237142242307, 'substitutions': 167, 'insertions': 26, 'deletions': 27, 'audio_seconds': 1716.649875, 'inference_seconds': 61.68497449300105, 'rtf': 0.03593334633423781, 'peak_rss_kib': 375780}
+250 moonshine {'utterances': 250, 'reference_words': 5120, 'wer': 0.0498046875, 'substitutions': 193, 'insertions': 30, 'deletions': 32, 'audio_seconds': 1906.514875, 'inference_seconds': 68.28780592800115, 'rtf': 0.035818134347365714, 'peak_rss_kib': 375780}
+275 moonshine {'utterances': 275, 'reference_words': 5661, 'wer': 0.051227698286521815, 'substitutions': 221, 'insertions': 31, 'deletions': 38, 'audio_seconds': 2094.869875, 'inference_seconds': 75.32202379400121, 'rtf': 0.03595546658667819, 'peak_rss_kib': 375780}
+300 moonshine {'utterances': 300, 'reference_words': 6158, 'wer': 0.052939265995453066, 'substitutions': 249, 'insertions': 36, 'deletions': 41, 'audio_seconds': 2276.574875, 'inference_seconds': 81.95466220100172, 'rtf': 0.03599910686047685, 'peak_rss_kib': 375780}
+325 moonshine {'utterances': 325, 'reference_words': 6606, 'wer': 0.054193157735392065, 'substitutions': 272, 'insertions': 39, 'deletions': 47, 'audio_seconds': 2444.449875, 'inference_seconds': 88.05385409200187, 'rtf': 0.036021951193416016, 'peak_rss_kib': 376036}
+350 moonshine {'utterances': 350, 'reference_words': 7066, 'wer': 0.05703368242287008, 'substitutions': 310, 'insertions': 44, 'deletions': 49, 'audio_seconds': 2610.199875, 'inference_seconds': 94.27693316500176, 'rtf': 0.03611866434749629, 'peak_rss_kib': 376292}
+375 moonshine {'utterances': 375, 'reference_words': 7417, 'wer': 0.05986247809087232, 'substitutions': 339, 'insertions': 50, 'deletions': 55, 'audio_seconds': 2738.9099375, 'inference_seconds': 99.0296574980016, 'rtf': 0.03615659505342957, 'peak_rss_kib': 376292}
+400 moonshine {'utterances': 400, 'reference_words': 7888, 'wer': 0.06351419878296147, 'substitutions': 378, 'insertions': 54, 'deletions': 69, 'audio_seconds': 2902.13, 'inference_seconds': 105.01645765700187, 'rtf': 0.036185993617447135, 'peak_rss_kib': 376292}
+425 moonshine {'utterances': 425, 'reference_words': 8328, 'wer': 0.0654418828049952, 'substitutions': 411, 'insertions': 60, 'deletions': 74, 'audio_seconds': 3070.955, 'inference_seconds': 110.92445705800196, 'rtf': 0.03612050878570411, 'peak_rss_kib': 376292}
+450 moonshine {'utterances': 450, 'reference_words': 8818, 'wer': 0.06792923565434339, 'substitutions': 453, 'insertions': 66, 'deletions': 80, 'audio_seconds': 3234.315, 'inference_seconds': 117.49330042200177, 'rtf': 0.036327104942469046, 'peak_rss_kib': 376548}
+475 moonshine {'utterances': 475, 'reference_words': 9297, 'wer': 0.07271162740669034, 'substitutions': 513, 'insertions': 72, 'deletions': 91, 'audio_seconds': 3400.3299375, 'inference_seconds': 123.78510901000152, 'rtf': 0.03640385235704837, 'peak_rss_kib': 376548}
+500 moonshine {'utterances': 500, 'reference_words': 9682, 'wer': 0.07457136955174551, 'substitutions': 548, 'insertions': 75, 'deletions': 99, 'audio_seconds': 3542.3199375, 'inference_seconds': 128.8919797170014, 'rtf': 0.03638631800377896, 'peak_rss_kib': 376548}
+525 moonshine {'utterances': 525, 'reference_words': 10131, 'wer': 0.07551080840983121, 'substitutions': 580, 'insertions': 78, 'deletions': 107, 'audio_seconds': 3710.7799375, 'inference_seconds': 134.96956222100152, 'rtf': 0.036372289517101426, 'peak_rss_kib': 376548}
+550 moonshine {'utterances': 550, 'reference_words': 10652, 'wer': 0.07989110026286143, 'substitutions': 650, 'insertions': 88, 'deletions': 113, 'audio_seconds': 3887.7349375, 'inference_seconds': 141.92274476700152, 'rtf': 0.036505252299495666, 'peak_rss_kib': 377060}
+575 moonshine {'utterances': 575, 'reference_words': 11161, 'wer': 0.08081713108144431, 'substitutions': 693, 'insertions': 93, 'deletions': 116, 'audio_seconds': 4070.7749375, 'inference_seconds': 148.7875351400014, 'rtf': 0.036550174702455265, 'peak_rss_kib': 377060}
+600 moonshine {'utterances': 600, 'reference_words': 11703, 'wer': 0.08288473041100572, 'substitutions': 750, 'insertions': 100, 'deletions': 120, 'audio_seconds': 4267.7599375, 'inference_seconds': 155.82562827000174, 'rtf': 0.03651227588993265, 'peak_rss_kib': 377060}
+625 moonshine {'utterances': 625, 'reference_words': 12097, 'wer': 0.08481441679755311, 'substitutions': 794, 'insertions': 109, 'deletions': 123, 'audio_seconds': 4416.195, 'inference_seconds': 161.0607220480016, 'rtf': 0.036470473348210755, 'peak_rss_kib': 377060}
+{
+  "test-clean": {
+    "utterances": 320,
+    "reference_words": 6509,
+    "wer": 0.05208173298509756,
+    "substitutions": 257,
+    "insertions": 36,
+    "deletions": 46,
+    "audio_seconds": 2407.619875,
+    "inference_seconds": 86.69733188400187,
+    "rtf": 0.036009559808107945,
+    "peak_rss_kib": 377060
+  },
+  "test-other": {
+    "utterances": 320,
+    "reference_words": 5813,
+    "wer": 0.12231205917770514,
+    "substitutions": 550,
+    "insertions": 75,
+    "deletions": 86,
+    "audio_seconds": 2085.5151875,
+    "inference_seconds": 77.26625783099962,
+    "rtf": 0.03704900270883288,
+    "peak_rss_kib": 377060
+  }
+}

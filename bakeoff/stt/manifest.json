@@ -1,0 +1,4482 @@
+[
+  {
+    "id": "8463-294828-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294828/8463-294828-0001.flac",
+    "reference": "THREE SECONDS BEFORE THE ARRIVAL OF J B HOBSON'S LETTER I NO MORE DREAMED OF CHASING THE UNICORN THAN OF TRYING FOR THE NORTHWEST PASSAGE",
+    "duration": 9.19
+  },
+  {
+    "id": "8455-210777-0034",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0034.flac",
+    "reference": "NOT A DOUBT BUT HAD YOUR FORCE BEEN ONLY DOUBLE OR TREBLE OUR OWN I SHOULD HAVE FOUND IT MY DUTY TO STRUGGLE WITH YOU",
+    "duration": 7.7
+  },
+  {
+    "id": "4970-29095-0030",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0030.flac",
+    "reference": "FATHER THEE'S UNJUST TO PHILIP HE'S GOING INTO BUSINESS",
+    "duration": 4.67
+  },
+  {
+    "id": "6829-68771-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68771/6829-68771-0023.flac",
+    "reference": "YOU SPEAK LIKE AN EDUCATED PERSON SAID BETH WONDERINGLY WHERE IS YOUR HOME",
+    "duration": 5.425
+  },
+  {
+    "id": "2830-3980-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0017.flac",
+    "reference": "WHEN I WAS A YOUNG MAN I THOUGHT PAUL WAS MAKING TOO MUCH OF HIS CALL",
+    "duration": 3.665
+  },
+  {
+    "id": "1580-141083-0027",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0027.flac",
+    "reference": "HOW LONG WOULD IT TAKE HIM TO DO THAT USING EVERY POSSIBLE CONTRACTION A QUARTER OF AN HOUR NOT LESS",
+    "duration": 5.225
+  },
+  {
+    "id": "4446-2275-0026",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4446/2275/4446-2275-0026.flac",
+    "reference": "SHE CLOSED HER EYES AND TOOK A DEEP BREATH AS IF TO DRAW IN AGAIN THE FRAGRANCE OF THOSE DAYS",
+    "duration": 5.495
+  },
+  {
+    "id": "7127-75946-0024",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7127/75946/7127-75946-0024.flac",
+    "reference": "MONSIEUR WAS THE ONLY ONE WHO DID NOT UNDERSTAND ANYTHING ABOUT THE MATTER",
+    "duration": 5.09
+  },
+  {
+    "id": "4992-23283-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/23283/4992-23283-0014.flac",
+    "reference": "WHAT CAN YOU MEAN BY THAT MISS WOODLEY YOU TALK MYSTERIOUSLY",
+    "duration": 4.535
+  },
+  {
+    "id": "7021-85628-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/85628/7021-85628-0001.flac",
+    "reference": "HE MADE A BOW SO DEEP THAT HIS BACK CAME NEAR BREAKING AND HE WAS DUMBFOUNDED I CAN TELL YOU WHEN HE SAW IT WAS NOBODY BUT ANDERS",
+    "duration": 11.33
+  },
+  {
+    "id": "7021-79740-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/79740/7021-79740-0002.flac",
+    "reference": "NOW DELIA CONTRIVED TO OBTAIN A GREAT INFLUENCE AND ASCENDENCY OVER THE MINDS OF THE CHILDREN BY MEANS OF THESE DOLLS",
+    "duration": 9.225
+  },
+  {
+    "id": "4992-41806-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41806/4992-41806-0016.flac",
+    "reference": "THE FACE OF THE MAHOGANY SHONE WITH DELIGHT AND WHY NOT WHEN IT WAS DOING EVERYTHING ALMOST EVERYTHING WITHIN THE SCOPE OF A PIANO AND YET THE FAMILY HAD ENJOYED WEEKS OF GOOD NOURISHING MEALS ON WHAT HAD BEEN SAVED BY ITS EXERTIONS",
+    "duration": 15.76
+  },
+  {
+    "id": "7021-79740-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/79740/7021-79740-0006.flac",
+    "reference": "I EXPECT YOU HAVE BEEN A VERY GOOD GIRL ANDELLA SINCE YOU WERE HERE LAST",
+    "duration": 5.965
+  },
+  {
+    "id": "5683-32865-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32865/5683-32865-0009.flac",
+    "reference": "AND HE PLACED IT IN THAT GENTLEMAN'S FINGERS WHO NOW TOOK HIS TURN AT THE LAMP AND CONTEMPLATED THE LITTLE PARALLELOGRAM WITH A GLEAM OF SLY AMUSEMENT",
+    "duration": 9.89
+  },
+  {
+    "id": "2094-142345-0040",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0040.flac",
+    "reference": "I DIDN'T PREACH WITHOUT DIRECTION",
+    "duration": 2.385
+  },
+  {
+    "id": "260-123288-0003",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123288/260-123288-0003.flac",
+    "reference": "THE ELECTRIC LIGHT CAN SCARCELY PENETRATE THROUGH THE DENSE CURTAIN WHICH HAS DROPPED OVER THE THEATRE ON WHICH THE BATTLE OF THE ELEMENTS IS ABOUT TO BE WAGED",
+    "duration": 8.905
+  },
+  {
+    "id": "61-70970-0039",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0039.flac",
+    "reference": "HE IMPLORES US TO BE DISCREET AS THE GRAVE IN THIS MATTER FOR IN SOOTH HIS LIFE IS IN THE HOLLOW OF OUR HANDS",
+    "duration": 6.665
+  },
+  {
+    "id": "237-134500-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/237/134500/237-134500-0006.flac",
+    "reference": "JUST SMELL THE WILD ROSES THEY ARE ALWAYS SO SPICY AFTER A RAIN",
+    "duration": 4.225
+  },
+  {
+    "id": "4992-41806-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41806/4992-41806-0014.flac",
+    "reference": "THINKS I TO MYSELF I NEVER SEEN ANYTHING OSH POPHAM COULDN'T MEND IF HE TOOK TIME ENOUGH AND GLUE ENOUGH SO I CARRIED THIS LITTLE FELLER HOME IN A BUSHEL BASKET ONE NIGHT LAST MONTH AN I'VE SPENT ELEVEN EVENIN'S PUTTIN HIM TOGETHER",
+    "duration": 15.21
+  },
+  {
+    "id": "8555-284449-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/284449/8555-284449-0001.flac",
+    "reference": "THEN THEY ALL MARCHED OUT A LITTLE WAY INTO THE FIELDS AND FOUND THAT THE ARMY OF PINKIES HAD ALREADY FORMED AND WAS ADVANCING STEADILY TOWARD THEM",
+    "duration": 8.63
+  },
+  {
+    "id": "61-70970-0038",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0038.flac",
+    "reference": "THE OLD SERVANT TOLD HIM QUIETLY AS THEY CREPT BACK TO GAMEWELL THAT THIS PASSAGE WAY LED FROM THE HUT IN THE PLEASANCE TO SHERWOOD AND THAT GEOFFREY FOR THE TIME WAS HIDING WITH THE OUTLAWS IN THE FOREST",
+    "duration": 10.4
+  },
+  {
+    "id": "7127-75946-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7127/75946/7127-75946-0010.flac",
+    "reference": "YOUR MAJESTY'S PLAN THEN IN THIS AFFAIR IS",
+    "duration": 3.6
+  },
+  {
+    "id": "5639-40744-0038",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0038.flac",
+    "reference": "JUST AT THE MOMENT WHEN THE TEARS OF THE PITYING BEHOLDERS FLOWED FASTEST AND THEIR EJACULATIONS WERE MOST EXPRESSIVE OF DESPAIR LEOCADIA GAVE SIGNS OF RECOVERY AND BROUGHT BACK GLADNESS TO THE HEARTS OF ALL",
+    "duration": 13.8
+  },
+  {
+    "id": "8463-287645-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/287645/8463-287645-0011.flac",
+    "reference": "SHE WAS A LARGE HOMELY WOMAN THEY WERE COMMON WHITE PEOPLE WITH NO REPUTATION IN THE COMMUNITY",
+    "duration": 6.38
+  },
+  {
+    "id": "7021-85628-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/85628/7021-85628-0020.flac",
+    "reference": "HE DARTED LIKE AN ARROW THROUGH ALL THE HALLS DOWN ALL THE STAIRS AND ACROSS THE YARD",
+    "duration": 6.45
+  },
+  {
+    "id": "6829-68771-0022",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68771/6829-68771-0022.flac",
+    "reference": "I ATTEND TO THE HOUSEHOLD MENDING YOU KNOW AND CARE FOR THE LINEN",
+    "duration": 3.8
+  },
+  {
+    "id": "1580-141084-0037",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141084/1580-141084-0037.flac",
+    "reference": "WHEN I APPROACHED YOUR ROOM I EXAMINED THE WINDOW",
+    "duration": 2.965
+  },
+  {
+    "id": "1188-133604-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1188/133604/1188-133604-0023.flac",
+    "reference": "THE COLORIST SAYS FIRST OF ALL AS MY DELICIOUS PAROQUET WAS RUBY SO THIS NASTY VIPER SHALL BE BLACK AND THEN IS THE QUESTION CAN I ROUND HIM OFF EVEN THOUGH HE IS BLACK AND MAKE HIM SLIMY AND YET SPRINGY AND CLOSE DOWN CLOTTED LIKE A POOL OF BLACK BLOOD ON THE EARTH ALL THE SAME",
+    "duration": 23.67
+  },
+  {
+    "id": "1188-133604-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1188/133604/1188-133604-0013.flac",
+    "reference": "IT MUST REMEMBER BE ONE OR THE OTHER",
+    "duration": 3.02
+  },
+  {
+    "id": "4077-13751-0003",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4077/13751/4077-13751-0003.flac",
+    "reference": "IN PLACE OF A SINGLE HAMLET IN THE SMALLEST CORNER OF WHICH THE MEMBERS COULD HAVE CONGREGATED THERE NOW ARE ABOUT SEVENTY STAKES OF ZION AND ABOUT SEVEN HUNDRED ORGANIZED WARDS EACH WARD AND STAKE WITH ITS FULL COMPLEMENT OF OFFICERS AND PRIESTHOOD ORGANIZATIONS",
+    "duration": 16.72
+  },
+  {
+    "id": "5639-40744-0027",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0027.flac",
+    "reference": "THUS SAYING AND PRESSING THE CRUCIFIX TO HER BREAST SHE FELL FAINTING INTO THE ARMS OF DONA ESTAFANIA WHO AS A GENTLEWOMAN TO WHOSE SEX PITY IS AS NATURAL AS CRUELTY IS TO MAN INSTANTLY PRESSED HER LIPS TO THOSE OF THE FAINTING GIRL SHEDDING OVER HER SO MANY TEARS THAT THERE NEEDED NO OTHER SPRINKLING OF WATER TO RECOVER LEOCADIA FROM HER SWOON",
+    "duration": 23.26
+  },
+  {
+    "id": "7729-102255-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7729/102255/7729-102255-0011.flac",
+    "reference": "THE PRESENT CHAPTERS CAN ONLY TOUCH UPON THE MORE SALIENT MOVEMENTS OF THE CIVIL WAR IN KANSAS WHICH HAPPILY WERE NOT SANGUINARY IF HOWEVER THE INDIVIDUAL AND MORE ISOLATED CASES OF BLOODSHED COULD BE DESCRIBED THEY WOULD SHOW A STARTLING AGGREGATE OF BARBARITY AND LOSS OF LIFE FOR OPINION'S SAKE",
+    "duration": 20.355
+  },
+  {
+    "id": "8463-294825-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294825/8463-294825-0004.flac",
+    "reference": "IN ALL THE NOVEL HAD A DIFFICULT GESTATION",
+    "duration": 3.68
+  },
+  {
+    "id": "121-127105-0024",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/127105/121-127105-0024.flac",
+    "reference": "POOR DOUGLAS BEFORE HIS DEATH WHEN IT WAS IN SIGHT COMMITTED TO ME THE MANUSCRIPT THAT REACHED HIM ON THE THIRD OF THESE DAYS AND THAT ON THE SAME SPOT WITH IMMENSE EFFECT HE BEGAN TO READ TO OUR HUSHED LITTLE CIRCLE ON THE NIGHT OF THE FOURTH",
+    "duration": 14.45
+  },
+  {
+    "id": "7176-88083-0018",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/88083/7176-88083-0018.flac",
+    "reference": "BUT THIS FREQUENTER OF THE HEIGHTS OF AIR FOR ALL HIS SAVAGE VALOR WAS TROUBLED AT THE LEAPING WAVES AND THE TOSSING FOAM OF THESE MAD RAPIDS HE DID NOT UNDERSTAND THEM",
+    "duration": 10.45
+  },
+  {
+    "id": "4970-29095-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0020.flac",
+    "reference": "THERE CERTAINLY WAS NO END TO IT AND EVEN RUTH WAS PHILADELPHIAN ENOUGH TO BELIEVE THAT A STREET OUGHT NOT TO HAVE ANY END OR ARCHITECTURAL POINT UPON WHICH THE WEARY EYE COULD REST",
+    "duration": 12.365
+  },
+  {
+    "id": "2961-961-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2961/961/2961-961-0008.flac",
+    "reference": "BUT THE MEMORY OF THEIR EXPLOITS HAS PASSED AWAY OWING TO THE LAPSE OF TIME AND THE EXTINCTION OF THE ACTORS",
+    "duration": 7.155
+  },
+  {
+    "id": "4507-16021-0025",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4507/16021/4507-16021-0025.flac",
+    "reference": "TO MEET THE NEEDS OF THIS CONFLICT WRETCHEDNESS HAS INVENTED A LANGUAGE OF COMBAT WHICH IS SLANG",
+    "duration": 9.215
+  },
+  {
+    "id": "1580-141083-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0009.flac",
+    "reference": "THE ALTERNATIVE WAS THAT SOMEONE PASSING HAD OBSERVED THE KEY IN THE DOOR HAD KNOWN THAT I WAS OUT AND HAD ENTERED TO LOOK AT THE PAPERS",
+    "duration": 7.04
+  },
+  {
+    "id": "8463-287645-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/287645/8463-287645-0014.flac",
+    "reference": "OF STARTING I DIDN'T KNOW THE WAY TO COME",
+    "duration": 3.02
+  },
+  {
+    "id": "2830-3980-0056",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0056.flac",
+    "reference": "OTHERWISE PAUL SHOULD HAVE WRITTEN GRACE FROM GOD THE FATHER AND PEACE FROM OUR LORD JESUS CHRIST",
+    "duration": 5.35
+  },
+  {
+    "id": "1284-1181-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1284/1181/1284-1181-0001.flac",
+    "reference": "MARGOLOTTE HAD FIRST MADE THE GIRL'S FORM FROM THE PATCHWORK QUILT AND THEN SHE HAD DRESSED IT WITH A PATCHWORK SKIRT AND AN APRON WITH POCKETS IN IT USING THE SAME GAY MATERIAL THROUGHOUT",
+    "duration": 11.43
+  },
+  {
+    "id": "8455-210777-0041",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0041.flac",
+    "reference": "THERE CAME UPON ME A SUDDEN SHOCK WHEN I HEARD THESE WORDS WHICH EXCEEDED ANYTHING WHICH I HAD YET FELT",
+    "duration": 6.37
+  },
+  {
+    "id": "1580-141083-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0008.flac",
+    "reference": "THE PROOF WAS IN THREE LONG SLIPS I HAD LEFT THEM ALL TOGETHER",
+    "duration": 4.305
+  },
+  {
+    "id": "1221-135766-0003",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1221/135766/1221-135766-0003.flac",
+    "reference": "THE CHILD HAD A NATIVE GRACE WHICH DOES NOT INVARIABLY CO EXIST WITH FAULTLESS BEAUTY ITS ATTIRE HOWEVER SIMPLE ALWAYS IMPRESSED THE BEHOLDER AS IF IT WERE THE VERY GARB THAT PRECISELY BECAME IT BEST",
+    "duration": 13.72
+  },
+  {
+    "id": "5683-32879-0018",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32879/5683-32879-0018.flac",
+    "reference": "IT IS AN ANTIPATHY AN ANTIPATHY I CANNOT GET OVER DEAR DORCAS YOU MAY THINK IT A MADNESS BUT DON'T BLAME ME",
+    "duration": 7.44
+  },
+  {
+    "id": "5105-28240-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28240/5105-28240-0001.flac",
+    "reference": "IT WAS QUITE TRUE THAT A VESSEL WAS IN SIGHT HARDLY MORE THAN SIX MILES FROM THE SHORE BUT OWING TO THE INCREASE IN THE EARTH'S CONVEXITY AND THE CONSEQUENT LIMITATION OF THE RANGE OF VISION THE RIGGING OF THE TOPMASTS ALONE WAS VISIBLE ABOVE THE WATER",
+    "duration": 16.065
+  },
+  {
+    "id": "1284-1180-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1284/1180/1284-1180-0006.flac",
+    "reference": "AT THE FOOT OF THE MOUNTAIN THAT SEPARATED THE COUNTRY OF THE MUNCHKINS FROM THE COUNTRY OF THE GILLIKINS THE PATH DIVIDED",
+    "duration": 6.865
+  },
+  {
+    "id": "8455-210777-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0016.flac",
+    "reference": "THIS I FELT WAS PAID TO ME AS BEING PRESIDENT OF THE REPUBLIC AND I ENDEAVOURED TO BEHAVE MYSELF WITH SUCH MINGLED HUMILITY AND DIGNITY AS MIGHT BEFIT THE OCCASION BUT I COULD NOT BUT FEEL THAT SOMETHING WAS WANTING TO THE SIMPLICITY OF MY ORDINARY LIFE",
+    "duration": 16.2399375
+  },
+  {
+    "id": "8230-279154-0029",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8230/279154/8230-279154-0029.flac",
+    "reference": "THE FACT THAT A MAN CAN RECITE A POEM DOES NOT SHOW THAT HE REMEMBERS ANY PREVIOUS OCCASION ON WHICH HE HAS RECITED OR READ IT",
+    "duration": 8.54
+  },
+  {
+    "id": "1284-1181-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1284/1181/1284-1181-0009.flac",
+    "reference": "SHE RAN TO HER HUSBAND'S SIDE AT ONCE AND HELPED HIM LIFT THE FOUR KETTLES FROM THE FIRE",
+    "duration": 5.245
+  },
+  {
+    "id": "5105-28241-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28241/5105-28241-0000.flac",
+    "reference": "HER SEA GOING QUALITIES WERE EXCELLENT AND WOULD HAVE AMPLY SUFFICED FOR A CIRCUMNAVIGATION OF THE GLOBE",
+    "duration": 6.455
+  },
+  {
+    "id": "1320-122617-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1320/122617/1320-122617-0021.flac",
+    "reference": "WHAT SHALL WE DO WITH THE MINGOES AT THE DOOR THEY COUNT SIX AND THIS SINGER IS AS GOOD AS NOTHING",
+    "duration": 5.335
+  },
+  {
+    "id": "121-127105-0030",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/127105/121-127105-0030.flac",
+    "reference": "I DON'T ANTICIPATE",
+    "duration": 2.175
+  },
+  {
+    "id": "6829-68769-0018",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68769/6829-68769-0018.flac",
+    "reference": "MISS DE GRAF SAID KENNETH NOTICING THE BOY'S FACE CRITICALLY AS HE STOOD WHERE THE LIGHT FROM THE PASSAGE FELL UPON IT",
+    "duration": 7.11
+  },
+  {
+    "id": "61-70968-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70968/61-70968-0005.flac",
+    "reference": "THIS WAS SO SWEET A LADY SIR AND IN SOME MANNER I DO THINK SHE DIED",
+    "duration": 5.07
+  },
+  {
+    "id": "2830-3980-0048",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0048.flac",
+    "reference": "HE CAME DOWN TO EARTH LIVED AMONG MEN SUFFERED WAS CRUCIFIED AND THEN HE DIED STANDING CLEARLY BEFORE US SO THAT OUR HEARTS AND EYES MAY FASTEN UPON HIM",
+    "duration": 10.44
+  },
+  {
+    "id": "2094-142345-0042",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0042.flac",
+    "reference": "I HANNA COMMON PATIENCE WITH YOU",
+    "duration": 2.455
+  },
+  {
+    "id": "61-70970-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0000.flac",
+    "reference": "YOUNG FITZOOTH HAD BEEN COMMANDED TO HIS MOTHER'S CHAMBER SO SOON AS HE HAD COME OUT FROM HIS CONVERSE WITH THE SQUIRE",
+    "duration": 6.075
+  },
+  {
+    "id": "4446-2273-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4446/2273/4446-2273-0017.flac",
+    "reference": "HOW JOLLY IT WAS BEING YOUNG HILDA",
+    "duration": 2.74
+  },
+  {
+    "id": "3570-5694-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3570/5694/3570-5694-0017.flac",
+    "reference": "THE WEARING OF UNIFORMS OR LIVERIES IMPLIES A CONSIDERABLE DEGREE OF DEPENDENCE AND MAY EVEN BE SAID TO BE A MARK OF SERVITUDE REAL OR OSTENSIBLE",
+    "duration": 8.335
+  },
+  {
+    "id": "8455-210777-0055",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0055.flac",
+    "reference": "SIR I HAVE IT IN COMMAND TO INFORM YOUR EXCELLENCY THAT YOU HAVE BEEN APPOINTED GOVERNOR OF THE CROWN COLONY WHICH IS CALLED BRITANNULA",
+    "duration": 9.555
+  },
+  {
+    "id": "2830-3980-0052",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0052.flac",
+    "reference": "WE ARE TO HEAR CHRIST WHO HAS BEEN APPOINTED BY THE FATHER AS OUR DIVINE TEACHER",
+    "duration": 4.88
+  },
+  {
+    "id": "6829-68769-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68769/6829-68769-0005.flac",
+    "reference": "HE WAS SOFT HEARTED AND IMPETUOUS SAID BETH AND BEING IN LOVE HE DIDN'T STOP TO COUNT THE COST",
+    "duration": 6.72
+  },
+  {
+    "id": "8455-210777-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0015.flac",
+    "reference": "I AND MY WIFE AND SON AND THE TWO CRASWELLERS AND THREE OR FOUR OTHERS AGREED TO DINE ON BOARD THE SHIP ON THE NEXT",
+    "duration": 8.615
+  },
+  {
+    "id": "5683-32879-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32879/5683-32879-0023.flac",
+    "reference": "YOU RESEMBLE ME RACHEL YOU ARE FEARLESS AND INFLEXIBLE AND GENEROUS",
+    "duration": 4.975
+  },
+  {
+    "id": "3729-6852-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3729/6852/3729-6852-0000.flac",
+    "reference": "TO CELEBRATE THE ARRIVAL OF HER SON SILVIA GAVE A SPLENDID SUPPER TO WHICH SHE HAD INVITED ALL HER RELATIVES AND IT WAS A GOOD OPPORTUNITY FOR ME TO MAKE THEIR ACQUAINTANCE",
+    "duration": 11.17
+  },
+  {
+    "id": "5683-32866-0026",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32866/5683-32866-0026.flac",
+    "reference": "I BOLDLY LIGHTED MY CHEROOT",
+    "duration": 2.34
+  },
+  {
+    "id": "8463-294828-0032",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294828/8463-294828-0032.flac",
+    "reference": "IN PERSON WELCOME ABOARD PROFESSOR YOUR CABIN IS WAITING FOR YOU",
+    "duration": 4.395
+  },
+  {
+    "id": "1188-133604-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1188/133604/1188-133604-0011.flac",
+    "reference": "THEY ARE BEYOND ALL OTHER WORKS THAT I KNOW EXISTING DEPENDENT FOR THEIR EFFECT ON LOW SUBDUED TONES THEIR FAVORITE CHOICE IN TIME OF DAY BEING EITHER DAWN OR TWILIGHT AND EVEN THEIR BRIGHTEST SUNSETS PRODUCED CHIEFLY OUT OF GRAY PAPER",
+    "duration": 15.19
+  },
+  {
+    "id": "1580-141083-0048",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0048.flac",
+    "reference": "HOW CAME YOU TO LEAVE THE KEY IN THE DOOR",
+    "duration": 2.785
+  },
+  {
+    "id": "260-123288-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123288/260-123288-0004.flac",
+    "reference": "THE AIR IS HEAVY THE SEA IS CALM",
+    "duration": 4.31
+  },
+  {
+    "id": "7176-88083-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/88083/7176-88083-0016.flac",
+    "reference": "STRAIGHTWAY THE HAWK GLIDED FROM HIS PERCH AND DARTED AFTER HIM",
+    "duration": 3.92
+  },
+  {
+    "id": "5142-33396-0065",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/33396/5142-33396-0065.flac",
+    "reference": "SOFT HEART HE SAID GENTLY TO HER THEN TO THORKEL WELL LET HIM GO THORKEL",
+    "duration": 5.195
+  },
+  {
+    "id": "1320-122612-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1320/122612/1320-122612-0006.flac",
+    "reference": "LET US RETRACE OUR STEPS AND EXAMINE AS WE GO WITH KEENER EYES",
+    "duration": 4.845
+  },
+  {
+    "id": "672-122797-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0004.flac",
+    "reference": "IN WINTER WHEN THE SNOW LAY GLITTERING ON THE GROUND A HARE WOULD OFTEN COME LEAPING ALONG AND JUMP RIGHT OVER THE LITTLE TREE",
+    "duration": 10.25
+  },
+  {
+    "id": "4992-41797-0022",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41797/4992-41797-0022.flac",
+    "reference": "SHE'S OLDER THAN I AM BUT SO TINY AND SAD AND SHY THAT SHE SEEMS LIKE A CHILD",
+    "duration": 6.45
+  },
+  {
+    "id": "5105-28233-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28233/5105-28233-0000.flac",
+    "reference": "LENGTH OF SERVICE FOURTEEN YEARS THREE MONTHS AND FIVE DAYS",
+    "duration": 4.51
+  },
+  {
+    "id": "121-127105-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/127105/121-127105-0013.flac",
+    "reference": "YOU'LL EASILY JUDGE WHY WHEN YOU HEAR BECAUSE THE THING HAD BEEN SUCH A SCARE HE CONTINUED TO FIX ME",
+    "duration": 5.895
+  },
+  {
+    "id": "3575-170457-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3575/170457/3575-170457-0016.flac",
+    "reference": "FAREWELL MADAM",
+    "duration": 1.695
+  },
+  {
+    "id": "2830-3980-0061",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0061.flac",
+    "reference": "NOT GOLD OR SILVER OR PASCHAL LAMBS OR AN ANGEL BUT HIMSELF WHAT FOR",
+    "duration": 7.12
+  },
+  {
+    "id": "3729-6852-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3729/6852/3729-6852-0021.flac",
+    "reference": "I THANK HIM AND TAKE MY LEAVE",
+    "duration": 2.96
+  },
+  {
+    "id": "5142-33396-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/33396/5142-33396-0001.flac",
+    "reference": "WHAT IS YOUR COUNTRY OLAF HAVE YOU ALWAYS BEEN A THRALL THE THRALL'S EYES FLASHED",
+    "duration": 5.02
+  },
+  {
+    "id": "1221-135766-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1221/135766/1221-135766-0010.flac",
+    "reference": "IT WAS A LOOK SO INTELLIGENT YET INEXPLICABLE PERVERSE SOMETIMES SO MALICIOUS BUT GENERALLY ACCOMPANIED BY A WILD FLOW OF SPIRITS THAT HESTER COULD NOT HELP QUESTIONING AT SUCH MOMENTS WHETHER PEARL WAS A HUMAN CHILD",
+    "duration": 15.05
+  },
+  {
+    "id": "1089-134686-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134686/1089-134686-0013.flac",
+    "reference": "IF EVER HE WAS IMPELLED TO CAST SIN FROM HIM AND TO REPENT THE IMPULSE THAT MOVED HIM WAS THE WISH TO BE HER KNIGHT",
+    "duration": 7.915
+  },
+  {
+    "id": "7127-75947-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7127/75947/7127-75947-0023.flac",
+    "reference": "IT IS TOO DIFFICULT REPLIED MADEMOISELLE DE TONNAY CHARENTE LAUGHING LOUDLY",
+    "duration": 5.11
+  },
+  {
+    "id": "3729-6852-0033",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3729/6852/3729-6852-0033.flac",
+    "reference": "YOU ARE NOW IN THE ONLY COUNTRY IN THE WORLD WHERE WIT CAN MAKE A FORTUNE BY SELLING EITHER A GENUINE OR A FALSE ARTICLE IN THE FIRST CASE IT RECEIVES THE WELCOME OF INTELLIGENT AND TALENTED PEOPLE AND IN THE SECOND FOOLS ARE ALWAYS READY TO REWARD IT FOR SILLINESS IS TRULY A CHARACTERISTIC OF THE PEOPLE HERE AND HOWEVER WONDERFUL IT MAY APPEAR SILLINESS IS THE DAUGHTER OF WIT",
+    "duration": 28.575
+  },
+  {
+    "id": "121-127105-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/127105/121-127105-0021.flac",
+    "reference": "WON'T YOU TELL DOUGLAS",
+    "duration": 2.0
+  },
+  {
+    "id": "8455-210777-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0019.flac",
+    "reference": "THEN THERE WERE THREE OR FOUR LEADING MEN OF THE COMMUNITY WITH THEIR WIVES WHO WERE FOR THE MOST PART THE FATHERS AND MOTHERS OF THE YOUNG LADIES",
+    "duration": 8.105
+  },
+  {
+    "id": "4077-13751-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4077/13751/4077-13751-0014.flac",
+    "reference": "MAKING THEIR WAY ACROSS THE RIVER MOST OF THE REFUGEES FOUND SHELTER AMONG THE MORE HOSPITABLE PEOPLE OF CLAY COUNTY AND AFTERWARD ESTABLISHED THEMSELVES IN CALDWELL COUNTY THEREIN FOUNDING THE CITY OF FAR WEST",
+    "duration": 12.61
+  },
+  {
+    "id": "260-123440-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123440/260-123440-0016.flac",
+    "reference": "I SHALL BE PUNISHED FOR IT NOW I SUPPOSE BY BEING DROWNED IN MY OWN TEARS",
+    "duration": 4.895
+  },
+  {
+    "id": "8455-210777-0062",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0062.flac",
+    "reference": "WHEN DO YOU INTEND THAT THE JOHN BRIGHT SHALL START",
+    "duration": 3.05
+  },
+  {
+    "id": "4446-2271-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4446/2271/4446-2271-0023.flac",
+    "reference": "AFTER ALL WE WERE AWFULLY YOUNG",
+    "duration": 2.265
+  },
+  {
+    "id": "7176-92135-0039",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/92135/7176-92135-0039.flac",
+    "reference": "TEA PLEASE MATTHEWS BUTLER IMPASSIVELY",
+    "duration": 3.125
+  },
+  {
+    "id": "4507-16021-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4507/16021/4507-16021-0016.flac",
+    "reference": "CAN ONE IMAGINE A NATURALIST REFUSING TO STUDY THE VIPER THE BAT THE SCORPION THE CENTIPEDE THE TARANTULA AND ONE WHO WOULD CAST THEM BACK INTO THEIR DARKNESS SAYING OH HOW UGLY THAT IS",
+    "duration": 17.265
+  },
+  {
+    "id": "61-70968-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70968/61-70968-0011.flac",
+    "reference": "HE GAVE WAY TO THE OTHERS VERY READILY AND RETREATED UNPERCEIVED BY THE SQUIRE AND MISTRESS FITZOOTH TO THE REAR OF THE TENT",
+    "duration": 6.375
+  },
+  {
+    "id": "2961-960-0012",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2961/960/2961-960-0012.flac",
+    "reference": "MANY IF NOT ALL THE ELEMENTS OF THE PRE SOCRATIC PHILOSOPHY ARE INCLUDED IN THE TIMAEUS",
+    "duration": 6.89
+  },
+  {
+    "id": "7729-102255-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7729/102255/7729-102255-0015.flac",
+    "reference": "ONE OF HIS MILITIA GENERALS SUGGESTED THAT THE GOVERNOR SHOULD REQUIRE THE OUTLAWS AT LAWRENCE AND ELSEWHERE TO SURRENDER THE SHARPS RIFLES ANOTHER WROTE ASKING HIM TO CALL OUT THE GOVERNMENT TROOPS AT FORT LEAVENWORTH",
+    "duration": 14.99
+  },
+  {
+    "id": "1995-1826-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1826/1995-1826-0014.flac",
+    "reference": "COTTON SHE PAUSED",
+    "duration": 2.5
+  },
+  {
+    "id": "1089-134686-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134686/1089-134686-0019.flac",
+    "reference": "THE SENTENCE OF SAINT JAMES WHICH SAYS THAT HE WHO OFFENDS AGAINST ONE COMMANDMENT BECOMES GUILTY OF ALL HAD SEEMED TO HIM FIRST A SWOLLEN PHRASE UNTIL HE HAD BEGUN TO GROPE IN THE DARKNESS OF HIS OWN STATE",
+    "duration": 13.895
+  },
+  {
+    "id": "8555-284447-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/284447/8555-284447-0014.flac",
+    "reference": "THE IDEA OF PATCHING CAP'N BILL TO A GOAT WAS VASTLY AMUSING TO HIM AND THE MORE HE THOUGHT OF IT THE MORE HE ROARED WITH LAUGHTER",
+    "duration": 8.47
+  },
+  {
+    "id": "3575-170457-0035",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3575/170457/3575-170457-0035.flac",
+    "reference": "I WISH IT WOULD RECUR AGAIN BUT IT WILL TAKE TWO OR THREE INTERVIEWS BEFORE THE STIFFNESS THE ESTRANGEMENT OF THIS LONG SEPARATION WILL WEAR AWAY",
+    "duration": 9.37
+  },
+  {
+    "id": "7021-79759-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/79759/7021-79759-0002.flac",
+    "reference": "THEY ARE CHIEFLY FORMED FROM COMBINATIONS OF THE IMPRESSIONS MADE IN CHILDHOOD",
+    "duration": 5.25
+  },
+  {
+    "id": "4970-29093-0007",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29093/4970-29093-0007.flac",
+    "reference": "IT IS SUCH A NOBLE AMBITION THAT IT IS A PITY IT HAS USUALLY SUCH A SHALLOW FOUNDATION",
+    "duration": 6.995
+  },
+  {
+    "id": "5105-28241-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28241/5105-28241-0011.flac",
+    "reference": "ALL THE IMAGES OF HIS PAST LIFE FLOATED UPON HIS MEMORY HIS THOUGHTS SPED AWAY TO HIS NATIVE FRANCE ONLY TO RETURN AGAIN TO WONDER WHETHER THE DEPTHS OF OCEAN WOULD REVEAL ANY TRACES OF THE ALGERIAN METROPOLIS",
+    "duration": 13.71
+  },
+  {
+    "id": "1089-134691-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134691/1089-134691-0013.flac",
+    "reference": "IDLE AND EMBITTERING FINALLY TO ARGUE AGAINST HIS OWN DISPASSIONATE CERTITUDE THAT THE COMMANDMENT OF LOVE BADE US NOT TO LOVE OUR NEIGHBOUR AS OURSELVES WITH THE SAME AMOUNT AND INTENSITY OF LOVE BUT TO LOVE HIM AS OURSELVES WITH THE SAME KIND OF LOVE",
+    "duration": 16.33
+  },
+  {
+    "id": "7176-92135-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/92135/7176-92135-0005.flac",
+    "reference": "BUT SUPPOSE YOU SAID I'M FOND OF WRITING MY PEOPLE ALWAYS SAY MY LETTERS HOME ARE GOOD ENOUGH FOR PUNCH",
+    "duration": 5.47
+  },
+  {
+    "id": "1221-135767-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1221/135767/1221-135767-0011.flac",
+    "reference": "IT WAS FURTHER DECORATED WITH STRANGE AND SEEMINGLY CABALISTIC FIGURES AND DIAGRAMS SUITABLE TO THE QUAINT TASTE OF THE AGE WHICH HAD BEEN DRAWN IN THE STUCCO WHEN NEWLY LAID ON AND HAD NOW GROWN HARD AND DURABLE FOR THE ADMIRATION OF AFTER TIMES",
+    "duration": 16.51
+  },
+  {
+    "id": "4446-2273-0027",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4446/2273/4446-2273-0027.flac",
+    "reference": "WHEN SHE FINISHED ALEXANDER SHOOK HIMSELF OUT OF A REVERIE",
+    "duration": 3.76
+  },
+  {
+    "id": "4446-2275-0028",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4446/2275/4446-2275-0028.flac",
+    "reference": "YES YES SHE HURRIED PULLING HER HAND GENTLY AWAY FROM HIM",
+    "duration": 3.575
+  },
+  {
+    "id": "5142-33396-0067",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/33396/5142-33396-0067.flac",
+    "reference": "BUT YOUNG SHARP TONGUE NOW THAT WE HAVE CAUGHT YOU WE WILL PUT YOU INTO A TRAP THAT YOU CANNOT GET OUT OF",
+    "duration": 5.565
+  },
+  {
+    "id": "4992-41797-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41797/4992-41797-0010.flac",
+    "reference": "ALWAYS IRRITABLE COLD INDIFFERENT HE HAD GROWN RAPIDLY MORE SO AS YEARS WENT ON",
+    "duration": 6.82
+  },
+  {
+    "id": "2961-961-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2961/961/2961-961-0000.flac",
+    "reference": "SOCRATES BEGINS THE TIMAEUS WITH A SUMMARY OF THE REPUBLIC",
+    "duration": 4.665
+  },
+  {
+    "id": "121-121726-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/121726/121-121726-0008.flac",
+    "reference": "HOSE MAN'S EXCUSE FOR WETTING THE WALK",
+    "duration": 4.99
+  },
+  {
+    "id": "6930-81414-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6930/81414/6930-81414-0020.flac",
+    "reference": "I SAY YOU DO KNOW WHAT THIS MEANS AND YOU MUST TELL US",
+    "duration": 5.0
+  },
+  {
+    "id": "908-31957-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/908/31957/908-31957-0010.flac",
+    "reference": "O LOVE O TROTH",
+    "duration": 2.51
+  },
+  {
+    "id": "672-122797-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0000.flac",
+    "reference": "OUT IN THE WOODS STOOD A NICE LITTLE FIR TREE",
+    "duration": 4.07
+  },
+  {
+    "id": "7021-79740-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/79740/7021-79740-0005.flac",
+    "reference": "I AM VERY GLAD",
+    "duration": 2.11
+  },
+  {
+    "id": "5105-28241-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28241/5105-28241-0009.flac",
+    "reference": "AND WHAT DEMONSTRATION DO YOU OFFER ASKED SERVADAC EAGERLY THAT IT WILL NOT HAPPEN",
+    "duration": 7.01
+  },
+  {
+    "id": "8555-292519-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/292519/8555-292519-0008.flac",
+    "reference": "OVER THE TRACK LINED CITY STREET THE YOUNG MEN THE GRINNING MEN PASS",
+    "duration": 6.025
+  },
+  {
+    "id": "4446-2275-0040",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4446/2275/4446-2275-0040.flac",
+    "reference": "THE SIGHT OF YOU BARTLEY TO SEE YOU LIVING AND HAPPY AND SUCCESSFUL CAN I NEVER MAKE YOU UNDERSTAND WHAT THAT MEANS TO ME",
+    "duration": 6.965
+  },
+  {
+    "id": "7021-85628-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/85628/7021-85628-0009.flac",
+    "reference": "AT THE FARTHER END OF THE LARGEST HALL A TABLE WAS SET WITH GOLDEN CUPS AND GOLDEN PLATES IN LONG ROWS",
+    "duration": 8.54
+  },
+  {
+    "id": "1221-135767-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1221/135767/1221-135767-0014.flac",
+    "reference": "YEA HIS HONOURABLE WORSHIP IS WITHIN BUT HE HATH A GODLY MINISTER OR TWO WITH HIM AND LIKEWISE A LEECH",
+    "duration": 7.07
+  },
+  {
+    "id": "3570-5694-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3570/5694/3570-5694-0011.flac",
+    "reference": "THE CUSTOM OF FESTIVE GATHERINGS PROBABLY ORIGINATED IN MOTIVES OF CONVIVIALITY AND RELIGION THESE MOTIVES ARE ALSO PRESENT IN THE LATER DEVELOPMENT BUT THEY DO NOT CONTINUE TO BE THE SOLE MOTIVES",
+    "duration": 11.03
+  },
+  {
+    "id": "237-134500-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/237/134500/237-134500-0016.flac",
+    "reference": "I DON'T KNOW ALL OF THEM BUT I KNOW LINDENS ARE",
+    "duration": 3.16
+  },
+  {
+    "id": "2094-142345-0031",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0031.flac",
+    "reference": "AND SHE WAS VERY FOND OF YOU TOO AUNT RACHEL",
+    "duration": 2.78
+  },
+  {
+    "id": "4077-13754-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4077/13754/4077-13754-0009.flac",
+    "reference": "AT THE INCEPTION OF PLURAL MARRIAGE AMONG THE LATTER DAY SAINTS THERE WAS NO LAW NATIONAL OR STATE AGAINST ITS PRACTISE",
+    "duration": 7.65
+  },
+  {
+    "id": "8463-294825-0018",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294825/8463-294825-0018.flac",
+    "reference": "METER ROUGHLY ONE YARD THREE INCHES",
+    "duration": 2.935
+  },
+  {
+    "id": "1089-134691-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134691/1089-134691-0006.flac",
+    "reference": "THE PRIDE OF THAT DIM IMAGE BROUGHT BACK TO HIS MIND THE DIGNITY OF THE OFFICE HE HAD REFUSED",
+    "duration": 5.895
+  },
+  {
+    "id": "8455-210777-0068",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0068.flac",
+    "reference": "YOUR POWER IS SUFFICIENT I SAID",
+    "duration": 2.59
+  },
+  {
+    "id": "8224-274381-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8224/274381/8224-274381-0008.flac",
+    "reference": "WITH THESE AND SOME REENFORCEMENTS OF THE ATHOLEMEN AND MACDONALDS WHOM HE HAD RECALLED MONTROSE FELL SUDDENLY UPON ARGYLE'S COUNTRY AND LET LOOSE UPON IT ALL THE RAGE OF WAR CARRYING OFF THE CATTLE BURNING THE HOUSES AND PUTTING THE INHABITANTS TO THE SWORD",
+    "duration": 20.98
+  },
+  {
+    "id": "2961-960-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2961/960/2961-960-0016.flac",
+    "reference": "BUT PLATO HAS NOT THE SAME MASTERY OVER HIS INSTRUMENT WHICH HE EXHIBITS IN THE PHAEDRUS OR SYMPOSIUM",
+    "duration": 7.76
+  },
+  {
+    "id": "6829-68771-0012",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68771/6829-68771-0012.flac",
+    "reference": "THIS WAS THE FIRST OCCASION WITHIN A GENERATION WHEN SUCH AN ENTERTAINMENT HAD BEEN GIVEN AT ELMHURST AND THE ONLY ONE WITHIN THE MEMORY OF MAN WHERE THE NEIGHBORS AND COUNTRY PEOPLE HAD BEEN INVITED GUESTS",
+    "duration": 12.47
+  },
+  {
+    "id": "5683-32879-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32879/5683-32879-0002.flac",
+    "reference": "SO THERE CAME A STEP AND A LITTLE RUSTLING OF FEMININE DRAPERIES THE SMALL DOOR OPENED AND RACHEL ENTERED WITH HER HAND EXTENDED AND A PALE SMILE OF WELCOME",
+    "duration": 11.085
+  },
+  {
+    "id": "7729-102255-0044",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7729/102255/7729-102255-0044.flac",
+    "reference": "HERE HE WAS PLACED IN THE CUSTODY OF CAPTAIN MARTIN OF THE KICKAPOO RANGERS WHO PROVED A KIND JAILER AND MATERIALLY ASSISTED IN PROTECTING HIM FROM THE DANGEROUS INTENTIONS OF THE MOB WHICH AT THAT TIME HELD LEAVENWORTH UNDER A REIGN OF TERROR",
+    "duration": 17.105
+  },
+  {
+    "id": "3729-6852-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3729/6852/3729-6852-0005.flac",
+    "reference": "SILVIA WAS THE ADORATION OF FRANCE AND HER TALENT WAS THE REAL SUPPORT OF ALL THE COMEDIES WHICH THE GREATEST AUTHORS WROTE FOR HER ESPECIALLY OF THE PLAYS OF MARIVAUX FOR WITHOUT HER HIS COMEDIES WOULD NEVER HAVE GONE TO POSTERITY",
+    "duration": 18.54
+  },
+  {
+    "id": "4507-16021-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4507/16021/4507-16021-0009.flac",
+    "reference": "WHEN IT IS A QUESTION OF PROBING A WOUND A GULF A SOCIETY SINCE WHEN HAS IT BEEN CONSIDERED WRONG TO GO TOO FAR TO GO TO THE BOTTOM",
+    "duration": 11.305
+  },
+  {
+    "id": "1284-1181-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1284/1181/1284-1181-0008.flac",
+    "reference": "I THINK THAT WILL DO SHE CONTINUED FOR THE OTHER QUALITIES ARE NOT NEEDED IN A SERVANT",
+    "duration": 6.08
+  },
+  {
+    "id": "1089-134691-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134691/1089-134691-0009.flac",
+    "reference": "ANGRY WITH HIMSELF HE TRIED TO HIDE HIS FACE FROM THEIR EYES BY GAZING DOWN SIDEWAYS INTO THE SHALLOW SWIRLING WATER UNDER THE BRIDGE BUT HE STILL SAW A REFLECTION THEREIN OF THEIR TOP HEAVY SILK HATS AND HUMBLE TAPE LIKE COLLARS AND LOOSELY HANGING CLERICAL CLOTHES BROTHER HICKEY",
+    "duration": 20.055
+  },
+  {
+    "id": "5142-36377-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/36377/5142-36377-0005.flac",
+    "reference": "THE DOOR OPENED AGAIN WHILE I WAS STILL STUDYING THE TWO BROTHERS WITHOUT I HONESTLY CONFESS BEING VERY FAVORABLY IMPRESSED BY EITHER OF THEM",
+    "duration": 7.085
+  },
+  {
+    "id": "5683-32879-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32879/5683-32879-0000.flac",
+    "reference": "IT WAS NOT VERY MUCH PAST ELEVEN THAT MORNING WHEN THE PONY CARRIAGE FROM BRANDON DREW UP BEFORE THE LITTLE GARDEN WICKET OF REDMAN'S FARM",
+    "duration": 8.92
+  },
+  {
+    "id": "5683-32866-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32866/5683-32866-0006.flac",
+    "reference": "YES SO THEY SAID BUT THAT WOULD I THINK HAVE BEEN WORSE",
+    "duration": 4.215
+  },
+  {
+    "id": "672-122797-0053",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0053.flac",
+    "reference": "THEY WERE SO EXTREMELY CURIOUS",
+    "duration": 2.955
+  },
+  {
+    "id": "5683-32879-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32879/5683-32879-0021.flac",
+    "reference": "DORCAS IN HER STRANGE WAY WAS MOVED",
+    "duration": 4.09
+  },
+  {
+    "id": "61-70968-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70968/61-70968-0008.flac",
+    "reference": "TAKE YOUR PLACE AND LET US SEE WHAT THE CRYSTAL CAN SHOW TO YOU",
+    "duration": 3.535
+  },
+  {
+    "id": "6930-76324-0025",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6930/76324/6930-76324-0025.flac",
+    "reference": "WHY IT'S GOLIATH AS USUAL THEY BOTH CRIED PEERING IN",
+    "duration": 4.12
+  },
+  {
+    "id": "237-134500-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/237/134500/237-134500-0015.flac",
+    "reference": "THAT SUMMER THE RAINS HAD BEEN SO MANY AND OPPORTUNE THAT IT WAS ALMOST MORE THAN SHABATA AND HIS MAN COULD DO TO KEEP UP WITH THE CORN THE ORCHARD WAS A NEGLECTED WILDERNESS",
+    "duration": 10.815
+  },
+  {
+    "id": "672-122797-0046",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0046.flac",
+    "reference": "TIS NOW WINTER OUT OF DOORS THOUGHT THE TREE",
+    "duration": 4.715
+  },
+  {
+    "id": "5105-28233-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28233/5105-28233-0009.flac",
+    "reference": "THE BOND OF UNION THUS EFFECTED COULD NEVER BE SEVERED AND ALTHOUGH BEN ZOOF'S ACHIEVEMENTS HAD FAIRLY EARNED HIM THE RIGHT OF RETIREMENT HE FIRMLY DECLINED ALL HONORS OR ANY PENSION THAT MIGHT PART HIM FROM HIS SUPERIOR OFFICER",
+    "duration": 14.595
+  },
+  {
+    "id": "2830-3980-0033",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0033.flac",
+    "reference": "NOT ALL THE GALATIANS HAD BECOME PERVERTED",
+    "duration": 2.71
+  },
+  {
+    "id": "672-122797-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0001.flac",
+    "reference": "THE PLACE HE HAD WAS A VERY GOOD ONE THE SUN SHONE ON HIM AS TO FRESH AIR THERE WAS ENOUGH OF THAT AND ROUND HIM GREW MANY LARGE SIZED COMRADES PINES AS WELL AS FIRS",
+    "duration": 15.13
+  },
+  {
+    "id": "6829-68771-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68771/6829-68771-0011.flac",
+    "reference": "TABLES WERE SPREAD ON THE LAWN AND A DAINTY BUT SUBSTANTIAL REPAST WAS TO BE SERVED",
+    "duration": 5.625
+  },
+  {
+    "id": "908-31957-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/908/31957/908-31957-0021.flac",
+    "reference": "OH TO SHOOT MY SOUL'S FULL MEANING INTO FUTURE YEARS THAT THEY SHOULD LEND IT UTTERANCE AND SALUTE LOVE THAT ENDURES FROM LIFE THAT DISAPPEARS",
+    "duration": 10.905
+  },
+  {
+    "id": "5683-32866-0024",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32866/5683-32866-0024.flac",
+    "reference": "I SHAN'T TROUBLE YOU ABOUT MY TRAIN OF THOUGHTS OR FANCIES BUT I BEGAN TO FEEL VERY LIKE A GENTLEMAN IN A GHOST STORY WATCHING EXPERIMENTALLY IN A HAUNTED CHAMBER",
+    "duration": 9.855
+  },
+  {
+    "id": "2094-142345-0055",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0055.flac",
+    "reference": "BUT YOU KNOW MORE ABOUT THAT THAN I DO SIR",
+    "duration": 2.655
+  },
+  {
+    "id": "2830-3979-0012",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3979/2830-3979-0012.flac",
+    "reference": "THE WORD OF OUR GOD SHALL STAND FOREVER",
+    "duration": 3.625
+  },
+  {
+    "id": "8230-279154-0025",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8230/279154/8230-279154-0025.flac",
+    "reference": "WE MIGHT PROVISIONALLY THOUGH PERHAPS NOT QUITE CORRECTLY DEFINE MEMORY AS THAT WAY OF KNOWING ABOUT THE PAST WHICH HAS NO ANALOGUE IN OUR KNOWLEDGE OF THE FUTURE SUCH A DEFINITION WOULD AT LEAST SERVE TO MARK THE PROBLEM WITH WHICH WE ARE CONCERNED THOUGH SOME EXPECTATIONS MAY DESERVE TO RANK WITH MEMORY AS REGARDS IMMEDIACY",
+    "duration": 21.78
+  },
+  {
+    "id": "4992-23283-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/23283/4992-23283-0011.flac",
+    "reference": "IF SHE DOES NOT KNOW HOW TO ESTIMATE HER OWN VALUE I DO",
+    "duration": 4.225
+  },
+  {
+    "id": "5639-40744-0030",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0030.flac",
+    "reference": "JUST THEN LEOCADIA CAME TO HERSELF AND EMBRACING THE CROSS SEEMED CHANGED INTO A SEA OF TEARS AND THE GENTLEMAN REMAINED IN UTTER BEWILDERMENT UNTIL HIS WIFE HAD REPEATED TO HIM FROM BEGINNING TO END LEOCADIA'S WHOLE STORY AND HE BELIEVED IT THROUGH THE BLESSED DISPENSATION OF HEAVEN WHICH HAD CONFIRMED IT BY SO MANY CONVINCING TESTIMONIES",
+    "duration": 22.285
+  },
+  {
+    "id": "2300-131720-0027",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2300/131720/2300-131720-0027.flac",
+    "reference": "EDISON HELD THAT THE ELECTRICITY SOLD MUST BE MEASURED JUST LIKE GAS OR WATER AND HE PROCEEDED TO DEVELOP A METER",
+    "duration": 8.62
+  },
+  {
+    "id": "2094-142345-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0005.flac",
+    "reference": "SEVERAL CLOTHES HORSES A PILLION A SPINNING WHEEL AND AN OLD BOX WIDE OPEN AND STUFFED FULL OF COLOURED RAGS",
+    "duration": 9.09
+  },
+  {
+    "id": "5105-28240-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28240/5105-28240-0002.flac",
+    "reference": "EXCLAIMED SERVADAC KEEPING HIS EYE UNMOVED AT HIS TELESCOPE",
+    "duration": 4.01
+  },
+  {
+    "id": "2094-142345-0025",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0025.flac",
+    "reference": "COLD IS IT MY DARLING BLESS YOUR SWEET FACE",
+    "duration": 3.595
+  },
+  {
+    "id": "6930-81414-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6930/81414/6930-81414-0008.flac",
+    "reference": "IT DID NOT BECKON OR INDEED MOVE AT ALL IT WAS AS STILL AS THE HAND OF DEATH",
+    "duration": 6.055
+  },
+  {
+    "id": "260-123288-0027",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123288/260-123288-0027.flac",
+    "reference": "A SUFFOCATING SMELL OF NITROGEN FILLS THE AIR IT ENTERS THE THROAT IT FILLS THE LUNGS",
+    "duration": 6.305
+  },
+  {
+    "id": "8463-294828-0025",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294828/8463-294828-0025.flac",
+    "reference": "BUT WE'RE GOING JUST THE SAME",
+    "duration": 1.99
+  },
+  {
+    "id": "61-70968-0032",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70968/61-70968-0032.flac",
+    "reference": "HE FELT FOR AND FOUND THE WIZARD'S BLACK CLOTH THE SQUIRE WAS QUITE OUT OF BREATH",
+    "duration": 4.28
+  },
+  {
+    "id": "3575-170457-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3575/170457/3575-170457-0023.flac",
+    "reference": "I CAREFULLY AVOID ANY APPEARANCE OF PREOCCUPATION AND ECCENTRICITY WHICH MIGHT LEAD THOSE I LIVE AMONGST TO SUSPECT THE NATURE OF MY PURSUITS",
+    "duration": 9.095
+  },
+  {
+    "id": "8463-294825-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294825/8463-294825-0002.flac",
+    "reference": "FIRST AS A PARIS STOCKBROKER LATER AS A CELEBRATED AUTHOR AND YACHTSMAN HE WENT ON FREQUENT VOYAGES TO BRITAIN AMERICA THE MEDITERRANEAN",
+    "duration": 10.56
+  },
+  {
+    "id": "5639-40744-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0005.flac",
+    "reference": "FINALLY THE ONE PARTY WENT OFF EXULTING AND THE OTHER WAS LEFT IN DESOLATION AND WOE",
+    "duration": 5.645
+  },
+  {
+    "id": "4970-29093-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29093/4970-29093-0008.flac",
+    "reference": "HE WANTED TO BEGIN AT THE TOP OF THE LADDER",
+    "duration": 3.58
+  },
+  {
+    "id": "8463-294828-0037",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294828/8463-294828-0037.flac",
+    "reference": "DEPARTING FROM FIVE HUNDRED THOUSAND THROATS THREE CHEERS BURST FORTH IN SUCCESSION",
+    "duration": 5.37
+  },
+  {
+    "id": "1580-141084-0035",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141084/1580-141084-0035.flac",
+    "reference": "HE COULD EXAMINE THE PAPERS IN HIS OWN OFFICE",
+    "duration": 2.63
+  },
+  {
+    "id": "1995-1837-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1837/1995-1837-0013.flac",
+    "reference": "THEN HE LOOKED DOWN THE LAGOON WAS DRY",
+    "duration": 3.195
+  },
+  {
+    "id": "5683-32879-0007",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32879/5683-32879-0007.flac",
+    "reference": "RACHEL'S PALE AND SHARPENED FEATURES AND DILATED EYE STRUCK HER WITH A PAINFUL SURPRISE",
+    "duration": 6.795
+  },
+  {
+    "id": "61-70968-0030",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70968/61-70968-0030.flac",
+    "reference": "NOW BE SILENT ON YOUR LIVES HE BEGAN BUT THE CAPTURED APPRENTICE SET UP AN INSTANT SHOUT",
+    "duration": 5.685
+  },
+  {
+    "id": "3575-170457-0044",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3575/170457/3575-170457-0044.flac",
+    "reference": "AFTER THIS DISAPPOINTMENT I NEVER DARE RECKON WITH CERTAINTY ON THE ENJOYMENT OF A PLEASURE AGAIN IT SEEMS AS IF SOME FATALITY STOOD BETWEEN YOU AND ME",
+    "duration": 9.72
+  },
+  {
+    "id": "6829-68771-0034",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68771/6829-68771-0034.flac",
+    "reference": "I WISH I KNEW MYSELF SHE CRIED FIERCELY",
+    "duration": 2.475
+  },
+  {
+    "id": "5639-40744-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0000.flac",
+    "reference": "ELEVEN O'CLOCK HAD STRUCK IT WAS A FINE CLEAR NIGHT THEY WERE THE ONLY PERSONS ON THE ROAD AND THEY SAUNTERED LEISURELY ALONG TO AVOID PAYING THE PRICE OF FATIGUE FOR THE RECREATION PROVIDED FOR THE TOLEDANS IN THEIR VALLEY OR ON THE BANKS OF THEIR RIVER",
+    "duration": 15.77
+  },
+  {
+    "id": "4992-23283-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/23283/4992-23283-0004.flac",
+    "reference": "AND YET YOU MUST OWN HER BEHAVIOUR HAS WARRANTED THEM HAS IT NOT BEEN IN THIS PARTICULAR INCOHERENT AND UNACCOUNTABLE",
+    "duration": 8.06
+  },
+  {
+    "id": "672-122797-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0021.flac",
+    "reference": "AND TOWARDS CHRISTMAS HE WAS ONE OF THE FIRST THAT WAS CUT DOWN",
+    "duration": 4.15
+  },
+  {
+    "id": "1580-141083-0035",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0035.flac",
+    "reference": "HOLMES TURNED AWAY AND STOOPED SUDDENLY TO THE FLOOR HALLOA WHAT'S THIS",
+    "duration": 4.98
+  },
+  {
+    "id": "1089-134686-0035",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134686/1089-134686-0035.flac",
+    "reference": "HE HAD THE FAITH IN HIM THAT MOVES MOUNTAINS",
+    "duration": 3.445
+  },
+  {
+    "id": "672-122797-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0015.flac",
+    "reference": "WERE I IN THE WARM ROOM WITH ALL THE SPLENDOR AND MAGNIFICENCE",
+    "duration": 4.455
+  },
+  {
+    "id": "5142-36377-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/36377/5142-36377-0002.flac",
+    "reference": "THE SOUND OF AN IMPERATIVE AND UNCOMPROMISING BELL RECALLED ME IN DUE TIME TO THE REGIONS OF REALITY",
+    "duration": 5.62
+  },
+  {
+    "id": "4970-29095-0012",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0012.flac",
+    "reference": "AND BESIDES SUPPOSE THEE DOES LEARN MEDICINE",
+    "duration": 4.68
+  },
+  {
+    "id": "260-123288-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123288/260-123288-0006.flac",
+    "reference": "THE ATMOSPHERE IS EVIDENTLY CHARGED AND SURCHARGED WITH ELECTRICITY",
+    "duration": 4.88
+  },
+  {
+    "id": "121-127105-0033",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/127105/121-127105-0033.flac",
+    "reference": "IT WAS THE BEAUTY OF IT",
+    "duration": 2.355
+  },
+  {
+    "id": "7176-92135-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/92135/7176-92135-0016.flac",
+    "reference": "THIS WOULD BE AN EASY WAY OF DOING IT BUT IT WOULD NOT BE THE BEST WAY FOR THE REASON THAT IT IS TOO EASY TO CALL ATTENTION TO ITSELF",
+    "duration": 7.545
+  },
+  {
+    "id": "237-126133-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/237/126133/237-126133-0020.flac",
+    "reference": "HOW DID HER MOTHER EVER LET HER GO",
+    "duration": 2.24
+  },
+  {
+    "id": "5683-32865-0014",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32865/5683-32865-0014.flac",
+    "reference": "HE'S NOT A MAN FOR COUNTRY QUARTERS",
+    "duration": 2.615
+  },
+  {
+    "id": "5142-33396-0041",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/33396/5142-33396-0041.flac",
+    "reference": "SO I SET GUARDS OVER EVERY ONE IN THAT HOUSE",
+    "duration": 2.83
+  },
+  {
+    "id": "7176-92135-0026",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/92135/7176-92135-0026.flac",
+    "reference": "ENTER HAMLET WITH HIS FAVOURITE BOAR HOUND",
+    "duration": 2.95
+  },
+  {
+    "id": "7176-88083-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/88083/7176-88083-0006.flac",
+    "reference": "IT MIGHT HAVE SEEMED THAT A TROUT OF THIS SIZE WAS A FAIRLY SUBSTANTIAL MEAL",
+    "duration": 4.295
+  },
+  {
+    "id": "61-70970-0036",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0036.flac",
+    "reference": "ROBIN FITZOOTH SAW THAT HIS DOUBTS OF WARRENTON HAD BEEN UNFAIR AND HE BECAME ASHAMED OF HIMSELF FOR HARBORING THEM",
+    "duration": 6.785
+  },
+  {
+    "id": "4507-16021-0058",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4507/16021/4507-16021-0058.flac",
+    "reference": "THE FLAME IS THE ENEMY OF THE WING",
+    "duration": 3.11
+  },
+  {
+    "id": "8230-279154-0043",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8230/279154/8230-279154-0043.flac",
+    "reference": "OF COURSE THE WORDS THIS HAS EXISTED BEFORE ARE A VERY INADEQUATE TRANSLATION OF WHAT ACTUALLY HAPPENS WHEN WE FORM A JUDGMENT OF RECOGNITION BUT THAT IS UNAVOIDABLE WORDS ARE FRAMED TO EXPRESS A LEVEL OF THOUGHT WHICH IS BY NO MEANS PRIMITIVE AND ARE QUITE INCAPABLE OF EXPRESSING SUCH AN ELEMENTARY OCCURRENCE AS RECOGNITION",
+    "duration": 24.485
+  },
+  {
+    "id": "2961-961-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2961/961/2961-961-0021.flac",
+    "reference": "BUT I WOULD NOT SPEAK AT THE TIME BECAUSE I WANTED TO REFRESH MY MEMORY",
+    "duration": 4.94
+  },
+  {
+    "id": "6930-75918-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6930/75918/6930-75918-0002.flac",
+    "reference": "CONGRATULATIONS WERE POURED IN UPON THE PRINCESS EVERYWHERE DURING HER JOURNEY",
+    "duration": 5.025
+  },
+  {
+    "id": "260-123286-0012",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123286/260-123286-0012.flac",
+    "reference": "BUT THERE SEEMED NO REASON TO FEAR",
+    "duration": 2.43
+  },
+  {
+    "id": "61-70970-0032",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0032.flac",
+    "reference": "ENQUIRED ROBIN WITH HIS SUSPICIONS STILL UPON HIM",
+    "duration": 3.135
+  },
+  {
+    "id": "1188-133604-0032",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1188/133604/1188-133604-0032.flac",
+    "reference": "IT IS ONLY A PENCIL OUTLINE BY EDWARD BURNE JONES IN ILLUSTRATION OF THE STORY OF PSYCHE IT IS THE INTRODUCTION OF PSYCHE AFTER ALL HER TROUBLES INTO HEAVEN",
+    "duration": 10.985
+  },
+  {
+    "id": "1995-1836-0007",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1836/1995-1836-0007.flac",
+    "reference": "BUT YOU BELIEVE IN SOME EDUCATION ASKED MARY TAYLOR",
+    "duration": 3.435
+  },
+  {
+    "id": "3729-6852-0034",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3729/6852/3729-6852-0034.flac",
+    "reference": "LET A MAN RUN AND EVERYBODY WILL RUN AFTER HIM THE CROWD WILL NOT STOP UNLESS THE MAN IS PROVED TO BE MAD BUT TO PROVE IT IS INDEED A DIFFICULT TASK BECAUSE WE HAVE A CROWD OF MEN WHO MAD FROM THEIR BIRTH ARE STILL CONSIDERED WISE",
+    "duration": 18.895
+  },
+  {
+    "id": "5639-40744-0018",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0018.flac",
+    "reference": "THAT WOULD BE VERY WELL MY CHILD REPLIED HER FATHER IF YOUR PLAN WERE NOT LIABLE TO BE FRUSTRATED BY ORDINARY CUNNING BUT NO DOUBT THIS IMAGE HAS BEEN ALREADY MISSED BY ITS OWNER AND HE WILL HAVE SET IT DOWN FOR CERTAIN THAT IT WAS TAKEN OUT OF THE ROOM BY THE PERSON HE LOCKED UP THERE",
+    "duration": 15.4149375
+  },
+  {
+    "id": "5639-40744-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0010.flac",
+    "reference": "IT IS THE ONLY AMENDS I ASK OF YOU FOR THE WRONG YOU HAVE DONE ME",
+    "duration": 4.12
+  },
+  {
+    "id": "4970-29095-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0019.flac",
+    "reference": "AND THEN THERE WAS BROAD STREET",
+    "duration": 2.725
+  },
+  {
+    "id": "2300-131720-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2300/131720/2300-131720-0015.flac",
+    "reference": "HE OBTAINED THE DESIRED SPEED AND LOAD WITH A FRICTION BRAKE ALSO REGULATOR OF SPEED BUT WAITED FOR AN INDICATOR TO VERIFY IT",
+    "duration": 8.875
+  },
+  {
+    "id": "5683-32866-0029",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32866/5683-32866-0029.flac",
+    "reference": "SOMEHOW I HAD GROWN NERVOUS",
+    "duration": 2.275
+  },
+  {
+    "id": "4446-2275-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4446/2275/4446-2275-0002.flac",
+    "reference": "ALEXANDER PACED UP AND DOWN THE HALLWAY BUTTONING AND UNBUTTONING HIS OVERCOAT UNTIL SHE RETURNED AND TOOK HIM UP TO HILDA'S LIVING ROOM",
+    "duration": 7.675
+  },
+  {
+    "id": "6829-68771-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68771/6829-68771-0005.flac",
+    "reference": "THE ONLY THING NECESSARY WAS TO FIX SETH REYNOLDS AND THIS HOPKINS ARRANGED PERSONALLY",
+    "duration": 6.165
+  },
+  {
+    "id": "4992-23283-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/23283/4992-23283-0020.flac",
+    "reference": "I HAVE NEVER YET HOWEVER BEEN VANQUISHED BY THEM AND EVEN UPON THIS OCCASION MY REASON SHALL COMBAT THEM TO THE LAST AND MY REASON SHALL FAIL ME BEFORE I DO WRONG",
+    "duration": 10.42
+  },
+  {
+    "id": "2830-3980-0036",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0036.flac",
+    "reference": "WHEREVER THE MEANS OF GRACE ARE FOUND THERE IS THE HOLY CHURCH EVEN THOUGH ANTICHRIST REIGNS THERE",
+    "duration": 5.765
+  },
+  {
+    "id": "8224-274384-0003",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8224/274384/8224-274384-0003.flac",
+    "reference": "OR HATH HE GIVEN US ANY GIFT",
+    "duration": 3.87
+  },
+  {
+    "id": "2300-131720-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2300/131720/2300-131720-0020.flac",
+    "reference": "IT WAS SPECIALLY SUITED FOR A TRIAL PLANT ALSO IN THE EARLY DAYS WHEN A YIELD OF SIX OR EIGHT LAMPS TO THE HORSE POWER WAS CONSIDERED SUBJECT FOR CONGRATULATION",
+    "duration": 10.35
+  },
+  {
+    "id": "2094-142345-0046",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0046.flac",
+    "reference": "I DELIGHT IN YOUR KITCHEN",
+    "duration": 1.905
+  },
+  {
+    "id": "4992-41797-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41797/4992-41797-0005.flac",
+    "reference": "DONE HE AIN'T DONE A THING HE'D OUGHTER SENCE HE WAS BORN",
+    "duration": 3.845
+  },
+  {
+    "id": "3729-6852-0035",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3729/6852/3729-6852-0035.flac",
+    "reference": "IT SEEMS TO ME I REPLIED THAT SUCH APPROVAL SUCH RATIFICATION OF THE OPINION EXPRESSED BY THE KING THE PRINCES OF THE BLOOD ET CETERA IS RATHER A PROOF OF THE AFFECTION FELT FOR THEM BY THE NATION FOR THE FRENCH CARRY THAT AFFECTION TO SUCH AN EXTENT THAT THEY BELIEVE THEM INFALLIBLE",
+    "duration": 20.65
+  },
+  {
+    "id": "8455-210777-0008",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0008.flac",
+    "reference": "THE LADIES IN COMPLIANCE WITH THAT SOFTNESS OF HEART WHICH IS THEIR CHARACTERISTIC ARE ON ONE SIDE AND THE MEN BY WHOM THE WORLD HAS TO BE MANAGED ARE ON THE OTHER",
+    "duration": 11.835
+  },
+  {
+    "id": "8224-274381-0007",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8224/274381/8224-274381-0007.flac",
+    "reference": "BY QUICK MARCHES THROUGH THESE INACCESSIBLE MOUNTAINS THAT GENERAL FREED HIMSELF FROM THE SUPERIOR FORCES OF THE COVENANTERS",
+    "duration": 10.085
+  },
+  {
+    "id": "2830-3980-0065",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0065.flac",
+    "reference": "PAUL ANSWERS THE MAN WHO IS NAMED JESUS CHRIST AND THE SON OF GOD GAVE HIMSELF FOR OUR SINS",
+    "duration": 6.515
+  },
+  {
+    "id": "4077-13751-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4077/13751/4077-13751-0019.flac",
+    "reference": "WHO BEGAN THE QUARREL WAS IT THE MORMONS",
+    "duration": 2.92
+  },
+  {
+    "id": "8555-292519-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/292519/8555-292519-0006.flac",
+    "reference": "THE PLEASANT GRAVEYARD OF MY SOUL WITH SENTIMENTAL CYPRESS TREES AND FLOWERS IS FILLED THAT I MAY STROLL IN MEDITATION AT MY EASE",
+    "duration": 10.18
+  },
+  {
+    "id": "237-134493-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/237/134493/237-134493-0005.flac",
+    "reference": "HE WAS A SPLENDID FIGURE OF A BOY TALL AND STRAIGHT AS A YOUNG PINE TREE WITH A HANDSOME HEAD AND STORMY GRAY EYES DEEPLY SET UNDER A SERIOUS BROW",
+    "duration": 10.945
+  },
+  {
+    "id": "61-70970-0031",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0031.flac",
+    "reference": "CRIED HE WAVING THE LANTHORN BEFORE HIM TO MAKE SURE THAT THESE WERE NO GHOSTS IN FRONT OF HIM",
+    "duration": 5.135
+  },
+  {
+    "id": "4507-16021-0043",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4507/16021/4507-16021-0043.flac",
+    "reference": "THE EARTH IS NOT DEVOID OF RESEMBLANCE TO A JAIL",
+    "duration": 3.99
+  },
+  {
+    "id": "61-70970-0034",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0034.flac",
+    "reference": "NAY NAY LORDING ANSWERED WARRENTON WITH A HALF LAUGH",
+    "duration": 4.485
+  },
+  {
+    "id": "260-123288-0022",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123288/260-123288-0022.flac",
+    "reference": "THEY SEEM TO BE WE ARE LOST BUT I AM NOT SURE",
+    "duration": 3.705
+  },
+  {
+    "id": "2094-142345-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0015.flac",
+    "reference": "TO ALL APPEARANCE MOLLY HAD GOT THROUGH HER AFTER DINNER WORK IN AN EXEMPLARY MANNER HAD CLEANED HERSELF WITH GREAT DISPATCH AND NOW CAME TO ASK SUBMISSIVELY IF SHE SHOULD SIT DOWN TO HER SPINNING TILL MILKING TIME",
+    "duration": 15.015
+  },
+  {
+    "id": "1089-134691-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134691/1089-134691-0021.flac",
+    "reference": "THEIR DIVING STONE POISED ON ITS RUDE SUPPORTS AND ROCKING UNDER THEIR PLUNGES AND THE ROUGH HEWN STONES OF THE SLOPING BREAKWATER OVER WHICH THEY SCRAMBLED IN THEIR HORSEPLAY GLEAMED WITH COLD WET LUSTRE",
+    "duration": 13.37
+  },
+  {
+    "id": "672-122797-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0020.flac",
+    "reference": "BUT THE TREE DID NOT REJOICE AT ALL HE GREW AND GREW AND WAS GREEN BOTH WINTER AND SUMMER",
+    "duration": 8.825
+  },
+  {
+    "id": "8455-210777-0031",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0031.flac",
+    "reference": "YOU HAVE RECEIVED US WITH ALL THAT COURTESY AND HOSPITALITY FOR WHICH YOUR CHARACTER IN ENGLAND STANDS SO HIGH",
+    "duration": 7.67
+  },
+  {
+    "id": "5142-33396-0034",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/33396/5142-33396-0034.flac",
+    "reference": "THEN I DRANK HALF OF THE HORNFUL AND SENT THE REST ACROSS THE FIRE TO THE FARMER HE TOOK IT AND SMILED SAYING",
+    "duration": 6.615
+  },
+  {
+    "id": "2094-142345-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0013.flac",
+    "reference": "HER TONGUE WAS NOT LESS KEEN THAN HER EYE AND WHENEVER A DAMSEL CAME WITHIN EARSHOT SEEMED TO TAKE UP AN UNFINISHED LECTURE AS A BARREL ORGAN TAKES UP A TUNE PRECISELY AT THE POINT WHERE IT HAD LEFT OFF",
+    "duration": 14.25
+  },
+  {
+    "id": "8555-284447-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/284447/8555-284447-0001.flac",
+    "reference": "HOLD HIM FAST MY MEN AND AS SOON AS I'VE HAD MY COFFEE AND OATMEAL I'LL TAKE HIM TO THE ROOM OF THE GREAT KNIFE AND PATCH HIM",
+    "duration": 8.61
+  },
+  {
+    "id": "61-70968-0046",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70968/61-70968-0046.flac",
+    "reference": "NOTTINGHAM CASTLE WAS REACHED AND ADMITTANCE WAS DEMANDED",
+    "duration": 3.55
+  },
+  {
+    "id": "5105-28241-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28241/5105-28241-0017.flac",
+    "reference": "AFTER PONDERING AWHILE HE SAID IF WE WERE FARTHER AWAY I SHOULD EXPECT TO FIND A DEPTH OF TWO OR THREE HUNDRED FATHOMS INSTEAD OF FIVE FATHOMS FIVE FATHOMS",
+    "duration": 12.755
+  },
+  {
+    "id": "5683-32879-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5683/32879/5683-32879-0010.flac",
+    "reference": "POOR RACHEL HER NATURE RECOILED FROM DECEIT AND SHE TOLD AT ALL EVENTS AS MUCH OF THE TRUTH AS SHE DARED",
+    "duration": 7.75
+  },
+  {
+    "id": "5105-28240-0018",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28240/5105-28240-0018.flac",
+    "reference": "YOU WILL TAKE ME ON BOARD COUNT WILL YOU NOT",
+    "duration": 2.885
+  },
+  {
+    "id": "5142-33396-0022",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/33396/5142-33396-0022.flac",
+    "reference": "WHAT OF THE FARM OLAF NOT YET I ANSWERED VIKING IS BETTER FOR SUMMER",
+    "duration": 4.77
+  },
+  {
+    "id": "4077-13754-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4077/13754/4077-13754-0001.flac",
+    "reference": "BUT A WORD FURTHER CONCERNING THE EXPEDITION IN GENERAL",
+    "duration": 3.77
+  },
+  {
+    "id": "260-123286-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123286/260-123286-0010.flac",
+    "reference": "SUNDAY AUGUST SIXTEENTH",
+    "duration": 2.575
+  },
+  {
+    "id": "908-31957-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/908/31957/908-31957-0011.flac",
+    "reference": "AND LOVE BE FALSE",
+    "duration": 2.335
+  },
+  {
+    "id": "7729-102255-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7729/102255/7729-102255-0019.flac",
+    "reference": "TO EMBARRASS THIS DAMAGING EXPOSURE JUDGE LECOMPTE ISSUED A WRIT AGAINST THE EX GOVERNOR ON A FRIVOLOUS CHARGE OF CONTEMPT",
+    "duration": 8.93
+  },
+  {
+    "id": "2300-131720-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2300/131720/2300-131720-0004.flac",
+    "reference": "OWING TO HIS INSISTENCE ON LOW PRESSURE DIRECT CURRENT FOR USE IN DENSELY POPULATED DISTRICTS AS THE ONLY SAFE AND TRULY UNIVERSAL PROFITABLE WAY OF DELIVERING ELECTRICAL ENERGY TO THE CONSUMERS EDISON HAS BEEN FREQUENTLY SPOKEN OF AS AN OPPONENT OF THE ALTERNATING CURRENT",
+    "duration": 19.91
+  },
+  {
+    "id": "8230-279154-0027",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8230/279154/8230-279154-0027.flac",
+    "reference": "A GRAMOPHONE BY THE HELP OF SUITABLE RECORDS MIGHT RELATE TO US THE INCIDENTS OF ITS PAST AND PEOPLE ARE NOT SO DIFFERENT FROM GRAMOPHONES AS THEY LIKE TO BELIEVE",
+    "duration": 11.135
+  },
+  {
+    "id": "8224-274381-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8224/274381/8224-274381-0011.flac",
+    "reference": "HIS CONDUCT AND PRESENCE OF MIND IN THIS EMERGENCE APPEARED CONSPICUOUS",
+    "duration": 6.48
+  },
+  {
+    "id": "8463-294825-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8463/294825/8463-294825-0017.flac",
+    "reference": "LITER ROUGHLY ONE QUART",
+    "duration": 2.35
+  },
+  {
+    "id": "908-157963-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/908/157963/908-157963-0023.flac",
+    "reference": "THE HELPLESS WORM AROSE AND SAT UPON THE LILLYS LEAF AND THE BRIGHT CLOUD SAILD ON TO FIND HIS PARTNER IN THE VALE",
+    "duration": 9.625
+  },
+  {
+    "id": "61-70968-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70968/61-70968-0009.flac",
+    "reference": "LIKE AS NOT YOUNG MASTER THOUGH I AM AN OLD MAN",
+    "duration": 4.51
+  },
+  {
+    "id": "1995-1826-0021",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1826/1995-1826-0021.flac",
+    "reference": "DON'T KNOW WELL OF ALL THINGS INWARDLY COMMENTED MISS TAYLOR LITERALLY BORN IN COTTON AND OH WELL AS MUCH AS TO ASK WHAT'S THE USE SHE TURNED AGAIN TO GO",
+    "duration": 11.41
+  },
+  {
+    "id": "2830-3980-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0006.flac",
+    "reference": "AGAINST THESE BOASTING FALSE APOSTLES PAUL BOLDLY DEFENDS HIS APOSTOLIC AUTHORITY AND MINISTRY",
+    "duration": 6.41
+  },
+  {
+    "id": "4992-23283-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/23283/4992-23283-0010.flac",
+    "reference": "BUT IN SUCH A CASE MISS MILNER'S ELECTION OF A HUSBAND SHALL NOT DIRECT MINE",
+    "duration": 5.0
+  },
+  {
+    "id": "1995-1826-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1826/1995-1826-0001.flac",
+    "reference": "THE SOUTH SHE HAD NOT THOUGHT OF SERIOUSLY AND YET KNOWING OF ITS DELIGHTFUL HOSPITALITY AND MILD CLIMATE SHE WAS NOT AVERSE TO CHARLESTON OR NEW ORLEANS",
+    "duration": 10.17
+  },
+  {
+    "id": "4992-41797-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41797/4992-41797-0013.flac",
+    "reference": "SHE MAKES EFFORT AFTER EFFORT TREMBLING WITH EAGERNESS AND WHEN SHE FAILS TO REPRODUCE WHAT SHE SEES SHE WORKS HERSELF INTO A FRENZY OF GRIEF AND DISAPPOINTMENT",
+    "duration": 9.8
+  },
+  {
+    "id": "1995-1837-0028",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1837/1995-1837-0028.flac",
+    "reference": "THE CHAIR WAS EMPTY BUT HE KNEW",
+    "duration": 2.34
+  },
+  {
+    "id": "1995-1837-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1837/1995-1837-0001.flac",
+    "reference": "IT WAS THE FIRST GREAT SORROW OF HIS LIFE IT WAS NOT SO MUCH THE LOSS OF THE COTTON ITSELF BUT THE FANTASY THE HOPES THE DREAMS BUILT AROUND IT",
+    "duration": 8.73
+  },
+  {
+    "id": "1995-1826-0022",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1826/1995-1826-0022.flac",
+    "reference": "I SUPPOSE THOUGH IT'S TOO EARLY FOR THEM THEN CAME THE EXPLOSION",
+    "duration": 4.745
+  },
+  {
+    "id": "1580-141083-0050",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0050.flac",
+    "reference": "I REALLY DON'T THINK HE KNEW MUCH ABOUT IT MISTER HOLMES",
+    "duration": 3.085
+  },
+  {
+    "id": "5142-36600-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/36600/5142-36600-0001.flac",
+    "reference": "IN DETERMINING WHETHER TWO OR MORE ALLIED FORMS OUGHT TO BE RANKED AS SPECIES OR VARIETIES NATURALISTS ARE PRACTICALLY GUIDED BY THE FOLLOWING CONSIDERATIONS NAMELY THE AMOUNT OF DIFFERENCE BETWEEN THEM AND WHETHER SUCH DIFFERENCES RELATE TO FEW OR MANY POINTS OF STRUCTURE AND WHETHER THEY ARE OF PHYSIOLOGICAL IMPORTANCE BUT MORE ESPECIALLY WHETHER THEY ARE CONSTANT",
+    "duration": 20.185
+  },
+  {
+    "id": "2094-142345-0034",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0034.flac",
+    "reference": "AND THERE'S LINEN IN THE HOUSE AS I COULD WELL SPARE YOU FOR I'VE GOT LOTS O SHEETING AND TABLE CLOTHING AND TOWELLING AS ISN'T MADE UP",
+    "duration": 7.99
+  },
+  {
+    "id": "3570-5696-0007",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3570/5696/3570-5696-0007.flac",
+    "reference": "THE USE OF THE WORD WASTE AS A TECHNICAL TERM THEREFORE IMPLIES NO DEPRECATION OF THE MOTIVES OR OF THE ENDS SOUGHT BY THE CONSUMER UNDER THIS CANON OF CONSPICUOUS WASTE",
+    "duration": 9.5
+  },
+  {
+    "id": "4992-41797-0009",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41797/4992-41797-0009.flac",
+    "reference": "HENRY LORD WITH THE DEGREE OF PH D TO HIS CREDIT HAD BEEN PROFESSOR OF ZOOLOGY AT A NEW ENGLAND COLLEGE BUT HAD RESIGNED HIS POST IN ORDER TO WRITE A SERIES OF SCIENTIFIC TEXT BOOKS",
+    "duration": 13.195
+  },
+  {
+    "id": "6930-81414-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6930/81414/6930-81414-0004.flac",
+    "reference": "THE STORY OF ITS EVIL INFLUENCE CAME BACK TO ME AND IN MY BEWILDERED CONDITION I WONDERED WHETHER THERE WAS NOT SOME TRUTH IN WHAT HAD BEEN SAID",
+    "duration": 9.56
+  },
+  {
+    "id": "4970-29095-0022",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0022.flac",
+    "reference": "IS THEE GOING TO THE YEARLY MEETING RUTH ASKED ONE OF THE GIRLS",
+    "duration": 4.765
+  },
+  {
+    "id": "8555-284449-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/284449/8555-284449-0019.flac",
+    "reference": "THAT EVENING TROT GAVE A GRAND BALL IN THE PALACE TO WHICH THE MOST IMPORTANT OF THE PINKIES AND THE BLUESKINS WERE INVITED",
+    "duration": 7.61
+  },
+  {
+    "id": "4992-41797-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41797/4992-41797-0015.flac",
+    "reference": "CYRIL THERE MUST BE SOME BETTER WAY OF DOING I JUST DRAW THE OUTLINE OF AN ANIMAL AND THEN I PUT HAIRS OR FEATHERS ON IT THEY HAVE NO BODIES",
+    "duration": 8.65
+  },
+  {
+    "id": "1188-133604-0043",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1188/133604/1188-133604-0043.flac",
+    "reference": "SEE THAT YOUR LIVES BE IN NOTHING WORSE THAN A BOY'S CLIMBING FOR HIS ENTANGLED KITE",
+    "duration": 4.885
+  },
+  {
+    "id": "1995-1837-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1995/1837/1995-1837-0015.flac",
+    "reference": "THE SQUARES OF COTTON SHARP EDGED HEAVY WERE JUST ABOUT TO BURST TO BOLLS",
+    "duration": 4.485
+  },
+  {
+    "id": "8555-284447-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/284447/8555-284447-0002.flac",
+    "reference": "I WOULDN'T MIND A CUP O COFFEE MYSELF SAID CAP'N BILL I'VE HAD CONSID'BLE EXERCISE THIS MORNIN AND I'M ALL READY FOR BREAKFAS",
+    "duration": 8.025
+  },
+  {
+    "id": "121-127105-0022",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/127105/121-127105-0022.flac",
+    "reference": "WELL IF I DON'T KNOW WHO SHE WAS IN LOVE WITH I KNOW WHO HE WAS",
+    "duration": 5.075
+  },
+  {
+    "id": "1284-134647-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1284/134647/1284-134647-0006.flac",
+    "reference": "BISHOPS VIRGINS AND EVEN SPOTLESS INFANTS WERE SUBJECTED TO THE DISGRACE OF A PUBLIC PENANCE BEFORE THEY COULD BE ADMITTED TO THE COMMUNION OF THE DONATISTS",
+    "duration": 10.155
+  },
+  {
+    "id": "2830-3979-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3979/2830-3979-0004.flac",
+    "reference": "IT WAS WRITTEN IN LATIN",
+    "duration": 1.945
+  },
+  {
+    "id": "2830-3980-0063",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2830/3980/2830-3980-0063.flac",
+    "reference": "UNDERSCORE THESE WORDS FOR THEY ARE FULL OF COMFORT FOR SORE CONSCIENCES",
+    "duration": 5.415
+  },
+  {
+    "id": "260-123288-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123288/260-123288-0017.flac",
+    "reference": "IS THE ATMOSPHERIC CONDITION HAVING ONCE REACHED THIS DENSITY TO BECOME FINAL",
+    "duration": 5.225
+  },
+  {
+    "id": "3570-5696-0001",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3570/5696/3570-5696-0001.flac",
+    "reference": "BUT THE ACTUAL COURSE OF DEVELOPMENT HAS BEEN SOMEWHAT DIFFERENT FROM THIS IDEAL SCHEME LEISURE HELD THE FIRST PLACE AT THE START AND CAME TO HOLD A RANK VERY MUCH ABOVE WASTEFUL CONSUMPTION OF GOODS BOTH AS A DIRECT EXPONENT OF WEALTH AND AS AN ELEMENT IN THE STANDARD OF DECENCY DURING THE QUASI PEACEABLE CULTURE",
+    "duration": 16.735
+  },
+  {
+    "id": "6930-76324-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6930/76324/6930-76324-0019.flac",
+    "reference": "NOW LET'S DUST THE FURNITURE AND PICTURES",
+    "duration": 2.575
+  },
+  {
+    "id": "4970-29095-0023",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0023.flac",
+    "reference": "I HAVE NOTHING TO WEAR REPLIED THAT DEMURE PERSON",
+    "duration": 3.905
+  },
+  {
+    "id": "7176-88083-0007",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/88083/7176-88083-0007.flac",
+    "reference": "BUT SUCH WAS HIS KEENNESS THAT EVEN WHILE THE WIDE FLUKES OF HIS ENGORGED VICTIM WERE STILL STICKING OUT AT THE CORNERS OF HIS BEAK HIS FIERCE RED EYES WERE ONCE MORE PEERING DOWNWARD INTO THE TORRENT IN SEARCH OF FRESH PREY",
+    "duration": 14.3
+  },
+  {
+    "id": "2094-142345-0029",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2094/142345/2094-142345-0029.flac",
+    "reference": "DID EVER ANYBODY SEE THE LIKE SCREAMED MISSUS POYSER RUNNING TOWARDS THE TABLE WHEN HER EYE HAD FALLEN ON THE BLUE STREAM",
+    "duration": 8.525
+  },
+  {
+    "id": "3575-170457-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/3575/170457/3575-170457-0017.flac",
+    "reference": "THOUGH I MAY BE BUT AN UNGRACIOUS ADVISER YOU WILL ALLOW ME THEREFORE TO SUBSCRIBE MYSELF WITH THE BEST WISHES FOR YOUR HAPPINESS HERE AND HEREAFTER YOUR TRUE FRIEND ROBERT SOUTHEY",
+    "duration": 12.73
+  },
+  {
+    "id": "8555-284449-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/284449/8555-284449-0006.flac",
+    "reference": "DON'T WORRY SIZZLE DEAR IT'LL ALL COME RIGHT PRETTY SOON",
+    "duration": 3.92
+  },
+  {
+    "id": "2961-960-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2961/960/2961-960-0019.flac",
+    "reference": "HE COULD WRITE IN ONE STYLE BUT NOT IN ANOTHER AND THE GREEK LANGUAGE HAD NOT AS YET BEEN FASHIONED BY ANY POET OR PHILOSOPHER TO DESCRIBE PHYSICAL PHENOMENA",
+    "duration": 12.13
+  },
+  {
+    "id": "237-134500-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/237/134500/237-134500-0004.flac",
+    "reference": "THAT INVITATION DECIDED HER",
+    "duration": 2.225
+  },
+  {
+    "id": "260-123286-0019",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/260/123286/260-123286-0019.flac",
+    "reference": "I SUPPOSE PROFESSOR LIEDENBROCK WAS OF MY OPINION TOO AND EVEN SHARED MY FEARS FOR AFTER HAVING EXAMINED THE PICK HIS EYES TRAVERSED THE OCEAN FROM SIDE TO SIDE",
+    "duration": 11.905
+  },
+  {
+    "id": "4992-41797-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/41797/4992-41797-0002.flac",
+    "reference": "GRANDFATHER WAS ALEXANDER CAREY L L D DOCTOR OF LAWS THAT IS",
+    "duration": 5.625
+  },
+  {
+    "id": "1580-141083-0047",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0047.flac",
+    "reference": "DID YOU LOOK AT THESE PAPERS ON THE TABLE",
+    "duration": 2.605
+  },
+  {
+    "id": "2300-131720-0036",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2300/131720/2300-131720-0036.flac",
+    "reference": "THE METER CONTINUED IN GENERAL SERVICE DURING EIGHTEEN NINETY NINE AND PROBABLY UP TO THE CLOSE OF THE CENTURY",
+    "duration": 7.085
+  },
+  {
+    "id": "5639-40744-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5639/40744/5639-40744-0016.flac",
+    "reference": "ON THE CONTRARY HE RESOLVED TO TELL THEM THAT REPENTING OF HIS VIOLENCE AND MOVED BY HER TEARS HE HAD ONLY CARRIED HER HALF WAY TOWARDS HIS HOUSE AND THEN LET HER GO",
+    "duration": 9.49
+  },
+  {
+    "id": "1580-141083-0024",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0024.flac",
+    "reference": "YOU LEFT HIM IN A CHAIR YOU SAY WHICH CHAIR BY THE WINDOW THERE",
+    "duration": 4.48
+  },
+  {
+    "id": "7021-79740-0007",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/79740/7021-79740-0007.flac",
+    "reference": "THEN TURNING TO JANE SHE ASKED IN A SOMEWHAT ALTERED TONE HAS SHE BEEN A GOOD GIRL JANE",
+    "duration": 6.99
+  },
+  {
+    "id": "4507-16021-0046",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4507/16021/4507-16021-0046.flac",
+    "reference": "EACH DAY HAS ITS OWN GREAT GRIEF OR ITS LITTLE CARE",
+    "duration": 4.59
+  },
+  {
+    "id": "4992-23283-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4992/23283/4992-23283-0005.flac",
+    "reference": "NOT THAT I KNOW OF NOT ONE MORE THAT I KNOW OF HE REPLIED WITH ASTONISHMENT AT WHAT SHE HAD INSINUATED AND YET WITH A PERFECT ASSURANCE THAT SHE WAS IN THE WRONG",
+    "duration": 10.74
+  },
+  {
+    "id": "672-122797-0038",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0038.flac",
+    "reference": "THOUGHT THE FIR TREE AND BELIEVED IT ALL BECAUSE THE MAN WHO TOLD THE STORY WAS SO GOOD LOOKING WELL WELL",
+    "duration": 8.8
+  },
+  {
+    "id": "5142-36377-0012",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/36377/5142-36377-0012.flac",
+    "reference": "MAKE ACQUAINTANCE WITH MISTER JAGO SIT TOGETHER",
+    "duration": 2.715
+  },
+  {
+    "id": "5105-28233-0003",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5105/28233/5105-28233-0003.flac",
+    "reference": "WE DON'T SPIN TOPS IS A FAVORITE SAYING AMONGST ARTILLERY OFFICERS INDICATING THAT THEY DO NOT SHIRK THEIR DUTY BY FRIVOLOUS PURSUITS BUT IT MUST BE CONFESSED THAT SERVADAC BEING NATURALLY IDLE WAS VERY MUCH GIVEN TO SPINNING TOPS",
+    "duration": 14.81
+  },
+  {
+    "id": "1580-141083-0018",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0018.flac",
+    "reference": "NOW MISTER SOAMES AT YOUR DISPOSAL",
+    "duration": 2.675
+  },
+  {
+    "id": "5142-33396-0042",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/5142/33396/5142-33396-0042.flac",
+    "reference": "SO NO TALES GOT OUT TO THE NEIGHBORS BESIDES IT WAS A LONELY PLACE AND BY GOOD LUCK NO ONE CAME THAT WAY",
+    "duration": 6.095
+  },
+  {
+    "id": "7127-75947-0004",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7127/75947/7127-75947-0004.flac",
+    "reference": "EXPLAIN YOURSELF",
+    "duration": 1.905
+  },
+  {
+    "id": "121-127105-0036",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/121/127105/121-127105-0036.flac",
+    "reference": "BUT WAS THAT ALL HER REWARD ONE OF THE LADIES ASKED",
+    "duration": 4.15
+  },
+  {
+    "id": "1580-141083-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0006.flac",
+    "reference": "THE ONLY DUPLICATE WHICH EXISTED SO FAR AS I KNEW WAS THAT WHICH BELONGED TO MY SERVANT BANNISTER A MAN WHO HAS LOOKED AFTER MY ROOM FOR TEN YEARS AND WHOSE HONESTY IS ABSOLUTELY ABOVE SUSPICION",
+    "duration": 10.85
+  },
+  {
+    "id": "6829-68771-0020",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6829/68771/6829-68771-0020.flac",
+    "reference": "THEN SHE GAVE A LITTLE LAUGH AND REPLIED NO MISS BETH I'M ELIZABETH PARSONS",
+    "duration": 4.615
+  },
+  {
+    "id": "672-122797-0030",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/672/122797/672-122797-0030.flac",
+    "reference": "PERHAPS THE OTHER TREES FROM THE FOREST WILL COME TO LOOK AT ME",
+    "duration": 4.575
+  },
+  {
+    "id": "8455-210777-0040",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8455/210777/8455-210777-0040.flac",
+    "reference": "THEN SAID SIR FERDINANDO THERE IS NOTHING FOR IT BUT THAT HE MUST TAKE YOU WITH HIM",
+    "duration": 6.195
+  },
+  {
+    "id": "1221-135767-0015",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1221/135767/1221-135767-0015.flac",
+    "reference": "YE MAY NOT SEE HIS WORSHIP NOW",
+    "duration": 2.85
+  },
+  {
+    "id": "1580-141083-0040",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141083/1580-141083-0040.flac",
+    "reference": "ONE HARDLY LIKES TO THROW SUSPICION WHERE THERE ARE NO PROOFS",
+    "duration": 3.75
+  },
+  {
+    "id": "4970-29095-0029",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0029.flac",
+    "reference": "IS HE GOING TO START A DAILY NEWSPAPER AMONG THE KICK A POOS",
+    "duration": 3.89
+  },
+  {
+    "id": "6930-76324-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/6930/76324/6930-76324-0013.flac",
+    "reference": "IT CAN'T HURT ANYTHING I'M SURE FOR WE WON'T DISTURB THINGS AT ALL",
+    "duration": 4.305
+  },
+  {
+    "id": "4077-13751-0005",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4077/13751/4077-13751-0005.flac",
+    "reference": "NEVERTHELESS THE MUSTARD SEED AMONG THE SMALLEST OF ALL SEEDS HAS ATTAINED THE PROPORTIONS OF A TREE AND THE BIRDS OF THE AIR ARE NESTING IN ITS BRANCHES THE ACORN IS NOW AN OAK OFFERING PROTECTION AND THE SWEETS OF SATISFACTION TO EVERY EARNEST PILGRIM JOURNEYING ITS WAY FOR TRUTH",
+    "duration": 19.61
+  },
+  {
+    "id": "8555-292519-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8555/292519/8555-292519-0000.flac",
+    "reference": "BRIGHTER THAN EARLY DAWN'S MOST BRILLIANT DYE ARE BLOWN CLEAR BANDS OF COLOR THROUGH THE SKY THAT SWIRL AND SWEEP AND MEET TO BREAK AND FOAM LIKE RAINBOW VEILS UPON A BUBBLE'S DOME",
+    "duration": 14.9
+  },
+  {
+    "id": "7176-88083-0002",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7176/88083/7176-88083-0002.flac",
+    "reference": "HIS FEET WERE RED HIS LONG NARROW BEAK WITH ITS SAW TOOTHED EDGES AND SHARP HOOKED TIP WAS BRIGHT RED",
+    "duration": 7.51
+  },
+  {
+    "id": "4970-29095-0006",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/4970/29095/4970-29095-0006.flac",
+    "reference": "IS THY FATHER WILLING THEE SHOULD GO AWAY TO A SCHOOL OF THE WORLD'S PEOPLE",
+    "duration": 4.47
+  },
+  {
+    "id": "1089-134691-0016",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1089/134691/1089-134691-0016.flac",
+    "reference": "THEY WERE VOYAGING ACROSS THE DESERTS OF THE SKY A HOST OF NOMADS ON THE MARCH VOYAGING HIGH OVER IRELAND WESTWARD BOUND",
+    "duration": 9.06
+  },
+  {
+    "id": "8230-279154-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/8230/279154/8230-279154-0011.flac",
+    "reference": "SOME IMAGES LIKE SOME SENSATIONS FEEL VERY FAMILIAR WHILE OTHERS FEEL STRANGE",
+    "duration": 6.25
+  },
+  {
+    "id": "7021-79759-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/79759/7021-79759-0000.flac",
+    "reference": "NATURE OF THE EFFECT PRODUCED BY EARLY IMPRESSIONS",
+    "duration": 4.775
+  },
+  {
+    "id": "1580-141084-0011",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1580/141084/1580-141084-0011.flac",
+    "reference": "WHEN WE WERE OUT IN THE DARKNESS OF THE QUADRANGLE WE AGAIN LOOKED UP AT THE WINDOWS",
+    "duration": 5.0
+  },
+  {
+    "id": "1284-1180-0000",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/1284/1180/1284-1180-0000.flac",
+    "reference": "HE WORE BLUE SILK STOCKINGS BLUE KNEE PANTS WITH GOLD BUCKLES A BLUE RUFFLED WAIST AND A JACKET OF BRIGHT BLUE BRAIDED WITH GOLD",
+    "duration": 8.12
+  },
+  {
+    "id": "2961-961-0013",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/2961/961/2961-961-0013.flac",
+    "reference": "SOLON MARVELLED AND DESIRED TO BE INFORMED OF THE PARTICULARS",
+    "duration": 5.12
+  },
+  {
+    "id": "61-70970-0010",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/61/70970/61-70970-0010.flac",
+    "reference": "DISMISS YOUR SQUIRE ROBIN AND BID ME GOOD E E N",
+    "duration": 3.045
+  },
+  {
+    "id": "7021-85628-0017",
+    "split": "test-clean",
+    "path": "LibriSpeech/test-clean/7021/85628/7021-85628-0017.flac",
+    "reference": "SO IT IS SAID ANDERS",
+    "duration": 2.155
+  },
+  {
+    "id": "2609-156975-0037",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2609/156975/2609-156975-0037.flac",
+    "reference": "THE PEASANTS OF THE VAST ANTOLIAN PLAIN IN CENTRAL ASIA MINOR STILL CALL EVERY LIFE GIVING SPRING GOD HATH GIVEN",
+    "duration": 9.665
+  },
+  {
+    "id": "7902-96595-0019",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96595/7902-96595-0019.flac",
+    "reference": "A LAD LOOKING LIKE A COMMON SAILOR AND WEARING A RED CAP NO SAID SIR RISDON",
+    "duration": 4.515
+  },
+  {
+    "id": "7902-96591-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96591/7902-96591-0021.flac",
+    "reference": "A NARROW TABLE AGAINST THE WALL IN TWO PLACES",
+    "duration": 2.96
+  },
+  {
+    "id": "1998-15444-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/15444/1998-15444-0020.flac",
+    "reference": "THE RESIDUE MAY BE SET ASIDE FOR THE DETECTION OF THE METALLIC POISONS IF SUSPECTED EXPEL THE ALCOHOL BY CAREFUL EVAPORATION",
+    "duration": 9.42
+  },
+  {
+    "id": "7975-280076-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280076/7975-280076-0003.flac",
+    "reference": "NO WARRANT WAS ISSUED FOR THE YOUNGERS BUT SUBSEQUENT HISTORIANS HAVE INFERENTIALLY AT LEAST ACCUSED US OF TAKING PART BUT AS I SAID BEFORE THERE IS NO TRUTH IN THE ACCUSATION",
+    "duration": 10.27
+  },
+  {
+    "id": "4852-28311-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28311/4852-28311-0024.flac",
+    "reference": "HE HAD NEVER SEEN ANYONE GO INTO MISTER WICKER'S SHOP NOW HE THOUGHT OF IT",
+    "duration": 3.7
+  },
+  {
+    "id": "3538-163622-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163622/3538-163622-0012.flac",
+    "reference": "I AM WALKING ABOUT IN SEARCH OF A PLACE SAID CINDERLAD",
+    "duration": 3.4
+  },
+  {
+    "id": "7105-2330-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7105/2330/7105-2330-0004.flac",
+    "reference": "A HEADLONG PARDON ON THE EVE OF A BYE ELECTION WITH THREATS OF A HEAVY VOTING DEFECTION IF IT WERE WITHHELD OR EVEN DELAYED WOULD NOT NECESSARILY BE A SURRENDER BUT IT WOULD LOOK LIKE ONE",
+    "duration": 14.285
+  },
+  {
+    "id": "7975-280076-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280076/7975-280076-0006.flac",
+    "reference": "THE PARTS OF THIS LETTER NOW RELEVANT ARE AS FOLLOWS",
+    "duration": 3.28
+  },
+  {
+    "id": "1688-142285-0048",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0048.flac",
+    "reference": "YOU KNOW I'M A STRANGER HERE SO PERHAPS I'M NOT SO QUICK AT UNDERSTANDING WHAT YOU MEAN AS IF I'D LIVED ALL MY LIFE AT MILTON",
+    "duration": 8.25
+  },
+  {
+    "id": "1998-29454-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29454/1998-29454-0018.flac",
+    "reference": "I GOT TO STICK IT SAID DICKIE SADLY I'D BEST BE GETTING HOME",
+    "duration": 5.15
+  },
+  {
+    "id": "2414-159411-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/159411/2414-159411-0002.flac",
+    "reference": "OH FATHER OF MERCY ANSWERED THE TIGER IN TRUTH THAT I WILL NOT",
+    "duration": 6.52
+  },
+  {
+    "id": "367-293981-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/293981/367-293981-0014.flac",
+    "reference": "IF YOUR WORSHIP KNEW THAT RETURNED SANCHO WOE BETIDE ME AND ALL MY KINDRED WHY DID YOU LET ME TASTE IT",
+    "duration": 6.745
+  },
+  {
+    "id": "5764-299665-0036",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0036.flac",
+    "reference": "THE MEMBERS WHO ADD TO THE MISERY OF THE FAMILY THE TRIBE OR THE NATION ARE CONSIDERED BAD MEMBERS",
+    "duration": 8.715
+  },
+  {
+    "id": "8131-117016-0019",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117016/8131-117016-0019.flac",
+    "reference": "NOBODY HAD TRIED TO GET IN TOUCH WITH HIM",
+    "duration": 2.66
+  },
+  {
+    "id": "3005-163391-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163391/3005-163391-0004.flac",
+    "reference": "WHER YOU BOUND FOR YOUNG MAN",
+    "duration": 2.83
+  },
+  {
+    "id": "4350-10919-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/10919/4350-10919-0021.flac",
+    "reference": "OH NO ONLY A FEW DETAILS PRINCESS COME THIS WAY",
+    "duration": 4.175
+  },
+  {
+    "id": "6938-70848-0015",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6938/70848/6938-70848-0015.flac",
+    "reference": "UPON MY RETURN I VISITED SMOLNY NO SUCH ACCUSATION WAS MADE AGAINST ME THERE AFTER A BRIEF CONVERSATION I LEFT AND THAT'S ALL LET ANY ONE PRESENT MAKE SUCH AN ACCUSATION",
+    "duration": 11.835
+  },
+  {
+    "id": "533-131556-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131556/533-131556-0004.flac",
+    "reference": "I HAVE DONE WELL TO RECORD THEM SO MINUTELY",
+    "duration": 2.815
+  },
+  {
+    "id": "1688-142285-0076",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0076.flac",
+    "reference": "MARGARET WENT AWAY VERY SAD AND THOUGHTFUL",
+    "duration": 3.84
+  },
+  {
+    "id": "3528-168669-0081",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0081.flac",
+    "reference": "THE FIRST ABBOT OF CLAIRVAUX",
+    "duration": 2.49
+  },
+  {
+    "id": "3997-180297-0028",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180297/3997-180297-0028.flac",
+    "reference": "LOOK HERE PRUDENCE DO YOU KNOW WHAT HE WANTS SAID MARGUERITE",
+    "duration": 5.285
+  },
+  {
+    "id": "533-131562-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131562/533-131562-0010.flac",
+    "reference": "AND AS FOR THE HOUSEHOLD MATTERS MISSUS GREAVES MUST BE VERY PARTICULAR IN KEEPING HER ACCOUNTS WE MUST GO UPON AN ENTIRELY NEW PLAN",
+    "duration": 9.18
+  },
+  {
+    "id": "7018-75788-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7018/75788/7018-75788-0007.flac",
+    "reference": "NOW SLEEPING UNDER THESE TREES WERE MANY APES WHICH WHEN THEY SAW US ROSE AND FLED FROM US AND SWARMED UP AMONG THE BRANCHES WHEREUPON MY COMPANIONS BEGAN TO PELT THEM WITH WHAT THEY HAD IN THEIR BAGS AND THE APES FELL TO PLUCKING OF THE FRUIT OF THE TREES AND CASTING THEM AT THE FOLK",
+    "duration": 18.68
+  },
+  {
+    "id": "3080-5040-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3080/5040/3080-5040-0011.flac",
+    "reference": "HERE ARE SOME VERSES OF COWLEY'S TELL ME HOW YOU LIKE THEM",
+    "duration": 3.915
+  },
+  {
+    "id": "3528-168669-0123",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0123.flac",
+    "reference": "THE EMPTY COFFIN REMAINS THIS PRODUCED A PAUSE",
+    "duration": 3.71
+  },
+  {
+    "id": "3538-163624-0025",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163624/3538-163624-0025.flac",
+    "reference": "FOR HER HUSBAND SHE SAID HAD RIDDEN THROUGH THE FLAME WHEN NO OTHER MAN DARED FACE IT",
+    "duration": 4.83
+  },
+  {
+    "id": "7018-75789-0013",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7018/75789/7018-75789-0013.flac",
+    "reference": "SO I ROSE WITHOUT STAY OR DELAY AND KISSED THE KING'S HAND AND ACQUAINTED HIM WITH MY LONGING TO SET OUT WITH THE MERCHANTS FOR THAT I PINED AFTER MY PEOPLE AND MINE OWN LAND",
+    "duration": 12.47
+  },
+  {
+    "id": "7902-96592-0050",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96592/7902-96592-0050.flac",
+    "reference": "TO HIS ASTONISHMENT THE BOY DID NOT FLINCH BUT THRUST HIS OWN ARMS THROUGH PLACING THEM ABOUT THE MIDDY'S WAIST CLENCHING HIS HANDS BEHIND AND UTTERING A SHARP WHISTLE",
+    "duration": 7.665
+  },
+  {
+    "id": "7975-280076-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280076/7975-280076-0001.flac",
+    "reference": "IT WAS CLAIMED BY PEOPLE OF LIBERTY THAT THEY POSITIVELY RECOGNIZED AMONG THE ROBBERS OLL SHEPHERD RED MONKERS AND BUD PENCE WHO HAD SEEN SERVICE WITH QUANTRELL",
+    "duration": 9.325
+  },
+  {
+    "id": "5442-41169-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41169/5442-41169-0024.flac",
+    "reference": "YOU'RE MARRIED I'VE HEARD SAID THE LANDOWNER",
+    "duration": 3.865
+  },
+  {
+    "id": "8131-117017-0026",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117017/8131-117017-0026.flac",
+    "reference": "HE PULLED OUT THE BILLS AND HANDED THEM OVER",
+    "duration": 3.36
+  },
+  {
+    "id": "3764-168671-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168671/3764-168671-0018.flac",
+    "reference": "HE PLAYED WITH FATHER MESTIENNE",
+    "duration": 2.04
+  },
+  {
+    "id": "6432-63723-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63723/6432-63723-0023.flac",
+    "reference": "IN A SMALLER PLACE HE WOULD HAVE BEEN CALLED A SALOON KEEPER",
+    "duration": 3.055
+  },
+  {
+    "id": "8461-281231-0029",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/281231/8461-281231-0029.flac",
+    "reference": "AND WITH THIS EPISTLE THE UNHAPPY OLD MAN SET OUT TO PROCURE HIS DAUGHTER'S LIBERATION",
+    "duration": 5.84
+  },
+  {
+    "id": "8280-266249-0064",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8280/266249/8280-266249-0064.flac",
+    "reference": "YE ARE ALL ONE IN CHRIST JESUS",
+    "duration": 2.555
+  },
+  {
+    "id": "3528-168669-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0003.flac",
+    "reference": "REVEREND MOTHER DO YOU KNOW THE CHAPEL",
+    "duration": 3.515
+  },
+  {
+    "id": "8188-269288-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/269288/8188-269288-0009.flac",
+    "reference": "BUT SHE ADDED ABRUPTLY YOU SPEAK OF SOMETHING WHICH MUST NOT TAKE PLACE",
+    "duration": 4.835
+  },
+  {
+    "id": "533-131556-0025",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131556/533-131556-0025.flac",
+    "reference": "HOW DARE YOU MENTION HIS NAME TO ME",
+    "duration": 2.71
+  },
+  {
+    "id": "1998-29454-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29454/1998-29454-0001.flac",
+    "reference": "PERUSAL SAID THE PAWNBROKER THAT'S THE WAY TO PERNOUNCE IT",
+    "duration": 3.905
+  },
+  {
+    "id": "4852-28311-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28311/4852-28311-0023.flac",
+    "reference": "BUT THE NAME STILL SHOWED AT THE PROW AND MANY A TIME CHRIS SAFE AT HOME IN BED HAD SAILED IMAGINARY VOYAGES IN THE MIRABELLE",
+    "duration": 7.31
+  },
+  {
+    "id": "533-131562-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131562/533-131562-0009.flac",
+    "reference": "I SHALL PUT YOU UPON A SMALL MONTHLY ALLOWANCE IN FUTURE FOR YOUR OWN PRIVATE EXPENSES AND YOU NEEDN'T TROUBLE YOURSELF ANY MORE ABOUT MY CONCERNS I SHALL LOOK OUT FOR A STEWARD MY DEAR I WON'T EXPOSE YOU TO THE TEMPTATION",
+    "duration": 14.805
+  },
+  {
+    "id": "533-131564-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131564/533-131564-0010.flac",
+    "reference": "FIRE AND FURY",
+    "duration": 2.16
+  },
+  {
+    "id": "2033-164916-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2033/164916/2033-164916-0010.flac",
+    "reference": "HE THEN REPAIRED TO THE HEART OF THE ENCAMPMENT AND ORDERED THE HOST TO HALT TEN DAYS",
+    "duration": 8.16
+  },
+  {
+    "id": "5764-299665-0090",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0090.flac",
+    "reference": "WHY SHOULD MEN AND WOMEN HAVE CHILDREN THAT THEY CANNOT TAKE CARE OF CHILDREN THAT ARE BURDENS AND CURSES WHY",
+    "duration": 8.68
+  },
+  {
+    "id": "533-131556-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131556/533-131556-0009.flac",
+    "reference": "WILL YOU OBLIGE ME HELEN CONTINUED SHE",
+    "duration": 3.93
+  },
+  {
+    "id": "5484-24318-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24318/5484-24318-0003.flac",
+    "reference": "WHAT PLEASURE HAD LIFE TO OFFER HIM THE BLIND MAN WHO WAS ALREADY DEAD TO HIS ART",
+    "duration": 5.01
+  },
+  {
+    "id": "6938-70848-0029",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6938/70848/6938-70848-0029.flac",
+    "reference": "A NEW HUMANITY WILL BE BORN OF THIS WAR",
+    "duration": 3.455
+  },
+  {
+    "id": "6128-63240-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63240/6128-63240-0011.flac",
+    "reference": "IF YOU ARE GOING TO DINE WITH HER YOU HAD BETTER KNOW IT OH MURDER",
+    "duration": 5.215
+  },
+  {
+    "id": "3005-163391-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163391/3005-163391-0021.flac",
+    "reference": "WHEN WE STRUCK THE BOAT SHE WAS ABOUT DONE LOADING AND PRETTY SOON SHE GOT OFF",
+    "duration": 5.15
+  },
+  {
+    "id": "3528-168669-0090",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0090.flac",
+    "reference": "BECAUSE THERE HAVE BEEN BAD PRIESTS BECAUSE SAGITTAIRE BISHOP OF GAP WAS THE BROTHER OF SALONE BISHOP OF EMBRUN AND BECAUSE BOTH OF THEM FOLLOWED MOMMOL",
+    "duration": 9.455
+  },
+  {
+    "id": "7975-280084-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280084/7975-280084-0011.flac",
+    "reference": "DOCTOR WHEELER WHO HAD GONE UPSTAIRS IN THE HOTEL SHOT MILLER AND HE LAY DYING IN THE STREET",
+    "duration": 5.1850625
+  },
+  {
+    "id": "6128-63240-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63240/6128-63240-0020.flac",
+    "reference": "ONE DIDN'T EVEN KNOW WHAT ONE HAD COME BACK FOR",
+    "duration": 3.225
+  },
+  {
+    "id": "3331-159605-0036",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159605/3331-159605-0036.flac",
+    "reference": "MINNIE SAID THE OTHER DAY SHE WISHED SHE WAS A PIGEON SO SHE COULD PADDLE IN THE PUDDLES AND NOT FUSS ABOUT RUBBERS",
+    "duration": 6.56
+  },
+  {
+    "id": "7105-2340-0019",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7105/2340/7105-2340-0019.flac",
+    "reference": "VIGILANCE WAS NOT COMPLETELY CROWNED WITH A SENSE OF VICTORY",
+    "duration": 4.73
+  },
+  {
+    "id": "3764-168670-0034",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168670/3764-168670-0034.flac",
+    "reference": "WHO SPREADS THE PALL OVER IT",
+    "duration": 1.93
+  },
+  {
+    "id": "533-131556-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131556/533-131556-0024.flac",
+    "reference": "YOU USE HARD WORDS MISSUS HUNTINGDON BUT I CAN PARDON YOU",
+    "duration": 4.38
+  },
+  {
+    "id": "2609-156975-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2609/156975/2609-156975-0002.flac",
+    "reference": "LET US HAVE FAITH THAT RIGHT MAKES MIGHT AND IN THAT FAITH LET US DARE TO DO OUR DUTY AS WE UNDERSTAND IT LINCOLN",
+    "duration": 10.745
+  },
+  {
+    "id": "533-1066-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/1066/533-1066-0014.flac",
+    "reference": "I ASKED NO QUESTIONS",
+    "duration": 2.47
+  },
+  {
+    "id": "2414-128292-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/128292/2414-128292-0023.flac",
+    "reference": "O ETERNAL EVERYWHERE O ETERNAL NOWHERE O ETERNAL IN VAIN",
+    "duration": 6.615
+  },
+  {
+    "id": "3005-163390-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163390/3005-163390-0018.flac",
+    "reference": "WELL HENRY HE TAKES A NOTION HE WANTS TO GET UP SOME TROUBLE WITH THIS COUNTRY",
+    "duration": 5.46
+  },
+  {
+    "id": "3538-142836-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/142836/3538-142836-0006.flac",
+    "reference": "IT IS CONSIDERED TO BE SUFFICIENTLY BOILED WHEN SOME TAKEN UP IN A SPOON POURS OUT LIKE OIL",
+    "duration": 5.27
+  },
+  {
+    "id": "6432-63723-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63723/6432-63723-0004.flac",
+    "reference": "HOWEVER DON'T THINK I'M NOT INTERESTED IN YOUR CASE I'VE FISHED ENOUGH FOR TO DAY",
+    "duration": 5.415
+  },
+  {
+    "id": "4350-9170-0041",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/9170/4350-9170-0041.flac",
+    "reference": "BUT THE FATAL SIGNIFICANCE OF UNIVERSAL MILITARY SERVICE AS THE MANIFESTATION OF THE CONTRADICTION INHERENT IN THE SOCIAL CONCEPTION OF LIFE IS NOT ONLY APPARENT IN THAT",
+    "duration": 8.465
+  },
+  {
+    "id": "1688-142285-0005",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0005.flac",
+    "reference": "YOU WHO WERE ALWAYS ACCUSING PEOPLE OF BEING SHOPPY AT HELSTONE",
+    "duration": 4.3
+  },
+  {
+    "id": "7902-96591-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96591/7902-96591-0020.flac",
+    "reference": "SYMPATHY AND PITY FOR THE DWELLERS IN THE HOZE WERE COMPLETELY GONE NOW AND HE SET HIS TEETH FAST AND MENTALLY CALLED HIMSELF A WEAK IDIOT FOR EVER THINKING ABOUT SUCH PEOPLE",
+    "duration": 8.78
+  },
+  {
+    "id": "5484-24317-0028",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24317/5484-24317-0028.flac",
+    "reference": "YET WHAT MATTERED IT EVEN IF THESE MISERABLE PEOPLE CONSIDERED THEMSELVES DECEIVED AND POINTED THE FINGER OF SCORN AT HIM",
+    "duration": 6.85
+  },
+  {
+    "id": "3538-163624-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163624/3538-163624-0000.flac",
+    "reference": "ONCE UPON A TIME THERE WAS A KING IN THE NORTH WHO HAD WON MANY WARS BUT NOW HE WAS OLD",
+    "duration": 5.07
+  },
+  {
+    "id": "4294-35475-0026",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/35475/4294-35475-0026.flac",
+    "reference": "SO THEY ALL CRIED OUT LONG AND LOUD LONG LIVE THE PRINCE PRINCE CISEAUX",
+    "duration": 6.125
+  },
+  {
+    "id": "3764-168670-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168670/3764-168670-0002.flac",
+    "reference": "JEAN VALJEAN HAD PLACED HER NEAR THE FIRE",
+    "duration": 2.7600625
+  },
+  {
+    "id": "7902-96595-0008",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96595/7902-96595-0008.flac",
+    "reference": "IF YOU'D LET ME FINISH YOU'D KNOW SAID GURR GRUFFLY ONE OF OUR BOYS IS MISSING SEEN HIM UP HERE",
+    "duration": 4.76
+  },
+  {
+    "id": "5442-41169-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41169/5442-41169-0012.flac",
+    "reference": "AND THEN TO TELL THE TRUTH THERE'S ONE'S OWN INTERESTS",
+    "duration": 3.6
+  },
+  {
+    "id": "4294-14317-0015",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/14317/4294-14317-0015.flac",
+    "reference": "AFTER SEVERAL MONTHS WERE WASTED AND PIERO WOULD NEITHER WORK NOR PUT MEN TO WORK UPON THE PIECE I MADE HIM GIVE IT BACK",
+    "duration": 6.685
+  },
+  {
+    "id": "4350-9170-0052",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/9170/4350-9170-0052.flac",
+    "reference": "THE GREAT EXTENSION OF MEANS OF COMMUNICATION AND INTERCHANGE OF IDEAS HAS MADE MEN COMPLETELY ABLE TO DISPENSE WITH STATE AID IN FORMING SOCIETIES ASSOCIATIONS CORPORATIONS AND CONGRESSES FOR SCIENTIFIC ECONOMIC AND POLITICAL OBJECTS",
+    "duration": 12.295
+  },
+  {
+    "id": "3764-168671-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168671/3764-168671-0009.flac",
+    "reference": "THE INTERMENT OF MOTHER CRUCIFIXION IN THE VAULT UNDER THE ALTAR THE EXIT OF COSETTE THE INTRODUCTION OF JEAN VALJEAN TO THE DEAD ROOM ALL HAD BEEN EXECUTED WITHOUT DIFFICULTY AND THERE HAD BEEN NO HITCH LET US REMARK IN PASSING THAT THE BURIAL OF MOTHER CRUCIFIXION UNDER THE ALTAR OF THE CONVENT IS A PERFECTLY VENIAL OFFENCE IN OUR SIGHT",
+    "duration": 22.29
+  },
+  {
+    "id": "5764-299665-0025",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0025.flac",
+    "reference": "WHAT IS THIS POWER",
+    "duration": 2.405
+  },
+  {
+    "id": "367-293981-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/293981/367-293981-0016.flac",
+    "reference": "THEN THIS IS AN INN SAID DON QUIXOTE",
+    "duration": 3.11
+  },
+  {
+    "id": "4198-61336-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4198/61336/4198-61336-0012.flac",
+    "reference": "ITS FALL MAY NOT HAVE BEEN UNCONNECTED WITH THE TREND OF EVENTS IN ASSYRIA DURING THE CLOSING YEARS OF THE MIDDLE EMPIRE",
+    "duration": 7.64
+  },
+  {
+    "id": "3528-168669-0116",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0116.flac",
+    "reference": "EVERYTHING MUST HAVE BEEN COMPLETED A GOOD QUARTER OF AN HOUR BEFORE THAT",
+    "duration": 3.675
+  },
+  {
+    "id": "533-131556-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131556/533-131556-0003.flac",
+    "reference": "I SOMETIMES THINK I OUGHT TO GIVE HIM CREDIT FOR THE GOOD FEELING HE SIMULATES SO WELL AND THEN AGAIN I THINK IT IS MY DUTY TO SUSPECT HIM UNDER THE PECULIAR CIRCUMSTANCES IN WHICH I AM PLACED",
+    "duration": 12.125
+  },
+  {
+    "id": "3331-159605-0038",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159605/3331-159605-0038.flac",
+    "reference": "DON'T YOU THINK HE MEANS TO",
+    "duration": 2.065
+  },
+  {
+    "id": "7902-96594-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96594/7902-96594-0012.flac",
+    "reference": "NO WAIT ANOTHER HALF HOUR",
+    "duration": 2.07
+  },
+  {
+    "id": "2033-164915-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2033/164915/2033-164915-0001.flac",
+    "reference": "THEN SHE THREW HERSELF UPON HIM AND HE GATHERED HER TO HIS BOSOM AND THE TWAIN FELL DOWN IN A FAINTING FIT",
+    "duration": 8.94
+  },
+  {
+    "id": "4294-9934-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/9934/4294-9934-0003.flac",
+    "reference": "TO STAND BETWEEN TWO RELIGIONS FROM ONE OF WHICH YOU HAVE NOT AS YET EMERGED AND ANOTHER INTO WHICH YOU HAVE NOT YET ENTERED IS INTOLERABLE AND TWILIGHT IS PLEASING ONLY TO BAT LIKE SOULS",
+    "duration": 14.74
+  },
+  {
+    "id": "3528-168669-0036",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0036.flac",
+    "reference": "REVEREND MOTHER I DID NOT SAY MORE OFTEN THAN WHAT I SAID MORE OFTEN",
+    "duration": 4.84
+  },
+  {
+    "id": "533-131564-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131564/533-131564-0002.flac",
+    "reference": "NO UNLESS YOU CAN TELL ME WHEN TO EXPECT HIM HOME",
+    "duration": 3.935
+  },
+  {
+    "id": "8461-281231-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/281231/8461-281231-0011.flac",
+    "reference": "TWO OF THE FOREMOST INSTANTLY FELL AND THE REST GAVE WAY NOTWITHSTANDING ALL THEIR LEADERS EFFORTS TO STOP THEM",
+    "duration": 7.92
+  },
+  {
+    "id": "7975-280085-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280085/7975-280085-0002.flac",
+    "reference": "BOB'S SHATTERED ELBOW WAS REQUIRING FREQUENT ATTENTION AND THAT NIGHT WE MADE ONLY NINE MILES AND MONDAY MONDAY NIGHT AND TUESDAY WE SPENT IN A DESERTED FARM HOUSE CLOSE TO MANKATO",
+    "duration": 10.64
+  },
+  {
+    "id": "5484-24318-0015",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24318/5484-24318-0015.flac",
+    "reference": "TO MORROW YOU SHALL CONFESS TO ME WHO TREACHEROUSLY DIRECTED YOU TO THIS DANGEROUS PATH",
+    "duration": 5.025
+  },
+  {
+    "id": "8188-269290-0057",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/269290/8188-269290-0057.flac",
+    "reference": "I WILL TELL HER",
+    "duration": 1.47
+  },
+  {
+    "id": "4294-9934-0019",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/9934/4294-9934-0019.flac",
+    "reference": "IT IS BADLY PAID WORK BUT ONE CAN LIVE BY IT",
+    "duration": 3.45
+  },
+  {
+    "id": "3005-163391-0015",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163391/3005-163391-0015.flac",
+    "reference": "MARY JANE'S NINETEEN SUSAN'S FIFTEEN AND JOANNA'S ABOUT FOURTEENTHAT'S THE ONE THAT GIVES HERSELF TO GOOD WORKS AND HAS A HARE LIP POOR THINGS",
+    "duration": 10.77
+  },
+  {
+    "id": "2609-156975-0033",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2609/156975/2609-156975-0033.flac",
+    "reference": "MOSES IN THE HOME OF THE MIDIAN PRIEST WAS BROUGHT INTO DIRECT AND CONSTANT CONTACT WITH THE JEHOVAH WORSHIP",
+    "duration": 8.85
+  },
+  {
+    "id": "8131-117017-0008",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117017/8131-117017-0008.flac",
+    "reference": "ONE LOOK WAS ENOUGH THE WORK PAPERS HAD THE TELLTALE OVER THICKENING OF THE SIGNATURE THAT HAD SHOWED UP ON OTHER PAPERS OBVIOUSLY FORGERIES",
+    "duration": 11.425
+  },
+  {
+    "id": "3997-180297-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180297/3997-180297-0011.flac",
+    "reference": "WELL GOOD HEAVENS THE MEANS WERE EASY ENOUGH TO GUESS",
+    "duration": 4.195
+  },
+  {
+    "id": "1998-29454-0035",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29454/1998-29454-0035.flac",
+    "reference": "ADVENTURES I SHOULD THINK SO",
+    "duration": 2.81
+  },
+  {
+    "id": "8188-274364-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/274364/8188-274364-0011.flac",
+    "reference": "YOUR MAJESTY HAVING TRIED THE AFFECTIONS OF YOUR PEOPLE YOU ARE ABSOLVED AND LOOSE FROM ALL RULES OF GOVERNMENT AND MAY DO WHAT POWER WILL ADMIT",
+    "duration": 8.91
+  },
+  {
+    "id": "3538-163622-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163622/3538-163622-0006.flac",
+    "reference": "WHEN HE HAD RUN AFTER THE FOALS FOR A LONG LONG TIME AND WAS HOT AND TIRED HE PASSED BY A CLEFT IN THE ROCK WHERE AN OLD WOMAN WAS SITTING SPINNING WITH A DISTAFF AND SHE CALLED TO HIM",
+    "duration": 11.32
+  },
+  {
+    "id": "4852-28312-0031",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28312/4852-28312-0031.flac",
+    "reference": "MY WINDOW HAS A POWER FOR THOSE FEW WHO ARE TO SEE",
+    "duration": 5.195
+  },
+  {
+    "id": "367-130732-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/130732/367-130732-0021.flac",
+    "reference": "LOBSTER IN MINIATURE",
+    "duration": 2.46
+  },
+  {
+    "id": "3005-163399-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163399/3005-163399-0021.flac",
+    "reference": "I CAN'T IMAGINE SAYS THE OLD GENTLEMAN AND I MUST SAY IT MAKES ME DREADFUL UNEASY",
+    "duration": 5.27
+  },
+  {
+    "id": "1998-29455-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29455/1998-29455-0007.flac",
+    "reference": "HI THERE GOES A RABBIT",
+    "duration": 1.995
+  },
+  {
+    "id": "3331-159609-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159609/3331-159609-0001.flac",
+    "reference": "FORTUNATELY EVERY ONE WAS SO BUSY WITH THE NECESSARY PREPARATIONS THAT THERE WAS NO TIME FOR ROMANCE OF ANY SORT AND THE FOUR YOUNG PEOPLE WORKED TOGETHER AS SOBERLY AND SENSIBLY AS IF ALL SORTS OF EMOTIONS WERE NOT BOTTLED UP IN THEIR RESPECTIVE HEARTS",
+    "duration": 16.125
+  },
+  {
+    "id": "3997-180297-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180297/3997-180297-0020.flac",
+    "reference": "SUCH A MAN I FOUND IN THE DUKE BUT THE DUKE IS OLD AND OLD AGE NEITHER PROTECTS NOR CONSOLES",
+    "duration": 7.735
+  },
+  {
+    "id": "5442-41168-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41168/5442-41168-0001.flac",
+    "reference": "HE WENT UP TO THE TABLE AND STRIKING IT WITH HIS FINGER RING HE SHOUTED LOUDLY A BALLOT",
+    "duration": 6.67
+  },
+  {
+    "id": "6432-63722-0028",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63722/6432-63722-0028.flac",
+    "reference": "AND THE WATCH HAVE YOU IT YES IT'S HERE",
+    "duration": 3.22
+  },
+  {
+    "id": "4350-9170-0015",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/9170/4350-9170-0015.flac",
+    "reference": "IT WAS PRODUCED ON ONE HAND BY THE NATURAL GROWTH OF POPULATION AND ON THE OTHER BY STRUGGLE AND CONQUEST",
+    "duration": 6.44
+  },
+  {
+    "id": "8131-117029-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117029/8131-117029-0010.flac",
+    "reference": "THAT'S MARS GORDON ECHOED THE OTHER'S COMMENT WHY DON'T YOU PULL OFF THE PLANET FATS YOU COULD GO BACK TO EARTH I'D GUESS THE OTHER NODDED",
+    "duration": 10.955
+  },
+  {
+    "id": "3528-168669-0019",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0019.flac",
+    "reference": "FAUVENT WE HAVE CONFIDENCE IN YOU",
+    "duration": 2.69
+  },
+  {
+    "id": "3538-163619-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163619/3538-163619-0001.flac",
+    "reference": "FROM THE VERY DAY THAT THE NEW WIFE CAME INTO THE HOUSE THERE WAS NO PEACE FOR THE MAN'S CHILDREN AND NOT A CORNER TO BE FOUND WHERE THEY COULD GET ANY REST SO THE BOY THOUGHT THAT THE BEST THING HE COULD DO WAS TO GO OUT INTO THE WORLD AND TRY TO EARN HIS OWN BREAD",
+    "duration": 14.235
+  },
+  {
+    "id": "367-130732-0030",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/130732/367-130732-0030.flac",
+    "reference": "PICK OUT THE CRAWFISH AND STRAIN THE BROTH THROUGH A NAPKIN BY PRESSURE INTO A BASIN IN ORDER TO EXTRACT ALL THE ESSENCE FROM THE VEGETABLES",
+    "duration": 8.21
+  },
+  {
+    "id": "2609-157645-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2609/157645/2609-157645-0003.flac",
+    "reference": "BLACKBURN ARCHBISHOP OF YORK WAS A GREAT SMOKER",
+    "duration": 4.7399375
+  },
+  {
+    "id": "8461-281231-0008",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/281231/8461-281231-0008.flac",
+    "reference": "MEANWHILE THE BLACK KNIGHT HAD LED HIS FORCES AGAIN TO THE ATTACK AND SO VIGOROUS WAS THEIR ASSAULT THAT BEFORE LONG THE GATE OF THE CASTLE ALONE SEPARATED THEM FROM THOSE WITHIN",
+    "duration": 11.38
+  },
+  {
+    "id": "3528-168669-0098",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0098.flac",
+    "reference": "THE PRIORESS TOOK BREATH THEN TURNED TO FAUCHELEVENT",
+    "duration": 3.37
+  },
+  {
+    "id": "6938-70848-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6938/70848/6938-70848-0004.flac",
+    "reference": "HAVEN'T I GOT SOMETHING TO REMEMBER THEM BY THE DEVILS",
+    "duration": 3.645
+  },
+  {
+    "id": "367-293981-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/293981/367-293981-0010.flac",
+    "reference": "SANCHO GOT UP WITH PAIN ENOUGH IN HIS BONES AND WENT AFTER THE INNKEEPER IN THE DARK AND MEETING THE OFFICER WHO WAS LOOKING TO SEE WHAT HAD BECOME OF HIS ENEMY HE SAID TO HIM SENOR WHOEVER YOU ARE DO US THE FAVOUR AND KINDNESS TO GIVE US A LITTLE ROSEMARY OIL SALT AND WINE FOR IT IS WANTED TO CURE ONE OF THE BEST KNIGHTS ERRANT ON EARTH WHO LIES ON YONDER BED WOUNDED BY THE HANDS OF THE ENCHANTED MOOR THAT IS IN THIS INN",
+    "duration": 22.765
+  },
+  {
+    "id": "4852-28311-0022",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28311/4852-28311-0022.flac",
+    "reference": "ON THE LEFT THE COIL OF ROPE IN THE CENTER THE MODEL OF A SAILING SHIP IN A GREEN GLASS BOTTLE AND ON THE RIGHT THE WOODEN STATUE OF A NEGRO BOY IN BAGGY TROUSERS TURKISH JACKET AND WHITE TURBAN",
+    "duration": 12.525
+  },
+  {
+    "id": "8280-266249-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8280/266249/8280-266249-0004.flac",
+    "reference": "THERE ARE SOME NICE LOOKING PEOPLE ON BOARD REMARKED MISTER TRAVILLA IN AN UNDERTONE TO HIS WIFE",
+    "duration": 5.87
+  },
+  {
+    "id": "6128-63241-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63241/6128-63241-0002.flac",
+    "reference": "RANSOM WAS PLEASED WITH THE VISION OF THAT REMEDY IT MUST BE REPEATED THAT HE WAS VERY PROVINCIAL",
+    "duration": 7.39
+  },
+  {
+    "id": "8188-269290-0044",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/269290/8188-269290-0044.flac",
+    "reference": "GOD ANSWERS TO EACH OF YOU YOU ARE",
+    "duration": 2.89
+  },
+  {
+    "id": "5442-41168-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41168/5442-41168-0004.flac",
+    "reference": "WE SHED OUR BLOOD FOR OUR COUNTRY",
+    "duration": 2.265
+  },
+  {
+    "id": "3080-5032-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3080/5032/3080-5032-0017.flac",
+    "reference": "IF MARRIAGE AGREES NO BETTER WITH OTHER PEOPLE THAN IT DOES WITH HIM I SHALL PRAY THAT ALL MY FRIENDS MAY SCAPE IT",
+    "duration": 7.92
+  },
+  {
+    "id": "7975-280085-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280085/7975-280085-0017.flac",
+    "reference": "INCLUDING THOSE RECEIVED IN AND ON THE WAY FROM NORTHFIELD I HAD ELEVEN WOUNDS",
+    "duration": 4.375
+  },
+  {
+    "id": "4198-61336-0025",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4198/61336/4198-61336-0025.flac",
+    "reference": "THE REMNANT OF THE PHILISTINES SHALL PERISH",
+    "duration": 3.295
+  },
+  {
+    "id": "4294-9934-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/9934/4294-9934-0023.flac",
+    "reference": "HELLO I HAD FORGOTTEN THAT SAID MARIUS",
+    "duration": 3.39
+  },
+  {
+    "id": "8188-269290-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/269290/8188-269290-0010.flac",
+    "reference": "WRAPPING A PRETTY BLUE SHAWL ROUND HER HEAD AND SHOULDERS SHE TURNED TO ANNIE",
+    "duration": 4.55
+  },
+  {
+    "id": "2414-159411-0027",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/159411/2414-159411-0027.flac",
+    "reference": "WHERE WAS THE TIGER THEN",
+    "duration": 2.2150625
+  },
+  {
+    "id": "1998-15444-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/15444/1998-15444-0023.flac",
+    "reference": "SEPARATE THE ETHEREAL SOLUTION AND EVAPORATE",
+    "duration": 3.465
+  },
+  {
+    "id": "7975-280057-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280057/7975-280057-0011.flac",
+    "reference": "AS THE RAIDERS LEFT ONE OF THEM SHOUTED",
+    "duration": 2.87
+  },
+  {
+    "id": "3005-163391-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163391/3005-163391-0009.flac",
+    "reference": "BUT THEN I SAYS AGAIN NO I RECKON IT AIN'T HIM OR ELSE HE WOULDN'T BE PADDLING UP THE RIVER YOU AIN'T HIM ARE YOU",
+    "duration": 8.69
+  },
+  {
+    "id": "4294-35475-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/35475/4294-35475-0017.flac",
+    "reference": "AS HE UTTERED THE WORDS THE SCISSORS LEAPED OUT OF HIS HAND AND BEGAN TO CUT THROUGH THE WOODEN SHUTTERS AS EASILY AS THROUGH A CHEESE",
+    "duration": 7.75
+  },
+  {
+    "id": "5442-41169-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41169/5442-41169-0020.flac",
+    "reference": "SO THERE'LL BE NO ONE TO KEEP IT UP AND YET ONE DOES IT",
+    "duration": 4.315
+  },
+  {
+    "id": "7105-2340-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7105/2340/7105-2340-0020.flac",
+    "reference": "AFTER THEY HAD SAID GOOD NIGHT TO THEIR VISITOR MISSUS PETER EXPRESSED HER CONVICTION THAT HE HAD TAKEN SOMETHING",
+    "duration": 8.565
+  },
+  {
+    "id": "5484-24317-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24317/5484-24317-0024.flac",
+    "reference": "HE WINKED AT HER AND MADE A SIGNIFICANT GESTURE AS HE SPOKE AND THEN INFORMED THE BLIND ARTIST HOW GRACIOUSLY ARSINOE HAD REMEMBERED HIM WHEN SHE HEARD OF THE REMEDY BY WHOSE AID MANY A WONDERFUL CURE OF BLIND EYES HAD BEEN MADE IN RHODES",
+    "duration": 13.86
+  },
+  {
+    "id": "4294-9934-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/9934/4294-9934-0024.flac",
+    "reference": "THE LANDLORD PRESENTED HIS BILL WHICH HAD TO BE PAID ON THE SPOT",
+    "duration": 4.05
+  },
+  {
+    "id": "3997-180294-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180294/3997-180294-0000.flac",
+    "reference": "THE DUKE COMES EVERY MORNING THEY WILL TELL HIM WHEN HE COMES THAT I AM ASLEEP AND PERHAPS HE WILL WAIT UNTIL I WAKE",
+    "duration": 7.955
+  },
+  {
+    "id": "4852-28312-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28312/4852-28312-0000.flac",
+    "reference": "OF THE MANY TIMES HE HAD EXAMINED MISTER WICKER'S WINDOW AND PORED OVER THE ROPE THE SHIP AND THE NUBIAN BOY HE HAD NEVER GONE INTO MISTER WICKER'S SHOP",
+    "duration": 8.685
+  },
+  {
+    "id": "3997-182399-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/182399/3997-182399-0007.flac",
+    "reference": "LIKE MOST NO COUNT PEOPLE HE USED TO MAKE A REGULAR NUISANCE OF HISSELF POKING HIS NOSE INTO EV'YBODY'S BUSINESS AND NEVER TENDING TO HIS OWN",
+    "duration": 10.73
+  },
+  {
+    "id": "3764-168671-0054",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168671/3764-168671-0054.flac",
+    "reference": "ONE MUST EAT",
+    "duration": 1.66
+  },
+  {
+    "id": "4294-32859-0005",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/32859/4294-32859-0005.flac",
+    "reference": "BUT HONEST MARK FORGOT THAT YOUNG LADIES DO NOT ALWAYS COME OUT QUITE ALONE AND JUMP UNASSISTED INTO THEIR VEHICLES",
+    "duration": 7.71
+  },
+  {
+    "id": "1998-15444-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/15444/1998-15444-0016.flac",
+    "reference": "FOR THE SEPARATION OF AN ALKALOID THE FOLLOWING IS THE PROCESS OF STAS OTTO",
+    "duration": 5.175
+  },
+  {
+    "id": "7975-280076-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280076/7975-280076-0000.flac",
+    "reference": "ALTHOUGH EVERY BOOK PURPORTING TO NARRATE THE LIVES OF THE YOUNGER BROTHERS HAS TOLD OF THE LIBERTY ROBBERY AND IMPLIED THAT WE HAD A PART IN IT THE YOUNGERS WERE NOT SUSPECTED AT THAT TIME NOR FOR A LONG TIME AFTERWARD",
+    "duration": 11.865
+  },
+  {
+    "id": "6128-63241-0013",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63241/6128-63241-0013.flac",
+    "reference": "OF ALL THINGS IN THE WORLD CONTENTION WAS MOST SWEET TO HER THOUGH WHY IT IS HARD TO IMAGINE FOR IT ALWAYS COST HER TEARS HEADACHES A DAY OR TWO IN BED ACUTE EMOTION AND IT WAS VERY POSSIBLE BASIL RANSOM WOULD NOT CARE TO CONTEND",
+    "duration": 16.45
+  },
+  {
+    "id": "6432-63722-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63722/6432-63722-0009.flac",
+    "reference": "PERHAPS NOT ADMITTED COLONEL ASHLEY",
+    "duration": 2.665
+  },
+  {
+    "id": "3331-159609-0022",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159609/3331-159609-0022.flac",
+    "reference": "POLLY WAS NOT AT ALL LIKE HERSELF THAT WINTER AND THOSE NEAREST TO HER SAW AND WONDERED AT IT MOST",
+    "duration": 6.52
+  },
+  {
+    "id": "3331-159605-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159605/3331-159605-0007.flac",
+    "reference": "HE HAS KNOWN HER ALL HER LIFE AND HAS A GOOD INFLUENCE OVER HER",
+    "duration": 4.515
+  },
+  {
+    "id": "8280-266249-0044",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8280/266249/8280-266249-0044.flac",
+    "reference": "I DINKS NO I DINKS I DEACH YOU VON LESSON RETURNED HIS CAPTOR NOT RELAXING HIS GRASP IN THE LEAST",
+    "duration": 7.965
+  },
+  {
+    "id": "3528-168669-0039",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0039.flac",
+    "reference": "AT NINE O'CLOCK IN THE MORNING AND AT ALL HOURS PRAISED AND ADORED BE THE MOST HOLY SACRAMENT OF THE ALTAR SAID THE PRIORESS",
+    "duration": 7.3449375
+  },
+  {
+    "id": "2609-156975-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2609/156975/2609-156975-0003.flac",
+    "reference": "THE EGYPTIAN BACKGROUND OF THE BONDAGE",
+    "duration": 3.36
+  },
+  {
+    "id": "8280-266249-0036",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8280/266249/8280-266249-0036.flac",
+    "reference": "WHAT DOES IT MEAN CRIED ONE",
+    "duration": 2.38
+  },
+  {
+    "id": "5442-41169-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41169/5442-41169-0016.flac",
+    "reference": "WELL AND HOW IS YOUR LAND DOING",
+    "duration": 3.25
+  },
+  {
+    "id": "3528-168669-0106",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0106.flac",
+    "reference": "HE WILL PAY IT AT FOUR O'CLOCK TO DAY",
+    "duration": 2.245
+  },
+  {
+    "id": "5442-41169-0029",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41169/5442-41169-0029.flac",
+    "reference": "THERE'S A CLASS INSTINCT TOO OF WHAT ONE OUGHT AND OUGHTN'T TO DO",
+    "duration": 5.06
+  },
+  {
+    "id": "8280-266249-0025",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8280/266249/8280-266249-0025.flac",
+    "reference": "WE CERTAINLY HAVE NO RIGHT TO INJURE OUR BODIES EITHER BY NEGLECT OR SELF INDULGENCE",
+    "duration": 5.825
+  },
+  {
+    "id": "1998-29455-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29455/1998-29455-0006.flac",
+    "reference": "BUT I SHALL HAVE THEM WHILE THEY'RE ALIVE SAID DICKIE AS HE HAD SAID TO THE PAWNBROKER ABOUT THE MOONFLOWERS",
+    "duration": 6.115
+  },
+  {
+    "id": "5442-32873-0013",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/32873/5442-32873-0013.flac",
+    "reference": "HE SLACKENED HIS PACE AND TAPPED SHARPLY AT THE LITTLE WINDOW OF THAT MODEST POST OFFICE AT WHICH THE YOUNG LADIES IN THE PONY CARRIAGE HAD PULLED UP THE DAY BEFORE AND WITHIN WHICH LUKE WAGGOT WAS WONT TO SLEEP IN A SORT OF WOODEN BOX THAT FOLDED UP AND APPEARED TO BE A CHEST OF DRAWERS ALL DAY",
+    "duration": 19.07
+  },
+  {
+    "id": "8461-278226-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/278226/8461-278226-0012.flac",
+    "reference": "THEY HAVE SAID THAT HE IS EVEN A LITTLE IMBECILE THAT HE DOES NOT REMEMBER HIMSELF OF THE MOST COMMON EVENTS OF HIS LIFE",
+    "duration": 8.1
+  },
+  {
+    "id": "7975-280084-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280084/7975-280084-0002.flac",
+    "reference": "WHEN WE CAME UP I TOLD MILLER TO SHUT THE BANK DOOR WHICH THEY HAD LEFT OPEN IN THEIR HURRY",
+    "duration": 4.98
+  },
+  {
+    "id": "3005-163399-0022",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163399/3005-163399-0022.flac",
+    "reference": "UNEASY SHE SAYS I'M READY TO GO DISTRACTED",
+    "duration": 3.8
+  },
+  {
+    "id": "3764-168671-0034",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168671/3764-168671-0034.flac",
+    "reference": "HE LIMPED MORE OUT OF ANXIETY THAN FROM INFIRMITY",
+    "duration": 4.02
+  },
+  {
+    "id": "8131-117016-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117016/8131-117016-0017.flac",
+    "reference": "FOR A SECOND GORDON CURSED HIMSELF",
+    "duration": 2.92
+  },
+  {
+    "id": "6070-86744-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6070/86744/6070-86744-0020.flac",
+    "reference": "BUT SAID FRANZ THE CORSICAN BANDITS THAT WERE AMONG THE CREW OF HIS VESSEL",
+    "duration": 5.23
+  },
+  {
+    "id": "8188-269290-0045",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/269290/8188-269290-0045.flac",
+    "reference": "THE WORLD SAYS NO I AM NOT BUT GOD SAYS YES YOU ARE",
+    "duration": 4.855
+  },
+  {
+    "id": "3528-168669-0069",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0069.flac",
+    "reference": "SHE ASKED IT OF US THAT IS TO SAY COMMANDED US",
+    "duration": 3.745
+  },
+  {
+    "id": "367-130732-0008",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/130732/367-130732-0008.flac",
+    "reference": "PUT THIS IN A DOUBLE BOILER AND LET COOK UNTIL THICK STIRRING CONSTANTLY",
+    "duration": 4.295
+  },
+  {
+    "id": "3528-168669-0080",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0080.flac",
+    "reference": "I HAVE ON MY RIGHT BENOIT AND ON MY LEFT BERNARD WHO WAS BERNARD",
+    "duration": 5.195
+  },
+  {
+    "id": "3005-163389-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163389/3005-163389-0006.flac",
+    "reference": "SO THEY ALWAYS ACQUIT AND THEN A MAN GOES IN THE NIGHT WITH A HUNDRED MASKED COWARDS AT HIS BACK AND LYNCHES THE RASCAL",
+    "duration": 9.975
+  },
+  {
+    "id": "3528-168669-0027",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0027.flac",
+    "reference": "NOTHING CAN BE HEARD AT THE BOTTOM OF THE GARDEN REALLY",
+    "duration": 4.295
+  },
+  {
+    "id": "8131-117016-0032",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117016/8131-117016-0032.flac",
+    "reference": "MURDOCH INDICATED ONE WHO STOOD WITH HIS SHOULDERS SHAKING AND TEARS RUNNING DOWN HIS CHEEKS",
+    "duration": 6.035
+  },
+  {
+    "id": "3080-5040-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3080/5040/3080-5040-0024.flac",
+    "reference": "FOR MY LIFE I CANNOT BEAT INTO THEIR HEADS A PASSION THAT MUST BE SUBJECT TO NO DECAY AN EVEN PERFECT KINDNESS THAT MUST LAST PERPETUALLY WITHOUT THE LEAST INTERMISSION",
+    "duration": 12.92
+  },
+  {
+    "id": "7975-280057-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280057/7975-280057-0003.flac",
+    "reference": "I CANNOT REMEMBER WHEN I DID NOT KNOW HOW TO SHOOT",
+    "duration": 2.79
+  },
+  {
+    "id": "7975-280076-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280076/7975-280076-0016.flac",
+    "reference": "THERE I TOOK DINNER AND THEN WENT TO DOCTOR L W TWYMAN'S",
+    "duration": 3.935
+  },
+  {
+    "id": "3538-163619-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163619/3538-163619-0012.flac",
+    "reference": "I SHALL COME TWICE MORE AND THEN NEVER AGAIN SAID SHE",
+    "duration": 4.3
+  },
+  {
+    "id": "7902-96592-0036",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96592/7902-96592-0036.flac",
+    "reference": "NOT YOU ONLY A SHAM",
+    "duration": 2.2
+  },
+  {
+    "id": "3331-159605-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159605/3331-159605-0002.flac",
+    "reference": "I VE TRIED IT AND LIKED IT AND MAYBE THIS IS THE CONSEQUENCE OF THAT NIGHT'S FUN",
+    "duration": 6.23
+  },
+  {
+    "id": "8131-117017-0032",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117017/8131-117017-0032.flac",
+    "reference": "GO ON ACCEPT DAMN IT",
+    "duration": 2.255
+  },
+  {
+    "id": "4852-28319-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28319/4852-28319-0021.flac",
+    "reference": "DUSK CAME TWO HOURS BEFORE ITS TIME THUNDER SNARLED IN THE SKY",
+    "duration": 4.845
+  },
+  {
+    "id": "3997-180294-0026",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180294/3997-180294-0026.flac",
+    "reference": "AT THE BEGINNING OF THE THIRD ACT I HEARD THE DOOR OF THE BOX ON WHICH MY EYES HAD BEEN ALMOST CONSTANTLY FIXED OPEN AND MARGUERITE APPEARED",
+    "duration": 9.72
+  },
+  {
+    "id": "7105-2330-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7105/2330/7105-2330-0023.flac",
+    "reference": "IN HEAVEN'S NAME WHY",
+    "duration": 2.315
+  },
+  {
+    "id": "2414-128291-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/128291/2414-128291-0012.flac",
+    "reference": "IT IS NO LONGER TRUE THAT THE POOR ARE BLESSED",
+    "duration": 3.965
+  },
+  {
+    "id": "3997-182399-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/182399/3997-182399-0009.flac",
+    "reference": "EVERYBODY LOOKED AT PETER AND LAUGHED",
+    "duration": 2.82
+  },
+  {
+    "id": "2033-164916-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2033/164916/2033-164916-0007.flac",
+    "reference": "AND IN IT ALL REJOICED AT THE ACCESSION OF THE LIGHT OF THE PLACE",
+    "duration": 5.665
+  },
+  {
+    "id": "533-1066-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/1066/533-1066-0018.flac",
+    "reference": "I CONFESS THAT JUST AT THAT MINUTE EVEN SUNNYSIDE SEEMED A CHEERFUL SPOT",
+    "duration": 5.92
+  },
+  {
+    "id": "8280-266249-0065",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8280/266249/8280-266249-0065.flac",
+    "reference": "WE FEEL MY HUSBAND AND I THAT WE ARE ONLY THE STEWARDS OF HIS BOUNTY AND THAT BECAUSE HE HAS SAID INASMUCH AS YE HAVE DONE IT UNTO ONE OF THE LEAST OF THESE MY BRETHREN YE HAVE DONE IT UNTO ME IT IS THE GREATEST PRIVILEGE AND DELIGHT TO DO ANYTHING FOR HIS PEOPLE",
+    "duration": 17.02
+  },
+  {
+    "id": "8131-117017-0027",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117017/8131-117017-0027.flac",
+    "reference": "THANKS IZZY THANKS YOURSELF",
+    "duration": 3.495
+  },
+  {
+    "id": "3005-163399-0026",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163399/3005-163399-0026.flac",
+    "reference": "THE OLD GENTLEMAN STARED AND SAYS",
+    "duration": 2.45
+  },
+  {
+    "id": "8131-117029-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117029/8131-117029-0006.flac",
+    "reference": "SCHULBERG'S VOLUNTEERS WERE OFFICIAL NOW",
+    "duration": 2.835
+  },
+  {
+    "id": "7902-96594-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96594/7902-96594-0003.flac",
+    "reference": "THAT'S RIGHT OF COURSE WELL ARMED",
+    "duration": 2.455
+  },
+  {
+    "id": "2033-164916-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2033/164916/2033-164916-0003.flac",
+    "reference": "ZAU AL MAKAN BOWED HIS HEAD AWHILE AND THEN SAID I ACCEPT THIS POSITION FOR INDEED THERE WAS NO REFUSING AND HE WAS CERTIFIED THAT THE CHAMBERLAIN HAD COUNSELLED HIM WELL AND WISELY AND SET HIM ON THE RIGHT WAY",
+    "duration": 19.4
+  },
+  {
+    "id": "3005-163399-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163399/3005-163399-0014.flac",
+    "reference": "I SEE IT WARN'T A BIT OF USE TO TRY TO GO AHEAD I'D GOT TO THROW UP MY HAND",
+    "duration": 5.285
+  },
+  {
+    "id": "4852-28330-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28330/4852-28330-0017.flac",
+    "reference": "CAPTAIN BLIZZARD'S ROUND PINK FACE CREASED IN HIS WINNING SMILE",
+    "duration": 4.125
+  },
+  {
+    "id": "5484-24317-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24317/5484-24317-0009.flac",
+    "reference": "HITHERTO THE MERCHANT HAD BEEN INDUCED IT IS TRUE TO ADVANCE LARGE SUMS OF MONEY TO THE QUEEN BUT THE LOYAL DEVOTION WHICH HE SHOWED TO HER ROYAL HUSBAND HAD RENDERED IT IMPOSSIBLE TO GIVE HIM EVEN A HINT OF THE CONSPIRACY",
+    "duration": 14.605
+  },
+  {
+    "id": "3005-163391-0026",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163391/3005-163391-0026.flac",
+    "reference": "THEN ONE OF THEM SAYS KIND OF SOFT AND GENTLE",
+    "duration": 3.48
+  },
+  {
+    "id": "7105-2330-0039",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7105/2330/7105-2330-0039.flac",
+    "reference": "THE WORD OF THE SONG HAD REFERENCE IT WAS UNDERSTOOD TO THE INCARCERATING GOVERNMENT AND NOT TO THE DESTROYER OF THE ALBERT HALL",
+    "duration": 8.22
+  },
+  {
+    "id": "1688-142285-0072",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0072.flac",
+    "reference": "MARGARET HELD HER IN HER ARMS AND PUT THE WEARY HEAD TO REST UPON HER BOSOM",
+    "duration": 5.85
+  },
+  {
+    "id": "4294-35475-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/35475/4294-35475-0021.flac",
+    "reference": "MY GRAIN MUST FALL AND ROT IN THE FIELD FROM OVERRIPENESS BECAUSE I HAVE NOT THE STRENGTH TO RISE AND HARVEST IT THEN INDEED MUST WE ALL STARVE",
+    "duration": 9.03
+  },
+  {
+    "id": "6432-63723-0035",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63723/6432-63723-0035.flac",
+    "reference": "IT'S HARD FOR MISS MASON TOO ALTHOUGH SHE'S BEARING UP LIKE A MAJOR",
+    "duration": 3.77
+  },
+  {
+    "id": "8461-281231-0015",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/281231/8461-281231-0015.flac",
+    "reference": "YET FIRST LET ME SAY SAID DE BRACY WHAT IT IMPORTS THEE TO KNOW",
+    "duration": 5.765
+  },
+  {
+    "id": "5764-299665-0040",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0040.flac",
+    "reference": "A MAN PUTS HIMSELF IN THE PLACE OF ANOTHER",
+    "duration": 3.24
+  },
+  {
+    "id": "8131-117017-0030",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117017/8131-117017-0030.flac",
+    "reference": "AND IF ANY OF THE OTHER COPS HAD PRIVATE RACKETS OF THEIR OWN IZZY WAS UNDOUBTEDLY THE MAN TO FIND IT OUT AND USE THE INFORMATION WITH A BEAT SUCH AS THAT EVEN GOING HALVES AND WITH ALL THE GRAFT TO THE UPPER BRACKETS HE'D STILL BE ABLE TO MAKE HIS PILE IN A MATTER OF MONTHS",
+    "duration": 19.4
+  },
+  {
+    "id": "5484-24317-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24317/5484-24317-0002.flac",
+    "reference": "SHE WOULD APPEAR HERSELF AT DESSERT AND THE BANQUET MUST THEREFORE BEGIN AT AN UNUSUALLY EARLY HOUR",
+    "duration": 6.665
+  },
+  {
+    "id": "3997-182399-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/182399/3997-182399-0001.flac",
+    "reference": "THIS SOUNDED LIKE ANOTHER STORY",
+    "duration": 2.35
+  },
+  {
+    "id": "3331-159605-0034",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159605/3331-159605-0034.flac",
+    "reference": "PERHAPS SHE LL JILT HIM",
+    "duration": 2.035
+  },
+  {
+    "id": "533-131562-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131562/533-131562-0001.flac",
+    "reference": "THE KEYS OF YOUR CABINET DESK DRAWERS AND WHATEVER ELSE YOU POSSESS SAID HE RISING AND HOLDING OUT HIS HAND",
+    "duration": 8.45
+  },
+  {
+    "id": "1688-142285-0070",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0070.flac",
+    "reference": "BUT YOU WILL BE THERE FATHER YOU SHALL OH MY HEART",
+    "duration": 4.13
+  },
+  {
+    "id": "1998-29455-0038",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29455/1998-29455-0038.flac",
+    "reference": "THEY DID NOT STAY THERE BUT WALKED OUT ACROSS THE DOWNS WHERE THE SKYLARKS WERE SINGING AND ON A DIP OF THE DOWNS CAME UPON GREAT STONE WALLS AND TOWERS VERY STRONG AND GRAY",
+    "duration": 11.05
+  },
+  {
+    "id": "1998-29454-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29454/1998-29454-0011.flac",
+    "reference": "WHEN IT WAS OVER THE MAN ASKED DICKIE IF HE COULD WALK A LITTLE WAY AND WHEN DICKIE SAID HE COULD THEY SET OUT IN THE MOST FRIENDLY WAY SIDE BY SIDE",
+    "duration": 8.585
+  },
+  {
+    "id": "3331-159605-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159605/3331-159605-0003.flac",
+    "reference": "JUST SUPPOSE IT IS TRUE THAT HE DOES ASK ME AND I SAY YES",
+    "duration": 5.575
+  },
+  {
+    "id": "1688-142285-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0009.flac",
+    "reference": "WHY IT MIGHT HAVE BEEN IN THE WORKHOUSE",
+    "duration": 3.535
+  },
+  {
+    "id": "2414-128292-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/128292/2414-128292-0003.flac",
+    "reference": "LET IT RUN AFTER ME I RUN AWAY FROM IT",
+    "duration": 3.965
+  },
+  {
+    "id": "7975-280057-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280057/7975-280057-0016.flac",
+    "reference": "I HAVE ALWAYS FELT THAT THE EXPOSURE TO WHICH SHE WAS SUBJECTED ON THIS CRUEL JOURNEY TOO HARD EVEN FOR A MAN TO TAKE WAS THE DIRECT CAUSE OF HER DEATH",
+    "duration": 8.545
+  },
+  {
+    "id": "7902-96595-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96595/7902-96595-0016.flac",
+    "reference": "GURR TURNED AWAY IMPATIENTLY AGAIN AND SIGNING TO HIS MEN TO FOLLOW THEY ALL BEGAN TO TRAMP UP THE STEEP TRACK LEADING TOWARD THE HOZE WITH THE RABBITS SCUTTLING AWAY AMONG THE FURZE AND SHOWING THEIR WHITE COTTONY TAILS FOR A MOMENT AS THEY DARTED DOWN INTO THEIR HOLES",
+    "duration": 12.63
+  },
+  {
+    "id": "3331-159609-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159609/3331-159609-0014.flac",
+    "reference": "IT WAS SO TENDER EARNEST AND DEFIANT THAT FANNY FORGOT THE DEFENCE OF HER OWN LOVER IN ADMIRATION OF POLLY'S LOYALTY TO HERS FOR THIS FAITHFUL ALL ABSORBING LOVE WAS A NEW REVELATION TO FANNY WHO WAS USED TO HEARING HER FRIENDS BOAST OF TWO OR THREE LOVERS A YEAR AND CALCULATE THEIR RESPECTIVE VALUES WITH ALMOST AS MUCH COOLNESS AS THE YOUNG MEN DISCUSSED THE FORTUNES OF THE GIRLS THEY WISHED FOR BUT COULD NOT AFFORD TO MARRY",
+    "duration": 28.37
+  },
+  {
+    "id": "2414-128292-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/128292/2414-128292-0001.flac",
+    "reference": "MY SHADOW CALLETH ME",
+    "duration": 2.495
+  },
+  {
+    "id": "8280-266249-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8280/266249/8280-266249-0014.flac",
+    "reference": "HE LED THE WAY THE OTHERS ALL FOLLOWING AND TAKING OUT A SLIP OF PAPER READ FROM IT IN A DISTINCT TONE LOUD ENOUGH TO BE HEARD BY THOSE ABOUT HIM WITHOUT DISTURBING THE OTHER PASSENGERS",
+    "duration": 11.63
+  },
+  {
+    "id": "1688-142285-0069",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0069.flac",
+    "reference": "THE FEVERISH COLOUR CAME INTO HER CHEEK AND THE FEVERISH FLAME INTO HER EYE",
+    "duration": 5.255
+  },
+  {
+    "id": "8131-117029-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117029/8131-117029-0016.flac",
+    "reference": "YOU CAN'T STAY HERE",
+    "duration": 1.86
+  },
+  {
+    "id": "4852-28319-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28319/4852-28319-0001.flac",
+    "reference": "HE HAD TOLD HIS MASTER AT ONCE ABOUT SIMON GOSLER HIS HORDE OF MONEY AND HIS HIDING PLACES FOR IT",
+    "duration": 5.995
+  },
+  {
+    "id": "1998-29455-0034",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29455/1998-29455-0034.flac",
+    "reference": "WELL YOU NEVER SEE IM",
+    "duration": 1.81
+  },
+  {
+    "id": "3764-168670-0032",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168670/3764-168670-0032.flac",
+    "reference": "ONLY TO ALLOW THE UNDERTAKER'S MEN TO ENTER WHEN THEY COME TO GET THE COFFIN",
+    "duration": 4.04
+  },
+  {
+    "id": "8461-278226-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/278226/8461-278226-0006.flac",
+    "reference": "IT WAS DRAWING TOWARDS THE CLOSE OF THIS DELIGHTFUL HONEYMOON TOUR AND IT WAS A BRIGHT SUNSHINY MORNING EARLY IN FEBRUARY BUT FEBRUARY IN PARIS IS SOMETIMES BETTER THAN APRIL IN LONDON",
+    "duration": 12.22
+  },
+  {
+    "id": "4294-32859-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/32859/4294-32859-0003.flac",
+    "reference": "SIT DOWN BESIDE ME AND I'LL TELL YOU THE STORY",
+    "duration": 2.835
+  },
+  {
+    "id": "7902-96594-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96594/7902-96594-0021.flac",
+    "reference": "HOPPING ABOUT LIKE A CAT ON HOT BRICKS",
+    "duration": 2.315
+  },
+  {
+    "id": "8131-117029-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117029/8131-117029-0014.flac",
+    "reference": "WE SENT TWENTY OTHERS THE SAME WAY AND THEY FAILED",
+    "duration": 3.545
+  },
+  {
+    "id": "5764-299665-0069",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0069.flac",
+    "reference": "IF WE BUILD WE MUST BEGIN AT THE BOTTOM",
+    "duration": 3.565
+  },
+  {
+    "id": "5764-299665-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0017.flac",
+    "reference": "LIPS RELIGIOUS AND FEARFUL TREMBLINGLY REPEAT THIS PASSAGE THOUGH HE SLAY ME YET WILL I TRUST HIM",
+    "duration": 9.615
+  },
+  {
+    "id": "5484-24318-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24318/5484-24318-0010.flac",
+    "reference": "YET IT WAS NO ILLUSION THAT DECEIVED HIM",
+    "duration": 2.245
+  },
+  {
+    "id": "2609-156975-0034",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2609/156975/2609-156975-0034.flac",
+    "reference": "THE CRUEL FATE OF HIS PEOPLE AND THE PAINFUL EXPERIENCE IN EGYPT THAT HAD DRIVEN HIM INTO THE WILDERNESS PREPARED HIS MIND TO RECEIVE THIS TRAINING",
+    "duration": 10.69
+  },
+  {
+    "id": "6432-63723-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63723/6432-63723-0011.flac",
+    "reference": "HE REMEMBERED THAT CYNTHIA AND GRAFTON HAD ONCE BEEN IN LOVE WITH EACH OTHER",
+    "duration": 4.025
+  },
+  {
+    "id": "6128-63241-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63241/6128-63241-0007.flac",
+    "reference": "IT WAS IN THE FEMALE LINE AS BASIL RANSOM HAD WRITTEN IN ANSWERING HER LETTER WITH A GOOD DEAL OF FORM AND FLOURISH HE SPOKE AS IF THEY HAD BEEN ROYAL HOUSES",
+    "duration": 10.56
+  },
+  {
+    "id": "3080-5040-0031",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3080/5040/3080-5040-0031.flac",
+    "reference": "NOT TO KNOW WHEN YOU WOULD COME HOME I CAN ASSURE YOU NOR FOR ANY OTHER OCCASION OF MY OWN BUT WITH A COUSIN OF MINE THAT HAD LONG DESIGNED TO MAKE HERSELF SPORT WITH HIM AND DID NOT MISS OF HER AIM",
+    "duration": 12.77
+  },
+  {
+    "id": "3997-180297-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180297/3997-180297-0002.flac",
+    "reference": "WELL YOU MIGHT HAVE HAD A WOMAN HERE SAID PRUDENCE AND IT WOULD HARDLY HAVE BEEN AMUSING FOR HER TO SEE TWO MORE ARRIVE",
+    "duration": 9.015
+  },
+  {
+    "id": "367-130732-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/130732/367-130732-0018.flac",
+    "reference": "CHOP FINE THE ONION SWEET PEPPER AND TOMATO WITH THE ROSEMARY",
+    "duration": 4.215
+  },
+  {
+    "id": "4852-28330-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28330/4852-28330-0024.flac",
+    "reference": "HE KNEW NOW THAT HIS ABSENCE FOR AS LONG AS HE HAD TO BE AWAY WOULD BE COVERED UP AND SATISFACTORILY ACCOUNTED FOR",
+    "duration": 6.595
+  },
+  {
+    "id": "3997-180294-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180294/3997-180294-0018.flac",
+    "reference": "WHEN I REACHED HOME I WAS IN A STATE OF MAD GAIETY",
+    "duration": 4.225
+  },
+  {
+    "id": "3005-163391-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163391/3005-163391-0010.flac",
+    "reference": "NO MY NAME'S BLODGETT ELEXANDER BLODGETT REVEREND ELEXANDER BLODGETT I S'POSE I MUST SAY AS I'M ONE O THE LORD'S POOR SERVANTS",
+    "duration": 10.695
+  },
+  {
+    "id": "533-1066-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/1066/533-1066-0009.flac",
+    "reference": "SOMETHING IS GOING TO OCCUR HE SAID",
+    "duration": 3.98
+  },
+  {
+    "id": "6432-63722-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63722/6432-63722-0011.flac",
+    "reference": "YOU'RE ON THE DARCY CASE THEY TELL ME IN A WAY YES",
+    "duration": 3.83
+  },
+  {
+    "id": "3080-5040-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3080/5040/3080-5040-0012.flac",
+    "reference": "I TOLD YOU IN MY LAST THAT MY SUFFOLK JOURNEY WAS LAID ASIDE AND THAT INTO KENT HASTENED",
+    "duration": 7.02
+  },
+  {
+    "id": "4198-12259-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4198/12259/4198-12259-0011.flac",
+    "reference": "WHAT DIFFERENCE IS THERE BETWEEN A BOTTLE AND A FLAGON",
+    "duration": 3.44
+  },
+  {
+    "id": "4350-10919-0004",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/10919/4350-10919-0004.flac",
+    "reference": "IS THERE HOPE SHE MEANT TO SAY BUT HER LIPS QUIVERED AND SHE COULD NOT UTTER THE QUESTION WELL DOCTOR",
+    "duration": 5.345
+  },
+  {
+    "id": "3080-5040-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3080/5040/3080-5040-0021.flac",
+    "reference": "YOU ARE SATISFIED I HOPE ERE THIS THAT I SCAPED DROWNING",
+    "duration": 4.42
+  },
+  {
+    "id": "2033-164915-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2033/164915/2033-164915-0006.flac",
+    "reference": "THE CHAMBERLAIN CALLED THE CASTRATO AND CHARGED HIM TO DO ACCORDINGLY SO HE REPLIED I HEAR AND I OBEY AND HE TOOK HIS PAGES WITH HIM AND WENT OUT IN SEARCH OF THE STOKER TILL HE FOUND HIM IN THE REAR OF THE CARAVAN GIRTHING HIS ASS AND PREPARING FOR FLIGHT",
+    "duration": 21.77
+  },
+  {
+    "id": "7018-75789-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7018/75789/7018-75789-0007.flac",
+    "reference": "WHEN THEY SAW I UNDERSTOOD THEM NOT AND MADE THEM NO ANSWER ONE OF THEM CAME FORWARD AND SAID TO ME IN ARABIC PEACE BE WITH THEE O MY BROTHER",
+    "duration": 9.215
+  },
+  {
+    "id": "7105-2330-0030",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7105/2330/7105-2330-0030.flac",
+    "reference": "IT WAS FROM THE CENTRAL COMMITTEE ROOMS AT NEMESIS",
+    "duration": 3.52
+  },
+  {
+    "id": "5442-41168-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41168/5442-41168-0017.flac",
+    "reference": "A HUNDRED AND TWENTY SIX FOR ADMISSION NINETY EIGHT AGAINST",
+    "duration": 4.855
+  },
+  {
+    "id": "6070-63485-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6070/63485/6070-63485-0014.flac",
+    "reference": "WELL MY WIFE SHALL BE THERE SAID THE SCHOOLMASTER YOU WILL TELL HER WHAT YOU WANT AND I SHALL SEE",
+    "duration": 8.04
+  },
+  {
+    "id": "6128-63244-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63244/6128-63244-0023.flac",
+    "reference": "WHEN MISS BIRDSEYE APPROACHED IT TRANSFIGURED HER FAMILIAR HER COMICAL SHAPE AND MADE THE POOR LITTLE HUMANITARY HACK SEEM ALREADY A MARTYR",
+    "duration": 10.3
+  },
+  {
+    "id": "367-130732-0001",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/130732/367-130732-0001.flac",
+    "reference": "WHEN IS A LOBSTER NOT A LOBSTER WHEN IT IS A CRAYFISH",
+    "duration": 4.38
+  },
+  {
+    "id": "4294-35475-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/35475/4294-35475-0000.flac",
+    "reference": "BUT THE MIDDLE SON WAS LITTLE AND LORN HE WAS NEITHER DARK NOR FAIR HE WAS NEITHER HANDSOME NOR STRONG",
+    "duration": 6.62
+  },
+  {
+    "id": "3331-159605-0041",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3331/159605/3331-159605-0041.flac",
+    "reference": "WELL I ALWAYS MEANT TO TRY IT IF I GOT A CHANCE AND I HAVE",
+    "duration": 5.255
+  },
+  {
+    "id": "3528-168669-0120",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0120.flac",
+    "reference": "HOWEVER NEVER MIND I SHALL HAVE MY LEVER",
+    "duration": 2.645
+  },
+  {
+    "id": "5764-299665-0028",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0028.flac",
+    "reference": "HE HAS TRIED THAT ROAD AND KNOWS THAT IT IS THE WRONG ROAD",
+    "duration": 4.48
+  },
+  {
+    "id": "367-293981-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/367/293981/367-293981-0020.flac",
+    "reference": "SANCHO TOOK IT AND AS HE WAS RAISING IT TO HIS MOUTH HE WAS STOPPED BY THE CRIES OF HIS MASTER EXCLAIMING SANCHO MY SON DRINK NOT WATER DRINK IT NOT MY SON FOR IT WILL KILL THEE SEE HERE I HAVE THE BLESSED BALSAM AND HE HELD UP THE FLASK OF LIQUOR AND WITH DRINKING TWO DROPS OF IT THOU WILT CERTAINLY BE RESTORED",
+    "duration": 17.29
+  },
+  {
+    "id": "8461-281231-0034",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/281231/8461-281231-0034.flac",
+    "reference": "POOR ISAAC WAS HURRIED OFF ACCORDINGLY AND EXPELLED FROM THE PRECEPTORY ALL HIS ENTREATIES AND EVEN HIS OFFERS UNHEARD AND DISREGARDED",
+    "duration": 9.12
+  },
+  {
+    "id": "3997-180294-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180294/3997-180294-0014.flac",
+    "reference": "IN ORDER TO DISTURB THE LABOURERS IN THE FIELD WAS ONE DAY DEVOURED BY A WOLF BECAUSE THOSE WHOM HE HAD SO OFTEN DECEIVED NO LONGER BELIEVED IN HIS CRIES FOR HELP",
+    "duration": 11.765
+  },
+  {
+    "id": "3764-168670-0021",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168670/3764-168670-0021.flac",
+    "reference": "WHAT COFFIN WHAT ADMINISTRATION",
+    "duration": 3.145
+  },
+  {
+    "id": "2414-128291-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/128291/2414-128291-0018.flac",
+    "reference": "THOU DOEST VIOLENCE TO THYSELF THOU PREACHER ON THE MOUNT WHEN THOU USEST SUCH SEVERE WORDS",
+    "duration": 8.51
+  },
+  {
+    "id": "1998-15444-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/15444/1998-15444-0017.flac",
+    "reference": "THIS PROCESS IS BASED UPON THE PRINCIPLE THAT THE SALTS OF THE ALKALOIDS ARE SOLUBLE IN ALCOHOL AND WATER AND INSOLUBLE IN ETHER",
+    "duration": 8.65
+  },
+  {
+    "id": "3764-168670-0022",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3764/168670/3764-168670-0022.flac",
+    "reference": "FAUCHELEVENT WHO WAS SEATED SPRANG UP AS THOUGH A BOMB HAD BURST UNDER HIS CHAIR YOU",
+    "duration": 7.01
+  },
+  {
+    "id": "2414-128292-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2414/128292/2414-128292-0018.flac",
+    "reference": "THEN ONLY DID I HIT THE TRUTH",
+    "duration": 3.555
+  },
+  {
+    "id": "3997-180297-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180297/3997-180297-0007.flac",
+    "reference": "IS THAT REALLY THE ONLY REASON",
+    "duration": 2.525
+  },
+  {
+    "id": "6070-63485-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6070/63485/6070-63485-0006.flac",
+    "reference": "TOM SEYTON DID NOT LOSE HIS PRESENCE OF MIND DURING THIS SCENE RAPIDLY AND UNEXPECTEDLY AS IT HAD OCCURRED",
+    "duration": 8.685
+  },
+  {
+    "id": "5484-24317-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24317/5484-24317-0012.flac",
+    "reference": "TRUE AN INTERESTING CONVERSATION STILL HAD POWER TO CHARM HIM BUT OFTEN DURING ITS CONTINUANCE THE FULL CONSCIOUSNESS OF HIS MISFORTUNE FORCED ITSELF UPON HIS MIND FOR THE MAJORITY OF THE SUBJECTS DISCUSSED BY THE ARTISTS CAME TO THEM THROUGH THE MEDIUM OF SIGHT AND REFERRED TO NEW CREATIONS OF ARCHITECTURE SCULPTURE AND PAINTING FROM WHOSE ENJOYMENT HIS BLINDNESS DEBARRED HIM",
+    "duration": 22.745
+  },
+  {
+    "id": "7975-280063-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280063/7975-280063-0003.flac",
+    "reference": "FOSTER HAD NEARLY ONE THOUSAND CAVALRYMEN AND TWO PIECES OF RABB'S INDIANA BATTERY THAT HAD ALREADY MADE FOR ITSELF A NAME FOR HARD FIGHTING",
+    "duration": 7.315
+  },
+  {
+    "id": "4198-12259-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4198/12259/4198-12259-0024.flac",
+    "reference": "HERE PAGE FILL",
+    "duration": 2.225
+  },
+  {
+    "id": "5764-299665-0070",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0070.flac",
+    "reference": "I HAVE A THEORY AND I HAVE FOUR CORNER STONES",
+    "duration": 4.855
+  },
+  {
+    "id": "3538-163622-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163622/3538-163622-0002.flac",
+    "reference": "HAST THOU WATCHED FAITHFULLY AND WELL THE WHOLE DAY LONG SAID THE KING WHEN THE LAD CAME INTO HIS PRESENCE IN THE EVENING",
+    "duration": 6.19
+  },
+  {
+    "id": "4198-12281-0012",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4198/12281/4198-12281-0012.flac",
+    "reference": "O THE HOLY LADY NYTOUCH SAID ONE THE GOOD SANCTESS O OUR LADY OF SUCCOURS SAID ANOTHER HELP HELP",
+    "duration": 11.59
+  },
+  {
+    "id": "533-131556-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/131556/533-131556-0000.flac",
+    "reference": "BUT HOW AM I TO GET OVER THE TEN OR TWELVE DAYS THAT MUST YET ELAPSE BEFORE THEY GO",
+    "duration": 6.205
+  },
+  {
+    "id": "4350-9170-0020",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/9170/4350-9170-0020.flac",
+    "reference": "AND THEREFORE THE OPPRESSION OF THE OPPRESSED ALWAYS GOES ON GROWING UP TO THE FURTHEST LIMIT BEYOND WHICH IT CANNOT GO WITHOUT KILLING THE GOOSE WITH THE GOLDEN EGGS",
+    "duration": 7.42
+  },
+  {
+    "id": "4350-10919-0029",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/10919/4350-10919-0029.flac",
+    "reference": "AND THE DOCTOR BEGAN SCIENTIFICALLY EXPLAINING TO THE PRINCESS AS AN EXCEPTIONALLY INTELLIGENT WOMAN THE CONDITION OF THE YOUNG PRINCESS AND CONCLUDED BY INSISTING ON THE DRINKING OF THE WATERS WHICH WERE CERTAINLY HARMLESS",
+    "duration": 10.56
+  },
+  {
+    "id": "4350-9170-0013",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4350/9170/4350-9170-0013.flac",
+    "reference": "EVEN IF THERE WAS ONCE A TIME WHEN OWING TO THE LOW STANDARD OF MORALS AND THE DISPOSITION OF MEN TO VIOLENCE THE EXISTENCE OF AN AUTHORITY TO RESTRAIN SUCH VIOLENCE WAS AN ADVANTAGE BECAUSE THE VIOLENCE OF GOVERNMENT WAS LESS THAN THE VIOLENCE OF INDIVIDUALS ONE CANNOT BUT SEE THAT THIS ADVANTAGE COULD NOT BE LASTING",
+    "duration": 15.405
+  },
+  {
+    "id": "7902-96594-0026",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96594/7902-96594-0026.flac",
+    "reference": "KEEP A SHARP LOOK OUT ON THE CLIFF TO SEE IF MISTER RAYSTOKE IS MAKING SIGNALS FOR A BOAT",
+    "duration": 3.93
+  },
+  {
+    "id": "5764-299665-0072",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0072.flac",
+    "reference": "IF THESE CORNER STONES ARE FACTS IT FOLLOWS AS A NECESSITY THAT MATTER AND FORCE ARE FROM AND TO ETERNITY THAT THEY CAN NEITHER BE INCREASED NOR DIMINISHED",
+    "duration": 14.24
+  },
+  {
+    "id": "5764-299665-0018",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0018.flac",
+    "reference": "CAN WE SAY THAT HE CARED FOR THE CHILDREN OF MEN",
+    "duration": 3.32
+  },
+  {
+    "id": "4852-28319-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28319/4852-28319-0003.flac",
+    "reference": "ONE AFTERNOON WHEN HE RETURNED AFTER A REST TO MISTER WICKER'S STUDY HE SAW THAT THERE WAS SOMETHING NEW IN THE ROOM A BOWL WITH A GOLDFISH IN IT STOOD ON THE TABLE BUT MISTER WICKER WAS NOT TO BE SEEN",
+    "duration": 12.12
+  },
+  {
+    "id": "6128-63244-0003",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63244/6128-63244-0003.flac",
+    "reference": "WITH HER IMMENSE SYMPATHY FOR REFORM SHE FOUND HERSELF SO OFTEN WISHING THAT REFORMERS WERE A LITTLE DIFFERENT",
+    "duration": 7.055
+  },
+  {
+    "id": "1688-142285-0089",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0089.flac",
+    "reference": "PERHAPS SHE MAY HAVE A RELATION WHO MIGHT SUIT US AND BE GLAD OF OUR PLACE",
+    "duration": 5.48
+  },
+  {
+    "id": "8188-269290-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/269290/8188-269290-0014.flac",
+    "reference": "BUT DON'T LOCK ME OUT PLEASE ANNIE",
+    "duration": 2.485
+  },
+  {
+    "id": "4294-9934-0029",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/9934/4294-9934-0029.flac",
+    "reference": "AT THAT MOMENT HE HAD THREE FRANCS LEFT",
+    "duration": 3.07
+  },
+  {
+    "id": "5764-299665-0097",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0097.flac",
+    "reference": "IT IS FAR BETTER TO BE FREE TO LEAVE THE FORTS AND BARRICADES OF FEAR TO STAND ERECT AND FACE THE FUTURE WITH A SMILE",
+    "duration": 10.95
+  },
+  {
+    "id": "7018-75789-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7018/75789/7018-75789-0016.flac",
+    "reference": "THEN I TOOK LEAVE OF HIM AND OF ALL MY INTIMATES AND ACQUAINTANCES IN THE ISLAND AND EMBARKED WITH THE MERCHANTS AFORESAID",
+    "duration": 7.95
+  },
+  {
+    "id": "1688-142285-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0011.flac",
+    "reference": "ALL HIS FORMER FRIENDS SHRUNK FROM THE DISCLOSURES THAT HAD TO BE MADE OF HIS DISHONEST GAMBLING WILD HOPELESS STRUGGLES MADE WITH OTHER PEOPLE'S MONEY TO REGAIN HIS OWN MODERATE PORTION OF WEALTH",
+    "duration": 14.05
+  },
+  {
+    "id": "8188-269288-0032",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8188/269288/8188-269288-0032.flac",
+    "reference": "WHAT CAN SHE BE DOING OUT BY HERSELF",
+    "duration": 2.73
+  },
+  {
+    "id": "2609-156975-0024",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/2609/156975/2609-156975-0024.flac",
+    "reference": "THE SCHOOL OF THE WILDERNESS",
+    "duration": 2.525
+  },
+  {
+    "id": "8131-117029-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117029/8131-117029-0000.flac",
+    "reference": "THERE WAS A MAN COMING FROM EARTH ON A SECOND SHIP WHO WOULD SEE HIM",
+    "duration": 4.47
+  },
+  {
+    "id": "5764-299665-0062",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5764/299665/5764-299665-0062.flac",
+    "reference": "IT HAS NEVER MADE MAN MORAL TEMPERATE INDUSTRIOUS AND HONEST",
+    "duration": 6.17
+  },
+  {
+    "id": "6432-63723-0043",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63723/6432-63723-0043.flac",
+    "reference": "I'M AFRAID MY DIGESTION ISN'T QUITE UP TO THAT AS I'VE HAD TO CUT OUT MY FISHING OF LATE",
+    "duration": 5.22
+  },
+  {
+    "id": "4852-28319-0006",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4852/28319/4852-28319-0006.flac",
+    "reference": "SUPPOSE I CHANGE AND CAN'T CHANGE BACK",
+    "duration": 3.255
+  },
+  {
+    "id": "3538-163622-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163622/3538-163622-0000.flac",
+    "reference": "WILT THOU SERVE ME AND WATCH MY SEVEN FOALS ASKED THE KING",
+    "duration": 3.495
+  },
+  {
+    "id": "3528-168669-0035",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0035.flac",
+    "reference": "I SAY MORE OFTEN MORE OFTEN THAN WHAT",
+    "duration": 3.83
+  },
+  {
+    "id": "6128-63240-0027",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63240/6128-63240-0027.flac",
+    "reference": "MISSUS LUNA'S FAMILIARITY EXTENDED EVEN TO HER SISTER SHE REMARKED TO MISS CHANCELLOR THAT SHE LOOKED AS IF SHE WERE GOT UP FOR A SEA VOYAGE",
+    "duration": 8.555
+  },
+  {
+    "id": "6432-63723-0037",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6432/63723/6432-63723-0037.flac",
+    "reference": "IT WAS HIGH LARCH",
+    "duration": 2.395
+  },
+  {
+    "id": "1998-29454-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1998/29454/1998-29454-0014.flac",
+    "reference": "I SHALL CATCH IT A FAIR TREAT AS IT IS",
+    "duration": 2.28
+  },
+  {
+    "id": "533-1066-0017",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/1066/533-1066-0017.flac",
+    "reference": "THE DOCTOR WAS PUFFING SOMEWHAT WHEN WE FINALLY CAME TO A HALT",
+    "duration": 5.48
+  },
+  {
+    "id": "8461-278226-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8461/278226/8461-278226-0011.flac",
+    "reference": "SHE TURNED TO THE FRENCH ARTIST PRESENTLY AND ASKED HIM WHERE THE ELDER MISTER KERSTALL LIVED AND IF THERE WAS ANY POSSIBILITY OF SEEING HIM",
+    "duration": 8.42
+  },
+  {
+    "id": "3528-168669-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0011.flac",
+    "reference": "MERIT CONSISTS IN WORKING ACCORDING TO ONE'S STRENGTH A CLOISTER IS NOT A DOCK YARD",
+    "duration": 5.61
+  },
+  {
+    "id": "6070-86745-0013",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6070/86745/6070-86745-0013.flac",
+    "reference": "PESTE I WILL DO NOTHING OF THE KIND THE MOMENT THEY COME FROM GOVERNMENT YOU WOULD FIND THEM EXECRABLE",
+    "duration": 8.145
+  },
+  {
+    "id": "7975-280084-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7975/280084/7975-280084-0010.flac",
+    "reference": "EVERY TIME I SAW ANY ONE WITH A BEAD ON ME I WOULD DROP OFF MY HORSE AND TRY TO DRIVE THE SHOOTER INSIDE BUT I COULD NOT SEE IN EVERY DIRECTION",
+    "duration": 7.545
+  },
+  {
+    "id": "533-1066-0008",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/533/1066/533-1066-0008.flac",
+    "reference": "THE MOST UNUSUAL THING I CAN THINK OF WOULD BE A PEACEFUL NIGHT",
+    "duration": 5.0500625
+  },
+  {
+    "id": "1688-142285-0013",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/1688/142285/1688-142285-0013.flac",
+    "reference": "AT LEAST NO FRIEND CAME FORWARDS IMMEDIATELY AND MISSUS THORNTON IS NOT ONE I FANCY TO WAIT TILL TARDY KINDNESS COMES TO FIND HER OUT",
+    "duration": 10.18
+  },
+  {
+    "id": "4198-12259-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4198/12259/4198-12259-0023.flac",
+    "reference": "BUT IF THERE CAME SUCH LIQUOR FROM MY BALLOCK WOULD YOU NOT WILLINGLY THEREAFTER SUCK THE UDDER WHENCE IT ISSUED",
+    "duration": 9.06
+  },
+  {
+    "id": "3080-5032-0014",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3080/5032/3080-5032-0014.flac",
+    "reference": "BUT BESIDES I CAN GIVE YOU OTHERS",
+    "duration": 3.28
+  },
+  {
+    "id": "7105-2340-0025",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7105/2340/7105-2340-0025.flac",
+    "reference": "IT WAS A LITTLE PRESENT FROM MY MOTHER AND MYSELF FOR YOUR SILVER WEDDING",
+    "duration": 4.72
+  },
+  {
+    "id": "8131-117016-0016",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/8131/117016/8131-117016-0016.flac",
+    "reference": "TWO YEARS GORDON ADMITTED",
+    "duration": 2.435
+  },
+  {
+    "id": "3528-168669-0103",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0103.flac",
+    "reference": "A PAUSE ENSUED",
+    "duration": 1.57
+  },
+  {
+    "id": "3538-163619-0010",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3538/163619/3538-163619-0010.flac",
+    "reference": "SHE BEGGED VERY PRETTILY AND GOT IT AND THEN SHE BRUSHED HER HAIR AND THE GOLD DROPPED FROM IT",
+    "duration": 6.145
+  },
+  {
+    "id": "3005-163399-0019",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163399/3005-163399-0019.flac",
+    "reference": "MISSUS PHELPS SHE JUMPS FOR HIM AND SAYS",
+    "duration": 3.1
+  },
+  {
+    "id": "5442-32873-0000",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/32873/5442-32873-0000.flac",
+    "reference": "CAPTAIN LAKE DID NOT LOOK AT ALL LIKE A LONDON DANDY NOW",
+    "duration": 3.91
+  },
+  {
+    "id": "4294-14317-0009",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/4294/14317/4294-14317-0009.flac",
+    "reference": "I SAID MY LORD I THANK YOU AND BEG YOU TO CONDESCEND SO FAR AS TO LISTEN TO FOUR WORDS IT IS TRUE THAT HE LENT ME A PAIR OF OLD SCALES TWO ANVILS AND THREE LITTLE HAMMERS WHICH ARTICLES I BEGGED HIS WORKMAN GIORGIO DA CORTONA FIFTEEN DAYS AGO TO FETCH BACK",
+    "duration": 18.065
+  },
+  {
+    "id": "7902-96595-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96595/7902-96595-0011.flac",
+    "reference": "IF SHE KNEW EVIL HAD COME TO THE POOR LAD HER FACE WOULD TELL TALES LIKE PRINT",
+    "duration": 3.745
+  },
+  {
+    "id": "3997-180294-0015",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3997/180294/3997-180294-0015.flac",
+    "reference": "IT IS THE SAME WITH THESE UNHAPPY WOMEN WHEN THEY LOVE SERIOUSLY",
+    "duration": 4.89
+  },
+  {
+    "id": "6128-63244-0002",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/6128/63244/6128-63244-0002.flac",
+    "reference": "PERHAPS SHE COULD SPEAK FOR THEM MORE THAN FOR SOME OTHERS",
+    "duration": 3.61
+  },
+  {
+    "id": "5442-41169-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5442/41169/5442-41169-0007.flac",
+    "reference": "OH STILL JUST THE SAME ALWAYS AT A LOSS THE LANDOWNER ANSWERED WITH A RESIGNED SMILE BUT WITH AN EXPRESSION OF SERENITY AND CONVICTION THAT SO IT MUST BE",
+    "duration": 11.0900625
+  },
+  {
+    "id": "7902-96594-0007",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/7902/96594/7902-96594-0007.flac",
+    "reference": "YOU DON'T THINK MISTER GURR THAT THEY WOULD DARE TO INJURE HIM IF HE WAS SO UNLUCKY AS TO BE CAUGHT",
+    "duration": 4.23
+  },
+  {
+    "id": "3005-163389-0011",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3005/163389/3005-163389-0011.flac",
+    "reference": "YOU CAN'T BE TOO CAREFUL",
+    "duration": 2.26
+  },
+  {
+    "id": "5484-24317-0023",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24317/5484-24317-0023.flac",
+    "reference": "THAT IS GOING TOO FAR REPLIED HERMON",
+    "duration": 3.51
+  },
+  {
+    "id": "5484-24318-0033",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/5484/24318/5484-24318-0033.flac",
+    "reference": "HE WAS APPEARING BEFORE HIS COMPANIONS ONLY TO GIVE TRUTH ITS JUST DUE",
+    "duration": 4.915
+  },
+  {
+    "id": "3528-168669-0092",
+    "split": "test-other",
+    "path": "LibriSpeech/test-other/3528/168669/3528-168669-0092.flac",
+    "reference": "THEY SHUT THEIR EYES TO THE TRUTH DARKNESS IS THE RULE",
+    "duration": 3.465
+  }
+]

@@ -1,0 +1,40 @@
+[0;93m2026-11-04 18:15:48.546028051 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+loaded parakeet-fp32 1.9580562139999529
+warmup 0.9045126660000733
+run 1 0.8898007299999335
+run 2 0.8751051940000707
+run 3 0.8719916310001281
+run 4 0.8745707610000863
+run 5 0.8798351699999785
+{
+  "model": "parakeet-fp32",
+  "threads": 1,
+  "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+  "duration": 9.19,
+  "audio_files": 1,
+  "batch_per_split": 0,
+  "chunk_seconds": 0,
+  "load_seconds": 1.9580562139999529,
+  "runs_seconds": [
+    0.8898007299999335,
+    0.8751051940000707,
+    0.8719916310001281,
+    0.8745707610000863,
+    0.8798351699999785
+  ],
+  "median_seconds": 0.8751051940000707,
+  "median_rtf": 0.09522363373232544,
+  "peak_rss_kib": 867904,
+  "hypothesis": "Three seconds before the arrival of J. B. Hobson's letter, I no more dreamed of chasing the unicorn than of trying for the Northwest passassage.",
+  "ort_version": "1.24.4",
+  "affinity": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

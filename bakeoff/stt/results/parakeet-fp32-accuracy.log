@@ -1,0 +1,52 @@
+[0;93m2026-11-04 18:13:00.078694104 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+25 parakeet-fp32 {'utterances': 25, 'reference_words': 542, 'wer': 0.03505535055350553, 'substitutions': 16, 'insertions': 2, 'deletions': 1, 'audio_seconds': 189.815, 'inference_seconds': 5.3778294460009874, 'rtf': 0.028331951879466785, 'peak_rss_kib': 891896}
+50 parakeet-fp32 {'utterances': 50, 'reference_words': 1266, 'wer': 0.03317535545023697, 'substitutions': 34, 'insertions': 6, 'deletions': 2, 'audio_seconds': 447.3049375, 'inference_seconds': 12.683192590002136, 'rtf': 0.028354689444942995, 'peak_rss_kib': 992760}
+75 parakeet-fp32 {'utterances': 75, 'reference_words': 1694, 'wer': 0.03778040141676505, 'substitutions': 53, 'insertions': 7, 'deletions': 4, 'audio_seconds': 597.6349375, 'inference_seconds': 17.026050403002273, 'rtf': 0.028489047970028148, 'peak_rss_kib': 993016}
+100 parakeet-fp32 {'utterances': 100, 'reference_words': 2200, 'wer': 0.035, 'substitutions': 65, 'insertions': 7, 'deletions': 5, 'audio_seconds': 796.1499375, 'inference_seconds': 22.69893657500188, 'rtf': 0.02851088156369023, 'peak_rss_kib': 1015032}
+125 parakeet-fp32 {'utterances': 125, 'reference_words': 2671, 'wer': 0.03257207038562336, 'substitutions': 75, 'insertions': 7, 'deletions': 5, 'audio_seconds': 971.1199375, 'inference_seconds': 27.7206551700026, 'rtf': 0.028545037641143682, 'peak_rss_kib': 1015544}
+150 parakeet-fp32 {'utterances': 150, 'reference_words': 3225, 'wer': 0.034108527131782945, 'substitutions': 94, 'insertions': 10, 'deletions': 6, 'audio_seconds': 1186.1049375, 'inference_seconds': 33.849764417002916, 'rtf': 0.028538591609229277, 'peak_rss_kib': 1015544}
+175 parakeet-fp32 {'utterances': 175, 'reference_words': 3705, 'wer': 0.03346828609986505, 'substitutions': 106, 'insertions': 12, 'deletions': 6, 'audio_seconds': 1373.0049375, 'inference_seconds': 39.190372000002526, 'rtf': 0.02854350405422524, 'peak_rss_kib': 1015800}
+200 parakeet-fp32 {'utterances': 200, 'reference_words': 4103, 'wer': 0.034608822812576163, 'substitutions': 121, 'insertions': 13, 'deletions': 8, 'audio_seconds': 1518.5299375, 'inference_seconds': 43.398053423001784, 'rtf': 0.02857899100392401, 'peak_rss_kib': 1015800}
+225 parakeet-fp32 {'utterances': 225, 'reference_words': 4647, 'wer': 0.03400043038519475, 'substitutions': 135, 'insertions': 13, 'deletions': 10, 'audio_seconds': 1716.649875, 'inference_seconds': 49.01348036600166, 'rtf': 0.028551821241941753, 'peak_rss_kib': 1016056}
+250 parakeet-fp32 {'utterances': 250, 'reference_words': 5120, 'wer': 0.034375, 'substitutions': 149, 'insertions': 17, 'deletions': 10, 'audio_seconds': 1906.514875, 'inference_seconds': 54.4023339530022, 'rtf': 0.028534964330137837, 'peak_rss_kib': 1016312}
+275 parakeet-fp32 {'utterances': 275, 'reference_words': 5661, 'wer': 0.034269563681328385, 'substitutions': 165, 'insertions': 17, 'deletions': 12, 'audio_seconds': 2094.869875, 'inference_seconds': 59.835077799001965, 'rtf': 0.028562670413598824, 'peak_rss_kib': 1016568}
+300 parakeet-fp32 {'utterances': 300, 'reference_words': 6158, 'wer': 0.03426437154920429, 'substitutions': 181, 'insertions': 17, 'deletions': 13, 'audio_seconds': 2276.574875, 'inference_seconds': 65.05967045900161, 'rtf': 0.028577874232667888, 'peak_rss_kib': 1016824}
+325 parakeet-fp32 {'utterances': 325, 'reference_words': 6606, 'wer': 0.03451407811080836, 'substitutions': 193, 'insertions': 18, 'deletions': 17, 'audio_seconds': 2444.449875, 'inference_seconds': 69.87550847000216, 'rtf': 0.02858537177818063, 'peak_rss_kib': 1016824}
+350 parakeet-fp32 {'utterances': 350, 'reference_words': 7066, 'wer': 0.03637135578828191, 'substitutions': 219, 'insertions': 20, 'deletions': 18, 'audio_seconds': 2610.199875, 'inference_seconds': 74.59188515500318, 'rtf': 0.028577077897148848, 'peak_rss_kib': 1016824}
+375 parakeet-fp32 {'utterances': 375, 'reference_words': 7417, 'wer': 0.03802076311177026, 'substitutions': 240, 'insertions': 23, 'deletions': 19, 'audio_seconds': 2738.9099375, 'inference_seconds': 78.33408562200339, 'rtf': 0.028600460551654553, 'peak_rss_kib': 1017080}
+400 parakeet-fp32 {'utterances': 400, 'reference_words': 7888, 'wer': 0.039934077079107504, 'substitutions': 268, 'insertions': 23, 'deletions': 24, 'audio_seconds': 2902.13, 'inference_seconds': 83.01001973900384, 'rtf': 0.02860313622718618, 'peak_rss_kib': 1025528}
+425 parakeet-fp32 {'utterances': 425, 'reference_words': 8328, 'wer': 0.04070605187319885, 'substitutions': 286, 'insertions': 27, 'deletions': 26, 'audio_seconds': 3070.955, 'inference_seconds': 87.84308077000378, 'rtf': 0.028604483221018797, 'peak_rss_kib': 1025528}
+450 parakeet-fp32 {'utterances': 450, 'reference_words': 8818, 'wer': 0.041052392832841914, 'substitutions': 305, 'insertions': 29, 'deletions': 28, 'audio_seconds': 3234.315, 'inference_seconds': 92.55263873800322, 'rtf': 0.028615839439882395, 'peak_rss_kib': 1025784}
+475 parakeet-fp32 {'utterances': 475, 'reference_words': 9297, 'wer': 0.04237926212756803, 'substitutions': 330, 'insertions': 35, 'deletions': 29, 'audio_seconds': 3400.3299375, 'inference_seconds': 97.28316502700318, 'rtf': 0.028609919276988742, 'peak_rss_kib': 1026040}
+500 parakeet-fp32 {'utterances': 500, 'reference_words': 9682, 'wer': 0.04234662259863665, 'substitutions': 343, 'insertions': 35, 'deletions': 32, 'audio_seconds': 3542.3199375, 'inference_seconds': 101.39723315900346, 'rtf': 0.02862452713138181, 'peak_rss_kib': 1026040}
+525 parakeet-fp32 {'utterances': 525, 'reference_words': 10131, 'wer': 0.042641397690257626, 'substitutions': 358, 'insertions': 36, 'deletions': 38, 'audio_seconds': 3710.7799375, 'inference_seconds': 106.22959532200275, 'rtf': 0.028627295908463652, 'peak_rss_kib': 1031416}
+550 parakeet-fp32 {'utterances': 550, 'reference_words': 10652, 'wer': 0.04215170859932407, 'substitutions': 374, 'insertions': 37, 'deletions': 38, 'audio_seconds': 3887.7349375, 'inference_seconds': 111.42646168900274, 'rtf': 0.028661023315713827, 'peak_rss_kib': 1031416}
+575 parakeet-fp32 {'utterances': 575, 'reference_words': 11161, 'wer': 0.04246931278559269, 'substitutions': 396, 'insertions': 38, 'deletions': 40, 'audio_seconds': 4070.7749375, 'inference_seconds': 116.71890718800319, 'rtf': 0.02867240488114143, 'peak_rss_kib': 1031672}
+600 parakeet-fp32 {'utterances': 600, 'reference_words': 11703, 'wer': 0.04383491412458344, 'substitutions': 425, 'insertions': 44, 'deletions': 44, 'audio_seconds': 4267.7599375, 'inference_seconds': 122.34104651600342, 'rtf': 0.02866633744813427, 'peak_rss_kib': 1031928}
+625 parakeet-fp32 {'utterances': 625, 'reference_words': 12097, 'wer': 0.04455650161196991, 'substitutions': 449, 'insertions': 45, 'deletions': 45, 'audio_seconds': 4416.195, 'inference_seconds': 126.62668180000333, 'rtf': 0.028673254192807005, 'peak_rss_kib': 1031928}
+{
+  "test-clean": {
+    "utterances": 320,
+    "reference_words": 6509,
+    "wer": 0.03441388846212936,
+    "substitutions": 189,
+    "insertions": 18,
+    "deletions": 17,
+    "audio_seconds": 2407.619875,
+    "inference_seconds": 68.83097889100168,
+    "rtf": 0.028588806566070435,
+    "peak_rss_kib": 1031928
+  },
+  "test-other": {
+    "utterances": 320,
+    "reference_words": 5813,
+    "wer": 0.0553930844658524,
+    "substitutions": 267,
+    "insertions": 27,
+    "deletions": 28,
+    "audio_seconds": 2085.5151875,
+    "inference_seconds": 60.06207915600203,
+    "rtf": 0.028799636423650847,
+    "peak_rss_kib": 1031928
+  }
+}

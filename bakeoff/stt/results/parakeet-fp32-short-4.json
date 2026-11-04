@@ -1,0 +1,32 @@
+{
+  "model": "parakeet-fp32",
+  "threads": 4,
+  "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+  "duration": 9.19,
+  "audio_files": 1,
+  "batch_per_split": 0,
+  "chunk_seconds": 0,
+  "load_seconds": 1.9711997249999058,
+  "runs_seconds": [
+    0.2719254969999838,
+    0.2632675669999571,
+    0.26342372699991756,
+    0.260872844000005,
+    0.26176604600004794
+  ],
+  "median_seconds": 0.2632675669999571,
+  "median_rtf": 0.028647178128395772,
+  "peak_rss_kib": 867780,
+  "hypothesis": "Three seconds before the arrival of J. B. Hobson's letter, I no more dreamed of chasing the unicorn than of trying for the Northwest passassage.",
+  "ort_version": "1.24.4",
+  "affinity": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "test-clean": {
+    "sampled": 320,
+    "population": 2620,
+    "over_29_5s": 10,
+    "speakers": 40,
+    "chapters": 82,
+    "seconds": 2407.619875,
+    "min_seconds": 1.695,
+    "max_seconds": 28.575
+  },
+  "test-other": {
+    "sampled": 320,
+    "population": 2939,
+    "over_29_5s": 9,
+    "speakers": 33,
+    "chapters": 85,
+    "seconds": 2085.5151875,
+    "min_seconds": 1.47,
+    "max_seconds": 28.37
+  }
+}

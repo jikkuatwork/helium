@@ -1,0 +1,30 @@
+{
+  "model": "moonshine",
+  "threads": 4,
+  "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+  "duration": 9.19,
+  "chunk_seconds": 0,
+  "load_seconds": 0.879968985000005,
+  "runs_seconds": [
+    0.3520439539998961,
+    0.3553995639999812,
+    0.34797794299993257,
+    0.34523494999996274,
+    0.3502808250000271
+  ],
+  "median_seconds": 0.3502808250000271,
+  "median_rtf": 0.03811543253536748,
+  "peak_rss_kib": 226732,
+  "hypothesis": "Three seconds before the arrival of J. B. Hobson's letter, I know more dreamed of chasing the unicorn than of trying for the northwest passage.",
+  "ort_version": "1.24.4",
+  "affinity": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

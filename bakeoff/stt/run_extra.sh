@@ -21,6 +21,9 @@ for threads in 4 1; do
  run "large-short-${threads}" timing --model large --threads "$threads" --audio "$HOME/bakeoff-samples/stt/parity.wav" --output "$OUT/large-short-${threads}.json"
 done
 run large-long5chunk-4 timing --model large --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --chunk 30 --reference --output "$OUT/large-long5chunk-4.json"
+run large-long5single-4 timing --model large --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --reference --output "$OUT/large-long5single-4.json"
+run parakeet-long20chunk-4 timing --model parakeet --audio "$HOME/bakeoff-samples/stt/long-20min.wav" --chunk 30 --reference --output "$OUT/parakeet-long20chunk-4.json"
+HELIUM_BAKE_THREADS=4 taskset -c 8-15 /usr/bin/time -v -o "$OUT/helium-long20-4.rss.txt" /tmp/stt-helium-probe "$HOME/bakeoff-samples/stt/long-20min.wav" > "$OUT/helium-long20-4.json" 2> "$OUT/helium-long20-4.log"
 for model in moonshine parakeet large; do
  for threads in 4 1; do
   run "$model-batch-${threads}" timing --model "$model" --threads "$threads" --batch 30 --output "$OUT/$model-batch-${threads}.json"

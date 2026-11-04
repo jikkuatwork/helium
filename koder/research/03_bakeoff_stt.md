@@ -46,6 +46,7 @@ See per-clip JSONL under `bakeoff/stt/results/`.
 |---|---:|---:|
 | Moonshine quantized | 5.21% | 12.23% |
 | Parakeet 110M int8 CTC | 3.40% | 5.92% |
+| Parakeet 110M fp32 CTC | 3.44% | 5.54% |
 
 That is **34.8% / 51.6% fewer errors** on these two samples. Do not compare
 these directly to the cross-corpus model-card 7.49/12.66 figures; NVIDIA's
@@ -69,14 +70,39 @@ unchanged. It uses helium's actual WAV reader, chunk planner, decoder,
 tokenizer, and overlap stitching. Python Moonshine greedy output has matched
 the CLI on the initial 9.19 s parity clip; further parity checks are pending.
 
-## Important export caveat (graph inspection)
+## Noise robustness (completed, 50 clean clips)
+
+All three columns use the **same 50 clips / 1,266 reference words**.
+
+| Build | Original WER | 10 dB WER | 0 dB WER |
+|---|---:|---:|---:|
+| Moonshine quantized | 5.61% | 12.80% | 52.05% |
+| Parakeet 110M int8 CTC | 3.16% | 5.77% | 21.80% |
+| Parakeet 110M fp32 CTC | 3.32% | 5.21% | 18.17% |
+
+Int8 is the practical small tier, but it is not accuracy-free: test-other
+costs +0.38 WER points vs fp32 and 0 dB white noise costs +3.63 points.
+Both remain substantially better than Moonshine. The paired utterance
+bootstrap 95% CI for Parakeet-int8 minus Moonshine WER is -2.50 to -1.11
+points (clean), -7.53 to -5.08 (other), 2,000 draws, seed 20261104. This is
+utterance—not speaker—resampling, not a deployment-wide confidence claim.
+
+## Important export caveat (graph inspection and first long result)
 
 The sherpa 110M export is opset 17 with a **fixed `[1,9999,512]` relative
 position table**, not an unbounded position generator. This suggests an
 export limit of roughly 5,000 downsampled frames (~400 s), distinct from the
-original NeMo model's advertised 20-minute limit. Five-minute single-pass
-and 12/20-minute failure probes are queued; do not promise 20-minute single
-passes from this export. Bounded chunking remains available.
+original NeMo model's advertised 20-minute limit. Twelve/twenty-minute
+failure probes are queued; do not promise 20-minute single passes from
+this export. Bounded chunking remains available.
+
+**The 301.735 s single-pass test completed** at 4 threads: median **22.12 s**
+(RTF 0.0733), WER 4.86%, **5,468,464 KiB peak RSS (5.22 GiB)**. That already
+exceeds a 4 GB Pi 4. The fixed-30-s Python Moonshine control took 13.20 s
+(RTF 0.0438), WER 9.13%, 403,300 KiB RSS. These fixed cuts are not helium's
+silence-aware cuts; its actual chunker is measured separately below when
+complete. This strongly favors **bounded Parakeet chunking**, even if a
+future export removes the position-table cap.
 
 ## Current caveats / next measurements
 
@@ -92,6 +118,5 @@ the duplicated stderr descriptor executes before deferred restore. The
 probe uses direct ORT initialization to avoid that unrelated issue; **no
 product fix is included**.
 
-Pending: fp32 control, noise tables, isolated repeated short/long timing and
-RSS, larger model accuracy/timing, exact feature validation, hashes appendix,
-and final verdict.
+Pending: representative balanced-batch and further long timing/RSS, larger
+model accuracy/timing, final feature validation, hashes appendix, verdict.
