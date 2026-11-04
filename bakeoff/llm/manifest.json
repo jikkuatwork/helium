@@ -1,0 +1,136 @@
+{
+  "qwen": {
+    "repo": "onnx-community/Qwen3.5-4B-ONNX",
+    "revision": "23ac3352f288351eddcdf141b32f4f66587f7e2d",
+    "files": {
+      "README.md": {
+        "bytes": 85,
+        "sha256": "321da0cf26cb11b12f62c26b89cdc9eed8854e93ba35f70687cc3ea42e354afc"
+      },
+      "chat_template.jinja": {
+        "bytes": 7756,
+        "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+      },
+      "config.json": {
+        "bytes": 3198,
+        "sha256": "c6f9834460177e3821e035900320fa24bd11ad1c9f14bfe2e78e4398e38c4937"
+      },
+      "generation_config.json": {
+        "bytes": 248,
+        "sha256": "dc0cbe66543f310896469b7b1448af792f403293a1080baaf04d586c57b23e48"
+      },
+      "onnx/decoder_model_merged_q4.onnx": {
+        "bytes": 1206737,
+        "sha256": "731f0569c84ea71a756abfe090f3b472050ecda7ad35a78fb553dc530a60315b"
+      },
+      "onnx/decoder_model_merged_q4.onnx_data": {
+        "bytes": 2093368320,
+        "sha256": "c884a7c467f508568008bbaed3a90a77103f2dbc0643bd2625f8c483864c9726"
+      },
+      "onnx/decoder_model_merged_q4.onnx_data_1": {
+        "bytes": 607298560,
+        "sha256": "8239304d972b0ee1661b8be4b90ccf5937073a281f62fc1917d793b1fb873f3c"
+      },
+      "onnx/embed_tokens_q4.onnx": {
+        "bytes": 857,
+        "sha256": "b72feb6947db92d643f70abc6a4d3e5398a9535470a97685e3b1ab3b05047146"
+      },
+      "onnx/embed_tokens_q4.onnx_data": {
+        "bytes": 407244800,
+        "sha256": "aeb939a0c9a5d54c9f3ce77db340132780692c02e602b80a0cefb6ec8a9728be"
+      },
+      "tokenizer.json": {
+        "bytes": 19226111,
+        "sha256": "89da80cc6689bef4d90cc1028249436975ffb0814618f1d93c65310e05801a9b"
+      },
+      "tokenizer_config.json": {
+        "bytes": 10070,
+        "sha256": "2653056d02b8cf4452fa17e0048ec1d1504a2650d719ea0f928e0d216921f993"
+      }
+    }
+  },
+  "lfm3": {
+    "repo": "LiquidAI/LFM3-1.7B-ONNX",
+    "revision": "e90558fd7388a536a029a4196ddc1c90a234ae9b",
+    "files": {
+      "LICENSE": {
+        "bytes": 10574,
+        "sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c"
+      },
+      "README.md": {
+        "bytes": 8672,
+        "sha256": "d41789fa3c852c1672724003ca0f373e5c12a50e114f848bc4770068ca041672"
+      },
+      "chat_template.jinja": {
+        "bytes": 12129,
+        "sha256": "f45005c50cd2a97329722bf3a2dee9f16c04cdf825a589b280fb7e99e6827818"
+      },
+      "config.json": {
+        "bytes": 1657,
+        "sha256": "09b5a4ee2057e03f7773f19181415d7e701030e14e66c594afd1c8d0a476d176"
+      },
+      "generation_config.json": {
+        "bytes": 146,
+        "sha256": "e5e1e91829a9ae65809b578bff350dca876febbda88a9e36f415b002f6b3ddf0"
+      },
+      "onnx/model_q4.onnx": {
+        "bytes": 352630,
+        "sha256": "20cacb31ad9c25a28ecb0b0a88937f0033b4d0171ba137596a2305b1e66bf00f"
+      },
+      "onnx/model_q4.onnx_data": {
+        "bytes": 1625944064,
+        "sha256": "aad5286be89c40c53106bc1ca29d20a2dda57e1806df5244c09da852f77b43e8"
+      },
+      "tokenizer.json": {
+        "bytes": 17908634,
+        "sha256": "41927bd314d17d7d7fadb44e10cd0919f7b71528d7741596d8cbd15c6945ec44"
+      },
+      "tokenizer_config.json": {
+        "bytes": 14574,
+        "sha256": "e51ed3e47fe9150f6635ab00b9cb41658faf9cbd0dccbcddb55e7eb391bcf7a1"
+      }
+    }
+  },
+  "lfm25": {
+    "repo": "LiquidAI/LFM2.5-1.2B-Instruct-ONNX",
+    "revision": "10f72e70abf67ac0fd7ebf15bc5854726891d864",
+    "files": {
+      "LICENSE": {
+        "bytes": 10596,
+        "sha256": "5188f2b355da20647257a3156db5834c794e5fb5e6d8dc4d4cdbb3180e75b85b"
+      },
+      "README.md": {
+        "bytes": 6508,
+        "sha256": "262795fd562da67904b5d5c638b15d5ca394053b13dc4d8cda9a372b5798ea14"
+      },
+      "chat_template.jinja": {
+        "bytes": 1783,
+        "sha256": "f05bf4b967dc993bdc7a2fe6e43759ee218eb0eb340d68b063e1c4f8ad148176"
+      },
+      "config.json": {
+        "bytes": 1599,
+        "sha256": "dd5d4c6e32a992ad7ddac5c07f5e4711e42c69125f2b94287af7a8ec19963be5"
+      },
+      "generation_config.json": {
+        "bytes": 131,
+        "sha256": "25f750b7e6a790f86ed01cd6f128f905152cb60bbfe2e6618ceca833b452cf80"
+      },
+      "onnx/model_q4.onnx": {
+        "bytes": 183173,
+        "sha256": "c760a2d8be1d19c71c470ef294c1220ef85b5b3a0e31f12a363655ea7fab1d58"
+      },
+      "onnx/model_q4.onnx_data": {
+        "bytes": 850059264,
+        "sha256": "d9666c44e2acc32f06c9351f9e7c4fd66bc060d88ca8e7f954e836c6845f7488"
+      },
+      "tokenizer.json": {
+        "bytes": 3297799,
+        "sha256": "0a1f2cb9fc2769030ca1f4207e81c1af493319373d41b8d3cf5be53860c13760"
+      },
+      "tokenizer_config.json": {
+        "bytes": 2391,
+        "sha256": "0f11f4ffa5750369414bb24e41f26e2bbf23f1d01def533cad5f584e59ae3bef"
+      }
+    }
+  }
+}
