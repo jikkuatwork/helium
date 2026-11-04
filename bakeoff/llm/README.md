@@ -56,6 +56,9 @@ bash bakeoff/llm/run_all.sh
 - `summarize.py`: reads raw JSONL, independently checks scores, emits a small
   committed summary (raw generated outputs remain outside the repo).
 - `graphs.json`: complete graph I/O + recursive operator inventory.
+- `cattery_graph_check.json`: byte-level SHA256 confirmation that helium's
+  self-hosted Qwen embedding/decoder graph files equal the HF baseline.
+  Weight payload sizes match the registry; those payloads were not re-fetched.
 - `qwen_opt_probe.json`: metadata-only finding that a newer Qwen OPT export
   needs two operators absent from ORT 1.24.4. Not a fourth benchmark candidate.
 

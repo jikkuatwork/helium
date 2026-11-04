@@ -1,0 +1,14 @@
+{
+  "onnx/decoder_model_merged_q4.onnx": {
+    "url": "https://github.com/jikkuatwork/cattery-artefacts/raw/main/models/qwen3.5-4b-v1.0/onnx/decoder_model_merged_q4.onnx",
+    "bytes": 1206737,
+    "sha256": "731f0569c84ea71a756abfe090f3b472050ecda7ad35a78fb553dc530a60315b",
+    "matches_hf": true
+  },
+  "onnx/embed_tokens_q4.onnx": {
+    "url": "https://github.com/jikkuatwork/cattery-artefacts/raw/main/models/qwen3.5-4b-v1.0/onnx/embed_tokens_q4.onnx",
+    "bytes": 857,
+    "sha256": "b72feb6947db92d643f70abc6a4d3e5398a9535470a97685e3b1ab3b05047146",
+    "matches_hf": true
+  }
+}

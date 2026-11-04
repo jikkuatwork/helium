@@ -79,7 +79,12 @@ and 20 paired thinking-off/on prompts including reasoning traps. Greedy
 argmax without repetition penalty/sampling for all models. Output limits are
 192 tokens off / 512 on; truncations will be reported rather than silently
 counted as completed answers. Exact string argument matching, no fuzzy judge;
-XML parser unit-tested including malformed calls. LFM2.5 uses its native
+Parser unit-tested including malformed calls. Two small Cattery-hosted Qwen
+graph files were fetched and their SHA256 verified **byte-identical** to the
+HF baseline (`bakeoff/llm/cattery_graph_check.json`); registry weight sizes also
+match. Cattery weight payloads were not downloaded again. This anchors the
+baseline's graph/compute policy to helium's current self-hosted model.
+LFM2.5 uses its native
 Pythonic `<|tool_call_start|>` protocol for the spot check, **not** LFM3 XML.
 
 Two-step continuation is tested with a ground-truth first call/result. Strict
