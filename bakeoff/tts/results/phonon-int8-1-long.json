@@ -1,0 +1,694 @@
+{
+  "model": "phonon-int8",
+  "threads": 1,
+  "shape": "long",
+  "words": 275,
+  "load_s": 1.86295727300012,
+  "warmup": {
+    "wall_s": 22.65622468399988,
+    "ttfa_s": 1.4167941700002302,
+    "audio_s": 83.84,
+    "rtfx": 3.7005282728860336,
+    "chunks": [
+      {
+        "text": "On a clear morning, the team walked from the station to the small workshop beside the river.",
+        "tokens": 26,
+        "frames": 60,
+        "eos": 60,
+        "capped": false
+      },
+      {
+        "text": "They wanted to build a speaking assistant that could run without an internet connection.",
+        "tokens": 21,
+        "frames": 50,
+        "eos": 50,
+        "capped": false
+      },
+      {
+        "text": "The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box.",
+        "tokens": 30,
+        "frames": 65,
+        "eos": 65,
+        "capped": false
+      },
+      {
+        "text": "First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside.",
+        "tokens": 29,
+        "frames": 78,
+        "eos": 78,
+        "capped": false
+      },
+      {
+        "text": "The assistant understood most requests, but a few unusual names and long addresses still caused problems.",
+        "tokens": 31,
+        "frames": 72,
+        "eos": 72,
+        "capped": false
+      },
+      {
+        "text": "Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples.",
+        "tokens": 27,
+        "frames": 65,
+        "eos": 65,
+        "capped": false
+      },
+      {
+        "text": "Next they compared two voices using exactly the same sentences.",
+        "tokens": 17,
+        "frames": 49,
+        "eos": 49,
+        "capped": false
+      },
+      {
+        "text": "One voice spoke slowly and clearly, while the other sounded lively and natural.",
+        "tokens": 20,
+        "frames": 59,
+        "eos": 59,
+        "capped": false
+      },
+      {
+        "text": "They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation.",
+        "tokens": 36,
+        "frames": 83,
+        "eos": 83,
+        "capped": false
+      },
+      {
+        "text": "They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility.",
+        "tokens": 37,
+        "frames": 89,
+        "eos": 89,
+        "capped": false
+      },
+      {
+        "text": "After lunch they listened to the samples through headphones and through the tiny speaker inside the box.",
+        "tokens": 29,
+        "frames": 61,
+        "eos": 61,
+        "capped": false
+      },
+      {
+        "text": "Some differences were easy to hear, but others depended on the sentence and the volume.",
+        "tokens": 26,
+        "frames": 56,
+        "eos": 56,
+        "capped": false
+      },
+      {
+        "text": "By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device.",
+        "tokens": 43,
+        "frames": 91,
+        "eos": 91,
+        "capped": false
+      },
+      {
+        "text": "Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers.",
+        "tokens": 37,
+        "frames": 85,
+        "eos": 85,
+        "capped": false
+      },
+      {
+        "text": "Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning.",
+        "tokens": 39,
+        "frames": 85,
+        "eos": 85,
+        "capped": false
+      }
+    ]
+  },
+  "runs": [
+    {
+      "wall_s": 22.368944704000114,
+      "ttfa_s": 1.281364632000077,
+      "audio_s": 83.84,
+      "rtfx": 3.748053433428505,
+      "chunks": [
+        {
+          "text": "On a clear morning, the team walked from the station to the small workshop beside the river.",
+          "tokens": 26,
+          "frames": 60,
+          "eos": 60,
+          "capped": false
+        },
+        {
+          "text": "They wanted to build a speaking assistant that could run without an internet connection.",
+          "tokens": 21,
+          "frames": 50,
+          "eos": 50,
+          "capped": false
+        },
+        {
+          "text": "The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box.",
+          "tokens": 30,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside.",
+          "tokens": 29,
+          "frames": 78,
+          "eos": 78,
+          "capped": false
+        },
+        {
+          "text": "The assistant understood most requests, but a few unusual names and long addresses still caused problems.",
+          "tokens": 31,
+          "frames": 72,
+          "eos": 72,
+          "capped": false
+        },
+        {
+          "text": "Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples.",
+          "tokens": 27,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "Next they compared two voices using exactly the same sentences.",
+          "tokens": 17,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "One voice spoke slowly and clearly, while the other sounded lively and natural.",
+          "tokens": 20,
+          "frames": 59,
+          "eos": 59,
+          "capped": false
+        },
+        {
+          "text": "They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation.",
+          "tokens": 36,
+          "frames": 83,
+          "eos": 83,
+          "capped": false
+        },
+        {
+          "text": "They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility.",
+          "tokens": 37,
+          "frames": 89,
+          "eos": 89,
+          "capped": false
+        },
+        {
+          "text": "After lunch they listened to the samples through headphones and through the tiny speaker inside the box.",
+          "tokens": 29,
+          "frames": 61,
+          "eos": 61,
+          "capped": false
+        },
+        {
+          "text": "Some differences were easy to hear, but others depended on the sentence and the volume.",
+          "tokens": 26,
+          "frames": 56,
+          "eos": 56,
+          "capped": false
+        },
+        {
+          "text": "By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device.",
+          "tokens": 43,
+          "frames": 91,
+          "eos": 91,
+          "capped": false
+        },
+        {
+          "text": "Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers.",
+          "tokens": 37,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        },
+        {
+          "text": "Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning.",
+          "tokens": 39,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 22.36073911199992,
+      "ttfa_s": 1.2955537120001281,
+      "audio_s": 83.84,
+      "rtfx": 3.749428835069551,
+      "chunks": [
+        {
+          "text": "On a clear morning, the team walked from the station to the small workshop beside the river.",
+          "tokens": 26,
+          "frames": 60,
+          "eos": 60,
+          "capped": false
+        },
+        {
+          "text": "They wanted to build a speaking assistant that could run without an internet connection.",
+          "tokens": 21,
+          "frames": 50,
+          "eos": 50,
+          "capped": false
+        },
+        {
+          "text": "The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box.",
+          "tokens": 30,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside.",
+          "tokens": 29,
+          "frames": 78,
+          "eos": 78,
+          "capped": false
+        },
+        {
+          "text": "The assistant understood most requests, but a few unusual names and long addresses still caused problems.",
+          "tokens": 31,
+          "frames": 72,
+          "eos": 72,
+          "capped": false
+        },
+        {
+          "text": "Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples.",
+          "tokens": 27,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "Next they compared two voices using exactly the same sentences.",
+          "tokens": 17,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "One voice spoke slowly and clearly, while the other sounded lively and natural.",
+          "tokens": 20,
+          "frames": 59,
+          "eos": 59,
+          "capped": false
+        },
+        {
+          "text": "They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation.",
+          "tokens": 36,
+          "frames": 83,
+          "eos": 83,
+          "capped": false
+        },
+        {
+          "text": "They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility.",
+          "tokens": 37,
+          "frames": 89,
+          "eos": 89,
+          "capped": false
+        },
+        {
+          "text": "After lunch they listened to the samples through headphones and through the tiny speaker inside the box.",
+          "tokens": 29,
+          "frames": 61,
+          "eos": 61,
+          "capped": false
+        },
+        {
+          "text": "Some differences were easy to hear, but others depended on the sentence and the volume.",
+          "tokens": 26,
+          "frames": 56,
+          "eos": 56,
+          "capped": false
+        },
+        {
+          "text": "By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device.",
+          "tokens": 43,
+          "frames": 91,
+          "eos": 91,
+          "capped": false
+        },
+        {
+          "text": "Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers.",
+          "tokens": 37,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        },
+        {
+          "text": "Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning.",
+          "tokens": 39,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 22.04750094200017,
+      "ttfa_s": 1.229779229000087,
+      "audio_s": 83.84,
+      "rtfx": 3.8026985562017153,
+      "chunks": [
+        {
+          "text": "On a clear morning, the team walked from the station to the small workshop beside the river.",
+          "tokens": 26,
+          "frames": 60,
+          "eos": 60,
+          "capped": false
+        },
+        {
+          "text": "They wanted to build a speaking assistant that could run without an internet connection.",
+          "tokens": 21,
+          "frames": 50,
+          "eos": 50,
+          "capped": false
+        },
+        {
+          "text": "The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box.",
+          "tokens": 30,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside.",
+          "tokens": 29,
+          "frames": 78,
+          "eos": 78,
+          "capped": false
+        },
+        {
+          "text": "The assistant understood most requests, but a few unusual names and long addresses still caused problems.",
+          "tokens": 31,
+          "frames": 72,
+          "eos": 72,
+          "capped": false
+        },
+        {
+          "text": "Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples.",
+          "tokens": 27,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "Next they compared two voices using exactly the same sentences.",
+          "tokens": 17,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "One voice spoke slowly and clearly, while the other sounded lively and natural.",
+          "tokens": 20,
+          "frames": 59,
+          "eos": 59,
+          "capped": false
+        },
+        {
+          "text": "They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation.",
+          "tokens": 36,
+          "frames": 83,
+          "eos": 83,
+          "capped": false
+        },
+        {
+          "text": "They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility.",
+          "tokens": 37,
+          "frames": 89,
+          "eos": 89,
+          "capped": false
+        },
+        {
+          "text": "After lunch they listened to the samples through headphones and through the tiny speaker inside the box.",
+          "tokens": 29,
+          "frames": 61,
+          "eos": 61,
+          "capped": false
+        },
+        {
+          "text": "Some differences were easy to hear, but others depended on the sentence and the volume.",
+          "tokens": 26,
+          "frames": 56,
+          "eos": 56,
+          "capped": false
+        },
+        {
+          "text": "By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device.",
+          "tokens": 43,
+          "frames": 91,
+          "eos": 91,
+          "capped": false
+        },
+        {
+          "text": "Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers.",
+          "tokens": 37,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        },
+        {
+          "text": "Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning.",
+          "tokens": 39,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 22.30531976200018,
+      "ttfa_s": 1.2889972580001086,
+      "audio_s": 83.84,
+      "rtfx": 3.758744590733535,
+      "chunks": [
+        {
+          "text": "On a clear morning, the team walked from the station to the small workshop beside the river.",
+          "tokens": 26,
+          "frames": 60,
+          "eos": 60,
+          "capped": false
+        },
+        {
+          "text": "They wanted to build a speaking assistant that could run without an internet connection.",
+          "tokens": 21,
+          "frames": 50,
+          "eos": 50,
+          "capped": false
+        },
+        {
+          "text": "The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box.",
+          "tokens": 30,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside.",
+          "tokens": 29,
+          "frames": 78,
+          "eos": 78,
+          "capped": false
+        },
+        {
+          "text": "The assistant understood most requests, but a few unusual names and long addresses still caused problems.",
+          "tokens": 31,
+          "frames": 72,
+          "eos": 72,
+          "capped": false
+        },
+        {
+          "text": "Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples.",
+          "tokens": 27,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "Next they compared two voices using exactly the same sentences.",
+          "tokens": 17,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "One voice spoke slowly and clearly, while the other sounded lively and natural.",
+          "tokens": 20,
+          "frames": 59,
+          "eos": 59,
+          "capped": false
+        },
+        {
+          "text": "They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation.",
+          "tokens": 36,
+          "frames": 83,
+          "eos": 83,
+          "capped": false
+        },
+        {
+          "text": "They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility.",
+          "tokens": 37,
+          "frames": 89,
+          "eos": 89,
+          "capped": false
+        },
+        {
+          "text": "After lunch they listened to the samples through headphones and through the tiny speaker inside the box.",
+          "tokens": 29,
+          "frames": 61,
+          "eos": 61,
+          "capped": false
+        },
+        {
+          "text": "Some differences were easy to hear, but others depended on the sentence and the volume.",
+          "tokens": 26,
+          "frames": 56,
+          "eos": 56,
+          "capped": false
+        },
+        {
+          "text": "By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device.",
+          "tokens": 43,
+          "frames": 91,
+          "eos": 91,
+          "capped": false
+        },
+        {
+          "text": "Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers.",
+          "tokens": 37,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        },
+        {
+          "text": "Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning.",
+          "tokens": 39,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 21.95440289499993,
+      "ttfa_s": 1.2328291139997418,
+      "audio_s": 83.84,
+      "rtfx": 3.818823968976828,
+      "chunks": [
+        {
+          "text": "On a clear morning, the team walked from the station to the small workshop beside the river.",
+          "tokens": 26,
+          "frames": 60,
+          "eos": 60,
+          "capped": false
+        },
+        {
+          "text": "They wanted to build a speaking assistant that could run without an internet connection.",
+          "tokens": 21,
+          "frames": 50,
+          "eos": 50,
+          "capped": false
+        },
+        {
+          "text": "The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box.",
+          "tokens": 30,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside.",
+          "tokens": 29,
+          "frames": 78,
+          "eos": 78,
+          "capped": false
+        },
+        {
+          "text": "The assistant understood most requests, but a few unusual names and long addresses still caused problems.",
+          "tokens": 31,
+          "frames": 72,
+          "eos": 72,
+          "capped": false
+        },
+        {
+          "text": "Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples.",
+          "tokens": 27,
+          "frames": 65,
+          "eos": 65,
+          "capped": false
+        },
+        {
+          "text": "Next they compared two voices using exactly the same sentences.",
+          "tokens": 17,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "One voice spoke slowly and clearly, while the other sounded lively and natural.",
+          "tokens": 20,
+          "frames": 59,
+          "eos": 59,
+          "capped": false
+        },
+        {
+          "text": "They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation.",
+          "tokens": 36,
+          "frames": 83,
+          "eos": 83,
+          "capped": false
+        },
+        {
+          "text": "They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility.",
+          "tokens": 37,
+          "frames": 89,
+          "eos": 89,
+          "capped": false
+        },
+        {
+          "text": "After lunch they listened to the samples through headphones and through the tiny speaker inside the box.",
+          "tokens": 29,
+          "frames": 61,
+          "eos": 61,
+          "capped": false
+        },
+        {
+          "text": "Some differences were easy to hear, but others depended on the sentence and the volume.",
+          "tokens": 26,
+          "frames": 56,
+          "eos": 56,
+          "capped": false
+        },
+        {
+          "text": "By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device.",
+          "tokens": 43,
+          "frames": 91,
+          "eos": 91,
+          "capped": false
+        },
+        {
+          "text": "Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers.",
+          "tokens": 37,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        },
+        {
+          "text": "Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning.",
+          "tokens": 39,
+          "frames": 85,
+          "eos": 85,
+          "capped": false
+        }
+      ]
+    }
+  ],
+  "median": {
+    "wall_s": 22.30531976200018,
+    "ttfa_s": 1.281364632000077,
+    "audio_s": 83.84,
+    "rtfx": 3.758744590733535
+  },
+  "ru_maxrss_kib": 681652
+}

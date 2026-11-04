@@ -1,0 +1,6242 @@
+[
+  {
+    "id": "prose-01",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The quick brown fox jumps over the lazy dog.",
+    "transcript": "The quick brown fox jumps over the lazy dog.",
+    "canonical_reference": "the quick brown fox jumps over the lazy dog",
+    "canonical_hypothesis": "the quick brown fox jumps over the lazy dog",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.3055381049998687,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-02",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Please close the window before you leave the room.",
+    "transcript": "Please close the window before you leave the room.",
+    "canonical_reference": "please close the window before you leave the room",
+    "canonical_hypothesis": "please close the window before you leave the room",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1092070189997685,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-03",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The library opens early and stays quiet until lunch.",
+    "transcript": "The library opens early and stays quiet until lunch.",
+    "canonical_reference": "the library opens early and stays quiet until lunch",
+    "canonical_hypothesis": "the library opens early and stays quiet until lunch",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.10332382300021,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-04",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "We planted a small tree beside the old stone bridge.",
+    "transcript": "We planted a small tree beside the old stone bridge.",
+    "canonical_reference": "we planted a small tree beside the old stone bridge",
+    "canonical_hypothesis": "we planted a small tree beside the old stone bridge",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.109707012000399,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-05",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "I forgot my umbrella but the rain stopped before dinner.",
+    "transcript": "I forgot my umbrella, but the rain stopped before dinner.",
+    "canonical_reference": "i forgot my umbrella but the rain stopped before dinner",
+    "canonical_hypothesis": "i forgot my umbrella but the rain stopped before dinner",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1163146909993884,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-06",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Your package should arrive tomorrow morning at the front desk.",
+    "transcript": "Your package should arrive tomorrow morning at the front desk.",
+    "canonical_reference": "your package should arrive tomorrow morning at the front desk",
+    "canonical_hypothesis": "your package should arrive tomorrow morning at the front desk",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1069853469998634,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-07",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The children watched the ducks swim across the pond.",
+    "transcript": "The children watched the ducks swim across the pond.",
+    "canonical_reference": "the children watched the ducks swim across the pond",
+    "canonical_hypothesis": "the children watched the ducks swim across the pond",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.079955275999964,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-08",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Save your work before restarting the computer.",
+    "transcript": "Save your work before restarting the computer.",
+    "canonical_reference": "save your work before restarting the computer",
+    "canonical_hypothesis": "save your work before restarting the computer",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0631633399998464,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-09",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Would you like a cup of tea or a glass of water?",
+    "transcript": "Would you like a cup of tea or a glass of water?",
+    "canonical_reference": "would you like a cup of tea or a glass of water",
+    "canonical_hypothesis": "would you like a cup of tea or a glass of water",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1716644380003345,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-10",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "A warm breeze carried the smell of bread through the village.",
+    "transcript": "A warm breeze carried the smell of bread through the village.",
+    "canonical_reference": "a warm breeze carried the smell of bread through the village",
+    "canonical_hypothesis": "a warm breeze carried the smell of bread through the village",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.136359187999915,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-11",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The total is twenty three dollars and forty five cents, including tax.",
+    "transcript": "The total is $23.45, including tax.",
+    "canonical_reference": "the total is $23.45 including tax",
+    "canonical_hypothesis": "the total is $23.45 including tax",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 7,
+      "substitutions": 2,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.123564634000104,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-12",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+    "transcript": "The meeting is on March 15th, 2026 at 9.30 a.m.",
+    "canonical_reference": "the meeting is on march 15 2026 at 930 a m",
+    "canonical_hypothesis": "the meeting is on march 15 2026 at 930 a m",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 4,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.263644910000039,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-13",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Sales increased by twelve point five percent last quarter.",
+    "transcript": "Sales increased by 12.5% last quarter.",
+    "canonical_reference": "sales increased by 12.5% last quarter",
+    "canonical_hypothesis": "sales increased by 12.5% last quarter",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 4,
+      "substitutions": 2,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.094870187000197,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-14",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The train leaves at six oh five p m from platform seven.",
+    "transcript": "The train leaves at 6.05 p.m. from Platform 7.",
+    "canonical_reference": "the train leaves at 605 p m from platform 7",
+    "canonical_hypothesis": "the train leaves at 605 p m from platform 7",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 4,
+      "substitutions": 3,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2067748979998214,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-15",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "She finished twenty first in a race with one hundred eight runners.",
+    "transcript": "She finished 21st in a race with 108 runners.",
+    "canonical_reference": "she finished 21st in a race with 108 runners",
+    "canonical_hypothesis": "she finished 21st in a race with 108 runners",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 5,
+      "substitutions": 2,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1353278369997497,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-16",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+    "transcript": "The blue notebook costs 5 euros and 50 cents, and the pen costs 2 pounds.",
+    "canonical_reference": "the blue notebook costs €5.50 and the pen costs £2",
+    "canonical_hypothesis": "the blue notebook costs €5.50 and the pen costs £2",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 3,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.251638725000703,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-17",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+    "transcript": "Call 202-555-0198 and ask for extension 42.",
+    "canonical_reference": "call 2025550198 and ask for extension 42",
+    "canonical_hypothesis": "call 2025550198 and ask for extension 42",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 17,
+      "errors": 12,
+      "substitutions": 4,
+      "deletions": 8,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1675747589997627,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 2
+    }
+  },
+  {
+    "id": "structured-18",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+    "transcript": "The temperature fell from 18 degrees Celsius to minus 3 degrees Celsius overnight.",
+    "canonical_reference": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "canonical_hypothesis": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.231813964000139,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-19",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Send the report to alex at example dot com before Friday.",
+    "transcript": "Send the report to Alex at example.com before Friday.",
+    "canonical_reference": "send the report to alex at example dot com before friday",
+    "canonical_hypothesis": "send the report to alex at example dot com before friday",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1720700269997906,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-20",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+    "transcript": "The shipment contains 2450 bolts, weighing 3.75 kg.",
+    "canonical_reference": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "canonical_hypothesis": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 10,
+      "substitutions": 4,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.194753622000462,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-21",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Maya Thompson met Daniel Brooks near the station.",
+    "transcript": "Maya Thompson met Daniel Brooks near the station.",
+    "canonical_reference": "maya thompson met daniel brooks near the station",
+    "canonical_hypothesis": "maya thompson met daniel brooks near the station",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.109935530999792,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-22",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Aisha Khan and Priya Patel are leading the new project.",
+    "transcript": "Aisha Khan and Priya Patel are leading the new project.",
+    "canonical_reference": "aisha khan and priya patel are leading the new project",
+    "canonical_hypothesis": "aisha khan and priya patel are leading the new project",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1958216339999126,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-23",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Siobhan Murphy sent a letter to Niamh O Sullivan.",
+    "transcript": "Siobhan Murphy sent a letter to Niam O. Sullivan.",
+    "canonical_reference": "siobhan murphy sent a letter to niamh 0 sullivan",
+    "canonical_hypothesis": "siobhan murphy sent a letter to niam 0 sullivan",
+    "counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.203975031000482,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-24",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+    "transcript": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+    "canonical_reference": "xavier rodriguez booked a flight from seattle to chicago",
+    "canonical_hypothesis": "xavier rodriguez booked a flight from seattle to chicago",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1296236210000643,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-25",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Professor Nguyen invited Zhang Wei to the seminar.",
+    "transcript": "Professor Nguyen invited Zhang Wai to the seminar.",
+    "canonical_reference": "professor nguyen invited zhang wei to the seminar",
+    "canonical_hypothesis": "professor nguyen invited zhang wai to the seminar",
+    "counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1495537760001753,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-26",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Fatima Hassan visited the museum with Gabriel Santos.",
+    "transcript": "Fatima Hasson visited the museum with Gabriel Santos.",
+    "canonical_reference": "fatima hassan visited the museum with gabriel santos",
+    "canonical_hypothesis": "fatima hasson visited the museum with gabriel santos",
+    "counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.127655653999682,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-27",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+    "transcript": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+    "canonical_reference": "charlotte beaumont moved from edinburgh to cambridge",
+    "canonical_hypothesis": "charlotte beaumont moved from edinburgh to cambridge",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1104654809996646,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-28",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal.",
+    "transcript": "Jokwin Alvarez spoke with Saoirse Ronan after the rehearsal.",
+    "canonical_reference": "joaquin alvarez spoke with saoirse ronan after the rehearsal",
+    "canonical_hypothesis": "jokwin alvarez spoke with saoirse ronan after the rehearsal",
+    "counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2121563109994895,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-29",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "The river runs through Worcester before reaching Gloucester.",
+    "transcript": "The river runs through Worcester before reaching Gloucester.",
+    "canonical_reference": "the river runs through worcester before reaching gloucester",
+    "canonical_hypothesis": "the river runs through worcester before reaching gloucester",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1257619480002177,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-30",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Anjali Menon and Dimitri Petrov shared a table at the cafe.",
+    "transcript": "And Joly Menon and Dmitry Petrov shared a table at the cafe.",
+    "canonical_reference": "anjali menon and dimitri petrov shared a table at the cafe",
+    "canonical_hypothesis": "and joly menon and dmitry petrov shared a table at the cafe",
+    "counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 1
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 1
+    },
+    "asr_wall_s": 2.239362811999854,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 1
+    }
+  },
+  {
+    "id": "acronyms-31",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "NASA launched a new satellite on Tuesday.",
+    "transcript": "NASA launched a new satellite on Tuesday.",
+    "canonical_reference": "nasa launched a new satellite on tuesday",
+    "canonical_hypothesis": "nasa launched a new satellite on tuesday",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0477113209999516,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-32",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The c p u and g p u share access to the same memory.",
+    "transcript": "The CPU and GPU share access to the same memory.",
+    "canonical_reference": "the c p u and g p u share access to the same memory",
+    "canonical_hypothesis": "the c p u and g p u share access to the same memory",
+    "counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.111182063999877,
+    "pre_format_audit_counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-33",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Use the a p i to send a jay son response over h t t p.",
+    "transcript": "Use the API to send a JSON response over HTTP.",
+    "canonical_reference": "use the a p i to send a json response over h t t p",
+    "canonical_hypothesis": "use the a p i to send a json response over h t t p",
+    "counts": {
+      "words": 15,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 16,
+      "errors": 9,
+      "substitutions": 3,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1819815600001675,
+    "pre_format_audit_counts": {
+      "words": 16,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-34",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The f b i contacted the local police about the case.",
+    "transcript": "The FBI contacted the local police about the case.",
+    "canonical_reference": "the f b i contacted the local police about the case",
+    "canonical_hypothesis": "the f b i contacted the local police about the case",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.086520778000704,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-35",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "A u s b cable connects the s s d to the laptop.",
+    "transcript": "A USB cable connects the SSD to the laptop.",
+    "canonical_reference": "a u s b cable connects the s s d to the laptop",
+    "canonical_hypothesis": "a u s b cable connects the s s d to the laptop",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0961582989993985,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-36",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The b b c and c n n reported the result this morning.",
+    "transcript": "The BBC and CNN reported the result this morning.",
+    "canonical_reference": "the b b c and c n n reported the result this morning",
+    "canonical_hypothesis": "the b b c and c n n reported the result this morning",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.105028888000561,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-37",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Enable h t t p s and check the d n s configuration.",
+    "transcript": "Enable HTTPS and check the DNS configuration.",
+    "canonical_reference": "enable h t t p s and check the d n s configuration",
+    "canonical_hypothesis": "enable h t t p s and check the d n s configuration",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 8,
+      "substitutions": 2,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1078749300004347,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-38",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The m r i scan was reviewed by the hospital team.",
+    "transcript": "The MRI scan was reviewed by the hospital team",
+    "canonical_reference": "the m r i scan was reviewed by the hospital team",
+    "canonical_hypothesis": "the m r i scan was reviewed by the hospital team",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1185950319995754,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-39",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "NATO and UNESCO issued separate statements.",
+    "transcript": "NATO and UNESCO issued separate statements.",
+    "canonical_reference": "nato and unesco issued separate statements",
+    "canonical_hypothesis": "nato and unesco issued separate statements",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0920425109998178,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-40",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Our s q l database stores each u r l as plain text.",
+    "transcript": "Our SQL database stores, each URL is plain text.",
+    "canonical_reference": "our s q l database stores each u r l as plain text",
+    "canonical_hypothesis": "our s q l database stores each u r l is plain text",
+    "counts": {
+      "words": 13,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 7,
+      "substitutions": 3,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1688613939995776,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-41",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "transcript": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "canonical_reference": "although the forecast predicted heavy rain throughout the afternoon the volunteers arrived at the park before sunrise collected the fallen branches repaired the wooden benches and finished planting flowers just as the 1st visitors walked through the gate",
+    "canonical_hypothesis": "although the forecast predicted heavy rain throughout the afternoon the volunteers arrived at the park before sunrise collected the fallen branches repaired the wooden benches and finished planting flowers just as the 1st visitors walked through the gate",
+    "counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.870267738999246,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-42",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings.",
+    "transcript": "When you receive the replacement device, please copy your documents to a separate drive. Check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings.",
+    "canonical_reference": "when you receive the replacement device please copy your documents to a separate drive check that every important file opens correctly sign out of your accounts and only then reset the old device to its original settings",
+    "canonical_hypothesis": "when you receive the replacement device please copy your documents to a separate drive check that every important file opens correctly sign out of your accounts and only then reset the old device to its original settings",
+    "counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.9235883119999926,
+    "pre_format_audit_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-43",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory, and continued to work reliably when the network connection failed during the final demonstration.",
+    "transcript": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory, and continued to work reliably when the network connection failed during the final demonstration.",
+    "canonical_reference": "the research team compared several approaches to the problem but they chose the simplest method because it was easier to explain used less memory and continued to work reliably when the network connection failed during the final demonstration",
+    "canonical_hypothesis": "the research team compared several approaches to the problem but they chose the simplest method because it was easier to explain used less memory and continued to work reliably when the network connection failed during the final demonstration",
+    "counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.8957389659999535,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-44",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees.",
+    "transcript": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees.",
+    "canonical_reference": "after spending the summer restoring the old house the family invited their neighbors to dinner opened the windows to let in the evening breeze and talked about the years when the garden had been full of fruit trees",
+    "canonical_hypothesis": "after spending the summer restoring the old house the family invited their neighbors to dinner opened the windows to let in the evening breeze and talked about the years when the garden had been full of fruit trees",
+    "counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.911424246999559,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-45",
+    "model": "kokoro",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater.",
+    "transcript": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater.",
+    "canonical_reference": "if the train is delayed again tomorrow we can take the earlier bus to the city leave our bags at the hotel and walk along the river before meeting everyone at the small restaurant opposite the theater",
+    "canonical_hypothesis": "if the train is delayed again tomorrow we can take the earlier bus to the city leave our bags at the hotel and walk along the river before meeting everyone at the small restaurant opposite the theater",
+    "counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.9098506649997944,
+    "pre_format_audit_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-11",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The total is twenty three dollars and forty five cents, including tax.",
+    "transcript": "The total is $23.45, including tax.",
+    "canonical_reference": "the total is $23.45 including tax",
+    "canonical_hypothesis": "the total is $23.45 including tax",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 7,
+      "substitutions": 2,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.149893174999306,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-12",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+    "transcript": "The meeting is on March 15th, 2026 at 9.30 a.m.",
+    "canonical_reference": "the meeting is on march 15 2026 at 930 a m",
+    "canonical_hypothesis": "the meeting is on march 15 2026 at 930 a m",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 4,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2797704160002468,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-13",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Sales increased by twelve point five percent last quarter.",
+    "transcript": "Sales increased by 12.5% last quarter.",
+    "canonical_reference": "sales increased by 12.5% last quarter",
+    "canonical_hypothesis": "sales increased by 12.5% last quarter",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 4,
+      "substitutions": 2,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.106082771999354,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-14",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The train leaves at six oh five p m from platform seven.",
+    "transcript": "The train leaves at 6.05 p.m. from Platform 7.",
+    "canonical_reference": "the train leaves at 605 p m from platform 7",
+    "canonical_hypothesis": "the train leaves at 605 p m from platform 7",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 4,
+      "substitutions": 3,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2018084319997797,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-15",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "She finished twenty first in a race with one hundred eight runners.",
+    "transcript": "She finished 21st in a race with 108 runners.",
+    "canonical_reference": "she finished 21st in a race with 108 runners",
+    "canonical_hypothesis": "she finished 21st in a race with 108 runners",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 5,
+      "substitutions": 2,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.143468837999535,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-16",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+    "transcript": "The blue notebook costs 5 euros and 50 cents, and the pen costs 2 pounds.",
+    "canonical_reference": "the blue notebook costs €5.50 and the pen costs £2",
+    "canonical_hypothesis": "the blue notebook costs €5.50 and the pen costs £2",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 3,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.256671309000012,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-17",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+    "transcript": "Call 200-250-5198 and ask for extension 42.",
+    "canonical_reference": "call 2025550198 and ask for extension 42",
+    "canonical_hypothesis": "call 2002505198 and ask for extension 42",
+    "counts": {
+      "words": 7,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 17,
+      "errors": 12,
+      "substitutions": 4,
+      "deletions": 8,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.176074580000204,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 2
+    }
+  },
+  {
+    "id": "structured-18",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+    "transcript": "The temperature fell from 18 degrees C to 3 degrees C overnight.",
+    "canonical_reference": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "canonical_hypothesis": "the temperature fell from 18 degrees celsius to 3 degrees celsius overnight",
+    "counts": {
+      "words": 12,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 5,
+      "substitutions": 4,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1914073400002962,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 3,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-19",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Send the report to alex at example dot com before Friday.",
+    "transcript": "Send the report to Alex at example, calm before Friday.",
+    "canonical_reference": "send the report to alex at example dot com before friday",
+    "canonical_hypothesis": "send the report to alex at example calm before friday",
+    "counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1755519629996343,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-20",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+    "transcript": "The shipment contains 2450 bolts, weighing 3.75 kg.",
+    "canonical_reference": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "canonical_hypothesis": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 10,
+      "substitutions": 4,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1844879149994085,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-31",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "NASA launched a new satellite on Tuesday.",
+    "transcript": "NASA launched a new satellite on Tuesday.",
+    "canonical_reference": "nasa launched a new satellite on tuesday",
+    "canonical_hypothesis": "nasa launched a new satellite on tuesday",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.056481495999833,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-32",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The c p u and g p u share access to the same memory.",
+    "transcript": "The CPU and GPU share access to the same memory.",
+    "canonical_reference": "the c p u and g p u share access to the same memory",
+    "canonical_hypothesis": "the c p u and g p u share access to the same memory",
+    "counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.122376350000195,
+    "pre_format_audit_counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-33",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Use the a p i to send a jay son response over h t t p.",
+    "transcript": "Use the API to send a JSON response over HTTP.",
+    "canonical_reference": "use the a p i to send a json response over h t t p",
+    "canonical_hypothesis": "use the a p i to send a json response over h t t p",
+    "counts": {
+      "words": 15,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 16,
+      "errors": 9,
+      "substitutions": 3,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1608170360004806,
+    "pre_format_audit_counts": {
+      "words": 16,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-34",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The f b i contacted the local police about the case.",
+    "transcript": "The FB I contacted the local police about the case",
+    "canonical_reference": "the f b i contacted the local police about the case",
+    "canonical_hypothesis": "the f b i contacted the local police about the case",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1129676629998357,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-35",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "A u s b cable connects the s s d to the laptop.",
+    "transcript": "A USB cable connects the SSD to the laptop.",
+    "canonical_reference": "a u s b cable connects the s s d to the laptop",
+    "canonical_hypothesis": "a u s b cable connects the s s d to the laptop",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0802314299999125,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-36",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The b b c and c n n reported the result this morning.",
+    "transcript": "The BBC and CNN reported the result this morning.",
+    "canonical_reference": "the b b c and c n n reported the result this morning",
+    "canonical_hypothesis": "the b b c and c n n reported the result this morning",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.082436117000725,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-37",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Enable h t t p s and check the d n s configuration.",
+    "transcript": "Enable HTTPS and check the DNS configuration.",
+    "canonical_reference": "enable h t t p s and check the d n s configuration",
+    "canonical_hypothesis": "enable h t t p s and check the d n s configuration",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 8,
+      "substitutions": 2,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0575298009998733,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-38",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The m r i scan was reviewed by the hospital team.",
+    "transcript": "The MR I scan was reviewed by the hospital team",
+    "canonical_reference": "the m r i scan was reviewed by the hospital team",
+    "canonical_hypothesis": "the m r i scan was reviewed by the hospital team",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.093649364999692,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-39",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "NATO and UNESCO issued separate statements.",
+    "transcript": "NATO and UNESCO issued separate statements.",
+    "canonical_reference": "nato and unesco issued separate statements",
+    "canonical_hypothesis": "nato and unesco issued separate statements",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.055995257000177,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-40",
+    "model": "kokoro",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Our s q l database stores each u r l as plain text.",
+    "transcript": "Our SQL database stores, each URL is plain text.",
+    "canonical_reference": "our s q l database stores each u r l as plain text",
+    "canonical_hypothesis": "our s q l database stores each u r l is plain text",
+    "counts": {
+      "words": 13,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 7,
+      "substitutions": 3,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.137421553999957,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-01",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The quick brown fox jumps over the lazy dog.",
+    "transcript": "The quick brown fox jumps over the lazy dog.",
+    "canonical_reference": "the quick brown fox jumps over the lazy dog",
+    "canonical_hypothesis": "the quick brown fox jumps over the lazy dog",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.105390273000012,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-02",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Please close the window before you leave the room.",
+    "transcript": "Please close the window before you leave the room.",
+    "canonical_reference": "please close the window before you leave the room",
+    "canonical_hypothesis": "please close the window before you leave the room",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.117143729000418,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-03",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The library opens early and stays quiet until lunch.",
+    "transcript": "The library opens early and stays quiet until lunch.",
+    "canonical_reference": "the library opens early and stays quiet until lunch",
+    "canonical_hypothesis": "the library opens early and stays quiet until lunch",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2166415299998334,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-04",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "We planted a small tree beside the old stone bridge.",
+    "transcript": "We planted a small tree beside the old stone bridge.",
+    "canonical_reference": "we planted a small tree beside the old stone bridge",
+    "canonical_hypothesis": "we planted a small tree beside the old stone bridge",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.110737395000797,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-05",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "I forgot my umbrella but the rain stopped before dinner.",
+    "transcript": "I forgot my umbrella, but the rain stopped before dinner.",
+    "canonical_reference": "i forgot my umbrella but the rain stopped before dinner",
+    "canonical_hypothesis": "i forgot my umbrella but the rain stopped before dinner",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.127387040999565,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-06",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Your package should arrive tomorrow morning at the front desk.",
+    "transcript": "Your package should arrive tomorrow morning at the front desk.",
+    "canonical_reference": "your package should arrive tomorrow morning at the front desk",
+    "canonical_hypothesis": "your package should arrive tomorrow morning at the front desk",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1067439400003423,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-07",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The children watched the ducks swim across the pond.",
+    "transcript": "The children watched the ducks swim across the pond.",
+    "canonical_reference": "the children watched the ducks swim across the pond",
+    "canonical_hypothesis": "the children watched the ducks swim across the pond",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.093489832999694,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-08",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Save your work before restarting the computer.",
+    "transcript": "save your work before restarting the computer.",
+    "canonical_reference": "save your work before restarting the computer",
+    "canonical_hypothesis": "save your work before restarting the computer",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0719271759999174,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-09",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Would you like a cup of tea or a glass of water?",
+    "transcript": "Would you like a cup of tea or a glass of water?",
+    "canonical_reference": "would you like a cup of tea or a glass of water",
+    "canonical_hypothesis": "would you like a cup of tea or a glass of water",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1828344440000365,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-10",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "A warm breeze carried the smell of bread through the village.",
+    "transcript": "A warm breeze carried the smell of bread through the village.",
+    "canonical_reference": "a warm breeze carried the smell of bread through the village",
+    "canonical_hypothesis": "a warm breeze carried the smell of bread through the village",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.129736308000247,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-11",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The total is twenty three dollars and forty five cents, including tax.",
+    "transcript": "The total is $23.45, including tax.",
+    "canonical_reference": "the total is $23.45 including tax",
+    "canonical_hypothesis": "the total is $23.45 including tax",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 7,
+      "substitutions": 2,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1171888740000213,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-12",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+    "transcript": "The meeting is on March 15, 2026 at 9.30 AMIA.",
+    "canonical_reference": "the meeting is on march 15 2026 at 930 a m",
+    "canonical_hypothesis": "the meeting is on march 15 2026 at 930 amia",
+    "counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 8,
+      "substitutions": 5,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2560481900000013,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 4,
+      "substitutions": 3,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-13",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Sales increased by twelve point five percent last quarter.",
+    "transcript": "Sales increased by 12.5% last quarter.",
+    "canonical_reference": "sales increased by 12.5% last quarter",
+    "canonical_hypothesis": "sales increased by 12.5% last quarter",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 4,
+      "substitutions": 2,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.10497925799973,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-14",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The train leaves at six oh five p m from platform seven.",
+    "transcript": "the train leaves at 605 PM from platform 7.",
+    "canonical_reference": "the train leaves at 605 p m from platform 7",
+    "canonical_hypothesis": "the train leaves at 605 p m from platform 7",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 6,
+      "substitutions": 3,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.116543465000177,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-15",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "She finished twenty first in a race with one hundred eight runners.",
+    "transcript": "She finished 21st in a race with 108 runners.",
+    "canonical_reference": "she finished 21st in a race with 108 runners",
+    "canonical_hypothesis": "she finished 21st in a race with 108 runners",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 5,
+      "substitutions": 2,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.13595227299993,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-16",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+    "transcript": "The Blue Notebook costs €5.50 and the Pen costs £2.",
+    "canonical_reference": "the blue notebook costs €5.50 and the pen costs £2",
+    "canonical_hypothesis": "the blue notebook costs €5.50 and the pen costs £2",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 7,
+      "substitutions": 3,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2488753109992103,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-17",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+    "transcript": "Call 2 0 2 5 5 5 0 1 9 8 and ask for extension 42.",
+    "canonical_reference": "call 2025550198 and ask for extension 42",
+    "canonical_hypothesis": "call 2025550198 and ask for extension 42",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 17,
+      "errors": 12,
+      "substitutions": 11,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2786993250001615,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 10,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 9
+    }
+  },
+  {
+    "id": "structured-18",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+    "transcript": "The temperature fell from 18 degrees Celsius to minus 3 degrees Celsius overnight.",
+    "canonical_reference": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "canonical_hypothesis": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2133365180006876,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-19",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Send the report to alex at example dot com before Friday.",
+    "transcript": "Send the report to Alex at example.com before Friday.",
+    "canonical_reference": "send the report to alex at example dot com before friday",
+    "canonical_hypothesis": "send the report to alex at example dot com before friday",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1678045620001285,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-20",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+    "transcript": "The shipment contains 2,450 bolts weighing 3.75 kg.",
+    "canonical_reference": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "canonical_hypothesis": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 10,
+      "substitutions": 5,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1628239239998948,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-21",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Maya Thompson met Daniel Brooks near the station.",
+    "transcript": "Maya Thompson met Daniel Brooks near the station.",
+    "canonical_reference": "maya thompson met daniel brooks near the station",
+    "canonical_hypothesis": "maya thompson met daniel brooks near the station",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1014659490001577,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-22",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Aisha Khan and Priya Patel are leading the new project.",
+    "transcript": "Aisha Khan and Priya Patel are leading the new project.",
+    "canonical_reference": "aisha khan and priya patel are leading the new project",
+    "canonical_hypothesis": "aisha khan and priya patel are leading the new project",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1829240589995607,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-23",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Siobhan Murphy sent a letter to Niamh O Sullivan.",
+    "transcript": "Siobhan Murphy sent a letter to Nehem O'Sullivan.",
+    "canonical_reference": "siobhan murphy sent a letter to niamh 0 sullivan",
+    "canonical_hypothesis": "siobhan murphy sent a letter to nehem 0 sullivan",
+    "counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.180757305000043,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-24",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+    "transcript": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+    "canonical_reference": "xavier rodriguez booked a flight from seattle to chicago",
+    "canonical_hypothesis": "xavier rodriguez booked a flight from seattle to chicago",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1013928450001913,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-25",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Professor Nguyen invited Zhang Wei to the seminar.",
+    "transcript": "Professor Ngwen invited Jiang Wei to the seminar.",
+    "canonical_reference": "professor nguyen invited zhang wei to the seminar",
+    "canonical_hypothesis": "professor ngwen invited jiang wei to the seminar",
+    "counts": {
+      "words": 8,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1256961709996176,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-26",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Fatima Hassan visited the museum with Gabriel Santos.",
+    "transcript": "Fatima Hassan visited the museum with Gabriel Santos.",
+    "canonical_reference": "fatima hassan visited the museum with gabriel santos",
+    "canonical_hypothesis": "fatima hassan visited the museum with gabriel santos",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.117787612999564,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-27",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+    "transcript": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+    "canonical_reference": "charlotte beaumont moved from edinburgh to cambridge",
+    "canonical_hypothesis": "charlotte beaumont moved from edinburgh to cambridge",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.100520066000172,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-28",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal.",
+    "transcript": "Joaquin Alvarez spoke with Sa Ronan after the rehearsal.",
+    "canonical_reference": "joaquin alvarez spoke with saoirse ronan after the rehearsal",
+    "canonical_hypothesis": "joaquin alvarez spoke with sa ronan after the rehearsal",
+    "counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1467761579997386,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-29",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "The river runs through Worcester before reaching Gloucester.",
+    "transcript": "The river runs through Warsaw before reaching Glusister.",
+    "canonical_reference": "the river runs through worcester before reaching gloucester",
+    "canonical_hypothesis": "the river runs through warsaw before reaching glusister",
+    "counts": {
+      "words": 8,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.185480691999146,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-30",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Anjali Menon and Dimitri Petrov shared a table at the cafe.",
+    "transcript": "Anjali Minnan and Dimitri Petrov shared a table at the cafe.",
+    "canonical_reference": "anjali menon and dimitri petrov shared a table at the cafe",
+    "canonical_hypothesis": "anjali minnan and dimitri petrov shared a table at the cafe",
+    "counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2403770249993613,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-31",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "NASA launched a new satellite on Tuesday.",
+    "transcript": "NASA launched a new satellite on Tuesday.",
+    "canonical_reference": "nasa launched a new satellite on tuesday",
+    "canonical_hypothesis": "nasa launched a new satellite on tuesday",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0441074800000933,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-32",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The c p u and g p u share access to the same memory.",
+    "transcript": "the CPU and GPU share access to the same memory.",
+    "canonical_reference": "the c p u and g p u share access to the same memory",
+    "canonical_hypothesis": "the c p u and g p u share access to the same memory",
+    "counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1217706939996788,
+    "pre_format_audit_counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-33",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Use the a p i to send a jay son response over h t t p.",
+    "transcript": "Use the API to send a JSON response over HTTP.",
+    "canonical_reference": "use the a p i to send a json response over h t t p",
+    "canonical_hypothesis": "use the a p i to send a json response over h t t p",
+    "counts": {
+      "words": 15,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 16,
+      "errors": 9,
+      "substitutions": 3,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.120837131999906,
+    "pre_format_audit_counts": {
+      "words": 16,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-34",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The f b i contacted the local police about the case.",
+    "transcript": "the FBI contacted the local police about the case.",
+    "canonical_reference": "the f b i contacted the local police about the case",
+    "canonical_hypothesis": "the f b i contacted the local police about the case",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0990133410005,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-35",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "A u s b cable connects the s s d to the laptop.",
+    "transcript": "A USB cable connects the SSD to the laptop.",
+    "canonical_reference": "a u s b cable connects the s s d to the laptop",
+    "canonical_hypothesis": "a u s b cable connects the s s d to the laptop",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1052911469996616,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-36",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The b b c and c n n reported the result this morning.",
+    "transcript": "The BB Key and CNN reported the result this morning.",
+    "canonical_reference": "the b b c and c n n reported the result this morning",
+    "canonical_hypothesis": "the bb key and c n n reported the result this morning",
+    "counts": {
+      "words": 13,
+      "errors": 3,
+      "substitutions": 2,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 3,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.137736687999677,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 3,
+      "substitutions": 2,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-37",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Enable h t t p s and check the d n s configuration.",
+    "transcript": "Enable HTTPS and check the DNS configuration.",
+    "canonical_reference": "enable h t t p s and check the d n s configuration",
+    "canonical_hypothesis": "enable h t t p s and check the d n s configuration",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 8,
+      "substitutions": 2,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0733908679994784,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-38",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The m r i scan was reviewed by the hospital team.",
+    "transcript": "The MRI scan was reviewed by the hospital team.",
+    "canonical_reference": "the m r i scan was reviewed by the hospital team",
+    "canonical_hypothesis": "the m r i scan was reviewed by the hospital team",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.096190240999931,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-39",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "NATO and UNESCO issued separate statements.",
+    "transcript": "NATO and NSCO issued separate statements.",
+    "canonical_reference": "nato and unesco issued separate statements",
+    "canonical_hypothesis": "nato and nsco issued separate statements",
+    "counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0795147650005674,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-40",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Our s q l database stores each u r l as plain text.",
+    "transcript": "our SQL database stores each URL as plain text.",
+    "canonical_reference": "our s q l database stores each u r l as plain text",
+    "canonical_hypothesis": "our s q l database stores each u r l as plain text",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0980576910005766,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-41",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "transcript": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "canonical_reference": "although the forecast predicted heavy rain throughout the afternoon the volunteers arrived at the park before sunrise collected the fallen branches repaired the wooden benches and finished planting flowers just as the 1st visitors walked through the gate",
+    "canonical_hypothesis": "although the forecast predicted heavy rain throughout the afternoon the volunteers arrived at the park before sunrise collected the fallen branches repaired the wooden benches and finished planting flowers just as the 1st visitors walked through the gate",
+    "counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.9522627149999607,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-42",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings.",
+    "transcript": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings.",
+    "canonical_reference": "when you receive the replacement device please copy your documents to a separate drive check that every important file opens correctly sign out of your accounts and only then reset the old device to its original settings",
+    "canonical_hypothesis": "when you receive the replacement device please copy your documents to a separate drive check that every important file opens correctly sign out of your accounts and only then reset the old device to its original settings",
+    "counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.8798659449994375,
+    "pre_format_audit_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-43",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory, and continued to work reliably when the network connection failed during the final demonstration.",
+    "transcript": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, use less memory, and continued to work reliably when the network connection failed during the final demonstration.",
+    "canonical_reference": "the research team compared several approaches to the problem but they chose the simplest method because it was easier to explain used less memory and continued to work reliably when the network connection failed during the final demonstration",
+    "canonical_hypothesis": "the research team compared several approaches to the problem but they chose the simplest method because it was easier to explain use less memory and continued to work reliably when the network connection failed during the final demonstration",
+    "counts": {
+      "words": 38,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.944186226000056,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-44",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees.",
+    "transcript": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees.",
+    "canonical_reference": "after spending the summer restoring the old house the family invited their neighbors to dinner opened the windows to let in the evening breeze and talked about the years when the garden had been full of fruit trees",
+    "canonical_hypothesis": "after spending the summer restoring the old house the family invited their neighbors to dinner opened the windows to let in the evening breeze and talked about the years when the garden had been full of fruit trees",
+    "counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.886005467999894,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-45",
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater.",
+    "transcript": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater.",
+    "canonical_reference": "if the train is delayed again tomorrow we can take the earlier bus to the city leave our bags at the hotel and walk along the river before meeting everyone at the small restaurant opposite the theater",
+    "canonical_hypothesis": "if the train is delayed again tomorrow we can take the earlier bus to the city leave our bags at the hotel and walk along the river before meeting everyone at the small restaurant opposite the theater",
+    "counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.8503029499997865,
+    "pre_format_audit_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-11",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The total is twenty three dollars and forty five cents, including tax.",
+    "transcript": "The total is $23.45, including tax.",
+    "canonical_reference": "the total is $23.45 including tax",
+    "canonical_hypothesis": "the total is $23.45 including tax",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 7,
+      "substitutions": 2,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1073643070003527,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-12",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+    "transcript": "The meeting is on 03 15 2026 at 9 30 a.m.",
+    "canonical_reference": "the meeting is on march 15 2026 at 930 a m",
+    "canonical_hypothesis": "the meeting is on 3 15 2026 at 930 a m",
+    "counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 7,
+      "substitutions": 5,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.270244540999556,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 4,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 1
+    }
+  },
+  {
+    "id": "structured-13",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Sales increased by twelve point five percent last quarter.",
+    "transcript": "Sales increased by 12.5% last quarter.",
+    "canonical_reference": "sales increased by 12.5% last quarter",
+    "canonical_hypothesis": "sales increased by 12.5% last quarter",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 4,
+      "substitutions": 2,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0907165839998925,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-14",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The train leaves at six oh five p m from platform seven.",
+    "transcript": "The train leaves at 6.05 p.m. from Platform 7.",
+    "canonical_reference": "the train leaves at 605 p m from platform 7",
+    "canonical_hypothesis": "the train leaves at 605 p m from platform 7",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 4,
+      "substitutions": 3,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2064268750000338,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-15",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "She finished twenty first in a race with one hundred eight runners.",
+    "transcript": "She finished 21st in a race with 108 runners.",
+    "canonical_reference": "she finished 21st in a race with 108 runners",
+    "canonical_hypothesis": "she finished 21st in a race with 108 runners",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 5,
+      "substitutions": 2,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1180855439997686,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-16",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+    "transcript": "The Blue Notebook costs €5.50 and the Pen costs £2.",
+    "canonical_reference": "the blue notebook costs €5.50 and the pen costs £2",
+    "canonical_hypothesis": "the blue notebook costs €5.50 and the pen costs £2",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 7,
+      "substitutions": 3,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2449022470000273,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-17",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+    "transcript": "call 202-555-0198 and ask for extension 42.",
+    "canonical_reference": "call 2025550198 and ask for extension 42",
+    "canonical_hypothesis": "call 2025550198 and ask for extension 42",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 17,
+      "errors": 12,
+      "substitutions": 4,
+      "deletions": 8,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1600673259999894,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 2
+    }
+  },
+  {
+    "id": "structured-18",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+    "transcript": "The temperature fell from 18 degrees Celsius to minus 3 degrees Celsius overnight.",
+    "canonical_reference": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "canonical_hypothesis": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1938136469998426,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-19",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Send the report to alex at example dot com before Friday.",
+    "transcript": "Send the report to Alex at example.com before Friday.",
+    "canonical_reference": "send the report to alex at example dot com before friday",
+    "canonical_hypothesis": "send the report to alex at example dot com before friday",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.165088597000249,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-20",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+    "transcript": "The shipment contains 2,450 bolts weighing 3.75 kilograms.",
+    "canonical_reference": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "canonical_hypothesis": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 9,
+      "substitutions": 4,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.170623115000126,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-31",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "NASA launched a new satellite on Tuesday.",
+    "transcript": "NASA launched a new satellite on Tuesday.",
+    "canonical_reference": "nasa launched a new satellite on tuesday",
+    "canonical_hypothesis": "nasa launched a new satellite on tuesday",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0711139269997147,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-32",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The c p u and g p u share access to the same memory.",
+    "transcript": "The CPU and GPU share access to the same memory.",
+    "canonical_reference": "the c p u and g p u share access to the same memory",
+    "canonical_hypothesis": "the c p u and g p u share access to the same memory",
+    "counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1306586190003145,
+    "pre_format_audit_counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-33",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Use the a p i to send a jay son response over h t t p.",
+    "transcript": "Use the API to send a JSON response over HTTP.",
+    "canonical_reference": "use the a p i to send a json response over h t t p",
+    "canonical_hypothesis": "use the a p i to send a json response over h t t p",
+    "counts": {
+      "words": 15,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 16,
+      "errors": 9,
+      "substitutions": 3,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1511888559998624,
+    "pre_format_audit_counts": {
+      "words": 16,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-34",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The f b i contacted the local police about the case.",
+    "transcript": "the FBI contacted the local police about the case.",
+    "canonical_reference": "the f b i contacted the local police about the case",
+    "canonical_hypothesis": "the f b i contacted the local police about the case",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1230010110002695,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-35",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "A u s b cable connects the s s d to the laptop.",
+    "transcript": "A USB cable connects the SSD to the laptop.",
+    "canonical_reference": "a u s b cable connects the s s d to the laptop",
+    "canonical_hypothesis": "a u s b cable connects the s s d to the laptop",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1152503499997692,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-36",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The b b c and c n n reported the result this morning.",
+    "transcript": "The BBC and CNN reported the result this morning.",
+    "canonical_reference": "the b b c and c n n reported the result this morning",
+    "canonical_hypothesis": "the b b c and c n n reported the result this morning",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0962191970002095,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-37",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Enable h t t p s and check the d n s configuration.",
+    "transcript": "Enable HTTPS and check the DNS configuration.",
+    "canonical_reference": "enable h t t p s and check the d n s configuration",
+    "canonical_hypothesis": "enable h t t p s and check the d n s configuration",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 8,
+      "substitutions": 2,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.066924265000125,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-38",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The m r i scan was reviewed by the hospital team.",
+    "transcript": "The MRI scan was reviewed by the hospital team.",
+    "canonical_reference": "the m r i scan was reviewed by the hospital team",
+    "canonical_hypothesis": "the m r i scan was reviewed by the hospital team",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.081161116000658,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-39",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "NATO and UNESCO issued separate statements.",
+    "transcript": "NATO and NSCO issued separate statements.",
+    "canonical_reference": "nato and unesco issued separate statements",
+    "canonical_hypothesis": "nato and nsco issued separate statements",
+    "counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0711543110001003,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-40",
+    "model": "phonon-int8",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Our s q l database stores each u r l as plain text.",
+    "transcript": "our SQL database stores each URL as plain text.",
+    "canonical_reference": "our s q l database stores each u r l as plain text",
+    "canonical_hypothesis": "our s q l database stores each u r l as plain text",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.098275052000645,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-01",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The quick brown fox jumps over the lazy dog.",
+    "transcript": "The quick brown fox jumps over the lazy dog.",
+    "canonical_reference": "the quick brown fox jumps over the lazy dog",
+    "canonical_hypothesis": "the quick brown fox jumps over the lazy dog",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.112498642999526,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-02",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Please close the window before you leave the room.",
+    "transcript": "Please close the window before you leave the room.",
+    "canonical_reference": "please close the window before you leave the room",
+    "canonical_hypothesis": "please close the window before you leave the room",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0910919289999583,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-03",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The library opens early and stays quiet until lunch.",
+    "transcript": "The library opens early and stays quiet until lunch.",
+    "canonical_reference": "the library opens early and stays quiet until lunch",
+    "canonical_hypothesis": "the library opens early and stays quiet until lunch",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0931873610006733,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-04",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "We planted a small tree beside the old stone bridge.",
+    "transcript": "We planted a small tree beside the old stone bridge.",
+    "canonical_reference": "we planted a small tree beside the old stone bridge",
+    "canonical_hypothesis": "we planted a small tree beside the old stone bridge",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.116812127999765,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-05",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "I forgot my umbrella but the rain stopped before dinner.",
+    "transcript": "I forgot my umbrella, but the rain stopped before dinner.",
+    "canonical_reference": "i forgot my umbrella but the rain stopped before dinner",
+    "canonical_hypothesis": "i forgot my umbrella but the rain stopped before dinner",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1457925459999387,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-06",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Your package should arrive tomorrow morning at the front desk.",
+    "transcript": "Your package should arrive tomorrow morning at the front desk.",
+    "canonical_reference": "your package should arrive tomorrow morning at the front desk",
+    "canonical_hypothesis": "your package should arrive tomorrow morning at the front desk",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1175524769996628,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-07",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "The children watched the ducks swim across the pond.",
+    "transcript": "The children watched the ducks swim across the pond.",
+    "canonical_reference": "the children watched the ducks swim across the pond",
+    "canonical_hypothesis": "the children watched the ducks swim across the pond",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0879738290004752,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-08",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Save your work before restarting the computer.",
+    "transcript": "Save your work before restarting the computer.",
+    "canonical_reference": "save your work before restarting the computer",
+    "canonical_hypothesis": "save your work before restarting the computer",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0646719940004914,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-09",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "Would you like a cup of tea or a glass of water?",
+    "transcript": "Would you like a cup of tea or a glass of water?",
+    "canonical_reference": "would you like a cup of tea or a glass of water",
+    "canonical_hypothesis": "would you like a cup of tea or a glass of water",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1741675999992367,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "prose-10",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "prose",
+    "reference": "A warm breeze carried the smell of bread through the village.",
+    "transcript": "A warm breeze carried the smell of bread through the village.",
+    "canonical_reference": "a warm breeze carried the smell of bread through the village",
+    "canonical_hypothesis": "a warm breeze carried the smell of bread through the village",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.135025067999777,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-11",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The total is twenty three dollars and forty five cents, including tax.",
+    "transcript": "The total is $23.45, including tax.",
+    "canonical_reference": "the total is $23.45 including tax",
+    "canonical_hypothesis": "the total is $23.45 including tax",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 7,
+      "substitutions": 2,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0994035540006735,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-12",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+    "transcript": "The meeting is on March 15th, 2026 at 930 AMIOS.",
+    "canonical_reference": "the meeting is on march 15 2026 at 930 a m",
+    "canonical_hypothesis": "the meeting is on march 15 2026 at 930 amios",
+    "counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 8,
+      "substitutions": 4,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2294081620002544,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-13",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Sales increased by twelve point five percent last quarter.",
+    "transcript": "Sales increased by 12.5% last quarter.",
+    "canonical_reference": "sales increased by 12.5% last quarter",
+    "canonical_hypothesis": "sales increased by 12.5% last quarter",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 4,
+      "substitutions": 2,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0871332389997406,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-14",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The train leaves at six oh five p m from platform seven.",
+    "transcript": "The train leaves at 605 PM from platform 7.",
+    "canonical_reference": "the train leaves at 605 p m from platform 7",
+    "canonical_hypothesis": "the train leaves at 605 p m from platform 7",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 6,
+      "substitutions": 3,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1005622069997116,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-15",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "She finished twenty first in a race with one hundred eight runners.",
+    "transcript": "She finished 21st in a race with 108 runners.",
+    "canonical_reference": "she finished 21st in a race with 108 runners",
+    "canonical_hypothesis": "she finished 21st in a race with 108 runners",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 5,
+      "substitutions": 2,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.066246532999685,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-16",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+    "transcript": "The Blue Notebook costs €5.50 and the pen costs £2.",
+    "canonical_reference": "the blue notebook costs €5.50 and the pen costs £2",
+    "canonical_hypothesis": "the blue notebook costs €5.50 and the pen costs £2",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 7,
+      "substitutions": 3,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.195494895000593,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-17",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+    "transcript": "Call 2 0 2 5 5 5 0 1 9 8 and ask for extension 42.",
+    "canonical_reference": "call 2025550198 and ask for extension 42",
+    "canonical_hypothesis": "call 2025550198 and ask for extension 42",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 17,
+      "errors": 12,
+      "substitutions": 11,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1925072719996024,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 10,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 9
+    }
+  },
+  {
+    "id": "structured-18",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+    "transcript": "The temperature fell from 18 degrees Celsius to minus 3 degrees Celsius overnight.",
+    "canonical_reference": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "canonical_hypothesis": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.157642182000018,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-19",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "Send the report to alex at example dot com before Friday.",
+    "transcript": "Send the report to Alex at example.com before Friday.",
+    "canonical_reference": "send the report to alex at example dot com before friday",
+    "canonical_hypothesis": "send the report to alex at example dot com before friday",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.11238535099983,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-20",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "structured",
+    "reference": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+    "transcript": "The shipment contains 2,450 bolts weighing 3.75 kg.",
+    "canonical_reference": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "canonical_hypothesis": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 10,
+      "substitutions": 5,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.117585878999307,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-21",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Maya Thompson met Daniel Brooks near the station.",
+    "transcript": "Maya Thompson met Daniel Brooks near the station.",
+    "canonical_reference": "maya thompson met daniel brooks near the station",
+    "canonical_hypothesis": "maya thompson met daniel brooks near the station",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.062270782000269,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-22",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Aisha Khan and Priya Patel are leading the new project.",
+    "transcript": "Aisha Khan and Priya Patel are leading the new project.",
+    "canonical_reference": "aisha khan and priya patel are leading the new project",
+    "canonical_hypothesis": "aisha khan and priya patel are leading the new project",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1508384230000956,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-23",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Siobhan Murphy sent a letter to Niamh O Sullivan.",
+    "transcript": "Suvan Murphy sent a letter to Nehem O'Sullivan.",
+    "canonical_reference": "siobhan murphy sent a letter to niamh 0 sullivan",
+    "canonical_hypothesis": "suvan murphy sent a letter to nehem 0 sullivan",
+    "counts": {
+      "words": 9,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1473962179998125,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-24",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+    "transcript": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+    "canonical_reference": "xavier rodriguez booked a flight from seattle to chicago",
+    "canonical_hypothesis": "xavier rodriguez booked a flight from seattle to chicago",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.058339960000012,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-25",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Professor Nguyen invited Zhang Wei to the seminar.",
+    "transcript": "Professor Ngouin invited Zhang Wei to the seminar.",
+    "canonical_reference": "professor nguyen invited zhang wei to the seminar",
+    "canonical_hypothesis": "professor ngouin invited zhang wei to the seminar",
+    "counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0896844170001714,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-26",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Fatima Hassan visited the museum with Gabriel Santos.",
+    "transcript": "Fatima Hassan visited the museum with Gabriel Santos.",
+    "canonical_reference": "fatima hassan visited the museum with gabriel santos",
+    "canonical_hypothesis": "fatima hassan visited the museum with gabriel santos",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0761498760002723,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-27",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+    "transcript": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+    "canonical_reference": "charlotte beaumont moved from edinburgh to cambridge",
+    "canonical_hypothesis": "charlotte beaumont moved from edinburgh to cambridge",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0460691900007077,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-28",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal.",
+    "transcript": "Joaquin Alvarez spoke with Sawars Ronan after the rehearsal.",
+    "canonical_reference": "joaquin alvarez spoke with saoirse ronan after the rehearsal",
+    "canonical_hypothesis": "joaquin alvarez spoke with sawars ronan after the rehearsal",
+    "counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1402132329994856,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-29",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "The river runs through Worcester before reaching Gloucester.",
+    "transcript": "The river runs through Worcestershire before reaching Gloucester.",
+    "canonical_reference": "the river runs through worcester before reaching gloucester",
+    "canonical_hypothesis": "the river runs through worcestershire before reaching gloucester",
+    "counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1437238429998615,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "names-30",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "names",
+    "reference": "Anjali Menon and Dimitri Petrov shared a table at the cafe.",
+    "transcript": "Anjali Menon and Dimitri Petrov shared a table at the cafe.",
+    "canonical_reference": "anjali menon and dimitri petrov shared a table at the cafe",
+    "canonical_hypothesis": "anjali menon and dimitri petrov shared a table at the cafe",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2220757579998462,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-31",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "NASA launched a new satellite on Tuesday.",
+    "transcript": "NASA launched a new satellite on Tuesday.",
+    "canonical_reference": "nasa launched a new satellite on tuesday",
+    "canonical_hypothesis": "nasa launched a new satellite on tuesday",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.014897732999998,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-32",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The c p u and g p u share access to the same memory.",
+    "transcript": "the CPU and GPU share access to the same memory.",
+    "canonical_reference": "the c p u and g p u share access to the same memory",
+    "canonical_hypothesis": "the c p u and g p u share access to the same memory",
+    "counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.075814339000317,
+    "pre_format_audit_counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-33",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Use the a p i to send a jay son response over h t t p.",
+    "transcript": "Use the API to send a JSON response over HTTP.",
+    "canonical_reference": "use the a p i to send a json response over h t t p",
+    "canonical_hypothesis": "use the a p i to send a json response over h t t p",
+    "counts": {
+      "words": 15,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 16,
+      "errors": 9,
+      "substitutions": 3,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0799003239999365,
+    "pre_format_audit_counts": {
+      "words": 16,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-34",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The f b i contacted the local police about the case.",
+    "transcript": "The FBI contacted the local police about the case.",
+    "canonical_reference": "the f b i contacted the local police about the case",
+    "canonical_hypothesis": "the f b i contacted the local police about the case",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.065994182000395,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-35",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "A u s b cable connects the s s d to the laptop.",
+    "transcript": "A USB cable connects the SSD to the laptop.",
+    "canonical_reference": "a u s b cable connects the s s d to the laptop",
+    "canonical_hypothesis": "a u s b cable connects the s s d to the laptop",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0643541800000094,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-36",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The b b c and c n n reported the result this morning.",
+    "transcript": "The BB Key and CNN reported the result this morning.",
+    "canonical_reference": "the b b c and c n n reported the result this morning",
+    "canonical_hypothesis": "the bb key and c n n reported the result this morning",
+    "counts": {
+      "words": 13,
+      "errors": 3,
+      "substitutions": 2,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 3,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.124276440000358,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 3,
+      "substitutions": 2,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-37",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Enable h t t p s and check the d n s configuration.",
+    "transcript": "Enable HTTPS and check the DNS configuration.",
+    "canonical_reference": "enable h t t p s and check the d n s configuration",
+    "canonical_hypothesis": "enable h t t p s and check the d n s configuration",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 8,
+      "substitutions": 2,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.040652737000528,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-38",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "The m r i scan was reviewed by the hospital team.",
+    "transcript": "The MRI scan was reviewed by the hospital team.",
+    "canonical_reference": "the m r i scan was reviewed by the hospital team",
+    "canonical_hypothesis": "the m r i scan was reviewed by the hospital team",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.06778269500046,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-39",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "NATO and UNESCO issued separate statements.",
+    "transcript": "NATO and Nesco issued separate statements.",
+    "canonical_reference": "nato and unesco issued separate statements",
+    "canonical_hypothesis": "nato and nesco issued separate statements",
+    "counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0460351450001326,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-40",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "acronyms",
+    "reference": "Our s q l database stores each u r l as plain text.",
+    "transcript": "Our SQL database stores each URL as plain text.",
+    "canonical_reference": "our s q l database stores each u r l as plain text",
+    "canonical_hypothesis": "our s q l database stores each u r l as plain text",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0669600080000237,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-41",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "transcript": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "canonical_reference": "although the forecast predicted heavy rain throughout the afternoon the volunteers arrived at the park before sunrise collected the fallen branches repaired the wooden benches and finished planting flowers just as the 1st visitors walked through the gate",
+    "canonical_hypothesis": "although the forecast predicted heavy rain throughout the afternoon the volunteers arrived at the park before sunrise collected the fallen branches repaired the wooden benches and finished planting flowers just as the 1st visitors walked through the gate",
+    "counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.8648621140000614,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-42",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings.",
+    "transcript": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings.",
+    "canonical_reference": "when you receive the replacement device please copy your documents to a separate drive check that every important file opens correctly sign out of your accounts and only then reset the old device to its original settings",
+    "canonical_hypothesis": "when you receive the replacement device please copy your documents to a separate drive check that every important file opens correctly sign out of your accounts and only then reset the old device to its original settings",
+    "counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.8405767960002777,
+    "pre_format_audit_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-43",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory, and continued to work reliably when the network connection failed during the final demonstration.",
+    "transcript": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, use less memory, and continued to work reliably when the network connection failed during the final demonstration.",
+    "canonical_reference": "the research team compared several approaches to the problem but they chose the simplest method because it was easier to explain used less memory and continued to work reliably when the network connection failed during the final demonstration",
+    "canonical_hypothesis": "the research team compared several approaches to the problem but they chose the simplest method because it was easier to explain use less memory and continued to work reliably when the network connection failed during the final demonstration",
+    "counts": {
+      "words": 38,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.821062307999455,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-44",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees.",
+    "transcript": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees.",
+    "canonical_reference": "after spending the summer restoring the old house the family invited their neighbors to dinner opened the windows to let in the evening breeze and talked about the years when the garden had been full of fruit trees",
+    "canonical_hypothesis": "after spending the summer restoring the old house the family invited their neighbors to dinner opened the windows to let in the evening breeze and talked about the years when the garden had been full of fruit trees",
+    "counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.822456301000784,
+    "pre_format_audit_counts": {
+      "words": 38,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "long-45",
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "category": "long",
+    "reference": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater.",
+    "transcript": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater.",
+    "canonical_reference": "if the train is delayed again tomorrow we can take the earlier bus to the city leave our bags at the hotel and walk along the river before meeting everyone at the small restaurant opposite the theater",
+    "canonical_hypothesis": "if the train is delayed again tomorrow we can take the earlier bus to the city leave our bags at the hotel and walk along the river before meeting everyone at the small restaurant opposite the theater",
+    "counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.8107216030002746,
+    "pre_format_audit_counts": {
+      "words": 37,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-11",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The total is twenty three dollars and forty five cents, including tax.",
+    "transcript": "The total is $23.45, including tax.",
+    "canonical_reference": "the total is $23.45 including tax",
+    "canonical_hypothesis": "the total is $23.45 including tax",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 7,
+      "substitutions": 2,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.097908469999311,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-12",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+    "transcript": "The meeting is on 03 15 2026 at 9 30 a.m.",
+    "canonical_reference": "the meeting is on march 15 2026 at 930 a m",
+    "canonical_hypothesis": "the meeting is on 3 15 2026 at 930 a m",
+    "counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 7,
+      "substitutions": 5,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.2270328679996965,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 4,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 1
+    }
+  },
+  {
+    "id": "structured-13",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Sales increased by twelve point five percent last quarter.",
+    "transcript": "Sales increased by 12.5% last quarter.",
+    "canonical_reference": "sales increased by 12.5% last quarter",
+    "canonical_hypothesis": "sales increased by 12.5% last quarter",
+    "counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 9,
+      "errors": 4,
+      "substitutions": 2,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0774437359996227,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-14",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The train leaves at six oh five p m from platform seven.",
+    "transcript": "The train leaves at 6.05 p.m. from Platform 7.",
+    "canonical_reference": "the train leaves at 605 p m from platform 7",
+    "canonical_hypothesis": "the train leaves at 605 p m from platform 7",
+    "counts": {
+      "words": 10,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 4,
+      "substitutions": 3,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1767609899998206,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-15",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "She finished twenty first in a race with one hundred eight runners.",
+    "transcript": "She finished 21st in a race with 108 runners.",
+    "canonical_reference": "she finished 21st in a race with 108 runners",
+    "canonical_hypothesis": "she finished 21st in a race with 108 runners",
+    "counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 12,
+      "errors": 5,
+      "substitutions": 2,
+      "deletions": 3,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0892220460000317,
+    "pre_format_audit_counts": {
+      "words": 9,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-16",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+    "transcript": "The Blue Notebook costs €5.50 and the PEM costs £2.",
+    "canonical_reference": "the blue notebook costs €5.50 and the pen costs £2",
+    "canonical_hypothesis": "the blue notebook costs €5.50 and the pem costs £2",
+    "counts": {
+      "words": 10,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 8,
+      "substitutions": 4,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.240672203000031,
+    "pre_format_audit_counts": {
+      "words": 10,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-17",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+    "transcript": "call 202-555-0198 and ask for extension 42.",
+    "canonical_reference": "call 2025550198 and ask for extension 42",
+    "canonical_hypothesis": "call 2025550198 and ask for extension 42",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 17,
+      "errors": 12,
+      "substitutions": 4,
+      "deletions": 8,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1379189890003545,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 2
+    }
+  },
+  {
+    "id": "structured-18",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+    "transcript": "The temperature fell from 18 degrees Celsius to minus 3 degrees Celsius overnight.",
+    "canonical_reference": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "canonical_hypothesis": "the temperature fell from 18 degrees celsius to -3 degrees celsius overnight",
+    "counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 2,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.17589724499976,
+    "pre_format_audit_counts": {
+      "words": 12,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-19",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "Send the report to alex at example dot com before Friday.",
+    "transcript": "Send the report to Alex at example.com before Friday.",
+    "canonical_reference": "send the report to alex at example dot com before friday",
+    "canonical_hypothesis": "send the report to alex at example dot com before friday",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.144315059999826,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 1,
+      "substitutions": 0,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "structured-20",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "structured",
+    "reference": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+    "transcript": "The shipment contains 2,450 bolts weighing 3.75 kg.",
+    "canonical_reference": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "canonical_hypothesis": "the shipment contains 2450 bolts weighing 3.75 kilograms",
+    "counts": {
+      "words": 8,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 15,
+      "errors": 10,
+      "substitutions": 5,
+      "deletions": 5,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.1424409869996452,
+    "pre_format_audit_counts": {
+      "words": 8,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-31",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "NASA launched a new satellite on Tuesday.",
+    "transcript": "NASA launched a new satellite on Tuesday.",
+    "canonical_reference": "nasa launched a new satellite on tuesday",
+    "canonical_hypothesis": "nasa launched a new satellite on tuesday",
+    "counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0301931819994934,
+    "pre_format_audit_counts": {
+      "words": 7,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-32",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The c p u and g p u share access to the same memory.",
+    "transcript": "The CPU and GPU share access to the same memory.",
+    "canonical_reference": "the c p u and g p u share access to the same memory",
+    "canonical_hypothesis": "the c p u and g p u share access to the same memory",
+    "counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 14,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.08134201699977,
+    "pre_format_audit_counts": {
+      "words": 14,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-33",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Use the a p i to send a jay son response over h t t p.",
+    "transcript": "Use the API to send a JSON response over HTTP.",
+    "canonical_reference": "use the a p i to send a json response over h t t p",
+    "canonical_hypothesis": "use the a p i to send a json response over h t t p",
+    "counts": {
+      "words": 15,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 16,
+      "errors": 9,
+      "substitutions": 3,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.10410621399933,
+    "pre_format_audit_counts": {
+      "words": 16,
+      "errors": 2,
+      "substitutions": 1,
+      "deletions": 1,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-34",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The f b i contacted the local police about the case.",
+    "transcript": "the FBI contacted the local police about the case.",
+    "canonical_reference": "the f b i contacted the local police about the case",
+    "canonical_hypothesis": "the f b i contacted the local police about the case",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0613318380001147,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-35",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "A u s b cable connects the s s d to the laptop.",
+    "transcript": "A USB cable connects the SSD to the laptop.",
+    "canonical_reference": "a u s b cable connects the s s d to the laptop",
+    "canonical_hypothesis": "a u s b cable connects the s s d to the laptop",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0620606109996515,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-36",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The b b c and c n n reported the result this morning.",
+    "transcript": "The BBC and CNN reported the result this morning.",
+    "canonical_reference": "the b b c and c n n reported the result this morning",
+    "canonical_hypothesis": "the b b c and c n n reported the result this morning",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.068868889999976,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-37",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Enable h t t p s and check the d n s configuration.",
+    "transcript": "Enable HTTPS and check the DNS configuration.",
+    "canonical_reference": "enable h t t p s and check the d n s configuration",
+    "canonical_hypothesis": "enable h t t p s and check the d n s configuration",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 8,
+      "substitutions": 2,
+      "deletions": 6,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.057183986000382,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-38",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "The m r i scan was reviewed by the hospital team.",
+    "transcript": "The MRI scan was reviewed by the hospital team.",
+    "canonical_reference": "the m r i scan was reviewed by the hospital team",
+    "canonical_hypothesis": "the m r i scan was reviewed by the hospital team",
+    "counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 11,
+      "errors": 3,
+      "substitutions": 1,
+      "deletions": 2,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0719771639996907,
+    "pre_format_audit_counts": {
+      "words": 11,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-39",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "NATO and UNESCO issued separate statements.",
+    "transcript": "NATO and Nesco issued separate statements.",
+    "canonical_reference": "nato and unesco issued separate statements",
+    "canonical_hypothesis": "nato and nesco issued separate statements",
+    "counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.04635773300015,
+    "pre_format_audit_counts": {
+      "words": 6,
+      "errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0
+    }
+  },
+  {
+    "id": "acronyms-40",
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "category": "acronyms",
+    "reference": "Our s q l database stores each u r l as plain text.",
+    "transcript": "our SQL database stores each URL as plain text.",
+    "canonical_reference": "our s q l database stores each u r l as plain text",
+    "canonical_hypothesis": "our s q l database stores each u r l as plain text",
+    "counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "literal_counts": {
+      "words": 13,
+      "errors": 6,
+      "substitutions": 2,
+      "deletions": 4,
+      "insertions": 0
+    },
+    "asr_wall_s": 2.0636794629999713,
+    "pre_format_audit_counts": {
+      "words": 13,
+      "errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    }
+  }
+]

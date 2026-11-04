@@ -1,0 +1,142 @@
+{
+  "model": "kokoro",
+  "threads": 1,
+  "shape": "long",
+  "words": 275,
+  "load_s": 1.0410832940001455,
+  "warmup": {
+    "wall_s": 195.52968865699995,
+    "ttfa_s": 46.639956857000016,
+    "audio_s": 98.625,
+    "rtfx": 0.5043991052070304,
+    "chunks": [
+      {
+        "tokens": 418
+      },
+      {
+        "tokens": 377
+      },
+      {
+        "tokens": 476
+      },
+      {
+        "tokens": 434
+      }
+    ],
+    "normalized": "On a clear morning, the team walked from the station to the small workshop beside the river. They wanted to build a speaking assistant that could run without an internet connection. The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box. First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside. The assistant understood most requests, but a few unusual names and long addresses still caused problems. Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples. Next they compared two voices using exactly the same sentences. One voice spoke slowly and clearly, while the other sounded lively and natural. They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation. They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility. After lunch they listened to the samples through headphones and through the tiny speaker inside the box. Some differences were easy to hear, but others depended on the sentence and the volume. By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device. Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers. Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning."
+  },
+  "runs": [
+    {
+      "wall_s": 198.2114687320004,
+      "ttfa_s": 46.04120306499999,
+      "audio_s": 98.625,
+      "rtfx": 0.4975746390000762,
+      "chunks": [
+        {
+          "tokens": 418
+        },
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 476
+        },
+        {
+          "tokens": 434
+        }
+      ],
+      "normalized": "On a clear morning, the team walked from the station to the small workshop beside the river. They wanted to build a speaking assistant that could run without an internet connection. The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box. First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside. The assistant understood most requests, but a few unusual names and long addresses still caused problems. Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples. Next they compared two voices using exactly the same sentences. One voice spoke slowly and clearly, while the other sounded lively and natural. They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation. They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility. After lunch they listened to the samples through headphones and through the tiny speaker inside the box. Some differences were easy to hear, but others depended on the sentence and the volume. By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device. Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers. Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning."
+    },
+    {
+      "wall_s": 199.75797289699995,
+      "ttfa_s": 48.88050858299994,
+      "audio_s": 98.625,
+      "rtfx": 0.493722471096828,
+      "chunks": [
+        {
+          "tokens": 418
+        },
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 476
+        },
+        {
+          "tokens": 434
+        }
+      ],
+      "normalized": "On a clear morning, the team walked from the station to the small workshop beside the river. They wanted to build a speaking assistant that could run without an internet connection. The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box. First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside. The assistant understood most requests, but a few unusual names and long addresses still caused problems. Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples. Next they compared two voices using exactly the same sentences. One voice spoke slowly and clearly, while the other sounded lively and natural. They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation. They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility. After lunch they listened to the samples through headphones and through the tiny speaker inside the box. Some differences were easy to hear, but others depended on the sentence and the volume. By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device. Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers. Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning."
+    },
+    {
+      "wall_s": 194.90988912399962,
+      "ttfa_s": 46.115881762999834,
+      "audio_s": 98.625,
+      "rtfx": 0.5060030583530619,
+      "chunks": [
+        {
+          "tokens": 418
+        },
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 476
+        },
+        {
+          "tokens": 434
+        }
+      ],
+      "normalized": "On a clear morning, the team walked from the station to the small workshop beside the river. They wanted to build a speaking assistant that could run without an internet connection. The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box. First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside. The assistant understood most requests, but a few unusual names and long addresses still caused problems. Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples. Next they compared two voices using exactly the same sentences. One voice spoke slowly and clearly, while the other sounded lively and natural. They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation. They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility. After lunch they listened to the samples through headphones and through the tiny speaker inside the box. Some differences were easy to hear, but others depended on the sentence and the volume. By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device. Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers. Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning."
+    },
+    {
+      "wall_s": 196.75713938700028,
+      "ttfa_s": 46.46633832800035,
+      "audio_s": 98.625,
+      "rtfx": 0.5012524592869545,
+      "chunks": [
+        {
+          "tokens": 418
+        },
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 476
+        },
+        {
+          "tokens": 434
+        }
+      ],
+      "normalized": "On a clear morning, the team walked from the station to the small workshop beside the river. They wanted to build a speaking assistant that could run without an internet connection. The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box. First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside. The assistant understood most requests, but a few unusual names and long addresses still caused problems. Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples. Next they compared two voices using exactly the same sentences. One voice spoke slowly and clearly, while the other sounded lively and natural. They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation. They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility. After lunch they listened to the samples through headphones and through the tiny speaker inside the box. Some differences were easy to hear, but others depended on the sentence and the volume. By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device. Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers. Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning."
+    },
+    {
+      "wall_s": 198.26066536000008,
+      "ttfa_s": 46.984367827999904,
+      "audio_s": 98.625,
+      "rtfx": 0.4974511702607148,
+      "chunks": [
+        {
+          "tokens": 418
+        },
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 476
+        },
+        {
+          "tokens": 434
+        }
+      ],
+      "normalized": "On a clear morning, the team walked from the station to the small workshop beside the river. They wanted to build a speaking assistant that could run without an internet connection. The device needed to be simple enough for anyone to use and small enough to fit inside a wooden box. First they tested the microphone in a quiet room, then they repeated the same experiment while traffic passed outside. The assistant understood most requests, but a few unusual names and long addresses still caused problems. Rather than hide those mistakes, the team wrote them down and prepared a careful list of examples. Next they compared two voices using exactly the same sentences. One voice spoke slowly and clearly, while the other sounded lively and natural. They measured how long each system took to begin speaking, how much memory it needed, and whether it could keep up with a conversation. They also asked a separate speech recognizer to transcribe every recording, knowing that this was only a rough measure of intelligibility. After lunch they listened to the samples through headphones and through the tiny speaker inside the box. Some differences were easy to hear, but others depended on the sentence and the volume. By the end of the afternoon they had enough evidence to choose a promising direction, though they agreed that the final test should happen on the actual device. Their report included the source of every model, the settings used for every run, and a list of questions that still needed answers. Before leaving, they saved the results, closed the workshop windows, and placed the prototype on a shelf for the next morning."
+    }
+  ],
+  "median": {
+    "wall_s": 198.2114687320004,
+    "ttfa_s": 46.46633832800035,
+    "audio_s": 98.625,
+    "rtfx": 0.4975746390000762
+  },
+  "ru_maxrss_kib": 1190180
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "file": "01-kokoro-bella.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "prose-01",
+    "text": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "file": "02-kokoro-bella.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "structured-11",
+    "text": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "file": "03-kokoro-bella.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "structured-12",
+    "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "file": "04-kokoro-bella.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "names-21",
+    "text": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "file": "05-kokoro-bella.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "acronyms-31",
+    "text": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "file": "06-kokoro-bella.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "long-41",
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  },
+  {
+    "file": "01-kokoro-heart.wav",
+    "model": "kokoro",
+    "voice": "heart",
+    "corpus_id": "prose-01",
+    "text": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "file": "02-kokoro-heart.wav",
+    "model": "kokoro",
+    "voice": "heart",
+    "corpus_id": "structured-11",
+    "text": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "file": "03-kokoro-heart.wav",
+    "model": "kokoro",
+    "voice": "heart",
+    "corpus_id": "structured-12",
+    "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "file": "04-kokoro-heart.wav",
+    "model": "kokoro",
+    "voice": "heart",
+    "corpus_id": "names-21",
+    "text": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "file": "05-kokoro-heart.wav",
+    "model": "kokoro",
+    "voice": "heart",
+    "corpus_id": "acronyms-31",
+    "text": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "file": "06-kokoro-heart.wav",
+    "model": "kokoro",
+    "voice": "heart",
+    "corpus_id": "long-41",
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  },
+  {
+    "file": "01-phonon-int8-easton.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "prose-01",
+    "text": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "file": "02-phonon-int8-easton.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "structured-11",
+    "text": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "file": "03-phonon-int8-easton.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "structured-12",
+    "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "file": "04-phonon-int8-easton.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "names-21",
+    "text": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "file": "05-phonon-int8-easton.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "acronyms-31",
+    "text": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "file": "06-phonon-int8-easton.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "long-41",
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  },
+  {
+    "file": "01-phonon-int8-zoey.wav",
+    "model": "phonon-int8",
+    "voice": "zoey",
+    "corpus_id": "prose-01",
+    "text": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "file": "02-phonon-int8-zoey.wav",
+    "model": "phonon-int8",
+    "voice": "zoey",
+    "corpus_id": "structured-11",
+    "text": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "file": "03-phonon-int8-zoey.wav",
+    "model": "phonon-int8",
+    "voice": "zoey",
+    "corpus_id": "structured-12",
+    "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "file": "04-phonon-int8-zoey.wav",
+    "model": "phonon-int8",
+    "voice": "zoey",
+    "corpus_id": "names-21",
+    "text": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "file": "05-phonon-int8-zoey.wav",
+    "model": "phonon-int8",
+    "voice": "zoey",
+    "corpus_id": "acronyms-31",
+    "text": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "file": "06-phonon-int8-zoey.wav",
+    "model": "phonon-int8",
+    "voice": "zoey",
+    "corpus_id": "long-41",
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  },
+  {
+    "file": "01-phonon-fp32-easton.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "prose-01",
+    "text": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "file": "02-phonon-fp32-easton.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "structured-11",
+    "text": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "file": "03-phonon-fp32-easton.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "structured-12",
+    "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "file": "04-phonon-fp32-easton.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "names-21",
+    "text": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "file": "05-phonon-fp32-easton.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "acronyms-31",
+    "text": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "file": "06-phonon-fp32-easton.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "long-41",
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  },
+  {
+    "file": "01-phonon-fp32-zoey.wav",
+    "model": "phonon-fp32",
+    "voice": "zoey",
+    "corpus_id": "prose-01",
+    "text": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "file": "02-phonon-fp32-zoey.wav",
+    "model": "phonon-fp32",
+    "voice": "zoey",
+    "corpus_id": "structured-11",
+    "text": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "file": "03-phonon-fp32-zoey.wav",
+    "model": "phonon-fp32",
+    "voice": "zoey",
+    "corpus_id": "structured-12",
+    "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "file": "04-phonon-fp32-zoey.wav",
+    "model": "phonon-fp32",
+    "voice": "zoey",
+    "corpus_id": "names-21",
+    "text": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "file": "05-phonon-fp32-zoey.wav",
+    "model": "phonon-fp32",
+    "voice": "zoey",
+    "corpus_id": "acronyms-31",
+    "text": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "file": "06-phonon-fp32-zoey.wav",
+    "model": "phonon-fp32",
+    "voice": "zoey",
+    "corpus_id": "long-41",
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  }
+]

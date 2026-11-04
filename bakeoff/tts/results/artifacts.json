@@ -1,0 +1,1154 @@
+{
+  "phonon_revision": "f0f522a750bf515227cb478abb97b2ffca7e6d8c",
+  "whisper_revision": "d1d751a5f8271d482d14ca55d9e2deeebbae577f",
+  "reference_revision": "ee395caac058950cbcabfa3785c63630942f31ed",
+  "artifacts": [
+    {
+      "path": "/home/hvm/models/tts/phonon/README.md",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/README.md",
+      "bytes": 43892,
+      "sha256": "a0c332f8b76647b6581c71d8856a4f35f59d74dc881ab56e6aa4596ea53e05ec"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/config.json",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/config.json",
+      "bytes": 5430,
+      "sha256": "955e91c9ce60c6d98254b558b412b3d1e989e9998941ce6274868296dfd8fcd5"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/generation_config.json",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/generation_config.json",
+      "bytes": 144,
+      "sha256": "d8fe14f837757d0a947db545cce6d6f0d6dd3c50f4259f32ff1a303fdf0e58ad"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/mimi_decoder.onnx",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/mimi_decoder.onnx",
+      "bytes": 33479,
+      "sha256": "3a33403772d285ac77279b61902e836c1ef031568548f83831f04da889a457f8"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/mimi_decoder.onnx_data",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/mimi_decoder.onnx_data",
+      "bytes": 43670480,
+      "sha256": "35c735bfde62100182ee84747135515612c960f9b54e74233d44a9b509e4128e"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/mimi_decoder_int8.onnx",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/mimi_decoder_int8.onnx",
+      "bytes": 90402,
+      "sha256": "3594e7fce7b57d561b7e81816e2eb2b7fe7b3561cafcf58678f713065d1981b6"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/mimi_decoder_int8.onnx_data",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/mimi_decoder_int8.onnx_data",
+      "bytes": 24796112,
+      "sha256": "89a98f731f14acf6d17874dfdf706f90cfa5d44279e7249986aeb643147831e5"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/model.onnx",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/model.onnx",
+      "bytes": 225310,
+      "sha256": "4374b2f3bf69f2dcc0bcecfc91742f46d3b0934c9c4fa2f52126d02fb2de6c94"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/model.onnx_data",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/model.onnx_data",
+      "bytes": 121833472,
+      "sha256": "404bd74fa953816404a5be303f3362bf7afebd4f9b752b4e5c80f86589a50138"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/model_int8.onnx",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/model_int8.onnx",
+      "bytes": 771209,
+      "sha256": "58b6cdf0b79a10ad426d960258ef8017083f2eaa0a430985bdf0297070566d66"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/model_int8.onnx_data",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/onnx/model_int8.onnx_data",
+      "bytes": 38322176,
+      "sha256": "35582f56a6e78e49e03bd21f5adc5581a0ea9b111caf5f691ae3e5d3618cf91b"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/preprocessor_config.json",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/preprocessor_config.json",
+      "bytes": 600,
+      "sha256": "dd2f303cf9cfa7b243cadc09c156097f95cabfec6bf3c72937ca28ad176e0626"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/processor_config.json",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/processor_config.json",
+      "bytes": 747,
+      "sha256": "1ba08d75f0aba95fb494e8264e65e6b3e6b0b50981e1d49f183cb70eed58cfee"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/tokenizer.json",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/tokenizer.json",
+      "bytes": 169734,
+      "sha256": "bb2fb782d5a88704e224b6cb23663b44e60a29dc7c15fde71a2991a3efd0bdf0"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/tokenizer_config.json",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/tokenizer_config.json",
+      "bytes": 1711,
+      "sha256": "59536927c187437a8dbf19413c7c11212f594f35d194dee3758d8583074d7045"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/voices/LMDIYE0Oa377Qh6Z.bin",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/voices/LMDIYE0Oa377Qh6Z.bin",
+      "bytes": 256000,
+      "sha256": "6467e69cb22525b9a2784f661a543c0b018cba655ccc30be2e153ed2ac0f30ef"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/voices/NbpkqMVS3CJeq2j8.bin",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/voices/NbpkqMVS3CJeq2j8.bin",
+      "bytes": 256000,
+      "sha256": "2023c0fddede488a609b911803345ebc333b406fbfb39d3444fae5c7459000db"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/voices/default.bin",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/voices/default.bin",
+      "bytes": 256000,
+      "sha256": "d9291d795d2b3b3ca5aaf0d61c44b378918c840824e7c0bc41cfb63e5b0c560b"
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/voices/voices.jsonl",
+      "url": "https://huggingface.co/onnx-community/phonon-31m-en-ONNX/resolve/f0f522a750bf515227cb478abb97b2ffca7e6d8c/voices/voices.jsonl",
+      "bytes": 32591,
+      "sha256": "dde51468b3be4de200133b568aa6998ac57c53fea06eab74e2c51fbf45fe04a0"
+    },
+    {
+      "path": "/home/hvm/.helium/artefacts/models/kokoro-82m-v1.0/model_quantized.onnx",
+      "url": "https://github.com/jikkuatwork/cattery-artefacts/raw/main/models/kokoro-82m-v1.0/model_quantized.onnx",
+      "bytes": 92361116,
+      "sha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478"
+    },
+    {
+      "path": "/home/hvm/.helium/artefacts/models/kokoro-82m-v1.0/voices/af_bella.bin",
+      "url": "https://github.com/jikkuatwork/cattery-artefacts/raw/main/models/kokoro-82m-v1.0/voices/af_bella.bin",
+      "bytes": 522240,
+      "sha256": "f69d836209b78eb8c66e75e3cda491e26ea838a3674257e9d4e5703cbaf55c8b"
+    },
+    {
+      "path": "/home/hvm/.helium/artefacts/models/kokoro-82m-v1.0/voices/af_heart.bin",
+      "url": "https://github.com/jikkuatwork/cattery-artefacts/raw/main/models/kokoro-82m-v1.0/voices/af_heart.bin",
+      "bytes": 522240,
+      "sha256": "d583ccff3cdca2f7fae535cb998ac07e9fcb90f09737b9a41fa2734ec44a8f0b"
+    },
+    {
+      "path": "/home/hvm/models/tts/whisper-small.en/config.json",
+      "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/config.json",
+      "bytes": 2657,
+      "sha256": "666a9605530ac1f61fa8177f3702b4dacec9966749e42610839fcc32661d5fae"
+    },
+    {
+      "path": "/home/hvm/models/tts/whisper-small.en/model.bin",
+      "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/model.bin",
+      "bytes": 483545366,
+      "sha256": "62b2a45b05ee59acb4a5341b33ee35e041395d378d418a18acfe4c9e768ee37a"
+    },
+    {
+      "path": "/home/hvm/models/tts/whisper-small.en/tokenizer.json",
+      "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/tokenizer.json",
+      "bytes": 2128466,
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    },
+    {
+      "path": "/home/hvm/models/tts/whisper-small.en/vocabulary.txt",
+      "url": "https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/vocabulary.txt",
+      "bytes": 422309,
+      "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    }
+  ],
+  "graphs": [
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/mimi_decoder.onnx",
+      "producer": "huggingface",
+      "producer_version": "",
+      "ir": 10,
+      "opsets": {
+        "": 21,
+        "com.microsoft": 1
+      },
+      "ops": {
+        ":ReduceMax": 1,
+        ":Mul": 11,
+        ":Unsqueeze": 16,
+        ":Slice": 6,
+        ":Transpose": 9,
+        ":Conv": 9,
+        ":ConvTranspose": 1,
+        ":LayerNormalization": 4,
+        ":MatMul": 11,
+        ":Shape": 3,
+        ":Split": 5,
+        ":Gather": 11,
+        ":Add": 17,
+        ":Range": 5,
+        ":Div": 2,
+        ":Concat": 12,
+        ":Expand": 2,
+        ":Sub": 2,
+        "com.microsoft:RotaryEmbedding": 4,
+        ":Min": 2,
+        ":Tile": 2,
+        ":Pad": 13,
+        ":Reshape": 11,
+        "com.microsoft:MultiHeadAttention": 2,
+        "com.microsoft:Gelu": 2,
+        ":Elu": 10,
+        ":Less": 1,
+        ":Where": 1
+      },
+      "inputs": [
+        {
+          "name": "audio_latents",
+          "shape": [
+            "batch_size",
+            "frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "num_frames",
+          "shape": [
+            "batch_size"
+          ],
+          "type": "INT64"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio_values",
+          "shape": [
+            "batch_size",
+            1,
+            "samples"
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "audio_lengths",
+          "shape": [
+            "batch_size"
+          ],
+          "type": "INT64"
+        }
+      ]
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/mimi_decoder_int8.onnx",
+      "producer": "onnx.quantize",
+      "producer_version": "0.1.0",
+      "ir": 10,
+      "opsets": {
+        "": 21,
+        "com.microsoft": 1
+      },
+      "ops": {
+        ":ReduceMax": 1,
+        ":Mul": 27,
+        ":Unsqueeze": 16,
+        ":Slice": 6,
+        ":Transpose": 9,
+        ":Conv": 9,
+        ":ConvTranspose": 1,
+        ":LayerNormalization": 4,
+        ":DynamicQuantizeLinear": 8,
+        ":MatMulInteger": 8,
+        ":Cast": 8,
+        ":Shape": 3,
+        ":Split": 5,
+        ":Gather": 11,
+        ":Add": 17,
+        ":Range": 5,
+        ":Concat": 12,
+        ":Div": 2,
+        ":Expand": 2,
+        ":Sub": 2,
+        ":Min": 2,
+        "com.microsoft:RotaryEmbedding": 4,
+        ":Tile": 2,
+        ":Pad": 13,
+        ":Reshape": 11,
+        "com.microsoft:MultiHeadAttention": 2,
+        "com.microsoft:Gelu": 2,
+        ":Elu": 10,
+        ":MatMul": 3,
+        ":Less": 1,
+        ":Where": 1
+      },
+      "inputs": [
+        {
+          "name": "audio_latents",
+          "shape": [
+            "batch_size",
+            "frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "num_frames",
+          "shape": [
+            "batch_size"
+          ],
+          "type": "INT64"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio_values",
+          "shape": [
+            "batch_size",
+            1,
+            "samples"
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "audio_lengths",
+          "shape": [
+            "batch_size"
+          ],
+          "type": "INT64"
+        }
+      ]
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/model.onnx",
+      "producer": "huggingface",
+      "producer_version": "",
+      "ir": 10,
+      "opsets": {
+        "": 21,
+        "com.microsoft": 1
+      },
+      "ops": {
+        ":Shape": 12,
+        ":Gather": 13,
+        ":Cast": 18,
+        ":Slice": 41,
+        ":MatMul": 337,
+        ":Sub": 9,
+        ":Unsqueeze": 47,
+        ":Add": 240,
+        ":Mul": 106,
+        ":Concat": 13,
+        ":LayerNormalization": 16,
+        ":Expand": 17,
+        ":Split": 80,
+        "com.microsoft:RotaryEmbedding": 96,
+        "com.microsoft:GroupQueryAttention": 48,
+        "com.microsoft:SkipLayerNormalization": 144,
+        "com.microsoft:Gelu": 48,
+        ":Squeeze": 8,
+        "com.microsoft:QuickGelu": 56
+      },
+      "inputs": [
+        {
+          "name": "input_ids",
+          "shape": [
+            "batch_size",
+            "text_length"
+          ],
+          "type": "INT64"
+        },
+        {
+          "name": "audio_prompt_latents",
+          "shape": [
+            "batch_size",
+            "voice_length",
+            512
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "attention_mask",
+          "shape": [
+            "batch_size",
+            "total_sequence_length"
+          ],
+          "type": "INT64"
+        },
+        {
+          "name": "position_ids",
+          "shape": [
+            "batch_size",
+            "new_sequence_length"
+          ],
+          "type": "INT64"
+        },
+        {
+          "name": "past_key_values.audio_latents",
+          "shape": [
+            "batch_size",
+            "past_frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "noise",
+          "shape": [
+            "batch_size",
+            8,
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.0.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.0.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.1.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.1.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.2.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.2.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.3.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.3.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.4.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.4.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.5.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.5.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio_latents",
+          "shape": [
+            "batch_size",
+            "frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.audio_latents",
+          "shape": [
+            "batch_size",
+            "frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "eos_logits",
+          "shape": [
+            "batch_size",
+            8
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.0.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.0.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.1.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.1.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.2.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.2.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.3.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.3.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.4.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.4.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.5.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.5.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        }
+      ]
+    },
+    {
+      "path": "/home/hvm/models/tts/phonon/onnx/model_int8.onnx",
+      "producer": "onnx.quantize",
+      "producer_version": "0.1.0",
+      "ir": 10,
+      "opsets": {
+        "": 21,
+        "com.microsoft": 1
+      },
+      "ops": {
+        ":Cast": 355,
+        ":Shape": 12,
+        ":DynamicQuantizeLinear": 329,
+        ":Gather": 13,
+        ":Slice": 41,
+        ":Sub": 9,
+        ":Mul": 780,
+        ":MatMulInteger": 337,
+        ":Add": 240,
+        ":Unsqueeze": 47,
+        ":Concat": 13,
+        ":Expand": 17,
+        ":LayerNormalization": 16,
+        ":Split": 80,
+        "com.microsoft:RotaryEmbedding": 96,
+        "com.microsoft:GroupQueryAttention": 48,
+        "com.microsoft:SkipLayerNormalization": 144,
+        "com.microsoft:Gelu": 48,
+        ":Squeeze": 8,
+        "com.microsoft:QuickGelu": 56
+      },
+      "inputs": [
+        {
+          "name": "input_ids",
+          "shape": [
+            "batch_size",
+            "text_length"
+          ],
+          "type": "INT64"
+        },
+        {
+          "name": "audio_prompt_latents",
+          "shape": [
+            "batch_size",
+            "voice_length",
+            512
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "attention_mask",
+          "shape": [
+            "batch_size",
+            "total_sequence_length"
+          ],
+          "type": "INT64"
+        },
+        {
+          "name": "position_ids",
+          "shape": [
+            "batch_size",
+            "new_sequence_length"
+          ],
+          "type": "INT64"
+        },
+        {
+          "name": "past_key_values.audio_latents",
+          "shape": [
+            "batch_size",
+            "past_frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "noise",
+          "shape": [
+            "batch_size",
+            8,
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.0.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.0.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.1.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.1.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.2.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.2.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.3.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.3.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.4.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.4.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.5.key",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "past_key_values.5.value",
+          "shape": [
+            "batch_size",
+            8,
+            "past_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio_latents",
+          "shape": [
+            "batch_size",
+            "frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.audio_latents",
+          "shape": [
+            "batch_size",
+            "frames",
+            32
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "eos_logits",
+          "shape": [
+            "batch_size",
+            8
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.0.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.0.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.1.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.1.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.2.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.2.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.3.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.3.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.4.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.4.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.5.key",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "present.5.value",
+          "shape": [
+            "batch_size",
+            8,
+            "total_sequence_length",
+            64
+          ],
+          "type": "FLOAT"
+        }
+      ]
+    },
+    {
+      "path": "/home/hvm/.helium/artefacts/models/kokoro-82m-v1.0/model_quantized.onnx",
+      "producer": "onnx.quantize",
+      "producer_version": "0.1.0",
+      "ir": 9,
+      "opsets": {
+        "": 20,
+        "com.microsoft.experimental": 1,
+        "ai.onnx.ml": 5,
+        "ai.onnx.training": 1,
+        "com.microsoft": 1,
+        "ai.onnx.preview.training": 1,
+        "com.microsoft.nchwc": 1,
+        "org.pytorch.aten": 1
+      },
+      "ops": {
+        ":Shape": 73,
+        ":Gather": 134,
+        ":Split": 74,
+        ":DequantizeLinear": 4,
+        ":DynamicQuantizeLinear": 139,
+        ":Unsqueeze": 192,
+        ":Transpose": 87,
+        ":MatMulInteger": 148,
+        ":Mul": 737,
+        ":Concat": 72,
+        ":Slice": 22,
+        ":Cast": 333,
+        ":Equal": 4,
+        ":ConstantOfShape": 6,
+        ":ConvInteger": 87,
+        ":Where": 7,
+        ":Add": 546,
+        ":Div": 174,
+        ":Expand": 5,
+        ":Floor": 81,
+        ":Reshape": 141,
+        ":LayerNormalization": 19,
+        ":Sub": 68,
+        ":LeakyRelu": 28,
+        ":Sqrt": 90,
+        ":MatMul": 26,
+        ":Softmax": 12,
+        "com.microsoft:DynamicQuantizeLSTM": 6,
+        "com.microsoft:FastGelu": 12,
+        "com.microsoft:SkipLayerNormalization": 12,
+        ":Sigmoid": 1,
+        ":ReduceSum": 1,
+        ":Round": 1,
+        ":Clip": 1,
+        ":CumSum": 2,
+        ":Range": 2,
+        ":Less": 2,
+        ":GreaterOrEqual": 1,
+        ":And": 1,
+        "com.microsoft:FusedMatMul": 1,
+        ":ReduceMean": 130,
+        ":Resize": 6,
+        ":ConvTranspose": 6,
+        ":Squeeze": 5,
+        ":Greater": 3,
+        ":Sin": 51,
+        ":Tanh": 1,
+        ":Pad": 2,
+        ":STFT": 1,
+        ":Pow": 50,
+        ":Atan": 1,
+        ":Conv": 1,
+        ":Exp": 1,
+        ":Cos": 1,
+        ":NonZero": 1,
+        ":ScatterND": 1
+      },
+      "inputs": [
+        {
+          "name": "input_ids",
+          "shape": [
+            1,
+            "sequence_length"
+          ],
+          "type": "INT64"
+        },
+        {
+          "name": "style",
+          "shape": [
+            1,
+            256
+          ],
+          "type": "FLOAT"
+        },
+        {
+          "name": "speed",
+          "shape": [
+            1
+          ],
+          "type": "FLOAT"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "waveform",
+          "shape": [
+            1,
+            "num_samples"
+          ],
+          "type": "FLOAT"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "platform": "Linux-7.0.0-1017-azure-aarch64-with-glibc2.39",
+    "machine": "aarch64",
+    "python": "3.12.3",
+    "ort": "1.24.4",
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "go": "go version go1.25.1 linux/arm64",
+    "lscpu": "Architecture:                            aarch64\nCPU op-mode(s):                          32-bit, 64-bit\nByte Order:                              Little Endian\nCPU(s):                                  32\nOn-line CPU(s) list:                     0-31\nVendor ID:                               ARM\nModel name:                              Neoverse-N1\nModel:                                   1\nThread(s) per core:                      1\nCore(s) per socket:                      32\nSocket(s):                               1\nStepping:                                r3p1\nBogoMIPS:                                50.00\nFlags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nL1d cache:                               2 MiB (32 instances)\nL1i cache:                               2 MiB (32 instances)\nL2 cache:                                32 MiB (32 instances)\nL3 cache:                                32 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-31\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Mitigation; PTI\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Not affected\nVulnerability Spectre v1:                Mitigation; __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; CSV2, BHB\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+    "corpus_sha256": "c6eb863cbc444ac3b6ed02d2400ef7dc0007949f5345afbd95220d53d76a323b",
+    "speed_texts_sha256": "49563de9a2d2fd80d9c2d6138e9d41826e239802f4d503de3ca68c32b775801b"
+  }
+}

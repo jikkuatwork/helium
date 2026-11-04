@@ -1,0 +1,3777 @@
+[
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-01",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-01.wav",
+    "wall_s": 5.446746877000351,
+    "ttfa_s": 5.446669796999686,
+    "audio_s": 3.625,
+    "rtfx": 0.6655348746436279,
+    "chunks": [
+      {
+        "tokens": 53
+      }
+    ],
+    "normalized": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-02",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-02.wav",
+    "wall_s": 4.894339894000041,
+    "ttfa_s": 4.894292253999993,
+    "audio_s": 3.275,
+    "rtfx": 0.6691402867248379,
+    "chunks": [
+      {
+        "tokens": 52
+      }
+    ],
+    "normalized": "Please close the window before you leave the room."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-03",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-03.wav",
+    "wall_s": 6.352613469999596,
+    "ttfa_s": 6.352552629999991,
+    "audio_s": 4.3,
+    "rtfx": 0.6768867679903517,
+    "chunks": [
+      {
+        "tokens": 61
+      }
+    ],
+    "normalized": "The library opens early and stays quiet until lunch."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-04",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-04.wav",
+    "wall_s": 5.878799213000093,
+    "ttfa_s": 5.878744773000108,
+    "audio_s": 4.0,
+    "rtfx": 0.6804110593120093,
+    "chunks": [
+      {
+        "tokens": 60
+      }
+    ],
+    "normalized": "We planted a small tree beside the old stone bridge."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-05",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-05.wav",
+    "wall_s": 6.352461086999938,
+    "ttfa_s": 6.352411447000122,
+    "audio_s": 4.25,
+    "rtfx": 0.6690320399911552,
+    "chunks": [
+      {
+        "tokens": 61
+      }
+    ],
+    "normalized": "I forgot my umbrella but the rain stopped before dinner."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-06",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-06.wav",
+    "wall_s": 6.311302371000238,
+    "ttfa_s": 6.311246291000316,
+    "audio_s": 4.225,
+    "rtfx": 0.6694339379798098,
+    "chunks": [
+      {
+        "tokens": 62
+      }
+    ],
+    "normalized": "Your package should arrive tomorrow morning at the front desk."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-07",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-07.wav",
+    "wall_s": 5.162183176999861,
+    "ttfa_s": 5.162131336999664,
+    "audio_s": 3.475,
+    "rtfx": 0.6731647988554308,
+    "chunks": [
+      {
+        "tokens": 54
+      }
+    ],
+    "normalized": "The children watched the ducks swim across the pond."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-08",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-08.wav",
+    "wall_s": 4.591375179999886,
+    "ttfa_s": 4.591311059999498,
+    "audio_s": 3.1,
+    "rtfx": 0.6751789776413081,
+    "chunks": [
+      {
+        "tokens": 50
+      }
+    ],
+    "normalized": "Save your work before restarting the computer."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-09",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-09.wav",
+    "wall_s": 5.162491801000215,
+    "ttfa_s": 5.162440441000399,
+    "audio_s": 3.475,
+    "rtfx": 0.6731245557284432,
+    "chunks": [
+      {
+        "tokens": 51
+      }
+    ],
+    "normalized": "Would you like a cup of tea or a glass of water?"
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "prose-10",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/kokoro-prose-10.wav",
+    "wall_s": 6.09438545500052,
+    "ttfa_s": 6.094329295000534,
+    "audio_s": 4.1,
+    "rtfx": 0.6727503585510657,
+    "chunks": [
+      {
+        "tokens": 57
+      }
+    ],
+    "normalized": "A warm breeze carried the smell of bread through the village."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-11",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-11.wav",
+    "wall_s": 7.581831923000209,
+    "ttfa_s": 7.581767523000053,
+    "audio_s": 5.1,
+    "rtfx": 0.67266065138277,
+    "chunks": [
+      {
+        "tokens": 79
+      }
+    ],
+    "normalized": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-12",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-12.wav",
+    "wall_s": 7.764426246000767,
+    "ttfa_s": 7.764365486000315,
+    "audio_s": 5.175,
+    "rtfx": 0.6665012759526815,
+    "chunks": [
+      {
+        "tokens": 82
+      }
+    ],
+    "normalized": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-13",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-13.wav",
+    "wall_s": 6.06502707799973,
+    "ttfa_s": 6.064976317999935,
+    "audio_s": 4.075,
+    "rtfx": 0.6718848815665884,
+    "chunks": [
+      {
+        "tokens": 64
+      }
+    ],
+    "normalized": "Sales increased by twelve point five percent last quarter."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-14",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-14.wav",
+    "wall_s": 6.4445029540002,
+    "ttfa_s": 6.444448234000447,
+    "audio_s": 4.325,
+    "rtfx": 0.6711145965594457,
+    "chunks": [
+      {
+        "tokens": 69
+      }
+    ],
+    "normalized": "The train leaves at six oh five p m from platform seven."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-15",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-15.wav",
+    "wall_s": 6.348470306999843,
+    "ttfa_s": 6.348415706999731,
+    "audio_s": 4.225,
+    "rtfx": 0.6655146508823553,
+    "chunks": [
+      {
+        "tokens": 68
+      }
+    ],
+    "normalized": "She finished twenty first in a race with one hundred eight runners."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-16",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-16.wav",
+    "wall_s": 8.439460620000318,
+    "ttfa_s": 8.439395899999909,
+    "audio_s": 5.675,
+    "rtfx": 0.6724363387099714,
+    "chunks": [
+      {
+        "tokens": 90
+      }
+    ],
+    "normalized": "The blue notebook costs five euros and fifty cents and the pen costs two pounds."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-17",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-17.wav",
+    "wall_s": 10.281886009000118,
+    "ttfa_s": 10.281800208999812,
+    "audio_s": 6.9,
+    "rtfx": 0.6710831061499974,
+    "chunks": [
+      {
+        "tokens": 104
+      }
+    ],
+    "normalized": "Call two zero two five five five zero one nine eight and ask for extension forty two."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-18",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-18.wav",
+    "wall_s": 9.666421652999816,
+    "ttfa_s": 9.666353253000125,
+    "audio_s": 6.425,
+    "rtfx": 0.6646720193512463,
+    "chunks": [
+      {
+        "tokens": 98
+      }
+    ],
+    "normalized": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-19",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-19.wav",
+    "wall_s": 6.956898502000513,
+    "ttfa_s": 6.956841142000485,
+    "audio_s": 4.675,
+    "rtfx": 0.6719948549854027,
+    "chunks": [
+      {
+        "tokens": 70
+      }
+    ],
+    "normalized": "Send the report to alex at example dot com before Friday."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "structured-20",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-structured-20.wav",
+    "wall_s": 9.780990871999165,
+    "ttfa_s": 9.780923951999284,
+    "audio_s": 6.6,
+    "rtfx": 0.6747782598278825,
+    "chunks": [
+      {
+        "tokens": 111
+      }
+    ],
+    "normalized": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-21",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-21.wav",
+    "wall_s": 5.736971392000669,
+    "ttfa_s": 5.736903352000809,
+    "audio_s": 3.85,
+    "rtfx": 0.6710857936939058,
+    "chunks": [
+      {
+        "tokens": 53
+      }
+    ],
+    "normalized": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-22",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-22.wav",
+    "wall_s": 6.226811337999607,
+    "ttfa_s": 6.226746417999493,
+    "audio_s": 4.175,
+    "rtfx": 0.670487633778421,
+    "chunks": [
+      {
+        "tokens": 61
+      }
+    ],
+    "normalized": "Aisha Khan and Priya Patel are leading the new project."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-23",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-23.wav",
+    "wall_s": 5.889678589000141,
+    "ttfa_s": 5.889628668999649,
+    "audio_s": 3.925,
+    "rtfx": 0.666420067018687,
+    "chunks": [
+      {
+        "tokens": 52
+      }
+    ],
+    "normalized": "Siobhan Murphy sent a letter to Niamh O Sullivan."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-24",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-24.wav",
+    "wall_s": 7.060660705000373,
+    "ttfa_s": 7.060584345000279,
+    "audio_s": 4.725,
+    "rtfx": 0.6692008294144124,
+    "chunks": [
+      {
+        "tokens": 63
+      }
+    ],
+    "normalized": "Xavier Rodriguez booked a flight from Seattle to Chicago."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-25",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-25.wav",
+    "wall_s": 6.238939441999719,
+    "ttfa_s": 6.238885241999924,
+    "audio_s": 4.175,
+    "rtfx": 0.6691842481903975,
+    "chunks": [
+      {
+        "tokens": 54
+      }
+    ],
+    "normalized": "Professor Nguyen invited Zhang Wei to the seminar."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-26",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-26.wav",
+    "wall_s": 6.5998283680000895,
+    "ttfa_s": 6.599773767999977,
+    "audio_s": 4.425,
+    "rtfx": 0.6704719809768149,
+    "chunks": [
+      {
+        "tokens": 61
+      }
+    ],
+    "normalized": "Fatima Hassan visited the museum with Gabriel Santos."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-27",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-27.wav",
+    "wall_s": 5.698355651000384,
+    "ttfa_s": 5.698308730999997,
+    "audio_s": 3.85,
+    "rtfx": 0.6756335047855617,
+    "chunks": [
+      {
+        "tokens": 54
+      }
+    ],
+    "normalized": "Charlotte Beaumont moved from Edinburgh to Cambridge."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-28",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-28.wav",
+    "wall_s": 6.824244057999749,
+    "ttfa_s": 6.824187617999996,
+    "audio_s": 4.6,
+    "rtfx": 0.6740673341844552,
+    "chunks": [
+      {
+        "tokens": 65
+      }
+    ],
+    "normalized": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-29",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-29.wav",
+    "wall_s": 5.8807002000003195,
+    "ttfa_s": 5.8806466799997,
+    "audio_s": 4.0,
+    "rtfx": 0.680191110575537,
+    "chunks": [
+      {
+        "tokens": 53
+      }
+    ],
+    "normalized": "The river runs through Worcester before reaching Gloucester."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "names-30",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/kokoro-names-30.wav",
+    "wall_s": 7.191319309999926,
+    "ttfa_s": 7.191261509000469,
+    "audio_s": 4.825,
+    "rtfx": 0.670947818057609,
+    "chunks": [
+      {
+        "tokens": 69
+      }
+    ],
+    "normalized": "Anjali Menon and Dimitri Petrov shared a table at the cafe."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-31",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-31.wav",
+    "wall_s": 4.6489615359996606,
+    "ttfa_s": 4.648915095999655,
+    "audio_s": 3.15,
+    "rtfx": 0.6775706737101793,
+    "chunks": [
+      {
+        "tokens": 46
+      }
+    ],
+    "normalized": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-32",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-32.wav",
+    "wall_s": 7.543662073999258,
+    "ttfa_s": 7.543603913999505,
+    "audio_s": 5.075,
+    "rtfx": 0.6727501775950442,
+    "chunks": [
+      {
+        "tokens": 70
+      }
+    ],
+    "normalized": "The c p u and g p u share access to the same memory."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-33",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-33.wav",
+    "wall_s": 8.084241913999904,
+    "ttfa_s": 8.08418143400013,
+    "audio_s": 5.425,
+    "rtfx": 0.6710585924705251,
+    "chunks": [
+      {
+        "tokens": 82
+      }
+    ],
+    "normalized": "Use the a p i to send a jay son response over h t t p."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-34",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-34.wav",
+    "wall_s": 6.733098885999425,
+    "ttfa_s": 6.733044126000095,
+    "audio_s": 4.55,
+    "rtfx": 0.6757661036972313,
+    "chunks": [
+      {
+        "tokens": 65
+      }
+    ],
+    "normalized": "The f b i contacted the local police about the case."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-35",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-35.wav",
+    "wall_s": 6.737108461999924,
+    "ttfa_s": 6.737051981999684,
+    "audio_s": 4.55,
+    "rtfx": 0.6753639229149836,
+    "chunks": [
+      {
+        "tokens": 65
+      }
+    ],
+    "normalized": "A u s b cable connects the s s d to the laptop."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-36",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-36.wav",
+    "wall_s": 7.465148653999677,
+    "ttfa_s": 7.4650874540002405,
+    "audio_s": 5.025,
+    "rtfx": 0.6731279218810607,
+    "chunks": [
+      {
+        "tokens": 71
+      }
+    ],
+    "normalized": "The b b c and c n n reported the result this morning."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-37",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-37.wav",
+    "wall_s": 8.06913774899931,
+    "ttfa_s": 8.069070788999852,
+    "audio_s": 5.45,
+    "rtfx": 0.6754129337643144,
+    "chunks": [
+      {
+        "tokens": 79
+      }
+    ],
+    "normalized": "Enable h t t p s and check the d n s configuration."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-38",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-38.wav",
+    "wall_s": 6.441817240999626,
+    "ttfa_s": 6.441763441000148,
+    "audio_s": 4.4,
+    "rtfx": 0.6830370740721633,
+    "chunks": [
+      {
+        "tokens": 60
+      }
+    ],
+    "normalized": "The m r i scan was reviewed by the hospital team."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-39",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-39.wav",
+    "wall_s": 4.947940201000165,
+    "ttfa_s": 4.947889840999778,
+    "audio_s": 3.35,
+    "rtfx": 0.6770494112525529,
+    "chunks": [
+      {
+        "tokens": 48
+      }
+    ],
+    "normalized": "NATO and UNESCO issued separate statements."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "acronyms-40",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-acronyms-40.wav",
+    "wall_s": 6.8400693719995616,
+    "ttfa_s": 6.840008651000062,
+    "audio_s": 4.575,
+    "rtfx": 0.668852865546682,
+    "chunks": [
+      {
+        "tokens": 77
+      }
+    ],
+    "normalized": "Our s q l database stores each u r l as plain text."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "long-41",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/kokoro-long-41.wav",
+    "wall_s": 23.94048616300006,
+    "ttfa_s": 23.940349002999938,
+    "audio_s": 15.875,
+    "rtfx": 0.6631026576450548,
+    "chunks": [
+      {
+        "tokens": 263
+      }
+    ],
+    "normalized": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "long-42",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/kokoro-long-42.wav",
+    "wall_s": 22.534919173999697,
+    "ttfa_s": 22.534776974000124,
+    "audio_s": 14.975,
+    "rtfx": 0.6645242383330947,
+    "chunks": [
+      {
+        "tokens": 243
+      }
+    ],
+    "normalized": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "long-43",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/kokoro-long-43.wav",
+    "wall_s": 24.097363394999775,
+    "ttfa_s": 24.097202955000284,
+    "audio_s": 16.025,
+    "rtfx": 0.6650105132798554,
+    "chunks": [
+      {
+        "tokens": 261
+      }
+    ],
+    "normalized": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory, and continued to work reliably when the network connection failed during the final demonstration."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "long-44",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/kokoro-long-44.wav",
+    "wall_s": 20.173835242000678,
+    "ttfa_s": 20.17370204100007,
+    "audio_s": 13.45,
+    "rtfx": 0.6667051573811771,
+    "chunks": [
+      {
+        "tokens": 218
+      }
+    ],
+    "normalized": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees."
+  },
+  {
+    "model": "kokoro",
+    "mode": "controlled",
+    "id": "long-45",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/kokoro-long-45.wav",
+    "wall_s": 18.96670894900035,
+    "ttfa_s": 18.966593868000018,
+    "audio_s": 12.625,
+    "rtfx": 0.6656399923649067,
+    "chunks": [
+      {
+        "tokens": 212
+      }
+    ],
+    "normalized": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-11",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-11.wav",
+    "wall_s": 7.59705840999959,
+    "ttfa_s": 7.597009729999627,
+    "audio_s": 5.1,
+    "rtfx": 0.6713124639514618,
+    "chunks": [
+      {
+        "tokens": 79
+      }
+    ],
+    "normalized": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-12",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-12.wav",
+    "wall_s": 7.748906601000272,
+    "ttfa_s": 7.748858281000139,
+    "audio_s": 5.175,
+    "rtfx": 0.6678361563077793,
+    "chunks": [
+      {
+        "tokens": 82
+      }
+    ],
+    "normalized": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-13",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-13.wav",
+    "wall_s": 6.079446138999629,
+    "ttfa_s": 6.079396698999517,
+    "audio_s": 4.075,
+    "rtfx": 0.670291323720904,
+    "chunks": [
+      {
+        "tokens": 64
+      }
+    ],
+    "normalized": "Sales increased by twelve point five percent last quarter."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-14",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-14.wav",
+    "wall_s": 6.46580012800041,
+    "ttfa_s": 6.465749087999939,
+    "audio_s": 4.325,
+    "rtfx": 0.6689040666862578,
+    "chunks": [
+      {
+        "tokens": 69
+      }
+    ],
+    "normalized": "The train leaves at six oh five p m from platform seven."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-15",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-15.wav",
+    "wall_s": 6.709585954000431,
+    "ttfa_s": 6.709522273999937,
+    "audio_s": 4.475,
+    "rtfx": 0.6669562072353938,
+    "chunks": [
+      {
+        "tokens": 72
+      }
+    ],
+    "normalized": "She finished twenty first in a race with one hundred and eight runners."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-16",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-16.wav",
+    "wall_s": 8.478223892000642,
+    "ttfa_s": 8.478167371999916,
+    "audio_s": 5.675,
+    "rtfx": 0.6693618937516459,
+    "chunks": [
+      {
+        "tokens": 90
+      }
+    ],
+    "normalized": "The blue notebook costs five euros and fifty cents and the pen costs two pounds."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-17",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-17.wav",
+    "wall_s": 12.337675843000397,
+    "ttfa_s": 12.337606842999776,
+    "audio_s": 8.225,
+    "rtfx": 0.6666571649851163,
+    "chunks": [
+      {
+        "tokens": 129
+      }
+    ],
+    "normalized": "Call two hundred and two-five hundred and fifty five-one hundred and ninety eight and ask for extension forty two."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-18",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-18.wav",
+    "wall_s": 7.831120728000315,
+    "ttfa_s": 7.831060888000138,
+    "audio_s": 5.25,
+    "rtfx": 0.6704021279136368,
+    "chunks": [
+      {
+        "tokens": 81
+      }
+    ],
+    "normalized": "The temperature fell from eighteen\u00b0C to -three\u00b0C overnight."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-19",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-19.wav",
+    "wall_s": 6.544042535000699,
+    "ttfa_s": 6.543988815000375,
+    "audio_s": 4.375,
+    "rtfx": 0.6685469992898713,
+    "chunks": [
+      {
+        "tokens": 65
+      }
+    ],
+    "normalized": "Send the report to alex at example.com before Friday."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "structured-20",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-structured-20.wav",
+    "wall_s": 10.69137160900027,
+    "ttfa_s": 10.691292249000071,
+    "audio_s": 7.125,
+    "rtfx": 0.6664252502459078,
+    "chunks": [
+      {
+        "tokens": 115
+      }
+    ],
+    "normalized": "The shipment contains two thousand four hundred and fifty bolts weighing three point seven five kilograms."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-31",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-31.wav",
+    "wall_s": 4.6989270479998595,
+    "ttfa_s": 4.698889528000109,
+    "audio_s": 3.15,
+    "rtfx": 0.6703658021975093,
+    "chunks": [
+      {
+        "tokens": 46
+      }
+    ],
+    "normalized": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-32",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-32.wav",
+    "wall_s": 7.585692587999802,
+    "ttfa_s": 7.585627427999498,
+    "audio_s": 5.075,
+    "rtfx": 0.6690226292624096,
+    "chunks": [
+      {
+        "tokens": 70
+      }
+    ],
+    "normalized": "The C P U and G P U share access to the same memory."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-33",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-33.wav",
+    "wall_s": 8.890433481999935,
+    "ttfa_s": 8.890360162000434,
+    "audio_s": 5.95,
+    "rtfx": 0.6692587051066408,
+    "chunks": [
+      {
+        "tokens": 88
+      }
+    ],
+    "normalized": "Use the A P I to send a J S O N response over H T T P."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-34",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-34.wav",
+    "wall_s": 6.526334098000007,
+    "ttfa_s": 6.526280897999641,
+    "audio_s": 4.4,
+    "rtfx": 0.6741916570511429,
+    "chunks": [
+      {
+        "tokens": 64
+      }
+    ],
+    "normalized": "The F B I contacted the local police about the case."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-35",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-35.wav",
+    "wall_s": 6.827206162999573,
+    "ttfa_s": 6.827146802999778,
+    "audio_s": 4.55,
+    "rtfx": 0.6664512380860828,
+    "chunks": [
+      {
+        "tokens": 65
+      }
+    ],
+    "normalized": "A U S B cable connects the S S D to the laptop."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-36",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-36.wav",
+    "wall_s": 7.5405364420003025,
+    "ttfa_s": 7.540466842000569,
+    "audio_s": 5.025,
+    "rtfx": 0.6663982116724579,
+    "chunks": [
+      {
+        "tokens": 71
+      }
+    ],
+    "normalized": "The B B C and C N N reported the result this morning."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-37",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-37.wav",
+    "wall_s": 8.149023906000366,
+    "ttfa_s": 8.148958786000549,
+    "audio_s": 5.45,
+    "rtfx": 0.6687917550452889,
+    "chunks": [
+      {
+        "tokens": 79
+      }
+    ],
+    "normalized": "Enable H T T P S and check the D N S configuration."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-38",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-38.wav",
+    "wall_s": 6.205416116999913,
+    "ttfa_s": 6.20535919699978,
+    "audio_s": 4.15,
+    "rtfx": 0.6687706225906362,
+    "chunks": [
+      {
+        "tokens": 59
+      }
+    ],
+    "normalized": "The M R I scan was reviewed by the hospital team."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-39",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-39.wav",
+    "wall_s": 4.987097430999711,
+    "ttfa_s": 4.9870571909996215,
+    "audio_s": 3.35,
+    "rtfx": 0.6717334173534406,
+    "chunks": [
+      {
+        "tokens": 48
+      }
+    ],
+    "normalized": "NATO and UNESCO issued separate statements."
+  },
+  {
+    "model": "kokoro",
+    "mode": "raw",
+    "id": "acronyms-40",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/kokoro-raw-acronyms-40.wav",
+    "wall_s": 6.824789353999222,
+    "ttfa_s": 6.824744554000063,
+    "audio_s": 4.575,
+    "rtfx": 0.6703503599446803,
+    "chunks": [
+      {
+        "tokens": 77
+      }
+    ],
+    "normalized": "Our S Q L database stores each U R L as plain text."
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-01",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-01.wav",
+    "wall_s": 0.27198220700029196,
+    "ttfa_s": 0.2718406869998944,
+    "audio_s": 2.96,
+    "rtfx": 10.883064861654066,
+    "chunks": [
+      {
+        "text": "The quick brown fox jumps over the lazy dog.",
+        "tokens": 14,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-02",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-02.wav",
+    "wall_s": 0.25405555599991203,
+    "ttfa_s": 0.25402499600022566,
+    "audio_s": 2.64,
+    "rtfx": 10.39142792846819,
+    "chunks": [
+      {
+        "text": "Please close the window before you leave the room.",
+        "tokens": 13,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-03",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-03.wav",
+    "wall_s": 0.31976967599985073,
+    "ttfa_s": 0.3197026759999062,
+    "audio_s": 3.52,
+    "rtfx": 11.00792309024838,
+    "chunks": [
+      {
+        "text": "The library opens early and stays quiet until lunch.",
+        "tokens": 15,
+        "frames": 44,
+        "eos": 44,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-04",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-04.wav",
+    "wall_s": 0.278120329999183,
+    "ttfa_s": 0.2780935299997509,
+    "audio_s": 3.12,
+    "rtfx": 11.218165892472388,
+    "chunks": [
+      {
+        "text": "We planted a small tree beside the old stone bridge.",
+        "tokens": 16,
+        "frames": 39,
+        "eos": 39,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-05",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-05.wav",
+    "wall_s": 0.2701890460002687,
+    "ttfa_s": 0.27009512599943264,
+    "audio_s": 3.2,
+    "rtfx": 11.843559342508717,
+    "chunks": [
+      {
+        "text": "I forgot my umbrella but the rain stopped before dinner.",
+        "tokens": 18,
+        "frames": 40,
+        "eos": 40,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-06",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-06.wav",
+    "wall_s": 0.27296036799998546,
+    "ttfa_s": 0.27293056799953774,
+    "audio_s": 3.2,
+    "rtfx": 11.723313620386717,
+    "chunks": [
+      {
+        "text": "Your package should arrive tomorrow morning at the front desk.",
+        "tokens": 18,
+        "frames": 40,
+        "eos": 40,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-07",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-07.wav",
+    "wall_s": 0.2652733229997466,
+    "ttfa_s": 0.2651605629998812,
+    "audio_s": 2.96,
+    "rtfx": 11.158302563288007,
+    "chunks": [
+      {
+        "text": "The children watched the ducks swim across the pond.",
+        "tokens": 19,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-08",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-08.wav",
+    "wall_s": 0.2481328330004544,
+    "ttfa_s": 0.24810743300076865,
+    "audio_s": 2.72,
+    "rtfx": 10.961870571940873,
+    "chunks": [
+      {
+        "text": "Save your work before restarting the computer.",
+        "tokens": 13,
+        "frames": 34,
+        "eos": 34,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-09",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-09.wav",
+    "wall_s": 0.26294932099972357,
+    "ttfa_s": 0.2629206410001643,
+    "audio_s": 2.96,
+    "rtfx": 11.256922013512678,
+    "chunks": [
+      {
+        "text": "Would you like a cup of tea or a glass of water?",
+        "tokens": 13,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "prose-10",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-int8-prose-10.wav",
+    "wall_s": 0.30873443000018597,
+    "ttfa_s": 0.30855907000022853,
+    "audio_s": 3.28,
+    "rtfx": 10.624017541542173,
+    "chunks": [
+      {
+        "text": "A warm breeze carried the smell of bread through the village.",
+        "tokens": 19,
+        "frames": 41,
+        "eos": 41,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-11",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-11.wav",
+    "wall_s": 0.3940589630001341,
+    "ttfa_s": 0.393840282000383,
+    "audio_s": 4.48,
+    "rtfx": 11.368857000211097,
+    "chunks": [
+      {
+        "text": "The total is twenty three dollars and forty five cents, including tax.",
+        "tokens": 23,
+        "frames": 56,
+        "eos": 56,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-12",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-12.wav",
+    "wall_s": 0.3722870689998672,
+    "ttfa_s": 0.3720716289999473,
+    "audio_s": 4.4,
+    "rtfx": 11.818836501145222,
+    "chunks": [
+      {
+        "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+        "tokens": 29,
+        "frames": 55,
+        "eos": 55,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-13",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-13.wav",
+    "wall_s": 0.29918114399970364,
+    "ttfa_s": 0.2991516239999328,
+    "audio_s": 3.36,
+    "rtfx": 11.230654295523813,
+    "chunks": [
+      {
+        "text": "Sales increased by twelve point five percent last quarter.",
+        "tokens": 18,
+        "frames": 42,
+        "eos": 42,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-14",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-14.wav",
+    "wall_s": 0.317958114999783,
+    "ttfa_s": 0.3179237149997789,
+    "audio_s": 3.68,
+    "rtfx": 11.573851480414367,
+    "chunks": [
+      {
+        "text": "The train leaves at six oh five p m from platform seven.",
+        "tokens": 16,
+        "frames": 46,
+        "eos": 46,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-15",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-15.wav",
+    "wall_s": 0.3161405949995242,
+    "ttfa_s": 0.31610515499960457,
+    "audio_s": 3.52,
+    "rtfx": 11.134286629672783,
+    "chunks": [
+      {
+        "text": "She finished twenty first in a race with one hundred eight runners.",
+        "tokens": 20,
+        "frames": 44,
+        "eos": 44,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-16",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-16.wav",
+    "wall_s": 0.4269921820005038,
+    "ttfa_s": 0.4268593820006572,
+    "audio_s": 4.64,
+    "rtfx": 10.866709498663665,
+    "chunks": [
+      {
+        "text": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+        "tokens": 25,
+        "frames": 58,
+        "eos": 58,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-17",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-17.wav",
+    "wall_s": 0.470155168999554,
+    "ttfa_s": 0.46991404899927147,
+    "audio_s": 5.36,
+    "rtfx": 11.400491483281098,
+    "chunks": [
+      {
+        "text": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+        "tokens": 21,
+        "frames": 67,
+        "eos": 67,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-18",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-18.wav",
+    "wall_s": 0.4295391830000881,
+    "ttfa_s": 0.42949858300016786,
+    "audio_s": 4.96,
+    "rtfx": 11.54725854195002,
+    "chunks": [
+      {
+        "text": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+        "tokens": 33,
+        "frames": 62,
+        "eos": 62,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-19",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-19.wav",
+    "wall_s": 0.31688915399990947,
+    "ttfa_s": 0.31685367400041287,
+    "audio_s": 3.76,
+    "rtfx": 11.865347717142361,
+    "chunks": [
+      {
+        "text": "Send the report to alex at example dot com before Friday.",
+        "tokens": 20,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "structured-20",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-structured-20.wav",
+    "wall_s": 0.49735170400072093,
+    "ttfa_s": 0.49710698400031106,
+    "audio_s": 5.6,
+    "rtfx": 11.259637706985481,
+    "chunks": [
+      {
+        "text": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+        "tokens": 34,
+        "frames": 70,
+        "eos": 70,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-21",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-21.wav",
+    "wall_s": 0.2660594830003902,
+    "ttfa_s": 0.2660328829997525,
+    "audio_s": 3.04,
+    "rtfx": 11.42601633934447,
+    "chunks": [
+      {
+        "text": "Maya Thompson met Daniel Brooks near the station.",
+        "tokens": 18,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-22",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-22.wav",
+    "wall_s": 0.31128355100008775,
+    "ttfa_s": 0.31125263100057055,
+    "audio_s": 3.6,
+    "rtfx": 11.56501841627663,
+    "chunks": [
+      {
+        "text": "Aisha Khan and Priya Patel are leading the new project.",
+        "tokens": 20,
+        "frames": 45,
+        "eos": 45,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-23",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-23.wav",
+    "wall_s": 0.266730443000597,
+    "ttfa_s": 0.26670332300000155,
+    "audio_s": 3.2,
+    "rtfx": 11.997130751186274,
+    "chunks": [
+      {
+        "text": "Siobhan Murphy sent a letter to Niamh O Sullivan.",
+        "tokens": 21,
+        "frames": 40,
+        "eos": 40,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-24",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-24.wav",
+    "wall_s": 0.3142512730000817,
+    "ttfa_s": 0.3142201129994646,
+    "audio_s": 3.44,
+    "rtfx": 10.946654144497629,
+    "chunks": [
+      {
+        "text": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+        "tokens": 22,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-25",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-25.wav",
+    "wall_s": 0.3047512659995846,
+    "ttfa_s": 0.30467218600006163,
+    "audio_s": 3.36,
+    "rtfx": 11.02538487897399,
+    "chunks": [
+      {
+        "text": "Professor Nguyen invited Zhang Wei to the seminar.",
+        "tokens": 23,
+        "frames": 42,
+        "eos": 42,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-26",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-26.wav",
+    "wall_s": 0.32568891999926564,
+    "ttfa_s": 0.3255176789998586,
+    "audio_s": 3.76,
+    "rtfx": 11.544758722551807,
+    "chunks": [
+      {
+        "text": "Fatima Hassan visited the museum with Gabriel Santos.",
+        "tokens": 22,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-27",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-27.wav",
+    "wall_s": 0.26610976299980393,
+    "ttfa_s": 0.26608416300041426,
+    "audio_s": 3.04,
+    "rtfx": 11.42385745539986,
+    "chunks": [
+      {
+        "text": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+        "tokens": 22,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-28",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-28.wav",
+    "wall_s": 0.3556095379999533,
+    "ttfa_s": 0.3555758180000339,
+    "audio_s": 4.0,
+    "rtfx": 11.24829222100484,
+    "chunks": [
+      {
+        "text": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal.",
+        "tokens": 25,
+        "frames": 50,
+        "eos": 50,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-29",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-29.wav",
+    "wall_s": 0.27161884700035444,
+    "ttfa_s": 0.27159136699992814,
+    "audio_s": 3.2,
+    "rtfx": 11.781214872750802,
+    "chunks": [
+      {
+        "text": "The river runs through Worcester before reaching Gloucester.",
+        "tokens": 22,
+        "frames": 40,
+        "eos": 40,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "names-30",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-int8-names-30.wav",
+    "wall_s": 0.3613536610000665,
+    "ttfa_s": 0.3612697809994643,
+    "audio_s": 4.24,
+    "rtfx": 11.73365723835636,
+    "chunks": [
+      {
+        "text": "Anjali Menon and Dimitri Petrov shared a table at the cafe.",
+        "tokens": 21,
+        "frames": 53,
+        "eos": 53,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-31",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-31.wav",
+    "wall_s": 0.24919647199931205,
+    "ttfa_s": 0.2491689119997318,
+    "audio_s": 2.64,
+    "rtfx": 10.594050464756533,
+    "chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-32",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-32.wav",
+    "wall_s": 0.36576702399997885,
+    "ttfa_s": 0.3657312639998054,
+    "audio_s": 4.08,
+    "rtfx": 11.154641430989788,
+    "chunks": [
+      {
+        "text": "The c p u and g p u share access to the same memory.",
+        "tokens": 19,
+        "frames": 51,
+        "eos": 51,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-33",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-33.wav",
+    "wall_s": 0.3678485849995923,
+    "ttfa_s": 0.36781058500037034,
+    "audio_s": 4.24,
+    "rtfx": 11.526481745212367,
+    "chunks": [
+      {
+        "text": "Use the a p i to send a jay son response over h t t p.",
+        "tokens": 20,
+        "frames": 53,
+        "eos": 53,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-34",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-34.wav",
+    "wall_s": 0.3049357059999238,
+    "ttfa_s": 0.3049035060003007,
+    "audio_s": 3.44,
+    "rtfx": 11.28106657342666,
+    "chunks": [
+      {
+        "text": "The f b i contacted the local police about the case.",
+        "tokens": 15,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-35",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-35.wav",
+    "wall_s": 0.34459189099925425,
+    "ttfa_s": 0.3445598109992716,
+    "audio_s": 3.92,
+    "rtfx": 11.375775525746436,
+    "chunks": [
+      {
+        "text": "A u s b cable connects the s s d to the laptop.",
+        "tokens": 25,
+        "frames": 49,
+        "eos": 49,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-36",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-36.wav",
+    "wall_s": 0.3072611080006027,
+    "ttfa_s": 0.3072260280005139,
+    "audio_s": 3.6,
+    "rtfx": 11.71641937837749,
+    "chunks": [
+      {
+        "text": "The b b c and c n n reported the result this morning.",
+        "tokens": 20,
+        "frames": 45,
+        "eos": 45,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-37",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-37.wav",
+    "wall_s": 0.3583310590001929,
+    "ttfa_s": 0.35829221899984987,
+    "audio_s": 3.92,
+    "rtfx": 10.939604317129232,
+    "chunks": [
+      {
+        "text": "Enable h t t p s and check the d n s configuration.",
+        "tokens": 22,
+        "frames": 49,
+        "eos": 49,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-38",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-38.wav",
+    "wall_s": 0.27173484600007214,
+    "ttfa_s": 0.2716987659996448,
+    "audio_s": 3.04,
+    "rtfx": 11.187376388228078,
+    "chunks": [
+      {
+        "text": "The m r i scan was reviewed by the hospital team.",
+        "tokens": 19,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-39",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-39.wav",
+    "wall_s": 0.22386961699976382,
+    "ttfa_s": 0.22384441699978197,
+    "audio_s": 2.56,
+    "rtfx": 11.43522749673843,
+    "chunks": [
+      {
+        "text": "NATO and UNESCO issued separate statements.",
+        "tokens": 18,
+        "frames": 32,
+        "eos": 32,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "acronyms-40",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-acronyms-40.wav",
+    "wall_s": 0.36115794099987397,
+    "ttfa_s": 0.3611217409998062,
+    "audio_s": 4.08,
+    "rtfx": 11.296996512673728,
+    "chunks": [
+      {
+        "text": "Our s q l database stores each u r l as plain text.",
+        "tokens": 22,
+        "frames": 51,
+        "eos": 51,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "long-41",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-int8-long-41.wav",
+    "wall_s": 1.1680426349994377,
+    "ttfa_s": 0.6823688969998329,
+    "audio_s": 13.12,
+    "rtfx": 11.232466698449167,
+    "chunks": [
+      {
+        "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches,",
+        "tokens": 46,
+        "frames": 97,
+        "eos": 97,
+        "capped": false
+      },
+      {
+        "text": "Repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+        "tokens": 36,
+        "frames": 67,
+        "eos": 67,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "long-42",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-int8-long-42.wav",
+    "wall_s": 1.0540147259998776,
+    "ttfa_s": 0.7500116989995149,
+    "audio_s": 12.0,
+    "rtfx": 11.385040174477973,
+    "chunks": [
+      {
+        "text": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts,",
+        "tokens": 44,
+        "frames": 107,
+        "eos": 107,
+        "capped": false
+      },
+      {
+        "text": "And only then reset the old device to its original settings.",
+        "tokens": 18,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "long-43",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-int8-long-43.wav",
+    "wall_s": 1.059476129000359,
+    "ttfa_s": 0.6327844670004197,
+    "audio_s": 12.32,
+    "rtfx": 11.628388467444013,
+    "chunks": [
+      {
+        "text": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory,",
+        "tokens": 45,
+        "frames": 92,
+        "eos": 92,
+        "capped": false
+      },
+      {
+        "text": "And continued to work reliably when the network connection failed during the final demonstration.",
+        "tokens": 28,
+        "frames": 62,
+        "eos": 62,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "long-44",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-int8-long-44.wav",
+    "wall_s": 0.9120592790004594,
+    "ttfa_s": 0.6036419700003535,
+    "audio_s": 10.48,
+    "rtfx": 11.490481201490766,
+    "chunks": [
+      {
+        "text": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze,",
+        "tokens": 43,
+        "frames": 87,
+        "eos": 87,
+        "capped": false
+      },
+      {
+        "text": "And talked about the years when the garden had been full of fruit trees.",
+        "tokens": 18,
+        "frames": 44,
+        "eos": 44,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "controlled",
+    "id": "long-45",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-int8-long-45.wav",
+    "wall_s": 0.8934663480004019,
+    "ttfa_s": 0.5114999940005873,
+    "audio_s": 10.32,
+    "rtfx": 11.550518968169753,
+    "chunks": [
+      {
+        "text": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel,",
+        "tokens": 31,
+        "frames": 74,
+        "eos": 74,
+        "capped": false
+      },
+      {
+        "text": "And walk along the river before meeting everyone at the small restaurant opposite the theater.",
+        "tokens": 24,
+        "frames": 55,
+        "eos": 55,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-11",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-11.wav",
+    "wall_s": 0.36951958700046816,
+    "ttfa_s": 0.36947742699976516,
+    "audio_s": 4.4,
+    "rtfx": 11.907352559350056,
+    "chunks": [
+      {
+        "text": "The total is 23 dollars and 45 cents, including tax.",
+        "tokens": 21,
+        "frames": 55,
+        "eos": 55,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-12",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-12.wav",
+    "wall_s": 0.365239943999768,
+    "ttfa_s": 0.3651877839993176,
+    "audio_s": 4.24,
+    "rtfx": 11.608806949118067,
+    "chunks": [
+      {
+        "text": "The meeting is on 03/15/2026 at 9:30 AM.",
+        "tokens": 25,
+        "frames": 53,
+        "eos": 53,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-13",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-13.wav",
+    "wall_s": 0.3017501849999462,
+    "ttfa_s": 0.30169842499981314,
+    "audio_s": 3.36,
+    "rtfx": 11.135038740740454,
+    "chunks": [
+      {
+        "text": "Sales increased by 12.5% last quarter.",
+        "tokens": 16,
+        "frames": 42,
+        "eos": 42,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-14",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-14.wav",
+    "wall_s": 0.31143611100014823,
+    "ttfa_s": 0.31140623099963705,
+    "audio_s": 3.6,
+    "rtfx": 11.559353179818915,
+    "chunks": [
+      {
+        "text": "The train leaves at 6:05 PM from platform 7.",
+        "tokens": 18,
+        "frames": 45,
+        "eos": 45,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-15",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-15.wav",
+    "wall_s": 0.29725462199985486,
+    "ttfa_s": 0.2972246620001897,
+    "audio_s": 3.52,
+    "rtfx": 11.84169980711593,
+    "chunks": [
+      {
+        "text": "She finished 21st in a race with 108 runners.",
+        "tokens": 20,
+        "frames": 44,
+        "eos": 44,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-16",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-16.wav",
+    "wall_s": 0.41100013199957175,
+    "ttfa_s": 0.4109621719999268,
+    "audio_s": 4.72,
+    "rtfx": 11.48418122650364,
+    "chunks": [
+      {
+        "text": "The blue notebook costs 5 euros and 50 cents and the pen costs 2 pounds.",
+        "tokens": 27,
+        "frames": 59,
+        "eos": 59,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-17",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-17.wav",
+    "wall_s": 0.5204329179996421,
+    "ttfa_s": 0.5203827979994458,
+    "audio_s": 6.32,
+    "rtfx": 12.143736073213468,
+    "chunks": [
+      {
+        "text": "Call 202 555 0 1 9 8 and ask for extension 42.",
+        "tokens": 27,
+        "frames": 79,
+        "eos": 79,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-18",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-18.wav",
+    "wall_s": 0.4120285330000115,
+    "ttfa_s": 0.4119868529996893,
+    "audio_s": 4.88,
+    "rtfx": 11.843839950763467,
+    "chunks": [
+      {
+        "text": "The temperature fell from 18 degrees Celsius to minus 3 degrees Celsius overnight.",
+        "tokens": 34,
+        "frames": 61,
+        "eos": 61,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-19",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-19.wav",
+    "wall_s": 0.3155569540003853,
+    "ttfa_s": 0.31552483399991615,
+    "audio_s": 3.76,
+    "rtfx": 11.915440152193282,
+    "chunks": [
+      {
+        "text": "Send the report to alex at example dot com before Friday.",
+        "tokens": 20,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "structured-20",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-structured-20.wav",
+    "wall_s": 0.472728454999924,
+    "ttfa_s": 0.4726612539998314,
+    "audio_s": 5.6,
+    "rtfx": 11.846124219454698,
+    "chunks": [
+      {
+        "text": "The shipment contains 2 thousand 450 bolts weighing 3 point 75 kg.",
+        "tokens": 32,
+        "frames": 70,
+        "eos": 70,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-31",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-31.wav",
+    "wall_s": 0.24037963000046147,
+    "ttfa_s": 0.24035155000001396,
+    "audio_s": 2.64,
+    "rtfx": 10.982627770892783,
+    "chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-32",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-32.wav",
+    "wall_s": 0.32514104199981375,
+    "ttfa_s": 0.32510580200050754,
+    "audio_s": 3.68,
+    "rtfx": 11.318165118023176,
+    "chunks": [
+      {
+        "text": "The CPU and GPU share access to the same memory.",
+        "tokens": 17,
+        "frames": 46,
+        "eos": 46,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-33",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-33.wav",
+    "wall_s": 0.3566129020000517,
+    "ttfa_s": 0.3565669820000039,
+    "audio_s": 3.92,
+    "rtfx": 10.992311209198572,
+    "chunks": [
+      {
+        "text": "Use the API to send a JSON response over HTTP.",
+        "tokens": 21,
+        "frames": 49,
+        "eos": 49,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-34",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-34.wav",
+    "wall_s": 0.2806761740002912,
+    "ttfa_s": 0.28064693400028773,
+    "audio_s": 3.2,
+    "rtfx": 11.401038978095377,
+    "chunks": [
+      {
+        "text": "The FBI contacted the local police about the case.",
+        "tokens": 15,
+        "frames": 40,
+        "eos": 40,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-35",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-35.wav",
+    "wall_s": 0.31040171299991925,
+    "ttfa_s": 0.3103691129999788,
+    "audio_s": 3.44,
+    "rtfx": 11.082413066453968,
+    "chunks": [
+      {
+        "text": "A USB cable connects the SSD to the laptop.",
+        "tokens": 19,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-36",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-36.wav",
+    "wall_s": 0.31167343400011305,
+    "ttfa_s": 0.31164431399975,
+    "audio_s": 3.44,
+    "rtfx": 11.03719350042119,
+    "chunks": [
+      {
+        "text": "The BBC and CNN reported the result this morning.",
+        "tokens": 18,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-37",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-37.wav",
+    "wall_s": 0.3249129219993847,
+    "ttfa_s": 0.3248785219993806,
+    "audio_s": 3.68,
+    "rtfx": 11.326111554304292,
+    "chunks": [
+      {
+        "text": "Enable HTTPS and check the DNS configuration.",
+        "tokens": 18,
+        "frames": 46,
+        "eos": 46,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-38",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-38.wav",
+    "wall_s": 0.2739539310005057,
+    "ttfa_s": 0.27392565100035426,
+    "audio_s": 3.04,
+    "rtfx": 11.09675626444794,
+    "chunks": [
+      {
+        "text": "The MRI scan was reviewed by the hospital team.",
+        "tokens": 17,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-39",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-39.wav",
+    "wall_s": 0.22856414200032305,
+    "ttfa_s": 0.22853918200053158,
+    "audio_s": 2.56,
+    "rtfx": 11.200357053366586,
+    "chunks": [
+      {
+        "text": "NATO and UNESCO issued separate statements.",
+        "tokens": 18,
+        "frames": 32,
+        "eos": 32,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-int8",
+    "mode": "raw",
+    "id": "acronyms-40",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-int8-raw-acronyms-40.wav",
+    "wall_s": 0.32511876199987455,
+    "ttfa_s": 0.3250857220000398,
+    "audio_s": 3.76,
+    "rtfx": 11.565004667437343,
+    "chunks": [
+      {
+        "text": "Our SQL database stores each URL as plain text.",
+        "tokens": 18,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-01",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-01.wav",
+    "wall_s": 0.3998104089996559,
+    "ttfa_s": 0.3997828089995892,
+    "audio_s": 2.96,
+    "rtfx": 7.403509096739268,
+    "chunks": [
+      {
+        "text": "The quick brown fox jumps over the lazy dog.",
+        "tokens": 14,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-02",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-02.wav",
+    "wall_s": 0.36763406899990514,
+    "ttfa_s": 0.3676099490003253,
+    "audio_s": 2.64,
+    "rtfx": 7.181053723289942,
+    "chunks": [
+      {
+        "text": "Please close the window before you leave the room.",
+        "tokens": 13,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-03",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-03.wav",
+    "wall_s": 0.44713195899930724,
+    "ttfa_s": 0.4470987589993456,
+    "audio_s": 3.44,
+    "rtfx": 7.693478246777099,
+    "chunks": [
+      {
+        "text": "The library opens early and stays quiet until lunch.",
+        "tokens": 15,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-04",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-04.wav",
+    "wall_s": 0.395791965999706,
+    "ttfa_s": 0.3957620860001043,
+    "audio_s": 3.12,
+    "rtfx": 7.882929084018643,
+    "chunks": [
+      {
+        "text": "We planted a small tree beside the old stone bridge.",
+        "tokens": 16,
+        "frames": 39,
+        "eos": 39,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-05",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-05.wav",
+    "wall_s": 0.4617954310006098,
+    "ttfa_s": 0.4617613110003731,
+    "audio_s": 3.44,
+    "rtfx": 7.449185871212003,
+    "chunks": [
+      {
+        "text": "I forgot my umbrella but the rain stopped before dinner.",
+        "tokens": 18,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-06",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-06.wav",
+    "wall_s": 0.3968026259999533,
+    "ttfa_s": 0.3967667059996529,
+    "audio_s": 3.2,
+    "rtfx": 8.06446275887392,
+    "chunks": [
+      {
+        "text": "Your package should arrive tomorrow morning at the front desk.",
+        "tokens": 18,
+        "frames": 40,
+        "eos": 40,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-07",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-07.wav",
+    "wall_s": 0.38862546300060785,
+    "ttfa_s": 0.3885985830002028,
+    "audio_s": 2.96,
+    "rtfx": 7.616587902258402,
+    "chunks": [
+      {
+        "text": "The children watched the ducks swim across the pond.",
+        "tokens": 19,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-08",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-08.wav",
+    "wall_s": 0.3648459770001864,
+    "ttfa_s": 0.3648185370002466,
+    "audio_s": 2.72,
+    "rtfx": 7.455200746255208,
+    "chunks": [
+      {
+        "text": "Save your work before restarting the computer.",
+        "tokens": 13,
+        "frames": 34,
+        "eos": 34,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-09",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-09.wav",
+    "wall_s": 0.3810244619999139,
+    "ttfa_s": 0.3809955019996778,
+    "audio_s": 2.96,
+    "rtfx": 7.7685300950590115,
+    "chunks": [
+      {
+        "text": "Would you like a cup of tea or a glass of water?",
+        "tokens": 13,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "prose-10",
+    "category": "prose",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-prose-10.wav",
+    "wall_s": 0.4452305629993134,
+    "ttfa_s": 0.44519976299943664,
+    "audio_s": 3.28,
+    "rtfx": 7.36696954922445,
+    "chunks": [
+      {
+        "text": "A warm breeze carried the smell of bread through the village.",
+        "tokens": 19,
+        "frames": 41,
+        "eos": 41,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-11",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-11.wav",
+    "wall_s": 0.5424532790002559,
+    "ttfa_s": 0.5424165180002092,
+    "audio_s": 4.32,
+    "rtfx": 7.9638194978962655,
+    "chunks": [
+      {
+        "text": "The total is twenty three dollars and forty five cents, including tax.",
+        "tokens": 23,
+        "frames": 54,
+        "eos": 54,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-12",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-12.wav",
+    "wall_s": 0.5505250020005406,
+    "ttfa_s": 0.550485161999859,
+    "audio_s": 4.48,
+    "rtfx": 8.137686723982068,
+    "chunks": [
+      {
+        "text": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m.",
+        "tokens": 29,
+        "frames": 56,
+        "eos": 56,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-13",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-13.wav",
+    "wall_s": 0.4390700100002505,
+    "ttfa_s": 0.4390394900001411,
+    "audio_s": 3.36,
+    "rtfx": 7.652538145336055,
+    "chunks": [
+      {
+        "text": "Sales increased by twelve point five percent last quarter.",
+        "tokens": 18,
+        "frames": 42,
+        "eos": 42,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-14",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-14.wav",
+    "wall_s": 0.45429265100028715,
+    "ttfa_s": 0.45425873100066383,
+    "audio_s": 3.68,
+    "rtfx": 8.100505240173199,
+    "chunks": [
+      {
+        "text": "The train leaves at six oh five p m from platform seven.",
+        "tokens": 16,
+        "frames": 46,
+        "eos": 46,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-15",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-15.wav",
+    "wall_s": 0.4491912240000602,
+    "ttfa_s": 0.449161343999549,
+    "audio_s": 3.44,
+    "rtfx": 7.658208389217193,
+    "chunks": [
+      {
+        "text": "She finished twenty first in a race with one hundred eight runners.",
+        "tokens": 20,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-16",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-16.wav",
+    "wall_s": 0.5961071239999001,
+    "ttfa_s": 0.5960652439998739,
+    "audio_s": 4.64,
+    "rtfx": 7.7838358462576895,
+    "chunks": [
+      {
+        "text": "The blue notebook costs five euros and fifty cents and the pen costs two pounds.",
+        "tokens": 25,
+        "frames": 58,
+        "eos": 58,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-17",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-17.wav",
+    "wall_s": 0.6796110469995256,
+    "ttfa_s": 0.6795627269993929,
+    "audio_s": 5.36,
+    "rtfx": 7.886864146285341,
+    "chunks": [
+      {
+        "text": "Call two zero two five five five zero one nine eight and ask for extension forty two.",
+        "tokens": 21,
+        "frames": 67,
+        "eos": 67,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-18",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-18.wav",
+    "wall_s": 0.6102075579992743,
+    "ttfa_s": 0.6101630379998824,
+    "audio_s": 4.96,
+    "rtfx": 8.12838178580197,
+    "chunks": [
+      {
+        "text": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight.",
+        "tokens": 33,
+        "frames": 62,
+        "eos": 62,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-19",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-19.wav",
+    "wall_s": 0.45983740000065154,
+    "ttfa_s": 0.4598015600004146,
+    "audio_s": 3.76,
+    "rtfx": 8.17680336569986,
+    "chunks": [
+      {
+        "text": "Send the report to alex at example dot com before Friday.",
+        "tokens": 20,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "structured-20",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-structured-20.wav",
+    "wall_s": 0.7111007619996599,
+    "ttfa_s": 0.7110536019999927,
+    "audio_s": 5.52,
+    "rtfx": 7.762612972706447,
+    "chunks": [
+      {
+        "text": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms.",
+        "tokens": 34,
+        "frames": 69,
+        "eos": 69,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-21",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-21.wav",
+    "wall_s": 0.38451248799992754,
+    "ttfa_s": 0.3844846880001569,
+    "audio_s": 2.96,
+    "rtfx": 7.698059471089422,
+    "chunks": [
+      {
+        "text": "Maya Thompson met Daniel Brooks near the station.",
+        "tokens": 18,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-22",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-22.wav",
+    "wall_s": 0.45641785400039225,
+    "ttfa_s": 0.4563858130004519,
+    "audio_s": 3.6,
+    "rtfx": 7.887509150763647,
+    "chunks": [
+      {
+        "text": "Aisha Khan and Priya Patel are leading the new project.",
+        "tokens": 20,
+        "frames": 45,
+        "eos": 45,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-23",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-23.wav",
+    "wall_s": 0.38926420799998596,
+    "ttfa_s": 0.3892288870001721,
+    "audio_s": 3.04,
+    "rtfx": 7.8096057575375895,
+    "chunks": [
+      {
+        "text": "Siobhan Murphy sent a letter to Niamh O Sullivan.",
+        "tokens": 21,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-24",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-24.wav",
+    "wall_s": 0.46555900699968333,
+    "ttfa_s": 0.46552720699946804,
+    "audio_s": 3.44,
+    "rtfx": 7.388966700846881,
+    "chunks": [
+      {
+        "text": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+        "tokens": 22,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-25",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-25.wav",
+    "wall_s": 0.43897860099968966,
+    "ttfa_s": 0.43894860099953803,
+    "audio_s": 3.28,
+    "rtfx": 7.4718904122670855,
+    "chunks": [
+      {
+        "text": "Professor Nguyen invited Zhang Wei to the seminar.",
+        "tokens": 23,
+        "frames": 41,
+        "eos": 41,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-26",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-26.wav",
+    "wall_s": 0.46435642699998425,
+    "ttfa_s": 0.46432186600031855,
+    "audio_s": 3.76,
+    "rtfx": 8.097228295712007,
+    "chunks": [
+      {
+        "text": "Fatima Hassan visited the museum with Gabriel Santos.",
+        "tokens": 22,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-27",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-27.wav",
+    "wall_s": 0.3886860379998325,
+    "ttfa_s": 0.38865807699949073,
+    "audio_s": 3.04,
+    "rtfx": 7.821222536430059,
+    "chunks": [
+      {
+        "text": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+        "tokens": 22,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-28",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-28.wav",
+    "wall_s": 0.538866717000019,
+    "ttfa_s": 0.5388288359999933,
+    "audio_s": 4.32,
+    "rtfx": 8.016824687281341,
+    "chunks": [
+      {
+        "text": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal.",
+        "tokens": 25,
+        "frames": 54,
+        "eos": 54,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-29",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-29.wav",
+    "wall_s": 0.39183113099988987,
+    "ttfa_s": 0.3918023309997807,
+    "audio_s": 3.04,
+    "rtfx": 7.7584442875746245,
+    "chunks": [
+      {
+        "text": "The river runs through Worcester before reaching Gloucester.",
+        "tokens": 22,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "names-30",
+    "category": "names",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-names-30.wav",
+    "wall_s": 0.5258194580001145,
+    "ttfa_s": 0.5257806569998138,
+    "audio_s": 4.24,
+    "rtfx": 8.063604219072236,
+    "chunks": [
+      {
+        "text": "Anjali Menon and Dimitri Petrov shared a table at the cafe.",
+        "tokens": 21,
+        "frames": 53,
+        "eos": 53,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-31",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-31.wav",
+    "wall_s": 0.3681361340004514,
+    "ttfa_s": 0.36811185399983515,
+    "audio_s": 2.64,
+    "rtfx": 7.171260183866555,
+    "chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-32",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-32.wav",
+    "wall_s": 0.5222076529998958,
+    "ttfa_s": 0.5221726529998705,
+    "audio_s": 4.0,
+    "rtfx": 7.659788164768237,
+    "chunks": [
+      {
+        "text": "The c p u and g p u share access to the same memory.",
+        "tokens": 19,
+        "frames": 50,
+        "eos": 50,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-33",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-33.wav",
+    "wall_s": 0.5279946460004794,
+    "ttfa_s": 0.527955405999819,
+    "audio_s": 4.24,
+    "rtfx": 8.030384459610884,
+    "chunks": [
+      {
+        "text": "Use the a p i to send a jay son response over h t t p.",
+        "tokens": 20,
+        "frames": 53,
+        "eos": 53,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-34",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-34.wav",
+    "wall_s": 0.4384381100007886,
+    "ttfa_s": 0.4384078299999601,
+    "audio_s": 3.36,
+    "rtfx": 7.663567384673646,
+    "chunks": [
+      {
+        "text": "The f b i contacted the local police about the case.",
+        "tokens": 15,
+        "frames": 42,
+        "eos": 42,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-35",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-35.wav",
+    "wall_s": 0.5195698400002584,
+    "ttfa_s": 0.5195327599994926,
+    "audio_s": 4.0,
+    "rtfx": 7.698676274200232,
+    "chunks": [
+      {
+        "text": "A u s b cable connects the s s d to the laptop.",
+        "tokens": 25,
+        "frames": 50,
+        "eos": 50,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-36",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-36.wav",
+    "wall_s": 0.4706740900001023,
+    "ttfa_s": 0.47064089000014064,
+    "audio_s": 3.68,
+    "rtfx": 7.818573569663035,
+    "chunks": [
+      {
+        "text": "The b b c and c n n reported the result this morning.",
+        "tokens": 20,
+        "frames": 46,
+        "eos": 46,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-37",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-37.wav",
+    "wall_s": 0.5081932740004049,
+    "ttfa_s": 0.5081589530000201,
+    "audio_s": 3.92,
+    "rtfx": 7.713600711678991,
+    "chunks": [
+      {
+        "text": "Enable h t t p s and check the d n s configuration.",
+        "tokens": 22,
+        "frames": 49,
+        "eos": 49,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-38",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-38.wav",
+    "wall_s": 0.39109803599967563,
+    "ttfa_s": 0.3910702749999473,
+    "audio_s": 3.04,
+    "rtfx": 7.772987128993206,
+    "chunks": [
+      {
+        "text": "The m r i scan was reviewed by the hospital team.",
+        "tokens": 19,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-39",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-39.wav",
+    "wall_s": 0.32942118600021786,
+    "ttfa_s": 0.3293971849998343,
+    "audio_s": 2.56,
+    "rtfx": 7.7712063121474735,
+    "chunks": [
+      {
+        "text": "NATO and UNESCO issued separate statements.",
+        "tokens": 18,
+        "frames": 32,
+        "eos": 32,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "acronyms-40",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-acronyms-40.wav",
+    "wall_s": 0.5322578579998662,
+    "ttfa_s": 0.5322200179998617,
+    "audio_s": 4.08,
+    "rtfx": 7.665457519653989,
+    "chunks": [
+      {
+        "text": "Our s q l database stores each u r l as plain text.",
+        "tokens": 22,
+        "frames": 51,
+        "eos": 51,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "long-41",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-long-41.wav",
+    "wall_s": 1.6406711049994556,
+    "ttfa_s": 0.9748439850000068,
+    "audio_s": 12.96,
+    "rtfx": 7.899206587175375,
+    "chunks": [
+      {
+        "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches,",
+        "tokens": 46,
+        "frames": 97,
+        "eos": 97,
+        "capped": false
+      },
+      {
+        "text": "Repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+        "tokens": 36,
+        "frames": 65,
+        "eos": 65,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "long-42",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-long-42.wav",
+    "wall_s": 1.4968356010003845,
+    "ttfa_s": 1.0473078049999458,
+    "audio_s": 11.92,
+    "rtfx": 7.963466390052102,
+    "chunks": [
+      {
+        "text": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts,",
+        "tokens": 44,
+        "frames": 106,
+        "eos": 106,
+        "capped": false
+      },
+      {
+        "text": "And only then reset the old device to its original settings.",
+        "tokens": 18,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "long-43",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-long-43.wav",
+    "wall_s": 1.5299032729999453,
+    "ttfa_s": 0.9294607399997403,
+    "audio_s": 12.16,
+    "rtfx": 7.948214906525293,
+    "chunks": [
+      {
+        "text": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory,",
+        "tokens": 45,
+        "frames": 92,
+        "eos": 92,
+        "capped": false
+      },
+      {
+        "text": "And continued to work reliably when the network connection failed during the final demonstration.",
+        "tokens": 28,
+        "frames": 60,
+        "eos": 60,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "long-44",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-long-44.wav",
+    "wall_s": 1.3101068539999687,
+    "ttfa_s": 0.8656265769996025,
+    "audio_s": 10.4,
+    "rtfx": 7.938283788262853,
+    "chunks": [
+      {
+        "text": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze,",
+        "tokens": 43,
+        "frames": 86,
+        "eos": 86,
+        "capped": false
+      },
+      {
+        "text": "And talked about the years when the garden had been full of fruit trees.",
+        "tokens": 18,
+        "frames": 44,
+        "eos": 44,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "controlled",
+    "id": "long-45",
+    "category": "long",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-long-45.wav",
+    "wall_s": 1.304776246000074,
+    "ttfa_s": 0.7428228190001391,
+    "audio_s": 10.32,
+    "rtfx": 7.909402115218623,
+    "chunks": [
+      {
+        "text": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel,",
+        "tokens": 31,
+        "frames": 74,
+        "eos": 74,
+        "capped": false
+      },
+      {
+        "text": "And walk along the river before meeting everyone at the small restaurant opposite the theater.",
+        "tokens": 24,
+        "frames": 55,
+        "eos": 55,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-11",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-11.wav",
+    "wall_s": 0.5433474230003412,
+    "ttfa_s": 0.5433084630003577,
+    "audio_s": 4.32,
+    "rtfx": 7.9507140682570006,
+    "chunks": [
+      {
+        "text": "The total is 23 dollars and 45 cents, including tax.",
+        "tokens": 21,
+        "frames": 54,
+        "eos": 54,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-12",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-12.wav",
+    "wall_s": 0.5248165660004815,
+    "ttfa_s": 0.5247598060004748,
+    "audio_s": 4.24,
+    "rtfx": 8.07901326803032,
+    "chunks": [
+      {
+        "text": "The meeting is on 03/15/2026 at 9:30 AM.",
+        "tokens": 25,
+        "frames": 53,
+        "eos": 53,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-13",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-13.wav",
+    "wall_s": 0.43776148500001,
+    "ttfa_s": 0.43773196500023914,
+    "audio_s": 3.36,
+    "rtfx": 7.675412559421309,
+    "chunks": [
+      {
+        "text": "Sales increased by 12.5% last quarter.",
+        "tokens": 16,
+        "frames": 42,
+        "eos": 42,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-14",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-14.wav",
+    "wall_s": 0.45645492000039667,
+    "ttfa_s": 0.456421720000435,
+    "audio_s": 3.6,
+    "rtfx": 7.886868652871288,
+    "chunks": [
+      {
+        "text": "The train leaves at 6:05 PM from platform 7.",
+        "tokens": 18,
+        "frames": 45,
+        "eos": 45,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-15",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-15.wav",
+    "wall_s": 0.439473727999939,
+    "ttfa_s": 0.4394455680003375,
+    "audio_s": 3.44,
+    "rtfx": 7.827544130238605,
+    "chunks": [
+      {
+        "text": "She finished 21st in a race with 108 runners.",
+        "tokens": 20,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-16",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-16.wav",
+    "wall_s": 0.5926882109997678,
+    "ttfa_s": 0.5926365710001846,
+    "audio_s": 4.64,
+    "rtfx": 7.8287367858609525,
+    "chunks": [
+      {
+        "text": "The blue notebook costs 5 euros and 50 cents and the pen costs 2 pounds.",
+        "tokens": 27,
+        "frames": 58,
+        "eos": 58,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-17",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-17.wav",
+    "wall_s": 0.7666828910005279,
+    "ttfa_s": 0.766630651000014,
+    "audio_s": 6.16,
+    "rtfx": 8.034612578821402,
+    "chunks": [
+      {
+        "text": "Call 202 555 0 1 9 8 and ask for extension 42.",
+        "tokens": 27,
+        "frames": 77,
+        "eos": 77,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-18",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-18.wav",
+    "wall_s": 0.606749516000491,
+    "ttfa_s": 0.6067055960002108,
+    "audio_s": 4.88,
+    "rtfx": 8.042857672417247,
+    "chunks": [
+      {
+        "text": "The temperature fell from 18 degrees Celsius to minus 3 degrees Celsius overnight.",
+        "tokens": 34,
+        "frames": 61,
+        "eos": 61,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-19",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-19.wav",
+    "wall_s": 0.46041864800008625,
+    "ttfa_s": 0.4603858880000189,
+    "audio_s": 3.76,
+    "rtfx": 8.166480693890781,
+    "chunks": [
+      {
+        "text": "Send the report to alex at example dot com before Friday.",
+        "tokens": 20,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "structured-20",
+    "category": "structured",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-structured-20.wav",
+    "wall_s": 0.7036383349995958,
+    "ttfa_s": 0.7035887749998437,
+    "audio_s": 5.6,
+    "rtfx": 7.958634033211418,
+    "chunks": [
+      {
+        "text": "The shipment contains 2 thousand 450 bolts weighing 3 point 75 kg.",
+        "tokens": 32,
+        "frames": 70,
+        "eos": 70,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-31",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-31.wav",
+    "wall_s": 0.3624709069999881,
+    "ttfa_s": 0.362446187000387,
+    "audio_s": 2.64,
+    "rtfx": 7.2833431566966755,
+    "chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-32",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-32.wav",
+    "wall_s": 0.4635872129993004,
+    "ttfa_s": 0.46355593299995235,
+    "audio_s": 3.68,
+    "rtfx": 7.938096428914129,
+    "chunks": [
+      {
+        "text": "The CPU and GPU share access to the same memory.",
+        "tokens": 17,
+        "frames": 46,
+        "eos": 46,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-33",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-33.wav",
+    "wall_s": 0.5059265709996907,
+    "ttfa_s": 0.5058900509993691,
+    "audio_s": 3.92,
+    "rtfx": 7.748159959763007,
+    "chunks": [
+      {
+        "text": "Use the API to send a JSON response over HTTP.",
+        "tokens": 21,
+        "frames": 49,
+        "eos": 49,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-34",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-34.wav",
+    "wall_s": 0.4046272510004201,
+    "ttfa_s": 0.40459885000018403,
+    "audio_s": 3.2,
+    "rtfx": 7.908513309689757,
+    "chunks": [
+      {
+        "text": "The FBI contacted the local police about the case.",
+        "tokens": 15,
+        "frames": 40,
+        "eos": 40,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-35",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-35.wav",
+    "wall_s": 0.4502901149999161,
+    "ttfa_s": 0.45026183299978584,
+    "audio_s": 3.44,
+    "rtfx": 7.639519246387723,
+    "chunks": [
+      {
+        "text": "A USB cable connects the SSD to the laptop.",
+        "tokens": 19,
+        "frames": 43,
+        "eos": 43,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-36",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-36.wav",
+    "wall_s": 0.43562978400041175,
+    "ttfa_s": 0.4355998629998794,
+    "audio_s": 3.36,
+    "rtfx": 7.712971250828947,
+    "chunks": [
+      {
+        "text": "The BBC and CNN reported the result this morning.",
+        "tokens": 18,
+        "frames": 42,
+        "eos": 42,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-37",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-37.wav",
+    "wall_s": 0.4620697669997753,
+    "ttfa_s": 0.46203876700019464,
+    "audio_s": 3.68,
+    "rtfx": 7.964165290220751,
+    "chunks": [
+      {
+        "text": "Enable HTTPS and check the DNS configuration.",
+        "tokens": 18,
+        "frames": 46,
+        "eos": 46,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-38",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-38.wav",
+    "wall_s": 0.3845674490003148,
+    "ttfa_s": 0.38454020799963473,
+    "audio_s": 3.04,
+    "rtfx": 7.904985218854317,
+    "chunks": [
+      {
+        "text": "The MRI scan was reviewed by the hospital team.",
+        "tokens": 17,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-39",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-39.wav",
+    "wall_s": 0.32527356399987184,
+    "ttfa_s": 0.32525040400014404,
+    "audio_s": 2.56,
+    "rtfx": 7.8702983683021,
+    "chunks": [
+      {
+        "text": "NATO and UNESCO issued separate statements.",
+        "tokens": 18,
+        "frames": 32,
+        "eos": 32,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "model": "phonon-fp32",
+    "mode": "raw",
+    "id": "acronyms-40",
+    "category": "acronyms",
+    "path": "/home/hvm/datasets/tts/phonon-fp32-raw-acronyms-40.wav",
+    "wall_s": 0.45741083700067975,
+    "ttfa_s": 0.45737867600018944,
+    "audio_s": 3.76,
+    "rtfx": 8.220181280913579,
+    "chunks": [
+      {
+        "text": "Our SQL database stores each URL as plain text.",
+        "tokens": 18,
+        "frames": 47,
+        "eos": 47,
+        "capped": false
+      }
+    ]
+  }
+]

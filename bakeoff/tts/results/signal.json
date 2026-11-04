@@ -1,0 +1,380 @@
+[
+  {
+    "text": "The quick brown fox jumps over the lazy dog.",
+    "seed": 1234,
+    "temperature": 0.3,
+    "fp32_s": 2.96,
+    "int8_s": 2.96,
+    "end_to_end": {
+      "overlap_samples": 71040,
+      "snr_db": -1.5584280218112823,
+      "lsd_db": 4.8202402999224425
+    },
+    "decoder_only": {
+      "overlap_samples": 71040,
+      "snr_db": 18.813848234016948,
+      "lsd_db": 1.8688958607040174
+    },
+    "fp32_chunks": [
+      {
+        "text": "The quick brown fox jumps over the lazy dog.",
+        "tokens": 14,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "The quick brown fox jumps over the lazy dog.",
+        "tokens": 14,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "The total is twenty three dollars and forty five cents, including tax.",
+    "seed": 1234,
+    "temperature": 0.3,
+    "fp32_s": 4.32,
+    "int8_s": 4.48,
+    "end_to_end": {
+      "overlap_samples": 103680,
+      "snr_db": -1.4614664218536608,
+      "lsd_db": 14.880382520515788
+    },
+    "decoder_only": {
+      "overlap_samples": 103680,
+      "snr_db": 19.864424737478938,
+      "lsd_db": 1.8690151372802692
+    },
+    "fp32_chunks": [
+      {
+        "text": "The total is twenty three dollars and forty five cents, including tax.",
+        "tokens": 23,
+        "frames": 54,
+        "eos": 54,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "The total is twenty three dollars and forty five cents, including tax.",
+        "tokens": 23,
+        "frames": 56,
+        "eos": 56,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "Maya Thompson met Daniel Brooks near the station.",
+    "seed": 1234,
+    "temperature": 0.3,
+    "fp32_s": 2.96,
+    "int8_s": 3.04,
+    "end_to_end": {
+      "overlap_samples": 71040,
+      "snr_db": -2.249110847918094,
+      "lsd_db": 14.94121199606689
+    },
+    "decoder_only": {
+      "overlap_samples": 71040,
+      "snr_db": 17.98925293975203,
+      "lsd_db": 2.4404554268392387
+    },
+    "fp32_chunks": [
+      {
+        "text": "Maya Thompson met Daniel Brooks near the station.",
+        "tokens": 18,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "Maya Thompson met Daniel Brooks near the station.",
+        "tokens": 18,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "NASA launched a new satellite on Tuesday.",
+    "seed": 1234,
+    "temperature": 0.3,
+    "fp32_s": 2.64,
+    "int8_s": 2.64,
+    "end_to_end": {
+      "overlap_samples": 63360,
+      "snr_db": -2.176020403832451,
+      "lsd_db": 4.809575013059789
+    },
+    "decoder_only": {
+      "overlap_samples": 63360,
+      "snr_db": 14.879384915112174,
+      "lsd_db": 2.8086495429522063
+    },
+    "fp32_chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "seed": 1234,
+    "temperature": 0.3,
+    "fp32_s": 12.96,
+    "int8_s": 13.12,
+    "end_to_end": {
+      "overlap_samples": 311040,
+      "snr_db": -2.4714450732077253,
+      "lsd_db": 9.104705145968524
+    },
+    "decoder_only": {
+      "overlap_samples": 311040,
+      "snr_db": 18.86162654902578,
+      "lsd_db": 1.9616003509881872
+    },
+    "fp32_chunks": [
+      {
+        "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches,",
+        "tokens": 46,
+        "frames": 97,
+        "eos": 97,
+        "capped": false
+      },
+      {
+        "text": "Repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+        "tokens": 36,
+        "frames": 65,
+        "eos": 65,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches,",
+        "tokens": 46,
+        "frames": 97,
+        "eos": 97,
+        "capped": false
+      },
+      {
+        "text": "Repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+        "tokens": 36,
+        "frames": 67,
+        "eos": 67,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "The quick brown fox jumps over the lazy dog.",
+    "seed": 1234,
+    "temperature": 0.0,
+    "fp32_s": 2.96,
+    "int8_s": 2.88,
+    "end_to_end": {
+      "overlap_samples": 69120,
+      "snr_db": -2.0791742338647876,
+      "lsd_db": 12.64976982073044
+    },
+    "decoder_only": {
+      "overlap_samples": 71040,
+      "snr_db": 16.82164191690446,
+      "lsd_db": 2.0631519070256576
+    },
+    "fp32_chunks": [
+      {
+        "text": "The quick brown fox jumps over the lazy dog.",
+        "tokens": 14,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "The quick brown fox jumps over the lazy dog.",
+        "tokens": 14,
+        "frames": 36,
+        "eos": 36,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "The total is twenty three dollars and forty five cents, including tax.",
+    "seed": 1234,
+    "temperature": 0.0,
+    "fp32_s": 4.48,
+    "int8_s": 4.48,
+    "end_to_end": {
+      "overlap_samples": 107520,
+      "snr_db": -1.8629622081144304,
+      "lsd_db": 6.081181777510233
+    },
+    "decoder_only": {
+      "overlap_samples": 107520,
+      "snr_db": 17.49970264473586,
+      "lsd_db": 1.9997333740819068
+    },
+    "fp32_chunks": [
+      {
+        "text": "The total is twenty three dollars and forty five cents, including tax.",
+        "tokens": 23,
+        "frames": 56,
+        "eos": 56,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "The total is twenty three dollars and forty five cents, including tax.",
+        "tokens": 23,
+        "frames": 56,
+        "eos": 56,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "Maya Thompson met Daniel Brooks near the station.",
+    "seed": 1234,
+    "temperature": 0.0,
+    "fp32_s": 3.04,
+    "int8_s": 3.04,
+    "end_to_end": {
+      "overlap_samples": 72960,
+      "snr_db": -1.899950389938451,
+      "lsd_db": 5.26416167317094
+    },
+    "decoder_only": {
+      "overlap_samples": 72960,
+      "snr_db": 15.693745140546527,
+      "lsd_db": 2.2718006356436193
+    },
+    "fp32_chunks": [
+      {
+        "text": "Maya Thompson met Daniel Brooks near the station.",
+        "tokens": 18,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "Maya Thompson met Daniel Brooks near the station.",
+        "tokens": 18,
+        "frames": 38,
+        "eos": 38,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "NASA launched a new satellite on Tuesday.",
+    "seed": 1234,
+    "temperature": 0.0,
+    "fp32_s": 2.64,
+    "int8_s": 2.64,
+    "end_to_end": {
+      "overlap_samples": 63360,
+      "snr_db": -0.7714670680145723,
+      "lsd_db": 6.137475810783716
+    },
+    "decoder_only": {
+      "overlap_samples": 63360,
+      "snr_db": 17.078965526350093,
+      "lsd_db": 2.238981021491612
+    },
+    "fp32_chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "NASA launched a new satellite on Tuesday.",
+        "tokens": 16,
+        "frames": 33,
+        "eos": 33,
+        "capped": false
+      }
+    ]
+  },
+  {
+    "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "seed": 1234,
+    "temperature": 0.0,
+    "fp32_s": 12.96,
+    "int8_s": 13.04,
+    "end_to_end": {
+      "overlap_samples": 311040,
+      "snr_db": -2.1704909514648336,
+      "lsd_db": 6.55672109770235
+    },
+    "decoder_only": {
+      "overlap_samples": 311040,
+      "snr_db": 16.206996459370476,
+      "lsd_db": 2.0276735634669554
+    },
+    "fp32_chunks": [
+      {
+        "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches,",
+        "tokens": 46,
+        "frames": 97,
+        "eos": 97,
+        "capped": false
+      },
+      {
+        "text": "Repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+        "tokens": 36,
+        "frames": 65,
+        "eos": 65,
+        "capped": false
+      }
+    ],
+    "int8_chunks": [
+      {
+        "text": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches,",
+        "tokens": 46,
+        "frames": 97,
+        "eos": 97,
+        "capped": false
+      },
+      {
+        "text": "Repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+        "tokens": 36,
+        "frames": 66,
+        "eos": 66,
+        "capped": false
+      }
+    ]
+  }
+]

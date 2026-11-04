@@ -1,0 +1,274 @@
+{
+  "model": "phonon-int8",
+  "threads": 1,
+  "shape": "paragraph",
+  "words": 76,
+  "load_s": 1.8155887940001776,
+  "warmup": {
+    "wall_s": 7.170126190999781,
+    "ttfa_s": 1.2142369659995893,
+    "audio_s": 25.12,
+    "rtfx": 3.5034250905558113,
+    "chunks": [
+      {
+        "text": "The town library is preparing a new reading room for local families.",
+        "tokens": 19,
+        "frames": 49,
+        "eos": 49,
+        "capped": false
+      },
+      {
+        "text": "Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows.",
+        "tokens": 40,
+        "frames": 74,
+        "eos": 74,
+        "capped": false
+      },
+      {
+        "text": "Children will be able to borrow books, listen to stories, and practice reading with patient helpers.",
+        "tokens": 30,
+        "frames": 66,
+        "eos": 66,
+        "capped": false
+      },
+      {
+        "text": "The room will also offer a quiet place for students to study after school.",
+        "tokens": 17,
+        "frames": 51,
+        "eos": 51,
+        "capped": false
+      },
+      {
+        "text": "Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works.",
+        "tokens": 32,
+        "frames": 74,
+        "eos": 74,
+        "capped": false
+      }
+    ]
+  },
+  "runs": [
+    {
+      "wall_s": 7.0856606100001045,
+      "ttfa_s": 1.1195274299998346,
+      "audio_s": 25.12,
+      "rtfx": 3.5451881458374888,
+      "chunks": [
+        {
+          "text": "The town library is preparing a new reading room for local families.",
+          "tokens": 19,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows.",
+          "tokens": 40,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        },
+        {
+          "text": "Children will be able to borrow books, listen to stories, and practice reading with patient helpers.",
+          "tokens": 30,
+          "frames": 66,
+          "eos": 66,
+          "capped": false
+        },
+        {
+          "text": "The room will also offer a quiet place for students to study after school.",
+          "tokens": 17,
+          "frames": 51,
+          "eos": 51,
+          "capped": false
+        },
+        {
+          "text": "Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works.",
+          "tokens": 32,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 7.160867755999789,
+      "ttfa_s": 1.139807620999818,
+      "audio_s": 25.12,
+      "rtfx": 3.507954741791316,
+      "chunks": [
+        {
+          "text": "The town library is preparing a new reading room for local families.",
+          "tokens": 19,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows.",
+          "tokens": 40,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        },
+        {
+          "text": "Children will be able to borrow books, listen to stories, and practice reading with patient helpers.",
+          "tokens": 30,
+          "frames": 66,
+          "eos": 66,
+          "capped": false
+        },
+        {
+          "text": "The room will also offer a quiet place for students to study after school.",
+          "tokens": 17,
+          "frames": 51,
+          "eos": 51,
+          "capped": false
+        },
+        {
+          "text": "Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works.",
+          "tokens": 32,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 7.182526532999873,
+      "ttfa_s": 1.116975218999869,
+      "audio_s": 25.12,
+      "rtfx": 3.497376568619276,
+      "chunks": [
+        {
+          "text": "The town library is preparing a new reading room for local families.",
+          "tokens": 19,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows.",
+          "tokens": 40,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        },
+        {
+          "text": "Children will be able to borrow books, listen to stories, and practice reading with patient helpers.",
+          "tokens": 30,
+          "frames": 66,
+          "eos": 66,
+          "capped": false
+        },
+        {
+          "text": "The room will also offer a quiet place for students to study after school.",
+          "tokens": 17,
+          "frames": 51,
+          "eos": 51,
+          "capped": false
+        },
+        {
+          "text": "Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works.",
+          "tokens": 32,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 6.960737889000029,
+      "ttfa_s": 1.146154445999855,
+      "audio_s": 25.12,
+      "rtfx": 3.608812801254424,
+      "chunks": [
+        {
+          "text": "The town library is preparing a new reading room for local families.",
+          "tokens": 19,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows.",
+          "tokens": 40,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        },
+        {
+          "text": "Children will be able to borrow books, listen to stories, and practice reading with patient helpers.",
+          "tokens": 30,
+          "frames": 66,
+          "eos": 66,
+          "capped": false
+        },
+        {
+          "text": "The room will also offer a quiet place for students to study after school.",
+          "tokens": 17,
+          "frames": 51,
+          "eos": 51,
+          "capped": false
+        },
+        {
+          "text": "Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works.",
+          "tokens": 32,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 6.970202618000258,
+      "ttfa_s": 1.0776923729999908,
+      "audio_s": 25.12,
+      "rtfx": 3.6039124508559692,
+      "chunks": [
+        {
+          "text": "The town library is preparing a new reading room for local families.",
+          "tokens": 19,
+          "frames": 49,
+          "eos": 49,
+          "capped": false
+        },
+        {
+          "text": "Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows.",
+          "tokens": 40,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        },
+        {
+          "text": "Children will be able to borrow books, listen to stories, and practice reading with patient helpers.",
+          "tokens": 30,
+          "frames": 66,
+          "eos": 66,
+          "capped": false
+        },
+        {
+          "text": "The room will also offer a quiet place for students to study after school.",
+          "tokens": 17,
+          "frames": 51,
+          "eos": 51,
+          "capped": false
+        },
+        {
+          "text": "Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works.",
+          "tokens": 32,
+          "frames": 74,
+          "eos": 74,
+          "capped": false
+        }
+      ]
+    }
+  ],
+  "median": {
+    "wall_s": 7.0856606100001045,
+    "ttfa_s": 1.1195274299998346,
+    "audio_s": 25.12,
+    "rtfx": 3.5451881458374888
+  },
+  "ru_maxrss_kib": 606740
+}

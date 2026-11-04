@@ -1,0 +1,88 @@
+{
+  "model": "kokoro",
+  "threads": 4,
+  "shape": "short",
+  "words": 10,
+  "load_s": 1.0583388770000965,
+  "warmup": {
+    "wall_s": 5.563727593000294,
+    "ttfa_s": 5.563672672999928,
+    "audio_s": 3.725,
+    "rtfx": 0.6695151654596478,
+    "chunks": [
+      {
+        "tokens": 60
+      }
+    ],
+    "normalized": "Please bring the blue notebook to our meeting this morning."
+  },
+  "runs": [
+    {
+      "wall_s": 5.569617981999727,
+      "ttfa_s": 5.569570741999996,
+      "audio_s": 3.725,
+      "rtfx": 0.6688070909061825,
+      "chunks": [
+        {
+          "tokens": 60
+        }
+      ],
+      "normalized": "Please bring the blue notebook to our meeting this morning."
+    },
+    {
+      "wall_s": 5.557933088000027,
+      "ttfa_s": 5.5578845680001905,
+      "audio_s": 3.725,
+      "rtfx": 0.6702131783562743,
+      "chunks": [
+        {
+          "tokens": 60
+        }
+      ],
+      "normalized": "Please bring the blue notebook to our meeting this morning."
+    },
+    {
+      "wall_s": 5.568105626000033,
+      "ttfa_s": 5.568056866000006,
+      "audio_s": 3.725,
+      "rtfx": 0.6689887459401399,
+      "chunks": [
+        {
+          "tokens": 60
+        }
+      ],
+      "normalized": "Please bring the blue notebook to our meeting this morning."
+    },
+    {
+      "wall_s": 5.559564109000348,
+      "ttfa_s": 5.55951654799992,
+      "audio_s": 3.725,
+      "rtfx": 0.6700165565083812,
+      "chunks": [
+        {
+          "tokens": 60
+        }
+      ],
+      "normalized": "Please bring the blue notebook to our meeting this morning."
+    },
+    {
+      "wall_s": 5.542235306000293,
+      "ttfa_s": 5.542188546000034,
+      "audio_s": 3.725,
+      "rtfx": 0.6721114846868977,
+      "chunks": [
+        {
+          "tokens": 60
+        }
+      ],
+      "normalized": "Please bring the blue notebook to our meeting this morning."
+    }
+  ],
+  "median": {
+    "wall_s": 5.559564109000348,
+    "ttfa_s": 5.55951654799992,
+    "audio_s": 3.725,
+    "rtfx": 0.6700165565083812
+  },
+  "ru_maxrss_kib": 288812
+}
