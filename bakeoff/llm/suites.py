@@ -39,11 +39,13 @@ def tool_cases():
     for i, (city, date, unit) in enumerate([
         ('Paris', '2026-11-04', 'celsius'), ('Tokyo', '2026-11-05', 'fahrenheit'),
         ('New York', '2026-11-04', 'fahrenheit'), ('Reykjavik', '2026-11-06', 'celsius'), ('Mumbai', '2026-11-07', 'celsius')]):
-        cases.append({'id': f'weather{i}', 'category': 'single', 'prompt': f'Get the weather in {city} on {date}, in {unit}.', 'expected': [call('get_weather', city=city, date=date, unit=unit)]})
+        date_phrase = 'today' if i == 0 else ('tomorrow' if i == 1 else f'on {date}')
+        cases.append({'id': f'weather{i}', 'category': 'single', 'prompt': f'Get the weather in {city} {date_phrase}, in {unit}.', 'expected': [call('get_weather', city=city, date=date, unit=unit)]})
     for i, (text, when) in enumerate([
         ('take medicine', '2026-11-04T18:00:00Z'), ('call Mum', '2026-11-05T09:30:00Z'),
         ('pay rent', '2026-12-01T08:00:00Z'), ('water the plants', '2026-11-06T07:15:00Z'), ('check oven', '2026-11-04T12:10:00Z')]):
-        cases.append({'id': f'reminder{i}', 'category': 'single', 'prompt': f'Create a reminder with text "{text}" at {when}.', 'expected': [call('create_reminder', text=text, when=when)]})
+        time_phrase = 'at 6 pm UTC today' if i == 0 else ('in ten minutes' if i == 4 else f'at {when}')
+        cases.append({'id': f'reminder{i}', 'category': 'single', 'prompt': f'Create a reminder with text "{text}" {time_phrase}.', 'expected': [call('create_reminder', text=text, when=when)]})
     for i, query in enumerate(['passport renewal', 'wifi password', 'meeting with Alex', 'vegan soup recipe', 'Q4 budget']):
         cases.append({'id': f'notes{i}', 'category': 'single', 'prompt': f'Search my notes for the exact query "{query}".', 'expected': [call('search_notes', query=query)]})
     for i, (recipient, text) in enumerate([('Alex', 'Running ten minutes late.'), ('Mum', 'I arrived safely!'), ('Sam', 'Can you bring milk?'), ('Jo', 'Meet at 5:30, not 5.'), ('Pat', 'The code is A&B<3.')]):

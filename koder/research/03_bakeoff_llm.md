@@ -83,7 +83,40 @@ license defines threshold as $10M or more but Section 5 says "exceeds"; avoid
 promising eligibility exactly at the boundary. No license gate was added to
 the evaluation.
 
-Speed and quality results pending.
+### First completed speed sweeps — LFM2.5 (1-thread / quality pending)
+
+Median of five warmed runs; decode uses 32 steps after the first token.
+
+| Threads | Prefill 100 tok/s | Prefill 1000 tok/s | Decode 100 / 1000 tok/s |
+|---|---:|---:|---:|
+| 4 | 56.03 | 56.58 | 6.95 / 6.78 |
+| 8 | 109.50 | 111.55 | 12.89 / 12.48 |
+
+| Threads | TTFT 100 (s) | TTFT 1000 (s) | Peak RSS (MiB) |
+|---|---:|---:|---:|
+| 4 | 1.785 | 17.674 | 1583.7 |
+| 8 | 0.913 | 8.965 | 1589.8 |
+
+Four-thread RSS after 100-token warm/trials was 929.5 MiB; 1000-token prefill
+raises it above **1.5 GB / 1.5 GiB**, even though the model files fit comfortably.
+Pi-class recommendation must distinguish weight size from working memory and
+restrict context. Additional full-logits 1000-token prefill: 56.24 tok/s at
+4 threads / 111.67 at 8, essentially unchanged for this model.
+
+### New optimized Qwen export caveat — Evidence: High
+
+The requested Qwen repository's card links a newer
+https://huggingface.co/onnx-community/Qwen3.5-4B-ONNX-OPT . Metadata-only inspection
+found fused `com.microsoft::CausalConvWithState` and `LinearAttention`, scalar
+`num_logits_to_keep`, and convolution state length 3 instead of 4.
+**Neither new operator is registered in this ORT 1.24.4 wheel**: minimal-op
+session probes fail with "not a registered function/op". Recorded in
+`bakeoff/llm/qwen_opt_probe.json`; no OPT weights downloaded or speed claims
+made. Thus the requested older export remains the usable 1.24.x baseline,
+but do not interpret the forthcoming speed gap as intrinsic to every Qwen
+runtime/export.
+
+Remaining speed and quality results pending.
 
 ## Contradictions and uncertainty
 

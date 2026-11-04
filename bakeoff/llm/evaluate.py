@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run warmed speed trials or synthetic quality; persist each request immediately."""
 import argparse
+import hashlib
 import json
 import os
 import platform
@@ -51,9 +52,10 @@ def speed(r, path, repeats, tokens):
 def quality(r, path, spot=False):
     r.chat([{'role': 'user', 'content': 'Say hello.'}], max_tokens=8)
     parse = parse_pythonic_calls if r.model == 'lfm25' else parse_calls
+    tool_specs = [t['function'] for t in TOOLS] if r.model == 'lfm25' else TOOLS
     for case in (tool_cases() if not spot else tool_cases()[::4]):
         messages = [{'role': 'system', 'content': TOOL_SYSTEM}, {'role': 'user', 'content': case['prompt']}]
-        result = r.chat(messages, tools=TOOLS, max_tokens=192)
+        result = r.chat(messages, tools=tool_specs, max_tokens=192)
         parsed = parse(final_text(result['text']))
         first_ok = parsed == case['expected']
         result.update(kind='tool', id=case['id'], case=case, parsed=parsed, first_pass=first_ok,
@@ -67,7 +69,7 @@ def quality(r, path, spot=False):
                 arg_text = ', '.join(k + '=' + repr(v) for k, v in tc['arguments'].items())
                 assistant['content'] = '<|tool_call_start|>[' + tc['name'] + '(' + arg_text + ')]<|tool_call_end|>'
             messages += [assistant, {'role': 'tool', 'tool_call_id': 'call_1', 'name': tc['name'], 'content': json.dumps(case['tool_result'])}]
-            second = r.chat(messages, tools=TOOLS, max_tokens=192)
+            second = r.chat(messages, tools=tool_specs, max_tokens=192)
             second_parsed = parse(final_text(second['text']))
             result['second'] = second
             result['second_parsed'] = second_parsed
@@ -119,7 +121,9 @@ def main():
     a.out.parent.mkdir(parents=True, exist_ok=True)
     r = Runner(a.model, a.threads)
     emit(a.out, {'kind': 'environment', 'ort': ort.__version__, 'python': platform.python_version(), 'model': a.model, 'threads': a.threads,
-                 'affinity': sorted(os.sched_getaffinity(0)), 'load_s': r.load_s, 'timestamp': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())})
+                 'affinity': sorted(os.sched_getaffinity(0)), 'load_s': r.load_s,
+                 'harness_sha256': {name: hashlib.sha256((Path(__file__).parent / name).read_bytes()).hexdigest() for name in ['runner.py', 'suites.py', 'evaluate.py']},
+                 'timestamp': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())})
     if a.mode == 'speed': speed(r, a.out, a.repeats, a.tokens)
     else: quality(r, a.out, a.spot)
 

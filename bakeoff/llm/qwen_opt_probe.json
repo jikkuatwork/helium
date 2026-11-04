@@ -1,0 +1,10 @@
+{
+  "repo": "onnx-community/Qwen3.5-4B-ONNX-OPT",
+  "revision": "bb072268d0912bdc5cf4f41c8c6f53a03fd68624",
+  "graph_sha256": "97a9351ca56a3e736f2bd9eac33de321224e7b0f97fcf30c7540a8b93371f699",
+  "ort": "1.24.4",
+  "probes": {
+    "CausalConvWithState": "[ONNXRuntimeError] : 1 : FAIL : Fatal error: com.microsoft:CausalConvWithState(-1) is not a registered function/op",
+    "LinearAttention": "[ONNXRuntimeError] : 1 : FAIL : Fatal error: com.microsoft:LinearAttention(-1) is not a registered function/op"
+  }
+}
