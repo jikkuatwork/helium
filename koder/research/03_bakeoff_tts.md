@@ -46,8 +46,21 @@ first complete PCM chunk. All runs use `taskset -c 0-7`.
 | 76 words | 0.667 | 33.670 | 1198.1 |
 | 275 words | 0.661 | 35.640 | 1163.7 |
 
-At 1 thread the 10-word sentence reaches 0.507× RT, 7.346s TTFA,
-283.3 MiB peak RSS. Full 1-thread matrix remains in progress.
+At 1 thread Kokoro reaches 0.507 / 0.505 / 0.498× RT for short /
+paragraph / long, respectively.
+
+| Phonon int8 input | RT× ↑ | TTFA s ↓ | Peak MiB ↓ |
+|---|---:|---:|---:|
+| 10 words, 4 threads | 10.552 | 0.280 | 323.5 |
+| 76 words, 4 threads | 10.729 | 0.380 | 592.5 |
+| 275 words, 4 threads | 11.143 | 0.434 | 665.7 |
+| 10 words, 1 thread | 3.584 | 0.826 | 323.7 |
+| 76 words, 1 thread | 3.545 | 1.120 | 592.8 |
+
+Phonon uses more RSS on the short input, less on the default-chunked long
+inputs. Its faster delivery also produces shorter audio (2.96 / 25.12 /
+83.84s vs Kokoro 3.725 / 29.925 / 98.625s); RT× accounts for this.
+Neither speed input hit Phonon's generation cap.
 
 The paragraph packs into 377 + 127 phoneme tokens, matching helium's
 480-token chunk policy; memory is dominated by inference, not weights.

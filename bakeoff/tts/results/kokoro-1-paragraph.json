@@ -1,0 +1,106 @@
+{
+  "model": "kokoro",
+  "threads": 1,
+  "shape": "paragraph",
+  "words": 76,
+  "load_s": 1.0537405889999718,
+  "warmup": {
+    "wall_s": 60.15231699900005,
+    "ttfa_s": 45.433462585999905,
+    "audio_s": 29.925,
+    "rtfx": 0.49748707103830203,
+    "chunks": [
+      {
+        "tokens": 377
+      },
+      {
+        "tokens": 127
+      }
+    ],
+    "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
+  },
+  "runs": [
+    {
+      "wall_s": 59.553887412999984,
+      "ttfa_s": 44.97319865600002,
+      "audio_s": 29.925,
+      "rtfx": 0.5024860894885543,
+      "chunks": [
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 127
+        }
+      ],
+      "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
+    },
+    {
+      "wall_s": 59.261717552000164,
+      "ttfa_s": 44.46933188800017,
+      "audio_s": 29.925,
+      "rtfx": 0.5049634272537211,
+      "chunks": [
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 127
+        }
+      ],
+      "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
+    },
+    {
+      "wall_s": 59.264246934000084,
+      "ttfa_s": 44.623311362000095,
+      "audio_s": 29.925,
+      "rtfx": 0.5049418755514792,
+      "chunks": [
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 127
+        }
+      ],
+      "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
+    },
+    {
+      "wall_s": 58.9829430809998,
+      "ttfa_s": 44.38791613600006,
+      "audio_s": 29.925,
+      "rtfx": 0.507350064897656,
+      "chunks": [
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 127
+        }
+      ],
+      "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
+    },
+    {
+      "wall_s": 59.38093674599986,
+      "ttfa_s": 44.636412862999805,
+      "audio_s": 29.925,
+      "rtfx": 0.5039496114384869,
+      "chunks": [
+        {
+          "tokens": 377
+        },
+        {
+          "tokens": 127
+        }
+      ],
+      "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
+    }
+  ],
+  "median": {
+    "wall_s": 59.264246934000084,
+    "ttfa_s": 44.623311362000095,
+    "audio_s": 29.925,
+    "rtfx": 0.5049418755514792
+  },
+  "ru_maxrss_kib": 1231668
+}

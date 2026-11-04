@@ -1,0 +1,106 @@
+{
+  "model": "phonon-int8",
+  "threads": 4,
+  "shape": "short",
+  "words": 10,
+  "load_s": 1.9213569650000863,
+  "warmup": {
+    "wall_s": 0.32202687700009847,
+    "ttfa_s": 0.32191195699988384,
+    "audio_s": 2.96,
+    "rtfx": 9.191779355730903,
+    "chunks": [
+      {
+        "text": "Please bring the blue notebook to our meeting this morning.",
+        "tokens": 15,
+        "frames": 37,
+        "eos": 37,
+        "capped": false
+      }
+    ]
+  },
+  "runs": [
+    {
+      "wall_s": 0.29064904599999863,
+      "ttfa_s": 0.290524366000227,
+      "audio_s": 2.96,
+      "rtfx": 10.18410361477675,
+      "chunks": [
+        {
+          "text": "Please bring the blue notebook to our meeting this morning.",
+          "tokens": 15,
+          "frames": 37,
+          "eos": 37,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 0.2780303939998703,
+      "ttfa_s": 0.277899633999823,
+      "audio_s": 2.96,
+      "rtfx": 10.646318042484884,
+      "chunks": [
+        {
+          "text": "Please bring the blue notebook to our meeting this morning.",
+          "tokens": 15,
+          "frames": 37,
+          "eos": 37,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 0.2805246759999136,
+      "ttfa_s": 0.28049675600004775,
+      "audio_s": 2.96,
+      "rtfx": 10.551656425408051,
+      "chunks": [
+        {
+          "text": "Please bring the blue notebook to our meeting this morning.",
+          "tokens": 15,
+          "frames": 37,
+          "eos": 37,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 0.27960599500011085,
+      "ttfa_s": 0.27957691499977955,
+      "audio_s": 2.96,
+      "rtfx": 10.586325232400066,
+      "chunks": [
+        {
+          "text": "Please bring the blue notebook to our meeting this morning.",
+          "tokens": 15,
+          "frames": 37,
+          "eos": 37,
+          "capped": false
+        }
+      ]
+    },
+    {
+      "wall_s": 0.2821678380000776,
+      "ttfa_s": 0.2821359980002853,
+      "audio_s": 2.96,
+      "rtfx": 10.490210439926841,
+      "chunks": [
+        {
+          "text": "Please bring the blue notebook to our meeting this morning.",
+          "tokens": 15,
+          "frames": 37,
+          "eos": 37,
+          "capped": false
+        }
+      ]
+    }
+  ],
+  "median": {
+    "wall_s": 0.2805246759999136,
+    "ttfa_s": 0.28049675600004775,
+    "audio_s": 2.96,
+    "rtfx": 10.551656425408051
+  },
+  "ru_maxrss_kib": 330960
+}
