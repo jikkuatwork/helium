@@ -22,9 +22,19 @@ def main():
             path = DATA/f"{model}-{row['id']}.wav"
             pcm, detail = engine.speak(row['spoken'])
             sf.write(str(path),pcm,24000,subtype='FLOAT')
-            meta.append({'model':model,'id':row['id'],'category':row['category'],'path':str(path),**detail})
+            meta.append({'model':model,'mode':'controlled','id':row['id'],'category':row['category'],'path':str(path),**detail})
             (ROOT/'results/synthesis.json').write_text(json.dumps(meta,indent=2)+'\n')
             print(model,row['id'],round(detail['rtfx'],2),flush=True)
+        # Separate production-input audit: do not mix normalization with controlled WER.
+        for row in rows:
+            if row['category'] not in ['structured','acronyms']:
+                continue
+            path = DATA/f"{model}-raw-{row['id']}.wav"
+            pcm, detail = engine.speak(row['raw'])
+            sf.write(str(path),pcm,24000,subtype='FLOAT')
+            meta.append({'model':model,'mode':'raw','id':row['id'],'category':row['category'],'path':str(path),**detail})
+            (ROOT/'results/synthesis.json').write_text(json.dumps(meta,indent=2)+'\n')
+            print(model,'raw',row['id'],round(detail['rtfx'],2),flush=True)
         del engine
     selected = [0,10,11,20,30,40]
     index = []

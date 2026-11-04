@@ -53,7 +53,7 @@ def main():
         hypothesis=' '.join(x.text.strip() for x in segments)
         row=corpus[item['id']]
         ref=canonical(row['spoken']);hyp=canonical(hypothesis)
-        result={'id':item['id'],'model':item['model'],'category':row['category'],
+        result={'id':item['id'],'model':item['model'],'mode':item['mode'],'category':row['category'],
                 'reference':row['spoken'],'transcript':hypothesis,'canonical_reference':ref,
                 'canonical_hypothesis':hyp,'counts':counts(ref,hyp),
                 'literal_counts':counts(literal(row['spoken']),literal(hypothesis)),
@@ -62,12 +62,16 @@ def main():
         (ROOT/'results/transcripts.json').write_text(json.dumps(outputs,indent=2,ensure_ascii=False)+'\n')
         print(item['model'],item['id'],result['counts'],hypothesis,flush=True)
     totals={}
-    for model in sorted({x['model'] for x in outputs}):
-        totals[model]={}
-        for cat in ['all','prose','structured','names','acronyms','long']:
-            xs=[x for x in outputs if x['model']==model and (cat=='all' or x['category']==cat)]
-            n=sum(x['counts']['words'] for x in xs);e=sum(x['counts']['errors'] for x in xs)
-            totals[model][cat]={'sentences':len(xs),'words':n,'errors':e,'wer':e/n}
+    for mode in ['controlled','raw']:
+        totals[mode]={}
+        for model in sorted({x['model'] for x in outputs}):
+            totals[mode][model]={}
+            for cat in ['all','prose','structured','names','acronyms','long']:
+                xs=[x for x in outputs if x['model']==model and x['mode']==mode and (cat=='all' or x['category']==cat)]
+                if not xs:
+                    continue
+                n=sum(x['counts']['words'] for x in xs);e=sum(x['counts']['errors'] for x in xs)
+                totals[mode][model][cat]={'sentences':len(xs),'words':n,'errors':e,'wer':e/n}
     (ROOT/'results/wer.json').write_text(json.dumps(totals,indent=2)+'\n')
     print(json.dumps(totals,indent=2),flush=True)
 

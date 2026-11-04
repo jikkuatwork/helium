@@ -23,6 +23,7 @@ onnx==1.23.2
 onnxruntime==1.24.4
 packaging==26.3
 protobuf==7.36.2
+ptts==0.6.0
 pycparser==3.12
 PyYAML==6.0.3
 RapidFuzz==3.14.6

@@ -1,7 +1,8 @@
 """Evaluation runners, not helium integration. CPU EP; current Phonon export.
 
 Phonon HF revision f0f522a: 8 AR frames/call, stateless Mimi decoding.
-Already-normalized text is required. Neither sampler nor PCM is time-stretched.
+Text passes through the reference ptts.normalize Rust-backed Python API.
+Neither sampler nor PCM is time-stretched.
 """
 import json
 import math
@@ -13,6 +14,7 @@ import time
 
 import numpy as np
 import onnxruntime as ort
+import ptts
 from tokenizers import Tokenizer
 
 PHONON = Path.home() / 'models/tts/phonon'
@@ -75,6 +77,7 @@ class Phonon:
 
     def speak(self, text, seed=1234, temperature=.3):
         start = time.perf_counter()
+        text = ptts.normalize(text, lang='en')
         rng = np.random.default_rng(seed)
         audio, details = [], []
         first = None
