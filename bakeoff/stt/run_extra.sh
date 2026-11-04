@@ -43,4 +43,5 @@ python3 bakeoff/stt/build_probe.py --program bakeoff/stt/actual/main.go --output
 taskset -c 8-15 "$PY" bakeoff/stt/actual.py prepare > "$OUT/actual-prepare.log" 2>&1
 HELIUM_BAKE_THREADS=4 taskset -c 8-15 /usr/bin/time -v -o "$OUT/helium-actual.rss.txt" /tmp/stt-actual-probe "$HOME/datasets/stt/actual-manifest.json" > "$OUT/helium-actual.jsonl" 2> "$OUT/helium-actual.log"
 taskset -c 8-15 "$PY" bakeoff/stt/actual.py compare > "$OUT/helium-actual-compare.log" 2>&1
+taskset -c 8-15 "$PY" bakeoff/stt/position_probe.py > "$OUT/position-slice.log" 2>&1
 taskset -c 8-15 /usr/bin/time -v -o "$OUT/length-boundary.rss.txt" "$PY" bakeoff/stt/limits.py > "$OUT/length-boundary.log" 2>&1

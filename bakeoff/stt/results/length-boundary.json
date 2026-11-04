@@ -1,0 +1,18 @@
+[
+  {
+    "samples": 6401279,
+    "seconds": 400.0799375,
+    "success": true,
+    "hypothesis_words": 1145,
+    "elapsed_seconds_single_probe": 23.020642536000196,
+    "peak_rss_kib": 3366052
+  },
+  {
+    "samples": 6401280,
+    "seconds": 400.08,
+    "success": false,
+    "exception": "[ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Non-zero status code returned while running Add node. Name:'/layers.0/self_attn/Add_2' Status Message: /onnxruntime_src/onnxruntime/core/providers/cpu/math/element_wise_ops.h:540 void onnxruntime::BroadcastIterator::Init(ptrdiff_t, ptrdiff_t) axis == 1 || axis == largest was false. Attempting to broadcast an axis by a dimension other than 1. 2 by 5002\n",
+    "elapsed_seconds_single_probe": 1.8890795469997101,
+    "peak_rss_kib": 3567840
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "samples": 6399999,
+    "seconds": 399.9999375,
+    "success": true,
+    "hypothesis_words": 1126,
+    "elapsed_seconds_single_probe": 37.17115931300032,
+    "peak_rss_kib": 6665892
+  },
+  {
+    "samples": 6400000,
+    "seconds": 400.0,
+    "success": true,
+    "hypothesis_words": 1140,
+    "elapsed_seconds_single_probe": 22.815140186999997,
+    "peak_rss_kib": 6866340
+  }
+]

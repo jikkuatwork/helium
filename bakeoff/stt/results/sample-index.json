@@ -1,0 +1,62 @@
+[
+  {
+    "file": "long-12min.wav",
+    "sample_rate": 16000,
+    "seconds": 720.8999375,
+    "sha256": "eaf89e20b594c3120462835792375df8c4a344fff1c07bd6531b472319b892f1"
+  },
+  {
+    "file": "long-20min.wav",
+    "sample_rate": 16000,
+    "seconds": 1201.2349375,
+    "sha256": "9a1db7ae14fe2ee633667990a23b6e7757eb4da7c6f272291076eab171126c65"
+  },
+  {
+    "file": "long-5min.wav",
+    "sample_rate": 16000,
+    "seconds": 301.735,
+    "sha256": "57123bf04e89685bb2a8ed9649ed784ae10f7cd2f79fef7932274924f39293a7"
+  },
+  {
+    "file": "noise-0db-0.wav",
+    "sample_rate": 16000,
+    "seconds": 9.19,
+    "sha256": "5afe882eec5398ef86d621c35be4791f93b9a72d3ab3669c9a884182fe6e5495"
+  },
+  {
+    "file": "noise-0db-1.wav",
+    "sample_rate": 16000,
+    "seconds": 7.7,
+    "sha256": "f236553b832080c6815bf8c82f38fbd6d4ef64b78483ced2d745882b7d40fff4"
+  },
+  {
+    "file": "noise-0db-2.wav",
+    "sample_rate": 16000,
+    "seconds": 4.67,
+    "sha256": "e789fd3d52a8cfbeca27161f59f7c6e6d82148b3a70edd15a7ff01026c7343f5"
+  },
+  {
+    "file": "noise-10db-0.wav",
+    "sample_rate": 16000,
+    "seconds": 9.19,
+    "sha256": "46dfac5f67fae3bc4f4d3869c33158b4d320a1cd9c1248c201f879044d6f330b"
+  },
+  {
+    "file": "noise-10db-1.wav",
+    "sample_rate": 16000,
+    "seconds": 7.7,
+    "sha256": "eb0eec444ba994b663513c8e25cdca6df530477c6406e4976ad2d48c0dc46878"
+  },
+  {
+    "file": "noise-10db-2.wav",
+    "sample_rate": 16000,
+    "seconds": 4.67,
+    "sha256": "9810e62c45b5ee747acefd403cebf66d0ce81597bd6837e67621d80dd6fe9ec0"
+  },
+  {
+    "file": "parity.wav",
+    "sample_rate": 16000,
+    "seconds": 9.19,
+    "sha256": "31a676ee6db22d1830c93881577b543958cc2247621bfbaa95a7b3c593ddb771"
+  }
+]

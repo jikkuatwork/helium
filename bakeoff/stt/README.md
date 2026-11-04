@@ -13,6 +13,12 @@ From the helium repo root (Ubuntu aarch64; `go`, `taskset`, `/usr/bin/time`):
 python3 -m venv ~/models/stt/venv
 ~/models/stt/venv/bin/pip install -r bakeoff/stt/requirements.txt
 python3 bakeoff/stt/download.py --large
+# If helium has not downloaded ORT yet, reuse the pinned wheel's 1.24.4 lib.
+mkdir -p ~/.helium/ort
+if [ ! -e ~/.helium/ort/libonnxruntime.so.1.24.4 ]; then
+  ln -s ~/models/stt/venv/lib/python3.12/site-packages/onnxruntime/capi/libonnxruntime.so.1.24.4 \
+    ~/.helium/ort/libonnxruntime.so.1.24.4
+fi
 # Fixed seeds; writes manifests outside the repo and three concatenated WAVs.
 taskset -c 8-15 ~/models/stt/venv/bin/python bakeoff/stt/bench.py prepare
 # Evaluation-only Go build overlay: changes only session thread options.
@@ -59,9 +65,16 @@ The Go probe times its actual WAV streaming/chunking as well as inference.
 - `run.sh`: primary accuracy/noise/short/long measurements, preserving failed
   12/20-minute single-pass attempts as evidence.
 - `run_extra.sh`: independent feature check, actual helium long handling,
-  optional 0.6B v2 int8, and representative balanced-batch speed measurements.
+  optional 0.6B v2 int8, representative balanced-batch speed measurements,
+  all-740 Go/Python comparison, and position/boundary diagnostics.
+- `actual/main.go`, `actual.py`: additional full-path check through helium's
+  actual silence gate/WAV reader, comparing all **740** clean/other/noise
+  outputs to the Python runner. WAVs are prepared outside the repository.
 - `limits.py`: one-call boundary validity probes around the fixed position
-  table's maximum; not used as speed measurements.
+  table's hard exception edge; not used as speed measurements. A narrow
+  singleton-broadcast band executes with incorrect position slicing.
+- `position_probe.py`: extracts the original position-slicing nodes into an
+  ONNX graph under `~/models/stt/` and verifies that singleton edge directly.
 - `parity.py`: exact-text check of 10 actual helium engine outputs against
   the fair Python Moonshine decoder, using temporary WAVs outside the repo.
 - `summarize.py`: aggregate WER, paired utterance bootstrap, medians, RSS.

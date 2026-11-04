@@ -12,8 +12,9 @@ from bench import Parakeet, SAMPLES, read_audio
 model = Parakeet(4)
 x = read_audio(SAMPLES/'long-12min.wav')
 rows = []
-# 5000 encoder frames fit [1,9999,512]; the next padded frame does not.
-for samples in [6_399_999, 6_400_000]:
+# The extra frontend frame gives T=5001 in a tiny edge band: the position
+# Slice has one row there and Add silently broadcasts it. T=5002 hard-fails.
+for samples in [6_401_279, 6_401_280]:
     start = time.perf_counter()
     try:
         text = model(x[:samples])

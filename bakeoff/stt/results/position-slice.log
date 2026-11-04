@@ -1,0 +1,57 @@
+[0;93m2026-11-04 19:41:39.801543378 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[
+  {
+    "encoder_frames": 3750,
+    "position_tensor_shape": [
+      1,
+      7499,
+      512
+    ],
+    "expected_position_rows": 7499
+  },
+  {
+    "encoder_frames": 5000,
+    "position_tensor_shape": [
+      1,
+      9999,
+      512
+    ],
+    "expected_position_rows": 9999
+  },
+  {
+    "encoder_frames": 5001,
+    "position_tensor_shape": [
+      1,
+      1,
+      512
+    ],
+    "expected_position_rows": 10001
+  },
+  {
+    "encoder_frames": 5002,
+    "position_tensor_shape": [
+      1,
+      2,
+      512
+    ],
+    "expected_position_rows": 10003
+  },
+  {
+    "encoder_frames": 9012,
+    "position_tensor_shape": [
+      1,
+      4012,
+      512
+    ],
+    "expected_position_rows": 18023
+  },
+  {
+    "encoder_frames": 15016,
+    "position_tensor_shape": [
+      1,
+      9999,
+      512
+    ],
+    "expected_position_rows": 30031
+  }
+]

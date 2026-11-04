@@ -1,0 +1,52 @@
+[0;93m2026-11-04 19:35:47.142246167 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+{
+  "cases": 740,
+  "exact_matches": 740,
+  "differences": [],
+  "accuracy": {
+    "test-clean": {
+      "utterances": 320,
+      "reference_words": 6509,
+      "wer": 0.05208173298509756,
+      "substitutions": 257,
+      "insertions": 36,
+      "deletions": 46,
+      "audio_seconds": 2407.619875,
+      "inference_seconds": 93.246068193,
+      "rtf": 0.038729564065008396
+    },
+    "test-other": {
+      "utterances": 320,
+      "reference_words": 5813,
+      "wer": 0.12231205917770514,
+      "substitutions": 550,
+      "insertions": 75,
+      "deletions": 86,
+      "audio_seconds": 2085.5151875,
+      "inference_seconds": 82.724989994,
+      "rtf": 0.039666452917643875
+    },
+    "noise_10db": {
+      "utterances": 50,
+      "reference_words": 1266,
+      "wer": 0.12796208530805686,
+      "substitutions": 129,
+      "insertions": 18,
+      "deletions": 15,
+      "audio_seconds": 447.3049375,
+      "inference_seconds": 17.553949469,
+      "rtf": 0.03924380885914097
+    },
+    "noise_0db": {
+      "utterances": 50,
+      "reference_words": 1266,
+      "wer": 0.5205371248025277,
+      "substitutions": 507,
+      "insertions": 65,
+      "deletions": 87,
+      "audio_seconds": 447.3049375,
+      "inference_seconds": 17.358464205,
+      "rtf": 0.03880677978208099
+    }
+  }
+}
