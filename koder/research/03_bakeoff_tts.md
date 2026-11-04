@@ -44,6 +44,10 @@ first complete PCM chunk. All runs use `taskset -c 0-7`.
 |---|---:|---:|---:|
 | 10 words | 0.677 | 5.501 | 278.2 |
 | 76 words | 0.667 | 33.670 | 1198.1 |
+| 275 words | 0.661 | 35.640 | 1163.7 |
+
+At 1 thread the 10-word sentence reaches 0.507× RT, 7.346s TTFA,
+283.3 MiB peak RSS. Full 1-thread matrix remains in progress.
 
 The paragraph packs into 377 + 127 phoneme tokens, matching helium's
 480-token chunk policy; memory is dominated by inference, not weights.
