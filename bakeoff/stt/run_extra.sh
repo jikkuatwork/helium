@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Execute only after run.sh has finished; no concurrent timed candidates.
+set -euo pipefail
+cd "$(dirname "$0")/../.."
+PY="$HOME/models/stt/venv/bin/python"
+OUT=bakeoff/stt/results
+mkdir -p "$OUT"
+run() { taskset -c 8-15 /usr/bin/time -v -o "$OUT/$1.rss.txt" "$PY" bakeoff/stt/bench.py "${@:2}" > "$OUT/$1.log" 2>&1; }
+taskset -c 8-15 "$PY" bakeoff/stt/features.py > "$OUT/feature-parity.json"
+for threads in 4 1; do
+ for minutes in 5 12; do
+  HELIUM_BAKE_THREADS=$threads taskset -c 8-15 /usr/bin/time -v -o "$OUT/helium-long${minutes}-${threads}.rss.txt" /tmp/stt-helium-probe "$HOME/bakeoff-samples/stt/long-${minutes}min.wav" > "$OUT/helium-long${minutes}-${threads}.json" 2> "$OUT/helium-long${minutes}-${threads}.log"
+ done
+ HELIUM_BAKE_THREADS=$threads taskset -c 8-15 /usr/bin/time -v -o "$OUT/helium-short-${threads}.rss.txt" /tmp/stt-helium-probe "$HOME/bakeoff-samples/stt/parity.wav" > "$OUT/helium-short-${threads}.json" 2> "$OUT/helium-short-${threads}.log"
+done
+run large-accuracy accuracy --model large --output "$OUT/large-accuracy.jsonl"
+for snr in 10 0; do
+ run "large-noise-${snr}" accuracy --model large --snr "$snr" --output "$OUT/large-noise-${snr}.jsonl"
+done
+for threads in 4 1; do
+ run "large-short-${threads}" timing --model large --threads "$threads" --audio "$HOME/bakeoff-samples/stt/parity.wav" --output "$OUT/large-short-${threads}.json"
+done
+run large-long5chunk-4 timing --model large --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --chunk 30 --reference --output "$OUT/large-long5chunk-4.json"
