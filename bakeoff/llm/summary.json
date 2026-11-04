@@ -1,0 +1,1598 @@
+{
+  "speed": {
+    "lfm25-1t": {
+      "medians": [
+        {
+          "ttft_s": 7.016824067000016,
+          "prefill_tps": 14.251461778883414,
+          "decode_tps": 1.8456801694109004,
+          "total_s": 24.34848823499999,
+          "peak_rss_mib": 926.69140625,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 67.99490665200005,
+          "prefill_tps": 14.706983938047442,
+          "decode_tps": 1.793006323766438,
+          "total_s": 85.83884266200016,
+          "peak_rss_mib": 1581.09765625,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "kind": "full_logits_median",
+          "id": "full_logits_median1000",
+          "ttft_s": 67.5149107289999,
+          "prefill_tps": 14.811542949585311
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "lfm25",
+        "threads": 1,
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 1.0303955620000806,
+        "harness_sha256": {
+          "runner.py": "e19a31cd348d0ee28ae3e541d872bd7ab61f46b316ff0ab18f4cf8e32dfdf215",
+          "suites.py": "5cf71c0fd42331a8ff232bbed5689600828d7164c69c7874e9842d59b6926ae8",
+          "evaluate.py": "2f0aaac1ce713718525e68e1e2b13d7704eb8b26850ac3ff4ba5fb24ef274d38"
+        },
+        "timestamp": "2026-11-04T18:11:28Z"
+      },
+      "process_peak_rss_mib": 1581.09765625,
+      "process_exit_success": true
+    },
+    "lfm25-4t": {
+      "medians": [
+        {
+          "ttft_s": 1.7847795080000424,
+          "prefill_tps": 56.02932998264659,
+          "decode_tps": 6.951741212582001,
+          "total_s": 6.392908575999968,
+          "peak_rss_mib": 929.46484375,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 17.674320187000035,
+          "prefill_tps": 56.57926242252466,
+          "decode_tps": 6.775854298937166,
+          "total_s": 22.397444684999982,
+          "peak_rss_mib": 1583.71484375,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "kind": "full_logits_median",
+          "id": "full_logits_median1000",
+          "ttft_s": 17.782488148000084,
+          "prefill_tps": 56.23510004208637
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "lfm25",
+        "threads": 4,
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 0.9826306170000407,
+        "timestamp": "2026-11-04T18:04:17Z"
+      },
+      "process_peak_rss_mib": 1583.71484375,
+      "process_exit_success": true
+    },
+    "lfm25-8t": {
+      "medians": [
+        {
+          "ttft_s": 0.9132256410000537,
+          "prefill_tps": 109.50196261516723,
+          "decode_tps": 12.891463899896232,
+          "total_s": 3.3954883420000215,
+          "peak_rss_mib": 934.8359375,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 8.964798295000037,
+          "prefill_tps": 111.54740654429816,
+          "decode_tps": 12.477377899746436,
+          "total_s": 11.522990285999981,
+          "peak_rss_mib": 1589.5390625,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "kind": "full_logits_median",
+          "id": "full_logits_median1000",
+          "ttft_s": 8.954616197000064,
+          "prefill_tps": 111.67424465774597
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "lfm25",
+        "threads": 8,
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 1.0383052139999336,
+        "harness_sha256": {
+          "runner.py": "e19a31cd348d0ee28ae3e541d872bd7ab61f46b316ff0ab18f4cf8e32dfdf215",
+          "suites.py": "5cf71c0fd42331a8ff232bbed5689600828d7164c69c7874e9842d59b6926ae8",
+          "evaluate.py": "52fbf87da65675559840f17c00b811e69b6a808acf756e83c7347c515da3ed26"
+        },
+        "timestamp": "2026-11-04T18:09:02Z"
+      },
+      "process_peak_rss_mib": 1589.7890625,
+      "process_exit_success": true
+    },
+    "lfm25-acc4-4t": {
+      "medians": [
+        {
+          "ttft_s": 1.4433083479998459,
+          "prefill_tps": 69.28526405225966,
+          "decode_tps": 28.82008076592543,
+          "total_s": 2.552249239000048,
+          "peak_rss_mib": 926.13671875,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 14.633923352000238,
+          "prefill_tps": 68.33437458610953,
+          "decode_tps": 25.751419686824683,
+          "total_s": 15.871770621999985,
+          "peak_rss_mib": 1589.3203125,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "kind": "full_logits_median",
+          "id": "full_logits_median1000",
+          "ttft_s": 14.61942285600071,
+          "prefill_tps": 68.40215307060076
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "lfm25-acc4",
+        "threads": 4,
+        "accuracy4_control": true,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 1.0181532219999099,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "019793bca2b5edad56535769fe0f5e89deac8ac56a3288ef0628d187bf3fd285",
+          "evaluate.py": "38db356661592c9f208fe874ad3f0fbeefa41b00aa9ae0e6317879d1a4be1a30"
+        },
+        "timestamp": "2026-11-04T19:02:44Z"
+      },
+      "process_peak_rss_mib": 1589.3203125,
+      "process_exit_success": true
+    },
+    "lfm3-1t": {
+      "medians": [
+        {
+          "ttft_s": 6.611351087999992,
+          "prefill_tps": 15.125501379212206,
+          "decode_tps": 5.7745729696614525,
+          "total_s": 12.146754416000022,
+          "peak_rss_mib": 1929.44140625,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 68.24623989500014,
+          "prefill_tps": 14.65282192159662,
+          "decode_tps": 5.110910300819114,
+          "total_s": 74.4973894159998,
+          "peak_rss_mib": 2608.44140625,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "lfm3",
+        "threads": 1,
+        "accuracy4_control": false,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 2.141877721000128,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "019793bca2b5edad56535769fe0f5e89deac8ac56a3288ef0628d187bf3fd285",
+          "evaluate.py": "38db356661592c9f208fe874ad3f0fbeefa41b00aa9ae0e6317879d1a4be1a30"
+        },
+        "timestamp": "2026-11-04T18:54:01Z"
+      },
+      "process_peak_rss_mib": 2608.44140625,
+      "process_exit_success": true
+    },
+    "lfm3-4t": {
+      "medians": [
+        {
+          "ttft_s": 1.7240444909998587,
+          "prefill_tps": 58.003143493127055,
+          "decode_tps": 18.205145241236547,
+          "total_s": 3.4877790010000354,
+          "peak_rss_mib": 1930.2265625,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 17.52371720400015,
+          "prefill_tps": 57.065518026719204,
+          "decode_tps": 15.817054827051201,
+          "total_s": 19.545547555999747,
+          "peak_rss_mib": 2608.7265625,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "kind": "full_logits_median",
+          "id": "full_logits_median1000",
+          "ttft_s": 19.409390494000036,
+          "prefill_tps": 51.52145299509157
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "lfm3",
+        "threads": 4,
+        "accuracy4_control": false,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 2.1426358829999117,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "328648496d6bd0306aba4c6d387c2d69d49ce32ec17cc22081f256e66aaae1d6",
+          "evaluate.py": "cd232d200e22e3a972f11a9dfcedcfd6d2b70e9f12abdcc7b6ae5a4396bceee5"
+        },
+        "timestamp": "2026-11-04T18:32:53Z"
+      },
+      "process_peak_rss_mib": 3128.9765625,
+      "process_exit_success": true
+    },
+    "lfm3-8t": {
+      "medians": [
+        {
+          "ttft_s": 0.9418248049996691,
+          "prefill_tps": 106.17685950630184,
+          "decode_tps": 26.22917525819575,
+          "total_s": 2.165223545000117,
+          "peak_rss_mib": 1929.859375,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 9.075579559999824,
+          "prefill_tps": 110.18580063001723,
+          "decode_tps": 23.237026749814365,
+          "total_s": 10.459912663000068,
+          "peak_rss_mib": 2608.859375,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "lfm3",
+        "threads": 8,
+        "accuracy4_control": false,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 2.121107996000319,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "019793bca2b5edad56535769fe0f5e89deac8ac56a3288ef0628d187bf3fd285",
+          "evaluate.py": "38db356661592c9f208fe874ad3f0fbeefa41b00aa9ae0e6317879d1a4be1a30"
+        },
+        "timestamp": "2026-11-04T18:52:40Z"
+      },
+      "process_peak_rss_mib": 2608.859375,
+      "process_exit_success": true
+    },
+    "qwen-1t": {
+      "medians": [
+        {
+          "ttft_s": 28.079225990999475,
+          "prefill_tps": 3.56135172785938,
+          "decode_tps": 0.497989955881321,
+          "total_s": 92.33374122900022,
+          "peak_rss_mib": 3189.375,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "qwen",
+        "threads": 1,
+        "accuracy4_control": false,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "speed_prompt_lengths": [
+          100
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 4.129692341999544,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "721277abb1b54ed08177144b70c3a94f6816680e99207183ce7dc5d98e364b72",
+          "evaluate.py": "d4766bf180527b1809f3bfe3cf80e68aee46fb319aead63a77186280553cf45c"
+        },
+        "timestamp": "2026-11-04T20:54:55Z"
+      },
+      "process_peak_rss_mib": 3189.375,
+      "process_exit_success": true
+    },
+    "qwen-4t": {
+      "medians": [
+        {
+          "ttft_s": 7.9135228919994915,
+          "prefill_tps": 12.636597045937556,
+          "decode_tps": 1.864584604294785,
+          "total_s": 25.0242085710006,
+          "peak_rss_mib": 3194.84375,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 77.80668144599986,
+          "prefill_tps": 12.852366678741204,
+          "decode_tps": 1.8295728481972124,
+          "total_s": 95.268803768,
+          "peak_rss_mib": 5007.15625,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "qwen",
+        "threads": 4,
+        "accuracy4_control": false,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "speed_prompt_lengths": [
+          100,
+          1000
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 4.173139292999622,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "019793bca2b5edad56535769fe0f5e89deac8ac56a3288ef0628d187bf3fd285",
+          "evaluate.py": "d4766bf180527b1809f3bfe3cf80e68aee46fb319aead63a77186280553cf45c"
+        },
+        "timestamp": "2026-11-04T19:14:35Z"
+      },
+      "process_peak_rss_mib": 5007.15625,
+      "process_exit_success": true
+    },
+    "qwen-8t": {
+      "medians": [
+        {
+          "ttft_s": 4.64946331900137,
+          "prefill_tps": 21.507858679370845,
+          "decode_tps": 3.442381660392733,
+          "total_s": 13.942610972000693,
+          "peak_rss_mib": 3203.046875,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 45.31356329699884,
+          "prefill_tps": 22.068447662032153,
+          "decode_tps": 3.355934799119831,
+          "total_s": 54.851348860000144,
+          "peak_rss_mib": 5015.859375,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "qwen",
+        "threads": 8,
+        "accuracy4_control": false,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "speed_prompt_lengths": [
+          100,
+          1000
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 4.117093204000412,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "721277abb1b54ed08177144b70c3a94f6816680e99207183ce7dc5d98e364b72",
+          "evaluate.py": "d4766bf180527b1809f3bfe3cf80e68aee46fb319aead63a77186280553cf45c"
+        },
+        "timestamp": "2026-11-04T20:47:54Z"
+      },
+      "process_peak_rss_mib": 5015.859375,
+      "process_exit_success": true
+    },
+    "qwen-acc4-4t": {
+      "medians": [
+        {
+          "ttft_s": 6.6865784370002075,
+          "prefill_tps": 14.955331929802785,
+          "decode_tps": 7.278962372340673,
+          "total_s": 11.054774496000391,
+          "peak_rss_mib": 3188.8984375,
+          "kind": "median",
+          "id": "median100",
+          "prompt_tokens": 100,
+          "repeats": 5,
+          "decode_steps": 32
+        },
+        {
+          "ttft_s": 66.86259506399983,
+          "prefill_tps": 14.956045290237622,
+          "decode_tps": 6.714157756466361,
+          "total_s": 71.60297041400008,
+          "peak_rss_mib": 5010.9609375,
+          "kind": "median",
+          "id": "median1000",
+          "prompt_tokens": 1000,
+          "repeats": 5,
+          "decode_steps": 32
+        }
+      ],
+      "environment": {
+        "kind": "environment",
+        "ort": "1.24.4",
+        "python": "3.12.3",
+        "model": "qwen-acc4",
+        "threads": 4,
+        "accuracy4_control": true,
+        "quality_shard": [
+          0,
+          1
+        ],
+        "affinity": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "load_s": 4.1337139530005516,
+        "harness_sha256": {
+          "runner.py": "2952fe5d2dd187d9c7f79a647fd6fdbd48e13c3f44dca5bead5539320a5b4ff7",
+          "suites.py": "019793bca2b5edad56535769fe0f5e89deac8ac56a3288ef0628d187bf3fd285",
+          "evaluate.py": "38db356661592c9f208fe874ad3f0fbeefa41b00aa9ae0e6317879d1a4be1a30"
+        },
+        "timestamp": "2026-11-04T19:06:10Z"
+      },
+      "process_peak_rss_mib": 5010.9609375,
+      "process_exit_success": true
+    }
+  },
+  "quality": {
+    "lfm25": {
+      "quality_timings_comparable": true,
+      "tool_total": 9,
+      "tool_pass": 9,
+      "tool_categories": {
+        "single": {
+          "total": 7,
+          "pass": 7
+        },
+        "no_tool": {
+          "total": 1,
+          "pass": 1
+        },
+        "two_step": {
+          "total": 1,
+          "pass": 1
+        }
+      },
+      "instruction_total": 10,
+      "instruction_pass": 7,
+      "instruction_raw_pass": 7,
+      "constraint_raw_pass": 11,
+      "instruction_raw_failures": [
+        {
+          "id": "if06",
+          "prompt": "Write a thank-you message in exactly 7 words.",
+          "text": "Thank you for your kindness.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if09",
+          "prompt": "Explain clouds in exactly 10 words.",
+          "text": "Clouds are water vapor clouds in the sky.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if27",
+          "prompt": "Write exactly three words about tea. All letters must be uppercase. No punctuation.",
+          "text": "TEA<|im_end|>",
+          "checks": {
+            "words": false,
+            "uppercase": true,
+            "letters_spaces_only": true
+          }
+        }
+      ],
+      "constraint_pass": 11,
+      "constraint_total": 14,
+      "instruction_failures": [
+        {
+          "id": "if06",
+          "prompt": "Write a thank-you message in exactly 7 words.",
+          "text": "Thank you for your kindness.",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if09",
+          "prompt": "Explain clouds in exactly 10 words.",
+          "text": "Clouds are water vapor clouds in the sky.",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if27",
+          "prompt": "Write exactly three words about tea. All letters must be uppercase. No punctuation.",
+          "text": "TEA",
+          "checks": {
+            "words": false,
+            "uppercase": true,
+            "letters_spaces_only": true
+          }
+        }
+      ],
+      "tool_failures": [],
+      "voice": [
+        {
+          "prompt": "Hey, I had a rough day. Say something kind.",
+          "text": "That sounds tough—want to talk about what happened? You're not alone.<|im_end|>",
+          "final_text": "That sounds tough—want to talk about what happened? You're not alone.",
+          "generated_tokens": 18,
+          "total_s": 3.5396767150000414
+        },
+        {
+          "prompt": "Why is the sky blue?",
+          "text": "The sky appears blue because Earth's atmosphere scatters sunlight in all directions, with blue light scattering more than other colors.<|im_end|>",
+          "final_text": "The sky appears blue because Earth's atmosphere scatters sunlight in all directions, with blue light scattering more than other colors.",
+          "generated_tokens": 25,
+          "total_s": 4.467032461000144
+        },
+        {
+          "prompt": "What can I make for lunch with eggs and rice?",
+          "text": "You can make scrambled eggs with rice for a simple and tasty lunch.<|im_end|>",
+          "final_text": "You can make scrambled eggs with rice for a simple and tasty lunch.",
+          "generated_tokens": 17,
+          "total_s": 3.3937969839998914
+        },
+        {
+          "prompt": "Remind me to drink water in twenty minutes.",
+          "text": "Sure! Make sure to drink some water now to stay hydrated.<|im_end|>",
+          "final_text": "Sure! Make sure to drink some water now to stay hydrated.",
+          "generated_tokens": 16,
+          "total_s": 3.2313469569999143
+        },
+        {
+          "prompt": "Summarize this in one sentence: The library will close on Friday for repairs. It reopens Monday at 9 am. Online borrowing remains available all weekend.",
+          "text": "The library is closed Friday for repairs but will reopen Monday at 9 am with weekend online borrowing available.<|im_end|>",
+          "final_text": "The library is closed Friday for repairs but will reopen Monday at 9 am with weekend online borrowing available.",
+          "generated_tokens": 23,
+          "total_s": 4.635978330999933
+        }
+      ],
+      "continuation_pass": 1,
+      "continuation_total": 1,
+      "off_generations": 25,
+      "off_tag_emissions": 0,
+      "off_reasoning_leaks": 0,
+      "off_truncations": 0,
+      "off_leak_outputs": [],
+      "thinking_pairs": 0
+    },
+    "lfm3": {
+      "quality_timings_comparable": true,
+      "tool_total": 36,
+      "tool_pass": 36,
+      "tool_categories": {
+        "single": {
+          "total": 25,
+          "pass": 25
+        },
+        "no_tool": {
+          "total": 6,
+          "pass": 6
+        },
+        "two_step": {
+          "total": 5,
+          "pass": 5
+        }
+      },
+      "instruction_total": 30,
+      "instruction_pass": 18,
+      "instruction_raw_pass": 8,
+      "constraint_raw_pass": 13,
+      "instruction_raw_failures": [
+        {
+          "id": "if00",
+          "prompt": "Explain photosynthesis in at most 12 words.",
+          "text": "Photosynthesis: plants use sunlight to make food (glucose) and oxygen. (9 words)</think>Photosynthesis: plants use sunlight to make food (glucose) and oxygen. (9 words)<|im_end|>",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if01",
+          "prompt": "Explain a rainbow in exactly 8 words.",
+          "text": "A rainbow is light refracted in water droplets. (8 words)</think>A rainbow is light refracted in water droplets.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if02",
+          "prompt": "Define gravity in exactly 6 words.",
+          "text": "Gravity is the downward force on mass. (6 words)</think>Gravity is the downward force on mass.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if03",
+          "prompt": "Give a calming bedtime thought in at most 10 words.",
+          "text": "<think>We need to generate a calming bedtime thought, at most 10 words. The user asks: \"Give a calming bedtime thought in at most 10 words.\" So we just need to produce a short phrase, calming, bedtime-related, and count words. Let's think of something like \"Dream of gentle waves, breathe slow.\" That's 5 words? \"Dream of gentle waves, breathe slow.\" Count: Dream(1) of(2) gentle(3) waves,(4) breathe(5) slow.(6) That's 6 words. Or \"Let your mind drift to quiet night.\" Count: Let(1) your(2) mind(3) drift(4) to(5) quiet(6) night.(7) That's 7 words. Or \"Sleep peacefully, stars will guide you.\" Count: Sleep(1) peacefully,(2) stars(3) will",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if04",
+          "prompt": "Describe a cat in exactly 5 words.",
+          "text": "A sleek, whiskered, purring feline. (5 words)</think>A sleek, whiskered, purring feline.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if05",
+          "prompt": "Explain why sleep matters in at most 9 words.",
+          "text": "Sleep restores brain function, clears toxins, and boosts memory. (9 words)<|im_end|>",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if07",
+          "prompt": "Suggest one healthy snack in at most 4 words.",
+          "text": "Apple slices with almond butter. (3 words for \"Apple slices with almond butter\" but need to count: \"Apple\" \"slices\" \"with\" \"almond\" \"butter\" = 5 words. Need at most 4 words.)\n\nBetter: \"Banana with peanut butter\" (4 words? \"Banana\" \"with\" \"peanut\" \"butter\" = 4 words). Yes.\n\nFinal answer: Banana with peanut butter.</think>Banana with peanut butter.<|im_end|>",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if08",
+          "prompt": "Give a walking tip in exactly 9 words.",
+          "text": "<think>We need to give a walking tip in exactly 9 words. The user asks: \"Give a walking tip in exactly 9 words.\" So we need to produce a sentence or phrase that is a walking tip and counts exactly 9 words.\n\nLet's think of a common walking tip: \"Walk at a steady pace, breathe deeply, and enjoy.\" Count words: \"Walk(1) at(2) a(3) steady(4) pace,(5) breathe(6) deeply,(7) and(8) enjoy.(9)\" That's 9 words? Let's count: \"Walk\" (1), \"at\" (2), \"a\" (3), \"steady\" (4), \"pace,\" (5), \"breathe\" (6), \"deeply,\" (7), \"and\" (8), \"enjoy.\" (9). Yes, that's 9 words. But we need",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if09",
+          "prompt": "Explain clouds in exactly 10 words.",
+          "text": "Clouds are water vapor condensed as visible droplets or ice crystals. (10 words)</think>Clouds are water vapor condensed as visible droplets or ice crystals.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if12",
+          "prompt": "Name three fruits, one per line. Each line must start with \"- \". No heading or other text.",
+          "text": "- Apple\n- Banana\n- Cherry</think>- Apple\n- Banana\n- Cherry<|im_end|>",
+          "checks": {
+            "lines": false,
+            "line_prefix": true
+          }
+        },
+        {
+          "id": "if14",
+          "prompt": "Write a CSV with header name,age and exactly one row Ada,30. Output nothing else.",
+          "text": "header_name,age\nAda,30<|im_end|>",
+          "checks": {
+            "exact": false
+          }
+        },
+        {
+          "id": "if16",
+          "prompt": "Explain why leaves are green in one sentence and at most 20 words.",
+          "text": "Leaves appear green because chlorophyll reflects red and blue light, absorbing green wavelengths for photosynthesis. (12 words)<|im_end|>",
+          "checks": {
+            "sentences": false,
+            "max_words": true
+          }
+        },
+        {
+          "id": "if17",
+          "prompt": "Give advice for a rainy walk in one sentence and at most 15 words.",
+          "text": "Wear waterproof shoes, keep umbrella handy, and enjoy the quiet. (9 words)</think>Wear waterproof shoes, keep umbrella handy, and enjoy the quiet.<|im_end|>",
+          "checks": {
+            "sentences": false,
+            "max_words": false
+          }
+        },
+        {
+          "id": "if19",
+          "prompt": "Give one friendly greeting in exactly one sentence.",
+          "text": "Hey there! Hope you're having a wonderful day. 😊<|im_end|>",
+          "checks": {
+            "sentences": false
+          }
+        },
+        {
+          "id": "if20",
+          "prompt": "Translate \"Good morning\" into French. Output only the translation, no quotes.",
+          "text": "Bonne morning? Wait, \"Good morning\" in French is \"Bonjour\" (for morning) or \"Bonne matinée\" (formal). The standard translation for \"Good morning\" is \"Bonjour\" when used as a greeting. \"Bonne matinée\" is less common. The most common and appropriate translation is \"Bonjour\". However, \"Good morning\" specifically is often translated as \"Bonjour\" in informal contexts or \"Bonne matinée\" in formal. But the standard greeting is \"Bonjour\". I'll go with \"Bonjour\". The user asked for output only the translation, no quotes. So just \"Bonjour\". But let me double-check: \"Good morning\" = \"Bonjour\" (morning greeting). Yes, \"Bonjour\" is used for \"Good morning\" and \"Hello\". So answer: Bonjour.</think>Bonjour<|im_end|>",
+          "checks": {
+            "allowed": false
+          }
+        },
+        {
+          "id": "if21",
+          "prompt": "Translate \"Thank you\" into Spanish. Output only the translation, no quotes.",
+          "text": "Thank you. In Spanish, \"Thank you\" is \"Gracias\". So the output is:\n\nGracias<|im_end|>",
+          "checks": {
+            "allowed": false
+          }
+        },
+        {
+          "id": "if22",
+          "prompt": "Translate \"Good night\" into German. Output only the translation, no quotes.",
+          "text": "Good night is \"Gute Nacht\" in German.</think>Gute Nacht<|im_end|>",
+          "checks": {
+            "allowed": false
+          }
+        },
+        {
+          "id": "if23",
+          "prompt": "Translate \"Hello\" into Italian. Output only the translation, no quotes.",
+          "text": "Hello in Italian is \"Ciao\".</think>Ciao<|im_end|>",
+          "checks": {
+            "allowed": false
+          }
+        },
+        {
+          "id": "if25",
+          "prompt": "Give a study tip in at most 15 words. Do not use \"focus\" or \"concentrate\".",
+          "text": "<think>We need to give a study tip in at most 15 words. Also, we cannot use the words \"focus\" or \"concentrate\". So we need a concise tip, under 15 words, avoiding those two words.\n\nLet me think of a good study tip. Common advice: \"Take regular breaks\", \"Use active recall\", \"Plan your study schedule\", etc. But must avoid \"focus\" and \"concentrate\". So I can say something like: \"Review notes actively and take short breaks.\" Count words: \"Review\" (1) \"notes\" (2) \"actively\" (3) \"and\" (4) \"take\" (5) \"short\" (6) \"breaks.\" (7) That's 7 words. Good. But maybe more helpful: \"Practice spaced repetition for better retention.\" Count: \"Practice\" (1) \"spaced\" (2)",
+          "checks": {
+            "max_words": false,
+            "forbidden": false
+          }
+        },
+        {
+          "id": "if26",
+          "prompt": "Describe a dog in at most 12 words. Do not use \"loyal\".",
+          "text": "<think>We need to describe a dog in at most 12 words. The user explicitly says: \"Do not use 'loyal'.\" So we must avoid that word. We just need a short description, up to 12 words. Let's craft something like: \"Fluffy golden retriever barks, chases, and loves people.\" Count words: Fluffy(1) golden(2) retriever(3) barks,(4) chases,(5) and(6) loves(7) people.(8) That's 8 words. But we need to ensure it's a dog description. Could also be \"Bold, playful, loyal\" but can't use loyal. So avoid that. Let's pick a different. Maybe: \"Cheerful, energetic, wagging tail, loves sniffing everything.\" Count: Cheerful,(1) energetic,(2) wagging(3) tail,(",
+          "checks": {
+            "max_words": false,
+            "forbidden": false
+          }
+        },
+        {
+          "id": "if27",
+          "prompt": "Write exactly three words about tea. All letters must be uppercase. No punctuation.",
+          "text": "TEA IS DELICIOUS</think>TEA IS DELICIOUS<|im_end|>",
+          "checks": {
+            "words": false,
+            "uppercase": false,
+            "letters_spaces_only": false
+          }
+        },
+        {
+          "id": "if29",
+          "prompt": "Give two short tips for sleep, one per line, starting respectively with \"1. \" and \"2. \". No other text. At most 14 words total.",
+          "text": "1. Keep a consistent bedtime schedule.  \n2. Dim lights an hour before sleep.  \n\n(That's 13 words total.)<|im_end|>",
+          "checks": {
+            "lines": false,
+            "line_prefixes": false,
+            "max_words": false
+          }
+        }
+      ],
+      "constraint_pass": 26,
+      "constraint_total": 42,
+      "instruction_failures": [
+        {
+          "id": "if02",
+          "prompt": "Define gravity in exactly 6 words.",
+          "text": "Gravity is the downward force on mass.",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if03",
+          "prompt": "Give a calming bedtime thought in at most 10 words.",
+          "text": "<think>We need to generate a calming bedtime thought, at most 10 words. The user asks: \"Give a calming bedtime thought in at most 10 words.\" So we just need to produce a short phrase, calming, bedtime-related, and count words. Let's think of something like \"Dream of gentle waves, breathe slow.\" That's 5 words? \"Dream of gentle waves, breathe slow.\" Count: Dream(1) of(2) gentle(3) waves,(4) breathe(5) slow.(6) That's 6 words. Or \"Let your mind drift to quiet night.\" Count: Let(1) your(2) mind(3) drift(4) to(5) quiet(6) night.(7) That's 7 words. Or \"Sleep peacefully, stars will guide you.\" Count: Sleep(1) peacefully,(2) stars(3) will",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if05",
+          "prompt": "Explain why sleep matters in at most 9 words.",
+          "text": "Sleep restores brain function, clears toxins, and boosts memory. (9 words)",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if08",
+          "prompt": "Give a walking tip in exactly 9 words.",
+          "text": "<think>We need to give a walking tip in exactly 9 words. The user asks: \"Give a walking tip in exactly 9 words.\" So we need to produce a sentence or phrase that is a walking tip and counts exactly 9 words.\n\nLet's think of a common walking tip: \"Walk at a steady pace, breathe deeply, and enjoy.\" Count words: \"Walk(1) at(2) a(3) steady(4) pace,(5) breathe(6) deeply,(7) and(8) enjoy.(9)\" That's 9 words? Let's count: \"Walk\" (1), \"at\" (2), \"a\" (3), \"steady\" (4), \"pace,\" (5), \"breathe\" (6), \"deeply,\" (7), \"and\" (8), \"enjoy.\" (9). Yes, that's 9 words. But we need",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if09",
+          "prompt": "Explain clouds in exactly 10 words.",
+          "text": "Clouds are water vapor condensed as visible droplets or ice crystals.",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if14",
+          "prompt": "Write a CSV with header name,age and exactly one row Ada,30. Output nothing else.",
+          "text": "header_name,age\nAda,30",
+          "checks": {
+            "exact": false
+          }
+        },
+        {
+          "id": "if16",
+          "prompt": "Explain why leaves are green in one sentence and at most 20 words.",
+          "text": "Leaves appear green because chlorophyll reflects red and blue light, absorbing green wavelengths for photosynthesis. (12 words)",
+          "checks": {
+            "sentences": false,
+            "max_words": true
+          }
+        },
+        {
+          "id": "if19",
+          "prompt": "Give one friendly greeting in exactly one sentence.",
+          "text": "Hey there! Hope you're having a wonderful day. 😊",
+          "checks": {
+            "sentences": false
+          }
+        },
+        {
+          "id": "if21",
+          "prompt": "Translate \"Thank you\" into Spanish. Output only the translation, no quotes.",
+          "text": "Thank you. In Spanish, \"Thank you\" is \"Gracias\". So the output is:\n\nGracias",
+          "checks": {
+            "allowed": false
+          }
+        },
+        {
+          "id": "if25",
+          "prompt": "Give a study tip in at most 15 words. Do not use \"focus\" or \"concentrate\".",
+          "text": "<think>We need to give a study tip in at most 15 words. Also, we cannot use the words \"focus\" or \"concentrate\". So we need a concise tip, under 15 words, avoiding those two words.\n\nLet me think of a good study tip. Common advice: \"Take regular breaks\", \"Use active recall\", \"Plan your study schedule\", etc. But must avoid \"focus\" and \"concentrate\". So I can say something like: \"Review notes actively and take short breaks.\" Count words: \"Review\" (1) \"notes\" (2) \"actively\" (3) \"and\" (4) \"take\" (5) \"short\" (6) \"breaks.\" (7) That's 7 words. Good. But maybe more helpful: \"Practice spaced repetition for better retention.\" Count: \"Practice\" (1) \"spaced\" (2)",
+          "checks": {
+            "max_words": false,
+            "forbidden": false
+          }
+        },
+        {
+          "id": "if26",
+          "prompt": "Describe a dog in at most 12 words. Do not use \"loyal\".",
+          "text": "<think>We need to describe a dog in at most 12 words. The user explicitly says: \"Do not use 'loyal'.\" So we must avoid that word. We just need a short description, up to 12 words. Let's craft something like: \"Fluffy golden retriever barks, chases, and loves people.\" Count words: Fluffy(1) golden(2) retriever(3) barks,(4) chases,(5) and(6) loves(7) people.(8) That's 8 words. But we need to ensure it's a dog description. Could also be \"Bold, playful, loyal\" but can't use loyal. So avoid that. Let's pick a different. Maybe: \"Cheerful, energetic, wagging tail, loves sniffing everything.\" Count: Cheerful,(1) energetic,(2) wagging(3) tail,(",
+          "checks": {
+            "max_words": false,
+            "forbidden": false
+          }
+        },
+        {
+          "id": "if29",
+          "prompt": "Give two short tips for sleep, one per line, starting respectively with \"1. \" and \"2. \". No other text. At most 14 words total.",
+          "text": "1. Keep a consistent bedtime schedule.  \n2. Dim lights an hour before sleep.  \n\n(That's 13 words total.)",
+          "checks": {
+            "lines": false,
+            "line_prefixes": false,
+            "max_words": false
+          }
+        }
+      ],
+      "tool_failures": [],
+      "voice": [
+        {
+          "prompt": "Hey, I had a rough day. Say something kind.",
+          "text": "I'm sorry you had a rough day. You deserve a moment of kindness—take a deep breath, stretch, and remember you've got this. I'm here if you want to talk.<|im_end|>",
+          "final_text": "I'm sorry you had a rough day. You deserve a moment of kindness—take a deep breath, stretch, and remember you've got this. I'm here if you want to talk.",
+          "generated_tokens": 40,
+          "total_s": 3.1898731530000077
+        },
+        {
+          "prompt": "Why is the sky blue?",
+          "text": "The sky appears blue because molecules in Earth's atmosphere scatter shorter blue wavelengths of sunlight more efficiently—a phenomenon called Rayleigh scattering.</think>Because sunlight interacts with atmospheric gases, scattering blue light in all directions more than other colors.<|im_end|>",
+          "final_text": "Because sunlight interacts with atmospheric gases, scattering blue light in all directions more than other colors.",
+          "generated_tokens": 45,
+          "total_s": 3.3379626759997336
+        },
+        {
+          "prompt": "What can I make for lunch with eggs and rice?",
+          "text": "You can make scrambled eggs over rice, or a simple fried egg and rice bowl. Want a recipe? I can help.<|im_end|>",
+          "final_text": "You can make scrambled eggs over rice, or a simple fried egg and rice bowl. Want a recipe? I can help.",
+          "generated_tokens": 28,
+          "total_s": 2.4709121109999614
+        },
+        {
+          "prompt": "Remind me to drink water in twenty minutes.",
+          "text": "I can't set reminders. Please use your device's alarm or calendar app for that.<|im_end|>",
+          "final_text": "I can't set reminders. Please use your device's alarm or calendar app for that.",
+          "generated_tokens": 20,
+          "total_s": 2.014522616999784
+        },
+        {
+          "prompt": "Summarize this in one sentence: The library will close on Friday for repairs. It reopens Monday at 9 am. Online borrowing remains available all weekend.",
+          "text": "The library closes Friday for repairs, reopens Monday at 9 am, and online borrowing stays open all weekend.<|im_end|>",
+          "final_text": "The library closes Friday for repairs, reopens Monday at 9 am, and online borrowing stays open all weekend.",
+          "generated_tokens": 26,
+          "total_s": 2.7773130989999117
+        },
+        {
+          "prompt": "Is a tomato a fruit or a vegetable?",
+          "text": "A tomato is botanically a fruit—it's a berry—though we call it a vegetable in cooking. Both are right in their own way.<|im_end|>",
+          "final_text": "A tomato is botanically a fruit—it's a berry—though we call it a vegetable in cooking. Both are right in their own way.",
+          "generated_tokens": 31,
+          "total_s": 2.716813301000002
+        },
+        {
+          "prompt": "I have five minutes before a meeting. How can I calm down?",
+          "text": "Take three slow breaths, step away for a minute, and remind yourself you’ve prepared. You can use a timer or a quick walk. I can’t do it for you, but I can help you plan your next steps.<|im_end|>",
+          "final_text": "Take three slow breaths, step away for a minute, and remind yourself you’ve prepared. You can use a timer or a quick walk. I can’t do it for you, but I can help you plan your next steps.",
+          "generated_tokens": 48,
+          "total_s": 3.7489898979997633
+        },
+        {
+          "prompt": "What is 18 percent of 50?",
+          "text": "18% of 50 is 9. You can calculate it as 50 × 0.18 = 9.</think>18% of 50 is 9.<|im_end|>",
+          "final_text": "18% of 50 is 9.",
+          "generated_tokens": 36,
+          "total_s": 3.0181845120000617
+        },
+        {
+          "prompt": "Tell me a short, clean joke.",
+          "text": "Why did the scarecrow win an award? Because he was outstanding in his field. 😄<|im_end|>",
+          "final_text": "Why did the scarecrow win an award? Because he was outstanding in his field. 😄",
+          "generated_tokens": 20,
+          "total_s": 2.0727693550002186
+        },
+        {
+          "prompt": "Can I mix bleach and vinegar to clean the bathroom?",
+          "text": "No, mixing bleach and vinegar creates toxic chloramine gas and can damage surfaces. Use them separately or follow a safe disinfectant routine.</think>No, mixing bleach and vinegar creates toxic chloramine gas and can damage surfaces. Use them separately or follow a safe disinfectant routine.<|im_end|>",
+          "final_text": "No, mixing bleach and vinegar creates toxic chloramine gas and can damage surfaces. Use them separately or follow a safe disinfectant routine.",
+          "generated_tokens": 58,
+          "total_s": 4.327582279000126
+        }
+      ],
+      "continuation_pass": 5,
+      "continuation_total": 5,
+      "off_generations": 101,
+      "off_tag_emissions": 27,
+      "off_reasoning_leaks": 27,
+      "off_truncations": 4,
+      "off_leak_outputs": [
+        {
+          "id": "if00",
+          "text": "Photosynthesis: plants use sunlight to make food (glucose) and oxygen. (9 words)</think>Photosynthesis: plants use sunlight to make food (glucose) and oxygen. (9 words)<|im_end|>"
+        },
+        {
+          "id": "if01",
+          "text": "A rainbow is light refracted in water droplets. (8 words)</think>A rainbow is light refracted in water droplets.<|im_end|>"
+        },
+        {
+          "id": "if02",
+          "text": "Gravity is the downward force on mass. (6 words)</think>Gravity is the downward force on mass.<|im_end|>"
+        },
+        {
+          "id": "if03",
+          "text": "<think>We need to generate a calming bedtime thought, at most 10 words. The user asks: \"Give a calming bedtime thought in at most 10 words.\" So we just need to produce a short phrase, calming, bedtime-related, and count words. Let's think of something like \"Dream of gentle waves, breathe slow.\" That's 5 words? \"Dream of gentle waves, breathe slow.\" Count: Dream(1) of(2) gentle(3) waves,(4) breathe(5) slow.(6) That's 6 words. Or \"Let your mind drift to quiet night.\" Count: Let(1) your(2) mind(3) drift(4) to(5) quiet(6) night.(7) That's 7 words. Or \"Sleep peacefully, stars will guide you.\" Count: Sleep(1) peacefully,(2) stars(3) will"
+        },
+        {
+          "id": "if04",
+          "text": "A sleek, whiskered, purring feline. (5 words)</think>A sleek, whiskered, purring feline.<|im_end|>"
+        },
+        {
+          "id": "if07",
+          "text": "Apple slices with almond butter. (3 words for \"Apple slices with almond butter\" but need to count: \"Apple\" \"slices\" \"with\" \"almond\" \"butter\" = 5 words. Need at most 4 words.)\n\nBetter: \"Banana with peanut butter\" (4 words? \"Banana\" \"with\" \"peanut\" \"butter\" = 4 words). Yes.\n\nFinal answer: Banana with peanut butter.</think>Banana with peanut butter.<|im_end|>"
+        },
+        {
+          "id": "if08",
+          "text": "<think>We need to give a walking tip in exactly 9 words. The user asks: \"Give a walking tip in exactly 9 words.\" So we need to produce a sentence or phrase that is a walking tip and counts exactly 9 words.\n\nLet's think of a common walking tip: \"Walk at a steady pace, breathe deeply, and enjoy.\" Count words: \"Walk(1) at(2) a(3) steady(4) pace,(5) breathe(6) deeply,(7) and(8) enjoy.(9)\" That's 9 words? Let's count: \"Walk\" (1), \"at\" (2), \"a\" (3), \"steady\" (4), \"pace,\" (5), \"breathe\" (6), \"deeply,\" (7), \"and\" (8), \"enjoy.\" (9). Yes, that's 9 words. But we need"
+        },
+        {
+          "id": "if09",
+          "text": "Clouds are water vapor condensed as visible droplets or ice crystals. (10 words)</think>Clouds are water vapor condensed as visible droplets or ice crystals.<|im_end|>"
+        },
+        {
+          "id": "if12",
+          "text": "- Apple\n- Banana\n- Cherry</think>- Apple\n- Banana\n- Cherry<|im_end|>"
+        },
+        {
+          "id": "if17",
+          "text": "Wear waterproof shoes, keep umbrella handy, and enjoy the quiet. (9 words)</think>Wear waterproof shoes, keep umbrella handy, and enjoy the quiet.<|im_end|>"
+        },
+        {
+          "id": "if20",
+          "text": "Bonne morning? Wait, \"Good morning\" in French is \"Bonjour\" (for morning) or \"Bonne matinée\" (formal). The standard translation for \"Good morning\" is \"Bonjour\" when used as a greeting. \"Bonne matinée\" is less common. The most common and appropriate translation is \"Bonjour\". However, \"Good morning\" specifically is often translated as \"Bonjour\" in informal contexts or \"Bonne matinée\" in formal. But the standard greeting is \"Bonjour\". I'll go with \"Bonjour\". The user asked for output only the translation, no quotes. So just \"Bonjour\". But let me double-check: \"Good morning\" = \"Bonjour\" (morning greeting). Yes, \"Bonjour\" is used for \"Good morning\" and \"Hello\". So answer: Bonjour.</think>Bonjour<|im_end|>"
+        },
+        {
+          "id": "if22",
+          "text": "Good night is \"Gute Nacht\" in German.</think>Gute Nacht<|im_end|>"
+        },
+        {
+          "id": "if23",
+          "text": "Hello in Italian is \"Ciao\".</think>Ciao<|im_end|>"
+        },
+        {
+          "id": "if25",
+          "text": "<think>We need to give a study tip in at most 15 words. Also, we cannot use the words \"focus\" or \"concentrate\". So we need a concise tip, under 15 words, avoiding those two words.\n\nLet me think of a good study tip. Common advice: \"Take regular breaks\", \"Use active recall\", \"Plan your study schedule\", etc. But must avoid \"focus\" and \"concentrate\". So I can say something like: \"Review notes actively and take short breaks.\" Count words: \"Review\" (1) \"notes\" (2) \"actively\" (3) \"and\" (4) \"take\" (5) \"short\" (6) \"breaks.\" (7) That's 7 words. Good. But maybe more helpful: \"Practice spaced repetition for better retention.\" Count: \"Practice\" (1) \"spaced\" (2)"
+        },
+        {
+          "id": "if26",
+          "text": "<think>We need to describe a dog in at most 12 words. The user explicitly says: \"Do not use 'loyal'.\" So we must avoid that word. We just need a short description, up to 12 words. Let's craft something like: \"Fluffy golden retriever barks, chases, and loves people.\" Count words: Fluffy(1) golden(2) retriever(3) barks,(4) chases,(5) and(6) loves(7) people.(8) That's 8 words. But we need to ensure it's a dog description. Could also be \"Bold, playful, loyal\" but can't use loyal. So avoid that. Let's pick a different. Maybe: \"Cheerful, energetic, wagging tail, loves sniffing everything.\" Count: Cheerful,(1) energetic,(2) wagging(3) tail,("
+        },
+        {
+          "id": "if27",
+          "text": "TEA IS DELICIOUS</think>TEA IS DELICIOUS<|im_end|>"
+        },
+        {
+          "id": "voice1",
+          "text": "The sky appears blue because molecules in Earth's atmosphere scatter shorter blue wavelengths of sunlight more efficiently—a phenomenon called Rayleigh scattering.</think>Because sunlight interacts with atmospheric gases, scattering blue light in all directions more than other colors.<|im_end|>"
+        },
+        {
+          "id": "voice7",
+          "text": "18% of 50 is 9. You can calculate it as 50 × 0.18 = 9.</think>18% of 50 is 9.<|im_end|>"
+        },
+        {
+          "id": "voice9",
+          "text": "No, mixing bleach and vinegar creates toxic chloramine gas and can damage surfaces. Use them separately or follow a safe disinfectant routine.</think>No, mixing bleach and vinegar creates toxic chloramine gas and can damage surfaces. Use them separately or follow a safe disinfectant routine.<|im_end|>"
+        },
+        {
+          "id": "think1_False",
+          "text": "The sky appears blue because molecules in Earth's atmosphere scatter shorter blue wavelengths of sunlight more efficiently—a phenomenon called Rayleigh scattering.</think>Because sunlight interacts with atmospheric gases, scattering blue light in all directions more than other colors.<|im_end|>"
+        },
+        {
+          "id": "think7_False",
+          "text": "18% of 50 is 9. You can calculate it as 50 × 0.18 = 9.</think>18% of 50 is 9.<|im_end|>"
+        },
+        {
+          "id": "think9_False",
+          "text": "No, mixing bleach and vinegar creates toxic chloramine gas and can damage surfaces. Use them separately or follow a safe disinfectant routine.</think>No, mixing bleach and vinegar creates toxic chloramine gas and can damage surfaces. Use them separately or follow a safe disinfectant routine.<|im_end|>"
+        },
+        {
+          "id": "think14_False",
+          "text": "Take the box labeled \"mixed.\" It contains either apples or oranges, not both. Then re-label the remaining boxes based on what you find. One box will be all apples, another all oranges, and the last mixed.</think>Take the box labeled \"mixed.\" It must contain either apples or oranges. Once you know, relabel the other two boxes accordingly. You'll then know all three.<|im_end|>"
+        },
+        {
+          "id": "think15_False",
+          "text": "From 13:45 to 15:10 is 1 hour and 25 minutes, which equals 85 minutes.</think>There are 85 minutes between 13:45 and 15:10.<|im_end|>"
+        },
+        {
+          "id": "think16_False",
+          "text": "60 km ÷ (40/60 hours) = 60 ÷ (2/3) = 60 × 3/2 = 90 km/h. The average speed is 90 km/h.</think>The train covers 60 km in 40 minutes, which is 2/3 hour. Speed = 60 ÷ (2/3) = 90 km/h.<|im_end|>"
+        },
+        {
+          "id": "think18_False",
+          "text": "No. A square is a quadrilateral with four right angles by definition; it cannot have exactly three. The sum of interior angles in any quadrilateral is 360°, so four right angles (90° each) total 360°. Three right angles would leave only 90° for the fourth angle, which would not form a closed shape.</think>No. A square has four right angles by definition; its interior angles sum to 360°, so three right angles would force the fourth to be 90°, making it a rectangle or square, not a three-right-angle figure.<|im_end|>"
+        },
+        {
+          "id": "think19_False",
+          "text": "The person who paid $20 owes the other $10, since $20 - $10 = $10. The $10 payer is even. So: Person A owes Person B $10 (if A paid $20 and B paid $10).</think>The person who paid $20 owes the other $10. If A paid $20 and B paid $10, A owes B $10.<|im_end|>"
+        }
+      ],
+      "thinking_pairs": 20,
+      "enabled_mean_reasoning_tokens": 182.4,
+      "enabled_mean_total_tokens": 211.85,
+      "enabled_truncations": 1,
+      "mean_extra_tokens": 164.05,
+      "mean_extra_seconds": 9.503269702900003,
+      "paired_off_leaks": 8
+    },
+    "qwen": {
+      "quality_timings_comparable": false,
+      "tool_total": 36,
+      "tool_pass": 36,
+      "tool_categories": {
+        "single": {
+          "total": 25,
+          "pass": 25
+        },
+        "no_tool": {
+          "total": 6,
+          "pass": 6
+        },
+        "two_step": {
+          "total": 5,
+          "pass": 5
+        }
+      },
+      "instruction_total": 30,
+      "instruction_pass": 27,
+      "instruction_raw_pass": 27,
+      "constraint_raw_pass": 39,
+      "instruction_raw_failures": [
+        {
+          "id": "if02",
+          "prompt": "Define gravity in exactly 6 words.",
+          "text": "A force that pulls objects toward each other.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if07",
+          "prompt": "Suggest one healthy snack in at most 4 words.",
+          "text": "Apple slices with peanut butter.<|im_end|>",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if09",
+          "prompt": "Explain clouds in exactly 10 words.",
+          "text": "Water vapor condenses into tiny droplets or ice crystals to form clouds.<|im_end|>",
+          "checks": {
+            "words": false
+          }
+        }
+      ],
+      "constraint_pass": 39,
+      "constraint_total": 42,
+      "instruction_failures": [
+        {
+          "id": "if02",
+          "prompt": "Define gravity in exactly 6 words.",
+          "text": "A force that pulls objects toward each other.",
+          "checks": {
+            "words": false
+          }
+        },
+        {
+          "id": "if07",
+          "prompt": "Suggest one healthy snack in at most 4 words.",
+          "text": "Apple slices with peanut butter.",
+          "checks": {
+            "max_words": false
+          }
+        },
+        {
+          "id": "if09",
+          "prompt": "Explain clouds in exactly 10 words.",
+          "text": "Water vapor condenses into tiny droplets or ice crystals to form clouds.",
+          "checks": {
+            "words": false
+          }
+        }
+      ],
+      "tool_failures": [],
+      "voice": [
+        {
+          "prompt": "Hey, I had a rough day. Say something kind.",
+          "text": "I'm so sorry you had a tough day; please remember you are loved and capable of finding joy again.<|im_end|>",
+          "final_text": "I'm so sorry you had a tough day; please remember you are loved and capable of finding joy again.",
+          "generated_tokens": 23,
+          "total_s": 16.696696751000673
+        },
+        {
+          "prompt": "What can I make for lunch with eggs and rice?",
+          "text": "You can make a delicious fried rice with scrambled eggs, or try a creamy egg fried rice with some veggies!<|im_end|>",
+          "final_text": "You can make a delicious fried rice with scrambled eggs, or try a creamy egg fried rice with some veggies!",
+          "generated_tokens": 23,
+          "total_s": 16.686874922999777
+        },
+        {
+          "prompt": "Summarize this in one sentence: The library will close on Friday for repairs. It reopens Monday at 9 am. Online borrowing remains available all weekend.",
+          "text": "The library closes Friday for repairs, reopening Monday at 9 am, but online borrowing stays available all weekend.<|im_end|>",
+          "final_text": "The library closes Friday for repairs, reopening Monday at 9 am, but online borrowing stays available all weekend.",
+          "generated_tokens": 23,
+          "total_s": 18.282398080999883
+        },
+        {
+          "prompt": "I have five minutes before a meeting. How can I calm down?",
+          "text": "Take three deep breaths, count to ten, and then review your meeting agenda quickly.<|im_end|>",
+          "final_text": "Take three deep breaths, count to ten, and then review your meeting agenda quickly.",
+          "generated_tokens": 19,
+          "total_s": 14.73134895199928
+        },
+        {
+          "prompt": "Tell me a short, clean joke.",
+          "text": "Why did the scarecrow win an award? Because he was outstanding in his field!<|im_end|>",
+          "final_text": "Why did the scarecrow win an award? Because he was outstanding in his field!",
+          "generated_tokens": 18,
+          "total_s": 13.726275192000685
+        },
+        {
+          "prompt": "Why is the sky blue?",
+          "text": "The sky appears blue because sunlight scatters off gas molecules in the atmosphere, with blue light scattering more than other colors.<|im_end|>",
+          "final_text": "The sky appears blue because sunlight scatters off gas molecules in the atmosphere, with blue light scattering more than other colors.",
+          "generated_tokens": 25,
+          "total_s": 17.243480957999964
+        },
+        {
+          "prompt": "Remind me to drink water in twenty minutes.",
+          "text": "I can't set a timer, but I can remind you to drink water right now!<|im_end|>",
+          "final_text": "I can't set a timer, but I can remind you to drink water right now!",
+          "generated_tokens": 19,
+          "total_s": 14.368145874999755
+        },
+        {
+          "prompt": "Is a tomato a fruit or a vegetable?",
+          "text": "Botanically, a tomato is a fruit, but culinarily, it's treated as a vegetable.<|im_end|>",
+          "final_text": "Botanically, a tomato is a fruit, but culinarily, it's treated as a vegetable.",
+          "generated_tokens": 22,
+          "total_s": 15.893346572000155
+        },
+        {
+          "prompt": "What is 18 percent of 50?",
+          "text": "18 percent of 50 is 9.<|im_end|>",
+          "final_text": "18 percent of 50 is 9.",
+          "generated_tokens": 12,
+          "total_s": 10.736808544000269
+        },
+        {
+          "prompt": "Can I mix bleach and vinegar to clean the bathroom?",
+          "text": "No, you should never mix bleach and vinegar because it creates toxic chlorine gas.<|im_end|>",
+          "final_text": "No, you should never mix bleach and vinegar because it creates toxic chlorine gas.",
+          "generated_tokens": 17,
+          "total_s": 13.385383488000116
+        }
+      ],
+      "continuation_pass": 5,
+      "continuation_total": 5,
+      "off_generations": 101,
+      "off_tag_emissions": 0,
+      "off_reasoning_leaks": 0,
+      "off_truncations": 0,
+      "off_leak_outputs": [],
+      "thinking_pairs": 20,
+      "enabled_mean_reasoning_tokens": 512,
+      "enabled_mean_total_tokens": 512,
+      "enabled_truncations": 20,
+      "mean_extra_tokens": 491.55,
+      "mean_extra_seconds": null,
+      "paired_off_leaks": 0
+    }
+  },
+  "evidence": {
+    "quality-lfm25-4t.jsonl": {
+      "sha256": "fd00e1ed7278f69e9f68f65198cb050d9fc4e6669ddd85a8e4e661eacb52913e",
+      "bytes": 49798,
+      "rows": 25
+    },
+    "quality-lfm3-4t.jsonl": {
+      "sha256": "4d282220e282135220e8834be167e0fb5df95556bb3ccf5ce1bd598c82214e92",
+      "bytes": 295460,
+      "rows": 117
+    },
+    "quality-qwen-4t.jsonl": {
+      "sha256": "a6e9ab5ba6d332311bd59c049c2c2b15e20da97db01a6014fcd012a9b2842452",
+      "bytes": 390825,
+      "rows": 117
+    },
+    "speed-lfm25-1t.jsonl": {
+      "sha256": "8e91a208adf29453955f4ab0bb6e8335ba517217ed4f5908cecfb13dea158087",
+      "bytes": 10766,
+      "rows": 19
+    },
+    "speed-lfm25-4t.jsonl": {
+      "sha256": "61b56ae4828e4c6a95b960d9e2b7ee2ca2770f511a64663ef8aa028012ce0cda",
+      "bytes": 10500,
+      "rows": 19
+    },
+    "speed-lfm25-8t.jsonl": {
+      "sha256": "bef30928d257e75eccaafcb13b77613af75fab08ec1f9d0ba2aac0f546ac5b28",
+      "bytes": 10775,
+      "rows": 19
+    },
+    "speed-lfm25-acc4-4t.jsonl": {
+      "sha256": "5c0c903c00f8a3836e52965dd8987aea6a94f5057dbfad4ab031489c746fe08b",
+      "bytes": 10831,
+      "rows": 19
+    },
+    "speed-lfm3-1t.jsonl": {
+      "sha256": "28a7083e6eca752e068ad697e7c38cb4b724896a0dee49afd5169be966b1f7a3",
+      "bytes": 8220,
+      "rows": 13
+    },
+    "speed-lfm3-4t.jsonl": {
+      "sha256": "c732b8be0a23941daa08eb6c552e739328987e7aacfcc11eaa90d42f7b1b06b4",
+      "bytes": 10189,
+      "rows": 19
+    },
+    "speed-lfm3-8t.jsonl": {
+      "sha256": "b2a5c3a9b50e88509ec41b7efcb439070564f04e65c5a404d84d4e35e907a500",
+      "bytes": 8218,
+      "rows": 13
+    },
+    "speed-qwen-1t.jsonl": {
+      "sha256": "d0d3f81ad63418f03c7b16c2493e4f03a6bab98d2cbcf36cc11a92432c69d215",
+      "bytes": 4690,
+      "rows": 7
+    },
+    "speed-qwen-4t.jsonl": {
+      "sha256": "e61c0a6e346251eb96fdaa4737d77f7125d14fc60dfc9d09a2eef78c9a8df646",
+      "bytes": 8798,
+      "rows": 13
+    },
+    "speed-qwen-8t.jsonl": {
+      "sha256": "bc06dda3c9cf96a2e465dfac13c0f1c571446880b3b36c65681f57c785f7fdbb",
+      "bytes": 8821,
+      "rows": 13
+    },
+    "speed-qwen-acc4-4t.jsonl": {
+      "sha256": "a2e20bc5504d64e9034db2dea3cdec3a38854443f2b0621eaac36f7fc9957fc5",
+      "bytes": 8799,
+      "rows": 13
+    },
+    "quality-lfm25-4t.time": {
+      "sha256": "c1d5a5ec502134c8ec38bdad85bbf29ea243db105d4dadb1a09a68d35d9895fa",
+      "bytes": 1399
+    },
+    "quality-lfm3-4t.time": {
+      "sha256": "59771f053efdb57c403cec0490c42ff234683ebaa14206cc70be6ce1a8b3572e",
+      "bytes": 1776
+    },
+    "shards/quality-qwen-4t-shard0.time": {
+      "sha256": "8bb07c0428ed7b0895eac41857716c186f92919efa21a587e2e614952e0ef77a",
+      "bytes": 1425
+    },
+    "shards/quality-qwen-4t-shard1.time": {
+      "sha256": "ee394c29452322965a16d816df1bd26d603673a882b34d213bbf77d080b63a16",
+      "bytes": 1425
+    },
+    "speed-lfm25-1t.time": {
+      "sha256": "85ad57076e55bb2bee60137401fac669474a76a0604e963de193d65cab8a2179",
+      "bytes": 1387
+    },
+    "speed-lfm25-4t.time": {
+      "sha256": "f7c64593bd6c64d67ae0c6928e98d73648309446d7d8657f8f3a05f810504388",
+      "bytes": 1392
+    },
+    "speed-lfm25-8t.time": {
+      "sha256": "4e2e51d1c92e2fc2f058affd0cad7a8a04b5a7f7d96454b905eebd793a684bbd",
+      "bytes": 1391
+    },
+    "speed-lfm25-acc4-4t.time": {
+      "sha256": "abbb147e81f5fa209bb11aba9d73394383e0817ed0835e6c592616047996beff",
+      "bytes": 1405
+    },
+    "speed-lfm3-1t.time": {
+      "sha256": "2a77139076842fad710982c72aac7c531050f20b144d724dd7428a1e339b07d4",
+      "bytes": 1763
+    },
+    "speed-lfm3-4t.time": {
+      "sha256": "d7978842e655e3c245814b9e417648c2055d03d8c7e07f110ad38c1df456177b",
+      "bytes": 1766
+    },
+    "speed-lfm3-8t.time": {
+      "sha256": "f6bbfa3c7db4b8ebfa55018cc0e95f115f7b0da178046d58c2cceda6f166300c",
+      "bytes": 1766
+    },
+    "speed-qwen-1t.time": {
+      "sha256": "dffef105a020c5c6d33e93254b8ea0ab15380fdea72718d53cfe46e05626e427",
+      "bytes": 1383
+    },
+    "speed-qwen-4t.time": {
+      "sha256": "8ca9147f2e5404c654e4d2dd41eb3febc96a362bfec67c881baaa9a273dd18d2",
+      "bytes": 1392
+    },
+    "speed-qwen-8t.time": {
+      "sha256": "f1704e47042dcf16ffbf0090f22aff690e0abe8d244874cb2e0292c229277cad",
+      "bytes": 1393
+    },
+    "speed-qwen-acc4-4t.time": {
+      "sha256": "5343e4a67bb3e62ae10ec7cec8661e3f6998fe579f7111b5e5af0e42e8fc4929",
+      "bytes": 1408
+    }
+  }
+}

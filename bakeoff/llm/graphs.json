@@ -1,0 +1,2563 @@
+{
+  "qwen": {
+    "matmul_nbits_policy": {"weight_bits_nodes": {"4": 249}, "block_size": 32, "accuracy_level_nodes": {"unspecified": 249}},
+    "inputs": [
+      {
+        "name": "inputs_embeds",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          "sequence_length",
+          2560
+        ]
+      },
+      {
+        "name": "attention_mask",
+        "dtype": 7,
+        "shape": [
+          "batch_size",
+          "total_sequence_length"
+        ]
+      },
+      {
+        "name": "position_ids",
+        "dtype": 7,
+        "shape": [
+          3,
+          "batch_size",
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "past_conv.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.2",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.2",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.3.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.3.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_conv.4",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.4",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.5",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.5",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.6",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.6",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.7.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.7.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_conv.8",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.8",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.10",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.10",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.11.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.11.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_conv.12",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.12",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.14",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.14",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.15.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.15.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_conv.16",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.16",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.17",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.17",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.18",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.18",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.19.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.19.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_conv.20",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.20",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.21",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.21",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.22",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.22",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.23.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.23.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_conv.24",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.24",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.25",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.25",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.26",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.26",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.27.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.27.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_conv.28",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.28",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.29",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.29",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_conv.30",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "past_recurrent.30",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.31.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "past_key_values.31.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          256
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          "sequence_length",
+          248320
+        ]
+      },
+      {
+        "name": "present_conv.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.2",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.2",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.3.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.3.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present_conv.4",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.4",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.5",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.5",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.6",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.6",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.7.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.7.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present_conv.8",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.8",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.10",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.10",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.11.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.11.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present_conv.12",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.12",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.14",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.14",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.15.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.15.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present_conv.16",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.16",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.17",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.17",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.18",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.18",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.19.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.19.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present_conv.20",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.20",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.21",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.21",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.22",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.22",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.23.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.23.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present_conv.24",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.24",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.25",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.25",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.26",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.26",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.27.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.27.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present_conv.28",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.28",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.29",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.29",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present_conv.30",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8192,
+          4
+        ]
+      },
+      {
+        "name": "present_recurrent.30",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          32,
+          128,
+          128
+        ]
+      },
+      {
+        "name": "present.31.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      },
+      {
+        "name": "present.31.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          256
+        ]
+      }
+    ],
+    "ops": {
+      "ai.onnx::Add": 240,
+      "ai.onnx::Cast": 28,
+      "ai.onnx::Concat": 94,
+      "ai.onnx::Conv": 24,
+      "ai.onnx::Cos": 1,
+      "ai.onnx::Equal": 24,
+      "ai.onnx::Exp": 48,
+      "ai.onnx::Expand": 3,
+      "ai.onnx::Gather": 90,
+      "ai.onnx::Identity": 48,
+      "ai.onnx::If": 24,
+      "ai.onnx::MatMul": 1,
+      "ai.onnx::Mul": 1025,
+      "ai.onnx::Neg": 24,
+      "ai.onnx::Range": 16,
+      "ai.onnx::Reciprocal": 144,
+      "ai.onnx::ReduceMean": 48,
+      "ai.onnx::ReduceSum": 216,
+      "ai.onnx::Reshape": 446,
+      "ai.onnx::Scan": 24,
+      "ai.onnx::Shape": 67,
+      "ai.onnx::Sigmoid": 184,
+      "ai.onnx::SimplifiedLayerNormalization": 17,
+      "ai.onnx::Sin": 1,
+      "ai.onnx::Slice": 162,
+      "ai.onnx::Softplus": 48,
+      "ai.onnx::Split": 56,
+      "ai.onnx::Sqrt": 144,
+      "ai.onnx::Squeeze": 150,
+      "ai.onnx::Sub": 50,
+      "ai.onnx::Tile": 96,
+      "ai.onnx::Transpose": 249,
+      "ai.onnx::Unsqueeze": 462,
+      "com.microsoft::GroupQueryAttention": 8,
+      "com.microsoft::MatMulNBits": 249,
+      "com.microsoft::RotaryEmbedding": 16,
+      "com.microsoft::SkipSimplifiedLayerNormalization": 64
+    },
+    "opsets": [
+      [
+        "",
+        21
+      ],
+      [
+        "com.microsoft",
+        1
+      ]
+    ]
+  },
+  "lfm3": {
+    "matmul_nbits_policy": {"weight_bits_nodes": {"4": 126, "8": 28}, "block_size": 32, "accuracy_level_nodes": {"4": 154}},
+    "inputs": [
+      {
+        "name": "input_ids",
+        "dtype": 7,
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "attention_mask",
+        "dtype": 7,
+        "shape": [
+          "batch_size",
+          "total_sequence_length"
+        ]
+      },
+      {
+        "name": "position_ids",
+        "dtype": 7,
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "logits_to_keep",
+        "dtype": 7,
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "past_conv.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_conv.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.2.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.2.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.3",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.4.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.4.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.5",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.6.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.6.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.7",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.8.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.8.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.10.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.10.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.11",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.12.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.12.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.14.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.14.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.15",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.16.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.16.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.17",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.18.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.18.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.19",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.20.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.20.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.21",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "past_key_values.22.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_key_values.22.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "past_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "past_conv.23",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          "num_logits",
+          128000
+        ]
+      },
+      {
+        "name": "present_conv.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present_conv.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.2.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.2.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.3",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.4.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.4.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.5",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.6.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.6.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.7",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.8.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.8.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.10.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.10.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.11",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.12.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.12.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.14.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.14.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.15",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.16.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.16.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.17",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.18.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.18.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.19",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.20.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.20.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.21",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      },
+      {
+        "name": "present.22.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present.22.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          4,
+          "total_sequence_length",
+          128
+        ]
+      },
+      {
+        "name": "present_conv.23",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          7
+        ]
+      }
+    ],
+    "ops": {
+      "ai.onnx::Add": 48,
+      "ai.onnx::Cast": 2,
+      "ai.onnx::Concat": 13,
+      "ai.onnx::Conv": 13,
+      "ai.onnx::Gather": 14,
+      "ai.onnx::Mul": 98,
+      "ai.onnx::Neg": 1,
+      "ai.onnx::ReduceSum": 1,
+      "ai.onnx::Reshape": 78,
+      "ai.onnx::Shape": 14,
+      "ai.onnx::Sigmoid": 35,
+      "ai.onnx::SimplifiedLayerNormalization": 119,
+      "ai.onnx::Slice": 27,
+      "ai.onnx::Split": 13,
+      "ai.onnx::Sub": 1,
+      "ai.onnx::Transpose": 26,
+      "ai.onnx::Unsqueeze": 13,
+      "com.microsoft::GatherBlockQuantized": 1,
+      "com.microsoft::GroupQueryAttention": 11,
+      "com.microsoft::MatMulNBits": 154,
+      "com.microsoft::RotaryEmbedding": 22
+    },
+    "opsets": [
+      [
+        "",
+        21
+      ],
+      [
+        "com.microsoft",
+        1
+      ]
+    ]
+  },
+  "lfm25": {
+    "matmul_nbits_policy": {"weight_bits_nodes": {"4": 93}, "block_size": 32, "accuracy_level_nodes": {"unspecified": 93}},
+    "inputs": [
+      {
+        "name": "input_ids",
+        "dtype": 7,
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "attention_mask",
+        "dtype": 7,
+        "shape": [
+          "batch_size",
+          "total_sequence_length"
+        ]
+      },
+      {
+        "name": "past_conv.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_conv.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_key_values.2.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_key_values.2.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_conv.3",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_conv.4",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_key_values.5.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_key_values.5.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_conv.6",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_conv.7",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_key_values.8.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_key_values.8.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_conv.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_key_values.10.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_key_values.10.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_conv.11",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_key_values.12.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_key_values.12.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_conv.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "past_key_values.14.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_key_values.14.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "past_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "past_conv.15",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          "sequence_length",
+          65536
+        ]
+      },
+      {
+        "name": "present_conv.0",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present_conv.1",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present.2.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present.2.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present_conv.3",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present_conv.4",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present.5.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present.5.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present_conv.6",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present_conv.7",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present.8.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present.8.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present_conv.9",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present.10.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present.10.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present_conv.11",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present.12.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present.12.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present_conv.13",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      },
+      {
+        "name": "present.14.key",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present.14.value",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          8,
+          "total_sequence_length",
+          64
+        ]
+      },
+      {
+        "name": "present_conv.15",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          2048,
+          3
+        ]
+      }
+    ],
+    "ops": {
+      "ai.onnx::Add": 32,
+      "ai.onnx::Cast": 2,
+      "ai.onnx::Concat": 10,
+      "ai.onnx::Conv": 10,
+      "ai.onnx::Gather": 11,
+      "ai.onnx::Mul": 62,
+      "ai.onnx::ReduceSum": 1,
+      "ai.onnx::Reshape": 24,
+      "ai.onnx::Shape": 11,
+      "ai.onnx::Sigmoid": 16,
+      "ai.onnx::SimplifiedLayerNormalization": 44,
+      "ai.onnx::Slice": 20,
+      "ai.onnx::Split": 10,
+      "ai.onnx::Sub": 1,
+      "ai.onnx::Transpose": 20,
+      "ai.onnx::Unsqueeze": 10,
+      "com.microsoft::GatherBlockQuantized": 1,
+      "com.microsoft::GroupQueryAttention": 6,
+      "com.microsoft::MatMulNBits": 93,
+      "com.microsoft::SkipSimplifiedLayerNormalization": 1
+    },
+    "opsets": [
+      [
+        "",
+        21
+      ],
+      [
+        "com.microsoft",
+        1
+      ]
+    ]
+  }
+}
