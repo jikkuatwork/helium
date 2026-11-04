@@ -32,7 +32,7 @@ def main():
             continue
         if not path.name.startswith('quality-'):
             continue
-        parse = parse_pythonic_calls if name == 'lfm25' else parse_calls
+        parse = parse_pythonic_calls if name in ['lfm25', 'lfm25-acc4'] else parse_calls
         tools = [r for r in rows if r['kind'] == 'tool']
         ins = [r for r in rows if r['kind'] == 'instruction']
         voice = [r for r in rows if r['kind'] == 'voice']
@@ -42,9 +42,14 @@ def main():
             assert (r['parsed'] == r['case']['expected']) == r['first_pass']
             if 'second' in r:
                 assert parse(final_text(r['second']['text'])) == r['second_parsed']
+                assert (r['second_parsed'] == r['case']['second_expected']) == r['second_pass']
                 assert r['pass'] == (r['first_pass'] and r['second_pass'])
+            else:
+                assert r['pass'] == r['first_pass']
         for r in ins:
             assert validate_instruction(r['text'], r['case']['rules']) == r['checks']
+            if 'raw_checks' in r:
+                assert validate_instruction(r['text'], r['case']['rules'], strip_thinking=False) == r['raw_checks']
         q = {'quality_timings_comparable': env.get('quality_timings_comparable', True),
              'tool_total': len(tools), 'tool_pass': sum(r['pass'] for r in tools),
              'tool_categories': {}, 'instruction_total': len(ins), 'instruction_pass': sum(r['pass'] for r in ins),
@@ -84,6 +89,8 @@ def main():
                 q['mean_extra_seconds'] = statistics.mean(on['total_s'] - off['total_s'] for on, off in pairs) if q['quality_timings_comparable'] else None
             q['paired_off_leaks'] = sum(emitted_reasoning(r['text']) for r in disabled)
         out['quality'][name] = q
+    for path in sorted(a.root.rglob('*.time')):
+        out['evidence'][str(path.relative_to(a.root))] = {'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'bytes': path.stat().st_size}
     a.out.parent.mkdir(parents=True, exist_ok=True)
     a.out.write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n')
     print(a.out)

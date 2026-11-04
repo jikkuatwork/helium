@@ -210,6 +210,7 @@ def validate_instruction(text, rules, strip_thinking=True):
                 obj = json.loads(text)
                 checks[key] = obj == value and type(obj) is type(value)
                 if isinstance(value, dict): checks[key] &= all(type(obj[k]) is type(v) for k, v in value.items())
+                elif isinstance(value, list): checks[key] &= all(type(a) is type(b) for a, b in zip(obj, value))
             except (ValueError, KeyError): checks[key] = False
         elif key == 'lines': checks[key] = len(text.splitlines()) == value
         elif key == 'line_prefix': checks[key] = all(line.startswith(value) for line in text.splitlines())

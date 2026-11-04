@@ -45,6 +45,7 @@ class FixturesTest(unittest.TestCase):
         self.assertFalse(all(validate_instruction('Clouds are water. They float.', {'sentences': 1}).values()))
         self.assertFalse(all(validate_instruction('```json\n[1,2,3]\n```', {'json': [1, 2, 3]}).values()))
         self.assertFalse(all(validate_instruction('{"count": true}', {'json': {'count': 1}}).values()))
+        self.assertFalse(all(validate_instruction('[true,2,3]', {'json': [1, 2, 3]}).values()))
         trace = 'Let me count.</think>TEA IS WARM<|im_end|>'
         rules = {'words': 3, 'uppercase': True, 'letters_spaces_only': True}
         self.assertTrue(all(validate_instruction(trace, rules).values()))
