@@ -1,0 +1,14 @@
+{
+  "test-clean": {
+    "utterances": 50,
+    "reference_words": 1266,
+    "wer": 0.21800947867298578,
+    "substitutions": 221,
+    "insertions": 22,
+    "deletions": 33,
+    "audio_seconds": 447.3049375,
+    "inference_seconds": 10.317414239999835,
+    "rtf": 0.023065728488632736,
+    "peak_rss_kib": 531084
+  }
+}

@@ -1,0 +1,1121 @@
+{
+  "accuracy": {
+    "moonshine": {
+      "test-clean": {
+        "utterances": 320,
+        "reference_words": 6509,
+        "wer": 0.05208173298509756,
+        "substitutions": 257,
+        "insertions": 36,
+        "deletions": 46,
+        "audio_seconds": 2407.619875,
+        "inference_seconds": 86.69733188400187,
+        "rtf": 0.036009559808107945,
+        "peak_rss_kib": 377060
+      },
+      "test-other": {
+        "utterances": 320,
+        "reference_words": 5813,
+        "wer": 0.12231205917770514,
+        "substitutions": 550,
+        "insertions": 75,
+        "deletions": 86,
+        "audio_seconds": 2085.5151875,
+        "inference_seconds": 77.26625783099962,
+        "rtf": 0.03704900270883288,
+        "peak_rss_kib": 377060
+      },
+      "noise_10db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.12796208530805686,
+        "substitutions": 129,
+        "insertions": 18,
+        "deletions": 15,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 16.794854465999833,
+        "rtf": 0.03754676744653603,
+        "peak_rss_kib": 326596
+      },
+      "noise_0db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.5205371248025277,
+        "substitutions": 507,
+        "insertions": 65,
+        "deletions": 87,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 16.436141990000692,
+        "rtf": 0.036744825759945234,
+        "peak_rss_kib": 326348
+      }
+    },
+    "parakeet": {
+      "test-clean": {
+        "utterances": 320,
+        "reference_words": 6509,
+        "wer": 0.033952988170225844,
+        "substitutions": 186,
+        "insertions": 17,
+        "deletions": 18,
+        "audio_seconds": 2407.619875,
+        "inference_seconds": 55.46790029699969,
+        "rtf": 0.023038479152361912,
+        "peak_rss_kib": 559164
+      },
+      "test-other": {
+        "utterances": 320,
+        "reference_words": 5813,
+        "wer": 0.05917770514364356,
+        "substitutions": 286,
+        "insertions": 31,
+        "deletions": 27,
+        "audio_seconds": 2085.5151875,
+        "inference_seconds": 48.15050632600037,
+        "rtf": 0.023088063138835505,
+        "peak_rss_kib": 559164
+      },
+      "noise_10db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.05766192733017378,
+        "substitutions": 62,
+        "insertions": 7,
+        "deletions": 4,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 10.362885765000215,
+        "rtf": 0.023167385146514764,
+        "peak_rss_kib": 536836
+      },
+      "noise_0db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.21800947867298578,
+        "substitutions": 221,
+        "insertions": 22,
+        "deletions": 33,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 10.317414239999835,
+        "rtf": 0.023065728488632736,
+        "peak_rss_kib": 531084
+      }
+    },
+    "parakeet-fp32": {
+      "test-clean": {
+        "utterances": 320,
+        "reference_words": 6509,
+        "wer": 0.03441388846212936,
+        "substitutions": 189,
+        "insertions": 18,
+        "deletions": 17,
+        "audio_seconds": 2407.619875,
+        "inference_seconds": 68.83097889100168,
+        "rtf": 0.028588806566070435,
+        "peak_rss_kib": 1031928
+      },
+      "test-other": {
+        "utterances": 320,
+        "reference_words": 5813,
+        "wer": 0.0553930844658524,
+        "substitutions": 267,
+        "insertions": 27,
+        "deletions": 28,
+        "audio_seconds": 2085.5151875,
+        "inference_seconds": 60.06207915600203,
+        "rtf": 0.028799636423650847,
+        "peak_rss_kib": 1031928
+      },
+      "noise_10db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.052132701421800945,
+        "substitutions": 56,
+        "insertions": 7,
+        "deletions": 3,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 12.85681336599987,
+        "rtf": 0.028742838024227866,
+        "peak_rss_kib": 986780
+      },
+      "noise_0db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.18167456556082148,
+        "substitutions": 190,
+        "insertions": 15,
+        "deletions": 25,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 13.016046452999944,
+        "rtf": 0.02909882132253446,
+        "peak_rss_kib": 987032
+      }
+    },
+    "large": {
+      "test-clean": {
+        "utterances": 320,
+        "reference_words": 6509,
+        "wer": 0.019665079121216778,
+        "substitutions": 104,
+        "insertions": 8,
+        "deletions": 16,
+        "audio_seconds": 2407.619875,
+        "inference_seconds": 161.7514985789976,
+        "rtf": 0.06718315472412256,
+        "peak_rss_kib": 1532128
+      },
+      "test-other": {
+        "utterances": 320,
+        "reference_words": 5813,
+        "wer": 0.030448993634956133,
+        "substitutions": 146,
+        "insertions": 14,
+        "deletions": 17,
+        "audio_seconds": 2085.5151875,
+        "inference_seconds": 140.74450336099926,
+        "rtf": 0.06748668348453313,
+        "peak_rss_kib": 1532128
+      },
+      "noise_10db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.026066350710900472,
+        "substitutions": 27,
+        "insertions": 2,
+        "deletions": 4,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 30.174819276998278,
+        "rtf": 0.06745916878460184,
+        "peak_rss_kib": 1462956
+      },
+      "noise_0db": {
+        "utterances": 50,
+        "reference_words": 1266,
+        "wer": 0.07187993680884676,
+        "substitutions": 74,
+        "insertions": 8,
+        "deletions": 9,
+        "audio_seconds": 447.3049375,
+        "inference_seconds": 30.10117330599587,
+        "rtf": 0.06729452501515451,
+        "peak_rss_kib": 1461076
+      }
+    }
+  },
+  "timing": {
+    "helium-long12-1": {
+      "duration": 720.8999375,
+      "runs_seconds": [
+        69.087274529,
+        70.094697281,
+        70.922595592,
+        71.398182265,
+        72.490566688
+      ],
+      "median_seconds": 70.922595592,
+      "median_rtf": 0.09838063773171016,
+      "peak_rss_kib": 434076,
+      "threads": "1",
+      "wer": 0.107799304520616
+    },
+    "helium-long12-4": {
+      "duration": 720.8999375,
+      "runs_seconds": [
+        35.787991006,
+        35.223769315,
+        31.783664987,
+        32.570610743,
+        32.802570612
+      ],
+      "median_seconds": 32.802570612,
+      "median_rtf": 0.045502251984867174,
+      "peak_rss_kib": 456300,
+      "threads": "4",
+      "wer": 0.107799304520616
+    },
+    "helium-long20-4": {
+      "duration": 1201.2349375,
+      "runs_seconds": [
+        52.435452873,
+        52.519801598,
+        52.2617816,
+        52.061206861,
+        52.552965007
+      ],
+      "median_seconds": 52.435452873,
+      "median_rtf": 0.04365128854987204,
+      "peak_rss_kib": 448032,
+      "threads": "4",
+      "wer": 0.08831646734130635
+    },
+    "helium-long5-1": {
+      "duration": 301.735,
+      "runs_seconds": [
+        26.902474396,
+        26.92594945,
+        27.02250475,
+        27.330840113,
+        27.940718473
+      ],
+      "median_seconds": 27.02250475,
+      "median_rtf": 0.08955707740235637,
+      "peak_rss_kib": 416484,
+      "threads": "1",
+      "wer": 0.16370106761565836
+    },
+    "helium-long5-4": {
+      "duration": 301.735,
+      "runs_seconds": [
+        12.540372171,
+        12.442468567,
+        12.908044518,
+        14.11511338,
+        13.670961864
+      ],
+      "median_seconds": 12.908044518,
+      "median_rtf": 0.042779407486701906,
+      "peak_rss_kib": 420836,
+      "threads": "4",
+      "wer": 0.16370106761565836
+    },
+    "helium-short-1": {
+      "duration": 9.19,
+      "runs_seconds": [
+        0.774829865,
+        0.752580704,
+        0.757179108,
+        0.776223243,
+        0.754339586
+      ],
+      "median_seconds": 0.757179108,
+      "median_rtf": 0.08239163307943417,
+      "peak_rss_kib": 217508,
+      "threads": "1"
+    },
+    "helium-short-4": {
+      "duration": 9.19,
+      "runs_seconds": [
+        0.388965029,
+        0.387895262,
+        0.400224741,
+        0.407918109,
+        0.401159346
+      ],
+      "median_seconds": 0.400224741,
+      "median_rtf": 0.04355002622415669,
+      "peak_rss_kib": 208428,
+      "threads": "4"
+    },
+    "large-batch-1": {
+      "model": "large",
+      "threads": 1,
+      "audio": null,
+      "duration": 442.57,
+      "audio_files": 60,
+      "batch_per_split": 30,
+      "chunk_seconds": 0,
+      "load_seconds": 3.090790067999478,
+      "runs_seconds": [
+        73.5937528659997,
+        73.86319866400027,
+        73.63884488700023,
+        73.9893242219996,
+        73.85306265399959
+      ],
+      "median_seconds": 73.85306265399959,
+      "median_rtf": 0.1668731786022541,
+      "peak_rss_kib": 1599344,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "large-batch-4": {
+      "model": "large",
+      "threads": 4,
+      "audio": null,
+      "duration": 442.57,
+      "audio_files": 60,
+      "batch_per_split": 30,
+      "chunk_seconds": 0,
+      "load_seconds": 3.1690690280001945,
+      "runs_seconds": [
+        29.86092637299953,
+        29.915778452999803,
+        29.844163341999774,
+        29.918857923999894,
+        29.803666150000026
+      ],
+      "median_seconds": 29.86092637299953,
+      "median_rtf": 0.06747164600628043,
+      "peak_rss_kib": 1613716,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "large-long5chunk-4": {
+      "model": "large",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-5min.wav",
+      "duration": 301.735,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 30.0,
+      "load_seconds": 3.218025877999935,
+      "runs_seconds": [
+        21.300991352999517,
+        21.441651623000325,
+        21.70112215499921,
+        21.587843206999423,
+        21.582125439000265
+      ],
+      "median_seconds": 21.582125439000265,
+      "median_rtf": 0.0715267550632186,
+      "peak_rss_kib": 1591320,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.03558718861209965
+    },
+    "large-long5single-4": {
+      "model": "large",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-5min.wav",
+      "duration": 301.735,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 3.06840316600028,
+      "runs_seconds": [
+        51.071566347000044,
+        50.647103152000454,
+        50.626686161999714,
+        50.63195280200034,
+        50.78935917099989
+      ],
+      "median_seconds": 50.647103152000454,
+      "median_rtf": 0.1678529277412314,
+      "peak_rss_kib": 5596560,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.03084223013048636
+    },
+    "large-short-1": {
+      "model": "large",
+      "threads": 1,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 3.1265524419995927,
+      "runs_seconds": [
+        1.572959890000675,
+        1.5462446940000518,
+        1.5482367360000353,
+        1.546977875000266,
+        1.5400454259997787
+      ],
+      "median_seconds": 1.546977875000266,
+      "median_rtf": 0.16833273939067098,
+      "peak_rss_kib": 1278344,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "large-short-4": {
+      "model": "large",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 3.2217280890008624,
+      "runs_seconds": [
+        0.6100843900003383,
+        0.5977836819993172,
+        0.6005204470002354,
+        0.5984614429999056,
+        0.5992609650002123
+      ],
+      "median_seconds": 0.5992609650002123,
+      "median_rtf": 0.06520793960829296,
+      "peak_rss_kib": 1265400,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "moonshine-batch-1": {
+      "model": "moonshine",
+      "threads": 1,
+      "audio": null,
+      "duration": 442.57,
+      "audio_files": 60,
+      "batch_per_split": 30,
+      "chunk_seconds": 0,
+      "load_seconds": 0.9280377539998881,
+      "runs_seconds": [
+        34.85300692800001,
+        33.867777125999964,
+        33.78396384200005,
+        33.89450312100007,
+        33.54842013799998
+      ],
+      "median_seconds": 33.867777125999964,
+      "median_rtf": 0.07652524374901137,
+      "peak_rss_kib": 407900,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "moonshine-batch-4": {
+      "model": "moonshine",
+      "threads": 4,
+      "audio": null,
+      "duration": 442.57,
+      "audio_files": 60,
+      "batch_per_split": 30,
+      "chunk_seconds": 0,
+      "load_seconds": 0.8757200400000329,
+      "runs_seconds": [
+        17.78189376699993,
+        17.880191190999994,
+        17.665099781999743,
+        17.63384768199967,
+        17.677314962999844
+      ],
+      "median_seconds": 17.677314962999844,
+      "median_rtf": 0.039942415805408964,
+      "peak_rss_kib": 407164,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "moonshine-long12fixed-4": {
+      "model": "moonshine",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-12min.wav",
+      "duration": 720.8999375,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 30.0,
+      "load_seconds": 0.8477264309999555,
+      "runs_seconds": [
+        29.76912746900007,
+        29.45761256800006,
+        29.506516199000316,
+        30.08397067499982,
+        30.184017613999913
+      ],
+      "median_seconds": 29.76912746900007,
+      "median_rtf": 0.04129439596324014,
+      "peak_rss_kib": 428908,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.07501241927471436
+    },
+    "moonshine-long5fixed-1": {
+      "model": "moonshine",
+      "threads": 1,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-5min.wav",
+      "duration": 301.735,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 30.0,
+      "load_seconds": 0.8926265170000534,
+      "runs_seconds": [
+        28.367400503,
+        27.76817481099988,
+        28.419714402999944,
+        27.62944278299983,
+        27.525987450999992
+      ],
+      "median_seconds": 27.76817481099988,
+      "median_rtf": 0.0920283520672109,
+      "peak_rss_kib": 401304,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.09134045077105575
+    },
+    "moonshine-long5fixed-4": {
+      "model": "moonshine",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-5min.wav",
+      "duration": 301.735,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 30.0,
+      "load_seconds": 1.0659190639998997,
+      "runs_seconds": [
+        13.315664838999965,
+        13.20235489799984,
+        13.106835321000062,
+        12.500102884999933,
+        14.070768444999885
+      ],
+      "median_seconds": 13.20235489799984,
+      "median_rtf": 0.043754801060532714,
+      "peak_rss_kib": 403300,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.09134045077105575
+    },
+    "moonshine-short-1": {
+      "model": "moonshine",
+      "threads": 1,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "chunk_seconds": 0,
+      "load_seconds": 0.7914953729999752,
+      "runs_seconds": [
+        0.7050915789999408,
+        0.6981882469999618,
+        0.7041517769999928,
+        0.7073696569999584,
+        0.7043892079999523
+      ],
+      "median_seconds": 0.7043892079999523,
+      "median_rtf": 0.0766473566920514,
+      "peak_rss_kib": 226720,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "moonshine-short-4": {
+      "model": "moonshine",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "chunk_seconds": 0,
+      "load_seconds": 0.879968985000005,
+      "runs_seconds": [
+        0.3520439539998961,
+        0.3553995639999812,
+        0.34797794299993257,
+        0.34523494999996274,
+        0.3502808250000271
+      ],
+      "median_seconds": 0.3502808250000271,
+      "median_rtf": 0.03811543253536748,
+      "peak_rss_kib": 226732,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "parakeet-batch-1": {
+      "model": "parakeet",
+      "threads": 1,
+      "audio": null,
+      "duration": 442.57,
+      "audio_files": 60,
+      "batch_per_split": 30,
+      "chunk_seconds": 0,
+      "load_seconds": 1.6333446479998202,
+      "runs_seconds": [
+        19.529602222999983,
+        19.545925987999908,
+        19.580158719999872,
+        19.480868341999667,
+        19.68564233699999
+      ],
+      "median_seconds": 19.545925987999908,
+      "median_rtf": 0.04416459766364622,
+      "peak_rss_kib": 735516,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "parakeet-batch-4": {
+      "model": "parakeet",
+      "threads": 4,
+      "audio": null,
+      "duration": 442.57,
+      "audio_files": 60,
+      "batch_per_split": 30,
+      "chunk_seconds": 0,
+      "load_seconds": 1.654157879000195,
+      "runs_seconds": [
+        10.311250118999851,
+        10.253620598999987,
+        10.25094203200024,
+        10.326606943000115,
+        10.393375657999968
+      ],
+      "median_seconds": 10.311250118999851,
+      "median_rtf": 0.02329857450572757,
+      "peak_rss_kib": 742040,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "parakeet-fp32-short-1": {
+      "model": "parakeet-fp32",
+      "threads": 1,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 1.9580562139999529,
+      "runs_seconds": [
+        0.8898007299999335,
+        0.8751051940000707,
+        0.8719916310001281,
+        0.8745707610000863,
+        0.8798351699999785
+      ],
+      "median_seconds": 0.8751051940000707,
+      "median_rtf": 0.09522363373232544,
+      "peak_rss_kib": 867904,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "parakeet-fp32-short-4": {
+      "model": "parakeet-fp32",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 1.9711997249999058,
+      "runs_seconds": [
+        0.2719254969999838,
+        0.2632675669999571,
+        0.26342372699991756,
+        0.260872844000005,
+        0.26176604600004794
+      ],
+      "median_seconds": 0.2632675669999571,
+      "median_rtf": 0.028647178128395772,
+      "peak_rss_kib": 867780,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "parakeet-long12chunk-4": {
+      "model": "parakeet",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-12min.wav",
+      "duration": 720.8999375,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 30.0,
+      "load_seconds": 1.6017520989998957,
+      "runs_seconds": [
+        17.444463541000005,
+        17.426160326000172,
+        17.443117454999992,
+        17.485785641999883,
+        17.349570502999995
+      ],
+      "median_seconds": 17.443117454999992,
+      "median_rtf": 0.024196308735288236,
+      "peak_rss_kib": 723376,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.04818678589170392
+    },
+    "parakeet-long20chunk-4": {
+      "model": "parakeet",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-20min.wav",
+      "duration": 1201.2349375,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 30.0,
+      "load_seconds": 1.5979870319997644,
+      "runs_seconds": [
+        28.883960136000496,
+        28.68395547199998,
+        28.696593990999645,
+        28.668903775999752,
+        28.98904537999988
+      ],
+      "median_seconds": 28.696593990999645,
+      "median_rtf": 0.02388924355690383,
+      "peak_rss_kib": 745308,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.04998466727997547
+    },
+    "parakeet-long5-1": {
+      "model": "parakeet",
+      "threads": 1,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-5min.wav",
+      "duration": 301.735,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 1.8006735289998232,
+      "runs_seconds": [
+        53.80260014400005,
+        52.52250639199997,
+        52.82419360899985,
+        53.21075724499997,
+        53.059520496999994
+      ],
+      "median_seconds": 53.059520496999994,
+      "median_rtf": 0.1758480802591678,
+      "peak_rss_kib": 5472276,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.04863582443653618
+    },
+    "parakeet-long5-4": {
+      "model": "parakeet",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-5min.wav",
+      "duration": 301.735,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 1.6589947079999092,
+      "runs_seconds": [
+        22.761313879,
+        22.766277301999935,
+        22.118245231999936,
+        21.646208548000004,
+        21.523636153000098
+      ],
+      "median_seconds": 22.118245231999936,
+      "median_rtf": 0.07330354526985579,
+      "peak_rss_kib": 5468464,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.04863582443653618
+    },
+    "parakeet-long5chunk-4": {
+      "model": "parakeet",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/long-5min.wav",
+      "duration": 301.735,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 30.0,
+      "load_seconds": 1.581686133000403,
+      "runs_seconds": [
+        7.171398985000451,
+        7.155247200999838,
+        7.134691942000245,
+        7.148430440999618,
+        7.145180528999845
+      ],
+      "median_seconds": 7.148430440999618,
+      "median_rtf": 0.023691088011001768,
+      "peak_rss_kib": 693156,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "wer": 0.05219454329774614
+    },
+    "parakeet-short-1": {
+      "model": "parakeet",
+      "threads": 1,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 1.5227549199998975,
+      "runs_seconds": [
+        0.4076957150000453,
+        0.39677718699999787,
+        0.40172371199992085,
+        0.3941113859998495,
+        0.3957820260000062
+      ],
+      "median_seconds": 0.39677718699999787,
+      "median_rtf": 0.04317488433079411,
+      "peak_rss_kib": 365668,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "parakeet-short-4": {
+      "model": "parakeet",
+      "threads": 4,
+      "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+      "duration": 9.19,
+      "audio_files": 1,
+      "batch_per_split": 0,
+      "chunk_seconds": 0,
+      "load_seconds": 1.5408629129999554,
+      "runs_seconds": [
+        0.21133493800016367,
+        0.20541548699998202,
+        0.20537412699991364,
+        0.20460252499992748,
+        0.20464708600002268
+      ],
+      "median_seconds": 0.20537412699991364,
+      "median_rtf": 0.02234756550597537,
+      "peak_rss_kib": 369900,
+      "ort_version": "1.24.4",
+      "affinity": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  },
+  "paired": {
+    "moonshine_to_parakeet": {
+      "test-clean": {
+        "delta_wer_percentage_points": -1.8128744814871718,
+        "paired_utterance_bootstrap_95_ci_pp": [
+          -2.496728380674972,
+          -1.107912125550322
+        ],
+        "draws": 2000,
+        "seed": 20261104
+      },
+      "test-other": {
+        "delta_wer_percentage_points": -6.313435403406159,
+        "paired_utterance_bootstrap_95_ci_pp": [
+          -7.5295144590386265,
+          -5.084390156506304
+        ],
+        "draws": 2000,
+        "seed": 20261104
+      }
+    },
+    "parakeet-fp32_to_parakeet": {
+      "test-clean": {
+        "delta_wer_percentage_points": -0.04609002919035182,
+        "paired_utterance_bootstrap_95_ci_pp": [
+          -0.24439255608678342,
+          0.15671477793077662
+        ],
+        "draws": 2000,
+        "seed": 20261104
+      },
+      "test-other": {
+        "delta_wer_percentage_points": 0.3784620677791158,
+        "paired_utterance_bootstrap_95_ci_pp": [
+          0.05057188497822066,
+          0.7177374927133607
+        ],
+        "draws": 2000,
+        "seed": 20261104
+      }
+    },
+    "parakeet_to_large": {
+      "test-clean": {
+        "delta_wer_percentage_points": -1.4287909049009064,
+        "paired_utterance_bootstrap_95_ci_pp": [
+          -1.841451038836793,
+          -1.0524598873768964
+        ],
+        "draws": 2000,
+        "seed": 20261104
+      },
+      "test-other": {
+        "delta_wer_percentage_points": -2.872871150868743,
+        "paired_utterance_bootstrap_95_ci_pp": [
+          -3.55631359096909,
+          -2.259890066944717
+        ],
+        "draws": 2000,
+        "seed": 20261104
+      }
+    }
+  }
+}

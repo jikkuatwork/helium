@@ -1,0 +1,151 @@
+{
+  "features": [
+    {
+      "id": "8463-294828-0001",
+      "max_abs": 0.00010991096496582031,
+      "rms": 2.275890437886119e-06
+    },
+    {
+      "id": "8455-210777-0034",
+      "max_abs": 2.4318695068359375e-05,
+      "rms": 1.2263033113413258e-06
+    },
+    {
+      "id": "4970-29095-0030",
+      "max_abs": 7.271766662597656e-05,
+      "rms": 1.3836028074365458e-06
+    },
+    {
+      "id": "6829-68771-0023",
+      "max_abs": 5.644559860229492e-05,
+      "rms": 1.6559896494072746e-06
+    },
+    {
+      "id": "2830-3980-0017",
+      "max_abs": 2.2649765014648438e-05,
+      "rms": 1.1317281405354152e-06
+    },
+    {
+      "id": "1580-141083-0027",
+      "max_abs": 0.00010478496551513672,
+      "rms": 3.4097927255061222e-06
+    },
+    {
+      "id": "4446-2275-0026",
+      "max_abs": 7.37905502319336e-05,
+      "rms": 1.8685645954974461e-06
+    },
+    {
+      "id": "7127-75946-0024",
+      "max_abs": 1.3709068298339844e-05,
+      "rms": 1.4599577298213262e-06
+    },
+    {
+      "id": "4992-23283-0014",
+      "max_abs": 1.4007091522216797e-05,
+      "rms": 1.2186466165076126e-06
+    },
+    {
+      "id": "7021-85628-0001",
+      "max_abs": 2.7179718017578125e-05,
+      "rms": 1.8011696738540195e-06
+    }
+  ],
+  "frame_argmax_equal": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "ctc_tokens_equal": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "details": [
+    {
+      "id": "8463-294828-0001",
+      "different_frames": 1,
+      "frames": 115,
+      "numpy_text": " Three seconds before the arrival of J. B. Hobson's letter, I no more dreamed of chasing the unicorn than of trying for the Northwest passassage.",
+      "onnx_text": " Three seconds before the arrival of J. B. Hobson's letter, I no more dreamed of chasing the unicorn than of trying for the Northwest passassage."
+    },
+    {
+      "id": "8455-210777-0034",
+      "different_frames": 1,
+      "frames": 97,
+      "numpy_text": " Not a doubt, but had your force been only double or trouble our own, I should have found it my duty to struggle with you.",
+      "onnx_text": " Not a doubt, but had your force been only double or trouble our own, I should have found it my duty to struggle with you."
+    },
+    {
+      "id": "4970-29095-0030",
+      "different_frames": 3,
+      "frames": 59,
+      "numpy_text": " Father, these's unjust to Philip. He's going into business.",
+      "onnx_text": " Father, these's unjust to Philip. He's going into business."
+    },
+    {
+      "id": "6829-68771-0023",
+      "different_frames": 0,
+      "frames": 68,
+      "numpy_text": " You speak like an educated person, said Beth, wonderingly. Where is your home?",
+      "onnx_text": " You speak like an educated person, said Beth, wonderingly. Where is your home?"
+    },
+    {
+      "id": "2830-3980-0017",
+      "different_frames": 0,
+      "frames": 46,
+      "numpy_text": " When I was a young man, I thought Paul was making too much of his call,",
+      "onnx_text": " When I was a young man, I thought Paul was making too much of his call,"
+    },
+    {
+      "id": "1580-141083-0027",
+      "different_frames": 1,
+      "frames": 66,
+      "numpy_text": " How long would it take him to do that, using every possible contraction a quarter of an hour, or not less?",
+      "onnx_text": " How long would it take him to do that, using every possible contraction a quarter of an hour, or not less?"
+    },
+    {
+      "id": "4446-2275-0026",
+      "different_frames": 2,
+      "frames": 69,
+      "numpy_text": " She closed her eyes and took a deep breath, as if to draw in again the fragrance of those days.",
+      "onnx_text": " She closed her eyes and took a deep breath, as if to draw in again the fragrance of those days."
+    },
+    {
+      "id": "7127-75946-0024",
+      "different_frames": 4,
+      "frames": 64,
+      "numpy_text": " Monsieur was the only one who did not understand anything about the matter.",
+      "onnx_text": " Monsieur was the only one who did not understand anything about the matter."
+    },
+    {
+      "id": "4992-23283-0014",
+      "different_frames": 1,
+      "frames": 57,
+      "numpy_text": " What can you mean by that, Miss Woodley? You talk mysteriously",
+      "onnx_text": " What can you mean by that, Miss Woodley? You talk mysteriously"
+    },
+    {
+      "id": "7021-85628-0001",
+      "different_frames": 3,
+      "frames": 142,
+      "numpy_text": " He made a bow so deep that his back came near breaking. and he was dumbfounded, I can tell you, when he saw it was nobody but Anders.",
+      "onnx_text": " He made a bow so deep that his back came near breaking. and he was dumbfounded, I can tell you, when he saw it was nobody but Anders."
+    }
+  ],
+  "mel_filter_sha256": "e0ed91f70a33a01cbfd766bf8f5a5a50f46d6cb7d78c22aadd2027ce2e6065ac"
+}

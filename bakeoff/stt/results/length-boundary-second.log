@@ -1,0 +1,8 @@
+[0;93m2026-11-04 19:38:29.168923745 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+{"samples": 6400159, "seconds": 400.0099375, "success": true, "hypothesis_words": 1141, "elapsed_seconds_single_probe": 23.19746616900011, "peak_rss_kib": 3371428}
+{"samples": 6400160, "seconds": 400.01, "success": true, "hypothesis_words": 1144, "elapsed_seconds_single_probe": 22.686346102999778, "peak_rss_kib": 3571876}
+Traceback (most recent call last):
+  File "/home/hvm/work/helium/.harnex/worktrees/bake-stt/bakeoff/stt/limits.py", line 31, in <module>
+    assert rows[0]['success'] and not rows[1]['success'], rows
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [{'samples': 6400159, 'seconds': 400.0099375, 'success': True, 'hypothesis_words': 1141, 'elapsed_seconds_single_probe': 23.19746616900011, 'peak_rss_kib': 3371428}, {'samples': 6400160, 'seconds': 400.01, 'success': True, 'hypothesis_words': 1144, 'elapsed_seconds_single_probe': 22.686346102999778, 'peak_rss_kib': 3571876}]

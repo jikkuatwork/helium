@@ -1,0 +1,32 @@
+{
+  "model": "large",
+  "threads": 4,
+  "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+  "duration": 9.19,
+  "audio_files": 1,
+  "batch_per_split": 0,
+  "chunk_seconds": 0,
+  "load_seconds": 3.2217280890008624,
+  "runs_seconds": [
+    0.6100843900003383,
+    0.5977836819993172,
+    0.6005204470002354,
+    0.5984614429999056,
+    0.5992609650002123
+  ],
+  "median_seconds": 0.5992609650002123,
+  "median_rtf": 0.06520793960829296,
+  "peak_rss_kib": 1265400,
+  "hypothesis": "Three seconds before the arrival of JB Hobson's letter, I no more dreamed of chasing the unicorn than of trying for the Northwest Passage.",
+  "ort_version": "1.24.4",
+  "affinity": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

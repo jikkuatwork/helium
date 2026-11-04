@@ -1,0 +1,26 @@
+{
+  "test-clean": {
+    "utterances": 320,
+    "reference_words": 6509,
+    "wer": 0.03441388846212936,
+    "substitutions": 189,
+    "insertions": 18,
+    "deletions": 17,
+    "audio_seconds": 2407.619875,
+    "inference_seconds": 68.83097889100168,
+    "rtf": 0.028588806566070435,
+    "peak_rss_kib": 1031928
+  },
+  "test-other": {
+    "utterances": 320,
+    "reference_words": 5813,
+    "wer": 0.0553930844658524,
+    "substitutions": 267,
+    "insertions": 27,
+    "deletions": 28,
+    "audio_seconds": 2085.5151875,
+    "inference_seconds": 60.06207915600203,
+    "rtf": 0.028799636423650847,
+    "peak_rss_kib": 1031928
+  }
+}

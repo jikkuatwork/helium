@@ -1,0 +1,1 @@
+PASS: 4 builds x 320 clean + 320 other; 4 builds x 50 clips x 2 SNRs; 31 five-run timing records; 740 exact Go/Python texts; feature token parity; graph boundary; no weights/audio in bakeoff/stt.

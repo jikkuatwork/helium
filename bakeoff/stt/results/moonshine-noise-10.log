@@ -1,0 +1,17 @@
+[0;93m2026-11-04 18:09:54.728673632 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+25 moonshine {'utterances': 25, 'reference_words': 542, 'wer': 0.14575645756457564, 'substitutions': 62, 'insertions': 9, 'deletions': 8, 'audio_seconds': 189.815, 'inference_seconds': 7.10856001500008, 'rtf': 0.0374499381766461, 'peak_rss_kib': 289476}
+50 moonshine {'utterances': 50, 'reference_words': 1266, 'wer': 0.12796208530805686, 'substitutions': 129, 'insertions': 18, 'deletions': 15, 'audio_seconds': 447.3049375, 'inference_seconds': 16.794854465999833, 'rtf': 0.03754676744653603, 'peak_rss_kib': 326596}
+{
+  "test-clean": {
+    "utterances": 50,
+    "reference_words": 1266,
+    "wer": 0.12796208530805686,
+    "substitutions": 129,
+    "insertions": 18,
+    "deletions": 15,
+    "audio_seconds": 447.3049375,
+    "inference_seconds": 16.794854465999833,
+    "rtf": 0.03754676744653603,
+    "peak_rss_kib": 326596
+  }
+}

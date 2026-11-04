@@ -1,0 +1,33 @@
+{
+  "os": "Ubuntu 24.04",
+  "kernel": "7.0.0-1017-azure",
+  "architecture": "aarch64",
+  "cpu": "Ampere Altra / Neoverse-N1",
+  "cpu_count": 32,
+  "assigned_cores": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "python": "3.12.3",
+  "go": "go version go1.25.1 linux/arm64",
+  "packages": {
+    "onnxruntime": "1.24.4",
+    "onnx-asr": "0.12.0",
+    "numpy": "2.5.4",
+    "onnx": "1.23.2",
+    "soundfile": "0.14.0",
+    "jiwer": "4.0.0"
+  },
+  "file_sha256": {
+    "ort_python": "f373ae5fd4d878ed17ebea26e5480bd3d0a15e3bd6bc94b878e6c1b73998d22a",
+    "ort_helium": "52b2a0e75e79468404284fec38ad5ee1a7a996232274f5e1b84f3e793fb07554",
+    "nemo80_frontend": "7ab6b0d1f57832e56f59aa7cab4289de50df7f8d5296cdfd281d9c9b7b8d73e0",
+    "nemo128_frontend": "5b4a84c52eeaa615dc46d781cc7e4598f9b432184831d57493c48adcd01371a9"
+  }
+}

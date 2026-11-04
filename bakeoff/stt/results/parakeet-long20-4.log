@@ -1,0 +1,24 @@
+[0;93m2026-11-04 18:27:54.731477864 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+loaded parakeet 1.5849778540000443
+[1;31m2026-11-04 18:28:11.772245515 [E:onnxruntime:, sequential_executor.cc:572 ExecuteKernel] Non-zero status code returned while running Add node. Name:'/layers.0/self_attn/Add_2' Status Message: /onnxruntime_src/onnxruntime/core/providers/cpu/math/element_wise_ops.h:540 void onnxruntime::BroadcastIterator::Init(ptrdiff_t, ptrdiff_t) axis == 1 || axis == largest was false. Attempting to broadcast an axis by a dimension other than 1. 9999 by 15016
+[m
+Traceback (most recent call last):
+  File "/home/hvm/work/helium/.harnex/worktrees/bake-stt/bakeoff/stt/bench.py", line 281, in <module>
+    {'prepare': prepare, 'accuracy': accuracy, 'timing': timing}[args.command](args)
+  File "/home/hvm/work/helium/.harnex/worktrees/bake-stt/bakeoff/stt/bench.py", line 243, in timing
+    hyp = call()
+          ^^^^^^
+  File "/home/hvm/work/helium/.harnex/worktrees/bake-stt/bakeoff/stt/bench.py", line 239, in call
+    return '\n'.join(fixed_chunks(model, x, args.chunk) if args.chunk else model(x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hvm/work/helium/.harnex/worktrees/bake-stt/bakeoff/stt/bench.py", line 239, in <genexpr>
+    return '\n'.join(fixed_chunks(model, x, args.chunk) if args.chunk else model(x)
+                                                                           ^^^^^^^^
+  File "/home/hvm/work/helium/.harnex/worktrees/bake-stt/bakeoff/stt/bench.py", line 91, in __call__
+    out = self.model.run(None, {'audio_signal': features, 'length': length})[0]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hvm/models/stt/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py", line 296, in run
+    return self._sess.run(output_names, input_feed, run_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+onnxruntime.capi.onnxruntime_pybind11_state.RuntimeException: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Non-zero status code returned while running Add node. Name:'/layers.0/self_attn/Add_2' Status Message: /onnxruntime_src/onnxruntime/core/providers/cpu/math/element_wise_ops.h:540 void onnxruntime::BroadcastIterator::Init(ptrdiff_t, ptrdiff_t) axis == 1 || axis == largest was false. Attempting to broadcast an axis by a dimension other than 1. 9999 by 15016
+
