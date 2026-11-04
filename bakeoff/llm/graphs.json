@@ -1,5 +1,6 @@
 {
   "qwen": {
+    "matmul_nbits_policy": {"weight_bits_nodes": {"4": 249}, "block_size": 32, "accuracy_level_nodes": {"unspecified": 249}},
     "inputs": [
       {
         "name": "inputs_embeds",
@@ -1322,6 +1323,7 @@
     ]
   },
   "lfm3": {
+    "matmul_nbits_policy": {"weight_bits_nodes": {"4": 126, "8": 28}, "block_size": 32, "accuracy_level_nodes": {"4": 154}},
     "inputs": [
       {
         "name": "input_ids",
@@ -2075,6 +2077,7 @@
     ]
   },
   "lfm25": {
+    "matmul_nbits_policy": {"weight_bits_nodes": {"4": 93}, "block_size": 32, "accuracy_level_nodes": {"unspecified": 93}},
     "inputs": [
       {
         "name": "input_ids",

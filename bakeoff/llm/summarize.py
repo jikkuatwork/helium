@@ -48,6 +48,9 @@ def main():
         q = {'quality_timings_comparable': env.get('quality_timings_comparable', True),
              'tool_total': len(tools), 'tool_pass': sum(r['pass'] for r in tools),
              'tool_categories': {}, 'instruction_total': len(ins), 'instruction_pass': sum(r['pass'] for r in ins),
+             'instruction_raw_pass': sum(all(validate_instruction(r['text'], r['case']['rules'], strip_thinking=False).values()) for r in ins),
+             'constraint_raw_pass': sum(sum(validate_instruction(r['text'], r['case']['rules'], strip_thinking=False).values()) for r in ins),
+             'instruction_raw_failures': [{'id': r['id'], 'prompt': r['case']['prompt'], 'text': r['text'], 'checks': validate_instruction(r['text'], r['case']['rules'], strip_thinking=False)} for r in ins if not all(validate_instruction(r['text'], r['case']['rules'], strip_thinking=False).values())],
              'constraint_pass': sum(sum(r['checks'].values()) for r in ins), 'constraint_total': sum(len(r['checks']) for r in ins),
              'instruction_failures': [{'id': r['id'], 'prompt': r['case']['prompt'], 'text': final_text(r['text']), 'checks': r['checks']} for r in ins if not r['pass']],
              'tool_failures': [{'id': r['id'], 'prompt': r['case']['prompt'], 'text': r['text'], 'parsed': r['parsed'], 'expected': r['case']['expected'],
@@ -63,6 +66,7 @@ def main():
         off_second = [r['second'] for r in tools if 'second' in r]
         from suites import emitted_reasoning
         q['off_generations'] = len(off) + len(off_second)
+        q['off_tag_emissions'] = sum(bool(re.search(r'<think>|</think>|<reasoning>|<analysis>', r['text'])) for r in off + off_second)
         q['off_reasoning_leaks'] = sum(emitted_reasoning(r['text']) for r in off + off_second)
         q['off_truncations'] = sum(r['finish'] == 'length' for r in off + off_second)
         q['off_leak_outputs'] = [{'id': r.get('id'), 'text': r['text']} for r in off + off_second if emitted_reasoning(r['text'])]

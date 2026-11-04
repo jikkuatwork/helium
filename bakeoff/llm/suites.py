@@ -134,9 +134,14 @@ THINK = VOICE + [
 ]
 
 
-def final_text(text):
+def assistant_visible_text(text):
     for tag in ['<|im_end|>', '<|endoftext|>']:
         text = text.replace(tag, '')
+    return text.strip()
+
+
+def final_text(text):
+    text = assistant_visible_text(text)
     if '</think>' in text:
         text = text.rsplit('</think>', 1)[1]
     return text.strip()
@@ -191,8 +196,8 @@ def parse_pythonic_calls(text):
     return result
 
 
-def validate_instruction(text, rules):
-    text = final_text(text)
+def validate_instruction(text, rules, strip_thinking=True):
+    text = final_text(text) if strip_thinking else assistant_visible_text(text)
     checks = {}
     words = re.findall(r"\b[\w]+(?:['’-][\w]+)*\b", text, re.UNICODE)
     for key, value in rules.items():

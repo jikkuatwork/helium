@@ -29,7 +29,9 @@ Warm-up once, at least five measured runs per speed configuration, medians.
 The N1 has ARM dot-product instructions; Pi 4 Cortex-A72 does not. **These are
 not Pi 4 latency measurements.** Q4 is not uniform: LFM3's official `q4` retains
 embedding, LM head and 27/153 projections in int8; its `q4f32` is a different
-and larger variant, not tested here. All CPU q4 variants use float32 activations.
+and larger variant, not tested here. All CPU q4 variants have float32 graph tensor/cache interfaces; LFM3's
+matmul kernels can quantize activations internally (see compute-policy note).
+Worker spinning is disabled identically for every measured model/session.
 
 ## Research plan
 
@@ -55,7 +57,11 @@ fed back just like Qwen's. All tested caches use float32.
 No new operator compared with the **union** of Qwen's embedding and decoder
 operators: LFM's `GatherBlockQuantized` is already in Qwen's embed graph.
 All export opsets are 21 plus Microsoft domain 1. Full graph I/O/operator
-inventories are recorded in `bakeoff/llm/graphs.json`.
+inventories are recorded in `bakeoff/llm/graphs.json`. Both Liquid tokenizers
+are byte-level BPE with metadata-driven split regexes compatible in shape
+with helium's tokenizer loader, but unlike Qwen they have **no NFC normalizer**;
+helium currently applies NFC unconditionally. BOS/EOS IDs and published chat
+rendering also differ. Tokenizer parity must be tested, not assumed.
 
 LFM3's `logits_to_keep=1` avoids projecting all prefill tokens into vocabulary;
 Qwen's export always returns full prefill logits (248,320-vocabulary). This is a
@@ -89,17 +95,19 @@ license defines threshold as $10M or more but Section 5 says "exceeds"; avoid
 promising eligibility exactly at the boundary. No license gate was added to
 the evaluation.
 
-### First completed speed sweeps — LFM2.5 (1-thread / quality pending)
+### Completed LFM2.5 speed + quick spot check
 
 Median of five warmed runs; decode uses 32 steps after the first token.
 
 | Threads | Prefill 100 tok/s | Prefill 1000 tok/s | Decode 100 / 1000 tok/s |
 |---|---:|---:|---:|
+| 1 | 14.25 | 14.71 | 1.85 / 1.79 |
 | 4 | 56.03 | 56.58 | 6.95 / 6.78 |
 | 8 | 109.50 | 111.55 | 12.89 / 12.48 |
 
 | Threads | TTFT 100 (s) | TTFT 1000 (s) | Peak RSS (MiB) |
 |---|---:|---:|---:|
+| 1 | 7.017 | 67.995 | 1581.1 |
 | 4 | 1.785 | 17.674 | 1583.7 |
 | 8 | 0.913 | 8.965 | 1589.8 |
 
@@ -108,6 +116,36 @@ raises it above **1.5 GB / 1.5 GiB**, even though the model files fit comfortabl
 Pi-class recommendation must distinguish weight size from working memory and
 restrict context. Additional full-logits 1000-token prefill: 56.24 tok/s at
 4 threads / 111.67 at 8, essentially unchanged for this model.
+
+LFM2.5 spot: **9/9 tools**, including one canonical dependent continuation;
+**7/10 instructions** (same raw/final score), 0 reasoning traces or truncated
+outputs in 25 off generations. The three failures were exact word counts.
+Replies are short and generally usable, but without tools the reminder turn
+answered "Sure! Make sure to drink some water now to stay hydrated." rather
+than setting a twenty-minute reminder or clearly declining. This is not a
+proof of general agent reliability.
+
+### LFM3 quality milestone (thinking pairs still running)
+
+**36/36 tools**: 25/25 single, 6/6 no-tool/clarification, 5/5 dependent paired
+calls. However, only **8/30 instruction prompts pass on raw visible output**;
+**18/30** after stripping generated reasoning. Sixteen of the 30 instructions
+emitted `<think>`/`</think>` while the published template was explicitly
+called with `enable_thinking=False`; four hit the 192-token limit, all in
+reasoning, without an answer. This is not just an empty-tag cosmetic issue.
+One short sky-blue voice turn also emitted a reasoning answer followed by
+`</think>` and then a second answer. Qwen baseline results pending.
+
+Raw example for "Give a calming bedtime thought in at most 10 words":
+
+> `<think>We need to generate a calming bedtime thought, at most 10 words...`
+> [192 generated tokens, truncated before final answer]
+
+Tool scoring checks calls/arguments, allowing pre-call prose as the templates
+do. Instruction results report **both raw output and extracted final content**,
+not silently granting credit by hiding unwanted reasoning. Raw scoring strips
+only normal EOS markers. Headline constraint accuracy will use raw output;
+think-prefix prompt tokens are never counted as emitted reasoning.
 
 ### New optimized Qwen export caveat — Evidence: High
 

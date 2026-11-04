@@ -83,7 +83,8 @@ def quality(r, path, spot=False, shard=(0, 1)):
     for case in selected(instruction_cases() if not spot else instruction_cases()[::3]):
         result = r.chat([{'role': 'user', 'content': case['prompt']}], max_tokens=192)
         checks = validate_instruction(result['text'], case['rules'])
-        result.update(kind='instruction', id=case['id'], case=case, checks=checks, **{'pass': all(checks.values())}, reasoning_leak=emitted_reasoning(result['text']))
+        raw_checks = validate_instruction(result['text'], case['rules'], strip_thinking=False)
+        result.update(kind='instruction', id=case['id'], case=case, checks=checks, raw_checks=raw_checks, raw_pass=all(raw_checks.values()), **{'pass': all(checks.values())}, reasoning_leak=emitted_reasoning(result['text']))
         emit(path, result)
     for i, prompt in selected(list(enumerate(VOICE if not spot else VOICE[:5]))):
         result = r.chat([{'role': 'system', 'content': VOICE_SYSTEM}, {'role': 'user', 'content': prompt}], max_tokens=192)
