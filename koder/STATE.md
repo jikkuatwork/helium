@@ -1,8 +1,8 @@
-# Helium — Go TTS Library
+# Helium — Go Runtime for Tiny Models
 
 ## Overview
 
-Text-to-speech in Go. No Python. Tiny binary (~8MB). ONNX Runtime, model, and voice files auto-download on first run; `espeak-ng` remains a system dependency.
+Local TTS, STT and LLM in Go. No Python. Tiny binary (~8MB). ONNX Runtime, models, voices and espeak-ng auto-download from `cattery-artefacts` on first run (espeak falls back to a system `espeak-ng` on PATH).
 
 ```
 go install github.com/jikkuatwork/helium/cmd/helium@latest
@@ -14,7 +14,7 @@ helium "Hello, world."
 - **Language**: Go (small cgo shim for `malloc_trim` during ORT teardown)
 - **Inference**: ONNX Runtime 1.24.1+ via `yalue/onnxruntime_go` v1.27.0 (dlopen)
 - **Model**: Kokoro-82M int8 quantized (92MB ONNX)
-- **Phonemization**: espeak-ng via `os/exec` (only system dep)
+- **Phonemization**: espeak-ng via `os/exec` (downloaded binary; system fallback)
 - **Audio**: WAV (pure Go streaming writer)
 
 ## Architecture
@@ -64,9 +64,9 @@ helium help --advanced          # full flag/command reference
 | TTS model + voices | `jikkuatwork/cattery-artefacts` (Git LFS) | 88MB + 13MB |
 | STT model | `jikkuatwork/cattery-artefacts` (Git LFS) | 28MB |
 | LLM model (Qwen3.5-4B q4) | `jikkuatwork/cattery-artefacts` (Git LFS) | ~2.91 GiB |
-| ORT runtime | Microsoft GitHub Releases | 18MB |
+| ORT runtime | `cattery-artefacts` (mirror of MS release) | 18MB |
 
-Registry currently includes 27 voices. Downloaded artefacts are cached in `~/.helium/`; `espeak-ng` is not bundled.
+Registry currently includes 27 voices. Downloaded artefacts (incl. espeak-ng) are cached in `~/.helium/`; nothing is embedded in the binary yet.
 
 ## Performance (aarch64 VM, 6-core)
 
@@ -124,7 +124,41 @@ Registry currently includes 27 voices. Downloaded artefacts are cached in `~/.he
 
 ## What's Next
 
-All artefacts (ORT, models, voices, espeak) now self-hosted in `cattery-artefacts`. Microsoft ORT URL retained as fallback only.
+### Vision (owner, 2026-11-04)
+
+Standalone Go runtime for tiny models — TTS, STT, LLM, VLM and other useful
+types. Goals:
+- **Exactly one binary + one model file** per model (today: binary + ORT .so +
+  many model/voice/tokenizer files + espeak-ng binary/data).
+- CPU-first on any machine; use a GPU when present (ORT execution providers).
+- Importable Go module for larger projects (first consumer: Go assistant bot).
+
+### Session 2026-11-04 outcome (planning only, no code changes)
+
+- **Model survey done** → [research/02_model_survey.md](research/02_model_survey.md).
+  Candidate picks (unverified on our hardware):
+  - TTS: **Phonon 31m-en** (Apache, no phonemizer → drops espeak-ng); Pocket TTS 7m/18m low-end
+  - STT: **Parakeet TDT-CTC 110M** (CC-BY, ~40% fewer errors than Moonshine-tiny); Parakeet 0.6B large tier
+  - LLM: **Qwen3.5-4B vs LFM3-1.7B** (contest); **LFM2.5-1.2B** for Pi-class
+  - VLM: Qwen3.5 vision encoder vs LFM3-VL-2B; LFM2.5-VL-450M Pi-class
+  - New: Silero VAD v6.2, Granite-97M / EmbeddingGemma 2 embeddings, GTCRN denoise, PP-OCRv6
+- **License policy decided** (see Key Decisions): revenue caps like LFM's $10M are OK.
+- **Architecture gaps identified** (not yet filed as issues):
+  1. Single-file model bundle (manifest + aligned blobs, mmap) — needed by nearly every pick (multi-graph). Spike: >2GB external weights from inside one file (onnxruntime_go lacks the in-memory external-initializer API; fallback = extract to cache).
+  2. ORT embedded in release binaries (`go:embed` per platform, extract by hash, dlopen); slim build for `go install`/library.
+  3. espeak-ng removal — likely solved by switching to Phonon (else espeak→WASM via wazero inside the bundle).
+  4. Library API: no `ort` lifecycle for importers; inconsistent constructors (`kokoro.New(path, dataDir)`, `moonshine.New(dir, meta)`, `qwen.New(dir, *registry.Model)`); no `context.Context` on TTS/STT; no LLM token streaming/chat/image input; spike cmds + plumbing pkgs not `internal/`.
+  5. Linux-only build: `ort/ort.go` uses glibc `malloc_trim` + `x/sys/unix` with no build tags (absorbs #05).
+  6. GPU: all 5 session-creation sites pass nil options; onnxruntime_go v1.27 already wraps CUDA/CoreML/DirectML/OpenVINO. Add one session choke point first.
+- **Shared Go building blocks** that unlock most picks: SentencePiece tokenizer, log-mel/STFT, generic `past_*`→`present_*` stateful decode loop.
+
+### Open decisions (start next session here)
+
+- How to proceed: owner wants to rethink sequencing. Proposed: bake-off on this VM (Phonon vs Kokoro, Parakeet 110M vs Moonshine-tiny, Qwen3.5-4B vs LFM3-1.7B) → bundle format → ORT embed → library API → new model types → GPU.
+- English-only TTS default OK? (multilingual = Pocket TTS 100M, desktop-only)
+- Low-end reference: Pi 4 for TTS/STT/VAD; Pi 5 for LLM (A72 lacks dotprod → slow q4 prefill)?
+- Bundle container: custom aligned format (GGUF-like) vs store-only zip.
+- Fate of #12 (LLM proxy) and #23 (remote engines) — off-mission for a standalone runtime; propose drop.
 
 ### Open
 
@@ -135,14 +169,15 @@ All artefacts (ORT, models, voices, espeak) now self-hosted in `cattery-artefact
 - **LLM `<think>` tag stripping** — Qwen3.5 emits `<think>…</think>` reasoning tokens; currently shown raw in CLI and API output
 - ~~**#34** Trim espeak-ng-data to English-only~~ — dropped; keeping all 117 languages
 - ~~**#23 OpenAI remote engines**~~ — deferred (pure local focus)
-- Vision: single-binary conversational system (STT → LLM → TTS) for indie builders on Pi4 — now architecturally complete
+- **Tracker drift**: 15 issue files still say `Status: open` though done here (01–04, 08–10, 16–20, 24, 25); `download/download.go:5` comment still says ORT comes from Microsoft; Key Decisions "Remote models are just models" / "Dual-mode operation" describe deferred #23
 
 ## Key Decisions Made
 
 - **Renamed cattery → helium (2026-10-31)**: module `github.com/jikkuatwork/helium`, binary `helium` (`cmd/helium`), data dir `~/.helium`, env var `HELIUM_CHUNK_SIZE`. The artefacts repo was deliberately **not** renamed — `cattery-artefacts` URLs (code + its `mirror.json`) stay as-is so existing binaries and mirrors keep working. Older koder docs were rewritten to the new name; git history before this date has the old one.
 - **Zero external dependencies (non-negotiable)**: The entire system — code, models, voices, runtime, phonemizer — lives exclusively in `helium` and `cattery-artefacts`. No download, fetch, or network call may target any host outside these two repos. Future CDN mirrors are fine *only* if they serve copies of assets already in `cattery-artefacts`; the GitHub raw URL for `cattery-artefacts` must always remain a working fallback. Any change that introduces a third-party download dependency violates this constraint and must not be merged.
+- **Model license policy (2026-11-04)**: weights we host must be redistributable. Apache-2.0 / MIT / BSD / CC-BY-4.0 are fine. Revenue-cap licenses (e.g. LFM Open License 1.0, free below $10M annual revenue) are acceptable when they carry no other use restrictions — "99% of users will be able to use it freely". Still out: non-commercial (NC), OpenRAIL/AUP-style use restrictions, competing-use bans, gated-with-terms, AGPL. Any capped or attribution license must be surfaced to importers (model license metadata, `THIRD_PARTY_NOTICES.md`). Survey: [research/02_model_survey.md](research/02_model_survey.md).
 - **No pure Go ONNX**: GoMLX/gonnx lack FFT/ISTFT ops. ORT via dlopen is the only path.
-- **Download on first run**: binary stays ~8MB, while ORT/model/voice artefacts are fetched as needed. `espeak-ng` stays external.
+- **Download on first run**: binary stays ~8MB, while ORT/model/voice/espeak-ng artefacts are fetched as needed.
 - **Separate artefacts repo**: `cattery-artefacts` holds binaries via Git LFS. No auth. All models (TTS + STT) self-hosted — no HuggingFace dependency.
 - **Artefacts path = repo layout**: model cache lives at `~/.helium/artefacts/models/`, matching the `cattery-artefacts` repo tree. `git clone cattery-artefacts ~/.helium/artefacts` gives instant offline — no downloads needed.
 - **mirror.json**: `cattery-artefacts/mirror.json` lists every artefact with size, SHA256, and ordered mirror URLs. Downloaded once per process; graceful fallback if unavailable. Mirrors support a `"default": true` flag to prefer S3/R2 over GitHub without changing array order. Adding a mirror is a one-line JSON edit, no code release.
@@ -200,3 +235,4 @@ All artefacts (ORT, models, voices, espeak) now self-hosted in `cattery-artefact
 ## Research
 
 - [01_initial.md](research/01_initial.md) — KittenTTS benchmarks, size analysis, library survey, phonemizer options
+- [02_model_survey.md](research/02_model_survey.md) — 2026-11 survey of tiny TTS/STT/VAD/LLM/VLM/embedding/utility models vs the one-binary-one-file vision; picks, licenses, disqualifications
