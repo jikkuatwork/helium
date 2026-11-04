@@ -16,8 +16,8 @@ import statistics
 import time
 
 # Avoid a hidden BLAS thread pool. ORT's threads are set independently below.
-os.environ.setdefault('OPENBLAS_NUM_THREADS', '1')
-os.environ.setdefault('OMP_NUM_THREADS', '1')
+os.environ['OPENBLAS_NUM_THREADS'] = '1'
+os.environ['OMP_NUM_THREADS'] = '1'
 import jiwer
 import numpy as np
 import onnxruntime as ort

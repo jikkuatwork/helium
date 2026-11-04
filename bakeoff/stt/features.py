@@ -48,6 +48,8 @@ def main():
     rows = json.loads((DATA/'manifest.json').read_text())[:10]
     errors = []
     parity = []
+    frame_parity = []
+    differences = []
     for r in rows:
         x = read_audio(r['path'])
         expected, el = model.preprocessor(x[None], np.array([len(x)]))
@@ -55,10 +57,19 @@ def main():
         assert expected.shape == actual.shape and np.array_equal(el, al)
         errors.append({'id': r['id'], 'max_abs': float(np.abs(expected-actual).max()),
                        'rms': float(np.sqrt(np.mean((expected-actual)**2)))})
-        a = model.model.run(None, {'audio_signal': actual, 'length': al})[0].argmax(-1)
-        e = model.model.run(None, {'audio_signal': expected, 'length': el})[0].argmax(-1)
-        parity.append(bool(np.array_equal(a, e)))
-    result = {'features': errors, 'greedy_argmax_equal': parity,
+        a = model.model.run(None, {'audio_signal': actual, 'length': al})[0].argmax(-1)[0]
+        e = model.model.run(None, {'audio_signal': expected, 'length': el})[0].argmax(-1)[0]
+        valid = int((al[0]-1)//8+1)
+        a, e = a[:valid], e[:valid]
+        collapse = lambda ids: [int(t) for i,t in enumerate(ids) if t != 1024 and (i == 0 or t != ids[i-1])]
+        at, et = collapse(a), collapse(e)
+        frame_parity.append(bool(np.array_equal(a, e)))
+        parity.append(at == et)
+        differences.append({'id': r['id'], 'different_frames': int(np.count_nonzero(a != e)),
+                            'frames': valid, 'numpy_text': ''.join(model.vocab[t] for t in at).replace('▁',' '),
+                            'onnx_text': ''.join(model.vocab[t] for t in et).replace('▁',' ')})
+    result = {'features': errors, 'frame_argmax_equal': frame_parity,
+              'ctc_tokens_equal': parity, 'details': differences,
               'mel_filter_sha256': __import__('hashlib').sha256(mel_filters().tobytes()).hexdigest()}
     print(json.dumps(result, indent=2))
     assert max(r['max_abs'] for r in errors) < 0.002

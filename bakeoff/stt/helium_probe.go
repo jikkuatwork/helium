@@ -36,6 +36,10 @@ func run() error {
 		return fmt.Errorf("initialize ORT: %w", err)
 	}
 	defer ortgo.DestroyEnvironment()
+	version := ortgo.GetVersion()
+	if version != "1.24.4" {
+		return fmt.Errorf("expected ORT 1.24.4, got %s", version)
+	}
 	engine, err := moonshine.New(*model, nil)
 	if err != nil {
 		return fmt.Errorf("load Moonshine: %w", err)
@@ -67,7 +71,7 @@ func run() error {
 	}
 	return json.NewEncoder(os.Stdout).Encode(map[string]any{
 		"result": result, "wall_seconds": elapsed,
-		"threads": os.Getenv("HELIUM_BAKE_THREADS"),
-		"note":    "build with build_probe.py for controlled threads",
+		"threads": os.Getenv("HELIUM_BAKE_THREADS"), "ort_version": version,
+		"note": "build with build_probe.py for controlled threads",
 	})
 }

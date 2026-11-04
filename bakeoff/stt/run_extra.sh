@@ -5,6 +5,7 @@ cd "$(dirname "$0")/../.."
 PY="$HOME/models/stt/venv/bin/python"
 OUT=bakeoff/stt/results
 mkdir -p "$OUT"
+python3 bakeoff/stt/build_probe.py > "$OUT/probe-build.log"
 run() { taskset -c 8-15 /usr/bin/time -v -o "$OUT/$1.rss.txt" "$PY" bakeoff/stt/bench.py "${@:2}" > "$OUT/$1.log" 2>&1; }
 taskset -c 8-15 "$PY" bakeoff/stt/features.py > "$OUT/feature-parity.json"
 for threads in 4 1; do
