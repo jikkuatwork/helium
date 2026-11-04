@@ -1,0 +1,272 @@
+[
+  {
+    "id": "prose-01",
+    "category": "prose",
+    "raw": "The quick brown fox jumps over the lazy dog.",
+    "spoken": "The quick brown fox jumps over the lazy dog."
+  },
+  {
+    "id": "prose-02",
+    "category": "prose",
+    "raw": "Please close the window before you leave the room.",
+    "spoken": "Please close the window before you leave the room."
+  },
+  {
+    "id": "prose-03",
+    "category": "prose",
+    "raw": "The library opens early and stays quiet until lunch.",
+    "spoken": "The library opens early and stays quiet until lunch."
+  },
+  {
+    "id": "prose-04",
+    "category": "prose",
+    "raw": "We planted a small tree beside the old stone bridge.",
+    "spoken": "We planted a small tree beside the old stone bridge."
+  },
+  {
+    "id": "prose-05",
+    "category": "prose",
+    "raw": "I forgot my umbrella but the rain stopped before dinner.",
+    "spoken": "I forgot my umbrella but the rain stopped before dinner."
+  },
+  {
+    "id": "prose-06",
+    "category": "prose",
+    "raw": "Your package should arrive tomorrow morning at the front desk.",
+    "spoken": "Your package should arrive tomorrow morning at the front desk."
+  },
+  {
+    "id": "prose-07",
+    "category": "prose",
+    "raw": "The children watched the ducks swim across the pond.",
+    "spoken": "The children watched the ducks swim across the pond."
+  },
+  {
+    "id": "prose-08",
+    "category": "prose",
+    "raw": "Save your work before restarting the computer.",
+    "spoken": "Save your work before restarting the computer."
+  },
+  {
+    "id": "prose-09",
+    "category": "prose",
+    "raw": "Would you like a cup of tea or a glass of water?",
+    "spoken": "Would you like a cup of tea or a glass of water?"
+  },
+  {
+    "id": "prose-10",
+    "category": "prose",
+    "raw": "A warm breeze carried the smell of bread through the village.",
+    "spoken": "A warm breeze carried the smell of bread through the village."
+  },
+  {
+    "id": "structured-11",
+    "category": "structured",
+    "raw": "The total is $23.45, including tax.",
+    "spoken": "The total is twenty three dollars and forty five cents, including tax."
+  },
+  {
+    "id": "structured-12",
+    "category": "structured",
+    "raw": "The meeting is on 03/15/2026 at 9:30 AM.",
+    "spoken": "The meeting is on March fifteenth, twenty twenty six at nine thirty a m."
+  },
+  {
+    "id": "structured-13",
+    "category": "structured",
+    "raw": "Sales increased by 12.5% last quarter.",
+    "spoken": "Sales increased by twelve point five percent last quarter."
+  },
+  {
+    "id": "structured-14",
+    "category": "structured",
+    "raw": "The train leaves at 6:05 PM from platform 7.",
+    "spoken": "The train leaves at six oh five p m from platform seven."
+  },
+  {
+    "id": "structured-15",
+    "category": "structured",
+    "raw": "She finished 21st in a race with 108 runners.",
+    "spoken": "She finished twenty first in a race with one hundred eight runners."
+  },
+  {
+    "id": "structured-16",
+    "category": "structured",
+    "raw": "The blue notebook costs €5.50 and the pen costs £2.",
+    "spoken": "The blue notebook costs five euros and fifty cents and the pen costs two pounds."
+  },
+  {
+    "id": "structured-17",
+    "category": "structured",
+    "raw": "Call 202-555-0198 and ask for extension 42.",
+    "spoken": "Call two zero two five five five zero one nine eight and ask for extension forty two."
+  },
+  {
+    "id": "structured-18",
+    "category": "structured",
+    "raw": "The temperature fell from 18°C to -3°C overnight.",
+    "spoken": "The temperature fell from eighteen degrees Celsius to minus three degrees Celsius overnight."
+  },
+  {
+    "id": "structured-19",
+    "category": "structured",
+    "raw": "Send the report to alex@example.com before Friday.",
+    "spoken": "Send the report to alex at example dot com before Friday."
+  },
+  {
+    "id": "structured-20",
+    "category": "structured",
+    "raw": "The shipment contains 2,450 bolts weighing 3.75 kg.",
+    "spoken": "The shipment contains two thousand four hundred fifty bolts weighing three point seven five kilograms."
+  },
+  {
+    "id": "names-21",
+    "category": "names",
+    "raw": "Maya Thompson met Daniel Brooks near the station.",
+    "spoken": "Maya Thompson met Daniel Brooks near the station."
+  },
+  {
+    "id": "names-22",
+    "category": "names",
+    "raw": "Aisha Khan and Priya Patel are leading the new project.",
+    "spoken": "Aisha Khan and Priya Patel are leading the new project."
+  },
+  {
+    "id": "names-23",
+    "category": "names",
+    "raw": "Siobhan Murphy sent a letter to Niamh O Sullivan.",
+    "spoken": "Siobhan Murphy sent a letter to Niamh O Sullivan."
+  },
+  {
+    "id": "names-24",
+    "category": "names",
+    "raw": "Xavier Rodriguez booked a flight from Seattle to Chicago.",
+    "spoken": "Xavier Rodriguez booked a flight from Seattle to Chicago."
+  },
+  {
+    "id": "names-25",
+    "category": "names",
+    "raw": "Professor Nguyen invited Zhang Wei to the seminar.",
+    "spoken": "Professor Nguyen invited Zhang Wei to the seminar."
+  },
+  {
+    "id": "names-26",
+    "category": "names",
+    "raw": "Fatima Hassan visited the museum with Gabriel Santos.",
+    "spoken": "Fatima Hassan visited the museum with Gabriel Santos."
+  },
+  {
+    "id": "names-27",
+    "category": "names",
+    "raw": "Charlotte Beaumont moved from Edinburgh to Cambridge.",
+    "spoken": "Charlotte Beaumont moved from Edinburgh to Cambridge."
+  },
+  {
+    "id": "names-28",
+    "category": "names",
+    "raw": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal.",
+    "spoken": "Joaquin Alvarez spoke with Saoirse Ronan after the rehearsal."
+  },
+  {
+    "id": "names-29",
+    "category": "names",
+    "raw": "The river runs through Worcester before reaching Gloucester.",
+    "spoken": "The river runs through Worcester before reaching Gloucester."
+  },
+  {
+    "id": "names-30",
+    "category": "names",
+    "raw": "Anjali Menon and Dimitri Petrov shared a table at the cafe.",
+    "spoken": "Anjali Menon and Dimitri Petrov shared a table at the cafe."
+  },
+  {
+    "id": "acronyms-31",
+    "category": "acronyms",
+    "raw": "NASA launched a new satellite on Tuesday.",
+    "spoken": "NASA launched a new satellite on Tuesday."
+  },
+  {
+    "id": "acronyms-32",
+    "category": "acronyms",
+    "raw": "The CPU and GPU share access to the same memory.",
+    "spoken": "The c p u and g p u share access to the same memory."
+  },
+  {
+    "id": "acronyms-33",
+    "category": "acronyms",
+    "raw": "Use the API to send a JSON response over HTTP.",
+    "spoken": "Use the a p i to send a jay son response over h t t p."
+  },
+  {
+    "id": "acronyms-34",
+    "category": "acronyms",
+    "raw": "The FBI contacted the local police about the case.",
+    "spoken": "The f b i contacted the local police about the case."
+  },
+  {
+    "id": "acronyms-35",
+    "category": "acronyms",
+    "raw": "A USB cable connects the SSD to the laptop.",
+    "spoken": "A u s b cable connects the s s d to the laptop."
+  },
+  {
+    "id": "acronyms-36",
+    "category": "acronyms",
+    "raw": "The BBC and CNN reported the result this morning.",
+    "spoken": "The b b c and c n n reported the result this morning."
+  },
+  {
+    "id": "acronyms-37",
+    "category": "acronyms",
+    "raw": "Enable HTTPS and check the DNS configuration.",
+    "spoken": "Enable h t t p s and check the d n s configuration."
+  },
+  {
+    "id": "acronyms-38",
+    "category": "acronyms",
+    "raw": "The MRI scan was reviewed by the hospital team.",
+    "spoken": "The m r i scan was reviewed by the hospital team."
+  },
+  {
+    "id": "acronyms-39",
+    "category": "acronyms",
+    "raw": "NATO and UNESCO issued separate statements.",
+    "spoken": "NATO and UNESCO issued separate statements."
+  },
+  {
+    "id": "acronyms-40",
+    "category": "acronyms",
+    "raw": "Our SQL database stores each URL as plain text.",
+    "spoken": "Our s q l database stores each u r l as plain text."
+  },
+  {
+    "id": "long-41",
+    "category": "long",
+    "raw": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate.",
+    "spoken": "Although the forecast predicted heavy rain throughout the afternoon, the volunteers arrived at the park before sunrise, collected the fallen branches, repaired the wooden benches, and finished planting flowers just as the first visitors walked through the gate."
+  },
+  {
+    "id": "long-42",
+    "category": "long",
+    "raw": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings.",
+    "spoken": "When you receive the replacement device, please copy your documents to a separate drive, check that every important file opens correctly, sign out of your accounts, and only then reset the old device to its original settings."
+  },
+  {
+    "id": "long-43",
+    "category": "long",
+    "raw": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory, and continued to work reliably when the network connection failed during the final demonstration.",
+    "spoken": "The research team compared several approaches to the problem, but they chose the simplest method because it was easier to explain, used less memory, and continued to work reliably when the network connection failed during the final demonstration."
+  },
+  {
+    "id": "long-44",
+    "category": "long",
+    "raw": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees.",
+    "spoken": "After spending the summer restoring the old house, the family invited their neighbors to dinner, opened the windows to let in the evening breeze, and talked about the years when the garden had been full of fruit trees."
+  },
+  {
+    "id": "long-45",
+    "category": "long",
+    "raw": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater.",
+    "spoken": "If the train is delayed again tomorrow, we can take the earlier bus to the city, leave our bags at the hotel, and walk along the river before meeting everyone at the small restaurant opposite the theater."
+  }
+]
