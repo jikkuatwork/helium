@@ -47,6 +47,9 @@ The Go probe times its actual WAV streaming/chunking as well as inference.
 - `download.py`: fixed-revision URLs and verified SHA-256s; safe tar extraction.
 - `bench.py`: helium-equivalent Moonshine greedy loop, CTC argmax, optional
   onnx-asr TDT; fixed dataset/noise generation; accuracy and timing modes.
+  Frame-level argmax positions can differ for tiny frontend rounding errors
+  under dynamic quantization; `features.py` separately checks identical
+  collapsed CTC token streams, not bit-identical frame alignment.
 - `features.py`: independent, Go-ready Slaney mel + STFT reference and
   validation against the **actual timed** NeMo80 ONNX feature graph.
 - `helium_probe.go`, `build_probe.py`: actual helium Moonshine WAV/chunk/
@@ -57,6 +60,10 @@ The Go probe times its actual WAV streaming/chunking as well as inference.
   12/20-minute single-pass attempts as evidence.
 - `run_extra.sh`: independent feature check, actual helium long handling,
   optional 0.6B v2 int8, and representative balanced-batch speed measurements.
+- `limits.py`: one-call boundary validity probes around the fixed position
+  table's maximum; not used as speed measurements.
+- `parity.py`: exact-text check of 10 actual helium engine outputs against
+  the fair Python Moonshine decoder, using temporary WAVs outside the repo.
 - `summarize.py`: aggregate WER, paired utterance bootstrap, medians, RSS.
 - `manifest.json`, `long-manifest.json`: public selection/reference metadata,
   not audio. Exact preparation is repeated from the archives with fixed seeds.

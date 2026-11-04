@@ -4,11 +4,16 @@
 No tracked product file is edited. Only session options differ from helium's
 Moonshine package. Chunking, decoder, tokenizer, WAV reader remain unchanged.
 """
+import argparse
 import json
 from pathlib import Path
 import subprocess
 import tempfile
 
+parser = argparse.ArgumentParser(__doc__)
+parser.add_argument('--program', default='bakeoff/stt/helium_probe.go')
+parser.add_argument('--output', default='/tmp/stt-helium-probe')
+args = parser.parse_args()
 root = Path(__file__).resolve().parents[2]
 source = root / 'stt/moonshine/moonshine.go'
 text = source.read_text()
@@ -30,5 +35,5 @@ with tempfile.TemporaryDirectory(prefix='stt-overlay-') as tmp:
     (temp/'moonshine.go').write_text(text)
     (temp/'overlay.json').write_text(json.dumps({'Replace': {str(source): str(temp/'moonshine.go')}}))
     subprocess.run(['taskset', '-c', '8-15', 'go', 'build', '-overlay', str(temp/'overlay.json'),
-                    '-o', '/tmp/stt-helium-probe', str(root/'bakeoff/stt/helium_probe.go')], cwd=root, check=True)
-print('/tmp/stt-helium-probe (evaluation-only overlay; product files unchanged)')
+                    '-o', args.output, str(root/args.program)], cwd=root, check=True)
+print(f'{args.output} (evaluation-only overlay; product files unchanged)')

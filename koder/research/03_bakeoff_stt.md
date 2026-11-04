@@ -92,17 +92,27 @@ utterance—not speaker—resampling, not a deployment-wide confidence claim.
 The sherpa 110M export is opset 17 with a **fixed `[1,9999,512]` relative
 position table**, not an unbounded position generator. This suggests an
 export limit of roughly 5,000 downsampled frames (~400 s), distinct from the
-original NeMo model's advertised 20-minute limit. Twelve/twenty-minute
-failure probes are queued; do not promise 20-minute single passes from
-this export. Bounded chunking remains available.
+original NeMo model's advertised 20-minute limit. **Both 12- and 20-minute
+single passes now failed**, at `/layers.0/self_attn/Add_2`, with relative
+position broadcast mismatches (4012 vs 9012, and 9999 vs 15016). These are
+export shape errors, not unavailable ORT operators. Bounded chunking works.
 
 **The 301.735 s single-pass test completed** at 4 threads: median **22.12 s**
 (RTF 0.0733), WER 4.86%, **5,468,464 KiB peak RSS (5.22 GiB)**. That already
 exceeds a 4 GB Pi 4. The fixed-30-s Python Moonshine control took 13.20 s
 (RTF 0.0438), WER 9.13%, 403,300 KiB RSS. These fixed cuts are not helium's
-silence-aware cuts; its actual chunker is measured separately below when
-complete. This strongly favors **bounded Parakeet chunking**, even if a
-future export removes the position-table cap.
+silence-aware cuts. The actual helium Go engine (thread-only evaluation
+overlay) scores **16.37% WER / 12.91 s** on the 5-minute file and **10.78% /
+32.80 s** on the 12-minute file at 4 threads. Its chunk boundaries, overlap,
+and stitching differ from fixed cuts; do not attribute that gap solely to
+the model. The surprising long-file degradation merits separate chunker
+regression work, not a product fix in this lane.
+
+On the **same 12-minute file and same fixed 30 s cuts**, Python Moonshine
+scores 7.50% WER / 29.77 s, versus Parakeet int8 4.82% / 17.44 s, at 4
+threads. Parakeet's peak RSS is 723,376 KiB (**0.69 GiB**), rather than the
+5.22 GiB of its five-minute single pass. This strongly favors **bounded
+Parakeet chunking**, even if a future export removes the position-table cap.
 
 ## Current caveats / next measurements
 
@@ -118,5 +128,8 @@ the duplicated stderr descriptor executes before deferred restore. The
 probe uses direct ORT initialization to avoid that unrelated issue; **no
 product fix is included**.
 
-Pending: representative balanced-batch and further long timing/RSS, larger
-model accuracy/timing, final feature validation, hashes appendix, verdict.
+Pending: remaining representative batch timing, larger model accuracy/timing,
+exact graph-length boundary, full actual-Go short/noise parity, hashes appendix,
+and final verdict. The independent feature frontend already matches collapsed
+CTC tokens on 10/10 clips (max feature error 1.10e-4, RMS <=3.41e-6); frame
+argmax alignment is not bit-identical under dynamic quantization.

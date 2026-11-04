@@ -32,7 +32,7 @@ SAMPLES = HOME / 'bakeoff-samples/stt'
 
 def normalize(text):
     # Keep within-word apostrophes by deleting punctuation, not replacing it.
-    return ' '.join(re.sub(r'[^\w\s]', '', text.lower()).split())
+    return ' '.join(re.sub(r'[^\w\s]|_', '', text.lower()).split())
 
 
 def session(path, threads):
