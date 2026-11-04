@@ -125,7 +125,7 @@ answered "Sure! Make sure to drink some water now to stay hydrated." rather
 than setting a twenty-minute reminder or clearly declining. This is not a
 proof of general agent reliability.
 
-### LFM3 quality milestone (thinking pairs still running)
+### Completed LFM3 quality (Qwen baseline pending)
 
 **36/36 tools**: 25/25 single, 6/6 no-tool/clarification, 5/5 dependent paired
 calls. However, only **8/30 instruction prompts pass on raw visible output**;
@@ -134,7 +134,22 @@ emitted `<think>`/`</think>` while the published template was explicitly
 called with `enable_thinking=False`; four hit the 192-token limit, all in
 reasoning, without an answer. This is not just an empty-tag cosmetic issue.
 One short sky-blue voice turn also emitted a reasoning answer followed by
-`</think>` and then a second answer. Qwen baseline results pending.
+`</think>` and then a second answer. Across the full suite: **27/101 off
+outputs contain generated thinking tags**: 0/41 tool requests (including
+continuations), 16/30 instructions, 3/10 voice turns, 8/20 paired off turns.
+The 101 generations include ten repeated voice prompts; these are not 101
+independent samples. An untagged, overlong bat-and-ball algebra derivation
+also appears; it is not included in the conservative tagged-leak count.
+
+Thinking enabled adds **164.05 tokens on average** across 20 pairs (mean
+211.85 total output tokens, 182.4 reasoning tokens). One enabled response
+hit 512 tokens, so the unbounded overhead is underestimated. Simple bill
+splitting was wrong with thinking off (said the $20 payer owes $10), but
+correct with thinking on after 472 tokens ($10 payer owes $20 payer $5).
+The bleach/vinegar voice reply correctly says not to mix them, but wrongly
+names the gas as chloramine instead of chlorine. These are spot observations,
+not a scored knowledge benchmark; see full voice transcripts below at completion.
+Qwen baseline results pending.
 
 Raw example for "Give a calming bedtime thought in at most 10 words":
 
