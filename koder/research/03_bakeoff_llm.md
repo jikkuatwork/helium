@@ -7,7 +7,8 @@ Status: **running**. Evaluation only; no integration changes.
 - Goal: choose helium's short-reply/tool-calling default from measured CPU performance and checkable local quality tests, not vendor benchmark claims.
 - Qwen3.5-4B is the integrated baseline. LFM3-1.7B is the default challenger; LFM2.5-1.2B-Instruct gets speed and a smaller quality spot check.
 - Acquisition completed; immutable revisions and every downloaded file's SHA256 are in `bakeoff/llm/manifest.json`. All three q4 graphs run on ORT 1.24.4 CPU EP.
-- Warmed speed/quality batches are running sequentially; no verdict yet.
+- Core quality is complete: Qwen **36/36 tools, 27/30 raw instructions**, versus LFM3 **36/36, 8/30 raw (18/30 final-only)**. Keep Qwen as the global default with the tested non-thinking template; LFM3 is a fast tool-first alternative, not a safe drop-in voice/chat default.
+- Supplemental Qwen thinking-on and 8/1-thread sweeps still running. Final censored thinking averages, full voice transcripts and consolidated tables pending.
 
 ## Method and environment
 
@@ -226,7 +227,24 @@ prefill 14.96 / 14.96 and TTFT 6.687 / 66.863 seconds. Control peak RSS
 plus size/architecture, not evidence of a tenfold intrinsic model advantage.
 Modified control graph quality has not been evaluated.
 
-Remaining Qwen quality and 8/1-thread speed results pending.
+### Core Qwen quality complete; thinking-on / extra threads pending
+
+Qwen: **36/36 tools**, including every dependent continuation; **27/30 raw
+instruction prompts** and 27/30 extracted-final prompts. Its three failures
+are word counts (six-word gravity definition, four-word snack, ten-word cloud
+explanation). No thinking tags in the 81 non-thinking tool/instruction/voice
+requests, before the paired thinking tests. All ten voice turns are recorded.
+The bleach/vinegar reply correctly warns about chlorine. The no-tool reminder
+reply is unhelpful (offers a reminder now instead of scheduling twenty minutes).
+
+All first nine measured Qwen thinking-on turns hit the **512-token limit**
+inside lengthy "Thinking Process" analysis, with no final answer. The eventual
+mean will be a **censored lower bound**, not an estimate of unbounded thinking
+cost. Non-thinking is essential for voice here. The Go `FormatChat` currently
+emits only the assistant header, not the empty think block used in this test;
+keeping the model does not mean the existing CLI already applies this policy.
+
+Remaining Qwen thinking and 8/1-thread speed results pending.
 
 ## Contradictions and uncertainty
 
@@ -234,9 +252,21 @@ Remaining Qwen quality and 8/1-thread speed results pending.
 - LFM3 ONNX card currently lists CPU q4 as 1.63 GB (decimal), not the survey's lowest 1.21 GiB size. Exact downloaded sizes/hashes will settle this.
 - Thinking-disable inconsistency remains to measure; injected empty think blocks are prompt tokens, not emitted reasoning.
 
-## Recommendation
+**Keep Qwen3.5-4B as the global default, with thinking explicitly disabled
+for voice/chat.** LFM3 is dramatically faster/smaller and passes this easy tool
+suite, but its disable flag is not dependable, and it loses constrained replies
+entirely to reasoning loops. A post-generation think stripper cannot restore
+answers that never arrived or guarantee low-latency streaming of unframed
+reasoning. Do not promote it on vendor IF/BFCL claims alone.
 
-Pending measurements.
+**Pi-class size pick: LFM2.5-1.2B-Instruct, yes for short bounded contexts.**
+Its q4 ONNX assets are 0.850 GB / 0.792 GiB, but the measured Python ORT
+1000-token peak is 1.661 GB / 1.547 GiB. If ≤1.5 GB means a strict process-RSS
+ceiling for every context length, it does not meet that measured budget at
+1000 tokens. Actual Pi 4 latency and Go RSS still need measurement.
+
+Quality parity for accuracy-level-4 control graphs is untested. Treat them as
+performance research, not already-approved replacement exports.
 
 ## Next steps
 
