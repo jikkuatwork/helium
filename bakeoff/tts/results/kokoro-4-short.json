@@ -3,12 +3,12 @@
   "threads": 4,
   "shape": "short",
   "words": 10,
-  "load_s": 0.9841065430000526,
+  "load_s": 1.0583388770000965,
   "warmup": {
-    "wall_s": 5.512016530999972,
-    "ttfa_s": 5.511964250999995,
+    "wall_s": 5.563727593000294,
+    "ttfa_s": 5.563672672999928,
     "audio_s": 3.725,
-    "rtfx": 0.6757962315697597,
+    "rtfx": 0.6695151654596478,
     "chunks": [
       {
         "tokens": 60
@@ -18,10 +18,10 @@
   },
   "runs": [
     {
-      "wall_s": 5.4872662289999425,
-      "ttfa_s": 5.487203748999946,
+      "wall_s": 5.569617981999727,
+      "ttfa_s": 5.569570741999996,
       "audio_s": 3.725,
-      "rtfx": 0.678844408954235,
+      "rtfx": 0.6688070909061825,
       "chunks": [
         {
           "tokens": 60
@@ -30,10 +30,10 @@
       "normalized": "Please bring the blue notebook to our meeting this morning."
     },
     {
-      "wall_s": 5.500981121999985,
-      "ttfa_s": 5.5009388019999506,
+      "wall_s": 5.557933088000027,
+      "ttfa_s": 5.5578845680001905,
       "audio_s": 3.725,
-      "rtfx": 0.6771519329711327,
+      "rtfx": 0.6702131783562743,
       "chunks": [
         {
           "tokens": 60
@@ -42,10 +42,10 @@
       "normalized": "Please bring the blue notebook to our meeting this morning."
     },
     {
-      "wall_s": 5.524544772000013,
-      "ttfa_s": 5.5245020520000025,
+      "wall_s": 5.568105626000033,
+      "ttfa_s": 5.568056866000006,
       "audio_s": 3.725,
-      "rtfx": 0.6742637002200389,
+      "rtfx": 0.6689887459401399,
       "chunks": [
         {
           "tokens": 60
@@ -54,10 +54,10 @@
       "normalized": "Please bring the blue notebook to our meeting this morning."
     },
     {
-      "wall_s": 5.519354711999995,
-      "ttfa_s": 5.519310072000053,
+      "wall_s": 5.559564109000348,
+      "ttfa_s": 5.55951654799992,
       "audio_s": 3.725,
-      "rtfx": 0.6748977361250638,
+      "rtfx": 0.6700165565083812,
       "chunks": [
         {
           "tokens": 60
@@ -66,10 +66,10 @@
       "normalized": "Please bring the blue notebook to our meeting this morning."
     },
     {
-      "wall_s": 5.493333575999941,
-      "ttfa_s": 5.493290975999912,
+      "wall_s": 5.542235306000293,
+      "ttfa_s": 5.542188546000034,
       "audio_s": 3.725,
-      "rtfx": 0.6780946302395163,
+      "rtfx": 0.6721114846868977,
       "chunks": [
         {
           "tokens": 60
@@ -79,10 +79,10 @@
     }
   ],
   "median": {
-    "wall_s": 5.500981121999985,
-    "ttfa_s": 5.5009388019999506,
+    "wall_s": 5.559564109000348,
+    "ttfa_s": 5.55951654799992,
     "audio_s": 3.725,
-    "rtfx": 0.6771519329711327
+    "rtfx": 0.6700165565083812
   },
-  "ru_maxrss_kib": 284660
+  "ru_maxrss_kib": 288812
 }

@@ -22,10 +22,21 @@ normalizer=EnglishTextNormalizer()
 
 def canonical(text):
     text=text.lower()
-    # Treat conventional ASR joined initialisms identically to spelled-out speech.
+    # Orthographic equivalences only: never repair a wrong digit/name/content word.
+    text=re.sub(r'\b(\d{3})[- ]+(\d{3})[- ]+(\d{4})\b',r'\1\2\3',text)
+    text=re.sub(r'\b(?:\d\s+){9}\d\b',lambda m:re.sub(r'\s+','',m[0]),text)
+    text=re.sub(r'\b(\d{1,2})[.: ](\d{2})(?=\s*(?:[ap]\.?m\.?|[ap]\s+m))',r'\1\2',text)
+    text=re.sub(r'\b[a-z][a-z0-9]*(?:\.[a-z][a-z0-9]+)+\b',lambda m:m[0].replace('.', ' dot '),text)
+    text=re.sub(r'\bjay\s+son\b','json',text)
+    text=re.sub(r'\bkg\b','kilograms',text)
+    text=re.sub(r'\bdegrees c\b','degrees celsius',text)
+    # Joined, dotted, and partly joined ASR initialisms share the spoken spelling.
     for acronym in INITIALISMS:
-        text=re.sub(r'\b'+acronym+r'\b',' '.join(acronym),text)
-    return normalizer(text).strip()
+        pattern=r'\b'+r'[\s.]*'.join(acronym)+r'\b'
+        text=re.sub(pattern,' '.join(acronym),text)
+    result=normalizer(text).strip()
+    months='january|february|march|april|may|june|july|august|september|october|november|december'
+    return re.sub(r'\b('+months+r') (\d+)(?:st|nd|rd|th)\b',r'\1 \2',result)
 
 
 def literal(text):

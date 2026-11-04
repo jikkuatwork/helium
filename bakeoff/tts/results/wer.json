@@ -1,0 +1,180 @@
+{
+  "controlled": {
+    "kokoro": {
+      "all": {
+        "sentences": 45,
+        "words": 577,
+        "errors": 8,
+        "wer": 0.01386481802426343
+      },
+      "prose": {
+        "sentences": 10,
+        "words": 96,
+        "errors": 0,
+        "wer": 0.0
+      },
+      "structured": {
+        "sentences": 10,
+        "words": 90,
+        "errors": 0,
+        "wer": 0.0
+      },
+      "names": {
+        "sentences": 10,
+        "words": 87,
+        "errors": 7,
+        "wer": 0.08045977011494253
+      },
+      "acronyms": {
+        "sentences": 10,
+        "words": 116,
+        "errors": 1,
+        "wer": 0.008620689655172414
+      },
+      "long": {
+        "sentences": 5,
+        "words": 188,
+        "errors": 0,
+        "wer": 0.0
+      }
+    },
+    "phonon-fp32": {
+      "all": {
+        "sentences": 45,
+        "words": 577,
+        "errors": 12,
+        "wer": 0.02079722703639515
+      },
+      "prose": {
+        "sentences": 10,
+        "words": 96,
+        "errors": 0,
+        "wer": 0.0
+      },
+      "structured": {
+        "sentences": 10,
+        "words": 90,
+        "errors": 2,
+        "wer": 0.022222222222222223
+      },
+      "names": {
+        "sentences": 10,
+        "words": 87,
+        "errors": 5,
+        "wer": 0.05747126436781609
+      },
+      "acronyms": {
+        "sentences": 10,
+        "words": 116,
+        "errors": 4,
+        "wer": 0.034482758620689655
+      },
+      "long": {
+        "sentences": 5,
+        "words": 188,
+        "errors": 1,
+        "wer": 0.005319148936170213
+      }
+    },
+    "phonon-int8": {
+      "all": {
+        "sentences": 45,
+        "words": 577,
+        "errors": 14,
+        "wer": 0.024263431542461005
+      },
+      "prose": {
+        "sentences": 10,
+        "words": 96,
+        "errors": 0,
+        "wer": 0.0
+      },
+      "structured": {
+        "sentences": 10,
+        "words": 90,
+        "errors": 2,
+        "wer": 0.022222222222222223
+      },
+      "names": {
+        "sentences": 10,
+        "words": 87,
+        "errors": 7,
+        "wer": 0.08045977011494253
+      },
+      "acronyms": {
+        "sentences": 10,
+        "words": 116,
+        "errors": 4,
+        "wer": 0.034482758620689655
+      },
+      "long": {
+        "sentences": 5,
+        "words": 188,
+        "errors": 1,
+        "wer": 0.005319148936170213
+      }
+    }
+  },
+  "raw": {
+    "kokoro": {
+      "all": {
+        "sentences": 20,
+        "words": 206,
+        "errors": 5,
+        "wer": 0.024271844660194174
+      },
+      "structured": {
+        "sentences": 10,
+        "words": 90,
+        "errors": 4,
+        "wer": 0.044444444444444446
+      },
+      "acronyms": {
+        "sentences": 10,
+        "words": 116,
+        "errors": 1,
+        "wer": 0.008620689655172414
+      }
+    },
+    "phonon-fp32": {
+      "all": {
+        "sentences": 20,
+        "words": 206,
+        "errors": 3,
+        "wer": 0.014563106796116505
+      },
+      "structured": {
+        "sentences": 10,
+        "words": 90,
+        "errors": 2,
+        "wer": 0.022222222222222223
+      },
+      "acronyms": {
+        "sentences": 10,
+        "words": 116,
+        "errors": 1,
+        "wer": 0.008620689655172414
+      }
+    },
+    "phonon-int8": {
+      "all": {
+        "sentences": 20,
+        "words": 206,
+        "errors": 2,
+        "wer": 0.009708737864077669
+      },
+      "structured": {
+        "sentences": 10,
+        "words": 90,
+        "errors": 1,
+        "wer": 0.011111111111111112
+      },
+      "acronyms": {
+        "sentences": 10,
+        "words": 116,
+        "errors": 1,
+        "wer": 0.008620689655172414
+      }
+    }
+  }
+}

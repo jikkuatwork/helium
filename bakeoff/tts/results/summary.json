@@ -1,0 +1,284 @@
+{
+  "literal_wer": {
+    "controlled/kokoro": {
+      "words": 618,
+      "errors": 109,
+      "wer": 0.17637540453074432
+    },
+    "controlled/phonon-int8": {
+      "words": 618,
+      "errors": 118,
+      "wer": 0.19093851132686085
+    },
+    "controlled/phonon-fp32": {
+      "words": 618,
+      "errors": 116,
+      "wer": 0.18770226537216828
+    },
+    "raw/kokoro": {
+      "words": 247,
+      "errors": 104,
+      "wer": 0.42105263157894735
+    },
+    "raw/phonon-int8": {
+      "words": 247,
+      "errors": 106,
+      "wer": 0.4291497975708502
+    },
+    "raw/phonon-fp32": {
+      "words": 247,
+      "errors": 108,
+      "wer": 0.43724696356275305
+    }
+  },
+  "capped_chunks": {
+    "controlled/kokoro": {
+      "chunks": 45,
+      "capped": 0
+    },
+    "controlled/phonon-int8": {
+      "chunks": 50,
+      "capped": 0
+    },
+    "controlled/phonon-fp32": {
+      "chunks": 50,
+      "capped": 0
+    },
+    "raw/kokoro": {
+      "chunks": 20,
+      "capped": 0
+    },
+    "raw/phonon-int8": {
+      "chunks": 20,
+      "capped": 0
+    },
+    "raw/phonon-fp32": {
+      "chunks": 20,
+      "capped": 0
+    }
+  },
+  "paired_bootstrap": {
+    "controlled/phonon-int8-kokoro": {
+      "sentences": 45,
+      "seed": 20261104,
+      "resamples": 5000,
+      "difference_pp": 1.0398613518197575,
+      "ci95_pp": [
+        -0.5970596121190456,
+        2.941176470588235
+      ]
+    },
+    "controlled/phonon-fp32-kokoro": {
+      "sentences": 45,
+      "seed": 20261104,
+      "resamples": 5000,
+      "difference_pp": 0.6932409012131715,
+      "ci95_pp": [
+        -1.136409830007391,
+        2.6209866195481455
+      ]
+    },
+    "raw/phonon-int8-kokoro": {
+      "sentences": 20,
+      "seed": 20261104,
+      "resamples": 5000,
+      "difference_pp": -1.4563106796116505,
+      "ci95_pp": [
+        -4.18848167539267,
+        1.0638297872340425
+      ]
+    },
+    "raw/phonon-fp32-kokoro": {
+      "sentences": 20,
+      "seed": 20261104,
+      "resamples": 5000,
+      "difference_pp": -0.9708737864077669,
+      "ci95_pp": [
+        -3.94104874254602,
+        1.9801980198019802
+      ]
+    }
+  },
+  "speed": [
+    {
+      "model": "kokoro",
+      "threads": 4,
+      "shape": "short",
+      "rss_mib": 282.04296875,
+      "wall_s": 5.559564109000348,
+      "ttfa_s": 5.55951654799992,
+      "audio_s": 3.725,
+      "rtfx": 0.6700165565083812
+    },
+    {
+      "model": "kokoro",
+      "threads": 4,
+      "shape": "paragraph",
+      "rss_mib": 1199.66015625,
+      "wall_s": 45.06734725699971,
+      "ttfa_s": 33.86335705499914,
+      "audio_s": 29.925,
+      "rtfx": 0.6640062444623285
+    },
+    {
+      "model": "kokoro",
+      "threads": 4,
+      "shape": "long",
+      "rss_mib": 1163.6640625,
+      "wall_s": 149.25321528699988,
+      "ttfa_s": 35.63992111099992,
+      "audio_s": 98.625,
+      "rtfx": 0.6607897847316282
+    },
+    {
+      "model": "kokoro",
+      "threads": 1,
+      "shape": "short",
+      "rss_mib": 283.3046875,
+      "wall_s": 7.346115754000039,
+      "ttfa_s": 7.346073193999928,
+      "audio_s": 3.725,
+      "rtfx": 0.5070706921507053
+    },
+    {
+      "model": "kokoro",
+      "threads": 1,
+      "shape": "paragraph",
+      "rss_mib": 1202.80078125,
+      "wall_s": 59.264246934000084,
+      "ttfa_s": 44.623311362000095,
+      "audio_s": 29.925,
+      "rtfx": 0.5049418755514792
+    },
+    {
+      "model": "kokoro",
+      "threads": 1,
+      "shape": "long",
+      "rss_mib": 1162.53515625,
+      "wall_s": 198.2114687320004,
+      "ttfa_s": 46.46633832800035,
+      "audio_s": 98.625,
+      "rtfx": 0.4975746390000762
+    },
+    {
+      "model": "phonon-int8",
+      "threads": 4,
+      "shape": "short",
+      "rss_mib": 323.48046875,
+      "wall_s": 0.2805246759999136,
+      "ttfa_s": 0.28049675600004775,
+      "audio_s": 2.96,
+      "rtfx": 10.551656425408051
+    },
+    {
+      "model": "phonon-int8",
+      "threads": 4,
+      "shape": "paragraph",
+      "rss_mib": 592.51171875,
+      "wall_s": 2.3412277439997524,
+      "ttfa_s": 0.37965348299985635,
+      "audio_s": 25.12,
+      "rtfx": 10.729413259508451
+    },
+    {
+      "model": "phonon-int8",
+      "threads": 4,
+      "shape": "long",
+      "rss_mib": 665.6953125,
+      "wall_s": 7.524024959999679,
+      "ttfa_s": 0.4337565649998396,
+      "audio_s": 83.84,
+      "rtfx": 11.142972072224968
+    },
+    {
+      "model": "phonon-int8",
+      "threads": 1,
+      "shape": "short",
+      "rss_mib": 323.65625,
+      "wall_s": 0.8258003210003153,
+      "ttfa_s": 0.8256900410001435,
+      "audio_s": 2.96,
+      "rtfx": 3.584401609840098
+    },
+    {
+      "model": "phonon-int8",
+      "threads": 1,
+      "shape": "paragraph",
+      "rss_mib": 592.76953125,
+      "wall_s": 7.0856606100001045,
+      "ttfa_s": 1.1195274299998346,
+      "audio_s": 25.12,
+      "rtfx": 3.5451881458374888
+    },
+    {
+      "model": "phonon-int8",
+      "threads": 1,
+      "shape": "long",
+      "rss_mib": 665.67578125,
+      "wall_s": 22.30531976200018,
+      "ttfa_s": 1.281364632000077,
+      "audio_s": 83.84,
+      "rtfx": 3.758744590733535
+    },
+    {
+      "model": "phonon-fp32",
+      "threads": 4,
+      "shape": "short",
+      "rss_mib": 417.23828125,
+      "wall_s": 0.38271345099974496,
+      "ttfa_s": 0.38268717099981586,
+      "audio_s": 2.96,
+      "rtfx": 7.734246058683661
+    },
+    {
+      "model": "phonon-fp32",
+      "threads": 4,
+      "shape": "paragraph",
+      "rss_mib": 685.41015625,
+      "wall_s": 3.126977551999971,
+      "ttfa_s": 0.5080111620000025,
+      "audio_s": 25.04,
+      "rtfx": 8.007732573578842
+    },
+    {
+      "model": "phonon-fp32",
+      "threads": 4,
+      "shape": "long",
+      "rss_mib": 750.7421875,
+      "wall_s": 10.270884657999886,
+      "ttfa_s": 0.5973621809998804,
+      "audio_s": 83.36,
+      "rtfx": 8.116146055157163
+    },
+    {
+      "model": "phonon-fp32",
+      "threads": 1,
+      "shape": "short",
+      "rss_mib": 417.80859375,
+      "wall_s": 1.2828363789999457,
+      "ttfa_s": 1.2827261379998163,
+      "audio_s": 2.96,
+      "rtfx": 2.30738701244777
+    },
+    {
+      "model": "phonon-fp32",
+      "threads": 1,
+      "shape": "paragraph",
+      "rss_mib": 685.70703125,
+      "wall_s": 10.410454832999676,
+      "ttfa_s": 1.6700373290000243,
+      "audio_s": 25.04,
+      "rtfx": 2.4052743517628765
+    },
+    {
+      "model": "phonon-fp32",
+      "threads": 1,
+      "shape": "long",
+      "rss_mib": 751.09375,
+      "wall_s": 34.186043255000186,
+      "ttfa_s": 1.9929258180000033,
+      "audio_s": 83.36,
+      "rtfx": 2.4384220009961943
+    }
+  ]
+}

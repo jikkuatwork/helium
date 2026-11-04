@@ -3,12 +3,12 @@
   "threads": 4,
   "shape": "paragraph",
   "words": 76,
-  "load_s": 0.9314497060000804,
+  "load_s": 1.0230328470006498,
   "warmup": {
-    "wall_s": 44.725769258000014,
-    "ttfa_s": 33.668655742000055,
+    "wall_s": 45.11603824000031,
+    "ttfa_s": 33.94692321900038,
     "audio_s": 29.925,
-    "rtfx": 0.6690773685160791,
+    "rtfx": 0.6632896231005544,
     "chunks": [
       {
         "tokens": 377
@@ -21,10 +21,10 @@
   },
   "runs": [
     {
-      "wall_s": 44.637362392,
-      "ttfa_s": 33.597330863000025,
+      "wall_s": 45.0213427030003,
+      "ttfa_s": 33.87293564100037,
       "audio_s": 29.925,
-      "rtfx": 0.6704025147633549,
+      "rtfx": 0.6646847517945249,
       "chunks": [
         {
           "tokens": 377
@@ -36,10 +36,10 @@
       "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
     },
     {
-      "wall_s": 44.68746345699992,
-      "ttfa_s": 33.59205354799997,
+      "wall_s": 44.96933732599973,
+      "ttfa_s": 33.7369545699994,
       "audio_s": 29.925,
-      "rtfx": 0.6696508972543282,
+      "rtfx": 0.6654534351498747,
       "chunks": [
         {
           "tokens": 377
@@ -51,10 +51,10 @@
       "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
     },
     {
-      "wall_s": 44.84146905299997,
-      "ttfa_s": 33.70428605999996,
+      "wall_s": 45.06734725699971,
+      "ttfa_s": 33.84999733400036,
       "audio_s": 29.925,
-      "rtfx": 0.6673510175286723,
+      "rtfx": 0.6640062444623285,
       "chunks": [
         {
           "tokens": 377
@@ -66,10 +66,10 @@
       "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
     },
     {
-      "wall_s": 44.87271839599998,
-      "ttfa_s": 33.67020126199998,
+      "wall_s": 45.11990087200047,
+      "ttfa_s": 33.9048684039999,
       "audio_s": 29.925,
-      "rtfx": 0.6668862745491158,
+      "rtfx": 0.6632328400918586,
       "chunks": [
         {
           "tokens": 377
@@ -81,10 +81,10 @@
       "normalized": "The town library is preparing a new reading room for local families. Volunteers have painted the walls, repaired the shelves, and arranged comfortable chairs beside the windows. Children will be able to borrow books, listen to stories, and practice reading with patient helpers. The room will also offer a quiet place for students to study after school. Everyone is invited to the opening on Saturday morning, when the librarian will explain how the new program works."
     },
     {
-      "wall_s": 44.90520201900006,
-      "ttfa_s": 33.72066505500004,
+      "wall_s": 45.09002176299964,
+      "ttfa_s": 33.86335705499914,
       "audio_s": 29.925,
-      "rtfx": 0.6664038609009774,
+      "rtfx": 0.663672334364587,
       "chunks": [
         {
           "tokens": 377
@@ -97,10 +97,10 @@
     }
   ],
   "median": {
-    "wall_s": 44.84146905299997,
-    "ttfa_s": 33.67020126199998,
+    "wall_s": 45.06734725699971,
+    "ttfa_s": 33.86335705499914,
     "audio_s": 29.925,
-    "rtfx": 0.6673510175286723
+    "rtfx": 0.6640062444623285
   },
-  "ru_maxrss_kib": 1226804
+  "ru_maxrss_kib": 1228452
 }

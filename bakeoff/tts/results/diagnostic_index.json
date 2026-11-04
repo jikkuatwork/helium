@@ -1,0 +1,98 @@
+[
+  {
+    "file": "diagnostics/kokoro-raw-structured-12.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "structured-12",
+    "mode": "raw",
+    "text": "The meeting is on 03/15/2026 at 9:30 AM."
+  },
+  {
+    "file": "diagnostics/kokoro-controlled-acronyms-36.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "acronyms-36",
+    "mode": "controlled",
+    "text": "The b b c and c n n reported the result this morning."
+  },
+  {
+    "file": "diagnostics/kokoro-raw-acronyms-36.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "acronyms-36",
+    "mode": "raw",
+    "text": "The BBC and CNN reported the result this morning."
+  },
+  {
+    "file": "diagnostics/kokoro-controlled-names-29.wav",
+    "model": "kokoro",
+    "voice": "bella",
+    "corpus_id": "names-29",
+    "mode": "controlled",
+    "text": "The river runs through Worcester before reaching Gloucester."
+  },
+  {
+    "file": "diagnostics/phonon-int8-raw-structured-12.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "structured-12",
+    "mode": "raw",
+    "text": "The meeting is on 03/15/2026 at 9:30 AM."
+  },
+  {
+    "file": "diagnostics/phonon-int8-controlled-acronyms-36.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "acronyms-36",
+    "mode": "controlled",
+    "text": "The b b c and c n n reported the result this morning."
+  },
+  {
+    "file": "diagnostics/phonon-int8-raw-acronyms-36.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "acronyms-36",
+    "mode": "raw",
+    "text": "The BBC and CNN reported the result this morning."
+  },
+  {
+    "file": "diagnostics/phonon-int8-controlled-names-29.wav",
+    "model": "phonon-int8",
+    "voice": "easton",
+    "corpus_id": "names-29",
+    "mode": "controlled",
+    "text": "The river runs through Worcester before reaching Gloucester."
+  },
+  {
+    "file": "diagnostics/phonon-fp32-raw-structured-12.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "structured-12",
+    "mode": "raw",
+    "text": "The meeting is on 03/15/2026 at 9:30 AM."
+  },
+  {
+    "file": "diagnostics/phonon-fp32-controlled-acronyms-36.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "acronyms-36",
+    "mode": "controlled",
+    "text": "The b b c and c n n reported the result this morning."
+  },
+  {
+    "file": "diagnostics/phonon-fp32-raw-acronyms-36.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "acronyms-36",
+    "mode": "raw",
+    "text": "The BBC and CNN reported the result this morning."
+  },
+  {
+    "file": "diagnostics/phonon-fp32-controlled-names-29.wav",
+    "model": "phonon-fp32",
+    "voice": "easton",
+    "corpus_id": "names-29",
+    "mode": "controlled",
+    "text": "The river runs through Worcester before reaching Gloucester."
+  }
+]

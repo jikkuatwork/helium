@@ -1,18 +1,18 @@
 	Command being timed: "taskset -c 0-7 /home/hvm/models/tts/venv/bin/python bakeoff/tts/benchmark.py --model kokoro --threads 4 --shape paragraph --output bakeoff/tts/results/kokoro-4-paragraph.json"
-	User time (seconds): 384.66
-	System time (seconds): 0.77
-	Percent of CPU this job got: 142%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:29.88
+	User time (seconds): 390.31
+	System time (seconds): 0.87
+	Percent of CPU this job got: 143%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:31.71
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 1226804
+	Maximum resident set size (kbytes): 1228452
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 345706
-	Voluntary context switches: 6230
-	Involuntary context switches: 1843
+	Minor (reclaiming a frame) page faults: 345598
+	Voluntary context switches: 6351
+	Involuntary context switches: 1878
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 5688

@@ -19,6 +19,9 @@ git clone https://github.com/gradium-ai/xn-ptts ~/models/tts/xn-ptts
 git -C ~/models/tts/xn-ptts checkout ee395caac058950cbcabfa3785c63630942f31ed
 bash bakeoff/tts/run_speed.sh
 bash bakeoff/tts/run_quality.sh
+~/models/tts/venv/bin/python bakeoff/tts/rescore.py
+~/models/tts/venv/bin/python bakeoff/tts/summarize.py
+~/models/tts/venv/bin/python bakeoff/tts/export_diagnostics.py
 ```
 
 `download.py` gets the ASR revision from `results/artifacts.json`. If the
@@ -54,13 +57,19 @@ Soundfile + scipy resample_poly avoids a PyAV API mismatch.
 
 WER canonicalizes English numbers/currency with whisper-normalizer and
 explicitly expands a fixed list of initialisms identically in reference
-and hypothesis. Literal punctuation/case-stripped edit counts are retained
-as an audit. Do not call this vendor-equivalent LLM WER or a listening MOS.
+and hypothesis. A symmetric orthographic audit equates grouped/spaced phone
+digits, dotted/spaced clocks, calendar ordinals, written domains, JSON and
+units with their spoken forms. It never repairs a wrong digit or name;
+`rescore.py` retains the pre-audit counts. Literal punctuation/case-stripped
+edit counts are also retained. Do not call this vendor-equivalent LLM WER
+or a listening MOS.
 `signal_compare.py` records same-seed full-waveform differences and isolated
 decoder int8/fp32 comparisons on identical fp32 latents, at temperatures 0
 and 0.3. Full-waveform SNR does not align AR-generated timing differences.
 
 Six text selections × two voices × three model variants = 36 PCM16 WAVs.
-See `results/sample_index.json`; synthesis outputs/ASR references never
+See `results/sample_index.json`; 12 separate post-hoc diagnostic files
+compare raw dates, spelled/native BBC, and Worcester/Gloucester. They were
+not used to select the WER corpus. Synthesis outputs/ASR references never
 contain secrets or user recordings. Voice catalogue descriptions are not
 independent listening assessments.
