@@ -203,7 +203,25 @@ relative Altra speed ranking need not carry over unchanged.
 Source read: https://github.com/microsoft/onnxruntime/blob/v1.24.4/onnxruntime/contrib_ops/cpu/quantization/matmul_nbits.cc
 (`ACCURACY_LEVEL` / `GetComputeType`, lines 37–61).
 
-Remaining speed and quality results pending.
+### Completed four-thread native comparison (Qwen quality pending)
+
+| Model | Prefill 100 / 1000 tok/s | Decode 100 / 1000 tok/s | TTFT 100 / 1000 (s) | Native peak RSS (MiB) |
+|---|---:|---:|---:|---:|
+| Qwen3.5-4B | 12.64 / 12.85 | 1.86 / 1.83 | 7.914 / 77.807 | 5007.2 |
+| LFM3-1.7B | 58.00 / 57.07 | 18.21 / 15.82 | 1.724 / 17.524 | 2608.7 |
+| LFM2.5-1.2B | 56.03 / 56.58 | 6.95 / 6.78 | 1.785 / 17.674 | 1583.7 |
+
+RSS column is native 1000-token peak before supplemental full-logit trials.
+The `/usr/bin/time -v` LFM3 process peak is 3129.0 MiB because that process
+also ran a full-logit control; Qwen already computes full logits natively.
+Qwen's four-thread native decode is nearly ten times slower than LFM3 at
+100-token context, but matched-compute Qwen is **7.28 / 6.71 tok/s**, with
+prefill 14.96 / 14.96 and TTFT 6.687 / 66.863 seconds. Control peak RSS
+5011.0 MiB. Most of the native decoder gap is therefore export compute-policy
+plus size/architecture, not evidence of a tenfold intrinsic model advantage.
+Modified control graph quality has not been evaluated.
+
+Remaining Qwen quality and 8/1-thread speed results pending.
 
 ## Contradictions and uncertainty
 
