@@ -1,0 +1,40 @@
+[0;93m2026-11-04 19:04:51.903316815 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+loaded large 3.1265524419995927
+warmup 1.507267119000062
+run 1 1.572959890000675
+run 2 1.5462446940000518
+run 3 1.5482367360000353
+run 4 1.546977875000266
+run 5 1.5400454259997787
+{
+  "model": "large",
+  "threads": 1,
+  "audio": "/home/hvm/bakeoff-samples/stt/parity.wav",
+  "duration": 9.19,
+  "audio_files": 1,
+  "batch_per_split": 0,
+  "chunk_seconds": 0,
+  "load_seconds": 3.1265524419995927,
+  "runs_seconds": [
+    1.572959890000675,
+    1.5462446940000518,
+    1.5482367360000353,
+    1.546977875000266,
+    1.5400454259997787
+  ],
+  "median_seconds": 1.546977875000266,
+  "median_rtf": 0.16833273939067098,
+  "peak_rss_kib": 1278344,
+  "hypothesis": "Three seconds before the arrival of JB Hobson's letter, I no more dreamed of chasing the unicorn than of trying for the Northwest Passage.",
+  "ort_version": "1.24.4",
+  "affinity": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

@@ -28,7 +28,9 @@ for threads in 4 1; do
 done
 run large-long5chunk-4 timing --model large --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --chunk 30 --reference --output "$OUT/large-long5chunk-4.json"
 run parakeet-long5chunk-4 timing --model parakeet --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --chunk 30 --reference --output "$OUT/parakeet-long5chunk-4.json"
-run large-long5single-4 timing --model large --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --reference --output "$OUT/large-long5single-4.json"
+if ! run large-long5single-4 timing --model large --audio "$HOME/bakeoff-samples/stt/long-5min.wav" --reference --output "$OUT/large-long5single-4.json"; then
+ echo 'Large single pass failed; see results/large-long5single-4.log'
+fi
 run parakeet-long20chunk-4 timing --model parakeet --audio "$HOME/bakeoff-samples/stt/long-20min.wav" --chunk 30 --reference --output "$OUT/parakeet-long20chunk-4.json"
 HELIUM_BAKE_THREADS=4 taskset -c 8-15 /usr/bin/time -v -o "$OUT/helium-long20-4.rss.txt" /tmp/stt-helium-probe "$HOME/bakeoff-samples/stt/long-20min.wav" > "$OUT/helium-long20-4.json" 2> "$OUT/helium-long20-4.log"
 for model in large; do
@@ -36,9 +38,9 @@ for model in large; do
   run "$model-batch-${threads}" timing --model "$model" --threads "$threads" --batch 30 --output "$OUT/$model-batch-${threads}.json"
  done
 done
-taskset -c 8-15 /usr/bin/time -v -o "$OUT/length-boundary.rss.txt" "$PY" bakeoff/stt/limits.py > "$OUT/length-boundary.log" 2>&1
 taskset -c 8-15 "$PY" bakeoff/stt/parity.py > "$OUT/moonshine-parity.log" 2>&1
 python3 bakeoff/stt/build_probe.py --program bakeoff/stt/actual/main.go --output /tmp/stt-actual-probe > "$OUT/actual-build.log"
 taskset -c 8-15 "$PY" bakeoff/stt/actual.py prepare > "$OUT/actual-prepare.log" 2>&1
 HELIUM_BAKE_THREADS=4 taskset -c 8-15 /usr/bin/time -v -o "$OUT/helium-actual.rss.txt" /tmp/stt-actual-probe "$HOME/datasets/stt/actual-manifest.json" > "$OUT/helium-actual.jsonl" 2> "$OUT/helium-actual.log"
 taskset -c 8-15 "$PY" bakeoff/stt/actual.py compare > "$OUT/helium-actual-compare.log" 2>&1
+taskset -c 8-15 /usr/bin/time -v -o "$OUT/length-boundary.rss.txt" "$PY" bakeoff/stt/limits.py > "$OUT/length-boundary.log" 2>&1

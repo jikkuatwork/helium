@@ -47,6 +47,7 @@ See per-clip JSONL under `bakeoff/stt/results/`.
 | Moonshine quantized | 5.21% | 12.23% |
 | Parakeet 110M int8 CTC | 3.40% | 5.92% |
 | Parakeet 110M fp32 CTC | 3.44% | 5.54% |
+| Parakeet 0.6B v2 int8 TDT | 1.97% | 3.04% |
 
 That is **34.8% / 51.6% fewer errors** on these two samples. Do not compare
 these directly to the cross-corpus model-card 7.49/12.66 figures; NVIDIA's
@@ -79,6 +80,7 @@ All three columns use the **same 50 clips / 1,266 reference words**.
 | Moonshine quantized | 5.61% | 12.80% | 52.05% |
 | Parakeet 110M int8 CTC | 3.16% | 5.77% | 21.80% |
 | Parakeet 110M fp32 CTC | 3.32% | 5.21% | 18.17% |
+| Parakeet 0.6B v2 int8 TDT | 1.74% | 2.61% | 7.19% |
 
 Int8 is the practical small tier, but it is not accuracy-free: test-other
 costs +0.38 WER points vs fp32 and 0 dB white noise costs +3.63 points.
@@ -114,6 +116,26 @@ threads. Parakeet's peak RSS is 723,376 KiB (**0.69 GiB**), rather than the
 5.22 GiB of its five-minute single pass. This strongly favors **bounded
 Parakeet chunking**, even if a future export removes the position-table cap.
 
+## Representative speed and the optional large tier (interim)
+
+Sixty clips, 30 per split, 442.57 s total, loaded before timing; one full
+batch warm-up followed by five whole-batch repetitions. Same CPU EP,
+ORT 1.24.4, assigned cores, explicit thread counts. Main comparison uses
+Python for both candidates, avoiding mixed-runner speed claims.
+
+| Build | RTF, 4 threads | RTF, 1 thread | RSS, 4 threads |
+|---|---:|---:|---:|
+| Moonshine quantized | 0.03994 | 0.07653 | 397.6 MiB |
+| Parakeet 110M int8 CTC | 0.02330 | 0.04416 | 724.6 MiB |
+
+Parakeet is **1.7× faster** here despite its larger weights. The large tier
+is **0.6B v2 English**, not v3: 652,184,014-byte encoder plus 8,998,286-byte
+merged decoder/joint graph, CC-BY-4.0, from the fixed istupakov v2 revision.
+It achieves 1.97% / 3.04% WER and 7.19% at 0 dB noise, making it a credible
+optional high-quality desktop tier. Its representative batch timing is
+still running. A five-minute file takes 21.58 s in fixed 30 s blocks
+(WER 3.56%, 1.52 GiB peak), versus 50.65 s single pass (WER 3.08%, 5.34 GiB).
+
 ## Current caveats / next measurements
 
 Helium creates Moonshine sessions with nil session options, exposing no
@@ -128,7 +150,7 @@ the duplicated stderr descriptor executes before deferred restore. The
 probe uses direct ORT initialization to avoid that unrelated issue; **no
 product fix is included**.
 
-Pending: remaining representative batch timing, larger model accuracy/timing,
+Pending: large representative batch timing, actual 20-minute helium result,
 exact graph-length boundary, full actual-Go short/noise parity, hashes appendix,
 and final verdict. The independent feature frontend already matches collapsed
 CTC tokens on 10/10 clips (max feature error 1.10e-4, RMS <=3.41e-6); frame
