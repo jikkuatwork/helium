@@ -73,6 +73,9 @@ def main():
              '- Qwen correctness-only requests were split into two **four-thread** processes on disjoint cores '
              '`16-19` / `20-23`. These request latencies and combined memory are **not speed/Pi measurements**. '
              'Both finished before exclusive speed resumed. Fixed fixtures and independent contexts; raw shard evidence retained.',
+             '- Verification: six `unittest` groups passed; `summarize.py` independently rechecks parsed calls, '
+             'continuations and instruction scores against retained raw output. Final report checks enforce '
+             'completed ORT 1.24.4 speed processes, five trials/32 decode steps, ten voice turns and tables of at most five columns.',
              '- This host has ARM dot-product support; Pi 4 Cortex-A72 does not. Absolute speeds are optimistic for Pi 4, '
              'and **relative rankings need not carry over unchanged** when an export requests different compute precision. '
              'Shared-VM memory/cache contention and different tokenizers are additional caveats.', '',
