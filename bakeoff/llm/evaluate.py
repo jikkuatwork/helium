@@ -21,7 +21,7 @@ def emit(path, obj):
     print(obj.get('id', obj.get('kind')), obj.get('pass', ''), obj.get('generated_tokens', ''), flush=True)
 
 
-def speed(r, path, repeats, tokens):
+def speed(r, path, repeats, tokens, extra_logits=True):
     for n in [100, 1000]:
         # Same text repeated, independently tokenized then exactly truncated to length.
         ids = r.encode(r.render([{'role': 'user', 'content': 'This is a short document about weather, travel, shopping, and personal reminders. ' * 300}]))[:n]
@@ -37,7 +37,7 @@ def speed(r, path, repeats, tokens):
         summary.update(kind='median', id=f'median{n}', prompt_tokens=n, repeats=repeats, decode_steps=tokens-1)
         emit(path, summary)
     # Isolate export's last-token-logits advantage; native Qwen always computes full logits.
-    if r.model != 'qwen':
+    if r.model != 'qwen' and extra_logits:
         ids = r.encode('This is a short document about weather and reminders. ' * 300)[:1000]
         r.generate(ids, max_tokens=2, force_length=True, full_logits=True)
         rows = []
@@ -114,17 +114,19 @@ def main():
     p.add_argument('--repeats', type=int, default=5)
     p.add_argument('--tokens', type=int, default=33, help='one prefill token + 32 timed decode tokens')
     p.add_argument('--spot', action='store_true')
+    p.add_argument('--accuracy4', action='store_true', help='experimental graph-only matched compute control, not native export')
     p.add_argument('--out', type=Path, required=True)
     a = p.parse_args()
     if a.out.exists():
         raise RuntimeError('Refusing to overwrite existing results: ' + str(a.out))
     a.out.parent.mkdir(parents=True, exist_ok=True)
-    r = Runner(a.model, a.threads)
-    emit(a.out, {'kind': 'environment', 'ort': ort.__version__, 'python': platform.python_version(), 'model': a.model, 'threads': a.threads,
+    r = Runner(a.model, a.threads, accuracy4=a.accuracy4)
+    emit(a.out, {'kind': 'environment', 'ort': ort.__version__, 'python': platform.python_version(), 'model': a.model + ('-acc4' if a.accuracy4 else ''), 'threads': a.threads,
+                 'accuracy4_control': a.accuracy4,
                  'affinity': sorted(os.sched_getaffinity(0)), 'load_s': r.load_s,
                  'harness_sha256': {name: hashlib.sha256((Path(__file__).parent / name).read_bytes()).hexdigest() for name in ['runner.py', 'suites.py', 'evaluate.py']},
                  'timestamp': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())})
-    if a.mode == 'speed': speed(r, a.out, a.repeats, a.tokens)
+    if a.mode == 'speed': speed(r, a.out, a.repeats, a.tokens, extra_logits=a.threads == 4)
     else: quality(r, a.out, a.spot)
 
 

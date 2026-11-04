@@ -19,7 +19,7 @@ def state_output(name):
 
 
 class Runner:
-    def __init__(self, model, threads=4):
+    def __init__(self, model, threads=4, accuracy4=False):
         if not set(os.sched_getaffinity(0)) <= set(range(16, 24)):
             raise RuntimeError('Run under taskset -c 16-23')
         if not ort.__version__.startswith('1.24.'):
@@ -39,7 +39,12 @@ class Runner:
         self.embed = None
         if model == 'qwen':
             self.embed = ort.InferenceSession(str(self.root / 'onnx/embed_tokens_q4.onnx'), opt, providers=['CPUExecutionProvider'])
-        self.session = ort.InferenceSession(str(self.root / 'onnx' / ('decoder_model_merged_q4.onnx' if model == 'qwen' else 'model_q4.onnx')), opt, providers=['CPUExecutionProvider'])
+        graph_file = 'decoder_model_merged_q4.onnx' if model == 'qwen' else 'model_q4.onnx'
+        if accuracy4:
+            if model == 'lfm3':
+                raise ValueError('LFM3 already specifies accuracy_level=4')
+            graph_file = graph_file.replace('.onnx', '_acc4.onnx')
+        self.session = ort.InferenceSession(str(self.root / 'onnx' / graph_file), opt, providers=['CPUExecutionProvider'])
         self.load_s = time.perf_counter() - start
         self.inputs = {i.name: i for i in self.session.get_inputs()}
         self.outputs = [i.name for i in self.session.get_outputs()]

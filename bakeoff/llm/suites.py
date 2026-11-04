@@ -13,7 +13,7 @@ TOOLS = [
     schema('get_weather', 'Look up live weather for a city on a YYYY-MM-DD date.',
            {'city': {'type': 'string'}, 'date': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['celsius', 'fahrenheit']}}, ['city', 'date', 'unit']),
     schema('create_reminder', 'Create a reminder at an ISO 8601 UTC time; preserve requested reminder text.',
-           {'text': {'type': 'string'}, 'when': {'type': 'string'}}, ['text', 'when']),
+           {'text': {'type': 'string'}, 'when': {'type': 'string', 'description': 'UTC timestamp formatted exactly YYYY-MM-DDTHH:MM:SSZ.'}}, ['text', 'when']),
     schema('search_notes', 'Search personal notes using the requested query; returns matching note text.',
            {'query': {'type': 'string'}}, ['query']),
     schema('send_message', 'Send an explicitly requested message to a named recipient. Preserve exact text.',

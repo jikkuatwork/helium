@@ -116,6 +116,27 @@ made. Thus the requested older export remains the usable 1.24.x baseline,
 but do not interpret the forthcoming speed gap as intrinsic to every Qwen
 runtime/export.
 
+### Compute-policy confound — Evidence: High
+
+Graph inspection found Qwen's 249 and LFM2.5's 93 `MatMulNBits` nodes use 4-bit
+weights, block size 32, **no `accuracy_level` attribute**. LFM3 has 126 4-bit
+and 28 8-bit matmuls; **all 154 set `accuracy_level=4`**. ORT 1.24.4 source
+`GetComputeType` selects int8 input/int32 accumulation only for level 4 when
+that kernel is available; otherwise float32 compute. This VM's dot-product
+hardware can therefore benefit LFM3 disproportionately. Same q4 labels do
+not mean equal compute precision, even with identical sessions/loops.
+
+Requested native-export results remain unchanged. A supplemental four-thread
+control sets only Qwen/LFM2.5 `MatMulNBits.accuracy_level=4` in derived graphs
+outside the repo; weights and I/O are untouched. This is **not** a silently
+optimized baseline and may change numerical outputs; do not infer quality
+parity without separately evaluating those derived graphs. Control medians
+pending. On a Pi 4 without the required kernels, ORT falls back to fp32; the
+relative Altra speed ranking need not carry over unchanged.
+
+Source read: https://github.com/microsoft/onnxruntime/blob/v1.24.4/onnxruntime/contrib_ops/cpu/quantization/matmul_nbits.cc
+(`ACCURACY_LEVEL` / `GetComputeType`, lines 37–61).
+
 Remaining speed and quality results pending.
 
 ## Contradictions and uncertainty
