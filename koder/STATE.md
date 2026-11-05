@@ -1,45 +1,53 @@
 ---
-updated_at: "04 Nov 2026 | 11:04 PM IST"
+updated_at: "05 Nov 2026 | 07:07 PM IST"
 ---
 
 # Helium — State
 
 Go runtime for tiny local models: TTS (Kokoro-82M), STT (Moonshine-tiny) and LLM
 (Qwen3.5-4B) over ONNX Runtime, as a CLI, a REST server and a Go module. v0.9.1.
+Direction since 2026-11-05: one pure-Go monolith for any model type, hard 250 MiB
+RSS ceiling, no cgo, one additive-only API ([ROADMAP.md](ROADMAP.md) *Design parameters*).
 
 Reference files, read when the task needs them:
 - [PROJECT.md](PROJECT.md): overview, stack, architecture, CLI, downloads, performance
 - [DECISIONS.md](DECISIONS.md): key decisions; **zero external dependencies** is non-negotiable
-- [ROADMAP.md](ROADMAP.md): vision, model survey picks, architecture gaps, open decisions
+- [ROADMAP.md](ROADMAP.md): design parameters 1–12, model survey, gaps, open decisions
 - [issues/README.md](issues/README.md): every issue with its status
 
 ## Past
 
 - 2026-03: TTS, STT, LLM, REST server with auth, OpenAI-compatible API, streaming
-  and bounded memory, artefacts (models, ORT, espeak-ng) self-hosted in `cattery-artefacts`.
+  and bounded memory, artefacts self-hosted in `cattery-artefacts`.
 - 2026-10-31: renamed cattery → helium; v0.9.1 is the first release as helium.
-- 2026-11-04: owner's vision recorded (one binary + one model file per model,
-  CPU-first, optional GPU, importable); model survey and license policy done.
-- 2026-11-04: remote worker VM built ([plans/38](plans/38_remote_worker_vm.md),
-  `scripts/hvm`); bake-off planned ([plans/39](plans/39_model_bakeoff/README.md)).
-- 2026-11-04 (this close): hand-off tooling only, no product code.
-  - Removed the old `.codex/skills/{open,close}`.
-  - Claude now uses machine-wide `open`/`close` routers from pi-config; in a repo
-    without its own copy they run the koder-pattern templates.
-  - Added `koder-pattern drift`/`upgrade` in pi-config `79656e9`.
-  - Split this file into the reference files above.
+- 2026-11-04: model survey and license policy; remote worker VM tooling
+  ([plans/38](plans/38_remote_worker_vm.md), `scripts/hvm`).
+- 2026-11-05 (this close):
+  - **Bake-off done** ([plans/39](plans/39_model_bakeoff/README.md)): three Pi
+    lanes on `hvm-helium`, landed. TTS: Phonon ~11x faster than Kokoro
+    (conditional replace). STT: Parakeet 110M int8 conditional yes. LLM: keep
+    Qwen3.5-4B non-thinking. Foundry ledger $26.03 (harnex under-reports 2x).
+  - **$6-droplet stress test** ([research/04](research/04_small_vps.md),
+    `bakeoff/vps/`): stock helium OOMs on 1 GB; Kokoro's 480-token chunks are
+    the cause; Phonon 3.2x realtime at one thread.
+  - **Owner's design parameters** recorded (ROADMAP, DECISIONS): monolith, 250
+    MiB absolute, LLMs ~300M at 4-bit, priorities API → reliability → memory
+    → speed, typed rejection + resumability (params 11–12).
+  - **Plan 40 (API v1) drafted**; GPT-6 Astra review **FAIL (11 P1, 5 P2)**,
+    saved at `reviews/040_api_v1/01_astra.md`.
+  - Fixed `hvm up` for x64; filed harnex Issue 98 (second remote lane).
 
 ## Present
 
-- `main` was 3 commits ahead of `origin/main` before this close (not pushed).
-- VM `hvm-helium` (D32ps_v5, 32 ARM vCPU, 128 GB, westus2; eastus2 blocks ARM)
-  is **deallocated**; toolchain at parity (pi 1.4.0, harnex 0.30.1, go 1.25.1).
-  Tooling: `scripts/hvm` + `scripts/hvm-host-init.sh`. Push and
-  fetch-as-worktree verified; no Pi lane run yet (no key).
-- No repo-local `open`/`close` and no `koder/AGENTS.md`: Claude's routers follow
-  the templates; Pi has no hand-off skills here. `koder-pattern init` would add
-  copies plus `CHANGELOG.md` (owner's call).
-- LLM output shows Qwen3.5 `<think>…</think>` tags raw (CLI and API).
+- `main` is 44 commits ahead of `origin/main` (not pushed).
+- VMs `hvm-helium` (ARM, 32 vCPU) and `hvm-do6` (x64 D2s_v3, small-VPS box)
+  are **deallocated**, disks kept. Foundry key `4rn4pmnn53rx` (VM lanes) has
+  ~$74 left; top-ups only on the owner's go.
+- Private notes live in ignored `koder/scratch/` (pointer in project
+  instructions; retention ledger `SCRATCH_RETAIN.jsonl`). Never copy them out.
+- Today's binary fails parameters 3–5 (525–720 MiB peaks, cgo, ORT/espeak).
+- Known bugs: LLM output shows `<think>` tags raw; chat endpoint keeps only the
+  last system and user message (`server/llm.go:260-284`), dropping history.
 
 | # | Open issue | Pri |
 |---|---|---|
@@ -47,33 +55,34 @@ Reference files, read when the task needs them:
 | [07](issues/07_license_audit.md) | License audit follow-through | P1 |
 | [12](issues/12_llm_proxy.md) | LLM proxy (propose drop) | P2 |
 | [14](issues/14_web_ui.md) | Embedded web UI | P3 |
-| [23](issues/23_openai_remote_engines.md) | OpenAI remote engines (deferred; propose drop) | P2 |
+| [23](issues/23_openai_remote_engines.md) | OpenAI remote engines (propose drop) | P2 |
 | [33](issues/33_gh_actions_pr_permission.md) | GH Actions PR permission | P3 |
 | [36](issues/36_serve_memory_semantics.md) | Serve `--memory` semantics | P3 |
 
 ## Future
 
 Start here, in order:
-1. **Foundry key.** The Foundry MCP was not connected in the 2026-11-04 sessions;
-   if it still shows "Needs authentication": `/mcp` → *claude.ai foundry* → sign in.
-   Load `foundry-operator`; on the owner's go: `console_me`, then `keys_create`
-   label `hvm-helium — remote worker VM (helium plan 38)`, $100 (`100000000`
-   µUSD), `allowed_models: []`, idempotency key `hvm-helium-key-2026-11-04`.
-   The token goes to the owner once; the owner runs `scripts/hvm key helium` in a
-   separate terminal. Budget: $100 balance, top-ups ≤ $100/day, each on the
-   owner's go.
-2. `scripts/hvm start helium` → `scripts/hvm push helium` → smoke Pi turn on the VM.
-3. Bake-off ([plans/39](plans/39_model_bakeoff/README.md)): lanes `tts`, `stt`,
-   `llm` in parallel; check in every 30–60 min; fetch → review → land.
-4. Log friction in plan 38; later fold the process into koder-pattern; harnex
-   Issue 97 (remote host lanes) after Phase 1.
-5. `scripts/hvm stop helium` whenever no lane is running.
-
-Then, per [ROADMAP.md](ROADMAP.md): bundle format → ORT embed → library API →
-new model types → GPU (sequencing still open with the owner).
+1. **Revise plan 40 with fresh eyes** against Astra's review; write the
+   response as `reviews/040_api_v1/02_claude.md`. Last session's leanings,
+   non-binding: accept nearly all findings; memory enforced by engines
+   allocating from a pre-checked budget (RSS check only as last resort);
+   watchdog last resort = daemon exits, crash recovery restarts it; run
+   returns the job at once, `Prefer: wait=N` for one-call results, `Accept:
+   text/event-stream` to stream, opt-in lease instead of detach/grace;
+   explicit `POST /v1/jobs/{id}/retry` with attempt CAS; per-job event log
+   as the single source of truth; media streamed only in committed chunks;
+   key tombstones outlive results; v1 HTTP in its own cgo-free package;
+   first build slice narrowed as Astra suggests.
+2. Second Astra pass for convergence: a paid Foundry call, owner's go first.
+3. Owner decisions in plan 40: defaults, build the job core in parallel with
+   the engine spike or after, no auto-pull.
+4. Then per ROADMAP: pure-Go engine spike on Moonshine-tiny (plan 41) →
+   shared chunking/stage layers → Phonon in pure Go → model-file format →
+   daemon on v1 → tiny-LLM survey.
 
 Housekeeping when convenient:
-- Tracker drift: 15 issue files say `Status: open` though done (see issues/README.md);
-  `download/download.go:5` still says ORT comes from Microsoft; DECISIONS
-  "Remote models are just models" / "Dual-mode operation" describe deferred #23.
-- Optionally `koder-pattern init` for portable `open`/`close` copies.
+- Destroy or keep the deallocated VM disks (`scripts/hvm destroy do6`).
+- Candidate `hvm shape` verb for mem=/nr_cpus= box emulation (plan 38 log).
+- Tracker drift: 15 issue files say `Status: open` though done;
+  `download/download.go:5` still says ORT comes from Microsoft.
+- Optionally `koder-pattern init` for repo-local `open`/`close` copies.
