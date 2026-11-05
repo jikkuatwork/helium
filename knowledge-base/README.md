@@ -142,6 +142,11 @@ the full clip.
 Everything except espeak-ng downloads automatically to `~/.helium/` on first
 run. Total: ~150 MB.
 
+## Contributing
+
+See [CONTRIBUTING.md](/CONTRIBUTING.md). Contributors sign the [CLA](/CLA.md)
+by commenting on their pull request.
+
 ## License
 
 Apache-2.0. See [LICENSE](../LICENSE), [NOTICE](../NOTICE), and
