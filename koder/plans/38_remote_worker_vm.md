@@ -1,6 +1,6 @@
 # Plan 38 — Remote Worker VMs (on-demand cloud lanes)
 
-Status: Phase 1 — first real run 2026-11-05: key issued, three plan-39 lanes running on the VM · First consumer: helium · The
+Status: Phase 1 — first real run done 2026-11-05: three plan-39 lanes ran ~2–3 h, fetched, landed; VM deallocated · First consumer: helium · The
 process evolves here (owner, 2026-11-04: "we will learn here by evolving the
 process here"); once it is good, it moves into the **koder-pattern** skill.
 Phase 1 tooling: `scripts/hvm` + `scripts/hvm-host-init.sh` (this repo).
@@ -177,7 +177,7 @@ harnex work in helium still goes straight onto main.)
 - [ ] `vm up` aborts on a failed sponsored guard; creates only tagged RG resources.
 - [ ] `vm up` + `vm init` → host ready (pi, harnex, go versions = local) in < 15 min.
 - [x] A Pi lane runs on the VM with the capped key; `lanes --json` readable over ssh. (2026-11-05)
-- [ ] `vm fetch` materializes the lane branch as a local worktree; tests pass locally.
+- [x] `vm fetch` materializes the lane branch as a local worktree; tests pass locally. (2026-11-05, 3 lanes)
 - [ ] `vm destroy` leaves no RG and the key revoked; `vm stop` deallocates.
 - [ ] Friction log kept below → feeds harnex #97 and koder-pattern.
 
@@ -212,6 +212,21 @@ harnex work in helium still goes straight onto main.)
   now adds `.harnex/` to the host repo's `info/exclude`.
 - 2026-11-05 · `hvm start` returns before ssh is reachable (~5 s later);
   callers must poll. Fine for now.
+- 2026-11-05 · run totals: tts 2h03m, stt 2h02m, llm 3h12m (brief said ~3 h);
+  VM up ~3h15m. Foundry ledger: **$26.03**, 423 requests, 51.4 M tokens for the
+  key; harnex footers summed to only $11.16 (2.90 + 4.13 + 4.13), so harnex's
+  lane cost under-reports by >2x against the gateway. Trust the ledger.
+- 2026-11-05 · a Claude usage-limit pause skipped two 30-min check-ins; the
+  lanes did not care. Unattended lanes + infrequent check-ins worked.
+- 2026-11-05 · land needs a clean local tree (`--untracked-files=no`), so
+  orchestrator edits must be committed before the first `hvm land`.
+- 2026-11-05 · second host `do6` (Standard_D2s_v3, x64) for the small-VPS
+  test (`koder/research/04_small_vps.md`). **`hvm up` had never worked for
+  x64:** the image line's `$([ arm64 ] && echo -arm64)` returns 1 under
+  `set -e` and killed the script silently. Fixed with `|| true`.
+- 2026-11-05 · shaping a VM into a smaller box works with kernel args
+  (`mem=… nr_cpus=…`, `bakeoff/vps/limit.sh`). Azure puts RAM below 1 GiB
+  and above 4 GiB, so "1 GB" needs `mem=4170M`. Candidate `hvm shape` verb.
 
 **Phase 2 — harnex remote lanes** (harnex #97, with #95 caps) — see that issue.
 

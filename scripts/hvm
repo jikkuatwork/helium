@@ -171,7 +171,8 @@ cmd_up() {
   need az; need ssh; need python3; need curl
 
   local arch=x64; [[ "$SIZE" =~ ^Standard_[A-Z]+[0-9]+[a-z]*p ]] && arch=arm64
-  [ -n "$image" ] || image="Canonical:ubuntu-24_04-lts:server$([ "$arch" = arm64 ] && echo -arm64):latest"
+  # `|| true`: under set -e a false test inside $(...) kills the script on x64
+  [ -n "$image" ] || image="Canonical:ubuntu-24_04-lts:server$([ "$arch" = arm64 ] && echo -arm64 || true):latest"
 
   sponsored_guard
 

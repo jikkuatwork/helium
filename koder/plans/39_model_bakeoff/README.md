@@ -1,5 +1,9 @@
 # Plan 39 — Model bake-off (first run on the remote worker VM)
 
+Status: **done 2026-11-05.** Results landed: `koder/research/03_bakeoff_{tts,stt,llm}.md`.
+Verdicts: TTS conditional (keep Kokoro for now), STT conditional yes (Parakeet 110M
+int8, 30 s chunks), LLM keep Qwen3.5-4B non-thinking; LFM2.5-1.2B as Pi pick.
+
 Verifies the picks in `koder/research/02_model_survey.md` on real hardware
 before helium builds on them. Three independent lanes, each a Pi/GPT worker
 on the plan-38 VM, pinned to its own cores:
