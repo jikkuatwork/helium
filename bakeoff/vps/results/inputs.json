@@ -1,0 +1,24 @@
+{
+ "facts": {
+  "time": "2026-11-05T04:17:27",
+  "nproc": 2,
+  "mem_total_mib": 7932,
+  "mem_available_mib": 7266,
+  "swap_total_mib": 0,
+  "uname": "7.0.0-1017-azure"
+ },
+ "files": {
+  "note10": 10.0,
+  "note30": 30.0,
+  "min1": 60.0,
+  "min5": 300.0,
+  "min20": 1200.0
+ },
+ "source_s": [
+  30.48,
+  14.12,
+  30.52,
+  14.43,
+  30.48
+ ]
+}

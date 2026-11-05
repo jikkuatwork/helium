@@ -1,0 +1,23 @@
+{
+ "facts": {
+  "time": "2026-11-05T04:34:14",
+  "nproc": 1,
+  "mem_total_mib": 959,
+  "mem_available_mib": 711,
+  "swap_total_mib": 0,
+  "uname": "7.0.0-1017-azure"
+ },
+ "runs": [
+  {
+   "rc": 137,
+   "signal": 9,
+   "wall_s": 10.606,
+   "peak_rss_mib": 709.0,
+   "oom_kills": 1,
+   "psi_full_us": 839322,
+   "stdout_head": "",
+   "stderr_tail": "home/hvm/bin/helium llm --max-tokens 16 Answer in one short sentence: what is two plus two?\"\n\tUser time (seconds): 2.72\n\tSystem time (seconds): 1.46\n\tPercent of CPU this job got: 39%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:10.59\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 725972\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 332\n\tMinor (reclaiming a frame) page faults: 192208\n\tVoluntary context switches: 1722\n\tInvoluntary context switches: 1469\n\tSwaps: 0\n\tFile system inputs: 2843088\n\tFile system outputs: 0\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+   "variant": "no swap"
+  }
+ ]
+}

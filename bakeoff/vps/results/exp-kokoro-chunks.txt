@@ -1,0 +1,11 @@
+[exp] base para tokens=480 no_arena=0 rc=137 rss=721MiB wall=0:55.79 audio=0s
+[exp] noarena para tokens=480 no_arena=1 rc=137 rss=718MiB wall=0:25.59 audio=0s
+[exp] t240 para tokens=240 no_arena=0 rc=0 rss=515MiB wall=1:32.33 audio=31.85s
+[exp] t160 para tokens=160 no_arena=0 rc=0 rss=355MiB wall=1:33.15 audio=32.45s
+[exp] t160na para tokens=160 no_arena=1 rc=137 rss=719MiB wall=0:24.34 audio=0s
+[exp] t100 para tokens=100 no_arena=0 rc=0 rss=313MiB wall=1:35.63 audio=34.02s
+[exp] t160 long tokens=160 no_arena=0 rc=0 rss=546MiB wall=5:56.49 audio=126.2s
+[exp] t160 reply tokens=160 no_arena=0 rc=0 rss=338MiB wall=0:44.14 audio=15.1s
+[exp] t160na long tokens=160 no_arena=1 rc=137 rss=720MiB wall=0:12.84 audio=0s
+[exp] t160na reply tokens=160 no_arena=1 rc=137 rss=720MiB wall=0:25.26 audio=0.0s
+[exp] EXP-DONE

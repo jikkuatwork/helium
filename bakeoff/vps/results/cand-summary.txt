@@ -1,0 +1,15 @@
+# Phonon int8, 1 thread (cand.sh, first run)
+[cand] phonon-int8 1t short
+[cand]   rc=0 "rtfx": 3.249850038127706 rss=338644KiB
+[cand] phonon-int8 1t paragraph
+[cand]   rc=0 "rtfx": 3.209159352938054 rss=616852KiB
+[cand] phonon-int8 1t long
+[cand]   rc=0 "rtfx": 3.2516679903114047 rss=675348KiB
+# Parakeet 110M int8, 1 thread (rerun after the download.py name-clash fix)
+[cand] parakeet 1t note10 chunk=0
+[cand]   rc=0 "median_rtf": 0.08432149000000208 rss=387372KiB
+[cand] parakeet 1t min1 chunk=0
+[cand]   rc=137  rss=703212KiB
+[cand] parakeet 1t min5 chunk=30
+[cand]   rc=0 "median_rtf": 0.09263037347999974 rss=673216KiB
+[cand] STT-DONE

@@ -1,0 +1,25 @@
+{
+  "model": "parakeet",
+  "threads": 1,
+  "audio": "/home/hvm/bakeoff-samples/stt/note10-16k.wav",
+  "duration": 10.0,
+  "audio_files": 1,
+  "batch_per_split": 0,
+  "chunk_seconds": 0.0,
+  "load_seconds": 1.9800628359998882,
+  "runs_seconds": [
+    0.8573210730000937,
+    0.8309171350001634,
+    0.8603135889998157,
+    0.8432149000000209,
+    0.8173545649997322
+  ],
+  "median_seconds": 0.8432149000000209,
+  "median_rtf": 0.08432149000000208,
+  "peak_rss_kib": 387372,
+  "hypothesis": "The old harbor town wakes slowly. Fishing boats come in before sunrise, and by seven the market is loud with gulls and traders. Visitors usually arrive",
+  "ort_version": "1.24.4",
+  "affinity": [
+    0
+  ]
+}
