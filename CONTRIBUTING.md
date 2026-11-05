@@ -4,10 +4,9 @@ Thank you for helping. Issues and pull requests are welcome on GitHub.
 
 ## Contributor License Agreement
 
-Every contributor signs a CLA, so the Maintainer can keep Helium under
-Apache-2.0 while staying free to transfer the project or offer it under other
-licenses later, without tracking down every past contributor. You keep the
-copyright in your work.
+Every contributor signs a CLA, so the rights in each contribution are settled
+up front: you keep the copyright in your work, and the Maintainer gets a
+permanent, irrevocable license to use, relicense and transfer it.
 
 **To sign:** open your pull request, read [CLA.md](CLA.md), then post this
 exact comment on the pull request:

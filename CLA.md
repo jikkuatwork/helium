@@ -30,7 +30,7 @@ submitted to the Maintainer.
 
 ## 1. Definitions
 
-"Maintainer" means Jikku [SURNAME] and his successors and assigns, including
+"Maintainer" means Jikku Jose and his successors and assigns, including
 any person or entity to which the Project, or the Maintainer's rights under
 this Agreement, are assigned or transferred.
 

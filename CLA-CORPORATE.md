@@ -14,10 +14,10 @@
 >   request.
 
 **To sign:** fill in the details and Schedule A, sign, and email a PDF to the
-Maintainer at [CONTACT EMAIL].
+Maintainer at jikkujose@gmail.com.
 
 This Corporate Contributor License Agreement (the "Agreement") is made between
-the entity named below (the "Corporation") and the Maintainer, Jikku [SURNAME]
+the entity named below (the "Corporation") and the Maintainer, Jikku Jose
 and his successors and assigns, as defined in the Helium Individual
 Contributor License Agreement.
 
