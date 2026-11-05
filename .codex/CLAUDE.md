@@ -11,6 +11,17 @@
 
 Always read `koder/STATE.md` at session start.
 
+## Confidential Context
+
+Important: Refer: `koder/scratch/01_dependencies.md` ; NOTE: ignored folder, info not to leak to repo.
+
+- Never copy names, paths or details from that file into tracked files, commit messages, issues, plans, PR text, or briefs for remote workers.
+- If the file is missing (fresh clone, worktree, remote VM), carry on without it.
+
+## Design Parameters
+
+New work is judged against the design parameters in `koder/ROADMAP.md` (2026-11-05): one pure-Go monolith for any model type behind one additive-only API, a ~1 GB VPS as the reference machine, a hard 250 MiB RSS ceiling, no cgo, and nothing downloaded except model files. When goals conflict: API first, then reliability, then memory and compute, then speed.
+
 ## Non-Negotiable: Zero External Dependencies
 
 The entire system lives in two repos: `helium` and `cattery-artefacts`. No download, fetch, or network call may target any host outside these two repos. CDN mirrors are allowed only if they serve copies of assets already in `cattery-artefacts`, and the GitHub raw URL must always remain a working fallback. Never introduce a third-party download dependency.

@@ -7,3 +7,9 @@ models-data/
 tmp/
 .codex/settings.local.json
 .env
+
+# Private notes (never committed): see .claude/CLAUDE.md
+koder/scratch/
+
+# Claude Code runtime lock (cron scheduler)
+.codex/scheduled_tasks.lock
