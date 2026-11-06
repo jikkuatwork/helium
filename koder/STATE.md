@@ -1,5 +1,5 @@
 ---
-updated_at: "05 Nov 2026 | 07:07 PM IST"
+updated_at: "06 Nov 2026 | 03:41 PM IST"
 ---
 
 # Helium — State
@@ -22,7 +22,7 @@ Reference files, read when the task needs them:
 - 2026-10-31: renamed cattery → helium; v0.9.1 is the first release as helium.
 - 2026-11-04: model survey and license policy; remote worker VM tooling
   ([plans/38](plans/38_remote_worker_vm.md), `scripts/hvm`).
-- 2026-11-05 (this close):
+- 2026-11-05:
   - **Bake-off done** ([plans/39](plans/39_model_bakeoff/README.md)): three Pi
     lanes on `hvm-helium`, landed. TTS: Phonon ~11x faster than Kokoro
     (conditional replace). STT: Parakeet 110M int8 conditional yes. LLM: keep
@@ -36,10 +36,15 @@ Reference files, read when the task needs them:
   - **Plan 40 (API v1) drafted**; GPT-6 Astra review **FAIL (11 P1, 5 P2)**,
     saved at `reviews/040_api_v1/01_astra.md`.
   - Fixed `hvm up` for x64; filed harnex Issue 98 (second remote lane).
+- 2026-11-06 (this close): **CLA** on `main`: `CLA.md` (contributor keeps
+  copyright; Maintainer gets an irrevocable license to use, relicense and
+  transfer; Singapore law), `CLA-CORPORATE.md`, `CONTRIBUTING.md`, CLA workflow
+  (archived action pinned by SHA). Intent: no contributor can claim ownership.
 
 ## Present
 
-- `main` is 44 commits ahead of `origin/main` (not pushed).
+- `main` is 2 commits ahead of `origin/main` (the CLA, not pushed). PR #2
+  (`chore/cla`) is still open; its head commit is already on `main`.
 - VMs `hvm-helium` (ARM, 32 vCPU) and `hvm-do6` (x64 D2s_v3, small-VPS box)
   are **deallocated**, disks kept. Foundry key `4rn4pmnn53rx` (VM lanes) has
   ~$74 left; top-ups only on the owner's go.
@@ -60,6 +65,10 @@ Reference files, read when the task needs them:
 | [36](issues/36_serve_memory_semantics.md) | Serve `--memory` semantics | P3 |
 
 ## Future
+
+Waiting on the owner's go: **take the CLA live**. Push `main` (GitHub should
+then mark PR #2 merged), delete `chore/cla`, create an unprotected
+`cla-signatures` branch for the bot. PR #2 lists four lawyer-review points.
 
 Start here, in order:
 1. **Revise plan 40 with fresh eyes** against Astra's review; write the
@@ -86,3 +95,5 @@ Housekeeping when convenient:
 - Tracker drift: 15 issue files say `Status: open` though done;
   `download/download.go:5` still says ORT comes from Microsoft.
 - Optionally `koder-pattern init` for repo-local `open`/`close` copies.
+- README (`knowledge-base/README.md`) License links use `../`, which break on
+  the GitHub repo home page; `/LICENSE` style works in both places.
